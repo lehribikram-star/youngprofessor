@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="Dr. Bikram Paul Singh Lehri">
+<meta property="og:description" content="Associate Professor at Chandigarh University. Finance, Marketing, Organisational Behaviour and Entrepreneurship.">
+<meta property="og:image" content="https://youngprofessor.in/photo.jpg">
+<meta property="og:url" content="https://youngprofessor.in/">
+<link rel="icon" href="photo.jpg">
+<title>Dr. Bikram Paul Singh Lehri</title>
+<meta name="description" content="Dr. Bikram Paul Singh Lehri, Associate Professor at Chandigarh University. Finance, Marketing, Organisational Behaviour and Entrepreneurship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+--bg:#0A0A0A; --surface:#141414; --ink:#F4F1F1; --muted:#A9A2A2; --line:#2A2424;
+--accent:#E3161E; --accent-soft:#2B0D0E; --gold:#FF4A4F; --gold-soft:#3A1113; --on-accent:#FFFFFF;
+--serif:"Young Serif", Georgia, "Times New Roman", serif;
+--sans:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+--mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.brand{font-family:var(--serif);font-size:20px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--accent)}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a.l{display:block;padding:6px 10px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap}
+.nav a.l:hover{color:var(--ink);background:var(--accent-soft)}
+/* Hero */
+.hero{padding-block:64px 48px}
+.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}
+.portrait{width:200px;height:200px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);box-shadow:0 0 0 1px var(--line),0 18px 40px -18px rgba(227,22,30,.55)}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,56px);line-height:1.08;margin:0 0 14px;text-wrap:balance}
+.role{font-size:19px;color:var(--muted);margin:0 0 22px;max-width:40ch}
+.role strong{color:var(--ink);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.tags li{font-size:14px;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--gold);font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:#B80F16}
+.btn.ghost{color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent)}
+/* Figures */
+.figures{border-block:1px solid var(--line);background:var(--surface)}
+.figures .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.fig{padding-block:22px;padding-inline:14px;border-left:1px solid var(--line)}
+.fig:first-child{border-left:0;padding-left:0}
+.fig b{display:block;font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.fig span{font-size:14px;color:var(--muted);line-height:1.35;display:block;margin-top:4px}
+/* Sections */
+section.block{padding-block:64px;border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:220px 1fr;gap:32px}
+h2{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.2;margin:0;text-wrap:balance}
+.head .kicker{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px;display:block}
+.prose p{margin:0 0 16px;max-width:64ch}
+.prose p:last-child{margin-bottom:0}
+h3{font-size:18px;font-weight:600;margin:0;line-height:1.35}
+/* Timeline */
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.timeline li{display:grid;grid-template-columns:172px 1fr;gap:20px;padding-block:18px;border-top:1px solid var(--line)}
+.timeline li:first-child{border-top:0;padding-top:0}
+.when{font-family:var(--mono);font-size:13.5px;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}
+.where{color:var(--muted);font-size:15.5px;margin:2px 0 0}
+.meta{font-size:14.5px;color:var(--muted);margin:6px 0 0}
+.now{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--gold-soft);color:var(--gold);padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:2px}
+/* Grids */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15.5px}
+.research{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.research .card b{font-family:var(--serif);font-weight:400;font-size:40px;color:var(--accent);line-height:1;display:block;margin-bottom:8px}
+.ids{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.id{font-family:var(--mono);font-size:13.5px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);text-decoration:none}
+.id em{font-style:normal;color:var(--muted);margin-right:6px}
+.id:hover{border-color:var(--accent)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.skills li{padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-size:15.5px}
+.plain{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.plain li{padding-left:22px;position:relative;max-width:66ch}
+.plain li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+.sub{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:36px 0 14px}
+.sub:first-child{margin-top:0}
+.train li{display:grid;grid-template-columns:172px 1fr;gap:20px;padding-block:12px;border-top:1px solid var(--line)}
+.train li:first-child{border-top:0}
+.train li{padding-left:0;max-width:none}
+.train li::before{display:none}
+.train li span:last-child{font-size:15.5px}
+.lang{display:flex;flex-wrap:wrap;gap:12px}
+.lang div{border:1px solid var(--line);border-radius:8px;padding:10px 16px;background:var(--surface)}
+.lang b{font-weight:600}
+.lang small{font-family:var(--mono);color:var(--muted);margin-left:8px}
+/* Updates */
+.updates{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.updates li{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 22px}
+.updates time{font-family:var(--mono);font-size:13.5px;color:var(--gold)}
+.updates p{margin:4px 0 0;color:var(--muted);font-size:15.5px}
+/* Contact */
+.contact{background:var(--accent);color:var(--on-accent);padding-block:64px}
+.contact h2{color:var(--on-accent)}
+.contact p{max-width:56ch;opacity:.9;margin:12px 0 24px}
+.clist{display:flex;flex-wrap:wrap;gap:12px}
+.clist a,.clist button{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:8px;font:600 15px var(--sans);text-decoration:none;color:var(--on-accent);border:1px solid rgba(255,255,255,.5);background:transparent;cursor:pointer}
+.clist a:hover,.clist button:hover{background:rgba(0,0,0,.18)}
+.clist .mail{font-family:var(--mono);font-weight:500}
+footer{padding-block:28px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media (max-width:860px){
+.figures .wrap{grid-template-columns:repeat(3,1fr)}
+.fig:nth-child(4){border-left:0;padding-left:0}
+.fig:nth-child(n+4){border-top:1px solid var(--line)}
+.head{grid-template-columns:1fr;gap:20px}
+.research{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.nav ul{display:none}
+.hero{padding-block:40px 36px}
+.hero .wrap{grid-template-columns:1fr;gap:24px}
+.portrait{width:140px;height:140px}
+.figures .wrap{grid-template-columns:1fr 1fr}
+.fig,.fig:nth-child(4){border-left:0;padding-left:0}
+.fig:nth-child(even){border-left:1px solid var(--line);padding-left:14px}
+.fig:nth-child(n+3){border-top:1px solid var(--line)}
+.fig:last-child{grid-column:1/-1;border-left:0;padding-left:0}
+.timeline li,.train li{grid-template-columns:1fr;gap:4px}
+.cards,.research{grid-template-columns:1fr}
+.updates li{grid-template-columns:1fr;gap:4px}
+section.block,.contact{padding-block:48px}
+}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+<div class="wrap">
+<a class="brand" href="#top">young<span>professor</span>.in</a>
+<ul>
+<li><a class="l" href="#about">About</a></li>
+<li><a class="l" href="#journey">Journey</a></li>
+<li><a class="l" href="#research">Research</a></li>
+<li><a class="l" href="#skills">Skills</a></li>
+<li><a class="l" href="#recognition">Recognition</a></li>
+<li><a class="l" href="#updates">Updates</a></li>
+<li><a class="l" href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+<header class="hero" id="top">
+<div class="wrap">
+<img class="portrait" src="photo.jpg" alt="Portrait of Dr. Bikram Paul Singh Lehri" width="200" height="200">
+<div>
+<p class="eyebrow">Associate Professor · Chandigarh University</p>
+<h1>Dr. Bikram Paul Singh Lehri</h1>
+<p class="role">Teaching <strong>Finance, Marketing, Organisational Behaviour</strong> and <strong>Entrepreneurship</strong> to MBA and M.A. Economics students in Mohali, Punjab.</p>
+<ul class="tags">
+<li>Ph.D. Finance</li>
+<li>UGC NET · Commerce &amp; Management</li>
+<li>NSS Programme Officer</li>
+</ul>
+<div class="cta">
+<a class="btn primary" href="#contact">Get in touch</a>
+<a class="btn ghost" href="https://orcid.org/0000-0003-1580-2957" target="_blank" rel="noopener">View research on ORCID</a>
+</div>
+</div>
+</div>
+</header>
+<div class="figures" aria-label="At a glance">
+<div class="wrap">
+<div class="fig"><b>10+</b><span>years teaching in higher education</span></div>
+<div class="fig"><b>24</b><span>research papers &amp; book chapters</span></div>
+<div class="fig"><b>7</b><span>patents, 2 published and 5 filed</span></div>
+<div class="fig"><b>2</b><span>textbooks in Finance &amp; Income Tax</span></div>
+<div class="fig"><b>6</b><span>institutions taught at across Punjab &amp; Himachal</span></div>
+</div>
+</div>
+<main>
+<section class="block" id="about">
+<div class="wrap head">
+<div><h2>About</h2></div>
+<div class="prose">
+<p>I am an Associate Professor at Chandigarh University, where I teach the flagship dual-specialisation MBA and the M.A. in Economics. My subject areas are Marketing, Organisational Behaviour, Entrepreneurship and Finance, and I hold a Ph.D. in Finance from Punjabi University, Patiala.</p>
+<p>My teaching is built around outcome-based curricula, guided student research and classroom methods that keep students engaged. Alongside teaching, I have served as NSS Programme Officer, as Superintendent for examinations, and as an admission counsellor who went on to lead the university's admissions team.</p>
+<p>I care most about mentoring: helping students find their direction, prepare for exams like UGC NET, and grow into confident professionals. This site is where I share my academic journey, research and what I am working on now.</p>
+</div>
+</div>
+</section>
+<section class="block" id="journey">
+<div class="wrap head">
+<div><h2>Academic journey</h2><span class="kicker">Teaching positions</span></div>
+<div>
+<ol class="timeline" reversed>
+<li><span class="when">Jun 2022 – Present</span><div><h3>Associate Professor <span class="now">Current</span></h3><p class="where">Chandigarh University, Mohali</p><p class="meta">MBA Flagship (Dual Specialisation) and M.A. Economics</p></div></li>
+<li><span class="when">Oct 2021 – Jun 2022</span><div><h3>Assistant Professor</h3><p class="where">Eternal University, Baru Sahib, Himachal Pradesh</p><p class="meta">MBA, MPH, BBA, B.Com and B.Tech</p></div></li>
+<li><span class="when">Feb 2020 – Oct 2021</span><div><h3>Assistant Professor</h3><p class="where">D.A.V. College, Hoshiarpur</p><p class="meta">M.Com and B.Com</p></div></li>
+<li><span class="when">Jul 2018 – Jan 2020</span><div><h3>Assistant Professor (Guest Faculty)</h3><p class="where">Punjabi University, Patiala</p><p class="meta">Department of Commerce &amp; Applied Management</p></div></li>
+<li><span class="when">Jun 2016 – Jan 2020</span><div><h3>Lecturer</h3><p class="where">Nishchay Edu. Services, Patiala</p><p class="meta">UGC/NTA NET coaching, Commerce and Management</p></div></li>
+<li><span class="when">Feb 2016 – May 2016</span><div><h3>Assistant Professor (Ad hoc)</h3><p class="where">ASRA Group of Colleges, Patiala</p><p class="meta">MBA (Finance) and BBA</p></div></li>
+</ol>
+<p class="sub" style="margin-top:44px">Education</p>
+<ol class="timeline">
+<li><span class="when">2023</span><div><h3>Ph.D. in Finance</h3><p class="where">Punjabi University, Patiala</p></div></li>
+<li><span class="when">2018</span><div><h3>UGC NET qualified</h3><p class="where">Both Commerce and Management</p></div></li>
+<li><span class="when">2015</span><div><h3>M.Com Honours (FYIC)</h3><p class="where">Punjabi University, Patiala</p><p class="meta">72.69%</p></div></li>
+<li><span class="when">2013</span><div><h3>B.Com Honours (FYIC)</h3><p class="where">Punjabi University, Patiala</p><p class="meta">72.21%</p></div></li>
+<li><span class="when">2010</span><div><h3>Senior Secondary (+2 Commerce)</h3><p class="where">D.A.V. Edward Ganj Public School, Malout</p><p class="meta">65.02%</p></div></li>
+<li><span class="when">2008</span><div><h3>Matriculation</h3><p class="where">Sacred Heart Convent School, Malout</p><p class="meta">71.57%</p></div></li>
+</ol>
+</div>
+</div>
+</section>
+<section class="block" id="research">
+<div class="wrap head">
+<div><h2>Research</h2><span class="kicker">Scopus &amp; UGC-CARE</span></div>
+<div>
+<div class="prose"><p>My research spans finance, management and interdisciplinary areas, published in Scopus-indexed and UGC-CARE listed journals. I also write for a general audience, including a newspaper article sharing academic insights beyond the classroom.</p></div>
+<div class="research">
+<div class="card"><b>24</b><h3>Papers &amp; chapters</h3><p>Research papers and book chapters in reputed journals and edited volumes.</p></div>
+<div class="card"><b>7</b><h3>Patents</h3><p>2 published and 5 filed, from applied and innovation-led research.</p></div>
+<div class="card"><b>2</b><h3>Textbooks</h3><p>Published textbooks in Finance and Income Tax.</p></div>
+</div>
+<div class="ids">
+<a class="id" href="https://orcid.org/0000-0003-1580-2957" target="_blank" rel="noopener"><em>ORCID</em>0000-0003-1580-2957</a>
+<a class="id" href="https://www.scopus.com/authid/detail.uri?authorId=59410315400" target="_blank" rel="noopener"><em>Scopus ID</em>59410315400</a>
+<a class="id" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814" target="_blank" rel="noopener"><em>LinkedIn</em>dr-bikram-paul-singh-lehri</a>
+</div>
+</div>
+</div>
+</section>
+<section class="block" id="skills">
+<div class="wrap head">
+<div><h2>Skills</h2></div>
+<div>
+<p class="sub">Teaching &amp; academics</p>
+<ul class="skills">
+<li>Outcome-Based Education (OBE) &amp; accreditation</li>
+<li>Curriculum development &amp; instructional design</li>
+<li>Technology-enhanced teaching</li>
+<li>Course material preparation</li>
+<li>Examination preparation</li>
+<li>Academic administration</li>
+</ul>
+<p class="sub">People &amp; leadership</p>
+<ul class="skills">
+<li>Academic mentorship &amp; student guidance</li>
+<li>Student counselling &amp; engagement</li>
+<li>Leadership &amp; team management</li>
+<li>Conflict resolution</li>
+<li>Public speaking &amp; networking</li>
+</ul>
+<p class="sub">Certifications</p>
+<ul class="plain">
+<li>Business Accounting and Computerised Accounting (Compulearn), National Institute of Finance and Accounts, 4 months</li>
+<li>Advanced Diploma in Computer Applications: MS Office, Web, Windows, data entry and typing</li>
+<li>Online course on Digital Marketing, ChatGPT &amp; AI with MS Office</li>
+<li>Professional training as a Medical First Responder and in life-saving skills</li>
+</ul>
+<p class="sub">Languages</p>
+<div class="lang">
+<div><b>English</b><small>C1</small></div>
+<div><b>Hindi</b><small>C1</small></div>
+<div><b>Punjabi</b><small>C1</small></div>
+</div>
+</div>
+</div>
+</section>
+<section class="block" id="recognition">
+<div class="wrap head">
+<div><h2>Recognition &amp; service</h2></div>
+<div>
+<div class="cards">
+<div class="card"><h3>Ambassador of Impact</h3><p>Awarded for contribution to institution building, Chandigarh University.</p></div>
+<div class="card"><h3>Certificate of Appreciation</h3><p>For significant contribution to admissions, Chandigarh University.</p></div>
+<div class="card"><h3>NSS Programme Officer</h3><p>Nominated and selected at Chandigarh University; trained NSS Programme Officer. Recognised for contributions to several 7-day NSS camps.</p></div>
+<div class="card"><h3>UGC/NTA NET</h3><p>Qualified in both Commerce and Management.</p></div>
+</div>
+<p class="sub">Training programmes</p>
+<ol class="plain train" style="gap:0">
+<li><span class="when">May–Jun 2020</span><span>Managing Online Classes and Co-Creating MOOCs 2.0, MHRD</span></li>
+<li><span class="when">Jun 2020</span><span>Open-Source Tools for Research, MHRD</span></li>
+<li><span class="when">May 2020</span><span>Enhancing Learning in Technical Education with Digital Platforms, Government Polytechnic College, Jhalawar</span></li>
+<li><span class="when">May 2020</span><span>How Bharat Perceives India: A Jurisprudential Insight</span></li>
+<li><span class="when">Apr 2019</span><span>Research Methodology, Punjabi University, Patiala</span></li>
+<li><span class="when">Jul 2017</span><span>Role of Higher Education and Teachers in the Development of Nations, Panjab University, Chandigarh</span></li>
+</ol>
+</div>
+</div>
+</section>
+<section class="block" id="updates">
+<div class="wrap head">
+<div><h2>Updates</h2><span class="kicker">News &amp; milestones</span></div>
+<div>
+<ul class="updates">
+<li><time datetime="2026-09">Sep 2026</time><div><h3>Launched youngprofessor.in</h3><p>My new home on the web for teaching, research and news. More updates coming soon.</p></div></li>
+<li><time datetime="2023">2023</time><div><h3>Awarded Ph.D. in Finance</h3><p>Punjabi University, Patiala.</p></div></li>
+<li><time datetime="2022-06">Jun 2022</time><div><h3>Joined Chandigarh University as Associate Professor</h3><p>Teaching the MBA Flagship programme and M.A. Economics.</p></div></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="block" style="border-bottom:0">
+<div class="wrap head">
+<div><h2>Beyond the classroom</h2></div>
+<div class="prose">
+<p>Outside academics I enjoy music and singing, creative writing and poetry, and a good film or web series. I also spend a lot of my time mentoring and counselling students, which is the part of this job I enjoy most.</p>
+</div>
+</div>
+</section>
+</main>
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Get in touch</h2>
+<p>For academic collaboration, research, guest lectures or student guidance, write to me or connect on LinkedIn.</p>
+<div class="clist">
+<a class="mail" href="mailto:Lehribikram@gmail.com" id="mail">Lehribikram@gmail.com</a>
+<button type="button" id="copy">Copy email</button>
+<a href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://orcid.org/0000-0003-1580-2957" target="_blank" rel="noopener">ORCID</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<span>© <span id="yr">2026</span> Dr. Bikram Paul Singh Lehri</span>
+<span>Malout &amp; Mohali, Punjab, India</span>
+</div>
+</footer>
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('copy').addEventListener('click', function(){
+var b = this, t = 'Lehribikram@gmail.com';
+function done(){ b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'Copy email'; }, 1800); }
+try {
+navigator.clipboard.writeText(t).then(done, function(){ selectMail(); });
+} catch(e){ selectMail(); }
+function selectMail(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+</script>
+</body>
+</html>
