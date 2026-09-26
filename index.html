@@ -389,6 +389,16 @@ h3{margin:0;font-size:19px;line-height:1.35;font-weight:700}
 .pod-player:hover .pod-frame{transform:perspective(1400px) rotateY(0) rotateX(0) scale(1.02);box-shadow:0 50px 110px -30px rgba(0,0,0,.95),0 0 0 1px var(--red),0 0 110px -10px var(--redglow)}
 .pod-frame img{width:100%;height:100%;object-fit:cover;color:transparent;transform:scale(1.05);transition:transform 1.2s var(--ease),filter .6s;filter:saturate(.9)}
 .pod-player:hover .pod-frame img{transform:scale(1.12);filter:saturate(1.1)}
+.pod-art{position:absolute;inset:0;transform:scale(1.02);transition:transform 1.2s var(--ease);container-type:inline-size}
+.pod-player:hover .pod-art{transform:scale(1.07)}
+.pod-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:none!important}
+.pod-plate{position:absolute;top:68%;bottom:2.5%;display:flex;flex-direction:column;justify-content:flex-end;gap:.6cqw;padding:0 0 0 1.6cqw;background:linear-gradient(180deg,rgba(20,4,6,0) 0%,rgba(20,4,6,.97) 30%,#140406 100%)}
+.pod-plate.l{left:0;width:33.5%}
+.pod-plate.r{right:0;width:36%;align-items:flex-start}
+.pod-plate small{font:600 1.35cqw/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#ffb3b6}
+.pod-plate span{display:block;padding:1.1cqw 1.6cqw;border-radius:0 2cqw 2cqw 0;background:linear-gradient(90deg,#b30f17,#E3161E);color:#fff;font:800 1.85cqw/1.15 var(--sans);margin-left:-1.6cqw;margin-bottom:1.2cqw;box-shadow:0 .6cqw 2cqw rgba(0,0,0,.5)}
+.pod-plate span em{display:block;font:500 1.3cqw/1.3 var(--sans);font-style:normal;opacity:.85;margin-top:.3cqw}
+.pod-plate.r span{border-radius:2cqw 0 0 2cqw;margin-left:0;width:100%}
 .pod-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.1) 40%,rgba(0,0,0,.75))}
 .pod-badge{position:absolute;top:18px;left:18px;display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.15)}
 .pod-badge i{width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 1.6s infinite}
@@ -714,12 +724,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
           <li><b>02</b>The shift from physical place to online space</li>
           <li><b>03</b>Practical insights for marketing students and professionals</li>
         </ul>
-        <div class="pod-meta rv"><span><i class="yt">▶</i>YouTube · CU Online</span><span>Speaker: Prof. (Dr.) Bikram Paul Singh Lehri</span></div>
+        <div class="pod-meta rv"><span><i class="yt">▶</i>YouTube · CU Online</span><span>Speaker: Prof. (Dr.) Bikram Paul Singh Lehri</span><span>Host: Prof. Navdeep Singh</span></div>
         <a class="btn line mag rv" href="https://www.youtube.com/watch?v=gmxDzVdg268" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
       <div class="pod-player rv d2">
         <div class="pod-frame" id="podFrame">
-          <img src="https://i.ytimg.com/vi/gmxDzVdg268/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gmxDzVdg268/hqdefault.jpg'" alt="Podcast: Mastering Marketing in the Digital Era" loading="lazy">
+          <div class="pod-art"><img src="https://i.ytimg.com/vi/gmxDzVdg268/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gmxDzVdg268/hqdefault.jpg'" alt="Podcast: Marketing Management in the Digital Era, speaker Prof. (Dr.) Bikram Paul Singh Lehri" loading="lazy"><span class="pod-plate l"><small>Host</small><span>Prof. Navdeep Singh<em>Assistant Professor, CU Online</em></span></span><span class="pod-plate r"><small>Speaker</small><span>Prof. (Dr.) Bikram Paul Singh Lehri<em>USB, Chandigarh University</em></span></span></div>
           <span class="pod-shade"></span>
           <span class="pod-badge"><i></i>Podcast</span>
           <button type="button" class="pod-play" id="podPlay" aria-label="Play the podcast video"><span class="ring"></span><span class="ring r2"></span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
