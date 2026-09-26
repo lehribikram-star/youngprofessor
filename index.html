@@ -41,7 +41,8 @@ img{max-width:100%;display:block}
 .grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
 .about .big,.drawer a,.acc summary,.pub .yr,.pubhead h3,.track span,.mail,.logo,.contact h2,.intro-mark,.rnum b,.stat b,.badge b,.st-title,.st-stats b{font-weight:600}
-body{letter-spacing:.005em}
+body{letter-spacing:.005em;font-variant-numeric:lining-nums}
+.stat b,.badge b,.rnum b,.st-stats b,.pub .yr,.hero h1,h2,.track span,.acc summary,.mail{font-variant-numeric:lining-nums proportional-nums;font-feature-settings:"lnum" 1}
 /* Intro */
 .intro{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:transform .9s var(--ease) .1s}
 .intro.done{transform:translateY(-100%)}
