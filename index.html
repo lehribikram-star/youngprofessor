@@ -279,23 +279,32 @@ h3{margin:0;font-size:19px;line-height:1.35;font-weight:700}
 .li-follow{display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-weight:700;font-size:14.5px;transition:border-color .3s,background .3s}
 .li-follow:hover{border-color:#0A66C2;background:rgba(10,102,194,.12)}
 .li-follow .lg{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#0A66C2;color:#fff;font-weight:800;font-size:13px}
-.lt-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
-.lt{position:relative;display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--ink);font:inherit;cursor:pointer;text-decoration:none;overflow:hidden;transform-origin:center;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s;will-change:transform}
-.js .lt.rv.in{transition:opacity 1s var(--ease),transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s}
-.lt:hover,.lt:focus-visible,.js .lt.rv.in:hover,.js .lt.rv.in:focus-visible{transform:scale(1.08) translateY(-6px);z-index:5;border-color:var(--red);box-shadow:0 30px 60px -20px rgba(0,0,0,.9),0 0 0 1px var(--red),0 0 40px -8px var(--redglow)}
-.lt-mini{position:relative;display:block;height:200px;overflow:hidden;background:#fff}
-.lt-mini iframe{position:absolute;top:0;left:0;width:500px;height:620px;border:0;transform:scale(.56);transform-origin:0 0;pointer-events:none;transition:transform .7s var(--ease)}
-.lt:hover .lt-mini iframe{transform:scale(.62) translateY(-18px)}
-.lt-shade{position:absolute;inset:auto 0 0 0;height:70px;background:linear-gradient(transparent,rgba(23,20,20,.85))}
-.lt-zoom{position:absolute;left:50%;bottom:14px;transform:translate(-50%,12px);opacity:0;padding:7px 14px;border-radius:999px;background:var(--red);color:#fff;font-size:12.5px;font-weight:700;white-space:nowrap;transition:opacity .4s,transform .4s var(--ease)}
-.lt:hover .lt-zoom,.lt:focus-visible .lt-zoom{opacity:1;transform:translate(-50%,0)}
-.lt-body{display:flex;flex-direction:column;gap:4px;padding:16px 18px 18px}
-.lt-body time{font-family:var(--mono);font-size:11.5px;color:var(--red);letter-spacing:.06em}
-.lt-body strong{font-size:15.5px;line-height:1.35}
-.lt-body small{color:var(--muted);font-size:13px;line-height:1.4}
-.lt-art .lt-mini{background:linear-gradient(160deg,#2a1414,#120d0d)}
-.lt-quote{position:absolute;inset:0;padding:22px;display:flex;align-items:center;font-family:var(--serif);font-size:19px;line-height:1.35;color:var(--ink);transition:transform .7s var(--ease)}
-.lt-art:hover .lt-quote{transform:scale(1.06)}
+.pf{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+.pf button{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);background:none;color:var(--muted);font:600 13.5px var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer;transition:all .3s var(--ease)}
+.pf button span{font-family:var(--mono);font-size:11px;min-width:20px;height:20px;border-radius:10px;display:grid;place-items:center;background:var(--line);color:var(--ink);transition:all .3s}
+.pf button:hover{color:var(--ink);border-color:var(--red)}
+.pf button.on{background:var(--red);border-color:var(--red);color:#fff}
+.pf button.on span{background:rgba(0,0,0,.25);color:#fff}
+.pc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.pc{position:relative;display:flex;flex-direction:column;gap:8px;text-align:left;padding:16px 16px 14px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--ink);font:inherit;text-decoration:none;cursor:pointer;overflow:hidden;transform-origin:center;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s,opacity .35s,background .3s}
+.pc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .45s var(--ease)}
+.pc:hover,.pc:focus-visible{transform:scale(1.06);z-index:3;border-color:var(--line2);background:#1c1717;box-shadow:0 22px 44px -18px rgba(0,0,0,.9),0 0 30px -10px var(--redglow)}
+.pc:hover::before,.pc:focus-visible::before{transform:scaleY(1)}
+.pc.out{opacity:0;transform:scale(.9)}
+.pc.gone{display:none}
+.pc-top{display:flex;align-items:center;gap:8px}
+.pc-ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--redsoft);color:var(--red);border:1px solid rgba(227,22,30,.25);flex:none}
+.pc-ic svg{width:14px;height:14px}
+.pc-kind{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pc-top time{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--red)}
+.pc strong{font-size:14.5px;line-height:1.35}
+.pc-ex{color:var(--muted);font-size:12.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pc-foot{margin-top:auto;padding-top:8px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.pc-st{font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+.pc-li{width:20px;height:20px;border-radius:5px;display:grid;place-items:center;background:var(--line);color:var(--muted);font-weight:800;font-size:10px;transition:background .3s,color .3s}
+.pc:hover .pc-li{background:#0A66C2;color:#fff}
+@media (max-width:1000px){.pc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.pc-grid{grid-template-columns:1fr}.pc:hover{transform:scale(1.02)}.pf button{padding:8px 12px;font-size:12.5px}}
 /* Pop-up */
 .lm{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:20px}
 .lm[hidden]{display:none}
@@ -317,8 +326,7 @@ h3{margin:0;font-size:19px;line-height:1.35;font-weight:700}
 .lm-nav{border:1px solid var(--line2);background:none;color:var(--ink);font:600 13.5px var(--sans);padding:9px 14px;border-radius:999px;cursor:pointer;transition:all .3s}
 .lm-nav:hover{background:var(--red);border-color:var(--red)}
 body.lock{overflow:hidden}
-@media (max-width:1000px){.lt-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:640px){.lt-grid{grid-template-columns:1fr 1fr;gap:14px}.lt-mini{height:150px}.lt-mini iframe{transform:scale(.36)}.lt:hover .lt-mini iframe{transform:scale(.4)}.lt:hover,.js .lt.rv.in:hover{transform:scale(1.03)}.lt-body{padding:12px}.lt-body strong{font-size:14px}.lt-body small{display:none}.lt-quote{font-size:15px;padding:14px}.lm-foot a{display:none}}
+@media (max-width:640px){.lm-foot a{display:none}}
 
 /* Beyond */
 .beyond{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
@@ -638,43 +646,41 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
       <div>
         <p class="label rv">Featured on LinkedIn</p>
         <h2 class="rv">Posts, news &amp; <em>milestones.</em></h2>
-        <p class="lead rv">Hover over a post to zoom in, and click to read it in full.</p>
+        <p class="lead rv">Choose a category, hover over a post to zoom in, and click to read it in full.</p>
       </div>
       <a class="li-follow rv" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814/" target="_blank" rel="noopener"><span class="lg li">in</span>Follow · 1,800+</a>
     </div>
-    <div class="lt-grid">
-      <button type="button" class="lt rv" data-id="7508516506553626626" data-title="Teaching beyond the classroom" data-date="Sep 2026">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7508516506553626626" title="Preview: Teaching beyond the classroom" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Sep 2026</time><strong>Teaching beyond the classroom</strong><small>Capstone Project live session, CU Online LMS</small></span>
-      </button>
-      <button type="button" class="lt rv d1" data-id="7410387182756229120" data-title="Promoted to Associate Professor" data-date="Dec 2025">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7410387182756229120" title="Preview: Promoted to Associate Professor" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Dec 2025</time><strong>Promoted to Associate Professor</strong><small>University School of Business, CU</small></span>
-      </button>
-      <button type="button" class="lt rv d2" data-id="7409608805422006272" data-title="Winner, CU's Got Talent" data-date="Dec 2025">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7409608805422006272" title="Preview: Winner, CU's Got Talent" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Dec 2025</time><strong>Winner, CU's Got Talent</strong><small>Singing Category, Staff Edition</small></span>
-      </button>
-      <button type="button" class="lt rv d3" data-id="7379912589985812480" data-title="NSS Programme Officer badge" data-date="Oct 2025">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7379912589985812480" title="Preview: NSS Programme Officer badge" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Oct 2025</time><strong>NSS Programme Officer badge</strong><small>NSS Orientation 2025</small></span>
-      </button>
-      <button type="button" class="lt rv" data-id="7361641440180932609" data-title="Recognised for admissions" data-date="Aug 2025">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7361641440180932609" title="Preview: Recognised for admissions" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Aug 2025</time><strong>Recognised for admissions</strong><small>Appreciation for leading admissions</small></span>
-      </button>
-      <button type="button" class="lt rv d1" data-id="7335603207999496193" data-title="Brains, Brands, and Burnout" data-date="Jun 2025">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7335603207999496193" title="Preview: Brains, Brands, and Burnout" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Jun 2025</time><strong>Brains, Brands, and Burnout</strong><small>My article in the Punjab Times</small></span>
-      </button>
-      <button type="button" class="lt rv d2" data-id="7317549557070942231" data-title="Podcast: Marketing in the Digital Era" data-date="Apr 2025">
-        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7317549557070942231" title="Preview: Podcast: Marketing in the Digital Era" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
-        <span class="lt-body"><time>Apr 2025</time><strong>Podcast: Marketing in the Digital Era</strong><small>CU Online podcast episode</small></span>
-      </button>
-      <a class="lt lt-art rv d3" href="https://www.linkedin.com/pulse/everyone-happy-illusion-dr-bikram-paul-singh-lehri-33ibc/" target="_blank" rel="noopener">
-        <span class="lt-mini"><span class="lt-quote">“Like most mornings, I stopped by the D1 Block canteen to grab a quick cup of tea…”</span><span class="lt-zoom">Read the article ↗</span></span>
-        <span class="lt-body"><time>LinkedIn article</time><strong>The “Everyone Is Happy” Illusion</strong><small>A reflection from campus life</small></span>
-      </a>
+    <div class="pf" id="pf" role="tablist" aria-label="Filter posts">
+      <button type="button" class="on" data-c="all">All <span>8</span></button>
+      <button type="button" data-c="writing">Writing &amp; media <span>3</span></button>
+      <button type="button" data-c="milestones">Milestones &amp; awards <span>3</span></button>
+      <button type="button" data-c="teaching">Teaching &amp; service <span>2</span></button>
+    </div>
+    <div class="pc-grid" id="pcGrid">
+      <button type="button" class="pc" data-cat="writing" data-id="7335603207999496193" data-title="Brains, Brands, and Burnout" data-date="Jun 2025"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span class="pc-kind">Newspaper article</span><time>Jun 2025</time></span>
+        <strong>Brains, Brands, and Burnout</strong><span class="pc-ex">The untold story of India's MBA aspirants, published in the Punjab Times.</span>
+        <span class="pc-foot"><span class="pc-st">95 reactions · 13 comments</span><span class="pc-li">in</span></span></button>
+      <a class="pc" data-cat="writing" href="https://www.linkedin.com/pulse/everyone-happy-illusion-dr-bikram-paul-singh-lehri-33ibc/" target="_blank" rel="noopener"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span class="pc-kind">LinkedIn article</span><time>Article</time></span>
+        <strong>The “Everyone Is Happy” Illusion</strong><span class="pc-ex">A reflection that began with a Monday morning cup of tea at the D1 Block canteen.</span>
+        <span class="pc-foot"><span class="pc-st">Read article ↗</span><span class="pc-li">in</span></span></a>
+      <button type="button" class="pc" data-cat="writing" data-id="7317549557070942231" data-title="Mastering Marketing in the Digital Era" data-date="Apr 2025"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span class="pc-kind">Podcast</span><time>Apr 2025</time></span>
+        <strong>Mastering Marketing in the Digital Era</strong><span class="pc-ex">Why classic marketing ideas still matter as business moves from place to online space.</span>
+        <span class="pc-foot"><span class="pc-st">32 reactions · 12 comments</span><span class="pc-li">in</span></span></button>
+      <button type="button" class="pc" data-cat="milestones" data-id="7410387182756229120" data-title="Promoted to Associate Professor" data-date="Dec 2025"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span><span class="pc-kind">Promotion</span><time>Dec 2025</time></span>
+        <strong>Promoted to Associate Professor</strong><span class="pc-ex">University School of Business, Chandigarh University, after nearly four years.</span>
+        <span class="pc-foot"><span class="pc-st">467 reactions · 130 comments</span><span class="pc-li">in</span></span></button>
+      <button type="button" class="pc" data-cat="milestones" data-id="7409608805422006272" data-title="Winner, CU's Got Talent" data-date="Dec 2025"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span><span class="pc-kind">Award</span><time>Dec 2025</time></span>
+        <strong>Winner, CU's Got Talent</strong><span class="pc-ex">Among the winners in the Singing Category, Staff Edition.</span>
+        <span class="pc-foot"><span class="pc-st">94 reactions · 17 comments</span><span class="pc-li">in</span></span></button>
+      <button type="button" class="pc" data-cat="milestones" data-id="7361641440180932609" data-title="Honoured for leading admissions" data-date="Aug 2025"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span><span class="pc-kind">Recognition</span><time>Aug 2025</time></span>
+        <strong>Honoured for leading admissions</strong><span class="pc-ex">Appreciation from the Senior Director for my contribution to admissions.</span>
+        <span class="pc-foot"><span class="pc-st">View post</span><span class="pc-li">in</span></span></button>
+      <button type="button" class="pc" data-cat="teaching" data-id="7508516506553626626" data-title="Teaching beyond the classroom" data-date="Sep 2026"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><span class="pc-kind">Live session</span><time>Sep 2026</time></span>
+        <strong>Teaching beyond the classroom</strong><span class="pc-ex">Academic Live Session on Capstone Project for BBA students, CU Online LMS.</span>
+        <span class="pc-foot"><span class="pc-st">68 reactions</span><span class="pc-li">in</span></span></button>
+      <button type="button" class="pc" data-cat="teaching" data-id="7379912589985812480" data-title="NSS Programme Officer badge" data-date="Oct 2025"><span class="pc-top"><span class="pc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><span class="pc-kind">NSS</span><time>Oct 2025</time></span>
+        <strong>NSS Programme Officer badge</strong><span class="pc-ex">Honoured with the badge at NSS Orientation 2025, Chandigarh University.</span>
+        <span class="pc-foot"><span class="pc-st">177 reactions · 35 comments</span><span class="pc-li">in</span></span></button>
     </div>
   </div>
 </section>
@@ -878,18 +884,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   function applyFilter(){pubs.querySelectorAll('.pub').forEach(function(li){li.hidden=!(flt==='all'||li.dataset.type===flt);});}
 
 
-  /* LinkedIn thumbnails + pop-up */
-  var grid=d.querySelector('.lt-grid');
-  function loadThumbs(){grid.querySelectorAll('iframe[data-src]').forEach(function(f){f.src=f.dataset.src;f.removeAttribute('data-src');});}
-  if('IntersectionObserver' in window){var lo=new IntersectionObserver(function(es){if(es[0].isIntersecting){loadThumbs();lo.disconnect();}},{rootMargin:'500px'});lo.observe(grid);}else loadThumbs();
-  var thumbs=[].slice.call(grid.querySelectorAll('button.lt')), lm=d.getElementById('lm'), lmF=d.getElementById('lmFrame'), idx=0, lastFocus=null;
+  /* LinkedIn posts: filter + pop-up */
+  var grid=d.getElementById('pcGrid'), all=[].slice.call(grid.querySelectorAll('.pc')), thumbs=[], lm=d.getElementById('lm'), lmF=d.getElementById('lmFrame'), idx=0, lastFocus=null;
+  function visibleThumbs(){return all.filter(function(c){return c.tagName==='BUTTON'&&!c.classList.contains('gone');});}
+  d.getElementById('pf').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var c=b.dataset.c;
+    [].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);});
+    all.forEach(function(el){el.classList.add('out');});
+    setTimeout(function(){all.forEach(function(el){var show=c==='all'||el.dataset.cat===c;el.classList.toggle('gone',!show);});
+      requestAnimationFrame(function(){all.forEach(function(el){if(!el.classList.contains('gone'))el.classList.remove('out');});});},reduce?0:260);});
+  all.forEach(function(el){if(el.tagName==='BUTTON')el.addEventListener('click',function(){thumbs=visibleThumbs();openM(thumbs.indexOf(el));});});
   function show(i){idx=(i+thumbs.length)%thumbs.length;var t=thumbs[idx];
     d.getElementById('lmTitle').textContent=t.dataset.title;d.getElementById('lmDate').textContent=t.dataset.date;
     lmF.src='https://www.linkedin.com/embed/feed/update/urn:li:activity:'+t.dataset.id;
     d.getElementById('lmOpen').href='https://www.linkedin.com/feed/update/urn:li:activity:'+t.dataset.id+'/';}
   function openM(i){lastFocus=d.activeElement;show(i);lm.hidden=false;d.body.classList.add('lock');requestAnimationFrame(function(){requestAnimationFrame(function(){lm.classList.add('show');});});lm.querySelector('.lm-x').focus();}
   function closeM(){lm.classList.remove('show');d.body.classList.remove('lock');setTimeout(function(){lm.hidden=true;lmF.src='about:blank';},reduce?0:450);if(lastFocus)lastFocus.focus();}
-  thumbs.forEach(function(t,i){t.addEventListener('click',function(){openM(i);});});
   lm.querySelectorAll('[data-close]').forEach(function(el){el.addEventListener('click',closeM);});
   d.getElementById('lmPrev').addEventListener('click',function(){show(idx-1);});
   d.getElementById('lmNext').addEventListener('click',function(){show(idx+1);});
