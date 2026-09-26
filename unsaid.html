@@ -64,7 +64,7 @@ body.dark .glow{text-shadow:0 0 3px #fff,0 0 10px var(--c),0 0 24px var(--c),0 0
 .hero{position:relative;padding-block:60px 26px;text-align:center}
 .kick{display:flex;width:fit-content;margin:0 auto;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
 .kick i{width:8px;height:8px;border-radius:50%;background:#22e4ff;box-shadow:0 0 10px #22e4ff}
-.sign-title{position:relative;display:inline-block;margin:26px 0 10px;padding:14px 38px 26px;border-radius:28px}
+.sign-title{position:relative;display:inline-block;margin:26px 0 30px;padding:14px 38px 26px;border-radius:28px}
 .sign-title::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #ff2e88;box-shadow:0 0 10px #ff2e88,inset 0 0 10px #ff2e88,0 0 40px rgba(255,46,136,.45);opacity:.9}
 .sign-title h1{margin:0;font-weight:400;line-height:1}
 .sign-title .w1{display:block;font-family:"Pacifico",cursive;font-size:clamp(36px,5.6vw,68px);--c:#22e4ff;margin-bottom:4px}
@@ -197,15 +197,36 @@ textarea:focus,input[type=text]:focus{outline:none;border-color:#22e4ff;box-shad
 .readsign .f-arcade{--fs:24px}
 .readsign .f-sign{--fs:36px}
 .clap{margin-top:16px;display:flex;justify-content:center}
-.toast{position:fixed;left:50%;bottom:24px;z-index:90;transform:translate(-50%,30px);opacity:0;max-width:min(520px,calc(100% - 32px));padding:14px 20px;border-radius:14px;background:#0f0d11;border:1.5px solid #5dff7a;box-shadow:0 0 18px rgba(93,255,122,.35);font-size:15px;transition:all .45s var(--ease);pointer-events:none}
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));z-index:90;transform:translate(-50%,30px);opacity:0;max-width:min(520px,calc(100% - 32px));padding:14px 20px;border-radius:14px;background:#0f0d11;border:1.5px solid #5dff7a;box-shadow:0 0 18px rgba(93,255,122,.35);font-size:15px;transition:all .45s var(--ease);pointer-events:none}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .burst{position:fixed;z-index:95;pointer-events:none;font-size:24px;animation:burst 1.2s var(--ease) forwards}
 @keyframes burst{0%{opacity:1;transform:translate(0,0) scale(.5)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.2) rotate(var(--rt))}}
 
-footer{padding-block:28px;border-top:1px solid var(--line);color:var(--dim);font-size:14px;background:rgba(8,7,10,.7)}
+footer{padding-block:28px 100px;border-top:1px solid var(--line);color:var(--dim);font-size:14px;background:rgba(8,7,10,.7)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 footer a{color:var(--muted)}
 @media (max-width:600px){.notes{columns:1}.sign-title{padding:12px 18px 20px}.stats{gap:22px}.mbox{padding:22px 16px 18px}}
+/* play dock */
+.dock{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:60;display:flex;gap:4px;padding:6px;border-radius:999px;background:rgba(15,13,17,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line2);box-shadow:0 12px 30px rgba(0,0,0,.6)}
+.dock button{display:flex;align-items:center;gap:6px;border:0;background:none;padding:9px 13px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;color:#ddd;white-space:nowrap;transition:background .25s,color .25s}
+.dock button i{font-style:normal;font-size:16px;line-height:1}
+.dock button:hover{background:#221e24}
+.dock button[aria-pressed=true]{background:#fff;color:#111}
+.dock .hot{border:1.5px solid #ff2e88;color:#ffe3f0;box-shadow:0 0 10px rgba(255,46,136,.45)}
+@media (max-width:640px){.dock button span{display:none}.dock button{padding:10px 12px}.dock .hot span{display:inline}}
+.torch{position:fixed;inset:0;z-index:55;pointer-events:none;background:radial-gradient(circle 160px at var(--x,50%) var(--y,50%),transparent 0,transparent 55%,rgba(0,0,0,.92) 100%)}
+body[data-wall=night] .wall-bg{background:
+  radial-gradient(1.3px 1.3px at 12px 18px,rgba(255,255,255,.8) 50%,transparent 51%) 0 0/97px 89px,
+  radial-gradient(1px 1px at 55px 70px,rgba(255,255,255,.55) 50%,transparent 51%) 0 0/131px 127px,
+  radial-gradient(1.6px 1.6px at 90px 30px,rgba(190,220,255,.7) 50%,transparent 51%) 0 0/211px 193px,
+  radial-gradient(1400px 700px at 50% 115%,rgba(40,70,200,.35),transparent 70%),
+  #04050d}
+body[data-wall=aurora] .wall-bg{background:linear-gradient(125deg,#06101f,#1d0b36,#04302c,#2c0b22,#06101f);background-size:400% 400%;animation:aurora 22s ease-in-out infinite alternate}
+@keyframes aurora{to{background-position:100% 100%}}
+.review{text-align:center;padding:4px 4px 2px}
+.review .big{margin:0 0 6px;font-size:18px;font-weight:800}
+.review p{margin:0 0 10px;color:var(--muted);font-size:15px}
+.review .go{font-family:"Tilt Neon",var(--sans);font-size:22px;--c:#ffe14d;margin:14px 0 18px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -215,7 +236,6 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <a class="logo" href="index.html"><b>BL</b><span>young<em>professor</em>.in</span></a>
     <div class="nlinks">
-      <button type="button" id="lights" aria-pressed="false">💡 Lights off</button>
       <a class="hz" href="student.html">Student Zone</a>
       <a href="index.html">← Main site</a>
     </div>
@@ -226,7 +246,6 @@ footer a{color:var(--muted)}
   <div class="sparks" id="sparks" aria-hidden="true"></div>
   <span class="kick"><i></i>For every student I have taught</span>
   <div class="sign-title"><h1><span class="w1 glow">Things I</span><span class="w2 glow">NEV<span class="fl">E</span>R SAID</span></h1></div>
-  <p class="sub-sign glow">…to you, Sir.</p>
   <p class="note">“Many times, many talks are left unsaid. A thank-you after class, a memory from a lecture, the day something finally clicked, the thing you wanted to share but never did. This space is created for you. If you have something to say to me, write your heart out. Your words stay with me for a lifetime and keep me going. Your name is optional.”<span>Dr. Bikram Paul Singh Lehri</span></p>
   <div class="hero-actions">
     <button type="button" class="cta" id="openWrite">✍️ Say it now</button>
@@ -242,7 +261,7 @@ footer a{color:var(--muted)}
 <section class="board" id="board">
   <div class="wrap">
     <div class="bar">
-      <h2>Said, finally, to <em>Lehri Sir</em></h2>
+      <h2>Unsaid, <em>no more</em></h2>
       <div class="seg" id="sortbar" hidden>
         <button type="button" class="on" data-s="new">Newest</button>
         <button type="button" data-s="old">Oldest</button>
@@ -260,7 +279,7 @@ footer a{color:var(--muted)}
     <div class="grid">
       <div class="card"><span class="i">🎨</span><b>Make it yours</b><span>Pick a neon colour, a lettering style and an effect, and add emojis. You see it glow live as you type.</span></div>
       <div class="card"><span class="i">🕶️</span><b>Name is optional</b><span>Leave your name empty, or tick “anonymous”, and your note shows as “A student”.</span></div>
-      <div class="card"><span class="i">🛡️</span><b>Kept respectful</b><span>Notes go live within a few minutes. Anything offensive, personal or off-topic is removed.</span></div>
+      <div class="card"><span class="i">🛡️</span><b>Kept respectful</b><span>Notes go live within a few minutes. Anything abusive is removed.</span></div>
     </div>
   </div>
 </section>
@@ -270,9 +289,10 @@ footer a{color:var(--muted)}
   <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="wTitle">
     <button type="button" class="mx" data-close aria-label="Close">✕</button>
     <h3 id="wTitle">Say what you never said</h3>
-    <p class="sub">Short and real, up to 300 characters.</p>
+    <p class="sub">Go for it. Just say it. ✨ Up to 300 characters.</p>
     <div class="preview"><div class="sign lit" id="pv"><span class="scr a"></span><span class="scr b"></span><p class="msg" id="pvMsg"></p><div class="by"><b id="pvBy">— A student</b><span>Preview</span></div></div></div>
     <form id="wForm" novalidate>
+     <div id="wFields">
       <label class="fld" for="wMsg">Your note
         <textarea id="wMsg" maxlength="300" required placeholder="Sir, I never told you, but…"></textarea>
       </label>
@@ -294,10 +314,17 @@ footer a{color:var(--muted)}
       <label class="anon" for="wAnon"><input type="checkbox" id="wAnon"> Post anonymously (hide my name)</label>
       <div class="acts">
         <button type="button" class="dice" id="dice">🎲 Surprise me</button>
-        <button type="submit" class="send" id="wSend">Light it up ✨</button>
+        <button type="submit" class="send" id="wSend">Next: check it once ✨</button>
       </div>
+     </div>
+     <div class="review" id="wReview" hidden>
+       <p class="big">This is how your note will glow on the wall.</p>
+       <p>Read it once. After posting it cannot be edited, so check the words and spelling now.</p>
+       <p class="go glow">Looks good? Go for it. Just say it! 🚀</p>
+       <div class="acts"><button type="button" class="dice" id="wEdit">✏️ Edit</button><button type="button" class="send" id="wPost">Post it on the wall 🚀</button></div>
+     </div>
       <div class="err" id="wErr" hidden></div>
-      <p class="fine">This page is public, so please keep it respectful. Offensive, personal or off-topic notes are removed.</p>
+      <p class="fine">This page is public. Abusive notes are removed.</p>
     </form>
   </div>
 </div>
@@ -312,6 +339,14 @@ footer a{color:var(--muted)}
 </div>
 
 <div class="toast" id="toast" role="status"></div>
+<div class="torch" id="torchOv" hidden aria-hidden="true"></div>
+<div class="dock" role="toolbar" aria-label="Play with the wall">
+  <button type="button" id="lights" aria-pressed="false" title="Lights"><i>💡</i><span id="lightsTxt">Lights off</span></button>
+  <button type="button" id="torch" aria-pressed="false" title="Torch"><i>🔦</i><span>Torch</span></button>
+  <button type="button" id="wallBtn" title="Change the wall"><i>🎨</i><span id="wallTxt">Wall: Brick</span></button>
+  <button type="button" id="lucky" title="Random note"><i>🎲</i><span>Random note</span></button>
+  <button type="button" class="hot" id="dockWrite"><i>✍️</i><span>Say it</span></button>
+</div>
 
 <footer>
   <div class="wrap"><span>Things I Never Said · <a href="index.html">youngprofessor.in</a></span><span><a href="student.html">Student Zone</a></span></div>
@@ -337,7 +372,7 @@ var WALL = {
     'Mood':'😊 😄 😁 😂 🤣 😅 😎 🤩 😇 🤓 🥹 😌',
     'Class':'📚 🎓 ✍️ 💡 🧠 📈 💼 📝 📊 💰 🎤 🎶 ☕ 🇮🇳'
   };
-  var PROMPTS=['Sir, I never told you, but…','The class I still remember is…','You changed the way I see…','Because of you, today I am…','One thing I learnt from you…','Thank you for that day when…','I cleared NET because…','Your line that stuck with me:','Sorry for bunking that class 😅, but…','If I could say one thing…'];
+  var PROMPTS=['Sir, I never told you, but…','Something I always wanted to tell you…','The class I still remember is…','I always noticed that you…','Because of you, today I am…','Thank you for that day when…','Your line that stuck with me:','Sorry for bunking that class 😅, but…','If I could say one thing…','Honestly, Sir…'];
   function style(s){var p=String(s||'').split('|');return {c:COLS[p[0]]?p[0]:'pink',f:FONTS[p[1]]?p[1]:'classic',x:FX[p[2]]?p[2]:'steady'};}
   function styleStr(o){return o.c+'|'+o.f+'|'+o.x;}
 
@@ -427,7 +462,22 @@ var WALL = {
 
   /* lights toggle */
   var lb=d.getElementById('lights');
-  lb.addEventListener('click',function(){var on=d.body.classList.toggle('dark');lb.setAttribute('aria-pressed',on);lb.textContent=on?'💡 Lights on':'💡 Lights off';});
+  lb.addEventListener('click',function(){var on=d.body.classList.toggle('dark');lb.setAttribute('aria-pressed',on);d.getElementById('lightsTxt').textContent=on?'Lights on':'Lights off';});
+
+  /* torch */
+  var tov=d.getElementById('torchOv'),tb=d.getElementById('torch');
+  function mv(x,y){tov.style.setProperty('--x',x+'px');tov.style.setProperty('--y',y+'px');}
+  addEventListener('pointermove',function(e){if(!tov.hidden)mv(e.clientX,e.clientY);},{passive:true});
+  addEventListener('touchmove',function(e){if(!tov.hidden&&e.touches[0])mv(e.touches[0].clientX,e.touches[0].clientY);},{passive:true});
+  addEventListener('touchstart',function(e){if(!tov.hidden&&e.touches[0])mv(e.touches[0].clientX,e.touches[0].clientY);},{passive:true});
+  tb.addEventListener('click',function(){var on=tov.hidden;tov.hidden=!on;tb.setAttribute('aria-pressed',on);if(on){mv(innerWidth/2,innerHeight/2);toast('Torch on 🔦 Move your mouse or finger to explore the wall.');}});
+
+  /* wall styles */
+  var WALLS=[['brick','Brick'],['night','Night sky'],['aurora','Aurora']],wi=0;
+  d.getElementById('wallBtn').addEventListener('click',function(){wi=(wi+1)%WALLS.length;d.body.dataset.wall=WALLS[wi][0];d.getElementById('wallTxt').textContent='Wall: '+WALLS[wi][1];btnBurst(this,['🎨','✨']);});
+
+  /* random note */
+  d.getElementById('lucky').addEventListener('click',function(){if(!all.length){toast('No notes yet. Be the first to say it! ✍️');return;}btnBurst(this,['🎲','✨']);openRead(all[Math.floor(Math.random()*all.length)]);});
 
   /* composer */
   var cur={c:'pink',f:'classic',x:'steady'};
@@ -461,9 +511,10 @@ var WALL = {
   var eTog=d.getElementById('eTog');
   eTog.addEventListener('click',function(){var o=eTog.getAttribute('aria-expanded')!=='true';eTog.setAttribute('aria-expanded',o);d.getElementById('emo').hidden=!o;});
 
-  function openWrite(start){d.getElementById('wErr').hidden=true;if(start&&!msg.value.trim())msg.value=start+' ';paint();openModal('mWrite');
+  function openWrite(start){d.getElementById('wErr').hidden=true;review(false);if(start&&!msg.value.trim())msg.value=start+' ';paint();openModal('mWrite');
     setTimeout(function(){if(start||matchMedia('(min-width:700px)').matches){msg.focus();var l=msg.value.length;try{msg.setSelectionRange(l,l);}catch(x){}}},350);}
   d.getElementById('openWrite').addEventListener('click',function(){openWrite();});
+  d.getElementById('dockWrite').addEventListener('click',function(){openWrite();});
 
   /* starter lines marquee (duplicated so the loop is seamless) */
   var tr=d.getElementById('prompts');
@@ -471,29 +522,35 @@ var WALL = {
     b.addEventListener('click',function(){openWrite(t);});tr.appendChild(b);});
 
   /* filter: offensive words, and personal remarks that don't belong on a teacher's public page */
-  var BAD=['fuck','shit','bitch','bastard','asshole','cunt','slut','whore','motherf','madarch','bhenchod','behenchod','bhosd','chutiy','gaand','gandu','randi','harami','kutta','kutti','lund','lauda','bsdk','teri maa','kamina','kameena','worst teacher','hate you',
-    ' dick ',' mc ',' bc ',' loda ',' saala ',' saali ',' idiot ',' stupid ',
-    ' love you ',' luv you ',' love u ',' luv u ',' sexy ',' hot ',' hottie ',' handsome ',' babe ',' baby ',' darling ',' jaan ',' jaanu ',' crush ',' marry ',' kiss ',' date me ',' dating ',' girlfriend ',' boyfriend ',' whatsapp ',' insta id ',' phone number '];
+  var BAD=['fuck','shit','bitch','bastard','asshole','cunt','slut','whore','motherf','madarch','bhenchod','behenchod','bhosd','chutiy','gaand','gandu','randi','harami','kutta','kutti','lund','lauda','bsdk','teri maa','kamina','kameena',
+    ' dick ',' mc ',' bc ',' loda ',' saala ',' saali ',' idiot ',' stupid ',' worst teacher ',' hate you '];
   function isBlocked(s){s=' '+s.toLowerCase().replace(/[^a-zऀ-੿ ]+/g,' ').replace(/\s+/g,' ')+' ';for(var i=0;i<BAD.length;i++)if(s.indexOf(BAD[i])>-1)return true;return false;}
   function toast(t){var el=d.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(function(){el.classList.remove('show');},6000);}
 
+  function vals(){var anon=d.getElementById('wAnon').checked;return {m:msg.value.trim(),n:anon?'':d.getElementById('wName').value.trim(),p:d.getElementById('wProg').value.trim()};}
+  function review(on){d.getElementById('wFields').hidden=on;d.getElementById('wReview').hidden=!on;d.getElementById('wTitle').textContent=on?'Check it once 👀':'Say what you never said';
+    var box=d.querySelector('#mWrite .mbox');if(box)box.scrollTop=0;}
   d.getElementById('wForm').addEventListener('submit',function(e){
     e.preventDefault();
-    var err=d.getElementById('wErr'), m=msg.value.trim(), anon=d.getElementById('wAnon').checked,
-        n=anon?'':d.getElementById('wName').value.trim(), p=d.getElementById('wProg').value.trim();
-    if(m.length<3||PROMPTS.indexOf(m)>-1){err.textContent='Please write a few words of your own first.';err.hidden=false;msg.focus();return;}
-    if(isBlocked(m+' '+n+' '+p)){err.textContent='This page is public and meant for notes about learning and class. Please rephrase your note.';err.hidden=false;return;}
+    var err=d.getElementById('wErr'),v=vals();err.hidden=true;
+    if(v.m.length<3||PROMPTS.indexOf(v.m)>-1){err.textContent='Please write a few words of your own first.';err.hidden=false;msg.focus();return;}
+    if(isBlocked(v.m+' '+v.n+' '+v.p)){err.textContent='Please remove the abusive words and try again.';err.hidden=false;return;}
+    review(true);
+  });
+  d.getElementById('wEdit').addEventListener('click',function(){review(false);msg.focus();});
+  d.getElementById('wPost').addEventListener('click',function(){
+    var err=d.getElementById('wErr'),v=vals(),btn=this;
     if(!WALL.formAction){err.textContent='This wall is being set up. Please try again soon.';err.hidden=false;return;}
-    var fd=new FormData();fd.append(WALL.fields.message,m);if(n)fd.append(WALL.fields.name,n);if(p)fd.append(WALL.fields.programme,p);fd.append(WALL.fields.style,styleStr(cur));
-    var btn=d.getElementById('wSend');btn.disabled=true;btn.textContent='Lighting it up…';
+    var fd=new FormData();fd.append(WALL.fields.message,v.m);if(v.n)fd.append(WALL.fields.name,v.n);if(v.p)fd.append(WALL.fields.programme,v.p);fd.append(WALL.fields.style,styleStr(cur));
+    btn.disabled=true;btn.textContent='Lighting it up…';
     fetch(WALL.formAction,{method:'POST',mode:'no-cors',body:fd}).then(function(){
-      all.unshift({t:new Date(),m:m,n:n,p:p,s:styleStr(cur)});sortMode='new';render();
-      btnBurst(btn);
+      all.unshift({t:new Date(),m:v.m,n:v.n,p:v.p,s:styleStr(cur)});sortMode='new';render();
+      burst(innerWidth/2,innerHeight/2,['🎉','✨','🌟','🎊','👏'],30);
       closeModal(d.getElementById('mWrite'));msg.value='';upd();
-      toast('Said, finally. Thank you! Your note will be visible to everyone within a few minutes.');
+      toast('You said it! 🎉 Thank you. Your note will be visible to everyone within a few minutes.');
       setTimeout(function(){d.getElementById('board').scrollIntoView({behavior:reduce?'auto':'smooth'});},300);
     }).catch(function(){err.textContent='Could not send right now. Please check your internet and try again.';err.hidden=false;})
-    .finally(function(){btn.disabled=false;btn.textContent='Light it up ✨';});
+    .finally(function(){btn.disabled=false;btn.textContent='Post it on the wall 🚀';});
   });
 
   d.querySelectorAll('#sortbar button').forEach(function(b){b.addEventListener('click',function(){sortMode=b.dataset.s;d.querySelectorAll('#sortbar button').forEach(function(x){x.classList.toggle('on',x===b);});render();});});
