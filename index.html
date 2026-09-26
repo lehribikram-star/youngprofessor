@@ -273,6 +273,30 @@ h3{margin:0;font-size:19px;line-height:1.35;font-weight:700}
 .up:hover .go{color:var(--red2)}
 .up.new::after{content:"NEW";position:absolute;top:22px;right:22px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;background:var(--red);color:#fff;padding:3px 8px;border-radius:4px}
 
+
+/* LinkedIn featured */
+.li-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px}
+.li-ctrl{display:flex;gap:10px;align-items:center}
+.li-follow{display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-weight:700;font-size:14.5px;transition:border-color .3s,background .3s}
+.li-follow:hover{border-color:#0A66C2;background:rgba(10,102,194,.12)}
+.li-follow .lg{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#0A66C2;color:#fff;font-weight:800;font-size:13px}
+.li-arrow{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:none;color:var(--ink);font-size:18px;cursor:pointer;transition:all .3s}
+.li-arrow:hover{background:var(--red);border-color:var(--red)}
+.li-rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px max(24px,calc((100vw - 1180px)/2 + 24px)) 30px;scroll-padding-inline:max(24px,calc((100vw - 1180px)/2 + 24px));scrollbar-width:thin;scrollbar-color:var(--red) var(--line)}
+.li-rail::-webkit-scrollbar{height:6px}.li-rail::-webkit-scrollbar-track{background:var(--line);border-radius:3px}.li-rail::-webkit-scrollbar-thumb{background:var(--red);border-radius:3px}
+.li-card{flex:0 0 min(420px,86vw);scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--panel);overflow:hidden;transition:border-color .4s,transform .4s var(--ease)}
+.li-card:hover{border-color:var(--red);transform:translateY(-6px)}
+.li-card header{padding:22px 24px 16px}
+.li-card time{font-family:var(--mono);font-size:12.5px;color:var(--red);letter-spacing:.06em}
+.li-card h3{margin-top:8px}
+.li-card header p{color:var(--muted);font-size:14.5px;margin:6px 0 0}
+.li-frame{position:relative;margin:0 14px;border-radius:14px;overflow:hidden;background:#fff;height:520px}
+.li-frame iframe{position:relative;z-index:1;width:100%;height:100%;border:0;display:block}
+.li-load{position:absolute;inset:0;display:grid;place-items:center;color:#666;font-family:var(--mono);font-size:13px}
+.li-open{margin:16px 24px 22px;font-family:var(--mono);font-size:13px;color:var(--muted);text-decoration:none;transition:color .3s}
+.li-open:hover{color:var(--red2)}
+.li-art .li-quote{flex:1;margin:0 14px;border-radius:14px;padding:34px 28px;background:linear-gradient(160deg,#1f1616,var(--bg2));font-family:var(--serif);font-size:28px;line-height:1.35;display:flex;align-items:center;min-height:520px;border:1px solid var(--line)}
+
 /* Beyond */
 .beyond{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .hobbies{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -352,7 +376,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
       <li><a href="#journey">Journey</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#recognition">Recognition</a></li>
-      <li><a href="#updates">Updates</a></li>
+      <li><a href="#updates">LinkedIn</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
@@ -364,7 +388,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   <a href="#journey"><span>03</span>Journey</a>
   <a href="#research"><span>04</span>Research</a>
   <a href="#recognition"><span>05</span>Recognition</a>
-  <a href="#updates"><span>06</span>Updates</a>
+  <a href="#updates"><span>06</span>LinkedIn</a>
   <a href="#contact"><span>07</span>Contact</a>
 </div>
 
@@ -587,16 +611,60 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 
 <section class="sec" id="updates">
   <div class="wrap">
-    <p class="label rv">Updates</p>
-    <h2 class="rv">News, posts &amp; <em>milestones.</em></h2>
-    <div class="upd">
-      <a class="up new rv" href="https://www.linkedin.com/feed/update/urn:li:activity:7508516506553626626/" target="_blank" rel="noopener"><time>Sep 2026</time><h3>Academic Live Session: Capstone Project</h3><p>Live session for BBA Semester 3 students on CU Online LMS, turning ideas into real-world solutions.</p><span class="go">Read on LinkedIn ↗</span></a>
-      <a class="up rv d1" href="https://www.linkedin.com/feed/update/urn:li:activity:7410387182756229120/" target="_blank" rel="noopener"><time>Dec 2025</time><h3>Promoted to Associate Professor</h3><p>University School of Business, Chandigarh University, after nearly four years there.</p><span class="go">Read on LinkedIn ↗</span></a>
-      <a class="up rv d2" href="https://www.linkedin.com/feed/update/urn:li:activity:7409608805422006272/" target="_blank" rel="noopener"><time>Dec 2025</time><h3>Winner at CU's Got Talent</h3><p>Among the winners in the Singing Category, Staff Edition.</p><span class="go">Read on LinkedIn ↗</span></a>
-      <a class="up rv" href="https://www.linkedin.com/pulse/everyone-happy-illusion-dr-bikram-paul-singh-lehri-33ibc/" target="_blank" rel="noopener"><time>Article</time><h3>The “Everyone Is Happy” Illusion</h3><p>A reflection that began with a Monday morning cup of tea at the D1 Block canteen.</p><span class="go">Read the article ↗</span></a>
-      <a class="up rv d1" href="https://www.linkedin.com/feed/update/urn:li:activity:7317549557070942231/" target="_blank" rel="noopener"><time>Podcast · 2025</time><h3>Mastering Marketing in the Digital Era</h3><p>CU Online podcast on how classic marketing ideas carry into the digital age.</p><span class="go">Listen via LinkedIn ↗</span></a>
-      <a class="up rv d2" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814/" target="_blank" rel="noopener"><time>Sep 2026</time><h3>Launched youngprofessor.in</h3><p>My new home on the web. Follow me on LinkedIn for regular posts.</p><span class="go">Follow on LinkedIn ↗</span></a>
+    <div class="li-head">
+      <div>
+        <p class="label rv">Featured on LinkedIn</p>
+        <h2 class="rv">Posts, news &amp; <em>milestones.</em></h2>
+        <p class="lead rv">The posts I have featured on my LinkedIn profile, shown here as they appear on LinkedIn. Scroll sideways to see them all.</p>
+      </div>
+      <div class="li-ctrl rv">
+        <a class="li-follow" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814/" target="_blank" rel="noopener"><span class="lg li">in</span>Follow · 1,800+</a>
+        <button type="button" class="li-arrow" id="liPrev" aria-label="Previous posts">←</button>
+        <button type="button" class="li-arrow" id="liNext" aria-label="Next posts">→</button>
+      </div>
     </div>
+  </div>
+  <div class="li-rail" id="liRail">
+        <article class="li-card">
+          <header><time>Sep 2026</time><h3>Teaching beyond the classroom</h3><p>Academic Live Session on Capstone Project for BBA students, CU Online LMS</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7508516506553626626" title="LinkedIn post: Teaching beyond the classroom" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7508516506553626626/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card">
+          <header><time>Dec 2025</time><h3>Promoted to Associate Professor</h3><p>University School of Business, Chandigarh University</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7410387182756229120" title="LinkedIn post: Promoted to Associate Professor" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7410387182756229120/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card">
+          <header><time>Dec 2025</time><h3>Winner, CU's Got Talent</h3><p>Singing Category, Staff Edition</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7409608805422006272" title="LinkedIn post: Winner, CU's Got Talent" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7409608805422006272/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card">
+          <header><time>Oct 2025</time><h3>NSS Programme Officer badge</h3><p>NSS Orientation 2025, Chandigarh University</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7379912589985812480" title="LinkedIn post: NSS Programme Officer badge" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7379912589985812480/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card">
+          <header><time>Aug 2025</time><h3>Recognised for admissions</h3><p>Appreciation for leading admissions at USB</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7361641440180932609" title="LinkedIn post: Recognised for admissions" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7361641440180932609/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card">
+          <header><time>Jun 2025</time><h3>Brains, Brands, and Burnout</h3><p>My article in the Punjab Times on MBA aspirants' wellbeing</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7335603207999496193" title="LinkedIn post: Brains, Brands, and Burnout" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7335603207999496193/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card">
+          <header><time>Apr 2025</time><h3>Podcast: Marketing in the Digital Era</h3><p>CU Online podcast episode</p></header>
+          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7317549557070942231" title="LinkedIn post: Podcast: Marketing in the Digital Era" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7317549557070942231/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+        </article>
+        <article class="li-card li-art">
+          <header><time>LinkedIn article</time><h3>The “Everyone Is Happy” Illusion</h3><p>A reflection that began with a Monday morning cup of tea at the D1 Block canteen, before the day's lectures.</p></header>
+          <div class="li-quote">“Like most mornings, I stopped by the D1 Block canteen to grab a quick cup of tea…”</div>
+          <a class="li-open" href="https://www.linkedin.com/pulse/everyone-happy-illusion-dr-bikram-paul-singh-lehri-33ibc/" target="_blank" rel="noopener">Read the article ↗</a>
+        </article>
   </div>
 </section>
 
@@ -782,6 +850,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   var flt='all';
   d.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;flt=b.dataset.f;[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);});applyFilter();});
   function applyFilter(){pubs.querySelectorAll('.pub').forEach(function(li){li.hidden=!(flt==='all'||li.dataset.type===flt);});}
+
+
+  /* LinkedIn rail: lazy-load embeds, arrows */
+  var rail=d.getElementById('liRail');
+  function loadFrames(){rail.querySelectorAll('iframe[data-src]').forEach(function(f){f.src=f.dataset.src;f.removeAttribute('data-src');});}
+  if('IntersectionObserver' in window){var lo=new IntersectionObserver(function(es){if(es[0].isIntersecting){loadFrames();lo.disconnect();}},{rootMargin:'600px'});lo.observe(rail);}else loadFrames();
+  function step(){var c=rail.querySelector('.li-card');return c?c.getBoundingClientRect().width+22:400;}
+  d.getElementById('liPrev').addEventListener('click',function(){rail.scrollBy({left:-step(),behavior:reduce?'auto':'smooth'});});
+  d.getElementById('liNext').addEventListener('click',function(){rail.scrollBy({left:step(),behavior:reduce?'auto':'smooth'});});
 
   /* Copy email */
   d.getElementById('copy').addEventListener('click',function(){var b=this;function ok(){b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy email';},1800);}
