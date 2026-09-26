@@ -207,20 +207,49 @@ h3{margin:0;font-size:18px;line-height:1.35}
 .rtime span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em}
 .fbtns{display:flex;gap:10px}
 .fmsg{margin:0;color:var(--muted);font-size:14px;min-height:42px}
-/* sounds */
-.snd{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.snd button{display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 6px;border-radius:16px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font:600 14px var(--sans);cursor:pointer;transition:all .3s var(--ease)}
-.snd button span{font-size:28px}
-.snd button:hover{transform:translateY(-3px);border-color:var(--calm)}
-.snd button.on{background:var(--calmsoft);border-color:var(--calm);box-shadow:0 0 24px -8px rgba(111,195,178,.7)}
-.vol{display:flex;align-items:center;gap:12px;margin-top:16px;font-size:13px;color:var(--muted)}
-.vol input{flex:1;accent-color:var(--calm)}
-.snow{margin:12px 0 0;color:var(--muted);font-size:14px}
-.sbars{display:flex;align-items:flex-end;gap:5px;height:26px;margin-top:12px;opacity:.25;transition:opacity .4s}
-.sbars.on{opacity:1}
-.sbars i{flex:1;height:20%;background:var(--calm);border-radius:2px}
-.sbars.on i{animation:eq 1.3s ease-in-out infinite}
-.sbars i:nth-child(2n){animation-delay:-.5s}.sbars i:nth-child(3n){animation-duration:.9s}.sbars i:nth-child(5n){animation-duration:1.7s}
+/* Sound Studio */
+.wgrid3.two{grid-template-columns:1fr 1fr}
+.studio{margin-top:20px;background:radial-gradient(600px 260px at 100% 0%,rgba(111,195,178,.12),transparent 70%),radial-gradient(500px 240px at 0% 100%,rgba(227,22,30,.12),transparent 70%),var(--panel)}
+.st-live-tag{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--dim);padding:4px 10px;border-radius:999px;border:1px solid var(--line2)}
+.st-live-tag.on{color:#0b1f1b;background:var(--calm);border-color:var(--calm);animation:livep 1.6s ease-in-out infinite}
+@keyframes livep{50%{box-shadow:0 0 0 6px rgba(111,195,178,.15)}}
+.presets{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;margin-top:4px}
+.presets button{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:14px 12px;border-radius:16px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font:inherit;text-align:left;cursor:pointer;transition:transform .35s var(--ease),border-color .3s,background .3s,box-shadow .35s}
+.presets button span{font-size:26px;line-height:1;margin-bottom:6px;transition:transform .35s var(--ease)}
+.presets button b{font-size:14px}
+.presets button small{font-size:11.5px;color:var(--muted);line-height:1.3}
+.presets button:hover{transform:translateY(-4px);border-color:var(--calm)}
+.presets button:hover span{transform:scale(1.2) rotate(-8deg)}
+.presets button.on{background:linear-gradient(160deg,rgba(111,195,178,.22),var(--bg2));border-color:var(--calm);box-shadow:0 0 26px -10px rgba(111,195,178,.8)}
+.deck{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:18px;align-items:center}
+#viz{width:100%;height:120px;border-radius:16px;background:linear-gradient(180deg,#0e1413,#0b0a0a);border:1px solid var(--line);display:block}
+.deck-ctl{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center}
+.deck-ctl .vol{margin:0;flex:1 1 200px}
+.vol{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--muted)}
+.vol input,.sv input{flex:1;accent-color:var(--calm)}
+.sleepsel{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.sleepsel select{font:inherit;font-size:13.5px;color:var(--ink);background:var(--bg);border:1px solid var(--line2);border-radius:10px;padding:7px 10px}
+.snow{flex-basis:100%;margin:0;color:var(--muted);font-size:13.5px}
+.stabs{display:inline-flex;gap:6px;margin:22px 0 14px;padding:5px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.stabs button{border:0;background:none;color:var(--muted);font:600 14px var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer;transition:all .25s}
+.stabs button.on{background:var(--calm);color:#0b1f1b}
+.sgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.snd{position:relative;display:flex;flex-direction:column;gap:6px;padding:14px;border-radius:16px;border:1px solid var(--line2);background:var(--bg2);cursor:pointer;transition:transform .3s var(--ease),border-color .3s,background .3s;animation:pop .45s var(--ease) both}
+.snd:hover{transform:translateY(-3px);border-color:var(--calm)}
+.snd.on{background:linear-gradient(160deg,rgba(111,195,178,.2),var(--bg2));border-color:var(--calm)}
+.snd .top{display:flex;align-items:center;gap:10px}
+.snd .em{font-size:26px;line-height:1}
+.snd.on .em{animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-3px) scale(1.08)}}
+.snd b{font-size:14.5px}
+.snd small{font-size:11.5px;color:var(--muted);line-height:1.35}
+.snd .sv{display:none;align-items:center;gap:8px;font-size:11px;color:var(--muted)}
+.snd.on .sv{display:flex}
+.snd .dot{position:absolute;top:12px;right:12px;width:8px;height:8px;border-radius:50%;background:var(--line2)}
+.snd.on .dot{background:var(--calm);box-shadow:0 0 10px var(--calm)}
+@media (max-width:1100px){.presets{grid-template-columns:repeat(3,1fr)}.sgrid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.deck{grid-template-columns:1fr}.wgrid3.two{grid-template-columns:1fr}}
+@media (max-width:560px){.presets{grid-template-columns:repeat(2,1fr)}.sgrid{grid-template-columns:repeat(2,1fr)}.stabs{display:flex}.stabs button{flex:1;padding:9px 8px}}
 @keyframes eq{0%,100%{height:20%}50%{height:100%}}
 /* stretches */
 .st-stage{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px;border-radius:16px;background:var(--bg2);border:1px solid var(--line);min-height:128px}
@@ -429,7 +458,7 @@ footer a{color:var(--muted)}
       </div>
     </div>
 
-    <div class="wgrid3">
+    <div class="wgrid3 two">
       <!-- Worry dump -->
       <div class="w-card worry rv" id="worry">
         <div class="w-head"><span class="w-no">04</span><h3>Worry dump</h3></div>
@@ -452,19 +481,41 @@ footer a{color:var(--muted)}
         <p class="fmsg" id="fMsg">Put your phone face down, pick one task, and press Start.</p>
       </div>
 
-      <!-- Sounds -->
-      <div class="w-card sounds rv d2" id="sounds">
-        <div class="w-head"><span class="w-no">06</span><h3>Calming sounds</h3></div>
-        <p class="wsub">Play softly in the background while you study or rest.</p>
-        <div class="snd">
-          <button type="button" data-s="rain"><span>🌧️</span>Rain</button>
-          <button type="button" data-s="ocean"><span>🌊</span>Ocean</button>
-          <button type="button" data-s="soft"><span>🌙</span>Soft noise</button>
-        </div>
-        <label class="vol" for="sVol">Volume<input type="range" id="sVol" min="0" max="100" value="45"></label>
-        <p class="snow" id="sNow">Tap a sound to play. Tap again to stop.</p>
-        <div class="sbars" id="sBars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <!-- Sound Studio -->
+    <div class="w-card studio rv" id="sounds">
+      <div class="w-head"><span class="w-no">06</span><h3>Sound Studio</h3><span class="st-live-tag" id="stLive">● Off</span></div>
+      <p class="wsub">Pick a mood, or mix your own. On your phone, the sound keeps playing when you switch to another app or lock the screen, with controls on your lock screen. Layer rain with piano, add ocean to lo-fi. Every sound is created live in your browser, free and royalty-free. Headphones recommended.</p>
+      <div class="presets" id="presets">
+        <button type="button" data-p="read"><span>📖</span><b>Reading</b><small>Soft piano · light rain</small></button>
+        <button type="button" data-p="focus"><span>🎯</span><b>Deep focus</b><small>Brown noise · rain</small></button>
+        <button type="button" data-p="lofi"><span>📚</span><b>Study lo-fi</b><small>Beats · vinyl</small></button>
+        <button type="button" data-p="calm"><span>😌</span><b>Exam calm</b><small>Ocean · soft pad</small></button>
+        <button type="button" data-p="anx"><span>🫶</span><b>Anxiety relief</b><small>Singing bowl · stream</small></button>
+        <button type="button" data-p="sleep"><span>🌙</span><b>Sleep</b><small>Rain · night piano</small></button>
+        <button type="button" data-p="energy"><span>⚡</span><b>Energy boost</b><small>Bright arpeggio · birds</small></button>
+        <button type="button" data-p="cozy"><span>🔥</span><b>Cozy evening</b><small>Campfire · crickets</small></button>
+        <button type="button" data-p="storm"><span>⛈️</span><b>Rainy day</b><small>Thunderstorm · piano</small></button>
       </div>
+      <div class="deck">
+        <canvas id="viz" aria-hidden="true"></canvas><audio id="bgAudio" playsinline hidden></audio>
+        <div class="deck-ctl">
+          <button type="button" class="bbtn red" id="sAll">▶ Play</button>
+          <button type="button" class="ghost" id="sStopAll">Stop all</button>
+          <label class="vol" for="sMaster">Master<input type="range" id="sMaster" min="0" max="100" value="70"></label>
+          <label class="sleepsel" for="sSleep">Sleep timer
+            <select id="sSleep"><option value="0">Off</option><option value="15">15 min</option><option value="30">30 min</option><option value="60">60 min</option></select>
+          </label>
+          <span class="snow" id="sNow">Choose a mood above, or tap sounds below to build your own mix.</span>
+        </div>
+      </div>
+      <div class="stabs" role="tablist" aria-label="Sound categories">
+        <button type="button" class="on" data-t="nature">🌿 Nature</button>
+        <button type="button" data-t="music">🎵 Music</button>
+        <button type="button" data-t="noise">〰️ Noise</button>
+      </div>
+      <div class="sgrid" id="sgrid"></div>
     </div>
 
     <div class="wgrid2 alt">
@@ -575,11 +626,11 @@ footer a{color:var(--muted)}
 
   /* 01 Mood check-in */
   var moods={
-    good:['Love that! Use this energy well: start a focused study block, or share a smile with a friend.',[['Start focus timer','focus'],["Today's thought",'thought']]],
+    good:['Love that! Use this energy well: start a focused study block with some study music.',[['Start focus timer','focus'],['Study lo-fi','sounds','lofi']]],
     okay:['An okay day is still a good day. A quick stretch or a thought for the day can lift it a little.',[['2-minute stretches','stretch'],["Today's thought",'thought']]],
     anxious:["Anxiety is your body trying to protect you. Let's calm it down: one minute of box breathing, then ground yourself.",[['Box breathing','breathe','box'],['5-4-3-2-1 grounding','ground']]],
-    overwhelmed:['Too much at once? Get it out of your head first, then take just one small step.',[['Worry dump','worry'],['Focus on one task','focus']]],
-    tired:["Your body is asking for rest. Try 4-7-8 breathing with soft sounds, and aim for a proper night's sleep.",[['4-7-8 breathing','breathe','478'],['Calming sounds','sounds']]],
+    overwhelmed:['Too much at once? Get it out of your head first, then take just one small step.',[['Worry dump','worry'],['Calm sounds','sounds','calm'],['Focus on one task','focus']]],
+    tired:["Your body is asking for rest. Try 4-7-8 breathing with soft sounds, and aim for a proper night's sleep.",[['4-7-8 breathing','breathe','478'],['Sleep sounds','sounds','sleep']]],
     low:["I'm sorry you're feeling low. You don't have to carry it alone. Talking to someone really helps.",[['When to reach out','reach'],['Call Tele-MANAS 14416','tel'],['Write to me','ask']]]
   };
   d.querySelectorAll('.moods button').forEach(function(b){b.addEventListener('click',function(){
@@ -588,7 +639,7 @@ footer a{color:var(--muted)}
     d.getElementById('moodMsg').textContent=m[0];
     var acts=d.getElementById('moodActs');acts.innerHTML='';
     m[1].forEach(function(a,i){var el=d.createElement('a');el.textContent=a[0];if(i>0)el.className='alt';
-      if(a[1]==='tel'){el.href='tel:14416';}else{el.href='#'+a[1];el.addEventListener('click',function(e){e.preventDefault();if(a[2])setPattern(a[2]);go(a[1]);});}
+      if(a[1]==='tel'){el.href='tel:14416';}else{el.href='#'+a[1];el.addEventListener('click',function(e){e.preventDefault();if(a[2]){if(a[1]==='sounds')SS.preset(a[2]);else setPattern(a[2]);}go(a[1]);});}
       acts.appendChild(el);});
     out.hidden=false;out.style.animation='none';void out.offsetWidth;out.style.animation='';
   });});
@@ -661,24 +712,123 @@ footer a{color:var(--muted)}
   d.getElementById('fReset').addEventListener('click',function(){fStop();fLeft=fTot;fDraw();});
   fDraw();
 
-  /* 06 Calming sounds (generated in the browser) */
-  var sNode=null, sGain=null, sKind=null, sLfo=null;
-  function noiseBuf(c,type){var len=c.sampleRate*4,b=c.createBuffer(1,len,c.sampleRate),o=b.getChannelData(0),last=0;
-    for(var i=0;i<len;i++){var w=Math.random()*2-1;if(type==='brown'){last=(last+0.02*w)/1.02;o[i]=last*3.5;}else o[i]=w;}return b;}
-  function sStop(){if(sNode){try{sNode.stop();}catch(e){}sNode.disconnect();sNode=null;}if(sLfo){try{sLfo.stop();}catch(e){}sLfo=null;}sKind=null;d.getElementById('sBars').classList.remove('on');d.querySelectorAll('.snd button').forEach(function(x){x.classList.remove('on');});d.getElementById('sNow').textContent='Tap a sound to play. Tap again to stop.';}
-  d.querySelectorAll('.snd button').forEach(function(b){b.addEventListener('click',function(){
-    var k=b.dataset.s; if(sKind===k){sStop();return;} sStop(); var c=ac(); if(!c)return;
-    var src=c.createBufferSource(); src.loop=true; src.buffer=noiseBuf(c,k==='rain'?'white':'brown');
-    var f=c.createBiquadFilter(); sGain=c.createGain(); var vol=d.getElementById('sVol').value/100;
-    if(k==='rain'){f.type='bandpass';f.frequency.value=1400;f.Q.value=.4;sGain.gain.value=vol*.5;}
-    else if(k==='ocean'){f.type='lowpass';f.frequency.value=900;sGain.gain.value=vol*.5;
-      sLfo=c.createOscillator();sLfo.frequency.value=.1;var lg=c.createGain();lg.gain.value=vol*.45;sLfo.connect(lg).connect(sGain.gain);sLfo.start();}
-    else {f.type='lowpass';f.frequency.value=500;sGain.gain.value=vol*.6;}
-    src.connect(f).connect(sGain).connect(c.destination); src.start(); sNode=src; sKind=k;
-    b.classList.add('on'); d.getElementById('sBars').classList.add('on');
-    d.getElementById('sNow').textContent='Playing '+b.lastChild.textContent.trim().toLowerCase()+'. Tap again to stop.';
-  });});
-  d.getElementById('sVol').addEventListener('input',function(){if(sGain){var v=this.value/100;sGain.gain.value=v*(sKind==='soft'?.6:.5);}});
+  /* 06 Sound Studio: every sound is synthesised live with the Web Audio API */
+  var SS=(function(){
+    var c=null, master, comp, an, active={}, bufs={}, playing=false, sleepT=null;
+    function init(){ if(c) { if(c.state==='suspended') c.resume(); return c; }
+      c=ac(); if(!c) return null;
+      master=c.createGain(); master.gain.value=d.getElementById('sMaster').value/100;
+      comp=c.createDynamicsCompressor(); an=c.createAnalyser(); an.fftSize=256;
+      master.connect(comp).connect(an);
+      var el=d.getElementById('bgAudio'), routed=false;
+      try{ if(c.createMediaStreamDestination){ var ms=c.createMediaStreamDestination(); an.connect(ms); el.srcObject=ms.stream; var pr=el.play();
+          if(pr&&pr.then){pr.then(function(){routed=true;}).catch(function(){an.disconnect(ms);an.connect(c.destination);});} else routed=true; }
+        else an.connect(c.destination);
+      }catch(e){ an.connect(c.destination); }
+      mediaSession(); return c; }
+    function mediaSession(){ if(!('mediaSession' in navigator))return;
+      try{ navigator.mediaSession.metadata=new MediaMetadata({title:'Student Zone sounds',artist:'Dr. Bikram Paul Singh Lehri',album:'youngprofessor.in',artwork:[{src:'https://youngprofessor.in/photo.jpg',sizes:'236x236',type:'image/jpeg'}]});
+        navigator.mediaSession.setActionHandler('play',function(){d.getElementById('sAll').click();});
+        navigator.mediaSession.setActionHandler('pause',function(){d.getElementById('sAll').click();});
+        navigator.mediaSession.setActionHandler('stop',function(){d.getElementById('sStopAll').click();});
+      }catch(e){} }
+    d.addEventListener('visibilitychange',function(){ if(c&&c.state==='suspended'&&Object.keys(active).length){c.resume();var el=d.getElementById('bgAudio');if(el.paused)el.play().catch(function(){});} });
+    function nbuf(type){ if(bufs[type]) return bufs[type];
+      var len=c.sampleRate*6, b=c.createBuffer(2,len,c.sampleRate);
+      for(var ch=0;ch<2;ch++){var o=b.getChannelData(ch),l=0,b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+        for(var i=0;i<len;i++){var w=Math.random()*2-1;
+          if(type==='brown'){l=(l+0.02*w)/1.02;o[i]=l*3.5;}
+          else if(type==='pink'){b0=.99886*b0+w*.0555179;b1=.99332*b1+w*.0750759;b2=.969*b2+w*.153852;b3=.8665*b3+w*.3104856;b4=.55*b4+w*.5329522;b5=-.7616*b5-w*.016898;o[i]=(b0+b1+b2+b3+b4+b5+b6+w*.5362)*.11;b6=w*.115926;}
+          else o[i]=w;}}
+      return bufs[type]=b; }
+    function noise(type,out){var s=c.createBufferSource();s.buffer=nbuf(type);s.loop=true;s.connect(out);s.start(0,Math.random()*5);return s;}
+    function filt(type,f,q){var x=c.createBiquadFilter();x.type=type;x.frequency.value=f;if(q)x.Q.value=q;return x;}
+    function G(v){var g=c.createGain();g.gain.value=v;return g;}
+    function lfo(rate,depth,target,offset){var o=c.createOscillator(),g=G(depth);o.frequency.value=rate;o.connect(g).connect(target);if(offset!==undefined)target.value=offset;o.start();return o;}
+    function tone(out,f,t,dur,type,vol,att){var o=c.createOscillator(),g=c.createGain();o.type=type||'sine';o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+(att||.01));g.gain.exponentialRampToValueAtTime(.0001,t+dur);o.connect(g).connect(out);o.start(t);o.stop(t+dur+.05);}
+    function burst(out,t,dur,vol,fType,f){var s=c.createBufferSource();s.buffer=nbuf('white');var x=filt(fType,f),g=c.createGain();g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.0001,t+dur);s.connect(x).connect(g).connect(out);s.start(t,Math.random()*5);s.stop(t+dur+.02);}
+    function echo(out,time,fb,mix){var dl=c.createDelay(2);dl.delayTime.value=time;var f=G(fb),w=G(mix),inp=G(1);inp.connect(out);inp.connect(dl);dl.connect(f).connect(dl);dl.connect(w).connect(out);return inp;}
+    function every(fn,min,max){var alive=true,t;(function loop(){if(!alive)return;fn();t=setTimeout(loop,(min+Math.random()*(max-min))*1000);})();return function(){alive=false;clearTimeout(t);};}
+    var N=function(n){return 440*Math.pow(2,(n-69)/12);};
+    var S={
+      rain:{cat:'nature',em:'🌧️',n:'Rain',d:'Steady rainfall',make:function(o){var a=noise('white',filt('bandpass',1500,.45)),x=a.buffer&&0;var f1=filt('bandpass',1500,.45);a.disconnect();a.connect(f1);f1.connect(o);var b=noise('pink',filt('lowpass',600));b.disconnect();var f2=filt('lowpass',600),g=G(.6);b.connect(f2).connect(g).connect(o);return {n:[a,b]};}},
+      storm:{cat:'nature',em:'⛈️',n:'Thunderstorm',d:'Heavy rain, distant thunder',make:function(o){var a=noise('white',o);a.disconnect();var f=filt('bandpass',1100,.4),g=G(.9);a.connect(f).connect(g).connect(o);
+        var stop=every(function(){var t=c.currentTime,s=c.createBufferSource();s.buffer=nbuf('brown');var lp=filt('lowpass',140),gg=c.createGain(),dur=3+Math.random()*3;gg.gain.setValueAtTime(0,t);gg.gain.linearRampToValueAtTime(1.6,t+.25);gg.gain.exponentialRampToValueAtTime(.001,t+dur);s.connect(lp).connect(gg).connect(o);s.start(t,Math.random()*3);s.stop(t+dur);},6,16);return {n:[a],x:[stop]};}},
+      ocean:{cat:'nature',em:'🌊',n:'Ocean waves',d:'Slow waves on the shore',make:function(o){var a=noise('brown',o);a.disconnect();var f=filt('lowpass',800),g=G(.5);a.connect(f).connect(g).connect(o);var l=lfo(.09,.45,g.gain,.55);var l2=lfo(.09,350,f.frequency,700);return {n:[a,l,l2]};}},
+      stream:{cat:'nature',em:'🏞️',n:'Forest stream',d:'Bubbling water',make:function(o){var a=noise('white',o);a.disconnect();var f=filt('bandpass',2400,1.2),g=G(.35);a.connect(f).connect(g).connect(o);var l=lfo(.7,900,f.frequency,2400);var b=noise('pink',o);b.disconnect();var f2=filt('bandpass',500,.8);b.connect(f2).connect(G(.5)).connect(o);return {n:[a,b,l]};}},
+      wind:{cat:'nature',em:'🍃',n:'Gentle wind',d:'Breeze through trees',make:function(o){var a=noise('pink',o);a.disconnect();var f=filt('bandpass',500,.9),g=G(.6);a.connect(f).connect(g).connect(o);var l=lfo(.05,300,f.frequency,550),l2=lfo(.07,.35,g.gain,.5);return {n:[a,l,l2]};}},
+      birds:{cat:'nature',em:'🐦',n:'Morning birds',d:'Chirping in the trees',make:function(o){var e=echo(o,.18,.25,.3);var stop=every(function(){var t=c.currentTime,base=2200+Math.random()*1800,k=2+Math.floor(Math.random()*5),p=(Math.random()*2-1)*.8,pan=c.createStereoPanner?c.createStereoPanner():null;var dst=e;if(pan){pan.pan.value=p;pan.connect(e);dst=pan;}
+        for(var i=0;i<k;i++){var tt=t+i*.11,os=c.createOscillator(),g=c.createGain();os.frequency.setValueAtTime(base,tt);os.frequency.exponentialRampToValueAtTime(base*(1.3+Math.random()*.4),tt+.07);g.gain.setValueAtTime(0,tt);g.gain.linearRampToValueAtTime(.12,tt+.01);g.gain.exponentialRampToValueAtTime(.0001,tt+.09);os.connect(g).connect(dst);os.start(tt);os.stop(tt+.1);}},.6,2.8);return {x:[stop]};}},
+      fire:{cat:'nature',em:'🔥',n:'Campfire',d:'Warm crackling fire',make:function(o){var a=noise('brown',o);a.disconnect();a.connect(filt('lowpass',350)).connect(G(.8)).connect(o);var stop=every(function(){burst(o,c.currentTime,.03+Math.random()*.05,.25+Math.random()*.4,'highpass',1800+Math.random()*2500);},.04,.35);return {n:[a],x:[stop]};}},
+      crickets:{cat:'nature',em:'🦗',n:'Night crickets',d:'A quiet summer night',make:function(o){var stop=every(function(){var t=c.currentTime,f=4200+Math.random()*600;for(var i=0;i<3;i++)tone(o,f,t+i*.07,.05,'sine',.05);},.5,1.4);return {x:[stop]};}},
+      piano:{cat:'music',em:'🎹',n:'Soft piano',d:'Gentle, slow melody',make:function(o){var e=echo(o,.45,.35,.35),sc=[60,62,64,67,69,72,74,76,79,81];var stop=every(function(){var t=c.currentTime,n=sc[Math.floor(Math.random()*sc.length)];tone(e,N(n),t,3.2,'triangle',.12,.02);tone(e,N(n+12),t,1.6,'sine',.03,.02);if(Math.random()<.35)tone(e,N(n-12),t,4,'sine',.07,.03);},.9,2.2);return {x:[stop]};}},
+      night:{cat:'music',em:'🌙',n:'Night piano',d:'Very slow and low, for sleep',make:function(o){var e=echo(o,.6,.4,.4),sc=[48,50,52,55,57,60,62,64];var stop=every(function(){var t=c.currentTime,n=sc[Math.floor(Math.random()*sc.length)];tone(e,N(n),t,5,'sine',.13,.05);tone(e,N(n+7),t+.02,4,'triangle',.04,.05);},2.2,4);return {x:[stop]};}},
+      pad:{cat:'music',em:'☁️',n:'Ambient pad',d:'Warm floating chords',make:function(o){var ch=[[48,55,64,71],[45,52,60,67],[41,48,57,64],[43,50,59,62]],i=0,lp=filt('lowpass',900),g=G(.0);lp.connect(g).connect(o);
+        var cur=[];function play(){var t=c.currentTime;cur.forEach(function(v){v.g.gain.cancelScheduledValues(t);v.g.gain.setValueAtTime(v.g.gain.value,t);v.g.gain.linearRampToValueAtTime(0,t+3);v.o.stop(t+3.1);});cur=[];
+          ch[i%4].forEach(function(n){[-6,6].forEach(function(det){var os=c.createOscillator(),gg=G(0);os.type='sawtooth';os.frequency.value=N(n);os.detune.value=det;os.connect(gg).connect(lp);gg.gain.linearRampToValueAtTime(.035,t+3);os.start(t);cur.push({o:os,g:gg});});});i++;}
+        g.gain.value=1;play();var iv=setInterval(play,8000);var l=lfo(.06,400,lp.frequency,900);return {n:[l],x:[function(){clearInterval(iv);cur.forEach(function(v){try{v.o.stop();}catch(e){}});}]};}},
+      bowl:{cat:'music',em:'🔔',n:'Singing bowl',d:'Deep resonant tones',make:function(o){var e=echo(o,.7,.3,.3);var stop=every(function(){var t=c.currentTime,b=[196,220,174.6][Math.floor(Math.random()*3)];[[1,.16,9],[2.76,.07,7],[5.4,.035,5],[8.9,.015,3]].forEach(function(p){tone(e,b*p[0],t,p[2],'sine',p[1],.02);});},6,9);return {x:[stop]};}},
+      lofi:{cat:'music',em:'🎧',n:'Lo-fi beats',d:'Chill study rhythm, 78 BPM',make:function(o){var bpm=78,spb=60/bpm,step=0,next=c.currentTime+.1,bus=G(.9);bus.connect(o);var crk=noise('white',o);crk.disconnect();var hp=filt('highpass',3000);var cg=G(.012);crk.connect(hp).connect(cg).connect(o);
+        var chords=[[50,57,60,65],[43,55,59,65],[48,55,59,64],[45,55,60,64]],ep=echo(bus,spb*.75,.25,.2);
+        function sched(){while(next<c.currentTime+.2){var bar=Math.floor(step/8),s8=step%8,t=next;
+          if(s8===0||s8===5){var k=c.createOscillator(),kg=c.createGain();k.frequency.setValueAtTime(120,t);k.frequency.exponentialRampToValueAtTime(40,t+.25);kg.gain.setValueAtTime(.9,t);kg.gain.exponentialRampToValueAtTime(.001,t+.3);k.connect(kg).connect(bus);k.start(t);k.stop(t+.32);}
+          if(s8===2||s8===6)burst(bus,t,.18,.35,'bandpass',1800);
+          burst(bus,t+(s8%2?spb*.08:0),.04,.12,'highpass',7000);
+          if(s8===0)chords[bar%4].forEach(function(n){tone(ep,N(n),t,spb*3.6,'triangle',.05,.04);tone(ep,N(n),t,spb*3,'sine',.04,.04);});
+          if(s8===4&&Math.random()<.6)tone(ep,N(chords[bar%4][3]+12),t,spb*1.5,'sine',.05,.02);
+          next+=spb/2;step++;}}
+        var iv=setInterval(sched,25);sched();return {n:[crk],x:[function(){clearInterval(iv);}]};}},
+      arp:{cat:'music',em:'✨',n:'Bright arpeggio',d:'Uplifting, energising',make:function(o){var spb=60/112,step=0,next=c.currentTime+.1,e=echo(o,spb*.75,.3,.3),ch=[[60,64,67,72],[55,59,62,67],[57,60,64,69],[53,57,60,65]];
+        function sched(){while(next<c.currentTime+.2){var cc=ch[Math.floor(step/8)%4],n=cc[[0,1,2,3,2,1,2,3][step%8]];tone(e,N(n+12),next,.4,'triangle',.07,.005);if(step%8===0)tone(o,N(cc[0]-12),next,spb*3.8,'sine',.12,.02);next+=spb/2;step++;}}
+        var iv=setInterval(sched,25);sched();return {x:[function(){clearInterval(iv);}]};}},
+      focus:{cat:'music',em:'🧠',n:'Focus tones',d:'Soft 10 Hz beat, use headphones',make:function(o){if(!c.createStereoPanner)return {};var L=c.createOscillator(),Rr=c.createOscillator(),pl=c.createStereoPanner(),pr=c.createStereoPanner(),g=G(.06);L.frequency.value=200;Rr.frequency.value=210;pl.pan.value=-1;pr.pan.value=1;L.connect(pl).connect(g);Rr.connect(pr).connect(g);g.connect(o);L.start();Rr.start();return {n:[L,Rr]};}},
+      white:{cat:'noise',em:'⚪',n:'White noise',d:'Masks sharp sounds',make:function(o){var a=noise('white',o);a.disconnect();a.connect(G(.25)).connect(o);return {n:[a]};}},
+      pink:{cat:'noise',em:'🌸',n:'Pink noise',d:'Softer, balanced hush',make:function(o){var a=noise('pink',o);a.disconnect();a.connect(G(.7)).connect(o);return {n:[a]};}},
+      brown:{cat:'noise',em:'🟤',n:'Brown noise',d:'Deep rumble, great for focus',make:function(o){var a=noise('brown',o);a.disconnect();a.connect(filt('lowpass',500)).connect(G(.9)).connect(o);return {n:[a]};}},
+      fan:{cat:'noise',em:'🌀',n:'Fan hum',d:'Steady room fan',make:function(o){var a=noise('pink',o);a.disconnect();a.connect(filt('lowpass',700)).connect(G(.7)).connect(o);var h=c.createOscillator(),hg=G(.02);h.frequency.value=90;h.connect(hg).connect(o);h.start();return {n:[a,h]};}}
+    };
+    var presets={read:[['piano',.55],['rain',.25]],focus:[['brown',.7],['rain',.35]],lofi:[['lofi',.8],['rain',.2]],calm:[['ocean',.6],['pad',.5]],anx:[['bowl',.7],['stream',.4]],sleep:[['rain',.5],['night',.6]],energy:[['arp',.7],['birds',.5]],cozy:[['fire',.7],['crickets',.5],['piano',.35]],storm:[['storm',.7],['piano',.45]]};
+    function start(id,vol){ if(active[id]) return; if(!init()) return; var g=c.createGain(); g.gain.setValueAtTime(0,c.currentTime); g.gain.linearRampToValueAtTime(vol,c.currentTime+1.2); g.connect(master);
+      var h=S[id].make(g)||{}; active[id]={g:g,h:h,v:vol}; ui(); }
+    function stop(id){ var a=active[id]; if(!a) return; delete active[id]; var t=c.currentTime; a.g.gain.cancelScheduledValues(t); a.g.gain.setValueAtTime(a.g.gain.value,t); a.g.gain.linearRampToValueAtTime(0,t+.8);
+      setTimeout(function(){(a.h.x||[]).forEach(function(f){f();});(a.h.n||[]).forEach(function(n){try{n.stop();}catch(e){}});a.g.disconnect();},900); ui(); }
+    function stopAll(){ Object.keys(active).forEach(stop); d.querySelectorAll('.presets button').forEach(function(b){b.classList.remove('on');}); setSleep(0); d.getElementById('sSleep').value='0'; }
+    function setVol(id,v){ var a=active[id]; if(a){a.v=v;a.g.gain.setTargetAtTime(v,c.currentTime,.1);} }
+    function preset(p){ Object.keys(active).forEach(stop); d.querySelectorAll('.presets button').forEach(function(b){b.classList.toggle('on',b.dataset.p===p);}); setTimeout(function(){presets[p].forEach(function(x){start(x[0],x[1]);});},Object.keys(active).length?300:0);
+      var btn=d.querySelector('.presets button[data-p="'+p+'"]'); msg('Playing “'+btn.querySelector('b').textContent+'”. Adjust any layer below.'); var cat=S[presets[p][0][0]].cat; tab(cat); }
+    function setSleep(min){ clearTimeout(sleepT); sleepT=null; if(min>0){ sleepT=setTimeout(function(){ if(c){master.gain.setTargetAtTime(0,c.currentTime,20);} setTimeout(function(){stopAll(); if(c)master.gain.value=d.getElementById('sMaster').value/100; msg('Sleep timer ended. Good night 🌙');},60000); },(min*60-60)*1000); msg('Sleep timer set: sound fades out in '+min+' minutes.'); } }
+    function msg(t){ d.getElementById('sNow').textContent=t; }
+    function ui(){ var n=Object.keys(active).length, live=d.getElementById('stLive');
+      live.textContent=n?'● Live · '+n+' sound'+(n>1?'s':''):'● Off'; live.classList.toggle('on',!!n);
+      d.getElementById('sAll').textContent=n?'❚❚ Pause':'▶ Play'; var el=d.getElementById('bgAudio'); if(n&&el.paused&&el.srcObject)el.play().catch(function(){}); if('mediaSession' in navigator){try{navigator.mediaSession.playbackState=n?'playing':'paused';}catch(e){}}
+      d.querySelectorAll('.snd').forEach(function(el){var on=!!active[el.dataset.id];el.classList.toggle('on',on);el.setAttribute('aria-pressed',on);if(on)el.querySelector('input').value=Math.round(active[el.dataset.id].v*100);}); }
+    var paused=null;
+    d.getElementById('sAll').addEventListener('click',function(){ var n=Object.keys(active); if(n.length){paused=n.map(function(id){return [id,active[id].v];});n.forEach(stop);msg('Paused. Press Play to resume.');} else if(paused&&paused.length){paused.forEach(function(x){start(x[0],x[1]);});msg('Resumed.');} else preset('calm'); });
+    d.getElementById('sStopAll').addEventListener('click',function(){paused=null;stopAll();msg('All sounds stopped.');});
+    d.getElementById('sMaster').addEventListener('input',function(){if(master)master.gain.setTargetAtTime(this.value/100,c.currentTime,.05);});
+    d.getElementById('sSleep').addEventListener('change',function(){setSleep(+this.value);if(+this.value===0)msg('Sleep timer off.');});
+    d.querySelectorAll('.presets button').forEach(function(b){b.addEventListener('click',function(){ if(b.classList.contains('on')){stopAll();msg('Stopped.');return;} preset(b.dataset.p); });});
+    // library grid
+    var grid=d.getElementById('sgrid');
+    function tab(t){ d.querySelectorAll('.stabs button').forEach(function(b){b.classList.toggle('on',b.dataset.t===t);}); grid.innerHTML='';
+      Object.keys(S).filter(function(k){return S[k].cat===t;}).forEach(function(k,i){var x=S[k],el=d.createElement('div');el.className='snd';el.dataset.id=k;el.setAttribute('role','button');el.tabIndex=0;el.style.animationDelay=(i*40)+'ms';
+        el.innerHTML='<span class="dot"></span><span class="top"><span class="em">'+x.em+'</span><b>'+x.n+'</b></span><small>'+x.d+'</small><label class="sv">Vol<input type="range" min="0" max="100" value="50" aria-label="'+x.n+' volume"></label>';
+        el.addEventListener('click',function(e){ if(e.target.tagName==='INPUT'||e.target.tagName==='LABEL')return; d.querySelectorAll('.presets button').forEach(function(b){b.classList.remove('on');}); if(active[k]){stop(k);msg(x.n+' off.');}else{start(k,.5);msg(x.n+' on. Add more sounds to build your mix.');} });
+        el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}});
+        el.querySelector('input').addEventListener('input',function(){setVol(k,this.value/100);});
+        grid.appendChild(el);}); ui(); }
+    d.querySelectorAll('.stabs button').forEach(function(b){b.addEventListener('click',function(){tab(b.dataset.t);});});
+    tab('nature');
+    // visualiser
+    var cv=d.getElementById('viz'), cx=cv.getContext('2d');
+    function draw(){ var W=cv.clientWidth,H=cv.clientHeight,dpr=Math.min(devicePixelRatio||1,2); if(cv.width!==W*dpr){cv.width=W*dpr;cv.height=H*dpr;} cx.setTransform(dpr,0,0,dpr,0,0); cx.clearRect(0,0,W,H);
+      var data=new Uint8Array(an?an.frequencyBinCount:64); if(an)an.getByteFrequencyData(data);
+      var bars=48,bw=W/bars; for(var i=0;i<bars;i++){var v=(data[Math.floor(i*data.length/bars*.7)]||0)/255,idle=Object.keys(active).length?0:.04+.03*Math.sin(Date.now()/600+i/3),h=Math.max(3,(v+idle)*H*.9);
+        var gr=cx.createLinearGradient(0,H,0,H-h);gr.addColorStop(0,'rgba(111,195,178,.9)');gr.addColorStop(1,'rgba(227,22,30,.85)');cx.fillStyle=gr;cx.fillRect(i*bw+1.5,H-h,bw-3,h);}
+      requestAnimationFrame(draw); }
+    draw();
+    return {preset:preset};
+  })();
 
   /* 07 Desk stretches */
   var moves=[['🙆','Neck release','Slowly tilt your head towards your right shoulder, hold, then the left. Keep your shoulders relaxed.',25],
