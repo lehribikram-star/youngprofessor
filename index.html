@@ -276,26 +276,49 @@ h3{margin:0;font-size:19px;line-height:1.35;font-weight:700}
 
 /* LinkedIn featured */
 .li-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px}
-.li-ctrl{display:flex;gap:10px;align-items:center}
 .li-follow{display:inline-flex;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-weight:700;font-size:14.5px;transition:border-color .3s,background .3s}
 .li-follow:hover{border-color:#0A66C2;background:rgba(10,102,194,.12)}
 .li-follow .lg{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#0A66C2;color:#fff;font-weight:800;font-size:13px}
-.li-arrow{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:none;color:var(--ink);font-size:18px;cursor:pointer;transition:all .3s}
-.li-arrow:hover{background:var(--red);border-color:var(--red)}
-.li-rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px max(24px,calc((100vw - 1180px)/2 + 24px)) 30px;scroll-padding-inline:max(24px,calc((100vw - 1180px)/2 + 24px));scrollbar-width:thin;scrollbar-color:var(--red) var(--line)}
-.li-rail::-webkit-scrollbar{height:6px}.li-rail::-webkit-scrollbar-track{background:var(--line);border-radius:3px}.li-rail::-webkit-scrollbar-thumb{background:var(--red);border-radius:3px}
-.li-card{flex:0 0 min(420px,86vw);scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--panel);overflow:hidden;transition:border-color .4s,transform .4s var(--ease)}
-.li-card:hover{border-color:var(--red);transform:translateY(-6px)}
-.li-card header{padding:22px 24px 16px}
-.li-card time{font-family:var(--mono);font-size:12.5px;color:var(--red);letter-spacing:.06em}
-.li-card h3{margin-top:8px}
-.li-card header p{color:var(--muted);font-size:14.5px;margin:6px 0 0}
-.li-frame{position:relative;margin:0 14px;border-radius:14px;overflow:hidden;background:#fff;height:520px}
-.li-frame iframe{position:relative;z-index:1;width:100%;height:100%;border:0;display:block}
+.lt-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
+.lt{position:relative;display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--ink);font:inherit;cursor:pointer;text-decoration:none;overflow:hidden;transform-origin:center;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s;will-change:transform}
+.js .lt.rv.in{transition:opacity 1s var(--ease),transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s}
+.lt:hover,.lt:focus-visible,.js .lt.rv.in:hover,.js .lt.rv.in:focus-visible{transform:scale(1.08) translateY(-6px);z-index:5;border-color:var(--red);box-shadow:0 30px 60px -20px rgba(0,0,0,.9),0 0 0 1px var(--red),0 0 40px -8px var(--redglow)}
+.lt-mini{position:relative;display:block;height:200px;overflow:hidden;background:#fff}
+.lt-mini iframe{position:absolute;top:0;left:0;width:500px;height:620px;border:0;transform:scale(.56);transform-origin:0 0;pointer-events:none;transition:transform .7s var(--ease)}
+.lt:hover .lt-mini iframe{transform:scale(.62) translateY(-18px)}
+.lt-shade{position:absolute;inset:auto 0 0 0;height:70px;background:linear-gradient(transparent,rgba(23,20,20,.85))}
+.lt-zoom{position:absolute;left:50%;bottom:14px;transform:translate(-50%,12px);opacity:0;padding:7px 14px;border-radius:999px;background:var(--red);color:#fff;font-size:12.5px;font-weight:700;white-space:nowrap;transition:opacity .4s,transform .4s var(--ease)}
+.lt:hover .lt-zoom,.lt:focus-visible .lt-zoom{opacity:1;transform:translate(-50%,0)}
+.lt-body{display:flex;flex-direction:column;gap:4px;padding:16px 18px 18px}
+.lt-body time{font-family:var(--mono);font-size:11.5px;color:var(--red);letter-spacing:.06em}
+.lt-body strong{font-size:15.5px;line-height:1.35}
+.lt-body small{color:var(--muted);font-size:13px;line-height:1.4}
+.lt-art .lt-mini{background:linear-gradient(160deg,#2a1414,#120d0d)}
+.lt-quote{position:absolute;inset:0;padding:22px;display:flex;align-items:center;font-family:var(--serif);font-size:19px;line-height:1.35;color:var(--ink);transition:transform .7s var(--ease)}
+.lt-art:hover .lt-quote{transform:scale(1.06)}
+/* Pop-up */
+.lm{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:20px}
+.lm[hidden]{display:none}
+.lm-back{position:absolute;inset:0;background:rgba(5,4,4,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;transition:opacity .4s}
+.lm-box{position:relative;width:min(560px,100%);max-height:calc(100svh - 40px);display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line2);border-radius:22px;overflow:hidden;box-shadow:0 40px 100px -20px rgba(0,0,0,.9),0 0 60px -10px var(--redglow);opacity:0;transform:scale(.8) translateY(30px);transition:opacity .45s var(--ease),transform .55s cubic-bezier(.2,1.2,.3,1)}
+.lm.show .lm-back{opacity:1}
+.lm.show .lm-box{opacity:1;transform:none}
+.lm-top{display:flex;justify-content:space-between;align-items:start;gap:16px;padding:18px 20px 14px}
+.lm-top time{font-family:var(--mono);font-size:12px;color:var(--red)}
+.lm-top h3{margin-top:4px;font-size:18px}
+.lm-x{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);background:none;color:var(--ink);font-size:16px;cursor:pointer;transition:all .3s}
+.lm-x:hover{background:var(--red);border-color:var(--red);transform:rotate(90deg)}
+.lm-frame{position:relative;flex:none;height:min(640px,calc(100svh - 190px));margin:0 14px;border-radius:14px;overflow:hidden;background:#fff}
+.lm-frame iframe{position:relative;z-index:1;width:100%;height:100%;border:0;display:block}
 .li-load{position:absolute;inset:0;display:grid;place-items:center;color:#666;font-family:var(--mono);font-size:13px}
-.li-open{margin:16px 24px 22px;font-family:var(--mono);font-size:13px;color:var(--muted);text-decoration:none;transition:color .3s}
-.li-open:hover{color:var(--red2)}
-.li-art .li-quote{flex:1;margin:0 14px;border-radius:14px;padding:34px 28px;background:linear-gradient(160deg,#1f1616,var(--bg2));font-family:var(--serif);font-size:28px;line-height:1.35;display:flex;align-items:center;min-height:520px;border:1px solid var(--line)}
+.lm-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 20px 18px}
+.lm-foot a{font-family:var(--mono);font-size:13px;color:var(--muted);text-decoration:none}
+.lm-foot a:hover{color:var(--red2)}
+.lm-nav{border:1px solid var(--line2);background:none;color:var(--ink);font:600 13.5px var(--sans);padding:9px 14px;border-radius:999px;cursor:pointer;transition:all .3s}
+.lm-nav:hover{background:var(--red);border-color:var(--red)}
+body.lock{overflow:hidden}
+@media (max-width:1000px){.lt-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.lt-grid{grid-template-columns:1fr 1fr;gap:14px}.lt-mini{height:150px}.lt-mini iframe{transform:scale(.36)}.lt:hover .lt-mini iframe{transform:scale(.4)}.lt:hover,.js .lt.rv.in:hover{transform:scale(1.03)}.lt-body{padding:12px}.lt-body strong{font-size:14px}.lt-body small{display:none}.lt-quote{font-size:15px;padding:14px}.lm-foot a{display:none}}
 
 /* Beyond */
 .beyond{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
@@ -615,58 +638,61 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
       <div>
         <p class="label rv">Featured on LinkedIn</p>
         <h2 class="rv">Posts, news &amp; <em>milestones.</em></h2>
-        <p class="lead rv">The posts I have featured on my LinkedIn profile, shown here as they appear on LinkedIn. Scroll sideways to see them all.</p>
+        <p class="lead rv">Hover over a post to zoom in, and click to read it in full.</p>
       </div>
-      <div class="li-ctrl rv">
-        <a class="li-follow" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814/" target="_blank" rel="noopener"><span class="lg li">in</span>Follow · 1,800+</a>
-        <button type="button" class="li-arrow" id="liPrev" aria-label="Previous posts">←</button>
-        <button type="button" class="li-arrow" id="liNext" aria-label="Next posts">→</button>
-      </div>
+      <a class="li-follow rv" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814/" target="_blank" rel="noopener"><span class="lg li">in</span>Follow · 1,800+</a>
+    </div>
+    <div class="lt-grid">
+      <button type="button" class="lt rv" data-id="7508516506553626626" data-title="Teaching beyond the classroom" data-date="Sep 2026">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7508516506553626626" title="Preview: Teaching beyond the classroom" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Sep 2026</time><strong>Teaching beyond the classroom</strong><small>Capstone Project live session, CU Online LMS</small></span>
+      </button>
+      <button type="button" class="lt rv d1" data-id="7410387182756229120" data-title="Promoted to Associate Professor" data-date="Dec 2025">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7410387182756229120" title="Preview: Promoted to Associate Professor" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Dec 2025</time><strong>Promoted to Associate Professor</strong><small>University School of Business, CU</small></span>
+      </button>
+      <button type="button" class="lt rv d2" data-id="7409608805422006272" data-title="Winner, CU's Got Talent" data-date="Dec 2025">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7409608805422006272" title="Preview: Winner, CU's Got Talent" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Dec 2025</time><strong>Winner, CU's Got Talent</strong><small>Singing Category, Staff Edition</small></span>
+      </button>
+      <button type="button" class="lt rv d3" data-id="7379912589985812480" data-title="NSS Programme Officer badge" data-date="Oct 2025">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7379912589985812480" title="Preview: NSS Programme Officer badge" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Oct 2025</time><strong>NSS Programme Officer badge</strong><small>NSS Orientation 2025</small></span>
+      </button>
+      <button type="button" class="lt rv" data-id="7361641440180932609" data-title="Recognised for admissions" data-date="Aug 2025">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7361641440180932609" title="Preview: Recognised for admissions" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Aug 2025</time><strong>Recognised for admissions</strong><small>Appreciation for leading admissions</small></span>
+      </button>
+      <button type="button" class="lt rv d1" data-id="7335603207999496193" data-title="Brains, Brands, and Burnout" data-date="Jun 2025">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7335603207999496193" title="Preview: Brains, Brands, and Burnout" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Jun 2025</time><strong>Brains, Brands, and Burnout</strong><small>My article in the Punjab Times</small></span>
+      </button>
+      <button type="button" class="lt rv d2" data-id="7317549557070942231" data-title="Podcast: Marketing in the Digital Era" data-date="Apr 2025">
+        <span class="lt-mini"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7317549557070942231" title="Preview: Podcast: Marketing in the Digital Era" tabindex="-1" loading="lazy"></iframe><span class="lt-shade"></span><span class="lt-zoom">Click to open ⤢</span></span>
+        <span class="lt-body"><time>Apr 2025</time><strong>Podcast: Marketing in the Digital Era</strong><small>CU Online podcast episode</small></span>
+      </button>
+      <a class="lt lt-art rv d3" href="https://www.linkedin.com/pulse/everyone-happy-illusion-dr-bikram-paul-singh-lehri-33ibc/" target="_blank" rel="noopener">
+        <span class="lt-mini"><span class="lt-quote">“Like most mornings, I stopped by the D1 Block canteen to grab a quick cup of tea…”</span><span class="lt-zoom">Read the article ↗</span></span>
+        <span class="lt-body"><time>LinkedIn article</time><strong>The “Everyone Is Happy” Illusion</strong><small>A reflection from campus life</small></span>
+      </a>
     </div>
   </div>
-  <div class="li-rail" id="liRail">
-        <article class="li-card">
-          <header><time>Sep 2026</time><h3>Teaching beyond the classroom</h3><p>Academic Live Session on Capstone Project for BBA students, CU Online LMS</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7508516506553626626" title="LinkedIn post: Teaching beyond the classroom" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7508516506553626626/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card">
-          <header><time>Dec 2025</time><h3>Promoted to Associate Professor</h3><p>University School of Business, Chandigarh University</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7410387182756229120" title="LinkedIn post: Promoted to Associate Professor" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7410387182756229120/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card">
-          <header><time>Dec 2025</time><h3>Winner, CU's Got Talent</h3><p>Singing Category, Staff Edition</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7409608805422006272" title="LinkedIn post: Winner, CU's Got Talent" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7409608805422006272/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card">
-          <header><time>Oct 2025</time><h3>NSS Programme Officer badge</h3><p>NSS Orientation 2025, Chandigarh University</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7379912589985812480" title="LinkedIn post: NSS Programme Officer badge" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7379912589985812480/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card">
-          <header><time>Aug 2025</time><h3>Recognised for admissions</h3><p>Appreciation for leading admissions at USB</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7361641440180932609" title="LinkedIn post: Recognised for admissions" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7361641440180932609/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card">
-          <header><time>Jun 2025</time><h3>Brains, Brands, and Burnout</h3><p>My article in the Punjab Times on MBA aspirants' wellbeing</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7335603207999496193" title="LinkedIn post: Brains, Brands, and Burnout" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7335603207999496193/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card">
-          <header><time>Apr 2025</time><h3>Podcast: Marketing in the Digital Era</h3><p>CU Online podcast episode</p></header>
-          <div class="li-frame"><iframe data-src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7317549557070942231" title="LinkedIn post: Podcast: Marketing in the Digital Era" loading="lazy" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
-          <a class="li-open" href="https://www.linkedin.com/feed/update/urn:li:activity:7317549557070942231/" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
-        </article>
-        <article class="li-card li-art">
-          <header><time>LinkedIn article</time><h3>The “Everyone Is Happy” Illusion</h3><p>A reflection that began with a Monday morning cup of tea at the D1 Block canteen, before the day's lectures.</p></header>
-          <div class="li-quote">“Like most mornings, I stopped by the D1 Block canteen to grab a quick cup of tea…”</div>
-          <a class="li-open" href="https://www.linkedin.com/pulse/everyone-happy-illusion-dr-bikram-paul-singh-lehri-33ibc/" target="_blank" rel="noopener">Read the article ↗</a>
-        </article>
-  </div>
 </section>
+<div class="lm" id="lm" hidden>
+  <div class="lm-back" data-close></div>
+  <div class="lm-box" role="dialog" aria-modal="true" aria-labelledby="lmTitle">
+    <div class="lm-top">
+      <div><time id="lmDate"></time><h3 id="lmTitle"></h3></div>
+      <button type="button" class="lm-x" data-close aria-label="Close">✕</button>
+    </div>
+    <div class="lm-frame"><iframe id="lmFrame" title="LinkedIn post" allowfullscreen></iframe><span class="li-load">Loading post…</span></div>
+    <div class="lm-foot">
+      <button type="button" class="lm-nav" id="lmPrev" aria-label="Previous post">← Previous</button>
+      <a id="lmOpen" href="#" target="_blank" rel="noopener">Open on LinkedIn ↗</a>
+      <button type="button" class="lm-nav" id="lmNext" aria-label="Next post">Next →</button>
+    </div>
+  </div>
+</div>
 
 <section class="sec" style="padding-top:0">
   <div class="wrap beyond">
@@ -852,13 +878,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   function applyFilter(){pubs.querySelectorAll('.pub').forEach(function(li){li.hidden=!(flt==='all'||li.dataset.type===flt);});}
 
 
-  /* LinkedIn rail: lazy-load embeds, arrows */
-  var rail=d.getElementById('liRail');
-  function loadFrames(){rail.querySelectorAll('iframe[data-src]').forEach(function(f){f.src=f.dataset.src;f.removeAttribute('data-src');});}
-  if('IntersectionObserver' in window){var lo=new IntersectionObserver(function(es){if(es[0].isIntersecting){loadFrames();lo.disconnect();}},{rootMargin:'600px'});lo.observe(rail);}else loadFrames();
-  function step(){var c=rail.querySelector('.li-card');return c?c.getBoundingClientRect().width+22:400;}
-  d.getElementById('liPrev').addEventListener('click',function(){rail.scrollBy({left:-step(),behavior:reduce?'auto':'smooth'});});
-  d.getElementById('liNext').addEventListener('click',function(){rail.scrollBy({left:step(),behavior:reduce?'auto':'smooth'});});
+  /* LinkedIn thumbnails + pop-up */
+  var grid=d.querySelector('.lt-grid');
+  function loadThumbs(){grid.querySelectorAll('iframe[data-src]').forEach(function(f){f.src=f.dataset.src;f.removeAttribute('data-src');});}
+  if('IntersectionObserver' in window){var lo=new IntersectionObserver(function(es){if(es[0].isIntersecting){loadThumbs();lo.disconnect();}},{rootMargin:'500px'});lo.observe(grid);}else loadThumbs();
+  var thumbs=[].slice.call(grid.querySelectorAll('button.lt')), lm=d.getElementById('lm'), lmF=d.getElementById('lmFrame'), idx=0, lastFocus=null;
+  function show(i){idx=(i+thumbs.length)%thumbs.length;var t=thumbs[idx];
+    d.getElementById('lmTitle').textContent=t.dataset.title;d.getElementById('lmDate').textContent=t.dataset.date;
+    lmF.src='https://www.linkedin.com/embed/feed/update/urn:li:activity:'+t.dataset.id;
+    d.getElementById('lmOpen').href='https://www.linkedin.com/feed/update/urn:li:activity:'+t.dataset.id+'/';}
+  function openM(i){lastFocus=d.activeElement;show(i);lm.hidden=false;d.body.classList.add('lock');requestAnimationFrame(function(){requestAnimationFrame(function(){lm.classList.add('show');});});lm.querySelector('.lm-x').focus();}
+  function closeM(){lm.classList.remove('show');d.body.classList.remove('lock');setTimeout(function(){lm.hidden=true;lmF.src='about:blank';},reduce?0:450);if(lastFocus)lastFocus.focus();}
+  thumbs.forEach(function(t,i){t.addEventListener('click',function(){openM(i);});});
+  lm.querySelectorAll('[data-close]').forEach(function(el){el.addEventListener('click',closeM);});
+  d.getElementById('lmPrev').addEventListener('click',function(){show(idx-1);});
+  d.getElementById('lmNext').addEventListener('click',function(){show(idx+1);});
+  addEventListener('keydown',function(e){if(lm.hidden)return;if(e.key==='Escape')closeM();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1);});
 
   /* Copy email */
   d.getElementById('copy').addEventListener('click',function(){var b=this;function ok(){b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy email';},1800);}
