@@ -334,6 +334,10 @@ footer a{color:var(--muted)}
   .tiles{gap:12px}.tile{padding:16px}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.chat .msg{opacity:1;transform:none}}
+.unsaid-cta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:22px;padding:16px 20px;border-radius:18px;border:1.5px solid #ff2e88;background:rgba(255,46,136,.06);text-decoration:none;color:inherit;box-shadow:0 0 16px rgba(255,46,136,.3),inset 0 0 12px rgba(255,46,136,.12);transition:box-shadow .3s,transform .3s}
+.unsaid-cta:hover{box-shadow:0 0 26px rgba(255,46,136,.6),inset 0 0 16px rgba(255,46,136,.25);transform:translateY(-2px)}
+.unsaid-cta b{color:#ffe3f0;text-shadow:0 0 8px #ff2e88;font-size:17px}
+.unsaid-cta span{opacity:.85;font-size:15px}
 </style>
 </head>
 <body>
@@ -346,6 +350,7 @@ footer a{color:var(--muted)}
       <li><a href="#wellbeing">Wellbeing</a></li>
       <li><a href="#buddy">AI Buddy</a></li>
       <li><a href="#ask">Ask Me</a></li>
+      <li><a href="unsaid.html">Unsaid ✨</a></li>
     </ul>
     <a class="back" href="index.html">← Main site</a>
   </div>
@@ -362,6 +367,7 @@ footer a{color:var(--muted)}
       <a class="tile rv d2" href="#wellbeing" style="--acc:#6FC3B2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-9.3-9A5.2 5.2 0 0 1 12 6.5 5.2 5.2 0 0 1 21.3 12C19 16.6 12 21 12 21z"/></svg></span><strong>Wellbeing Corner</strong><span>Mood check-in, breathing, focus timer, calming sounds and helplines.</span><small>Breathe →</small></a>
       <a class="tile rv d3" href="#ask" style="--acc:#FF8A7A"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.8 1c0 1.7-2.3 2-2.3 3.5M12 17h.01"/></svg></span><strong>Ask Me</strong><span>Doubts, career advice or project help. Write to me directly.</span><small>Ask →</small></a>
     </div>
+    <a class="unsaid-cta rv" href="unsaid.html"><b>✨ Things I Never Said</b><span>Many talks are left unsaid. If you have something to tell me, write your heart out here, with or without your name. →</span></a>
   </div>
 </header>
 
