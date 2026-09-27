@@ -398,7 +398,9 @@ var NEWS_ENDPOINT='';
 
   function altRow(D){
     var box=$('rAlt');box.hidden=true;box.innerHTML='';
-    searchList(D.query||D.summary.title).then(function(r){
+    var qv=D.query||D.summary.title;
+    Promise.all([searchList(qv),getJSON(q({action:'query',list:'search',srsearch:qv,srlimit:'6'})).then(function(j){return ((j.query&&j.query.search)||[]).filter(function(x){return !/disambiguation|^list of/i.test(x.title);});}).catch(function(){return [];})]).then(function(a){
+      var seen={},r=[];a[1].concat(a[0]).forEach(function(x){if(!seen[x.title]){seen[x.title]=1;r.push(x);}});return r;}).then(function(r){
       r=r.filter(function(x){return x.title!==D.summary.title;}).slice(0,4);if(!r.length)return;
       box.appendChild(el('span',null,'Not the company you meant?'));
       r.forEach(function(x){var b=el('button',null,x.title);b.type='button';b.addEventListener('click',function(){co.value=x.title;picked=x.title;run(x.title,D.role||role.value.trim());});box.appendChild(b);});
@@ -431,8 +433,8 @@ var NEWS_ENDPOINT='';
     var hit=list.filter(function(s){var l=s.line.replace(/<[^>]+>/g,'').trim();return s.toclevel===1&&/brand|product|service|segment|business|division|subsidiar|portfolio|operations/i.test(l)&&!/controvers|criticism|legal|see also|reference/i.test(l);}).slice(0,2);
     if(!hit.length)return Promise.resolve([]);
     return Promise.all(hit.map(function(s){return getJSON(q({action:'parse',page:title,prop:'text',section:s.index,redirects:'1',disabletoc:'1'})).then(function(j){
-      var doc=new DOMParser().parseFromString(j.parse.text['*'],'text/html');doc.querySelectorAll('sup,.reference,style,table,.mw-editsection').forEach(function(x){x.remove();});
-      var items=[].slice.call(doc.querySelectorAll('li')).map(function(li){return li.textContent.replace(/\s+/g,' ').trim();}).filter(function(t){return t.length>1&&t.length<140;});
+      var doc=new DOMParser().parseFromString(j.parse.text['*'],'text/html');doc.querySelectorAll('sup,.reference,style,table,.mw-editsection,ol.references,.reflist,.references,.navbox').forEach(function(x){x.remove();});
+      var items=[].slice.call(doc.querySelectorAll('li')).map(function(li){return li.textContent.replace(/\s+/g,' ').trim();}).filter(function(t){return t.length>1&&t.length<140&&!/^\^|retrieved|archived from/i.test(t);});
       var paras=[].slice.call(doc.querySelectorAll('p')).map(function(p){return p.textContent.replace(/\s+/g,' ').trim();}).filter(function(t){return t.length>60;});
       return {name:s.line.replace(/<[^>]+>/g,''),items:items.slice(0,18),para:paras[0]||''};
     }).catch(function(){return null;});})).then(function(a){return a.filter(Boolean);});
@@ -471,7 +473,7 @@ var NEWS_ENDPOINT='';
     /* facts */
     var F=[['Industry',['industry']],['Founded',['founded','formation','established']],['Founders',['founder','founders']],['Headquarters',['headquarters','hq']],['Area served',['area served']],['Key people',['key people']],['Employees',['number of employees','employees']],['Parent',['parent']],['Traded as',['traded as']],['Type',['type']],['Website',['website']]];
     var fx=$('rFacts');fx.innerHTML='';
-    F.forEach(function(f){var r=row(I,f[1]);if(!r)return;var txt=r.items.length?r.items.slice(0,4).join(' · '):r.text;txt=clean(txt).replace(/^(\d{4})\s*\(\1\)/,'$1').replace(/\(\s*\d+\s*years ago\s*\)/i,'').trim();if(!txt||txt.length>260)txt=txt.slice(0,260)+'…';
+    F.forEach(function(f){var r=row(I,f[1]);if(!r)return;var txt=r.items.length?r.items.slice(0,4).join(' · '):r.text;txt=clean(txt).replace(/^(\d{4})\s*\(\1\)/,'$1').replace(/\(\s*\d+\s*years ago\s*\)/i,'').replace(/\s*\(\d{4}-\d{2}-\d{2}\)/g,'').replace(/\s+,/g,',').trim();if(!txt||txt.length>260)txt=txt.slice(0,260)+'…';
       var c=el('div','fact');c.appendChild(el('small',null,f[0]));c.appendChild(el('span',null,txt));fx.appendChild(c);});
 
     /* numbers */
