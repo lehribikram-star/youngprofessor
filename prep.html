@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Know Before You Go | Placement Prep Room | Dr. Lehri</title>
+<meta name="description" content="Placement Prep Room by Dr. Bikram Paul Singh Lehri: type the company and role you are interviewing for and get a structured briefing, charts, latest news links and likely interview questions.">
+<meta name="theme-color" content="#0B0A0A">
+<meta property="og:title" content="Know Before You Go | Placement Prep Room">
+<meta property="og:description" content="Type a company and role. Get a full interview briefing in seconds.">
+<meta property="og:image" content="https://youngprofessor.in/logo-badge.png">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#0B0A0A; --bg2:#121010; --panel:#171414; --panel2:#1d1919; --line:#2A2323; --line2:#3A2E2E;
+  --ink:#F4EFEA; --muted:#A39A94; --dim:#6F6661;
+  --red:#E3161E; --red2:#FF3B42; --redglow:rgba(227,22,30,.35); --redsoft:rgba(227,22,30,.10);
+  --amber:#F5B942; --calm:#6FC3B2;
+  --serif:"DM Serif Display", Georgia, serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--red2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+h1,h2,h3{margin:0}
+.label{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 12px}
+.label::before{content:"";width:34px;height:1px;background:currentColor}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(11,10,10,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px;white-space:nowrap}
+.logo img{width:40px;height:40px;border-radius:50%;filter:drop-shadow(0 0 10px rgba(227,22,30,.35))}
+.logo em{color:var(--red);font-style:normal}
+.back{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:14px;font-weight:700;white-space:nowrap}
+.back:hover{border-color:var(--red)}
+@media (max-width:560px){.logo span{display:none}}
+
+/* hero + form */
+.hero{position:relative;padding:56px 0 26px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-160px;top:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(closest-side,rgba(227,22,30,.20),transparent);pointer-events:none}
+.hero h1{position:relative;font-family:var(--serif);font-weight:400;font-size:clamp(44px,7vw,86px);line-height:.98;letter-spacing:-.01em}
+.hero h1 em{color:var(--red);font-style:italic}
+.hero .lead{position:relative;max-width:640px;color:#d8d0ca;font-size:clamp(16px,1.8vw,19px);margin:18px 0 0}
+.search{position:relative;margin-top:30px;display:grid;grid-template-columns:1.25fr 1fr auto;gap:12px;padding:14px;border-radius:22px;background:var(--panel);border:1px solid var(--line2);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+.fld{position:relative;display:flex;flex-direction:column;gap:6px}
+.fld label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-left:4px}
+.fld input{width:100%;padding:14px 16px;border-radius:14px;border:1px solid var(--line2);background:var(--bg);font-size:17px;font-weight:600}
+.fld input:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 4px var(--redsoft)}
+.go{align-self:end;height:54px;padding:0 26px;border:0;border-radius:14px;background:var(--red);color:#fff;font-weight:800;font-size:16px;cursor:pointer;white-space:nowrap;box-shadow:0 12px 30px -12px var(--redglow);transition:transform .25s var(--ease),background .25s}
+.go:hover{background:var(--red2);transform:translateY(-2px)}
+.go:disabled{opacity:.6;cursor:wait;transform:none}
+@media (max-width:760px){.search{grid-template-columns:1fr}.go{width:100%}}
+.sugg{position:absolute;left:0;right:0;top:100%;margin-top:6px;z-index:30;border-radius:14px;background:var(--panel2);border:1px solid var(--line2);box-shadow:0 20px 40px rgba(0,0,0,.6);overflow:hidden}
+.sugg button{display:flex;align-items:center;gap:12px;width:100%;padding:10px 14px;border:0;background:none;text-align:left;cursor:pointer}
+.sugg button:hover,.sugg button.on{background:var(--redsoft)}
+.sugg img,.sugg .ph{width:34px;height:34px;border-radius:8px;object-fit:contain;background:#fff;flex:none}
+.sugg .ph{display:grid;place-items:center;background:var(--line);color:var(--muted);font-weight:800}
+.sugg b{display:block;font-size:15px}
+.sugg small{display:block;font-size:12.5px;color:var(--muted);line-height:1.3}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{font-size:12.5px;color:var(--muted);align-self:center;margin-right:4px}
+.chips button{padding:6px 12px;border-radius:999px;border:1px solid var(--line2);background:none;font-size:13px;font-weight:600;cursor:pointer;color:#ddd5cf}
+.chips button:hover{border-color:var(--red);color:#fff}
+.steps{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:22px;color:var(--muted);font-size:14px}
+.steps b{color:var(--ink);font-family:var(--mono);font-weight:500;margin-right:6px}
+
+/* states */
+.state{margin:30px 0;padding:26px;border-radius:20px;border:1px dashed var(--line2);color:var(--muted);text-align:center}
+.state b{display:block;color:var(--ink);font-size:18px;margin-bottom:4px}
+.skel{display:grid;gap:14px;margin:30px 0}
+.skel i{display:block;height:86px;border-radius:18px;background:linear-gradient(90deg,var(--panel) 0,#221d1d 40%,var(--panel) 80%);background-size:300% 100%;animation:sh 1.3s linear infinite}
+.skel i:nth-child(2){height:180px}.skel i:nth-child(3){height:120px}
+@keyframes sh{to{background-position:-150% 0}}
+
+/* report */
+.report{padding:10px 0 60px}
+.rhead{display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding:26px;border-radius:24px;background:linear-gradient(135deg,#1d1414,#121010);border:1px solid var(--line2)}
+.rlogo{width:92px;height:92px;border-radius:18px;background:#fff;display:grid;place-items:center;overflow:hidden;flex:none}
+.rlogo img{max-width:82%;max-height:82%;object-fit:contain}
+.rlogo.none{background:var(--red);color:#fff;font:800 36px var(--sans)}
+.rhead h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,52px);line-height:1.02}
+.rhead .desc{color:var(--amber);font-weight:700;font-size:15px;margin-top:6px}
+.rhead .role{margin-top:8px;font-size:14px;color:var(--muted)}
+.rhead .role b{color:var(--ink)}
+.racts{margin-left:auto;display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line2);background:none;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn:hover{border-color:var(--red)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.tabs{position:sticky;top:66px;z-index:20;display:flex;gap:6px;overflow-x:auto;margin:18px 0 6px;padding:8px 0;background:rgba(11,10,10,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:13.5px;font-weight:700;color:var(--muted)}
+.tabs a:hover{color:#fff;border-color:var(--red)}
+.card{margin-top:22px;padding:26px;border-radius:22px;background:var(--panel);border:1px solid var(--line);scroll-margin-top:130px}
+.card h3{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.1;margin-bottom:6px}
+.card h3 em{color:var(--red);font-style:italic}
+.card .sub{color:var(--muted);font-size:14.5px;margin:0 0 18px}
+.about{font-size:17px;line-height:1.7;color:#e6ded8;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:20px}
+.fact{padding:14px 16px;border-radius:14px;background:var(--bg2);border:1px solid var(--line)}
+.fact small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.fact span{font-weight:700;font-size:15px;line-height:1.4}
+.src{margin-top:14px;font-size:12.5px;color:var(--dim)}
+.src a{color:var(--muted)}
+
+/* financial chart */
+.fin{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:stretch}
+@media (max-width:760px){.fin{grid-template-columns:1fr}}
+.bars{display:flex;flex-direction:column;gap:14px;padding:18px;border-radius:16px;background:var(--bg2);border:1px solid var(--line)}
+.bar{position:relative}
+.bar .lb{display:flex;justify-content:space-between;gap:10px;font-size:14px;margin-bottom:6px}
+.bar .lb b{font-weight:700}
+.bar .lb span{color:var(--muted);text-align:right}
+.bar .track{height:22px;border-radius:4px;background:#241e1e}
+.bar .fill{height:100%;border-radius:0 4px 4px 0;background:var(--red);width:0;transition:width 1.1s var(--ease)}
+.bar .fill.alt{background:#ff8a8f}
+.bar .fill.alt2{background:#f4efea}
+.tip{position:fixed;z-index:60;pointer-events:none;padding:8px 12px;border-radius:10px;background:#000;border:1px solid var(--line2);font-size:13px;box-shadow:0 10px 24px rgba(0,0,0,.6);opacity:0;transition:opacity .15s}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{padding:16px;border-radius:16px;background:var(--bg2);border:1px solid var(--line)}
+.tile small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tile b{display:block;font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.1;margin-top:6px}
+.tile span{font-size:12.5px;color:var(--muted)}
+.tile.wide{grid-column:1/-1}
+.ring{--p:0;width:74px;height:74px;border-radius:50%;background:conic-gradient(var(--red) calc(var(--p)*1%),#2c2525 0);display:grid;place-items:center;float:right}
+.ring::after{content:"";width:54px;height:54px;border-radius:50%;background:var(--bg2)}
+
+/* lists */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{padding:8px 13px;border-radius:12px;background:var(--bg2);border:1px solid var(--line);font-size:14px;font-weight:600}
+.bul{margin:14px 0 0;padding-left:20px;color:#ddd5cf}
+.bul li{margin:4px 0}
+
+/* news */
+.newsgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.nlink{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);text-decoration:none;transition:border-color .25s,transform .25s var(--ease)}
+.nlink:hover{border-color:var(--red);transform:translateY(-3px)}
+.nlink i{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-style:normal;font-size:18px;background:var(--redsoft);flex:none}
+.nlink b{display:block;font-size:15px}
+.nlink small{color:var(--muted);font-size:12.5px}
+.headlines{margin-top:16px;display:grid;gap:10px}
+.headlines a{display:block;padding:12px 14px;border-radius:12px;background:var(--bg2);border:1px solid var(--line);text-decoration:none}
+.headlines a:hover{border-color:var(--red)}
+.headlines small{color:var(--muted)}
+.look{margin-top:16px;padding:16px 18px;border-radius:14px;background:rgba(245,185,66,.07);border:1px solid rgba(245,185,66,.25);font-size:14.5px;color:#e8dfd6}
+.look b{color:var(--amber)}
+
+/* questions */
+.qtabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.qtabs button{padding:8px 14px;border-radius:999px;border:1px solid var(--line2);background:none;font-weight:700;font-size:13.5px;cursor:pointer;color:var(--muted)}
+.qtabs button.on{background:var(--ink);border-color:var(--ink);color:#111}
+.qs{display:grid;gap:10px}
+.q{border-radius:14px;background:var(--bg2);border:1px solid var(--line);overflow:hidden}
+.q summary{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:flex-start;padding:15px 16px;font-weight:700;line-height:1.45}
+.q summary::-webkit-details-marker{display:none}
+.q summary i{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--red);padding-top:3px;flex:none;width:24px}
+.q summary::after{content:"+";margin-left:auto;color:var(--muted);font-weight:400;font-size:20px;line-height:1}
+.q[open] summary::after{content:"–"}
+.q[open]{border-color:rgba(227,22,30,.45)}
+.q .hint{padding:0 16px 16px 52px;color:#d6cdc6;font-size:15px}
+.q .hint b{color:var(--amber)}
+
+/* pitch */
+.pitch textarea{width:100%;min-height:170px;padding:16px;border-radius:14px;border:1px solid var(--line2);background:var(--bg2);font-size:16px;line-height:1.65;resize:vertical}
+.pitch textarea:focus{outline:none;border-color:var(--red)}
+.note{font-size:13px;color:var(--dim);margin-top:10px}
+.askback li{margin:8px 0}
+
+.toast{position:fixed;left:50%;bottom:22px;z-index:70;transform:translate(-50%,20px);opacity:0;padding:12px 18px;border-radius:12px;background:var(--panel2);border:1px solid var(--red);font-size:14.5px;transition:all .35s var(--ease);pointer-events:none;max-width:calc(100% - 30px)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* print = 1-page prep sheet */
+@media print{
+  body{background:#fff;color:#111;font-size:12.5px}
+  .nav,.hero,.tabs,.racts,.qtabs,footer,.toast,.chips,.newsgrid,.look,#pitchBtns,.state,.skel{display:none!important}
+  .card,.rhead,.bars,.tile,.fact,.q,.pills span{background:#fff!important;border-color:#ddd!important;box-shadow:none!important;color:#111!important}
+  .rhead h2,.card h3{color:#111}
+  .q .hint{color:#333;padding-left:16px}
+  .q summary::after{content:""}
+  .q{break-inside:avoid}
+  .about,.fact span,.bul{color:#222}
+  .bar .track{background:#eee}
+  details .hint{display:block}
+  .card{margin-top:12px;padding:14px}
+}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Placement Prep Room">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img src="logo-mark.png" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
+    <a class="back" href="student.html">← Student Zone</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="label">Placement Prep Room</p>
+    <h1>Know Before<br>You <em>Go</em></h1>
+    <p class="lead">Walking into a placement interview? Type the company and the role you are applying for. In seconds you get a clear briefing: what the company does, its numbers, its products, the latest news, and the questions you are likely to face.</p>
+    <form class="search" id="form" autocomplete="off">
+      <div class="fld">
+        <label for="co">Company / organisation</label>
+        <input id="co" placeholder="e.g. Hindustan Unilever, HDFC Bank, Deloitte" required aria-autocomplete="list" aria-controls="sugg">
+        <div class="sugg" id="sugg" hidden role="listbox"></div>
+      </div>
+      <div class="fld">
+        <label for="role">Position you are applying for</label>
+        <input id="role" placeholder="e.g. Management Trainee, Sales Executive">
+      </div>
+      <button class="go" id="go" type="submit">Prepare me →</button>
+    </form>
+    <div class="chips" id="roleChips"><span>Quick roles:</span></div>
+    <div class="steps"><div><b>01</b>Type the company</div><div><b>02</b>Add your role</div><div><b>03</b>Read, practise &amp; save your prep sheet</div></div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <div class="state" id="idle"><b>Your briefing will appear here</b>Try: Hindustan Unilever · HDFC Bank · Infosys · Nestlé India · Deloitte · Amazon</div>
+  <div class="skel" id="skel" hidden><i></i><i></i><i></i></div>
+  <div class="state" id="err" hidden></div>
+
+  <section class="report" id="report" hidden>
+    <div class="rhead">
+      <div class="rlogo" id="rLogo"></div>
+      <div>
+        <h2 id="rName"></h2>
+        <div class="desc" id="rDesc"></div>
+        <div class="role" id="rRole"></div>
+      </div>
+      <div class="racts"><button class="btn red" id="printBtn" type="button">⬇ Save prep sheet (PDF)</button><button class="btn" id="againBtn" type="button">↺ New search</button></div>
+    </div>
+
+    <nav class="tabs" aria-label="Briefing sections">
+      <a href="#s-about">Overview</a><a href="#s-fin" id="tFin">Numbers</a><a href="#s-prod" id="tProd">Products</a><a href="#s-news">Latest news</a><a href="#s-q">Interview questions</a><a href="#s-why">Why this company?</a><a href="#s-ask">Ask them</a>
+    </nav>
+
+    <article class="card" id="s-about">
+      <h3>What the company <em>does</em></h3>
+      <p class="about" id="rAbout"></p>
+      <div class="facts" id="rFacts"></div>
+      <p class="src" id="rSrc"></p>
+    </article>
+
+    <article class="card" id="s-fin">
+      <h3>Key <em>numbers</em></h3>
+      <p class="sub" id="finSub">Latest reported figures. Quote them confidently in your interview, and cross-check in the latest annual report.</p>
+      <div class="fin">
+        <div class="bars" id="bars" role="img"></div>
+        <div class="tiles" id="tiles"></div>
+      </div>
+    </article>
+
+    <article class="card" id="s-prod">
+      <h3>Products, brands &amp; <em>services</em></h3>
+      <p class="sub">Know at least three of these by name, and which ones you personally use or admire.</p>
+      <div class="pills" id="rProd"></div>
+      <ul class="bul" id="rProdMore"></ul>
+    </article>
+
+    <article class="card" id="s-news">
+      <h3>Latest <em>news</em></h3>
+      <p class="sub">Interviewers love asking about recent developments. Spend five minutes here before you walk in.</p>
+      <div class="newsgrid" id="newsLinks"></div>
+      <div class="headlines" id="headlines" hidden></div>
+      <div class="look"><b>Look for:</b> latest quarterly results, new product launches, acquisitions or partnerships, leadership changes, expansion plans, and any challenge the company is facing. Pick <b>one</b> story and form your own opinion on it.</div>
+    </article>
+
+    <article class="card" id="s-q">
+      <h3>Questions you may <em>face</em></h3>
+      <p class="sub">Tap a question to see how to answer it. Practise saying your answers out loud.</p>
+      <div class="qtabs" id="qtabs"></div>
+      <div class="qs" id="qs"></div>
+    </article>
+
+    <article class="card pitch" id="s-why">
+      <h3>Your answer to <em>“Why us?”</em></h3>
+      <p class="sub">A starting draft built from the company's own facts. Make it yours: add a personal reason, your project, or a product you love.</p>
+      <textarea id="pitch" aria-label="Your answer to why this company"></textarea>
+      <div id="pitchBtns" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="btn" id="copyPitch" type="button">Copy</button><button class="btn" id="redoPitch" type="button">↺ Another version</button></div>
+      <p class="note">Tip: keep it under 60 seconds. Company fact → why it matters to you → what you will bring.</p>
+    </article>
+
+    <article class="card" id="s-ask">
+      <h3>Smart questions to <em>ask them</em></h3>
+      <p class="sub">At the end, interviewers ask “Any questions for us?”. Never say no. Pick one or two:</p>
+      <ol class="bul askback" id="askBack"></ol>
+    </article>
+    <p class="src" style="margin-top:22px">Company information comes from Wikipedia and Wikidata and may be a few months old. Always verify key numbers on the company's own website or annual report. Prepared with care by Dr. Bikram Paul Singh Lehri for his students.</p>
+  </section>
+</main>
+
+<div class="tip" id="tip"></div>
+<div class="toast" id="toast" role="status"></div>
+<footer><div class="wrap"><span>Placement Prep Room · <a href="student.html">Student Zone</a></span><span>youngprofessor.in</span></div></footer>
+
+<script>
+/* Optional: live headlines endpoint (Google Apps Script web app). Leave empty until set up. */
+var NEWS_ENDPOINT='';
+(function(){
+  var d=document, $=function(id){return d.getElementById(id);};
+  var API='https://en.wikipedia.org/w/api.php', REST='https://en.wikipedia.org/api/rest_v1';
+  var form=$('form'), co=$('co'), role=$('role'), sugg=$('sugg');
+  var picked=null, sTimer=null, sIdx=-1, lastData=null;
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function el(t,c,txt){var e=d.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+  function toast(t){var e=$('toast');e.textContent=t;e.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){e.classList.remove('show');},3500);}
+  function getJSON(url){return fetch(url).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();});}
+  function q(params){var u=new URLSearchParams(params);u.set('format','json');u.set('origin','*');return API+'?'+u.toString();}
+
+  /* ---------- role chips ---------- */
+  ['Management Trainee','Sales / Marketing','Financial Analyst','HR Executive','Business Analyst','Operations / Supply Chain'].forEach(function(r){
+    var b=el('button',null,r);b.type='button';b.addEventListener('click',function(){role.value=r;role.focus();});$('roleChips').appendChild(b);});
+
+  /* ---------- company suggestions ---------- */
+  var BIZ=/compan|corporat|bank|conglomerat|manufactur|multinational|firm|enterprise|brand|retail|group|limited|ltd|airline|insurer|insurance|consult|software|services|telecom|automaker|pharma|fmcg|e-commerce|startup|holding|institution|university|organisation|organization|agency|motors|foods|steel|energy|oil|cement|finance|payments|platform/i;
+  co.addEventListener('input',function(){picked=null;clearTimeout(sTimer);var v=co.value.trim();if(v.length<2){sugg.hidden=true;return;}sTimer=setTimeout(function(){suggest(v);},220);});
+  co.addEventListener('keydown',function(e){var bs=sugg.querySelectorAll('button');if(sugg.hidden||!bs.length)return;
+    if(e.key==='ArrowDown'){e.preventDefault();sIdx=(sIdx+1)%bs.length;}else if(e.key==='ArrowUp'){e.preventDefault();sIdx=(sIdx-1+bs.length)%bs.length;}else if(e.key==='Enter'&&sIdx>-1){e.preventDefault();bs[sIdx].click();return;}else if(e.key==='Escape'){sugg.hidden=true;return;}else return;
+    bs.forEach(function(b,i){b.classList.toggle('on',i===sIdx);});});
+  d.addEventListener('click',function(e){if(!sugg.contains(e.target)&&e.target!==co)sugg.hidden=true;});
+  function suggest(v){
+    getJSON(q({action:'query',generator:'prefixsearch',gpssearch:v,gpslimit:'8',prop:'description|pageimages',piprop:'thumbnail',pithumbsize:'80',redirects:'1'})).then(function(j){
+      if(co.value.trim()!==v)return;
+      var pages=j.query&&j.query.pages?Object.keys(j.query.pages).map(function(k){return j.query.pages[k];}):[];
+      pages.sort(function(a,b){return (a.index||0)-(b.index||0);});
+      pages.sort(function(a,b){return (BIZ.test(b.description||'')?1:0)-(BIZ.test(a.description||'')?1:0);});
+      sugg.innerHTML='';sIdx=-1;
+      pages.slice(0,6).forEach(function(p){
+        var b=el('button');b.type='button';b.setAttribute('role','option');
+        if(p.thumbnail&&/^https:\/\/upload\.wikimedia\.org\//.test(p.thumbnail.source)){var im=el('img');im.src=p.thumbnail.source;im.alt='';b.appendChild(im);}else b.appendChild(el('span','ph',(p.title||'?').charAt(0)));
+        var t=el('div');t.appendChild(el('b',null,p.title));t.appendChild(el('small',null,p.description||''));b.appendChild(t);
+        b.addEventListener('click',function(){co.value=p.title;picked=p.title;sugg.hidden=true;role.focus();});
+        sugg.appendChild(b);
+      });
+      sugg.hidden=!pages.length;
+    }).catch(function(){});
+  }
+
+  /* ---------- lookup ---------- */
+  form.addEventListener('submit',function(e){e.preventDefault();var v=co.value.trim();if(!v){co.focus();return;}sugg.hidden=true;run(picked||v,role.value.trim());});
+  $('againBtn').addEventListener('click',function(){$('report').hidden=true;$('idle').hidden=false;co.value='';role.value='';picked=null;scrollTo({top:0,behavior:'smooth'});setTimeout(function(){co.focus();},400);});
+  $('printBtn').addEventListener('click',function(){d.querySelectorAll('#qs details').forEach(function(x){x.open=true;});setTimeout(function(){print();},100);});
+
+  function resolveTitle(v){
+    return getJSON(q({action:'query',list:'search',srsearch:v+' company',srlimit:'6',srprop:'snippet'})).then(function(j){
+      var r=(j.query&&j.query.search)||[];if(!r.length)throw new Error('notfound');
+      var lv=v.toLowerCase();
+      var best=r.find(function(x){return x.title.toLowerCase()===lv;})||r.find(function(x){return x.title.toLowerCase().indexOf(lv)>-1;})||r[0];
+      return best.title;
+    });
+  }
+
+  function run(input,roleTxt){
+    $('idle').hidden=true;$('err').hidden=true;$('report').hidden=true;$('skel').hidden=false;$('go').disabled=true;
+    var titleP=picked?Promise.resolve(input):getJSON(REST+'/page/summary/'+encodeURIComponent(input.replace(/ /g,'_'))).then(function(s){if(s.type==='disambiguation')return resolveTitle(input);return s.title;}).catch(function(){return resolveTitle(input);});
+    titleP.then(function(title){
+      return Promise.all([
+        getJSON(REST+'/page/summary/'+encodeURIComponent(title.replace(/ /g,'_'))),
+        getJSON(q({action:'parse',page:title,prop:'text|sections',section:'0',redirects:'1',disabletoc:'1'})).catch(function(){return null;}),
+        getJSON(q({action:'parse',page:title,prop:'sections',redirects:'1'})).catch(function(){return null;})
+      ]).then(function(res){
+        var summary=res[0],intro=res[1],secs=res[2];
+        var info=parseInfobox(intro&&intro.parse&&intro.parse.text&&intro.parse.text['*']);
+        return extraSections(title,secs).then(function(extra){return {title:title,summary:summary,info:info,extra:extra};});
+      });
+    }).then(function(data){
+      lastData=data;data.role=roleTxt;render(data);
+    }).catch(function(e){
+      $('skel').hidden=true;var er=$('err');er.hidden=false;
+      er.innerHTML='<b>We could not find that company</b>Check the spelling, or pick a name from the suggestions as you type. Very small or local companies may not have public information yet. In that case, check their website and LinkedIn page.';
+    }).finally(function(){$('go').disabled=false;});
+  }
+
+  /* ---------- parse Wikipedia infobox (rendered HTML, read as plain text only) ---------- */
+  function parseInfobox(html){
+    var out={rows:{},logo:null};if(!html)return out;
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    doc.querySelectorAll('sup,.reference,style,.noprint').forEach(function(x){x.remove();});
+    var box=doc.querySelector('table.infobox');if(!box)return out;
+    var img=box.querySelector('.infobox-image img, td img');
+    if(img){var src=img.getAttribute('src')||'';if(src.indexOf('//')===0)src='https:'+src;if(/^https:\/\/upload\.wikimedia\.org\//.test(src))out.logo=src;}
+    box.querySelectorAll('tr').forEach(function(tr){
+      var th=tr.querySelector('th.infobox-label, th'),td=tr.querySelector('td.infobox-data, td');
+      if(!th||!td)return;
+      var k=th.textContent.replace(/\s+/g,' ').trim().toLowerCase();
+      var items=[].slice.call(td.querySelectorAll('li')).map(function(li){return li.textContent.replace(/\s+/g,' ').trim();}).filter(Boolean);
+      td.querySelectorAll('br').forEach(function(b){b.replaceWith(d.createTextNode(' · '));});
+      var v=td.textContent.replace(/\s+/g,' ').replace(/\s·\s(\s·\s)+/g,' · ').trim();
+      out.rows[k]={text:v,items:items};
+    });
+    return out;
+  }
+  function row(info,keys){for(var i=0;i<keys.length;i++){for(var k in info.rows){if(k===keys[i]||k.indexOf(keys[i])===0)return info.rows[k];}}return null;}
+  function extraSections(title,secs){
+    var list=(secs&&secs.parse&&secs.parse.sections)||[];
+    var hit=list.filter(function(s){return /^(products?|brands?|services|products and services|operations|business segments?|segments|divisions|subsidiaries|businesses)$/i.test(s.line.replace(/<[^>]+>/g,'').trim());}).slice(0,2);
+    if(!hit.length)return Promise.resolve([]);
+    return Promise.all(hit.map(function(s){return getJSON(q({action:'parse',page:title,prop:'text',section:s.index,redirects:'1',disabletoc:'1'})).then(function(j){
+      var doc=new DOMParser().parseFromString(j.parse.text['*'],'text/html');doc.querySelectorAll('sup,.reference,style,table,.mw-editsection').forEach(function(x){x.remove();});
+      var items=[].slice.call(doc.querySelectorAll('li')).map(function(li){return li.textContent.replace(/\s+/g,' ').trim();}).filter(function(t){return t.length>1&&t.length<140;});
+      var paras=[].slice.call(doc.querySelectorAll('p')).map(function(p){return p.textContent.replace(/\s+/g,' ').trim();}).filter(function(t){return t.length>60;});
+      return {name:s.line.replace(/<[^>]+>/g,''),items:items.slice(0,18),para:paras[0]||''};
+    }).catch(function(){return null;});})).then(function(a){return a.filter(Boolean);});
+  }
+
+  /* ---------- money parsing for the chart ---------- */
+  var UNIT={trillion:1e12,tn:1e12,billion:1e9,bn:1e9,b:1e9,million:1e6,mn:1e6,m:1e6,crore:1e7,cr:1e7,lakh:1e5};
+  function money(t){
+    if(!t)return null;
+    var m=t.replace(/ /g,' ').match(/(₹|US\$|\$|€|£|¥|CHF|Rs\.?|INR|EUR|USD|GBP|JPY)?\s?([\d][\d,]*(?:\.\d+)?)\s*(trillion|billion|million|crore|lakh|bn|tn|mn|cr)?\b/i);
+    if(!m)return null;
+    var n=parseFloat(m[2].replace(/,/g,''));if(isNaN(n))return null;
+    var u=(m[3]||'').toLowerCase();var val=n*(UNIT[u]||1);
+    var y=t.match(/\((?:FY\s?)?(\d{4})(?:[–-]\d{2,4})?\)/i);
+    var neg=/decrease|▼|−|-\s?[₹$€£]/.test(t.slice(0,t.indexOf(m[2])));
+    return {val:neg?-val:val,label:(m[1]||'')+m[2]+(m[3]?' '+m[3]:''),cur:(m[1]||'').replace(/Rs\.?|INR/,'₹').replace(/USD|US\$/,'US$'),year:y?y[1]:''};
+  }
+  function clean(t){return (t||'').replace(/^[\s▲▼]*(increase|decrease|steady)?\s*/i,'').replace(/\s*\[\d+\]/g,'').trim();}
+
+  /* ---------- render ---------- */
+  function render(D){
+    var S=D.summary,I=D.info,name=S.title,desc=S.description||'';
+    $('skel').hidden=true;$('report').hidden=false;
+    $('rName').textContent=name;$('rDesc').textContent=desc?desc.charAt(0).toUpperCase()+desc.slice(1):'';
+    $('rRole').innerHTML=D.role?'Preparing for: <b>'+esc(D.role)+'</b>':'Tip: add your role above to get role-specific questions.';
+    var lg=$('rLogo');lg.innerHTML='';lg.className='rlogo';
+    var logo=I.logo||(S.thumbnail&&/^https:\/\/upload\.wikimedia\.org\//.test(S.thumbnail.source)?S.thumbnail.source:null);
+    if(logo){var im=el('img');im.src=logo;im.alt=name+' logo';lg.appendChild(im);}else{lg.classList.add('none');lg.textContent=name.charAt(0);}
+    $('rAbout').textContent=S.extract||'';
+    var wiki='https://en.wikipedia.org/wiki/'+encodeURIComponent(name.replace(/ /g,'_'));
+    $('rSrc').innerHTML='Source: <a href="'+wiki+'" target="_blank" rel="noopener">Wikipedia ↗</a>';
+
+    /* facts */
+    var F=[['Industry',['industry']],['Founded',['founded','formation','established']],['Founders',['founder','founders']],['Headquarters',['headquarters','hq']],['Area served',['area served']],['Key people',['key people']],['Employees',['number of employees','employees']],['Parent',['parent']],['Traded as',['traded as']],['Type',['type']],['Website',['website']]];
+    var fx=$('rFacts');fx.innerHTML='';
+    F.forEach(function(f){var r=row(I,f[1]);if(!r)return;var txt=r.items.length?r.items.slice(0,4).join(' · '):r.text;txt=clean(txt);if(!txt||txt.length>260)txt=txt.slice(0,260)+'…';
+      var c=el('div','fact');c.appendChild(el('small',null,f[0]));c.appendChild(el('span',null,txt));fx.appendChild(c);});
+
+    /* numbers */
+    var rev=money((row(I,['revenue'])||{}).text),op=money((row(I,['operating income'])||{}).text),ni=money((row(I,['net income'])||{}).text),ta=money((row(I,['total assets'])||{}).text),eq=money((row(I,['total equity'])||{}).text),aum=money((row(I,['aum','assets under management'])||{}).text);
+    var emp=(row(I,['number of employees','employees'])||{}).text||'';
+    var series=[['Revenue',rev,''],['Operating income',op,'alt'],['Net income',ni,'alt2']].filter(function(x){return x[1];});
+    var bars=$('bars'),tiles=$('tiles');bars.innerHTML='';tiles.innerHTML='';
+    var hasFin=series.length||ta||emp;
+    $('s-fin').hidden=!hasFin;$('tFin').hidden=!hasFin;
+    if(series.length){
+      var max=Math.max.apply(null,series.map(function(x){return Math.abs(x[1].val);}));
+      var yr=series[0][1].year;
+      bars.setAttribute('aria-label','Revenue and profit'+(yr?' for '+yr:''));
+      series.forEach(function(x){
+        var b=el('div','bar');var lb=el('div','lb');lb.appendChild(el('b',null,x[0]));lb.appendChild(el('span',null,x[1].label+(x[1].year?' ('+x[1].year+')':'')));
+        var tr=el('div','track');var fl=el('div','fill '+x[2]);tr.appendChild(fl);b.appendChild(lb);b.appendChild(tr);bars.appendChild(b);
+        b.addEventListener('mousemove',function(e){var t=$('tip');t.textContent=x[0]+': '+x[1].label+(x[1].year?' · '+x[1].year:'');t.style.left=(e.clientX+14)+'px';t.style.top=(e.clientY+14)+'px';t.style.opacity=1;});
+        b.addEventListener('mouseleave',function(){$('tip').style.opacity=0;});
+        requestAnimationFrame(function(){requestAnimationFrame(function(){fl.style.width=Math.max(2,Math.abs(x[1].val)/max*100)+'%';});});
+      });
+      bars.appendChild(el('div','src','Bars show each figure relative to revenue.'));
+    }else{bars.appendChild(el('div','src','Revenue figures are not listed publicly for this organisation. Check its annual report or website.'));}
+    if(rev&&ni&&rev.val>0){var mg=ni.val/rev.val*100;var t=el('div','tile wide');var r=el('div','ring');r.style.setProperty('--p',Math.max(0,Math.min(100,mg)).toFixed(1));t.appendChild(r);t.appendChild(el('small',null,'Net profit margin'));t.appendChild(el('b',null,mg.toFixed(1)+'%'));t.appendChild(el('span',null,'Of every ₹100 earned, about ₹'+Math.max(0,mg).toFixed(0)+' is profit.'));tiles.appendChild(t);}
+    if(emp){var e2=el('div','tile');e2.appendChild(el('small',null,'Employees'));var en=(emp.match(/[\d][\d,]*(\.\d+)?\s*(million|lakh)?/i)||[''])[0];e2.appendChild(el('b',null,en||'—'));var ey=emp.match(/\((\d{4})\)/);e2.appendChild(el('span',null,ey?'as of '+ey[1]:'people'));tiles.appendChild(e2);}
+    if(ta){var t3=el('div','tile');t3.appendChild(el('small',null,'Total assets'));t3.appendChild(el('b',null,ta.label));t3.appendChild(el('span',null,ta.year?'as of '+ta.year:''));tiles.appendChild(t3);}
+    if(aum){var t4=el('div','tile');t4.appendChild(el('small',null,'Assets managed'));t4.appendChild(el('b',null,aum.label));tiles.appendChild(t4);}
+    var fnd=(row(I,['founded'])||{}).text||'';var fy=fnd.match(/(1[6-9]\d{2}|20\d{2})/);if(fy){var t5=el('div','tile');t5.appendChild(el('small',null,'Years in business'));t5.appendChild(el('b',null,String(new Date().getFullYear()-(+fy[1]))));t5.appendChild(el('span',null,'since '+fy[1]));tiles.appendChild(t5);}
+
+    /* products */
+    var pr=$('rProd'),pm=$('rProdMore');pr.innerHTML='';pm.innerHTML='';
+    var prod=[];['products','brands','services'].forEach(function(k){var r=row(I,[k]);if(r){(r.items.length?r.items:r.text.split(/ · |, |; /)).forEach(function(x){x=clean(x);if(x&&x.length<60&&prod.indexOf(x)<0)prod.push(x);});}});
+    prod.slice(0,24).forEach(function(p){pr.appendChild(el('span',null,p));});
+    (D.extra||[]).forEach(function(s){s.items.forEach(function(it){if(pm.children.length<12)pm.appendChild(el('li',null,it));});if(!s.items.length&&s.para&&pm.children.length<3)pm.appendChild(el('li',null,s.para.slice(0,300)+(s.para.length>300?'…':'')));});
+    var hasProd=prod.length||pm.children.length;$('s-prod').hidden=!hasProd;$('tProd').hidden=!hasProd;
+
+    /* news */
+    newsLinks(name,(row(I,['website'])||{}).text);
+
+    /* questions + pitch + ask-back */
+    buildQuestions(D,prod);
+    pitchVariant=0;makePitch(D,prod);
+    askBack(D);
+    setTimeout(function(){$('report').scrollIntoView({behavior:'smooth',block:'start'});},80);
+  }
+
+  function newsLinks(name,site){
+    var qn=encodeURIComponent('"'+name+'"'),qp=encodeURIComponent(name);
+    var L=[
+      ['📰','Latest news (last 7 days)','Google News','https://news.google.com/search?q='+encodeURIComponent('"'+name+'" when:7d')+'&hl=en-IN&gl=IN&ceid=IN:en'],
+      ['📈','Economic Times','Business coverage','https://economictimes.indiatimes.com/topic/'+encodeURIComponent(name.toLowerCase().replace(/\s+/g,'-'))],
+      ['💹','Moneycontrol','Results & market news','https://www.google.com/search?q='+encodeURIComponent('site:moneycontrol.com '+name)+'&tbm=nws'],
+      ['📄','Annual report','Latest official report','https://www.google.com/search?q='+encodeURIComponent(name+' annual report 2025 pdf')],
+      ['💼','LinkedIn page','Culture, posts & people','https://www.linkedin.com/search/results/companies/?keywords='+qp],
+      ['🗣️','Interview experiences','AmbitionBox','https://www.google.com/search?q='+encodeURIComponent(name+' interview questions ambitionbox')]
+    ];
+    var s=(site||'').match(/[a-z0-9.-]+\.[a-z]{2,}(\.[a-z]{2})?/i);if(s)L.splice(4,0,['🏢','Official website',s[0],'https://'+s[0].replace(/^https?:\/\//,'')]);
+    var g=$('newsLinks');g.innerHTML='';
+    L.forEach(function(x){var a=el('a','nlink');a.href=x[3];a.target='_blank';a.rel='noopener';a.appendChild(el('i',null,x[0]));var t=el('div');t.appendChild(el('b',null,x[1]));t.appendChild(el('small',null,x[2]));a.appendChild(t);g.appendChild(a);});
+    var h=$('headlines');h.hidden=true;h.innerHTML='';
+    if(NEWS_ENDPOINT){fetch(NEWS_ENDPOINT+'?q='+qn).then(function(r){return r.json();}).then(function(items){
+      (items||[]).slice(0,6).forEach(function(it){if(!/^https:\/\//.test(it.link||''))return;var a=el('a');a.href=it.link;a.target='_blank';a.rel='noopener';a.appendChild(el('div',null,it.title));a.appendChild(el('small',null,[it.source,it.date].filter(Boolean).join(' · ')));h.appendChild(a);});
+      h.hidden=!h.children.length;}).catch(function(){});}
+  }
+
+  /* ---------- question bank ---------- */
+  var ROLES=[
+    {k:'Sales & Marketing',re:/sales|market|brand|business development|\bbd\b|digital|advertis|key account|retail|channel|territory|product manager|growth/i,qs:[
+      ['Sell me this pen (or one of our products).','Ask about the buyer\'s need first, then match 2 features to that need, then close. Structure: <b>Need → Benefit → Close</b>.'],
+      ['How would you increase sales of {P} in a tier-2 city?','Use the <b>4Ps</b>: pricing packs, distribution through local retailers, regional-language promotion, and a trial offer. Give one number-based target.'],
+      ['Who are {C}\'s biggest competitors, and how is it different?','Name 2–3 competitors, then state one clear differentiator: brand, distribution, price or innovation.'],
+      ['Tell me about a time you persuaded someone.','Use <b>STAR</b>: Situation, Task, Action, Result. A college fest sponsorship or project story works well.'],
+      ['How do you handle rejection or missed targets?','Show resilience: what you learnt, what you changed, and how you bounced back.'],
+      ['Which digital marketing trend should {C} use next?','Pick one: short video, influencer marketing, quick-commerce, AI personalisation. Explain why it fits {C}\'s customers.'],
+      ['What does a good day in field sales look like to you?','Planning, number of client visits, follow-ups and reporting. Show you understand the discipline.']]},
+    {k:'Finance & Banking',re:/financ|analyst|bank|credit|account|invest|audit|tax|wealth|treasury|equity|risk|loan|relationship manager|\brm\b|insurance|ca\b|cfa/i,qs:[
+      ['Walk me through the three financial statements.','P&L shows profit, the balance sheet shows what it owns and owes, and cash flow shows actual cash movement. Explain how net profit links all three.'],
+      ['How would you value {C}?','DCF (future cash flows), relative valuation (P/E, EV/EBITDA vs peers), or asset-based. Say which suits {C} and why.'],
+      ['What is working capital, and why does it matter?','Current assets minus current liabilities. It shows short-term liquidity. Give an FMCG vs manufacturing contrast.'],
+      ['What are {C}\'s latest revenue and profit figures?','Quote the numbers from the “Key numbers” section and add one reason behind the trend.'],
+      ['How do repo rate changes affect banks and companies?','Higher repo means costlier loans, lower demand for credit and margin pressure. Link it to the current RBI stance.'],
+      ['Explain NPA, CASA ratio or EBITDA in simple words.','Pick the term relevant to the role. Define it in one line, then give why it matters.'],
+      ['Would you invest in {C}\'s shares today? Why?','Balance: growth drivers, risks and valuation. Show judgment, not a tip.']]},
+    {k:'Human Resources',re:/\bhr\b|human|talent|recruit|people|hrbp|payroll|learning|l&d|culture/i,qs:[
+      ['How would you reduce employee attrition at {C}?','Diagnose first (exit interviews, data), then act: career paths, recognition, manager training, flexible policies.'],
+      ['Walk us through the recruitment process you would follow.','Manpower planning → job description → sourcing → screening → interviews → offer → onboarding.'],
+      ['How would you handle a conflict between two team members?','Listen to both separately, focus on facts and a shared goal, agree actions, and follow up.'],
+      ['What do you know about the new labour codes in India?','Four codes consolidating 29 laws: wages, industrial relations, social security, and safety. Mention one practical impact.'],
+      ['What is employer branding? How strong is {C}\'s?','How a company is seen as a workplace. Use its LinkedIn page and awards as evidence.'],
+      ['How can HR use data and AI?','Attrition prediction, resume screening, engagement surveys, with care for bias and privacy.']]},
+    {k:'Operations & Supply Chain',re:/operat|supply|logistic|procure|purchas|production|plant|quality|warehouse|inventory|scm/i,qs:[
+      ['How would you reduce delivery time without raising cost?','Better demand forecasting, route optimisation, regional warehouses, and supplier collaboration.'],
+      ['Explain JIT, EOQ or the bullwhip effect.','One-line definition, one example, one risk.'],
+      ['How does {C} get its products to customers?','Describe the chain: sourcing → manufacturing → distribution → retail or online. Mention any quick-commerce angle.'],
+      ['What KPIs would you track in operations?','OTIF, inventory turnover, lead time, cost per unit, defect rate.'],
+      ['Tell us about a process you improved.','STAR format with a measurable result, even from a college project.']]},
+    {k:'Analytics & Consulting',re:/analy|data|consult|strategy|research|insight|\bba\b|business analyst|associate/i,qs:[
+      ['Estimate the market size for {P} in India.','Guesstimate structure: population → target segment → usage → price. State assumptions clearly and round numbers.'],
+      ['{C}\'s profits fell 10%. How would you find out why?','Profit tree: revenue (price × volume) vs cost (fixed vs variable). Narrow down step by step.'],
+      ['Which tools do you know: Excel, SQL, Power BI, Python?','Be honest. Give one example of what you built or analysed with each.'],
+      ['Explain a data insight to a non-technical manager.','Use one chart, one sentence of insight, one recommendation.'],
+      ['How would you use AI to improve {C}\'s business?','Pick one function (demand forecasting, customer service, pricing) and a clear benefit.']]},
+    {k:'Management Trainee / General',re:/./,qs:[
+      ['Where do you see yourself in five years at {C}?','Show growth within the company: learn the business, take ownership of a team or region, keep upskilling.'],
+      ['Which department would you like to work in, and why?','Link it to your specialisation, your projects and {C}\'s business.'],
+      ['Are you comfortable with relocation and rotations?','MT roles rotate across functions and cities. Show flexibility and eagerness to learn.'],
+      ['Tell us about a leadership experience.','STAR: a college event, club or group project where you led people and delivered a result.'],
+      ['What is one problem {C} is facing, and how would you solve it?','Use the news section to pick a real challenge. Offer one practical idea.']]}
+  ];
+  var HR=[
+    ['Tell me about yourself.','60–90 seconds: <b>present</b> (MBA, specialisation), <b>past</b> (graduation, internship, one achievement), <b>future</b> (why this role at {C}).'],
+    ['Why do you want to join {C}?','Use your “Why us?” answer below. One company fact + why it matters to you + what you bring.'],
+    ['What are your strengths and weaknesses?','One strength with proof. One real weakness you are actively fixing. Avoid clichés like “perfectionist”.'],
+    ['Why should we hire you?','Match 2–3 of your skills to the role\'s needs, with one example each.'],
+    ['Tell me about a challenge you faced and how you handled it.','STAR format. Focus on your actions and what you learnt.'],
+    ['What are your salary expectations?','Research the role\'s range first. Say you are open and more focused on learning, or give a researched range.'],
+    ['Do you have any questions for us?','Always yes. See “Smart questions to ask them” below.']];
+  function companyQs(D,prod){
+    var I=D.info,n=D.summary.title,ind=clean((row(I,['industry'])||{}).text||''),ceo=clean(((row(I,['key people'])||{}).items||[])[0]||(row(I,['key people'])||{}).text||''),fnd=((row(I,['founded'])||{}).text||'').match(/(1[6-9]\d{2}|20\d{2})/);
+    var par=clean((row(I,['parent'])||{}).text||'');
+    var L=[['What do you know about {C}?','Cover in 30 seconds: what it does'+(ind?' ('+ind.split(' · ')[0]+')':'')+(fnd?', founded in '+fnd[1]:'')+', its size, 2–3 key products, and one recent development from the news.'],
+      ['Name some of our products or brands. Which do you use?',prod.length?'For example: <b>'+prod.slice(0,4).map(esc).join(', ')+'</b>. Pick one you have used and say what you like about it.':'Check the company website\'s products page and pick three.'],
+      ['What recent news about {C} caught your attention?','Open the news links above, pick one story (results, launch, acquisition, leadership change) and share your view on it.'],
+      ['Who are our main competitors?','Name 2–3 rivals in the same industry and one way {C} stands apart.']];
+    if(ceo)L.push(['Who leads {C}?','Currently listed: <b>'+esc(ceo.slice(0,120))+'</b>. Verify on the company website before the interview.']);
+    if(par)L.push(['What is {C}\'s relationship with '+esc(par.split(' (')[0].slice(0,60))+'?','Explain the parent or group structure in one line and why it is a strength.']);
+    L.push(['What do you think is {C}\'s biggest opportunity in the next 3 years?','Pick one trend (rural demand, digital, sustainability, exports, AI) and link it to their business.']);
+    return L;
+  }
+  var qSets=[];
+  function buildQuestions(D,prod){
+    var roleTxt=D.role||'',R=ROLES.find(function(r){return r.re.test(roleTxt);})||ROLES[ROLES.length-1];
+    if(!roleTxt)R=ROLES[ROLES.length-1];
+    qSets=[['About '+D.summary.title,companyQs(D,prod)],[(roleTxt?roleTxt:R.k)+' round',R.qs],['HR round',HR]];
+    var tb=$('qtabs');tb.innerHTML='';
+    qSets.forEach(function(s,i){var b=el('button',i?'':'on',s[0]);b.type='button';b.addEventListener('click',function(){tb.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);});showQs(i,D,prod);});tb.appendChild(b);});
+    showQs(0,D,prod);
+  }
+  function fill(s,D,prod){return s.replace(/\{C\}/g,esc(D.summary.title)).replace(/\{P\}/g,esc(prod[0]||'our flagship product'));}
+  function showQs(i,D,prod){var box=$('qs');box.innerHTML='';
+    qSets[i][1].forEach(function(qq,n){var det=el('details','q');var sm=el('summary');sm.appendChild(el('i',null,String(n+1).padStart(2,'0')));var sp=el('span');sp.innerHTML=fill(qq[0],D,prod);sm.appendChild(sp);det.appendChild(sm);var h=el('div','hint');h.innerHTML='<b>How to answer:</b> '+fill(qq[1],D,prod);det.appendChild(h);box.appendChild(det);});}
+
+  /* ---------- "Why us?" builder ---------- */
+  var pitchVariant=0;
+  function makePitch(D,prod){
+    var I=D.info,n=D.summary.title,ind=clean((row(I,['industry'])||{}).text||'').split(' · ')[0],fnd=((row(I,['founded'])||{}).text||'').match(/(1[6-9]\d{2}|20\d{2})/),role=D.role||'this role';
+    var p1=prod[0]?prod.slice(0,2).join(' and '):'its products';
+    var V=[
+      'I want to join '+n+' because it is '+(fnd?'a company that has stayed relevant since '+fnd[1]:'a respected name')+(ind?' in '+ind.toLowerCase():'')+'. Brands like '+p1+' show how well it understands its customers. As an MBA student, I want to learn from that customer focus, and in '+role+' I can contribute my [your skill / project], while growing with a company that invests in its people.',
+      n+' stands out to me for three reasons: its scale'+(ind?' in '+ind.toLowerCase():'')+', the strength of '+p1+', and [one recent development from the news]. During my MBA I worked on [your project or internship], which prepared me for '+role+'. I would like to start my career where I can learn fast and deliver real results.',
+      'Honestly, I have been a customer of '+n+' through '+p1+', and I have always admired [something specific]. When I read about [recent news], I realised this is a company that keeps moving forward. I believe my [strength] and my interest in [your specialisation] make me a good fit for '+role+'.'];
+    $('pitch').value=V[pitchVariant%V.length];
+  }
+  $('redoPitch').addEventListener('click',function(){pitchVariant++;if(lastData)makePitch(lastData,prodOf(lastData));});
+  function prodOf(D){var p=[];['products','brands','services'].forEach(function(k){var r=row(D.info,[k]);if(r)(r.items.length?r.items:r.text.split(/ · |, |; /)).forEach(function(x){x=clean(x);if(x&&x.length<60&&p.indexOf(x)<0)p.push(x);});});return p;}
+  $('copyPitch').addEventListener('click',function(){var t=$('pitch');try{navigator.clipboard.writeText(t.value);toast('Copied. Now make it yours ✍️');}catch(e){t.select();}});
+
+  function askBack(D){var n=D.summary.title;var L=['What does success look like in this role in the first 6 months?','What are the biggest challenges the team is working on right now?','What kind of training or mentoring do new joiners at '+n+' receive?','How has '+n+' been responding to [recent news you read]?','What qualities do your best performers in this role share?','What are the next steps in the selection process?'];
+    var o=$('askBack');o.innerHTML='';L.forEach(function(x){o.appendChild(el('li',null,x));});}
+
+  /* allow deep links: prep.html?c=Infosys&r=Business%20Analyst */
+  var P=new URLSearchParams(location.search);if(P.get('c')){co.value=P.get('c');role.value=P.get('r')||'';run(co.value,role.value);}
+})();
+</script>
+</body>
+</html>
