@@ -96,6 +96,9 @@ h1,h2,h3{margin:0}
 .rhead .desc{color:var(--amber);font-weight:700;font-size:15px;margin-top:6px}
 .rhead .role{margin-top:8px;font-size:14px;color:var(--muted)}
 .rhead .role b{color:var(--ink)}
+.alt{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.alt button{padding:5px 11px;border-radius:999px;border:1px solid var(--line2);background:none;font-size:12.5px;font-weight:700;cursor:pointer;color:#ddd5cf}
+.alt button:hover{border-color:var(--red);color:#fff}
 .racts{margin-left:auto;display:flex;flex-wrap:wrap;gap:10px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line2);background:none;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none;white-space:nowrap}
 .btn:hover{border-color:var(--red)}
@@ -242,6 +245,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <h2 id="rName"></h2>
         <div class="desc" id="rDesc"></div>
         <div class="role" id="rRole"></div>
+        <div class="alt" id="rAlt" hidden></div>
       </div>
       <div class="racts"><button class="btn red" id="printBtn" type="button">⬇ Save prep sheet (PDF)</button><button class="btn" id="againBtn" type="button">↺ New search</button></div>
     </div>
@@ -344,7 +348,7 @@ var NEWS_ENDPOINT='';
       sugg.innerHTML='';sIdx=-1;
       pages.slice(0,6).forEach(function(p){
         var b=el('button');b.type='button';b.setAttribute('role','option');
-        if(p.thumbnail&&/^https:\/\/upload\.wikimedia\.org\//.test(p.thumbnail.source)){var im=el('img');im.src=p.thumbnail.source;im.alt='';b.appendChild(im);}else b.appendChild(el('span','ph',(p.title||'?').charAt(0)));
+        if(p.thumbnail&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(p.thumbnail.source)){var im=el('img');im.src=p.thumbnail.source;im.alt='';b.appendChild(im);}else b.appendChild(el('span','ph',(p.title||'?').charAt(0)));
         var t=el('div');t.appendChild(el('b',null,p.title));t.appendChild(el('small',null,p.description||''));b.appendChild(t);
         b.addEventListener('click',function(){co.value=p.title;picked=p.title;sugg.hidden=true;role.focus();});
         sugg.appendChild(b);
@@ -358,34 +362,48 @@ var NEWS_ENDPOINT='';
   $('againBtn').addEventListener('click',function(){$('report').hidden=true;$('idle').hidden=false;co.value='';role.value='';picked=null;scrollTo({top:0,behavior:'smooth'});setTimeout(function(){co.focus();},400);});
   $('printBtn').addEventListener('click',function(){d.querySelectorAll('#qs details').forEach(function(x){x.open=true;});setTimeout(function(){print();},100);});
 
-  function resolveTitle(v){
-    return getJSON(q({action:'query',list:'search',srsearch:v+' company',srlimit:'6',srprop:'snippet'})).then(function(j){
-      var r=(j.query&&j.query.search)||[];if(!r.length)throw new Error('notfound');
-      var lv=v.toLowerCase();
-      var best=r.find(function(x){return x.title.toLowerCase()===lv;})||r.find(function(x){return x.title.toLowerCase().indexOf(lv)>-1;})||r[0];
+  function searchList(v){
+    return getJSON(q({action:'query',list:'search',srsearch:v+' company',srlimit:'8',srprop:'snippet'})).then(function(j){
+      return ((j.query&&j.query.search)||[]).filter(function(x){return !/disambiguation|^list of/i.test(x.title);});});
+  }
+  function resolveTitle(v,avoid){
+    return searchList(v).then(function(r){
+      r=r.filter(function(x){return x.title!==avoid;});if(!r.length)throw new Error('notfound');
+      var lv=v.toLowerCase(),snip=function(x){return x.title+' '+(x.snippet||'').replace(/<[^>]+>/g,'');};
+      var best=r.find(function(x){return x.title.toLowerCase().indexOf(lv)>-1&&BIZ.test(snip(x));})||r.find(function(x){return BIZ.test(snip(x));})||r[0];
       return best.title;
     });
   }
 
   function run(input,roleTxt){
     $('idle').hidden=true;$('err').hidden=true;$('report').hidden=true;$('skel').hidden=false;$('go').disabled=true;
-    var titleP=picked?Promise.resolve(input):getJSON(REST+'/page/summary/'+encodeURIComponent(input.replace(/ /g,'_'))).then(function(s){if(s.type==='disambiguation')return resolveTitle(input);return s.title;}).catch(function(){return resolveTitle(input);});
+    var titleP=picked?Promise.resolve(input):getJSON(REST+'/page/summary/'+encodeURIComponent(input.replace(/ /g,'_'))).then(function(s){if(s.type==='disambiguation')return resolveTitle(input,s.title);return s.title;}).catch(function(){return resolveTitle(input);});
     titleP.then(function(title){
       return Promise.all([
         getJSON(REST+'/page/summary/'+encodeURIComponent(title.replace(/ /g,'_'))),
         getJSON(q({action:'parse',page:title,prop:'text|sections',section:'0',redirects:'1',disabletoc:'1'})).catch(function(){return null;}),
         getJSON(q({action:'parse',page:title,prop:'sections',redirects:'1'})).catch(function(){return null;})
       ]).then(function(res){
-        var summary=res[0],intro=res[1],secs=res[2];
+        var summary=res[0],intro=res[1],secs=res[2];if(summary.type==='disambiguation')throw new Error('disamb');
         var info=parseInfobox(intro&&intro.parse&&intro.parse.text&&intro.parse.text['*']);
         return extraSections(title,secs).then(function(extra){return {title:title,summary:summary,info:info,extra:extra};});
       });
     }).then(function(data){
-      lastData=data;data.role=roleTxt;render(data);
+      lastData=data;data.role=roleTxt;data.query=input;render(data);altRow(data);
     }).catch(function(e){
       $('skel').hidden=true;var er=$('err');er.hidden=false;
       er.innerHTML='<b>We could not find that company</b>Check the spelling, or pick a name from the suggestions as you type. Very small or local companies may not have public information yet. In that case, check their website and LinkedIn page.';
     }).finally(function(){$('go').disabled=false;});
+  }
+
+  function altRow(D){
+    var box=$('rAlt');box.hidden=true;box.innerHTML='';
+    searchList(D.query||D.summary.title).then(function(r){
+      r=r.filter(function(x){return x.title!==D.summary.title;}).slice(0,4);if(!r.length)return;
+      box.appendChild(el('span',null,'Not the company you meant?'));
+      r.forEach(function(x){var b=el('button',null,x.title);b.type='button';b.addEventListener('click',function(){co.value=x.title;picked=x.title;run(x.title,D.role||role.value.trim());});box.appendChild(b);});
+      box.hidden=false;
+    }).catch(function(){});
   }
 
   /* ---------- parse Wikipedia infobox (rendered HTML, read as plain text only) ---------- */
@@ -394,8 +412,8 @@ var NEWS_ENDPOINT='';
     var doc=new DOMParser().parseFromString(html,'text/html');
     doc.querySelectorAll('sup,.reference,style,.noprint').forEach(function(x){x.remove();});
     var box=doc.querySelector('table.infobox');if(!box)return out;
-    var img=box.querySelector('.infobox-image img, td img');
-    if(img){var src=img.getAttribute('src')||'';if(src.indexOf('//')===0)src='https:'+src;if(/^https:\/\/upload\.wikimedia\.org\//.test(src))out.logo=src;}
+    var img=[].slice.call(box.querySelectorAll('img')).find(function(i){return (+i.getAttribute('width')||0)>=40;});
+    if(img){var src=img.getAttribute('src')||'';if(src.indexOf('//')===0)src='https:'+src;if(/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(src))out.logo=src;}
     box.querySelectorAll('tr').forEach(function(tr){
       var th=tr.querySelector('th.infobox-label, th'),td=tr.querySelector('td.infobox-data, td');
       if(!th||!td)return;
@@ -410,7 +428,7 @@ var NEWS_ENDPOINT='';
   function row(info,keys){for(var i=0;i<keys.length;i++){for(var k in info.rows){if(k===keys[i]||k.indexOf(keys[i])===0)return info.rows[k];}}return null;}
   function extraSections(title,secs){
     var list=(secs&&secs.parse&&secs.parse.sections)||[];
-    var hit=list.filter(function(s){return /^(products?|brands?|services|products and services|operations|business segments?|segments|divisions|subsidiaries|businesses)$/i.test(s.line.replace(/<[^>]+>/g,'').trim());}).slice(0,2);
+    var hit=list.filter(function(s){var l=s.line.replace(/<[^>]+>/g,'').trim();return s.toclevel===1&&/brand|product|service|segment|business|division|subsidiar|portfolio|operations/i.test(l)&&!/controvers|criticism|legal|see also|reference/i.test(l);}).slice(0,2);
     if(!hit.length)return Promise.resolve([]);
     return Promise.all(hit.map(function(s){return getJSON(q({action:'parse',page:title,prop:'text',section:s.index,redirects:'1',disabletoc:'1'})).then(function(j){
       var doc=new DOMParser().parseFromString(j.parse.text['*'],'text/html');doc.querySelectorAll('sup,.reference,style,table,.mw-editsection').forEach(function(x){x.remove();});
@@ -421,16 +439,19 @@ var NEWS_ENDPOINT='';
   }
 
   /* ---------- money parsing for the chart ---------- */
-  var UNIT={trillion:1e12,tn:1e12,billion:1e9,bn:1e9,b:1e9,million:1e6,mn:1e6,m:1e6,crore:1e7,cr:1e7,lakh:1e5};
+  var UNIT={'lakh crore':1e12,'thousand crore':1e10,trillion:1e12,tn:1e12,billion:1e9,bn:1e9,b:1e9,million:1e6,mn:1e6,m:1e6,crore:1e7,cr:1e7,lakh:1e5};
   function money(t){
     if(!t)return null;
-    var m=t.replace(/ /g,' ').match(/(₹|US\$|\$|€|£|¥|CHF|Rs\.?|INR|EUR|USD|GBP|JPY)?\s?([\d][\d,]*(?:\.\d+)?)\s*(trillion|billion|million|crore|lakh|bn|tn|mn|cr)?\b/i);
+    var m=t.replace(/ /g,' ').match(/(₹|US\$|\$|€|£|¥|CHF|Rs\.?|INR|EUR|USD|GBP|JPY)?\s?([\d][\d,]*(?:\.\d+)?)\s*(lakh crore|thousand crore|trillion|billion|million|crore|lakh|bn|tn|mn|cr)?\b/i);
     if(!m)return null;
     var n=parseFloat(m[2].replace(/,/g,''));if(isNaN(n))return null;
-    var u=(m[3]||'').toLowerCase();var val=n*(UNIT[u]||1);
+    var u=(m[3]||'').toLowerCase().replace(/\s+/g,' ');var val=n*(UNIT[u]||1);
     var y=t.match(/\((?:FY\s?)?(\d{4})(?:[–-]\d{2,4})?\)/i);
     var neg=/decrease|▼|−|-\s?[₹$€£]/.test(t.slice(0,t.indexOf(m[2])));
-    return {val:neg?-val:val,label:(m[1]||'')+m[2]+(m[3]?' '+m[3]:''),cur:(m[1]||'').replace(/Rs\.?|INR/,'₹').replace(/USD|US\$/,'US$'),year:y?y[1]:''};
+    var cur0=(m[1]||'').replace(/Rs\.?|INR/,'₹');var lab=(m[1]||'')+m[2]+(m[3]?' '+m[3]:'');
+    if(cur0==='₹'&&/^(trillion|billion|million|bn|tn|mn)$/i.test(u)){lab='₹'+Math.round(val/1e7).toLocaleString('en-IN')+' crore';}
+    else if(cur0==='₹'&&/^(crore|cr)$/i.test(u)){lab='₹'+n.toLocaleString('en-IN')+' crore';}
+    return {val:neg?-val:val,label:lab,cur:(m[1]||'').replace(/Rs\.?|INR/,'₹').replace(/USD|US\$/,'US$'),year:y?y[1]:''};
   }
   function clean(t){return (t||'').replace(/^[\s▲▼]*(increase|decrease|steady)?\s*/i,'').replace(/\s*\[\d+\]/g,'').trim();}
 
@@ -441,7 +462,7 @@ var NEWS_ENDPOINT='';
     $('rName').textContent=name;$('rDesc').textContent=desc?desc.charAt(0).toUpperCase()+desc.slice(1):'';
     $('rRole').innerHTML=D.role?'Preparing for: <b>'+esc(D.role)+'</b>':'Tip: add your role above to get role-specific questions.';
     var lg=$('rLogo');lg.innerHTML='';lg.className='rlogo';
-    var logo=I.logo||(S.thumbnail&&/^https:\/\/upload\.wikimedia\.org\//.test(S.thumbnail.source)?S.thumbnail.source:null);
+    var logo=I.logo||(S.thumbnail&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(S.thumbnail.source)?S.thumbnail.source:null);
     if(logo){var im=el('img');im.src=logo;im.alt=name+' logo';lg.appendChild(im);}else{lg.classList.add('none');lg.textContent=name.charAt(0);}
     $('rAbout').textContent=S.extract||'';
     var wiki='https://en.wikipedia.org/wiki/'+encodeURIComponent(name.replace(/ /g,'_'));
@@ -450,7 +471,7 @@ var NEWS_ENDPOINT='';
     /* facts */
     var F=[['Industry',['industry']],['Founded',['founded','formation','established']],['Founders',['founder','founders']],['Headquarters',['headquarters','hq']],['Area served',['area served']],['Key people',['key people']],['Employees',['number of employees','employees']],['Parent',['parent']],['Traded as',['traded as']],['Type',['type']],['Website',['website']]];
     var fx=$('rFacts');fx.innerHTML='';
-    F.forEach(function(f){var r=row(I,f[1]);if(!r)return;var txt=r.items.length?r.items.slice(0,4).join(' · '):r.text;txt=clean(txt);if(!txt||txt.length>260)txt=txt.slice(0,260)+'…';
+    F.forEach(function(f){var r=row(I,f[1]);if(!r)return;var txt=r.items.length?r.items.slice(0,4).join(' · '):r.text;txt=clean(txt).replace(/^(\d{4})\s*\(\1\)/,'$1').replace(/\(\s*\d+\s*years ago\s*\)/i,'').trim();if(!txt||txt.length>260)txt=txt.slice(0,260)+'…';
       var c=el('div','fact');c.appendChild(el('small',null,f[0]));c.appendChild(el('span',null,txt));fx.appendChild(c);});
 
     /* numbers */
