@@ -592,7 +592,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     var g=$('newsLinks');g.innerHTML='';
     L.forEach(function(x){var a=el('a','nlink');a.href=x[3];a.target='_blank';a.rel='noopener';a.appendChild(el('i',null,x[0]));var t=el('div');t.appendChild(el('b',null,x[1]));t.appendChild(el('small',null,x[2]));a.appendChild(t);g.appendChild(a);});
     var h=$('headlines'),hw=$('hlWrap');h.innerHTML='';hw.hidden=!NEWS_ENDPOINT;$('hlNote').textContent='Fetching the latest headlines…';
-    if(NEWS_ENDPOINT){var tok=name;fetch(NEWS_ENDPOINT+'?q='+qp).then(function(r){return r.json();}).then(function(items){
+    if(NEWS_ENDPOINT){var tok=name;var getNews=function(n){return fetch(NEWS_ENDPOINT+'?q='+qp).then(function(r){return r.json();}).catch(function(e){if(n>0)return new Promise(function(ok){setTimeout(ok,1500);}).then(function(){return getNews(n-1);});throw e;});};getNews(2).then(function(items){
       if(tok!==name)return;
       (Array.isArray(items)?items:[]).slice(0,6).forEach(function(it){if(!/^https:\/\//.test(it.link||''))return;var a=el('a');a.href=it.link;a.target='_blank';a.rel='noopener';a.appendChild(el('div',null,it.title));a.appendChild(el('small',null,[it.source,it.date].filter(Boolean).join(' · ')));h.appendChild(a);});
       $('hlNote').textContent=h.children.length?'From the last two weeks. Tap to read.':'No fresh headlines in the last two weeks. Use the links below.';}).catch(function(){$('hlNote').textContent='Headlines could not load right now. Use the links below.';});}
@@ -715,7 +715,8 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     if(busy)return;busy=true;
     var D=lastData||{};body.company=(D.summary&&D.summary.title)||co.value.trim();body.role=(D.role||role.value.trim()||'Management Trainee');
     var done=false,t=setTimeout(function(){if(!done){done=true;busy=false;cb('That took too long. Please try again.');}},45000);
-    fetch(AI_ENDPOINT,{method:'POST',body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
+    var callAI=function(n){return fetch(AI_ENDPOINT,{method:'POST',body:JSON.stringify(body)}).then(function(r){return r.json();}).catch(function(e){if(n>0&&!done)return callAI(n-1);throw e;});};
+    callAI(1).then(function(j){
       if(done)return;done=true;clearTimeout(t);busy=false;if(j&&j.ok&&j.reply)cb(null,j.reply);else cb((j&&j.error)||'The coach is busy. Please try again in a minute.');
     }).catch(function(){if(done)return;done=true;clearTimeout(t);busy=false;cb('Could not reach the coach. Check your internet and try again.');});}
   var cOut=$('cOut');
