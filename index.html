@@ -11,7 +11,8 @@
 <meta property="og:image" content="https://youngprofessor.in/photo.jpg">
 <meta property="og:url" content="https://youngprofessor.in/">
 <meta property="og:type" content="profile">
-<link rel="icon" href="photo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="icon-192.png" type="image/png">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -73,7 +74,11 @@ img{max-width:100%;display:block}
 .nav.solid{background:rgba(11,10,10,.78);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:21px;letter-spacing:.2px}
-.logo b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--sans);font-weight:800;font-size:14px;letter-spacing:.5px}
+.logo .lmark{width:40px;height:40px;flex:none;display:block;border-radius:50%;filter:drop-shadow(0 0 10px rgba(227,22,30,.35));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.logo .lmark .cap{transform-origin:100px 60px;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.logo:hover .lmark .cap{transform:rotate(-10deg) translateY(-4px)}
+.logo:hover .lmark{transform:scale(1.06)}
+.logo span em{font-style:normal;color:var(--red)}
 .logo span em{color:var(--red);font-style:normal}
 .menu{display:flex;gap:4px;list-style:none;margin:0;padding:0}
 .menu a{position:relative;display:block;padding:8px 12px;text-decoration:none;font-size:14.5px;font-weight:600;color:var(--muted);transition:color .2s}
@@ -126,6 +131,11 @@ img{max-width:100%;display:block}
 .fcard{position:fixed;left:20px;bottom:20px;z-index:70;width:min(360px,calc(100% - 40px));padding:18px 18px 16px;border-radius:20px;background:rgba(23,20,20,.96);border:1px solid var(--line2);box-shadow:0 24px 60px -20px rgba(0,0,0,.9),0 0 0 1px rgba(227,22,30,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transform:translateY(140%);opacity:0;transition:transform .7s var(--ease),opacity .5s}
 .fcard.show{transform:none;opacity:1}
 .fcard .fh{display:flex;gap:12px;align-items:center}
+.fbrand{display:flex;flex-direction:column;align-items:center;padding:46px 20px 10px;text-align:center}
+.fbrand img{display:block;width:170px;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.6))}
+.fbrand .fbn{font-family:var(--serif);font-size:44px;line-height:1;margin-top:6px;color:var(--ink)}
+.fbrand .fbn em{color:var(--red);font-style:italic}
+.fbrand small{font-family:var(--mono);font-size:11px;letter-spacing:.32em;color:var(--muted);margin-top:10px}
 .fcard img{width:46px;height:46px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--red)}
 .fcard b{display:block;font-size:16px}
 .fcard .fh span{font-size:13px;color:var(--muted)}
@@ -572,7 +582,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 
 <nav class="nav" id="nav" aria-label="Main">
   <div class="wrap">
-    <a class="logo" href="#top"><b>BL</b><span>young<em>professor</em>.in</span></a>
+    <a class="logo" href="#top" aria-label="youngprofessor.in home"><img class="lmark" src="logo-mark.png" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
     <ul class="menu">
       <li><a href="#about">About</a></li>
       <li><a href="#expertise">Expertise</a></li>
@@ -965,6 +975,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 </section>
 
 <footer>
+  <div class="fbrand"><picture><source srcset="logo-badge.webp" type="image/webp"><img src="logo-badge.png" alt="Dr. Lehri" width="170" height="170" loading="lazy"></picture><div class="fbn">Dr. <em>Lehri</em></div><small>YOUNGPROFESSOR.IN</small></div>
   <div class="wrap">
     <span>© <span id="yr">2026</span> Dr. Bikram Paul Singh Lehri · Chandigarh University, Mohali</span>
     <button class="totop" id="totop" aria-label="Back to top">↑</button>
@@ -1186,7 +1197,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 </script>
 <div class="fcard" id="fcard" role="dialog" aria-label="Follow Dr. Lehri" hidden>
   <button type="button" class="fx" id="fcardX" aria-label="Close">✕</button>
-  <div class="fh"><img src="photo.jpg" alt="" width="46" height="46"><div><b>Follow Dr. Lehri</b><span>youngprofessor.in</span></div></div>
+  <div class="fh"><img src="logo-mark.png" alt="" width="46" height="46"><div><b>Follow Dr. Lehri</b><span>youngprofessor.in</span></div></div>
   <p>Get a notification on your phone whenever I post a new video, lesson or opportunity. Free, no sign-up, and you can unfollow anytime.</p>
   <div class="fa"><button type="button" id="fcardNo">Not now</button><button type="button" class="go" data-follow>🔔 Follow</button></div>
 </div>

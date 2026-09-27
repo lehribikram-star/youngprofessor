@@ -9,7 +9,9 @@
 <meta property="og:title" content="Things I Never Said | youngprofessor.in">
 <meta property="og:description" content="Many times, many talks are left unsaid. Studied with Dr. Lehri? Say it here. Your name is optional.">
 <meta property="og:image" content="https://youngprofessor.in/photo.jpg">
-<link rel="icon" href="photo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&family=Tilt+Neon&family=Pacifico&family=Monoton&family=Righteous&family=Kalam:wght@400;700&family=Yellowtail&family=Baloo+2:wght@500;700&family=Baloo+Paaji+2:wght@500;700&display=swap">
@@ -70,7 +72,11 @@ body[data-wall=concrete] .wall-bg{background:url("data:image/svg+xml,%3Csvg xmln
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(8,7,10,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px;white-space:nowrap}
-.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-family:var(--sans);font-weight:800;font-size:13px}
+.logo .lmark{width:40px;height:40px;flex:none;display:block;border-radius:50%;filter:drop-shadow(0 0 10px rgba(227,22,30,.35));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.logo .lmark .cap{transform-origin:100px 60px;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.logo:hover .lmark .cap{transform:rotate(-10deg) translateY(-4px)}
+.logo:hover .lmark{transform:scale(1.06)}
+.logo span em{font-style:normal;color:var(--red)}
 .logo em{color:var(--red);font-style:normal}
 .nlinks{display:flex;gap:8px;align-items:center}
 .nlinks a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:14px;font-weight:700;transition:border-color .3s,box-shadow .3s;white-space:nowrap}
@@ -285,7 +291,7 @@ footer a{color:var(--muted)}
 <div class="wall-bg" aria-hidden="true"></div>
 <nav class="nav" aria-label="Things I Never Said">
   <div class="wrap">
-    <a class="logo" href="index.html"><b>BL</b><span>young<em>professor</em>.in</span></a>
+    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img class="lmark" src="logo-mark.png" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
     <div class="nlinks">
       <a class="hz" href="student.html">Student Zone</a>
       <a href="index.html">← Main site</a>
