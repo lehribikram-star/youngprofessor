@@ -188,6 +188,40 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--dim);fon
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 
 /* print = 1-page prep sheet */
+/* stage 2: headlines + AI coach */
+.hlwrap{margin-bottom:18px}
+.hlhead{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-bottom:4px}
+.hlhead small{color:var(--dim);font-size:12.5px}
+.live{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 var(--redglow);animation:livep 1.6s infinite}
+@keyframes livep{0%{box-shadow:0 0 0 0 rgba(227,22,30,.6)}100%{box-shadow:0 0 0 10px rgba(227,22,30,0)}}
+.headlines a div{font-weight:600;line-height:1.4}
+.tabs a.aitab{color:#fff;border-color:var(--red);background:var(--redsoft)}
+.coach{border-color:rgba(227,22,30,.45);background:linear-gradient(160deg,#1c1313,var(--panel) 55%);box-shadow:0 24px 60px -34px var(--redglow)}
+.chead{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.chead h3{margin:0}
+.cbadge{padding:4px 10px;border-radius:999px;background:var(--red);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.coach .sub{margin-top:10px}
+.clab{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:10px 0 6px}
+.coach textarea,.cin{width:100%;padding:13px 15px;border-radius:14px;border:1px solid var(--line2);background:var(--bg2);font-size:15.5px;line-height:1.55;resize:vertical}
+.coach textarea:focus,.cin:focus{outline:none;border-color:var(--red)}
+.cpane .btn{margin-top:12px}
+.cout{margin-top:18px;padding:18px 20px;border-radius:16px;background:var(--bg2);border:1px solid var(--line2);font-size:15.5px;line-height:1.65}
+.cout p{margin:0 0 10px}.cout ul,.cout ol{margin:0 0 10px;padding-left:22px}.cout li{margin:4px 0}
+.cout strong{color:#fff}.lsub{display:block;margin-top:3px;color:var(--muted);font-size:14.5px}.cout h4{margin:14px 0 6px;font-size:15.5px;color:var(--red2)}
+.cout .cacts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.thinking{display:flex;align-items:center;gap:10px;color:var(--muted)}
+.dots{display:inline-flex;gap:4px}.dots i{width:7px;height:7px;border-radius:50%;background:var(--red);animation:dotb 1s infinite}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes dotb{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-4px)}}
+.chat{display:flex;flex-direction:column;gap:10px;max-height:460px;overflow-y:auto;padding:4px 2px 10px}
+.cmsg{max-width:88%;padding:12px 15px;border-radius:16px;font-size:15px;line-height:1.55}
+.cmsg p{margin:0 0 6px}.cmsg p:last-child{margin:0}.cmsg ul,.cmsg ol{margin:4px 0;padding-left:20px}
+.cmsg.ai{align-self:flex-start;background:var(--bg2);border:1px solid var(--line2);border-bottom-left-radius:4px}
+.cmsg.me{align-self:flex-end;background:var(--red);color:#fff;border-bottom-right-radius:4px;white-space:pre-wrap}
+.cmsg.sys{align-self:center;max-width:100%;background:none;color:var(--dim);font-size:13.5px;text-align:center}
+.crow{display:flex;gap:10px;align-items:flex-end}.crow textarea{flex:1}.crow .btn{margin:0}
+@media (max-width:640px){.crow{flex-direction:column;align-items:stretch}.cmsg{max-width:94%}}
+@media print{.coach,.tabs a.aitab,#ratePitch{display:none!important}}
 @media print{
   body{background:#fff;color:#111;font-size:12.5px}
   .nav,.hero,.tabs,.racts,.qtabs,footer,.toast,.chips,.newsgrid,.look,#pitchBtns,.state,.skel{display:none!important}
@@ -251,7 +285,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </div>
 
     <nav class="tabs" aria-label="Briefing sections">
-      <a href="#s-about">Overview</a><a href="#s-fin" id="tFin">Numbers</a><a href="#s-prod" id="tProd">Products</a><a href="#s-news">Latest news</a><a href="#s-q">Interview questions</a><a href="#s-why">Why this company?</a><a href="#s-ask">Ask them</a>
+      <a href="#s-about">Overview</a><a href="#s-fin" id="tFin">Numbers</a><a href="#s-prod" id="tProd">Products</a><a href="#s-news">Latest news</a><a href="#s-q">Interview questions</a><a href="#s-why">Why this company?</a><a href="#s-coach" class="aitab">AI Coach ✨</a><a href="#s-ask">Ask them</a>
     </nav>
 
     <article class="card" id="s-about">
@@ -280,8 +314,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <article class="card" id="s-news">
       <h3>Latest <em>news</em></h3>
       <p class="sub">Interviewers love asking about recent developments. Spend five minutes here before you walk in.</p>
+      <div class="hlwrap" id="hlWrap" hidden><div class="hlhead"><span class="live"></span><b>Fresh headlines</b><small id="hlNote"></small></div><div class="headlines" id="headlines"></div></div>
       <div class="newsgrid" id="newsLinks"></div>
-      <div class="headlines" id="headlines" hidden></div>
       <div class="look"><b>Look for:</b> latest quarterly results, new product launches, acquisitions or partnerships, leadership changes, expansion plans, and any challenge the company is facing. Pick <b>one</b> story and form your own opinion on it.</div>
     </article>
 
@@ -296,8 +330,32 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <h3>Your answer to <em>“Why us?”</em></h3>
       <p class="sub">A starting draft built from the company's own facts. Make it yours: add a personal reason, your project, or a product you love.</p>
       <textarea id="pitch" aria-label="Your answer to why this company"></textarea>
-      <div id="pitchBtns" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="btn" id="copyPitch" type="button">Copy</button><button class="btn" id="redoPitch" type="button">↺ Another version</button></div>
+      <div id="pitchBtns" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="btn" id="copyPitch" type="button">Copy</button><button class="btn" id="redoPitch" type="button">↺ Another version</button><button class="btn red" id="ratePitch" type="button">✨ Rate my answer</button></div>
       <p class="note">Tip: keep it under 60 seconds. Company fact → why it matters to you → what you will bring.</p>
+    </article>
+
+    <article class="card coach" id="s-coach">
+      <div class="chead"><span class="cbadge">✨ AI Coach</span><h3>Practise with your <em>AI coach</em></h3></div>
+      <p class="sub">Personal practice for <b id="cCo">this company</b>. Replies take about 10 seconds. The coach can make mistakes, so check facts before you use them.</p>
+      <div class="qtabs" id="cTabs"><button type="button" class="on" data-m="q">🎯 My likely questions</button><button type="button" data-m="r">📝 Rate my answer</button><button type="button" data-m="m">🎤 Mock interview</button></div>
+
+      <div class="cpane" data-p="q">
+        <label class="clab" for="cProfile">Tell the coach about you (optional)</label>
+        <textarea id="cProfile" rows="3" placeholder="e.g. MBA Marketing, summer internship at a FMCG distributor, led college fest sponsorship, good at Excel"></textarea>
+        <button class="btn red" id="cQGo" type="button">Get my questions →</button>
+      </div>
+      <div class="cpane" data-p="r" hidden>
+        <label class="clab" for="cQ">Question</label>
+        <input id="cQ" class="cin" placeholder="e.g. Why do you want to join us?">
+        <label class="clab" for="cA">Your answer</label>
+        <textarea id="cA" rows="5" placeholder="Type your answer the way you would say it in the interview"></textarea>
+        <button class="btn red" id="cRGo" type="button">Rate my answer →</button>
+      </div>
+      <div class="cpane" data-p="m" hidden>
+        <div class="chat" id="cChat"><div class="cmsg sys">The coach plays the interviewer. Answer each question the way you would in the room. You get quick feedback after every answer.</div></div>
+        <div class="crow"><textarea id="cMsg" rows="2" placeholder="Type your answer…" disabled></textarea><button class="btn red" id="cSend" type="button">Start interview →</button></div>
+      </div>
+      <div class="cout" id="cOut" hidden></div>
     </article>
 
     <article class="card" id="s-ask">
@@ -314,8 +372,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <footer><div class="wrap"><span>Placement Prep Room · <a href="student.html">Student Zone</a></span><span>youngprofessor.in</span></div></footer>
 
 <script>
-/* Optional: live headlines endpoint (Google Apps Script web app). Leave empty until set up. */
-var NEWS_ENDPOINT='';
+/* Stage 2: live headlines + AI coach (Google Apps Script web app under singhbikrampaul@gmail.com) */
+var NEWS_ENDPOINT='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
+var AI_ENDPOINT=NEWS_ENDPOINT;
 (function(){
   var d=document, $=function(id){return d.getElementById(id);};
   var API='https://en.wikipedia.org/w/api.php', REST='https://en.wikipedia.org/api/rest_v1';
@@ -389,7 +448,7 @@ var NEWS_ENDPOINT='';
         return extraSections(title,secs).then(function(extra){return {title:title,summary:summary,info:info,extra:extra};});
       });
     }).then(function(data){
-      lastData=data;data.role=roleTxt;data.query=input;render(data);altRow(data);
+      lastData=data;data.role=roleTxt;data.query=input;render(data);altRow(data);resetCoach();
     }).catch(function(e){
       $('skel').hidden=true;var er=$('err');er.hidden=false;
       er.innerHTML='<b>We could not find that company</b>Check the spelling, or pick a name from the suggestions as you type. Very small or local companies may not have public information yet. In that case, check their website and LinkedIn page.';
@@ -532,10 +591,11 @@ var NEWS_ENDPOINT='';
     var s=(site||'').match(/[a-z0-9.-]+\.[a-z]{2,}(\.[a-z]{2})?/i);if(s)L.splice(4,0,['🏢','Official website',s[0],'https://'+s[0].replace(/^https?:\/\//,'')]);
     var g=$('newsLinks');g.innerHTML='';
     L.forEach(function(x){var a=el('a','nlink');a.href=x[3];a.target='_blank';a.rel='noopener';a.appendChild(el('i',null,x[0]));var t=el('div');t.appendChild(el('b',null,x[1]));t.appendChild(el('small',null,x[2]));a.appendChild(t);g.appendChild(a);});
-    var h=$('headlines');h.hidden=true;h.innerHTML='';
-    if(NEWS_ENDPOINT){fetch(NEWS_ENDPOINT+'?q='+qn).then(function(r){return r.json();}).then(function(items){
-      (items||[]).slice(0,6).forEach(function(it){if(!/^https:\/\//.test(it.link||''))return;var a=el('a');a.href=it.link;a.target='_blank';a.rel='noopener';a.appendChild(el('div',null,it.title));a.appendChild(el('small',null,[it.source,it.date].filter(Boolean).join(' · ')));h.appendChild(a);});
-      h.hidden=!h.children.length;}).catch(function(){});}
+    var h=$('headlines'),hw=$('hlWrap');h.innerHTML='';hw.hidden=!NEWS_ENDPOINT;$('hlNote').textContent='Fetching the latest headlines…';
+    if(NEWS_ENDPOINT){var tok=name;fetch(NEWS_ENDPOINT+'?q='+qp).then(function(r){return r.json();}).then(function(items){
+      if(tok!==name)return;
+      (Array.isArray(items)?items:[]).slice(0,6).forEach(function(it){if(!/^https:\/\//.test(it.link||''))return;var a=el('a');a.href=it.link;a.target='_blank';a.rel='noopener';a.appendChild(el('div',null,it.title));a.appendChild(el('small',null,[it.source,it.date].filter(Boolean).join(' · ')));h.appendChild(a);});
+      $('hlNote').textContent=h.children.length?'From the last two weeks. Tap to read.':'No fresh headlines in the last two weeks. Use the links below.';}).catch(function(){$('hlNote').textContent='Headlines could not load right now. Use the links below.';});}
   }
 
   /* ---------- question bank ---------- */
@@ -632,6 +692,74 @@ var NEWS_ENDPOINT='';
 
   function askBack(D){var n=D.summary.title;var L=['What does success look like in this role in the first 6 months?','What are the biggest challenges the team is working on right now?','What kind of training or mentoring do new joiners at '+n+' receive?','How has '+n+' been responding to [recent news you read]?','What qualities do your best performers in this role share?','What are the next steps in the selection process?'];
     var o=$('askBack');o.innerHTML='';L.forEach(function(x){o.appendChild(el('li',null,x));});}
+
+  /* ---------- Stage 2: AI coach ---------- */
+  function md(t){
+    t=String(t||'').replace(/\r/g,'').replace(/^(hello|hi|hey)[^\n]*\n+/i,'').trim();
+    var out=[],list=null;
+    function inl(x){return esc(x).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*(?!\s)(.+?)\*(?!\*)/g,'$1<em>$2</em>');}
+    function close(){if(list){out.push('</'+list+'>');list=null;}}
+    t.split('\n').forEach(function(line){
+      var l=line.trim(),m,ind=/^\s+/.test(line);
+      if(!l)return;
+      if(m=l.match(/^#{1,4}\s+(.*)/)){close();out.push('<h4>'+inl(m[1])+'</h4>');return;}
+      if(list==='ol'&&(ind||!/^\d+[.)]\s/.test(l))&&(m=l.match(/^(?:[-*•]\s+)?(.*)/))&&(ind||/^[-*•]\s/.test(l))){out[out.length-1]=out[out.length-1].replace(/<\/li>$/,'<span class="lsub">'+inl(m[1])+'</span></li>');return;}
+      if(m=l.match(/^[-*•]\s+(.*)/)){if(list!=='ul'){close();out.push('<ul>');list='ul';}out.push('<li>'+inl(m[1])+'</li>');return;}
+      if(m=l.match(/^(\d+)[.)]\s+(.*)/)){if(list!=='ol'){close();out.push('<ol>');list='ol';}out.push('<li value="'+m[1]+'">'+inl(m[2])+'</li>');return;}
+      close();out.push('<p>'+inl(l)+'</p>');});
+    close();return out.join('');}
+  function thinking(){var w=el('div','thinking');var s=el('span','dots');s.innerHTML='<i></i><i></i><i></i>';w.appendChild(s);w.appendChild(el('span',null,'Your coach is thinking…'));return w;}
+  var busy=false;
+  function askAI(body,cb){
+    if(!AI_ENDPOINT){cb('The AI coach is not switched on yet.');return;}
+    if(busy)return;busy=true;
+    var D=lastData||{};body.company=(D.summary&&D.summary.title)||co.value.trim();body.role=(D.role||role.value.trim()||'Management Trainee');
+    var done=false,t=setTimeout(function(){if(!done){done=true;busy=false;cb('That took too long. Please try again.');}},45000);
+    fetch(AI_ENDPOINT,{method:'POST',body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
+      if(done)return;done=true;clearTimeout(t);busy=false;if(j&&j.ok&&j.reply)cb(null,j.reply);else cb((j&&j.error)||'The coach is busy. Please try again in a minute.');
+    }).catch(function(){if(done)return;done=true;clearTimeout(t);busy=false;cb('Could not reach the coach. Check your internet and try again.');});}
+  var cOut=$('cOut');
+  function showOut(node){cOut.hidden=false;cOut.innerHTML='';cOut.appendChild(node);}
+  function result(err,txt,again){
+    if(err){var e=el('div','thinking',err);showOut(e);return;}
+    var w=el('div');w.innerHTML=md(txt);var a=el('div','cacts');
+    var c=el('button','btn','Copy');c.type='button';c.addEventListener('click',function(){try{navigator.clipboard.writeText(txt);toast('Copied');}catch(x){}});a.appendChild(c);
+    if(again){var g=el('button','btn','↺ Try again');g.type='button';g.addEventListener('click',again);a.appendChild(g);}
+    w.appendChild(a);showOut(w);}
+  var mode='q';
+  function setMode(m){mode=m;[].forEach.call(d.querySelectorAll('#cTabs button'),function(b){b.classList.toggle('on',b.getAttribute('data-m')===m);});
+    [].forEach.call(d.querySelectorAll('.cpane'),function(p){p.hidden=p.getAttribute('data-p')!==m;});cOut.hidden=true;}
+  [].forEach.call(d.querySelectorAll('#cTabs button'),function(b){b.addEventListener('click',function(){setMode(b.getAttribute('data-m'));});});
+  function goQ(){showOut(thinking());askAI({task:'questions',text:$('cProfile').value.trim()},function(e,r){result(e,r,goQ);});}
+  $('cQGo').addEventListener('click',goQ);
+  function goR(){var q=$('cQ').value.trim(),a=$('cA').value.trim();
+    if(a.split(/\s+/).length<8){toast('Write a little more of your answer first ✍️');$('cA').focus();return;}
+    showOut(thinking());askAI({task:'review',question:q||'Tell me about yourself',text:a},function(e,r){result(e,r,goR);});}
+  $('cRGo').addEventListener('click',goR);
+  $('ratePitch').addEventListener('click',function(){var n=(lastData&&lastData.summary&&lastData.summary.title)||'this company';
+    setMode('r');$('cQ').value='Why do you want to join '+n+'?';$('cA').value=$('pitch').value;
+    $('s-coach').scrollIntoView({behavior:'smooth',block:'start'});
+    if(/\[[^\]]+\]/.test($('pitch').value)){toast('First replace the [brackets] with your own details ✍️');setTimeout(function(){$('cA').focus();},600);return;}
+    goR();});
+  /* mock interview */
+  var chat=$('cChat'),msg=$('cMsg'),send=$('cSend'),hist=[],turns=0,started=false;
+  function bubble(cls,html,isText){var b=el('div','cmsg '+cls);if(isText)b.textContent=html;else b.innerHTML=html;chat.appendChild(b);chat.scrollTop=chat.scrollHeight;return b;}
+  function mockTurn(){var th=el('div','cmsg ai');th.appendChild(thinking());chat.appendChild(th);chat.scrollTop=chat.scrollHeight;send.disabled=true;msg.disabled=true;
+    var txt=hist.length?hist.join('\n'):'(The interview is starting. Greet the candidate in one line and ask the first question.)';
+    if(turns>=6)txt+='\n(This is the last round. Give short overall feedback: 2 strengths, 2 things to improve, and a score out of 10. Do not ask another question.)';
+    askAI({task:'mock',text:txt.slice(-3800)},function(e,r){th.remove();
+      if(e){bubble('sys',e,true);send.disabled=false;msg.disabled=false;return;}
+      bubble('ai',md(r));hist.push('Interviewer: '+r.replace(/\s+/g,' ').slice(0,700));
+      if(turns>=6){send.textContent='↺ New interview';send.disabled=false;started=false;msg.disabled=true;msg.placeholder='Interview finished. Start a new one any time.';return;}
+      send.disabled=false;msg.disabled=false;msg.focus();});}
+  send.addEventListener('click',function(){
+    if(!started){chat.innerHTML='';hist=[];turns=0;started=true;send.textContent='Send →';msg.placeholder='Type your answer…';bubble('sys','Mock interview for '+(((lastData||{}).summary||{}).title||'this company')+' · '+(role.value.trim()||'Management Trainee')+' · 6 questions',true);mockTurn();return;}
+    var a=msg.value.trim();if(!a||busy)return;bubble('me',a,true);hist.push('Student: '+a.slice(0,900));msg.value='';turns++;mockTurn();});
+  msg.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey&&!('ontouchstart' in window)){e.preventDefault();send.click();}});
+  function resetCoach(){var n=(lastData&&lastData.summary&&lastData.summary.title)||'this company';$('cCo').textContent=n+(role.value.trim()?' · '+role.value.trim():'');
+    setMode('q');cOut.hidden=true;$('cQ').value='';$('cA').value='';started=false;hist=[];turns=0;busy=false;send.textContent='Start interview →';send.disabled=false;msg.disabled=true;msg.value='';
+    chat.innerHTML='<div class="cmsg sys">The coach plays the interviewer. Answer each question the way you would in the room. You get quick feedback after every answer.</div>';}
+  window.__prepResetCoach=resetCoach;
 
   /* allow deep links: prep.html?c=Infosys&r=Business%20Analyst */
   var P=new URLSearchParams(location.search);if(P.get('c')){co.value=P.get('c');role.value=P.get('r')||'';run(co.value,role.value);}
