@@ -266,6 +266,62 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .skl{display:inline-block;height:12px;border-radius:6px;background:linear-gradient(90deg,#221c1c 30%,#2e2626 50%,#221c1c 70%);background-size:300% 100%;animation:sh 1.3s infinite}
 @media (max-width:560px){.dswot{grid-template-columns:1fr}.drank .nm{width:90px}.drank .v{width:80px}.urlrow{flex-direction:column}.rhead{padding:20px}}
 @media print{.dmiss,#s-quiz,.dainote,.dncat,.dtalk,#tl:empty{display:none!important}.dbrief,.dprod,.dnw,.dswot div,.dtrend{background:#fff!important;border-color:#ddd!important;color:#111!important}}
+
+/* ===== voice interview ===== */
+.mic{flex:none;width:52px;height:52px;border-radius:50%;border:1.5px solid var(--red);background:var(--redsoft);font-size:22px;cursor:pointer;display:grid;place-items:center;transition:transform .2s}
+.mic:hover{transform:scale(1.06)}
+.mic.on{background:var(--red);box-shadow:0 0 0 0 rgba(227,22,30,.6);animation:micp 1.3s infinite}
+@keyframes micp{0%{box-shadow:0 0 0 0 rgba(227,22,30,.6)}100%{box-shadow:0 0 0 16px rgba(227,22,30,0)}}
+.crow .mic{align-self:center}
+.mmeter{margin-top:8px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.mmeter b{color:var(--ink);font-family:var(--mono)}
+.mmeter .rec{width:9px;height:9px;border-radius:50%;background:var(--red);animation:livep 1.2s infinite}
+.mset{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
+.tog{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;border:1px solid var(--line2);font-size:13px;font-weight:700;cursor:pointer}
+.tog input{accent-color:var(--red)}
+.mset select{padding:8px 12px;border-radius:999px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font-weight:700;font-size:13px}
+.qtag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red2);margin-bottom:4px}
+.cmsg.me small.mstat{display:block;margin-top:6px;font-size:12px;opacity:.85}
+.cmsg.fb,.cmsg.rep{max-width:100%;width:100%;background:none;border:0;padding:0}
+.ev{border-radius:16px;background:var(--bg2);border:1px solid var(--line2);padding:14px;display:grid;gap:10px}
+.evtop{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.evscore{font-family:var(--mono);font-weight:700;font-size:15px;padding:5px 11px;border-radius:10px}
+.evscore.hi{background:rgba(74,222,128,.12);color:#4ade80}.evscore.mid{background:rgba(245,185,66,.12);color:var(--amber)}.evscore.lo{background:var(--redsoft);color:var(--red2)}
+.evv{font-weight:700;font-size:14.5px}
+.evb{border-radius:12px;padding:10px 12px;background:rgba(255,255,255,.03);border:1px solid var(--line)}
+.evb>b{display:block;font-size:13px;margin-bottom:4px}
+.evb p{margin:0;font-size:14.5px;line-height:1.55}.evb ul{margin:0;padding-left:18px;font-size:14.5px}.evb li{margin:3px 0}
+.evb.ok>b{color:#4ade80}.evb.fx>b{color:var(--amber)}.evb.dl>b{color:#9dbbff}
+.evb.bt{border-color:rgba(227,22,30,.45);background:linear-gradient(120deg,rgba(227,22,30,.12),rgba(227,22,30,.03))}.evb.bt>b{color:var(--red2)}
+.btn.sm{padding:6px 12px;font-size:12.5px;margin-top:8px}
+.mrep{border-radius:18px;background:linear-gradient(150deg,#1d1414,var(--bg2));border:1px solid rgba(227,22,30,.5);padding:16px;display:grid;gap:12px}
+.mrhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.mrscore{font-family:var(--serif);font-size:54px;line-height:1}.mrscore small{font-size:18px;color:var(--muted)}
+.mrverd{font-weight:800;font-size:16px;flex:1;min-width:180px}
+.mrbars{display:grid;gap:8px}.mrb{display:grid;grid-template-columns:150px 1fr 48px;gap:10px;align-items:center;font-size:13.5px}
+.mrb i{height:9px;border-radius:6px;background:#2a2222;overflow:hidden}.mrb em{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--red2))}
+.mrb b{font-family:var(--mono);font-size:12.5px;text-align:right}
+@media (max-width:640px){.mrb{grid-template-columns:110px 1fr 40px}.crow{flex-direction:row!important;flex-wrap:wrap;align-items:center!important}.crow textarea{flex:1 1 100%!important;order:-1}.crow .btn{flex:1;justify-content:center}}
+@media print{.mic,.mset,.mmeter{display:none!important}}
+
+/* ===== placement theme ===== */
+.hero>.wrap{position:relative;z-index:1}.hero{padding-bottom:70px}
+.skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:230px;opacity:.4;pointer-events:none}
+.skyline .w{animation:win 6s infinite}
+@keyframes win{0%,100%{opacity:.9}50%{opacity:.25}}
+.drive{position:relative;display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid rgba(245,185,66,.35);background:rgba(245,185,66,.07);color:var(--amber);font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.pipe{position:relative;display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:22px;font-size:13px;font-weight:700;color:var(--muted)}
+.pipe span{padding:6px 11px;border-radius:999px;border:1px solid var(--line2);background:rgba(0,0,0,.35)}
+.pipe span.done{color:#4ade80;border-color:rgba(74,222,128,.35)}.pipe span.done::before{content:"✓ "}
+.pipe span.now{color:#fff;border-color:var(--red);background:var(--red);box-shadow:0 0 22px var(--redglow)}
+.pipe span.now small{font-weight:600;opacity:.85;margin-left:4px}
+.pipe i{width:18px;height:2px;background:var(--line2)}
+.search.call{grid-template-columns:1.25fr 1fr auto;border:1px solid rgba(227,22,30,.35);background:linear-gradient(160deg,#1c1515,var(--panel) 60%);padding-top:0;overflow:hidden}
+.callhd{grid-column:1/-1;display:flex;justify-content:space-between;gap:10px;margin:0 -14px 4px;padding:10px 16px;background:repeating-linear-gradient(135deg,rgba(227,22,30,.16) 0 10px,rgba(227,22,30,.08) 10px 20px);border-bottom:1px dashed rgba(227,22,30,.45);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ffb3b6}
+.callhd .cid{color:var(--muted)}
+@media (max-width:760px){.search.call{grid-template-columns:1fr}.skyline{height:160px}}
+.report .rhead{position:relative;margin-top:26px;overflow:visible}
+.report .rhead::before{content:"CANDIDATE PREP FILE · CONFIDENTIAL";position:absolute;left:22px;top:-13px;padding:4px 12px;border-radius:8px 8px 0 0;background:var(--red);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em}
 /* print = 1-page prep sheet */
 /* stage 2: headlines + AI coach */
 .hlwrap{margin-bottom:18px}
@@ -325,11 +381,17 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 </nav>
 
 <header class="hero">
+  <svg class="skyline" id="skyline" aria-hidden="true" preserveAspectRatio="xMidYMax slice"></svg>
   <div class="wrap">
+    <div class="drive"><span class="live"></span>Placement drive 2026 · Interview prep desk</div>
     <p class="label">Placement Prep Room</p>
     <h1>Know Before<br>You <em>Go</em></h1>
     <p class="lead">Walking into a placement interview? Type the company and the role you are applying for. In seconds you get a clear briefing: what the company does, its numbers, its products, the latest news, and the questions you are likely to face.</p>
-    <form class="search" id="form" autocomplete="off">
+    <div class="pipe" aria-label="Your placement journey">
+      <span class="done">Applied</span><i></i><span class="done">Shortlisted</span><i></i><span class="now">Interview <small>you are here</small></span><i></i><span>Offer 🎉</span>
+    </div>
+    <form class="search call" id="form" autocomplete="off">
+      <div class="callhd"><span>📩 Interview call</span><span class="cid" id="cid">CANDIDATE PREP FILE</span></div>
       <div class="fld">
         <label for="co">Company / organisation</label>
         <input id="co" placeholder="e.g. Hindustan Unilever, HDFC Bank, Deloitte" required aria-autocomplete="list" aria-controls="sugg">
@@ -463,12 +525,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <label class="clab" for="cQ">Question</label>
         <input id="cQ" class="cin" placeholder="e.g. Why do you want to join us?">
         <label class="clab" for="cA">Your answer</label>
-        <textarea id="cA" rows="5" placeholder="Type your answer the way you would say it in the interview"></textarea>
+        <div class="crow"><button class="mic" id="rMic" type="button" aria-label="Answer by voice" aria-pressed="false">🎤</button><textarea id="cA" rows="5" placeholder="Tap 🎤 and say your answer out loud, or type it"></textarea></div>
+        <div class="mmeter" id="rMeter" hidden></div>
+        <p class="note" id="rNote" hidden>Voice answers work in Chrome or Edge. On this browser, type your answer.</p>
         <button class="btn red" id="cRGo" type="button">Rate my answer →</button>
       </div>
       <div class="cpane" data-p="m" hidden>
-        <div class="chat" id="cChat"><div class="cmsg sys">The coach plays the interviewer. Answer each question the way you would in the room. You get quick feedback after every answer.</div></div>
-        <div class="crow"><textarea id="cMsg" rows="2" placeholder="Type your answer…" disabled></textarea><button class="btn red" id="cSend" type="button">Start interview →</button></div>
+        <div class="mset">
+          <label class="tog"><input type="checkbox" id="mSpeak" checked><span>🔊 Interviewer speaks</span></label>
+          <label class="tog"><input type="checkbox" id="mAuto"><span>🎧 Hands-free</span></label>
+          <select id="mType" aria-label="Interview round"><option value="mixed">Mixed round</option><option value="HR and behavioural">HR round</option><option value="role skills and technical">Role / technical round</option><option value="company knowledge and business awareness">Company knowledge round</option><option value="case and guesstimate">Case / guesstimate round</option></select>
+        </div>
+        <div class="chat" id="cChat"></div>
+        <div class="mmeter" id="mMeter" hidden></div>
+        <div class="crow"><button class="mic" id="mMic" type="button" aria-label="Answer by voice" aria-pressed="false">🎤</button><textarea id="cMsg" rows="3" placeholder="Tap 🎤 and speak, or type your answer…" disabled></textarea><button class="btn red" id="cSend" type="button">Start interview →</button></div>
+        <p class="note" id="mNote">🎤 Tap the mic, speak like you would in the room, tap again to stop. Check the text, then Send. Use earphones with a mic for best results. <b>Hands-free</b> opens the mic after each question and sends when you pause.</p>
       </div>
       <div class="cout" id="cOut" hidden></div>
     </article>
@@ -502,6 +573,13 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function getJSON(url){return fetch(url).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();});}
   function q(params){var u=new URLSearchParams(params);u.set('format','json');u.set('origin','*');return API+'?'+u.toString();}
 
+  /* ---------- corporate skyline (decorative) ---------- */
+  (function(){var sv=$('skyline');if(!sv)return;var W=1600,H=230,x=0,seed=11,r=function(){seed=(seed*9301+49297)%233280;return seed/233280;},out='';
+    sv.setAttribute('viewBox','0 0 '+W+' '+H);
+    while(x<W){var w=50+r()*90,h=60+r()*165,y=H-h;out+='<rect x="'+x.toFixed(0)+'" y="'+y.toFixed(0)+'" width="'+w.toFixed(0)+'" height="'+h.toFixed(0)+'" fill="#151010"/>';
+      for(var wy=y+10;wy<H-8;wy+=16)for(var wx=x+8;wx<x+w-10;wx+=14){if(r()<.22)out+='<rect class="w" x="'+wx.toFixed(0)+'" y="'+wy.toFixed(0)+'" width="6" height="8" fill="'+(r()<.7?'#F5B942':'#E3161E')+'" opacity=".8" style="animation-delay:'+(r()*6).toFixed(1)+'s"/>';}
+      x+=w+2+r()*6;}
+    sv.innerHTML=out;})();
   /* ---------- role chips ---------- */
   ['Management Trainee','Sales / Marketing','Financial Analyst','HR Executive','Business Analyst','Operations / Supply Chain'].forEach(function(r){
     var b=el('button',null,r);b.type='button';b.addEventListener('click',function(){role.value=r;role.focus();});$('roleChips').appendChild(b);});
@@ -1068,33 +1146,101 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   [].forEach.call(d.querySelectorAll('#cTabs button'),function(b){b.addEventListener('click',function(){setMode(b.getAttribute('data-m'));});});
   function goQ(){showOut(thinking());askAI({task:'questions',text:$('cProfile').value.trim()},function(e,r){result(e,r,goQ);});}
   $('cQGo').addEventListener('click',goQ);
-  function goR(){var q=$('cQ').value.trim(),a=$('cA').value.trim();
-    if(a.split(/\s+/).length<8){toast('Write a little more of your answer first ✍️');$('cA').focus();return;}
-    showOut(thinking());askAI({task:'review',question:q||'Tell me about yourself',text:a},function(e,r){result(e,r,goR);});}
+  /* ================= voice: dictation + interviewer voice + speaking metrics ================= */
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  var FILL=/\b(u+m+|u+h+|erm+|hmm+|basically|actually|you know|kind of|sort of|i mean|literally|like|matlab|na+hi+ na)\b/gi;
+  function metrics(text,secs,mode){var w=(text.match(/\S+/g)||[]).length,f=(text.match(FILL)||[]).map(function(x){return x.toLowerCase();});var fc={};f.forEach(function(x){fc[x]=(fc[x]||0)+1;});
+    return {words:w,secs:Math.round(secs||0),wpm:secs>3?Math.round(w/(secs/60)):0,fillers:Object.keys(fc).map(function(k){return k+' ×'+fc[k];}).join(', '),fcount:f.length,mode:mode||'typed'};}
+  function Dictate(box,mic,meter,onSilence){
+    var rec=null,on=false,base='',finalTxt='',t0=0,spent=0,lastHeard=0,tick=null,self=this;
+    this.secs=function(){return (spent+(on?Date.now()-t0:0))/1000;};
+    this.used=false;
+    function paint(){if(!meter)return;var s=self.secs(),m=metrics(box.value,s,'voice');meter.hidden=false;
+      meter.innerHTML='<span class="rec"></span> Listening… <b>'+Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')+'</b> · '+m.words+' words'+(m.wpm?' · '+m.wpm+' wpm':'')+' · fillers '+m.fcount;
+      if(onSilence&&lastHeard&&Date.now()-lastHeard>3500&&m.words>4){self.stop();onSilence();}}
+    this.start=function(){if(!SR||on)return;rec=new SR();rec.lang='en-IN';rec.continuous=true;rec.interimResults=true;base=box.value.trim();finalTxt='';
+      rec.onresult=function(e){var interim='';for(var i=e.resultIndex;i<e.results.length;i++){var t=e.results[i][0].transcript;if(e.results[i].isFinal)finalTxt+=t+' ';else interim+=t;}
+        box.value=(base?base+' ':'')+(finalTxt+interim).replace(/\s+/g,' ').trim();lastHeard=Date.now();box.scrollTop=box.scrollHeight;};
+      rec.onerror=function(e){if(e.error==='not-allowed'||e.error==='service-not-allowed'){toast('Allow microphone access to answer by voice 🎤');self.stop();}};
+      rec.onend=function(){if(on){try{base=box.value.trim();finalTxt='';rec.start();}catch(x){self.stop();}}};
+      try{rec.start();}catch(x){return;}on=true;self.used=true;t0=Date.now();lastHeard=0;mic.classList.add('on');mic.setAttribute('aria-pressed','true');tick=setInterval(paint,500);paint();};
+    this.stop=function(){if(!on)return;on=false;spent+=Date.now()-t0;try{rec.stop();}catch(x){}clearInterval(tick);mic.classList.remove('on');mic.setAttribute('aria-pressed','false');if(meter){var m=metrics(box.value,self.secs(),'voice');meter.innerHTML='🎙️ '+m.words+' words in '+Math.round(self.secs())+' s'+(m.wpm?' · '+m.wpm+' wpm':'')+' · fillers '+m.fcount+(m.fillers?' ('+esc(m.fillers)+')':'');}};
+    this.reset=function(){self.stop();spent=0;self.used=false;if(meter){meter.hidden=true;meter.innerHTML='';}};
+    this.active=function(){return on;};
+    mic.addEventListener('click',function(){on?self.stop():self.start();});
+    if(!SR){mic.hidden=true;}
+  }
+  var voices=[];function loadV(){try{voices=speechSynthesis.getVoices();}catch(e){}}if(window.speechSynthesis){loadV();speechSynthesis.onvoiceschanged=loadV;}
+  function say(t,done){if(!window.speechSynthesis||!$('mSpeak').checked){if(done)done();return;}try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(String(t).replace(/[*_#`>\[\]]/g,''));
+    var v=voices.find(function(x){return /en[-_]IN/i.test(x.lang);})||voices.find(function(x){return /^en/i.test(x.lang);});if(v)u.voice=v;u.lang=v?v.lang:'en-IN';u.rate=1;u.onend=function(){if(done)done();};speechSynthesis.speak(u);}catch(e){if(done)done();}}
+  function ctxNow(){return lastData?buildContext(lastData).slice(0,1500):'';}
+  function coName(){return (lastData&&lastData.summary&&lastData.summary.title)||co.value.trim()||'this company';}
+  function roleName(){return role.value.trim()||'Management Trainee';}
+
+  /* evaluation card (shared by Rate my answer + mock interview) */
+  function evalCard(E,withNext){
+    var c=el('div','ev');var top=el('div','evtop');var sc=+E.score;
+    if(!isNaN(sc)){var s=el('span','evscore '+(sc>=8?'hi':sc>=6?'mid':'lo'),sc+'/10');top.appendChild(s);}
+    if(E.verdict)top.appendChild(el('span','evv',String(E.verdict)));c.appendChild(top);
+    function blk(icon,title,body,cls){if(!body||(Array.isArray(body)&&!body.length))return;var b=el('div','evb '+(cls||''));b.appendChild(el('b',null,icon+' '+title));
+      if(Array.isArray(body)){var u=el('ul');body.forEach(function(x){u.appendChild(el('li',null,String(typeof x==='string'?x:(x.issue||'')+(x.evidence?' — “'+x.evidence+'”':'')+(x.action?' → '+x.action:''))));});b.appendChild(u);}else b.appendChild(el('p',null,String(body)));c.appendChild(b);}
+    blk('✅','What worked',E.worked,'ok');blk('🔧','Fix this',E.fix,'fx');blk('🎯','What the interviewer expected',E.missing,'fx');blk('🗣️','Your delivery',E.delivery,'dl');
+    if(E.better){var b=el('div','evb bt');b.appendChild(el('b',null,'💬 Say it like this'));b.appendChild(el('p',null,String(E.better)));var cp=el('button','btn sm','Copy');cp.type='button';cp.addEventListener('click',function(){try{navigator.clipboard.writeText(String(E.better));toast('Copied');}catch(x){}});b.appendChild(cp);c.appendChild(b);}
+    return c;
+  }
+  /* ---------- Rate my answer (voice or typed) ---------- */
+  var dictR=new Dictate($('cA'),$('rMic'),$('rMeter'));
+  function goR(){var q=$('cQ').value.trim(),a=$('cA').value.trim();dictR.stop();
+    if(a.split(/\s+/).length<8){toast('Say or write a little more of your answer first ✍️');$('cA').focus();return;}
+    var m=dictR.used?metrics(a,dictR.secs(),'voice'):null;
+    showOut(thinking());
+    postAI({task:'evaluate',company:coName(),role:roleName(),context:ctxNow(),question:q||'Tell me about yourself',text:a,m:m}).then(function(j){
+      if(!j||!j.ok||!j.data){result(j&&j.error?j.error:'The coach is busy. Please try again in a minute.');return;}
+      var w=el('div');w.appendChild(evalCard(j.data));var again=el('button','btn','↺ Try the answer again');again.type='button';again.style.marginTop='10px';again.addEventListener('click',function(){$('cA').value='';dictR.reset();$('cA').focus();cOut.hidden=true;});w.appendChild(again);showOut(w);
+    }).catch(function(){result('Could not reach the coach. Check your internet and try again.');});}
   $('cRGo').addEventListener('click',goR);
-  $('ratePitch').addEventListener('click',function(){var n=(lastData&&lastData.summary&&lastData.summary.title)||'this company';
-    setMode('r');$('cQ').value='Why do you want to join '+n+'?';$('cA').value=$('pitch').value;
+  $('ratePitch').addEventListener('click',function(){
+    setMode('r');$('cQ').value='Why do you want to join '+coName()+'?';$('cA').value=$('pitch').value;
     $('s-coach').scrollIntoView({behavior:'smooth',block:'start'});
     if(/\[[^\]]+\]/.test($('pitch').value)){toast('First replace the [brackets] with your own details ✍️');setTimeout(function(){$('cA').focus();},600);return;}
     goR();});
-  /* mock interview */
-  var chat=$('cChat'),msg=$('cMsg'),send=$('cSend'),hist=[],turns=0,started=false;
-  function bubble(cls,html,isText){var b=el('div','cmsg '+cls);if(isText)b.textContent=html;else b.innerHTML=html;chat.appendChild(b);chat.scrollTop=chat.scrollHeight;return b;}
-  function mockTurn(){var th=el('div','cmsg ai');th.appendChild(thinking());chat.appendChild(th);chat.scrollTop=chat.scrollHeight;send.disabled=true;msg.disabled=true;
-    var txt=hist.length?hist.join('\n'):'(The interview is starting. Greet the candidate in one line and ask the first question.)';
-    if(turns>=6)txt+='\n(This is the last round. Give short overall feedback: 2 strengths, 2 things to improve, and a score out of 10. Do not ask another question.)';
-    askAI({task:'mock',text:txt.slice(-3800)},function(e,r){th.remove();
-      if(e){bubble('sys',e,true);send.disabled=false;msg.disabled=false;return;}
-      bubble('ai',md(r));hist.push('Interviewer: '+r.replace(/\s+/g,' ').slice(0,700));
-      if(turns>=6){send.textContent='↺ New interview';send.disabled=false;started=false;msg.disabled=true;msg.placeholder='Interview finished. Start a new one any time.';return;}
-      send.disabled=false;msg.disabled=false;msg.focus();});}
+
+  /* ---------- Mock interview (voice-first) ---------- */
+  var chat=$('cChat'),msg=$('cMsg'),send=$('cSend'),H=[],turns=0,started=false,curQ='',TOTAL=6,mBusy=false;
+  var dictM=new Dictate(msg,$('mMic'),$('mMeter'),function(){if($('mAuto').checked&&started&&!mBusy)send.click();});
+  if(!SR){$('mNote').textContent='Voice answers work in Chrome or Edge on Android and laptops. On this browser, type your answers.';$('rNote').hidden=false;}
+  function bubble(cls,node){var b=el('div','cmsg '+cls);if(typeof node==='string')b.textContent=node;else b.appendChild(node);chat.appendChild(b);chat.scrollTop=chat.scrollHeight;return b;}
+  function askQ(q){curQ=String(q);var n=el('div');n.appendChild(el('span','qtag','Question '+(turns+1)+' of '+TOTAL));n.appendChild(el('p',null,curQ));bubble('ai',n);
+    say(curQ,function(){if($('mAuto').checked&&started&&SR){dictM.reset();dictM.start();}});msg.disabled=false;send.disabled=false;if(!('ontouchstart' in window))msg.focus();}
+  function mockCall(body,cb){mBusy=true;var th=el('div','cmsg ai');th.appendChild(thinking());chat.appendChild(th);chat.scrollTop=chat.scrollHeight;send.disabled=true;msg.disabled=true;
+    body.task='interview';body.company=coName();body.role=roleName();body.context=ctxNow();body.round=$('mType').value;body.total=TOTAL;
+    postAI(body).then(function(j){th.remove();mBusy=false;if(!j||!j.ok||!j.data){bubble('sys',(j&&j.error)||'The coach is busy. Tap Send again in a minute.');send.disabled=false;msg.disabled=false;return;}cb(j.data);})
+      .catch(function(){th.remove();mBusy=false;bubble('sys','Could not reach the coach. Check your internet and tap Send again.');send.disabled=false;msg.disabled=false;});}
+  function finish(){mockCall({final:true,history:H},function(R){
+      var c=el('div','mrep');c.appendChild(el('div','qtag','Interview report'));
+      var hd=el('div','mrhead');hd.appendChild(el('div','mrscore',(R.overall!=null?R.overall:'–')+'<small>/100</small>'));hd.firstChild.innerHTML=esc(String(R.overall!=null?R.overall:'–'))+'<small>/100</small>';hd.appendChild(el('div','mrverd',String(R.verdict||'')));c.appendChild(hd);
+      var S=R.scores||{},g=el('div','mrbars');[['content','Content'],['structure','Structure'],['company_fit','Company & role fit'],['communication','Communication']].forEach(function(k){var v=+S[k[0]];if(isNaN(v))return;var r=el('div','mrb');r.appendChild(el('span',null,k[1]));var t=el('i');var f=el('em');f.style.width=Math.max(4,v*10)+'%';t.appendChild(f);r.appendChild(t);r.appendChild(el('b',null,v+'/10'));g.appendChild(r);});c.appendChild(g);
+      function list(t,a,fmt){if(!a||!a.length)return;var b=el('div','evb');b.appendChild(el('b',null,t));var u=el('ul');a.forEach(function(x){u.appendChild(el('li',null,fmt?fmt(x):String(x)));});b.appendChild(u);c.appendChild(b);}
+      list('✅ Strengths',R.strengths);list('🔧 Top 3 fixes',R.top_fixes,function(x){return typeof x==='string'?x:(x.issue||'')+(x.evidence?' — you said “'+x.evidence+'”':'')+(x.action?' → '+x.action:'');});list('📅 Your 3-day practice plan',R.practice_plan);
+      if(R.redo_question){var rb=el('button','btn red','🔁 Practise this again: '+String(R.redo_question).slice(0,70));rb.type='button';rb.addEventListener('click',function(){setMode('r');$('cQ').value=String(R.redo_question);$('cA').value='';$('cA').focus();});c.appendChild(rb);}
+      bubble('ai rep',c);send.textContent='↺ New interview';send.disabled=false;started=false;msg.disabled=true;msg.placeholder='Interview finished. Start a new one any time.';say('Your interview is complete. Overall score '+(R.overall||'')+' out of 100.');});}
   send.addEventListener('click',function(){
-    if(!started){chat.innerHTML='';hist=[];turns=0;started=true;send.textContent='Send →';msg.placeholder='Type your answer…';bubble('sys','Mock interview for '+(((lastData||{}).summary||{}).title||'this company')+' · '+(role.value.trim()||'Management Trainee')+' · 6 questions',true);mockTurn();return;}
-    var a=msg.value.trim();if(!a||busy)return;bubble('me',a,true);hist.push('Student: '+a.slice(0,900));msg.value='';turns++;mockTurn();});
+    if(mBusy)return;
+    if(!started){chat.innerHTML='';H=[];turns=0;started=true;dictM.reset();send.textContent='Send answer →';msg.placeholder=SR?'Tap 🎤 and speak, or type your answer…':'Type your answer…';
+      bubble('sys','Mock interview · '+coName()+' · '+roleName()+' · '+TOTAL+' questions · '+$('mType').selectedOptions[0].text);
+      mockCall({history:[]},function(D){if(D.intro)bubble('ai',String(D.intro));askQ(D.next_question||'Tell me about yourself.');});return;}
+    dictM.stop();var a=msg.value.trim();if(!a){toast('Answer first: tap 🎤 and speak, or type');return;}
+    var m=dictM.used?metrics(a,dictM.secs(),'voice'):metrics(a,0,'typed');
+    var me=el('div');me.appendChild(el('p',null,a));if(m.mode==='voice')me.appendChild(el('small','mstat','🎙️ '+m.secs+' s · '+m.wpm+' wpm · fillers '+m.fcount));bubble('me',me);
+    H.push({q:curQ,a:a,m:m});msg.value='';dictM.reset();turns++;
+    mockCall({history:H,turn:turns},function(E){bubble('ai fb',evalCard(E));
+      if(turns>=TOTAL||!E.next_question){finish();return;}askQ(E.next_question);});
+  });
   msg.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey&&!('ontouchstart' in window)){e.preventDefault();send.click();}});
-  function resetCoach(){var n=(lastData&&lastData.summary&&lastData.summary.title)||'this company';$('cCo').textContent=n+(role.value.trim()?' · '+role.value.trim():'');
-    setMode('q');cOut.hidden=true;$('cQ').value='';$('cA').value='';started=false;hist=[];turns=0;busy=false;send.textContent='Start interview →';send.disabled=false;msg.disabled=true;msg.value='';
-    chat.innerHTML='<div class="cmsg sys">The coach plays the interviewer. Answer each question the way you would in the room. You get quick feedback after every answer.</div>';}
+  function resetCoach(){var n=coName();$('cCo').textContent=n+(role.value.trim()?' · '+role.value.trim():'');
+    setMode('q');cOut.hidden=true;$('cQ').value='';$('cA').value='';dictR.reset();dictM.reset();try{speechSynthesis.cancel();}catch(e){}
+    started=false;H=[];turns=0;busy=false;mBusy=false;send.textContent='Start interview →';send.disabled=false;msg.disabled=true;msg.value='';
+    chat.innerHTML='<div class="cmsg sys">The coach plays a real interviewer from '+esc(n)+'. It speaks each question; you answer by voice 🎤 or typing. After every answer you get a score, what worked, exact fixes and a better way to say it.</div>';}
   window.__prepResetCoach=resetCoach;
 
   /* allow deep links: prep.html?c=Infosys&r=Business%20Analyst */
