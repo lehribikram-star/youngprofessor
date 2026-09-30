@@ -603,7 +603,7 @@ footer a{color:var(--muted)}
     <p class="lead rv">Courses, certifications, events and offers from institutions and brands I trust, picked for my students.</p>
     <div class="ogrid" id="ogrid"></div>
     <div class="oempty rv" id="oempty"><b>New opportunities are on the way ✨</b>Check back soon. I will share courses, events and offers here that are worth your time.</div>
-    <div class="opitch rv"><div><b>Brands &amp; institutions</b><span>Want to reach a community of motivated business students? Let's collaborate.</span></div><a href="mailto:Lehribikram@gmail.com?subject=Partnership%20with%20youngprofessor.in">Partner with me →</a></div>
+    <div class="opitch rv"><div><b>Brands &amp; institutions</b><span>Want to reach a community of motivated business students? Let's collaborate.</span></div><a href="mailto:singhbikrampaul@gmail.com?subject=Partnership%20with%20youngprofessor.in">Partner with me →</a></div>
     <p class="odisc">Cards marked “Partner” are shared in collaboration with the organisation named. Always check details on the partner's own website before you pay or sign up.</p>
   </div>
 </section>
@@ -626,9 +626,10 @@ footer a{color:var(--muted)}
         </select>
       </label>
       <label for="fMsg">Your message<textarea id="fMsg" name="message" required placeholder="Write your question here…"></textarea></label>
-      <button type="submit" class="send">Send to Dr. Lehri →</button>
-      <p class="fnote">This opens your email app with your message ready to send to Lehribikram@gmail.com.</p>
-      <div class="ok" id="okMsg" role="status">Your email app should now be open with the message ready. Just press Send there.</div>
+      <label for="fContact">Email or phone for my reply <small style="font-weight:500;opacity:.7">(optional)</small><input id="fContact" name="contact" autocomplete="email" placeholder="e.g. simran@gmail.com"></label>
+      <button type="submit" class="send" id="askSend">Send to Dr. Lehri →</button>
+      <p class="fnote">Your message comes straight to me. No email app needed.</p>
+      <div class="ok" id="okMsg" role="status"></div>
     </form>
   </div>
 </section>
@@ -888,16 +889,22 @@ footer a{color:var(--muted)}
       if(sLeft<=0){sI++;if(sI>=moves.length){stEnd(true);return;}sLeft=moves[sI][3];stShow();d.getElementById('stBar').style.width='0';}},1000);
   });
 
-  /* Ask form: opens the visitor's email app */
+  /* Ask form: sends straight to Dr. Lehri (Google Apps Script), email app as backup */
+  var ASK_ENDPOINT='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
   d.getElementById('askForm').addEventListener('submit',function(e){
     e.preventDefault();
-    var n=d.getElementById('fName'), m=d.getElementById('fMsg');
+    var n=d.getElementById('fName'), m=d.getElementById('fMsg'), btn=d.getElementById('askSend'), ok=d.getElementById('okMsg');
     if(!n.value.trim()){n.focus();n.style.borderColor='var(--red)';return;}
     if(!m.value.trim()){m.focus();m.style.borderColor='var(--red)';return;}
-    var t=d.getElementById('fTopic').value, p=d.getElementById('fProg').value;
-    var body='Name: '+n.value+'\nProgramme: '+p+'\nTopic: '+t+'\n\n'+m.value;
-    location.href='mailto:Lehribikram@gmail.com?subject='+encodeURIComponent('Student Zone: '+t)+'&body='+encodeURIComponent(body);
-    d.getElementById('okMsg').classList.add('show');
+    var t=d.getElementById('fTopic').value, p=d.getElementById('fProg').value, c=d.getElementById('fContact').value;
+    var body='Name: '+n.value+'\nProgramme: '+p+'\nTopic: '+t+'\nReply to: '+c+'\n\n'+m.value;
+    function backup(){ok.innerHTML='';ok.appendChild(d.createTextNode('Could not send right now. '));var a=d.createElement('a');a.href='mailto:singhbikrampaul@gmail.com?subject='+encodeURIComponent('Student Zone: '+t)+'&body='+encodeURIComponent(body);a.textContent='Send it by email instead →';ok.appendChild(a);ok.classList.add('show');btn.disabled=false;btn.textContent='Send to Dr. Lehri →';}
+    btn.disabled=true;btn.textContent='Sending…';ok.classList.remove('show');
+    fetch(ASK_ENDPOINT,{method:'POST',body:JSON.stringify({task:'ask',name:n.value.trim(),programme:p.trim(),topic:t,message:m.value.trim(),contact:c.trim()})})
+      .then(function(r){return r.json();}).then(function(j){
+        if(j&&j.ok){ok.textContent='✅ Sent! Dr. Lehri has your message'+(c.trim()?' and will reply to '+c.trim():'')+'. Thank you, '+n.value.trim().split(' ')[0]+'.';ok.classList.add('show');m.value='';btn.disabled=false;btn.textContent='Send another →';}
+        else backup();
+      }).catch(backup);
   });
 })();
 
