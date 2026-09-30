@@ -846,7 +846,8 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function afterRender(D){
     var id=runId;resetDash();chips(D);badges({});trend(D,id);
     aiNote('Adding AI brief, SWOT, timeline and quiz…');
-    postAI({task:'enrich',company:D.summary.title,context:buildContext(D)}).then(function(j){
+    var eb={task:'enrich',company:D.summary.title,context:buildContext(D)};
+    postAI(eb).then(function(j){return j&&j.ok?j:new Promise(function(ok){setTimeout(ok,2500);}).then(function(){return id===runId?postAI(eb):j;});},function(){return id===runId?postAI(eb):null;}).then(function(j){
       if(id!==runId)return;
       if(j&&j.ok&&j.data){applyAI(D,j.data,{verified:j.verified});aiNote('');}
       else aiNote(j&&j.error?j.error:'AI insights are not available right now. Everything else is ready.',1);
@@ -889,19 +890,46 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function fmtAmt(v,c){var a=Math.abs(v),s=v<0?'−':'';
     if(c==='₹'){return a>=1e12?s+'₹'+(a/1e12).toFixed(2)+' L cr':s+'₹'+Math.round(a/1e7).toLocaleString('en-IN')+' cr';}
     var p=c||'';return a>=1e12?s+p+(a/1e12).toFixed(2)+'T':a>=1e9?s+p+(a/1e9).toFixed(1)+'B':a>=1e6?s+p+(a/1e6).toFixed(0)+'M':s+p+Math.round(a).toLocaleString('en-IN');}
-  function wdSeries(claims,prop){var out={};(claims[prop]||[]).forEach(function(c){try{if(c.rank==='deprecated')return;var v=c.mainsnak.datavalue.value;var u=(v.unit||'').split('/').pop();var t=c.qualifiers&&c.qualifiers.P585&&c.qualifiers.P585[0].datavalue.value.time;if(!t)return;var y=+t.slice(1,5);var amt=parseFloat(v.amount);if(isNaN(amt)||!y)return;var k=u+'|'+y;if(!out[k]||c.rank==='preferred')out[k]={y:y,u:u,v:amt};}catch(e){}});return Object.keys(out).map(function(k){return out[k];});}
+  function wdSeries(claims,prop){var out={};(claims[prop]||[]).forEach(function(c){try{if(c.rank==='deprecated')return;var v=c.mainsnak.datavalue.value;var u=(v.unit||'').split('/').pop();var Qf=c.qualifiers||{},qq=Qf.P585||Qf.P582||Qf.P580,t=qq&&qq[0]&&qq[0].datavalue&&qq[0].datavalue.value.time;if(!t)return;var y=+t.slice(1,5);var amt=parseFloat(v.amount);if(isNaN(amt)||!y)return;var k=u+'|'+y;if(!out[k]||c.rank==='preferred')out[k]={y:y,u:u,v:amt};}catch(e){}});return Object.keys(out).map(function(k){return out[k];});}
   function trend(D,id){
-    var qid=D.summary&&D.summary.wikibase_item;if(!qid)return;
-    getJSON('https://www.wikidata.org/w/api.php?action=wbgetentities&ids='+encodeURIComponent(qid)+'&props=claims&format=json&origin=*').then(function(j){
-      if(id!==runId)return;var cl=j.entities&&j.entities[qid]&&j.entities[qid].claims;if(!cl)return;
-      var R=wdSeries(cl,'P2139');if(R.length<2)return;
-      R.sort(function(a,b){return b.y-a.y;});var unit=R[0].u;R=R.filter(function(x){return x.u===unit;});
-      var years=[];R.forEach(function(x){if(years.indexOf(x.y)<0)years.push(x.y);});years=years.slice(0,5).sort();if(years.length<2)return;
-      var rv={};R.forEach(function(x){rv[x.y]=x.v;});var NP={};wdSeries(cl,'P2295').filter(function(x){return x.u===unit;}).forEach(function(x){NP[x.y]=x.v;});
-      var c=CUR[unit]||'';drawTrend(years,rv,NP,c);
-    }).catch(function(){});
+    var thisYear=new Date().getFullYear();
+    var me=money((row(D.info,['revenue'])||{}).text),meNp=money((row(D.info,['net income'])||{}).text);
+    function norm(c){return (c||'').replace('US$','$');}
+    function finish(years,rv,np,c,src,fresh){
+      if(years.length>=2)drawTrend(years,rv,np,c,src,fresh);
+      if(!fresh)finAI(D,id,years.length>=2);
+    }
+    var qid=D.summary&&D.summary.wikibase_item;
+    var wd=qid?getJSON('https://www.wikidata.org/w/api.php?action=wbgetentities&ids='+encodeURIComponent(qid)+'&props=claims&format=json&origin=*').catch(function(){return null;}):Promise.resolve(null);
+    wd.then(function(j){
+      if(id!==runId)return;
+      var cl=j&&j.entities&&j.entities[qid]&&j.entities[qid].claims,R=cl?wdSeries(cl,'P2139'):[],unit='',c='';
+      var rv={},np={};
+      if(R.length){R.sort(function(a,b){return b.y-a.y;});unit=R[0].u;c=CUR[unit]||'';R.filter(function(x){return x.u===unit;}).forEach(function(x){rv[x.y]=x.v;});
+        wdSeries(cl,'P2295').filter(function(x){return x.u===unit;}).forEach(function(x){np[x.y]=x.v;});}
+      /* add the latest figure from the Wikipedia infobox when it is newer */
+      if(me&&me.year&&me.val>0&&(!c||norm(me.cur)===c)){c=c||norm(me.cur);rv[+me.year]=me.val;if(meNp&&meNp.year===me.year&&norm(meNp.cur)===c)np[+me.year]=meNp.val;}
+      var years=Object.keys(rv).map(Number).sort(function(a,b){return a-b;}).slice(-5);
+      var L3=years.length;var fresh=L3>=3&&years[L3-1]>=thisYear-1&&years[L3-1]-years[L3-3]<=2;
+      finish(years,rv,np,c,'Source: Wikidata &amp; Wikipedia · yearly reported figures',fresh);
+    });
   }
-  function drawTrend(years,rv,np,c){
+  var CURS={INR:'₹',USD:'$',EUR:'€',GBP:'£',JPY:'¥',CNY:'¥'},UNITS={'lakh crore':1e12,crore:1e7,lakh:1e5,trillion:1e12,billion:1e9,million:1e6,thousand:1e3};
+  function finAI(D,id,hasChart){
+    if(!AI_ENDPOINT)return;
+    if(hasChart){var nt=$('trendNote');if(nt)nt.textContent='Checking for newer figures…';}
+    postAI({task:'financials',company:D.summary.title}).then(function(j){
+      if(id!==runId)return;var F=j&&j.ok&&j.data,Y=(F&&F.years||[]).filter(function(x){return x&&x.label&&typeof x.revenue==='number'&&x.revenue>0;});
+      var nt=$('trendNote');
+      if(Y.length<2){if(nt)nt.textContent='These are the latest yearly figures we could find. Check the annual report for newer results.';return;}
+      var mul=UNITS[String(F.unit||'').toLowerCase()]||1,c=CURS[String(F.currency||'').toUpperCase()]||'';
+      Y=Y.slice(-5);var yrs=[],rv={},np={};Y.forEach(function(x){var k=String(x.label).slice(0,10);yrs.push(k);rv[k]=x.revenue*mul;if(typeof x.net_profit==='number')np[k]=x.net_profit*mul;});
+      var S=(F.sources||[]).filter(function(x){return x&&/^https:\/\//.test(x.url||'');}).slice(0,4);
+      var src='Source: AI web search'+(F.as_of?' · latest result '+esc(String(F.as_of).slice(0,30)):'')+(F.fiscal_year_note?' · '+esc(String(F.fiscal_year_note).slice(0,60)):'')+(S.length?' · '+S.map(function(x){return '<a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(String(x.title||'source').slice(0,30))+' ↗</a>';}).join(' · '):'')+' · Verify in the annual report before quoting.';
+      drawTrend(yrs,rv,np,c,src,true);
+    }).catch(function(){var nt=$('trendNote');if(nt)nt.textContent='';});
+  }
+  function drawTrend(years,rv,np,c,src,fresh){
     var cw=($('s-fin').clientWidth||640)-40,W=Math.max(300,Math.min(960,cw)),sm=W<480,fs=sm?11:12,H=sm?200:230,L=10,Rr=10,T=28,B=30,n=years.length,slot=(W-L-Rr)/n,bw=Math.min(70,slot*.58);
     var vals=years.map(function(y){return rv[y];}),pv=years.map(function(y){return np[y];}).filter(function(v){return v!=null;});
     var max=Math.max.apply(null,vals.concat(pv)),min=Math.min.apply(null,[0].concat(pv));var sy=function(v){return T+(H-T-B)*(1-(v-min)/(max-min||1));};
@@ -917,7 +945,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     pts.forEach(function(p,i){s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="5" fill="#FF3B42" stroke="#121010" stroke-width="2"><title>Net profit: '+esc(fmtAmt(p[2],c))+'</title></circle>';});
     s+='</svg>';
     var a=rv[years[n-1]],b=rv[years[n-2]],g=b?((a-b)/Math.abs(b)*100):0;
-    var box=$('trend');box.innerHTML='<div class="lg"><span><i style="background:#5a4a4a"></i>Revenue</span>'+(pts.length?'<span><i style="background:#FF3B42"></i>Net profit'+(np[years[n-1]]!=null?' · '+esc(fmtAmt(np[years[n-1]],c))+' in '+years[n-1]:'')+'</span>':'')+'<span class="yoy '+(g>=0?'up':'dn')+'">'+(g>=0?'▲ ':'▼ ')+Math.abs(g).toFixed(1)+'% revenue vs '+years[n-2]+'</span></div>'+s+'<p class="src" style="margin:6px 0 0">Source: Wikidata · yearly reported figures</p>';
+    var box=$('trend');box.innerHTML='<div class="lg"><span><i style="background:#5a4a4a"></i>Revenue</span>'+(pts.length?'<span><i style="background:#FF3B42"></i>Net profit'+(np[years[n-1]]!=null?' · '+esc(fmtAmt(np[years[n-1]],c))+' in '+years[n-1]:'')+'</span>':'')+'<span class="yoy '+(g>=0?'up':'dn')+'">'+(g>=0?'▲ ':'▼ ')+Math.abs(g).toFixed(1)+'% revenue vs '+years[n-2]+'</span></div>'+s+'<p class="src dsrc" style="margin:6px 0 0">'+(src||'')+'</p><p class="src" id="trendNote" style="margin:4px 0 0;color:var(--amber)">'+(fresh?'':'Checking for newer figures…')+'</p>';
     box.hidden=false;
   }
   /* news in brief */
