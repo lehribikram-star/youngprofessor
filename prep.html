@@ -322,6 +322,38 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 @media (max-width:760px){.search.call{grid-template-columns:1fr}.skyline{height:160px}}
 .report .rhead{position:relative;margin-top:26px;overflow:visible}
 .report .rhead::before{content:"CANDIDATE PREP FILE · CONFIDENTIAL";position:absolute;left:22px;top:-13px;padding:4px 12px;border-radius:8px 8px 0 0;background:var(--red);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em}
+
+/* ===== BCG + competitor analysis ===== */
+.stools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.stbtn{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:10px;text-align:left;padding:14px;border-radius:16px;border:1.5px solid var(--line2);background:var(--bg2);cursor:pointer;transition:border-color .2s,transform .2s}
+.stbtn:hover,.stbtn.on{border-color:var(--red);transform:translateY(-2px)}
+.stbtn span{grid-row:1/3;font-size:26px;align-self:center}.stbtn b{font-size:15px}.stbtn small{color:var(--muted);font-size:12.5px}
+#stOut{margin-top:14px}
+.bcg{display:grid;grid-template-columns:28px 1fr 1fr;grid-template-rows:1fr 1fr 26px;gap:8px;min-height:360px}
+.bcg .ax{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.bcg .ay{grid-row:1/3;writing-mode:vertical-rl;transform:rotate(180deg)}
+.bcg .axx{grid-column:2/4}
+.q{border-radius:14px;padding:12px;border:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.q h5{margin:0 0 4px;font-size:14px;display:flex;justify-content:space-between;gap:6px}.q h5 small{font-weight:600;color:var(--muted);font-size:11px}
+.q .it{padding:6px 10px;border-radius:10px;background:rgba(0,0,0,.35);font-size:13px;font-weight:700;cursor:help}
+.q .it i{display:block;font-style:normal;font-weight:500;color:var(--muted);font-size:12px;margin-top:2px}
+.q.star{background:rgba(245,185,66,.08);border-color:rgba(245,185,66,.35)}.q.star h5{color:var(--amber)}
+.q.qm{background:rgba(122,167,255,.07);border-color:rgba(122,167,255,.3)}.q.qm h5{color:#9dbbff}
+.q.cow{background:rgba(74,222,128,.07);border-color:rgba(74,222,128,.3)}.q.cow h5{color:#4ade80}
+.q.dog{background:rgba(227,22,30,.07);border-color:rgba(227,22,30,.3)}.q.dog h5{color:var(--red2)}
+.q .act{margin-top:auto;font-size:12px;color:#d9d0c9;border-top:1px dashed var(--line2);padding-top:6px}
+.cmpt{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+.cmpt th,.cmpt td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:center}
+.cmpt th:first-child,.cmpt td:first-child{text-align:left;color:var(--muted);font-weight:600}
+.cmpt th{font-size:12.5px}.cmpt th.me{color:var(--red2)}
+.sbar{display:inline-block;width:64px;height:8px;border-radius:5px;background:#2a2222;overflow:hidden;vertical-align:middle}.sbar em{display:block;height:100%;background:#8f7f7f;border-radius:5px}.sbar.me em{background:linear-gradient(90deg,var(--red),var(--red2))}.cmpt td small{margin-left:6px;font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.cmpw{overflow-x:auto;border-radius:14px;border:1px solid var(--line);padding:4px 8px;background:var(--bg2)}
+.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:12px}
+.pcard{padding:12px 14px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);font-size:13.5px}.pcard b{display:block;font-size:14.5px;margin-bottom:4px}.pcard.me{border-color:rgba(227,22,30,.5)}
+.pcard i{display:block;font-style:normal;color:var(--muted);margin-top:4px}
+.stnote{font-size:12px;color:var(--dim);margin-top:10px}
+@media (max-width:600px){.stools{grid-template-columns:1fr}.bcg{grid-template-columns:22px 1fr 1fr;min-height:0}.q{padding:9px}.q .it{font-size:12px}}
+@media print{.stools{display:none!important}}
 /* print = 1-page prep sheet */
 /* stage 2: headlines + AI coach */
 .hlwrap{margin-bottom:18px}
@@ -464,6 +496,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <p class="sub">Where the company stands against its rivals. “Who are our competitors?” is a favourite interview question.</p>
       <div id="comp"></div>
       <div class="dswot" id="swot"></div>
+      <div class="stools"><button type="button" class="stbtn" id="bcgBtn"><span>📊</span><b>BCG matrix</b><small>Stars, cash cows, question marks &amp; dogs in the portfolio</small></button><button type="button" class="stbtn" id="cmpBtn"><span>⚔️</span><b>Competitor analysis</b><small>Side-by-side scores vs its closest rivals</small></button></div>
+      <div id="stOut"></div>
     </article>
 
     <article class="card" id="s-hist" hidden>
@@ -894,8 +928,8 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   }
   function aiNote(t,plain){var n=$('rAi');n.innerHTML='';if(!t){n.hidden=true;return;}n.hidden=false;if(!plain){var s=el('span','dots');s.innerHTML='<i></i><i></i><i></i>';n.appendChild(s);}n.appendChild(el('span',null,t));}
   function resetDash(){
-    ['rChips','rBadges','comp','swot','tl','prodCards','ncat','dnews','quiz','trend'].forEach(function(i){$(i).innerHTML='';});
-    ['rBrief','trend','finNa','s-strat','tStrat','s-hist','tHist','prodMoreLab','nbrief','talk','s-quiz','tQuiz'].forEach(function(i){$(i).hidden=true;});
+    ['rChips','rBadges','comp','swot','tl','prodCards','ncat','dnews','quiz','trend','stOut'].forEach(function(i){$(i).innerHTML='';});$('bcgBtn').classList.remove('on');$('cmpBtn').classList.remove('on');
+    ['rBrief','trend','finNa','s-hist','tHist','prodMoreLab','nbrief','talk','s-quiz','tQuiz'].forEach(function(i){$(i).hidden=true;});$('s-strat').hidden=false;$('tStrat').hidden=false;
     $('finBox').hidden=false;aiNote('');
     $('trustLine').textContent='Company information comes from Wikipedia and Wikidata and may be a few months old.';
   }
@@ -1146,6 +1180,53 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   [].forEach.call(d.querySelectorAll('#cTabs button'),function(b){b.addEventListener('click',function(){setMode(b.getAttribute('data-m'));});});
   function goQ(){showOut(thinking());askAI({task:'questions',text:$('cProfile').value.trim()},function(e,r){result(e,r,goQ);});}
   $('cQGo').addEventListener('click',goQ);
+  /* ---------- BCG matrix + competitor analysis (on demand) ---------- */
+  var stCache={};
+  function stLoad(kind){
+    var D=lastData;if(!D)return;var key=kind+'|'+D.summary.title,out=$('stOut');
+    $('bcgBtn').classList.toggle('on',kind==='bcg');$('cmpBtn').classList.toggle('on',kind==='compete');
+    if(stCache[key]){(kind==='bcg'?drawBCG:drawCmp)(stCache[key]);return;}
+    out.innerHTML='';var t=thinking();t.lastChild.textContent=kind==='bcg'?'Building the BCG matrix…':'Comparing with rivals…';out.appendChild(t);
+    var ctx=buildContext(D).slice(0,2600),prods=[].map.call(d.querySelectorAll('.dprod b'),function(b){return b.textContent;});if(prods.length)ctx+='\nMain products/services: '+prods.join(', ');
+    var comps=[].map.call(d.querySelectorAll('#comp .dcchips button'),function(b){return b.textContent;});if(comps.length)ctx+='\nMain competitors: '+comps.join(', ');
+    postAI({task:'strategy',kind:kind,company:D.summary.title,context:ctx}).then(function(j){
+      if(!lastData||lastData.summary.title!==D.summary.title)return;
+      if(!j||!j.ok||!j.data){out.innerHTML='';out.appendChild(el('div','thinking',(j&&j.error)||'Could not build it right now. Please try again in a minute.'));return;}
+      stCache[key]=j.data;(kind==='bcg'?drawBCG:drawCmp)(j.data);
+    }).catch(function(){out.innerHTML='';out.appendChild(el('div','thinking','Could not reach the coach. Please try again.'));});
+  }
+  function tail(out,R){if(R.takeaway)out.appendChild(el('p','about',String(R.takeaway))).style.cssText='font-size:15px;margin-top:12px';
+    if(R.interview_line){var t=el('div','dtalk');t.appendChild(el('b',null,'💬 Say this in your interview'));t.appendChild(d.createTextNode('“'+String(R.interview_line).replace(/^["“]|["”]$/g,'')+'”'));out.appendChild(t);}
+    out.appendChild(el('p','stnote','AI analysis from public information and the facts above. Positions are directional, not exact market data. Check the latest annual report before quoting.'));}
+  function drawBCG(R){
+    var out=$('stOut');out.innerHTML='';
+    if(R.applicable===false||!(R.items||[]).length){var n=el('div','dna');n.appendChild(el('span',null,'📊'));var tx=el('div');tx.appendChild(el('b',null,'BCG matrix not very useful here. '));tx.appendChild(d.createTextNode(String(R.note||'This company does not have a clear portfolio of separate products.')));n.appendChild(tx);out.appendChild(n);tail(out,R);return;}
+    if(R.note)out.appendChild(el('p','sub',String(R.note)));
+    var Q={star:['⭐ Stars','High growth · high share','star'],question_mark:['❓ Question marks','High growth · low share','qm'],cash_cow:['🐄 Cash cows','Low growth · high share','cow'],dog:['🐕 Dogs','Low growth · low share','dog']},box={},S=R.strategy||{};
+    var g=el('div','bcg');g.appendChild(el('div','ax ay','Market growth →'));
+    ['star','question_mark','cash_cow','dog'].forEach(function(k){var q=el('div','q '+Q[k][2]);var h=el('h5');h.appendChild(d.createTextNode(Q[k][0]));h.appendChild(el('small',null,Q[k][1]));q.appendChild(h);box[k]=q;g.appendChild(q);});
+    (R.items||[]).forEach(function(it){var k=String(it.quadrant||'').toLowerCase().replace(/[\s-]+/g,'_');if(k==='cow'||k==='cashcow')k='cash_cow';if(k==='question'||k==='questionmark')k='question_mark';if(!box[k])return;
+      var c=el('div','it',String(it.name||''));c.title=[it.market_growth,it.relative_share].filter(Boolean).join(' · ');if(it.why)c.appendChild(el('i',null,String(it.why)));box[k].appendChild(c);});
+    Object.keys(box).forEach(function(k){if(box[k].querySelectorAll('.it').length===0)box[k].appendChild(el('div','it',' — ')).style.opacity='.4';if(S[k])box[k].appendChild(el('div','act','Action: '+String(S[k])));});
+    g.appendChild(el('div','ax axx','Relative market share →  (high ← → low)'));
+    out.appendChild(g);tail(out,R);
+  }
+  function drawCmp(R){
+    var out=$('stOut');out.innerHTML='';var C=(R.criteria||[]).slice(0,6),P=(R.players||[]).slice(0,5);
+    if(!P.length){out.appendChild(el('div','thinking','No comparison available.'));return;}
+    if(R.market)out.appendChild(el('p','sub','Market compared: '+String(R.market)));
+    var w=el('div','cmpw'),t=el('table','cmpt'),th=el('tr');th.appendChild(el('th',null,'1 = weak · 5 = strong'));
+    P.forEach(function(p,i){th.appendChild(el('th',i?null:'me',String(p.name||'')));});t.appendChild(th);
+    C.forEach(function(c,ci){var tr=el('tr');tr.appendChild(el('td',null,String(c)));P.forEach(function(p,i){var v=Math.max(0,Math.min(5,Math.round(+((p.scores||[])[ci])||0)));var td=el('td',i?null:'me');var dt=el('span','sbar'+(i?'':' me'));var fl=el('em');fl.style.width=(v*20)+'%';dt.appendChild(fl);td.appendChild(dt);td.appendChild(el('small',null,String(v)));tr.appendChild(td);});t.appendChild(tr);});
+    var tot=el('tr');tot.appendChild(el('td',null,'Total'));P.forEach(function(p,i){var s=(p.scores||[]).slice(0,C.length).reduce(function(a,b){return a+(+b||0);},0);var td=el('td',i?null:'me');td.appendChild(el('b',null,s+'/'+(C.length*5)));tot.appendChild(td);});t.appendChild(tot);
+    w.appendChild(t);out.appendChild(w);
+    var pc=el('div','pcards');P.forEach(function(p,i){var c=el('div','pcard'+(i?'':' me'));c.appendChild(el('b',null,String(p.name||'')));if(p.positioning)c.appendChild(d.createTextNode(String(p.positioning)));if(p.vs)c.appendChild(el('i',null,'vs '+P[0].name+': '+p.vs));pc.appendChild(c);});out.appendChild(pc);
+    var sw=el('div','dswot');if(R.edge){var a=el('div','s1');a.appendChild(el('b',null,'Where '+P[0].name+' wins'));a.appendChild(d.createTextNode(String(R.edge)));sw.appendChild(a);}if(R.gap){var b=el('div','s4');b.appendChild(el('b',null,'Where rivals win'));b.appendChild(d.createTextNode(String(R.gap)));sw.appendChild(b);}out.appendChild(sw);
+    if((R.moves||[]).length){var mv=el('div','evb');mv.style.marginTop='10px';mv.appendChild(el('b',null,'👀 Moves to watch'));var u=el('ul');R.moves.forEach(function(x){u.appendChild(el('li',null,String(x)));});mv.appendChild(u);out.appendChild(mv);}
+    tail(out,R);
+  }
+  $('bcgBtn').addEventListener('click',function(){stLoad('bcg');});
+  $('cmpBtn').addEventListener('click',function(){stLoad('compete');});
   /* ================= voice: dictation + interviewer voice + speaking metrics ================= */
   var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
   var FILL=/\b(u+m+|u+h+|erm+|hmm+|basically|actually|you know|kind of|sort of|i mean|literally|like|matlab|na+hi+ na)\b/gi;
