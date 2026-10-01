@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /gold.html
+Disallow: /ivy.html
+Disallow: /red.html
+
+Sitemap: https://youngprofessor.in/sitemap.xml
