@@ -408,7 +408,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <body>
 <nav class="nav" aria-label="Placement Prep Room">
   <div class="wrap">
-    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img src="logo-mark.png" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
+    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img src="logo-mark.webp" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
     <a class="back" href="student.html">← Student Zone</a>
   </div>
 </nav>
@@ -595,6 +595,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <script>
 /* Stage 2: live headlines + AI coach (Google Apps Script web app under singhbikrampaul@gmail.com) */
 var NEWS_ENDPOINT='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
+try{fetch(NEWS_ENDPOINT).catch(function(){});}catch(e){}
 var AI_ENDPOINT=NEWS_ENDPOINT;
 (function(){
   var d=document, $=function(id){return d.getElementById(id);};
@@ -956,16 +957,31 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     (D.extra||[]).forEach(function(x){out.push(x.name+': '+(x.items.slice(0,12).join(' · ')||x.para.slice(0,400)));});
     return out.join('\n').slice(0,6000);
   }
+  /* Speed: ready-made dashboards (pack/), this browser's memory, then AI in two halves at once */
+  function nkey(t){return String(t||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();}
+  function lsGetJ(k){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v&&Date.now()-v.t<12096e5?v.d:null;}catch(e){return null;}}
+  function lsSetJ(k,d){try{localStorage.setItem(k,JSON.stringify({t:Date.now(),d:d}));}catch(e){}}
+  /* all ready-made dashboards, fetched once when the page opens and kept for 12 hours */
+  var packP=(function(){var c=lsGetJ('yp_pack');if(c&&c._t&&Date.now()-c._t<432e5)return Promise.resolve(c);
+    return fetch(NEWS_ENDPOINT+'?pack=1').then(function(r){return r.json();}).then(function(j){if(j&&j.pack){j.pack._t=Date.now();lsSetJ('yp_pack',j.pack);return j.pack;}return {};}).catch(function(){return {};});})();
+  function packGet(title){return Promise.race([packP.then(function(p){return p[nkey(title)]||null;}),new Promise(function(ok){setTimeout(function(){ok(null);},1500);})]);}
   function afterRender(D){
-    var id=runId;resetDash();chips(D);badges({});trend(D,id);
+    var id=runId;resetDash();chips(D);badges({});trend(D,id);D._comp=0;
+    var title=D.summary.title,lk='yp_en:'+nkey(title),local=lsGetJ(lk);
+    newsBrief(title,id);
+    if(local&&local.brief&&local.quiz){applyAI(D,local,{memory:true});return;}
     aiNote('Adding AI brief, SWOT, timeline and quiz…');
-    var eb={task:'enrich',company:D.summary.title,context:buildContext(D)};
-    postAI(eb).then(function(j){return j&&j.ok?j:new Promise(function(ok){setTimeout(ok,2500);}).then(function(){return id===runId?postAI(eb):j;});},function(){return id===runId?postAI(eb):null;}).then(function(j){
-      if(id!==runId)return;
-      if(j&&j.ok&&j.data){applyAI(D,j.data,{verified:j.verified});aiNote('');}
-      else aiNote(j&&j.error?j.error:'AI insights are not available right now. Everything else is ready.',1);
-    }).catch(function(){if(id===runId)aiNote('AI insights are not available right now. Everything else is ready.',1);});
-    newsBrief(D.summary.title,id);
+    var acc={},meta={},ctx=buildContext(D),left=2,fails=0,lastErr='';
+    function finish(){if(id!==runId)return;
+      if(acc.brief||acc.quiz){aiNote(fails?'Some AI insights are still loading. Search again in a minute for the rest.':'',fails?1:0);if(acc.brief&&acc.quiz)lsSetJ(lk,acc);}
+      else aiNote(lastErr||'AI insights are not available right now. Everything else is ready.',1);}
+    function part(p){var eb={task:'enrich',part:p,company:title,context:ctx};
+      return postAI(eb).then(function(j){return j&&j.ok?j:new Promise(function(ok){setTimeout(ok,1500);}).then(function(){return id===runId?postAI(eb):j;});},function(){return id===runId?postAI(eb):null;})
+        .then(function(j){if(id!==runId)return;if(j&&j.ok&&j.data){for(var k in j.data)acc[k]=j.data[k];if(j.verified)meta.verified=true;if(j.cached)meta.memory=true;applyAI(D,acc,meta);if(acc.brief)aiNote(left>1?'Adding timeline, products and quiz…':'');}else{fails++;if(j&&j.error)lastErr=j.error;}})
+        .catch(function(){fails++;}).then(function(){left--;if(!left)finish();});}
+    packGet(title).then(function(P){if(id!==runId)return;
+      if(P&&P.d&&P.d.brief){lsSetJ(lk,P.d);applyAI(D,P.d,{memory:true,verified:P.v});aiNote('');return;}
+      part('a');part('b');});
   }
   function applyAI(D,A,meta){
     if(A.brief){$('rBriefTxt').textContent=String(A.brief);$('rBrief').hidden=false;}
@@ -974,7 +990,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     [['s','Strengths','s1'],['w','Weaknesses','s2'],['o','Opportunities','s3'],['t','Threats','s4']].forEach(function(x){if(!sw[x[0]])return;any=true;var c=el('div',x[2]);c.appendChild(el('b',null,x[1]));c.appendChild(d.createTextNode(String(sw[x[0]])));box.appendChild(c);});
     var comps=(A.competitors||[]).filter(function(x){return x&&typeof x==='string'&&x.length<80;}).slice(0,4);
     if(any||comps.length){$('s-strat').hidden=false;$('tStrat').hidden=false;}
-    if(comps.length)competitors(D,comps,runId);
+    if(comps.length&&!D._comp){D._comp=1;competitors(D,comps,runId);}
     var T=(A.timeline||[]).filter(function(x){return x&&x.y&&x.t;}).slice(0,8);
     if(T.length>=2){var tl=$('tl');tl.innerHTML='';T.forEach(function(x){var r=el('div');r.appendChild(el('b',null,String(x.y).slice(0,12)));r.appendChild(el('span',null,String(x.t)));tl.appendChild(r);});$('s-hist').hidden=false;$('tHist').hidden=false;}
     var P=(A.products||A.services||[]).filter(function(x){return x&&x.name;}).slice(0,9);
