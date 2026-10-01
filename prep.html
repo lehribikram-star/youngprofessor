@@ -664,6 +664,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   }
 
   function run(input,roleTxt){
+    var AL={'wns':'WNS Global Services','wns global':'WNS Global Services','wns holdings':'WNS Global Services','capgemini india':'Capgemini','capgemini wns':'Capgemini'};var ak=nkey(input);if(AL[ak]){input=AL[ak];picked=input;}
     $('idle').hidden=true;$('err').hidden=true;$('miss').hidden=true;$('report').hidden=true;$('rAlt').hidden=true;$('skel').hidden=false;$('go').disabled=true;runId++;
     var titleP=picked?Promise.resolve(input):getJSON(REST+'/page/summary/'+encodeURIComponent(input.replace(/ /g,'_'))).then(function(s){if(s.type==='disambiguation')return resolveTitle(input,s.title);return s.title;}).catch(function(){return resolveTitle(input);});
     titleP.then(function(title){
@@ -962,12 +963,12 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function lsGetJ(k){try{var v=JSON.parse(localStorage.getItem(k)||'null');return v&&Date.now()-v.t<12096e5?v.d:null;}catch(e){return null;}}
   function lsSetJ(k,d){try{localStorage.setItem(k,JSON.stringify({t:Date.now(),d:d}));}catch(e){}}
   /* all ready-made dashboards, fetched once when the page opens and kept for 12 hours */
-  var packP=(function(){var c=lsGetJ('yp_pack');if(c&&c._t&&Date.now()-c._t<432e5)return Promise.resolve(c);
-    return fetch(NEWS_ENDPOINT+'?pack=1').then(function(r){return r.json();}).then(function(j){if(j&&j.pack){j.pack._t=Date.now();lsSetJ('yp_pack',j.pack);return j.pack;}return {};}).catch(function(){return {};});})();
+  var packP=(function(){var c=lsGetJ('yp_pack2');if(c&&c._t&&Date.now()-c._t<432e5)return Promise.resolve(c);
+    return fetch(NEWS_ENDPOINT+'?pack=1').then(function(r){return r.json();}).then(function(j){if(j&&j.pack){j.pack._t=Date.now();lsSetJ('yp_pack2',j.pack);return j.pack;}return {};}).catch(function(){return {};});})();
   function packGet(title){return Promise.race([packP.then(function(p){return p[nkey(title)]||null;}),new Promise(function(ok){setTimeout(function(){ok(null);},1500);})]);}
   function afterRender(D){
     var id=runId;resetDash();chips(D);badges({});trend(D,id);D._comp=0;
-    var title=D.summary.title,lk='yp_en:'+nkey(title),local=lsGetJ(lk);
+    var title=D.summary.title,lk='yp_en2:'+nkey(title),local=lsGetJ(lk);
     newsBrief(title,id);
     if(local&&local.brief&&local.quiz){applyAI(D,local,{memory:true});return;}
     aiNote('Adding AI brief, SWOT, timeline and quiz…');
