@@ -332,6 +332,9 @@ h3{margin:0;font-size:19px;line-height:1.35;font-weight:700}
 .pub a.doi{align-self:center;display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:12.5px;text-decoration:none;color:var(--muted);border:1px solid var(--line2);padding:8px 12px;border-radius:8px;white-space:nowrap;transition:all .25s}
 .pub a.doi:hover{color:#fff;background:var(--red);border-color:var(--red)}
 .pubnote{color:var(--dim);font-size:14px;margin-top:20px}
+.pub .lnk{display:flex;flex-wrap:wrap;gap:6px;justify-self:end}
+.pub .lnk .doi.sc{border-color:rgba(233,113,28,.5);color:#f0a060}
+@media (max-width:640px){.pub .lnk{justify-self:start}}
 .pubnote a{color:var(--muted)}
 
 /* Recognition */
@@ -616,114 +619,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   .badge b{font-size:24px}
   .tabs{display:flex;width:100%}.tabs button{flex:1;padding:11px 10px}
 }
-/* ===================== Redesign 2026: clean layout ===================== */
-/* Student Zone pill in the menu */
-.menu a.sz-pill{display:inline-flex;align-items:center;gap:8px;position:relative;isolation:isolate;animation:szglow 2.8s ease-in-out infinite}
-.menu a.sz-pill::before{content:"";position:absolute;inset:-3px;border-radius:999px;z-index:-1;background:conic-gradient(from var(--ang),transparent 0 60%,#ff9aa0 75%,transparent 90%);animation:ang 3.5s linear infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;padding:2px}
-.szp-dot{width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(255,255,255,.7);animation:pulsew 1.8s infinite}
-@keyframes szglow{50%{box-shadow:0 8px 30px -6px rgba(227,22,30,.85)}}
-@keyframes pulsew{0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}70%{box-shadow:0 0 0 7px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
-.drawer a.dz{font-family:var(--sans);font-size:22px;font-weight:800;background:linear-gradient(135deg,var(--red2),var(--red));color:#fff;border:0;border-radius:18px;padding:16px 18px;margin-bottom:12px;box-shadow:0 14px 40px -12px var(--redglow)}
-.drawer a.dz span{font-size:20px;color:#fff}
-.drawer a.dz em{display:block;font-style:normal;font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
-
-.hero{min-height:calc(100svh - 120px)}
-@media (min-width:1001px){.hero{padding-block:104px 40px}}
-.scroll-cue{display:none}
-/* Quick-access dock */
-.dock{position:relative;z-index:3;margin-top:-40px;padding-bottom:24px}
-.dock-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-.dk{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:18px 18px 16px;border-radius:18px;background:linear-gradient(165deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:transform .35s var(--ease),border-color .3s,background .3s,box-shadow .35s}
-.dk svg{width:40px;height:40px;padding:9px;border-radius:12px;background:var(--redsoft);color:var(--red2);border:1px solid rgba(227,22,30,.25);margin-bottom:8px;transition:background .3s,color .3s,transform .4s var(--ease)}
-.dk b{font-size:16px}
-.dk small{font-size:12.5px;color:var(--muted)}
-.dk:hover{transform:translateY(-6px);border-color:rgba(227,22,30,.55);box-shadow:0 22px 44px -22px rgba(0,0,0,.9),0 0 30px -14px var(--redglow)}
-.dk:hover svg{background:var(--red);color:#fff;transform:rotate(-6deg) scale(1.06)}
-
-/* Student Zone spotlight (moved up) */
-.szband{padding-block:26px 34px}
-.szb{grid-template-columns:1.05fr 1fr;grid-template-areas:"txt tiles" "chips tiles" "btn tiles";row-gap:18px;column-gap:40px;align-items:start;isolation:isolate}
-.szb>div:first-child{grid-area:txt}.szb .sztiles{grid-area:tiles}.szb .szchips{grid-area:chips}.szb>.btn{grid-area:btn;justify-self:start}
-.szb::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--ang),transparent 0 55%,var(--red) 70%,#ffb3b6 75%,var(--red) 80%,transparent 92%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:ang 6s linear infinite;z-index:2;pointer-events:none}
-.szb h2{font-size:clamp(40px,5vw,64px)}
-.szk{display:inline-flex;align-items:center;gap:9px}
-.szlive{width:8px;height:8px;border-radius:50%;background:var(--red2);animation:pulse 2s infinite}
-.sztiles{display:grid;gap:12px}
-.szt{position:relative;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:14px;align-items:center;padding:16px 18px;border-radius:18px;border:1px solid var(--line2);background:rgba(0,0,0,.28);text-decoration:none;color:var(--ink);transition:transform .35s var(--ease),border-color .3s,background .3s}
-.szt i{grid-row:1/3;font-style:normal;font-size:26px;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.06)}
-.szt b{font-size:16.5px}.szt span{font-size:13.5px;color:var(--muted)}
-.szt em{position:absolute;top:12px;right:14px;font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:#fff;color:var(--red)}
-.szt.hot{background:linear-gradient(135deg,rgba(227,22,30,.32),rgba(227,22,30,.08));border-color:rgba(255,80,88,.55)}
-.szt:hover{transform:translateX(6px);border-color:var(--red)}
-.szchips span{font-size:13px;padding:6px 11px}
-
-/* Followers, each counted on its own */
-.folw{padding-block:10px 40px}
-.folw-in{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:14px;align-items:stretch}
-.folw-h h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.05;margin:0 0 8px}
-.folw-h h3 em{color:var(--red);font-style:italic}
-.folw-h p{margin:0;color:var(--muted);font-size:15px}
-.folw-h .label{margin-bottom:12px}
-.fcd{position:relative;display:flex;flex-direction:column;gap:4px;padding:18px 18px 16px;border-radius:20px;border:1px solid var(--line);background:var(--bg2);color:var(--ink);text-decoration:none;font:inherit;text-align:left;cursor:pointer;overflow:hidden;transition:transform .35s var(--ease),border-color .3s,box-shadow .35s}
-.fcd::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:var(--acc);opacity:.14;filter:blur(8px);transition:transform .5s var(--ease),opacity .3s}
-.fcd:hover{transform:translateY(-5px);border-color:var(--acc);box-shadow:0 20px 44px -22px var(--acc)}
-.fcd:hover::after{transform:scale(1.6);opacity:.25}
-.fcd.li{--acc:#0A66C2}.fcd.ig{--acc:#d6249f}.fcd.web{--acc:#E3161E}
-.fci{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px;background:var(--acc);margin-bottom:6px}
-.fcd.ig .fci{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
-.fci svg{width:21px;height:21px}
-.fcd b{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.05;font-variant-numeric:tabular-nums;word-break:break-word}
-.fcd b sup{color:var(--acc);font-size:.5em;vertical-align:top}
-.fcd #cIg.txt,.fcd #cWeb.txt{font-family:var(--sans);font-weight:800;font-size:19px;padding-top:8px}
-.fcd>span{font-size:13px;color:var(--muted)}
-.fcd em{margin-top:auto;padding-top:10px;font-style:normal;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--acc);filter:brightness(1.5)}
-.fcd.web.on em{color:var(--muted);filter:none}
-
-/* About: achievements wall */
-.wins{margin-top:84px}
-.wins-h{margin-bottom:26px}
-.wins-h .label{margin:0}
-.wins-h h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,44px);line-height:1.08;margin:6px 0 0}
-.wins-h h3 em{color:var(--red);font-style:italic}
-.wins-h>div{min-width:0}
-.wins-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.win{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:6px;padding:20px 20px 18px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.01));transition:transform .35s var(--ease),border-color .3s}
-.win svg{width:34px;height:34px;padding:7px;border-radius:10px;color:#F5B942;background:rgba(245,185,66,.1);border:1px solid rgba(245,185,66,.25);margin-bottom:6px}
-.win b{font-size:17px;line-height:1.25}
-.win span{font-size:13.5px;color:var(--muted);line-height:1.45}
-.win::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.08),transparent);transform:skewX(-18deg);transition:left .9s var(--ease)}
-.win:hover{transform:translateY(-4px);border-color:rgba(245,185,66,.45)}
-.win:hover::after{left:130%}
-.win.big,.win.wide,.win:last-child{grid-column:span 2}
-.win.big{background:radial-gradient(420px 180px at 100% 0%,rgba(227,22,30,.22),transparent 70%),linear-gradient(165deg,rgba(255,255,255,.06),rgba(255,255,255,.01));border-color:var(--line2)}
-.win.big b{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.6vw,34px)}
-.win.big svg{color:var(--red2);background:var(--redsoft);border-color:rgba(227,22,30,.3)}
-.pubrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:20px;padding:16px 20px;border:1px dashed var(--line2);border-radius:14px}
-.pubrow span{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
-.pubrow b{font-size:15px;color:#d9cfc9;letter-spacing:.02em}
-
-/* Chapter tabs that group sections */
-.chapbar{position:sticky;top:72px;z-index:30;padding:12px 0;background:rgba(11,10,10,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-block:1px solid var(--line)}
-.chap{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.chap::-webkit-scrollbar{display:none}
-.chap button{flex:none;display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line2);background:none;color:var(--muted);font:700 14.5px var(--sans);padding:10px 18px 10px 10px;border-radius:999px;cursor:pointer;transition:all .3s var(--ease)}
-.chap button i{font-style:normal;font-family:var(--mono);font-size:11.5px;min-width:28px;height:28px;padding:0 6px;border-radius:999px;display:grid;place-items:center;background:var(--line);color:var(--ink)}
-.chap button i svg{width:15px;height:15px}
-.chap button:hover{color:var(--ink);border-color:var(--red)}
-.chap button[aria-selected="true"]{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 10px 26px -10px var(--redglow)}
-.chap button[aria-selected="true"] i{background:rgba(0,0,0,.25);color:#fff}
-.grp>section.gx{display:none}
-.grp>section.gin{animation:gin .6s var(--ease)}
-@keyframes gin{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.grp>.sec{padding-block:80px}
-.grp>.sec-li{padding-block:60px}
-
-/* Show more */
-.tl.clip>li:nth-of-type(n+4),.pubs.clip>.pub:nth-child(n+4){display:none}
-.more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;border:1px solid var(--line2);background:none;color:var(--ink);font:700 14.5px var(--sans);padding:12px 22px;border-radius:999px;cursor:pointer;transition:all .3s}
-.more span{color:var(--muted);font-weight:600}
-.more:hover{border-color:var(--red);background:var(--redsoft)}
-
 /* Follow invite: slim strip */
 .fcard{left:50%;right:auto;bottom:18px;width:min(560px,calc(100% - 24px));display:flex;align-items:center;gap:12px;padding:8px 8px 8px 10px;border-radius:999px;transform:translate(-50%,140%);box-shadow:0 20px 50px -14px rgba(0,0,0,.9),0 0 0 1px rgba(227,22,30,.35)}
 .fcard.show{transform:translate(-50%,0)}
@@ -734,49 +629,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 .fcard .go{flex:none;border:0;background:var(--red);color:#fff;font:800 14px var(--sans);padding:10px 16px;border-radius:999px;cursor:pointer}
 .fcard .fx{position:static;flex:none;width:30px;height:30px;font-size:15px}
 
-/* Phone app bar */
-.abar{display:none}
-@media (max-width:760px){
-  .abar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));background:rgba(14,12,12,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line)}
-  .abar a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px;text-decoration:none;color:var(--muted);font-size:11px;font-weight:700}
-  .abar a svg{width:22px;height:22px}
-  .abar a.abz{color:#fff}
-  .abar a.abz i{font-style:normal;font-size:22px;width:52px;height:52px;margin-top:-26px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--red2),var(--red));box-shadow:0 10px 26px -6px var(--redglow),0 0 0 4px rgba(14,12,12,.95);animation:szglow 2.8s ease-in-out infinite}
-  body{padding-bottom:74px}
-  .fcard{bottom:84px}
-  .ftoast{bottom:96px}
-}
-
-/* Hero on phones: badges below the photo, not on it */
-@media (max-width:640px){
-  .portrait-wrap{margin-bottom:62px}
-  .badge,.badge.b2{top:auto;bottom:-58px;padding:9px 12px;gap:9px}
-  .badge.b2{left:-4%;right:auto}.badge{right:-4%;left:auto}
-  .badge b{font-size:22px}.badge span{font-size:11.5px}
-  .hero h1{font-size:clamp(42px,12vw,56px)}
-  .kicker{font-size:11px;letter-spacing:.1em}
-}
-@media (max-width:1100px){.dock-grid{grid-template-columns:repeat(3,1fr)}.folw-in{grid-template-columns:repeat(3,1fr)}.folw-h{grid-column:1/-1}.wins-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:1000px){.dock{margin-top:0}.szb{grid-template-columns:1fr;grid-template-areas:"txt" "tiles" "chips" "btn"}}
-@media (max-width:640px){
-  .dock-grid{gap:8px}.dk{padding:12px 10px;align-items:center;text-align:center}.dk svg{width:36px;height:36px;padding:8px;margin-bottom:4px}.dk b{font-size:14px}.dk small{display:none}
-  .folw-in{gap:8px}.fcd{padding:14px 12px}.fcd b{font-size:24px}.fcd #cIg.txt,.fcd #cWeb.txt{font-size:13.5px;padding-top:6px}.fci{width:32px;height:32px}.fcd>span{font-size:11.5px}.fcd em{font-size:10.5px}
-  .wins{margin-top:60px}.win{padding:16px 14px}.win b{font-size:15px}.win span{font-size:12.5px}.win.big b{font-size:24px}
-  .chapbar{top:64px}.chap button{font-size:13.5px;padding:8px 14px 8px 8px}
-  .grp>.sec{padding-block:60px}
-  .szt{padding:13px 14px}.szt i{width:44px;height:44px;font-size:22px}
-}
-
 /* Thank-you: admission card */
-.ty{position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:20px}
-.ty[hidden]{display:none}
+.tyo{position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:20px}
+.tyo[hidden]{display:none}
 .ty-back{position:absolute;inset:0;background:rgba(5,4,4,.78);backdrop-filter:blur(6px);opacity:0;transition:opacity .4s}
-.ty.show .ty-back{opacity:1}
+.tyo.show .ty-back{opacity:1}
 .ty-conf{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
 .ty-box{position:relative;z-index:3;width:min(440px,100%);text-align:center;transform:translateY(40px) scale(.92);opacity:0;transition:transform .7s cubic-bezier(.2,1.3,.3,1),opacity .4s}
-.ty.show .ty-box{transform:none;opacity:1}
+.tyo.show .ty-box{transform:none;opacity:1}
 .ty-cap{font-size:64px;line-height:1;margin:0 auto -18px;position:relative;z-index:2;filter:drop-shadow(0 10px 20px rgba(0,0,0,.6))}
-.ty.show .ty-cap{animation:captoss 1.6s cubic-bezier(.3,.7,.4,1) .15s both}
+.tyo.show .ty-cap{animation:captoss 1.6s cubic-bezier(.3,.7,.4,1) .15s both}
 @keyframes captoss{0%{transform:translateY(160px) rotate(0) scale(.6);opacity:0}35%{opacity:1}55%{transform:translateY(-120px) rotate(400deg) scale(1.15)}80%{transform:translateY(8px) rotate(700deg)}100%{transform:none}}
 .adm{position:relative;overflow:hidden;text-align:left;padding:26px 24px 20px;border-radius:20px;color:#2a1d1a;background:linear-gradient(135deg,#fffaf2,#f6ecdc);box-shadow:0 30px 80px -20px rgba(0,0,0,.9),0 0 0 1px rgba(227,22,30,.4),inset 0 0 0 6px #fffaf2,inset 0 0 0 7px rgba(227,22,30,.35)}
 .adm::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 27px,rgba(42,29,26,.05) 27px 28px);pointer-events:none}
@@ -792,12 +654,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 .adm-f{display:flex;justify-content:space-between;align-items:end;gap:10px;font-size:12px;color:#7a6560}
 .sig{font-family:"Brush Script MT","Segoe Script","Lucida Handwriting",cursive;font-size:24px;color:#1d3a8a;border-bottom:1px solid rgba(42,29,26,.35);padding:0 6px 2px;transform:rotate(-3deg);white-space:nowrap}
 .adm-stamp{position:absolute;right:20px;bottom:64px;font-family:var(--mono);font-weight:700;font-size:15px;letter-spacing:.2em;color:rgba(227,22,30,.85);border:2.5px solid rgba(227,22,30,.75);border-radius:8px;padding:4px 10px;transform:rotate(-14deg) scale(2);opacity:0}
-.ty.show .adm-stamp{animation:stamp .45s cubic-bezier(.3,1.6,.5,1) 1.3s forwards}
+.tyo.show .adm-stamp{animation:stamp .45s cubic-bezier(.3,1.6,.5,1) 1.3s forwards}
 @keyframes stamp{to{transform:rotate(-14deg) scale(1);opacity:1}}
 .ty-a{display:flex;gap:10px;margin-top:16px}
 .ty-a button{flex:1;padding:13px 16px;border-radius:999px;font:800 14.5px var(--sans);cursor:pointer;border:1px solid var(--line2);background:rgba(23,20,20,.9);color:var(--ink)}
 .ty-a .ty-share{background:var(--red);border-color:var(--red);color:#fff}
-@media (prefers-reduced-motion:reduce){.grp>section.gin{animation:none}.menu a.sz-pill,.menu a.sz-pill::before,.szb::before{animation:none}}
+@media (max-width:640px){
+  .portrait-wrap{margin-bottom:62px}
+  .badge,.badge.b2{top:auto;bottom:-58px;padding:9px 12px;gap:9px}
+  .badge.b2{left:-4%;right:auto}.badge{right:-4%;left:auto}
+  .badge b{font-size:22px}.badge span{font-size:11.5px}
+  .fcard{bottom:12px}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
@@ -817,25 +685,30 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   <div class="wrap">
     <a class="logo" href="#top" aria-label="youngprofessor.in home"><img class="lmark" src="logo-mark.webp" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
     <ul class="menu">
-      <li><a href="#about" data-spy="about expertise">About</a></li>
-      <li><a href="#journey" data-spy="journey">Teaching</a></li>
-      <li><a href="#research" data-spy="research recognition">Research</a></li>
-      <li><a href="#updates" data-spy="updates instagram podcast">Updates</a></li>
-      <li><a href="#contact" data-spy="contact">Contact</a></li>
-      <li><a class="sz-pill" href="student.html"><span class="szp-dot" aria-hidden="true"></span>🎓 Student Zone</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#podcast">Podcast</a></li>
+      <li><a href="#recognition">Recognition</a></li>
+      <li><a href="#updates">LinkedIn</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="sz-pill" href="student.html">Student Zone</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
 </nav>
 <div class="drawer" id="drawer">
-  <a class="dz" href="student.html"><span>🎓</span>Student Zone<em>Placement Prep · Lessons · Ask Me</em></a>
   <a href="#about"><span>01</span>About</a>
-  <a href="#journey"><span>02</span>Teaching</a>
-  <a href="#research"><span>03</span>Research</a>
-  <a href="#recognition"><span>04</span>Recognition</a>
-  <a href="#updates"><span>05</span>Updates</a>
-  <a href="#podcast"><span>06</span>Podcast</a>
-  <a href="#contact"><span>07</span>Contact</a>
+  <a href="#expertise"><span>02</span>Expertise</a>
+  <a href="#journey"><span>03</span>Journey</a>
+  <a href="#research"><span>04</span>Research</a>
+  <a href="#podcast"><span>05</span>Podcast</a>
+  <a href="#recognition"><span>06</span>Recognition</a>
+  <a href="#updates"><span>07</span>LinkedIn</a>
+  <a href="#instagram"><span>08</span>Instagram</a>
+  <a href="#contact"><span>09</span>Contact</a>
+  <a href="student.html"><span>★</span>Student Zone</a>
   <a href="unsaid.html"><span>✦</span>Things I Never Said</a>
 </div>
 
@@ -867,47 +740,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   <a class="scroll-cue" href="#about">SCROLL<i></i></a>
 </header>
 
-<section class="dock" aria-label="Quick access">
-  <div class="wrap">
-    <div class="dock-grid">
-      <a class="dk rv" href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg><b>About</b><small>Profile &amp; milestones</small></a>
-      <a class="dk rv d1" href="#journey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg><b>Teaching</b><small>Expertise &amp; journey</small></a>
-      <a class="dk rv d2" href="#research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M8 7h8M8 11h6"/></svg><b>Research</b><small>Papers &amp; patents</small></a>
-      <a class="dk rv" href="#recognition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><b>Recognition</b><small>Awards &amp; service</small></a>
-      <a class="dk rv d1" href="#podcast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4"/></svg><b>Podcast</b><small>Watch &amp; listen</small></a>
-      <a class="dk rv d2" href="#updates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l2.4 5.6L20 9.3l-4.3 3.9 1.2 5.8L12 16.2 7.1 19l1.2-5.8L4 9.3l5.6-.7z"/></svg><b>Updates</b><small>LinkedIn &amp; Instagram</small></a>
-    </div>
-  </div>
-</section>
-<section class="szband" id="students">
-  <div class="wrap">
-    <div class="szb rv">
-      <div>
-        <span class="szk"><i class="szlive"></i>For my students · Free</span>
-        <h2>Student <em>Zone</em></h2>
-        <p>One-minute lessons, a wellbeing space with calming tools and free helplines, opportunities from partners, and a direct line to ask me anything.</p>
-        <a class="szunsaid" href="unsaid.html"><i>✨</i> Things I Never Said: something you always wanted to tell me? Leave a note →</a>
-      </div>
-      <div class="sztiles">
-        <a class="szt hot" href="prep.html"><i>🎯</i><b>Placement Prep Room</b><span>Company dashboards &amp; AI mock interviews</span><em>Most used</em></a>
-        <a class="szt" href="student.html#lessons"><i>🎬</i><b>1-Minute Lessons</b><span>Quick concepts, made simple</span></a>
-        <a class="szt" href="student.html#ask"><i>💬</i><b>Ask Me</b><span>A direct line to Dr. Lehri</span></a>
-      </div>
-      <div class="szchips"><span>⭐ Opportunities</span><span>🌿 Wellbeing</span><span>🎬 Lessons</span><span>🎯 Prep</span><span>💬 Ask Me</span></div>
-      <a class="btn red mag" href="student.html">Enter the Student Zone <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
-<section class="folw" aria-label="Followers">
-  <div class="wrap">
-    <div class="folw-in rv">
-      <div class="folw-h"><span class="label">Community</span><h3>Join <em>the class.</em></h3><p>Follow along for new lessons, research and opportunities.</p></div>
-      <a class="fcd li" href="https://www.linkedin.com/in/dr-bikram-paul-singh-lehri-519a7814/" target="_blank" rel="noopener"><span class="fci">in</span><b id="cLi" data-count="1800" data-suffix="+">0</b><span>LinkedIn followers</span><em>Follow ↗</em></a>
-      <a class="fcd ig" href="https://www.instagram.com/bikrampaul.s/" target="_blank" rel="noopener"><span class="fci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></span><b id="cIg" class="txt">@bikrampaul.s</b><span>Instagram followers</span><em>Follow ↗</em></a>
-      <button type="button" class="fcd web" data-follow><span class="fci">🔔</span><b id="cWeb" class="txt">Be one of the first</b><span>Website followers</span><em class="ftxt">Follow</em></button>
-    </div>
-  </div>
-</section>
 <div class="marquee" aria-hidden="true">
   <div class="track">
     <span>Finance</span><span>Marketing</span><span>Organisational Behaviour</span><span>Entrepreneurship</span><span>Corporate Governance</span><span>CSR &amp; Sustainability</span>
@@ -916,41 +748,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 </div>
 
 <main>
-<div class="grp" id="grpA">
-<div class="chapbar"><div class="wrap"><div class="chap" role="tablist" aria-label="About sections">
-  <button type="button" role="tab" data-sec="about" aria-selected="true"><i>01</i>About &amp; milestones</button>
-  <button type="button" role="tab" data-sec="expertise" aria-selected="false"><i>02</i>Expertise</button>
-  <button type="button" role="tab" data-sec="journey" aria-selected="false"><i>03</i>Teaching journey</button>
-</div></div></div>
 <section class="sec" id="about">
   <div class="wrap">
     <div class="stats rv">
-      <div class="stat"><b data-count="24">0</b><span>Research papers &amp; book chapters</span></div>
+      <div class="stat"><b class="pubTotal" data-count="24">0</b><span>Research Publications</span></div>
       <div class="stat"><b data-count="7">0</b><span>Patents, 2 published and 5 filed</span></div>
       <div class="stat"><b data-count="2">0</b><span>Textbooks in Finance &amp; Income Tax</span></div>
       <div class="stat"><b data-count="10" data-suffix="+">0</b><span>Years teaching across 6 institutions</span></div>
     </div>
 
-
-    <div class="wins rv">
-      <div class="wins-h"><p class="label">Milestones</p><h3>A record built <em>one classroom at a time.</em></h3></div>
-      <div class="wins-grid">
-        <div class="win big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg><b>Associate Professor</b><span>Promoted at Chandigarh University in under 4 years (Dec 2025)</span></div>
-        <div class="win big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg><b>Ph.D. in Finance</b><span>Punjabi University, Patiala · 2023</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l2.4 5.6L20 9.3l-4.3 3.9 1.2 5.8L12 16.2 7.1 19l1.2-5.8L4 9.3l5.6-.7z"/></svg><b>4× UGC-NET</b><span>Commerce &amp; Management</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M8 7h8M8 11h6"/></svg><b>24 publications</b><span>Springer, CRC Press, IGI Global · Scopus &amp; UGC-CARE</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg><b>7 patents</b><span>2 published · 5 filed</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M8 7h8M8 11h6"/></svg><b>2 textbooks</b><span>Finance &amp; Income Tax</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 22V4"/><path d="M4 4h13l-2 4 2 4H4"/></svg><b>NSS Programme Officer</b><span>Student leadership &amp; community service</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.2 1.3-4 3-4.5"/></svg><b>Deputy Superintendent</b><span>Examinations, Chandigarh University</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><b>Honoured for admissions</b><span>Recognised by the Senior Director</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4"/></svg><b>Podcast speaker</b><span>CU Online · Marketing in the Digital Era</span></div>
-        <div class="win wide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><b>CU's Got Talent winner</b><span>Singing category, staff edition</span></div>
-        <div class="win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg><b>10+ years · 6 institutions</b><span>MBA, M.Com, BBA, B.Com &amp; more</span></div>
-      </div>
-      <div class="pubrow"><span>Published with</span><b>Springer</b><b>CRC Press</b><b>IGI Global</b><b>Scopus-indexed</b><b>UGC-CARE</b></div>
-    </div>
-    <div class="about" style="margin-top:96px">
+    <div class="about" style="margin-top:110px">
       <div class="rv">
         <p class="label">About me</p>
         <h2>Teaching that builds <em>future-ready</em> leaders.</h2>
@@ -970,7 +777,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   </div>
 </section>
 
-<section class="sec" id="expertise">
+<section class="sec" id="expertise" style="padding-top:0">
   <div class="wrap">
     <p class="label rv">Expertise</p>
     <h2 class="rv">Four disciplines, <em>one</em> classroom.</h2>
@@ -1012,7 +819,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
       <button role="tab" aria-selected="false" aria-controls="p-edu" id="t-edu">Education</button>
     </div>
     <div class="panel" id="p-teach" role="tabpanel" aria-labelledby="t-teach">
-      <ol class="tl clip" id="tlTeach">
+      <ol class="tl">
         <span class="fill"></span>
         <li><span class="when">Dec 2025 – Present</span><div><h3>Associate Professor <span class="now">Current</span></h3><p class="where">University School of Business, Chandigarh University</p><span class="meta">MBA Flagship (Dual Specialisation) · M.A. Economics</span></div></li>
         <li><span class="when">Jan 2023 – Present</span><div><h3>NSS Programme Officer &amp; Deputy Superintendent (Examination)</h3><p class="where">Chandigarh University</p><span class="meta">Student leadership · Community engagement · Examination processes</span></div></li>
@@ -1023,7 +830,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
         <li><span class="when">May 2016 – Feb 2020</span><div><h3>Lecturer</h3><p class="where">Nishchay Edu. Services, Patiala</p><span class="meta">UGC/NTA NET coaching · Commerce &amp; Management</span></div></li>
         <li><span class="when">Jan 2016 – Apr 2016</span><div><h3>Assistant Professor (Ad hoc)</h3><p class="where">ASRA Group of Colleges, Patiala</p><span class="meta">MBA (Finance) · BBA</span></div></li>
       </ol>
-      <button type="button" class="more" data-more="tlTeach">Show full journey <span>(8 roles)</span></button>
     </div>
     <div class="panel" id="p-edu" role="tabpanel" aria-labelledby="t-edu" hidden>
       <ol class="tl">
@@ -1038,7 +844,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     </div>
   </div>
 </section>
-</div>
 
 <section class="sec" id="research">
   <div class="wrap">
@@ -1047,7 +852,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     <p class="lead rv">My work studies how companies in emerging economies create value responsibly, from <strong>corporate governance</strong> and <strong>voluntary CSR</strong> to <strong>climate adaptation</strong> on the road to a net-zero economy.</p>
 
     <div class="rgrid">
-      <div class="rnum rv"><b data-count="24">0</b><h3>Papers &amp; chapters</h3><p>In Scopus-indexed and UGC-CARE listed journals and edited volumes.</p></div>
+      <div class="rnum rv"><b class="pubTotal" data-count="24">0</b><h3>Research Publications</h3><p>In Scopus-indexed and UGC-CARE listed journals and edited volumes.</p></div>
       <div class="rnum rv d1"><b data-count="7">0</b><h3>Patents</h3><p>2 published and 5 filed, from applied and innovation-led research.</p></div>
       <div class="rnum rv d2"><b data-count="2">0</b><h3>Textbooks</h3><p>Published textbooks in Finance and Income Tax.</p></div>
     </div>
@@ -1061,17 +866,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 
     <div class="pubhead">
       <div>
-        <h3>Selected publications</h3>
-        <span class="live" id="live"><i></i>Synced from ORCID</span>
+        <h3>Research publications</h3>
+        <span class="live" id="live"><i></i> Live from ORCID &amp; OpenAlex</span>
       </div>
       <div class="filters" id="filters">
         <button class="on" data-f="all">All</button>
         <button data-f="book-chapter">Book chapters</button>
         <button data-f="book">Books</button>
         <button data-f="journal-article">Journal articles</button>
+        <button data-f="conference-paper">Conference papers</button>
       </div>
     </div>
-    <ul class="pubs clip" id="pubs">
+    <ul class="pubs" id="pubs">
       <li class="pub" data-type="book-chapter"><span class="yr">2025</span><div><div class="t">Driving Value Creation: Mapping the Landscape of Corporate Governance in Emerging Economies</div><div class="v"><span class="ty">Chapter</span>Approaches to Global Sustainability, Markets, and Governance · Springer</div></div><a class="doi" href="https://doi.org/10.1007/978-981-96-6366-8_3" target="_blank" rel="noopener">DOI ↗</a></li>
       <li class="pub" data-type="book-chapter"><span class="yr">2025</span><div><div class="t">What Influences Companies to Go Beyond Mandatory Corporate Social Responsibility Rule? Empirical Evidence from India</div><div class="v"><span class="ty">Chapter</span>World Sustainability Series · Springer</div></div><a class="doi" href="https://doi.org/10.1007/978-3-031-81469-3_2" target="_blank" rel="noopener">DOI ↗</a></li>
       <li class="pub" data-type="book"><span class="yr">2024</span><div><div class="t">Recent Technological Advances in Engineering and Management</div><div class="v"><span class="ty">Book</span>CRC Press</div></div><a class="doi" href="https://doi.org/10.1201/9781003531395" target="_blank" rel="noopener">DOI ↗</a></li>
@@ -1079,11 +885,37 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
       <li class="pub" data-type="book-chapter"><span class="yr">2024</span><div><div class="t">CSR Initiatives: A Way of Enhancing Employees' Wellbeing</div><div class="v"><span class="ty">Chapter</span>Impact of Corporate Social Responsibility on Employee Wellbeing · IGI Global</div></div><a class="doi" href="https://doi.org/10.4018/979-8-3693-3470-6.ch004" target="_blank" rel="noopener">DOI ↗</a></li>
       <li class="pub" data-type="book-chapter"><span class="yr">2024</span><div><div class="t">Climate Change Adaptation Strategies for Achieving Net-Zero Economy</div><div class="v"><span class="ty">Chapter</span>Approaches to Global Sustainability, Markets, and Governance · Springer</div></div><a class="doi" href="https://doi.org/10.1007/978-981-97-5756-5_8" target="_blank" rel="noopener">DOI ↗</a></li>
     </ul>
-    <button type="button" class="more" data-more="pubs">Show all publications</button>
-    <p class="pubnote">This list updates automatically from my ORCID record. For the complete record, see <a href="https://orcid.org/0000-0003-1580-2957" target="_blank" rel="noopener">ORCID</a> and <a href="https://www.scopus.com/authid/detail.uri?authorId=59410315400" target="_blank" rel="noopener">Scopus</a>.</p>
+    <p class="pubnote">This list updates automatically from ORCID and OpenAlex (which also tracks Scopus-indexed work), so new publications appear here on their own. For the complete record, see <a href="https://orcid.org/0000-0003-1580-2957" target="_blank" rel="noopener">ORCID</a> and <a href="https://www.scopus.com/authid/detail.uri?authorId=59410315400" target="_blank" rel="noopener">Scopus</a>.</p>
   </div>
 </section>
 
+<section class="sec pod" id="podcast">
+  <div class="wrap">
+    <div class="pod-grid">
+      <div class="pod-info">
+        <p class="label rv">Podcast</p>
+        <h2 class="rv">Mastering Marketing in the <em>Digital Era</em></h2>
+        <p class="lead rv">My CU Online podcast on Marketing Management in the Digital Era: why classic marketing ideas still matter, and how strategy changes as business moves from physical place to online space.</p>
+        <ul class="pod-points rv">
+          <li><b>01</b>Why traditional marketing concepts are still relevant</li>
+          <li><b>02</b>The shift from physical place to online space</li>
+          <li><b>03</b>Practical insights for marketing students and professionals</li>
+        </ul>
+        <div class="pod-meta rv"><span><i class="yt">▶</i>YouTube · CU Online</span><span>Speaker: Prof. (Dr.) Bikram Paul Singh Lehri</span><span>Host: Prof. Navdeep Singh</span></div>
+        <a class="btn line mag rv" href="https://www.youtube.com/watch?v=gmxDzVdg268" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </div>
+      <div class="pod-player rv d2">
+        <div class="pod-frame" id="podFrame">
+          <div class="pod-art"><img src="https://i.ytimg.com/vi/gmxDzVdg268/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gmxDzVdg268/hqdefault.jpg'" alt="Podcast: Marketing Management in the Digital Era, speaker Prof. (Dr.) Bikram Paul Singh Lehri" loading="lazy"><span class="pod-plate l"><small>Host</small><span>Prof. Navdeep Singh<em>Assistant Professor, CU Online</em></span></span><span class="pod-plate r"><small>Speaker</small><span>Prof. (Dr.) Bikram Paul Singh Lehri<em>USB, Chandigarh University</em></span></span></div>
+          <span class="pod-shade"></span>
+          <span class="pod-badge"><i></i>Podcast</span>
+          <button type="button" class="pod-play" id="podPlay" aria-label="Play the podcast video"><span class="ring"></span><span class="ring r2"></span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+        </div>
+        <div class="pod-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="sec" id="recognition" style="background:var(--bg2);border-block:1px solid var(--line)">
   <div class="wrap">
@@ -1128,12 +960,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   </div>
 </section>
 
-<div class="grp" id="grpU">
-<div class="chapbar"><div class="wrap"><div class="chap" role="tablist" aria-label="Updates">
-  <button type="button" role="tab" data-sec="updates" aria-selected="true"><i class="li">in</i>LinkedIn</button>
-  <button type="button" role="tab" data-sec="instagram" aria-selected="false"><i class="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></i>Instagram</button>
-  <button type="button" role="tab" data-sec="podcast" aria-selected="false"><i>▶</i>Podcast</button>
-</div></div></div>
 <section class="sec sec-li" id="updates">
   <div class="wrap">
     <div class="stage" id="stage">
@@ -1212,34 +1038,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     </div>
   </div>
 </section>
-<section class="sec pod" id="podcast">
-  <div class="wrap">
-    <div class="pod-grid">
-      <div class="pod-info">
-        <p class="label rv">Podcast</p>
-        <h2 class="rv">Mastering Marketing in the <em>Digital Era</em></h2>
-        <p class="lead rv">My CU Online podcast on Marketing Management in the Digital Era: why classic marketing ideas still matter, and how strategy changes as business moves from physical place to online space.</p>
-        <ul class="pod-points rv">
-          <li><b>01</b>Why traditional marketing concepts are still relevant</li>
-          <li><b>02</b>The shift from physical place to online space</li>
-          <li><b>03</b>Practical insights for marketing students and professionals</li>
-        </ul>
-        <div class="pod-meta rv"><span><i class="yt">▶</i>YouTube · CU Online</span><span>Speaker: Prof. (Dr.) Bikram Paul Singh Lehri</span><span>Host: Prof. Navdeep Singh</span></div>
-        <a class="btn line mag rv" href="https://www.youtube.com/watch?v=gmxDzVdg268" target="_blank" rel="noopener">Watch on YouTube ↗</a>
-      </div>
-      <div class="pod-player rv d2">
-        <div class="pod-frame" id="podFrame">
-          <div class="pod-art"><img src="https://i.ytimg.com/vi/gmxDzVdg268/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/gmxDzVdg268/hqdefault.jpg'" alt="Podcast: Marketing Management in the Digital Era, speaker Prof. (Dr.) Bikram Paul Singh Lehri" loading="lazy"><span class="pod-plate l"><small>Host</small><span>Prof. Navdeep Singh<em>Assistant Professor, CU Online</em></span></span><span class="pod-plate r"><small>Speaker</small><span>Prof. (Dr.) Bikram Paul Singh Lehri<em>USB, Chandigarh University</em></span></span></div>
-          <span class="pod-shade"></span>
-          <span class="pod-badge"><i></i>Podcast</span>
-          <button type="button" class="pod-play" id="podPlay" aria-label="Play the podcast video"><span class="ring"></span><span class="ring r2"></span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
-        </div>
-        <div class="pod-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
 <div class="lm" id="lm" hidden>
   <div class="lm-back" data-close></div>
   <div class="lm-box" role="dialog" aria-modal="true" aria-labelledby="lmTitle">
@@ -1274,6 +1072,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 </section>
 </main>
 
+<section class="szband" id="students">
+  <div class="wrap">
+    <div class="szb rv">
+      <div>
+        <span class="szk">For my students</span>
+        <h2>Student <em>Zone</em></h2>
+        <p>One-minute lessons, a wellbeing space with calming tools and free helplines, opportunities from partners, and a direct line to ask me anything.</p>
+        <a class="szunsaid" href="unsaid.html"><i>✨</i> Things I Never Said: something you always wanted to tell me? Leave a note →</a>
+      </div>
+      <div class="szchips"><span>🎬 1-Minute Lessons</span><span>🎯 Placement Prep</span><span>⭐ Opportunities</span><span>🌿 Wellbeing</span><span>💬 Ask Me</span></div>
+      <a class="btn red mag" href="student.html">Enter the Student Zone <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
 
 <section class="contact" id="contact">
   <div class="wrap">
@@ -1335,7 +1147,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   /* Active menu link */
   var links=[].slice.call(d.querySelectorAll('.menu a'));
   if('IntersectionObserver' in window){
-    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){var sp=(l.dataset.spy||'').split(' ');l.classList.toggle('on',sp.indexOf(e.target.id)>-1);});}});},{rootMargin:'-45% 0px -50% 0px'});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-45% 0px -50% 0px'});
     d.querySelectorAll('section[id]').forEach(function(s){so.observe(s);});
   }
 
@@ -1449,21 +1261,35 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   var pubs=d.getElementById('pubs'), live=d.getElementById('live');
   var labels={'book-chapter':'Chapter','book':'Book','journal-article':'Article','conference-paper':'Conference','other':'Other'};
   function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  fetch('https://pub.orcid.org/v3.0/0000-0003-1580-2957/works',{headers:{Accept:'application/json'}})
-    .then(function(r){if(!r.ok)throw 0;return r.json();})
-    .then(function(j){
-      var seen={}, items=[];
-      (j.group||[]).forEach(function(g){var s=g['work-summary'][0]; var t=(s.title&&s.title.title&&s.title.title.value)||''; var key=t.toLowerCase().slice(0,14);
-        var ids=(s['external-ids']&&s['external-ids']['external-id'])||[]; var doi=ids.filter(function(e){return e['external-id-type']==='doi';})[0];
-        var doiv=doi?doi['external-id-value']:null;
-        if(!t||seen[key]||(doiv&&seen[doiv]))return; seen[key]=1; if(doiv)seen[doiv]=1;
-        items.push({t:t,type:s.type,y:(s['publication-date']&&s['publication-date'].year&&s['publication-date'].year.value)||'',v:(s['journal-title']&&s['journal-title'].value)||'',doi:doiv});});
-      if(!items.length)return;
-      items.sort(function(a,b){return (b.y||0)-(a.y||0);});
-      pubs.innerHTML=items.map(function(p){return '<li class="pub" data-type="'+esc(p.type)+'"><span class="yr">'+esc(p.y)+'</span><div><div class="t">'+esc(p.t)+'</div><div class="v"><span class="ty">'+esc(labels[p.type]||'Work')+'</span>'+esc(p.v)+'</div></div>'+(p.doi?'<a class="doi" href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener">DOI ↗</a>':'<span></span>')+'</li>';}).join('');
-      live.lastChild.textContent=' Live from ORCID · '+items.length+' works';
-      applyFilter();
-    }).catch(function(){});
+  /* Research publications: merged live from ORCID + OpenAlex (tracks Scopus-indexed work). New ones are added automatically. */
+  var PUB_BASE=24, PUB_BASE_DATE='2026-10-07';
+  function normT(t){return String(t||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().slice(0,40);}
+  function normD(d){return String(d||'').toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//,'').trim();}
+  var orcidP=fetch('https://pub.orcid.org/v3.0/0000-0003-1580-2957/works',{headers:{Accept:'application/json'}}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+      return (j.group||[]).map(function(g){var s=g['work-summary'][0];var ids=(s['external-ids']&&s['external-ids']['external-id'])||[];
+        var f=function(t){var x=ids.filter(function(e){return e['external-id-type']===t;})[0];return x?x['external-id-value']:'';};
+        var pd=s['publication-date']||{},y=pd.year&&pd.year.value||'',m=pd.month&&pd.month.value||'01',dd=pd.day&&pd.day.value||'01';
+        return {t:(s.title&&s.title.title&&s.title.title.value)||'',type:s.type,y:y,date:y?y+'-'+m+'-'+dd:'',v:(s['journal-title']&&s['journal-title'].value)||'',doi:normD(f('doi')),eid:f('eid')};});
+    }).catch(function(){return [];});
+  var oaP=fetch('https://api.openalex.org/works?filter=authorships.author.orcid:0000-0003-1580-2957&per-page=100&select=doi,title,publication_year,publication_date,type,primary_location').then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+      var T={'article':'journal-article','book-chapter':'book-chapter','book':'book','proceedings-article':'conference-paper','conference-paper':'conference-paper'};
+      return (j.results||[]).map(function(w){var src=w.primary_location&&w.primary_location.source;return {t:w.title||'',type:T[w.type]||'other',y:w.publication_year||'',date:w.publication_date||'',v:(src&&src.display_name)||'',doi:normD(w.doi),eid:''};});
+    }).catch(function(){return [];});
+  Promise.all([orcidP,oaP]).then(function(r){
+    var seen={},items=[];
+    r[0].concat(r[1]).forEach(function(p){if(!p.t)return;var kd=p.doi?'d:'+p.doi:'',kt='t:'+normT(p.t);
+      var hit=(kd&&seen[kd])||seen[kt];
+      if(hit){if(!hit.eid&&p.eid)hit.eid=p.eid;if(!hit.v&&p.v)hit.v=p.v;if(!hit.doi&&p.doi)hit.doi=p.doi;return;}
+      if(kd)seen[kd]=p;seen[kt]=p;items.push(p);});
+    if(!items.length)return;
+    items.sort(function(a,b){return String(b.date||b.y).localeCompare(String(a.date||a.y));});
+    pubs.innerHTML=items.map(function(p){var links=(p.doi?'<a class="doi" href="https://doi.org/'+esc(p.doi)+'" target="_blank" rel="noopener">DOI ↗</a>':'')+(p.eid?'<a class="doi sc" href="https://www.scopus.com/record/display.uri?eid='+esc(p.eid)+'&origin=resultslist" target="_blank" rel="noopener">Scopus ↗</a>':'');
+      return '<li class="pub" data-type="'+esc(p.type)+'"><span class="yr">'+esc(p.y)+'</span><div><div class="t">'+esc(p.t)+'</div><div class="v"><span class="ty">'+esc(labels[p.type]||'Work')+'</span>'+esc(p.v)+'</div></div><span class="lnk">'+links+'</span></li>';}).join('');
+    var newer=items.filter(function(p){return p.date&&p.date>PUB_BASE_DATE;}).length,total=PUB_BASE+newer;
+    d.querySelectorAll('.pubTotal').forEach(function(el){el.dataset.count=total;if(el.dataset.done)el.textContent=total;});
+    live.lastChild.textContent=' Live from ORCID & OpenAlex · '+items.length+' indexed';
+    applyFilter();
+  });
   var flt='all';
   d.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;flt=b.dataset.f;[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);});applyFilter();});
   function applyFilter(){pubs.querySelectorAll('.pub').forEach(function(li){li.hidden=!(flt==='all'||li.dataset.type===flt);});}
@@ -1527,9 +1353,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     function apply(S){if(!S||!S.ok)return;
       if(S.li&&S.li.followers){setNum('liFol',S.li.followers);d.getElementById('heroLi').textContent=fmt(S.li.followers);}
       if(S.li&&S.li.reactions)setNum('liReact',S.li.reactions);
-      if(S.li&&S.li.followers)setNum('cLi',S.li.followers);
-      if(S.ig&&S.ig.followers>0){var ci=d.getElementById('cIg');ci.classList.remove('txt');ci.textContent=fmt(S.ig.followers);}
-      if(S.site&&S.site.followers>0){var cw=d.getElementById('cWeb');cw.classList.remove('txt');cw.dataset.n=S.site.followers;cw.textContent=fmt(S.site.followers);}
       if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol');sf.dataset.n=S.site.followers;sf.textContent=fmt(S.site.followers);sf.hidden=false;}
       if(S.ig&&S.ig.followers>0){d.getElementById('igFol').textContent=fmt(S.ig.followers);d.getElementById('igStat').hidden=false;}
       var posts=S.posts||[],li=posts.filter(function(p){return p.p==='li';}).slice(0,8).reverse();
@@ -1539,25 +1362,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
         g.hidden=false;d.getElementById('igEmpty').hidden=true;}}
     if(window.fetch)fetch(SURL).then(function(r){return r.json();}).then(apply).catch(function(){});
   })();
-
-
-  /* Chapter tabs: grouped sections, one visible at a time */
-  var GRP={};
-  [].forEach.call(d.querySelectorAll('.grp'),function(g){
-    var btns=[].slice.call(g.querySelectorAll('.chap button'));
-    function pick(id,anim){btns.forEach(function(b){var on=b.dataset.sec===id;b.setAttribute('aria-selected',on);var sec=d.getElementById(b.dataset.sec);if(!sec)return;sec.classList.toggle('gx',!on);sec.classList.remove('gin');if(on&&anim){void sec.offsetWidth;sec.classList.add('gin');}
-        if(on)sec.querySelectorAll('.rv:not(.in)').forEach(function(r){r.classList.add('in');r.querySelectorAll('[data-count]').forEach(count);});});
-      if(id==='journey')setTimeout(fillTimeline,50);if(id==='updates'&&typeof moveInd==='function')setTimeout(moveInd,60);
-      if(id==='updates'&&stage&&!stage.classList.contains('in'))setTimeout(stageIn,80);}
-    btns.forEach(function(b){GRP[b.dataset.sec]={pick:pick,g:g};b.addEventListener('click',function(){pick(b.dataset.sec,true);var top=g.getBoundingClientRect().top+scrollY-74;if(Math.abs(scrollY-top)>innerHeight*.6||g.getBoundingClientRect().top<0)scrollTo({top:top,behavior:reduce?'auto':'smooth'});});});
-    pick(btns[0].dataset.sec,false);
-  });
-  function goSec(id){var G=GRP[id];if(G){G.pick(id,true);var top=G.g.getBoundingClientRect().top+scrollY-74;scrollTo({top:top,behavior:reduce?'auto':'smooth'});return true;}return false;}
-  d.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1);if(GRP[id]){e.preventDefault();goSec(id);history.replaceState(null,'','#'+id);}});
-  if(location.hash&&GRP[location.hash.slice(1)])setTimeout(function(){goSec(location.hash.slice(1));},400);
-  addEventListener('hashchange',function(){var id=location.hash.slice(1);if(GRP[id])goSec(id);});
-  /* Show more */
-  [].forEach.call(d.querySelectorAll('[data-more]'),function(b){var t=d.getElementById(b.dataset.more),lab=b.innerHTML;b.addEventListener('click',function(){var open=t.classList.toggle('clip');b.innerHTML=open?lab:'Show less';if(open)t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});fillTimeline();});});
 
 
   /* Podcast: click to play (loads YouTube only when asked) */
@@ -1578,6 +1382,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   <button type="button" class="go" data-follow>🔔 Follow</button>
   <button type="button" class="fx" id="fcardX" aria-label="Close">✕</button>
 </div>
+</div>
 <div class="fmodal" id="fmodal" hidden><div class="fbox" role="dialog" aria-modal="true" aria-labelledby="fmTitle">
   <img src="logo-mark.webp" alt="" width="64" height="64" style="border-radius:50%;box-shadow:0 0 0 3px var(--red);margin:0 auto 12px;display:block">
   <h3 id="fmTitle">Add Dr. Lehri to your iPhone</h3>
@@ -1591,14 +1396,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   <button type="button" id="fwCopy">Copy link</button>
 </div></div>
 <div class="ftoast" id="ftoast" role="status"></div>
-<nav class="abar" aria-label="Quick menu">
-  <a href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Home</span></a>
-  <a href="#updates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l2.4 5.6L20 9.3l-4.3 3.9 1.2 5.8L12 16.2 7.1 19l1.2-5.8L4 9.3l5.6-.7z"/></svg><span>Updates</span></a>
-  <a class="abz" href="student.html"><i>🎓</i><span>Students</span></a>
-  <a href="#research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M8 7h8M8 11h6"/></svg><span>Research</span></a>
-  <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg><span>Contact</span></a>
-</nav>
-<div class="ty" id="ty" hidden>
+<div class="tyo" id="ty" hidden>
   <div class="ty-back" data-tyclose></div>
   <canvas class="ty-conf" id="tyConf"></canvas>
   <div class="ty-box" role="dialog" aria-modal="true" aria-labelledby="tyTitle">
@@ -1613,7 +1411,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     <div class="ty-a"><button type="button" class="ty-share" id="tyShare">Share my card</button><button type="button" id="tyClose" data-tyclose>Continue exploring</button></div>
   </div>
 </div>
-
 <script>
 /* ===== Follow (web push via OneSignal, owned by singhbikrampaul@gmail.com) ===== */
 (function(){
@@ -1686,7 +1483,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     if(celebrated&&!force)return;celebrated=true;hideCard(true);
     var cw=d.getElementById('cWeb'),n=cw&&cw.dataset.n?+cw.dataset.n:0;
     d.getElementById('tyNo').textContent=n>0?String(n).padStart(3,'0'):'★';
-    setTimeout(function(){var m=cw&&cw.dataset.n?+cw.dataset.n:0;if(m>0)d.getElementById('tyNo').textContent=String(m).padStart(3,'0');},800);
     d.getElementById('tyBatch').textContent='Batch of '+new Date().getFullYear()+' · Lifelong learner';
     ty.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){ty.classList.add('show');});});
     if(!matchMedia('(prefers-reduced-motion: reduce)').matches)confetti();
