@@ -667,6 +667,70 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   .badge b{font-size:22px}.badge span{font-size:11.5px}
   .fcard{bottom:12px}
 }
+
+.menu a{white-space:nowrap}
+@media (max-width:1440px){.menu a{padding:8px 9px;font-size:14px}}
+/* ===== Gallery: Moments that matter ===== */
+.gal-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px 40px;margin-bottom:34px}
+.gal-head .lead{max-width:52ch;margin:0}
+.gal-f{display:flex;flex-wrap:wrap;gap:8px}
+.gal-f button{border:1px solid var(--line2);background:none;color:var(--muted);font:700 13.5px var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer;transition:all .3s var(--ease)}
+.gal-f button:hover{color:var(--ink);border-color:var(--red)}
+.gal-f button.on{background:var(--red);border-color:var(--red);color:#fff}
+.gstage{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--line2);background:#0e0b0b;aspect-ratio:16/8;box-shadow:0 40px 100px -40px rgba(227,22,30,.35)}
+.gslide{position:absolute;inset:0;display:grid;grid-template-columns:1.15fr 1fr;opacity:0;visibility:hidden;transition:opacity 1s var(--ease),visibility 0s 1s}
+.gslide.on{opacity:1;visibility:visible;transition:opacity 1s var(--ease)}
+.gpic{position:relative;overflow:hidden;cursor:zoom-in}
+.gpic .gblur{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(28px) brightness(.45) saturate(1.2);transform:scale(1.1)}
+.gpic img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform:scale(1.02);transition:transform 7s linear}
+.gslide.on .gpic img{transform:scale(1.1) translate(-1.2%,-1%)}
+.gslide.cover .gpic img{object-fit:cover;object-position:50% 22%}
+.gcap{position:relative;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:44px 46px;background:radial-gradient(500px 300px at 100% 0%,rgba(227,22,30,.18),transparent 70%),linear-gradient(160deg,#171213,#0e0b0b)}
+.gcap>*{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.gslide.on .gcap>*{opacity:1;transform:none}
+.gslide.on .gcap>*:nth-child(2){transition-delay:.12s}.gslide.on .gcap>*:nth-child(3){transition-delay:.22s}.gslide.on .gcap>*:nth-child(4){transition-delay:.32s}.gslide.on .gcap>*:nth-child(5){transition-delay:.42s}
+.gtag{align-self:flex-start;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--redsoft);border:1px solid rgba(227,22,30,.45);padding:6px 12px;border-radius:999px}
+.gcap h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3vw,42px);line-height:1.08;margin:4px 0 0}
+.gmeta{margin:0;font-family:var(--mono);font-size:12.5px;color:var(--red2);letter-spacing:.04em}
+.gcap p.gb{margin:0;color:#cfc5bf;font-size:16px;line-height:1.6;max-width:44ch}
+.gcap a,.glb-box figcaption a{align-self:flex-start;color:var(--ink);font-weight:700;font-size:14px;text-decoration:none;border-bottom:1px solid var(--red);padding-bottom:2px}
+.gctl{position:absolute;left:0;right:0;bottom:16px;z-index:3;display:flex;align-items:center;justify-content:center;gap:14px;pointer-events:none}
+.gctl>*{pointer-events:auto}
+.gnav{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(10,8,8,.6);backdrop-filter:blur(8px);color:#fff;font-size:16px;cursor:pointer;transition:background .3s,border-color .3s}
+.gnav:hover{background:var(--red);border-color:var(--red)}
+.gdots{display:flex;gap:7px}
+.gdots button{width:30px;height:4px;border:0;border-radius:4px;background:rgba(255,255,255,.22);cursor:pointer;padding:0;overflow:hidden;position:relative}
+.gdots button i{position:absolute;inset:0;background:var(--red2);transform:scaleX(0);transform-origin:left}
+.gdots button.on i{animation:gfill 6s linear forwards}
+.gstage.paused .gdots button.on i{animation-play-state:paused}
+@keyframes gfill{to{transform:scaleX(1)}}
+.ggrid{columns:4 220px;column-gap:14px;margin-top:22px}
+.gcard{position:relative;display:block;width:100%;break-inside:avoid;margin:0 0 14px;padding:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);cursor:zoom-in;text-align:left;color:var(--ink);font:inherit}
+.gcard img{display:block;width:100%;height:auto;transition:transform .8s var(--ease),filter .5s}
+.gcard .gc{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(8,6,6,.92));transform:translateY(30%);opacity:.0;transition:transform .45s var(--ease),opacity .45s}
+.gcard .gc b{display:block;font-size:14.5px;line-height:1.3}
+.gcard .gc span{font-family:var(--mono);font-size:11px;color:var(--red2)}
+.gcard:hover img{transform:scale(1.07);filter:saturate(1.15)}
+.gcard:hover .gc,.gcard:focus-visible .gc{transform:none;opacity:1}
+.gcard.out{display:none}
+@media (hover:none){.gcard .gc{transform:none;opacity:1}}
+.glb{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px}
+.glb[hidden]{display:none}
+.glb-back{position:absolute;inset:0;background:rgba(5,4,4,.88);backdrop-filter:blur(8px)}
+.glb-box{position:relative;margin:0;width:min(1100px,100%);max-height:92vh;display:grid;grid-template-columns:1.4fr 1fr;border-radius:22px;overflow:hidden;background:#120e0e;border:1px solid var(--line2);animation:glbin .45s var(--ease)}
+@keyframes glbin{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+.glb-img{background:#000;display:grid;place-items:center;min-height:300px}
+.glb-img img{max-width:100%;max-height:92vh;object-fit:contain;display:block}
+.glb-box figcaption{display:flex;flex-direction:column;gap:12px;padding:40px 30px 30px;overflow:auto}
+.glb-box h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1;margin:0}
+.glb-box figcaption p{margin:0;color:#cfc5bf;line-height:1.6}
+.glb-box .gcred{font-size:13px;color:var(--muted)}
+.glb-x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);background:rgba(0,0,0,.5);color:#fff;cursor:pointer;z-index:2}
+.glb-n{position:absolute;top:50%;width:42px;height:42px;margin-top:-21px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.55);color:#fff;font-size:16px;cursor:pointer;z-index:2}
+.glb-n.p{left:12px}.glb-n.n{left:calc(58.3% - 54px)}
+@media (max-width:900px){.gstage{aspect-ratio:auto}.gslide{position:relative;grid-template-columns:1fr;display:none}.gslide.on{display:grid}.gpic{aspect-ratio:4/5;max-height:62vh}.gcap{padding:26px 22px 70px}.gcap p.gb{font-size:15px}
+  .glb-box{grid-template-columns:1fr;max-height:94vh;overflow:auto}.glb-img img{max-height:58vh}.glb-n.n{left:auto;right:12px}.glb-n{top:29vh}}
+@media (prefers-reduced-motion:reduce){.gpic img,.gslide.on .gpic img{transform:none;transition:none}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
@@ -692,6 +756,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
       <li><a href="#research">Research</a></li>
       <li><a href="#podcast">Podcast</a></li>
       <li><a href="#recognition">Recognition</a></li>
+      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#updates">LinkedIn</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a class="sz-pill" href="student.html">Student Zone</a></li>
@@ -706,9 +771,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   <a href="#research"><span>04</span>Research</a>
   <a href="#podcast"><span>05</span>Podcast</a>
   <a href="#recognition"><span>06</span>Recognition</a>
-  <a href="#updates"><span>07</span>LinkedIn</a>
-  <a href="#instagram"><span>08</span>Instagram</a>
-  <a href="#contact"><span>09</span>Contact</a>
+  <a href="#gallery"><span>07</span>Gallery</a>
+  <a href="#updates"><span>08</span>LinkedIn</a>
+  <a href="#instagram"><span>09</span>Instagram</a>
+  <a href="#contact"><span>10</span>Contact</a>
   <a href="student.html"><span>★</span>Student Zone</a>
   <a href="unsaid.html"><span>✦</span>Things I Never Said</a>
 </div>
@@ -961,6 +1027,38 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     </div>
   </div>
 </section>
+
+<section class="sec gal" id="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <div>
+        <p class="label rv">Gallery</p>
+        <h2 class="rv">Moments that <em>matter.</em></h2>
+        <p class="lead rv">Classrooms, research milestones and moments on stage, a few frames from the journey.</p>
+      </div>
+      <div class="gal-f rv" id="galF" role="tablist" aria-label="Filter photos"></div>
+    </div>
+    <div class="gstage rv" id="gStage" aria-roledescription="carousel" aria-label="Featured moments">
+      <div class="gslides" id="gSlides"></div>
+      <div class="gctl">
+        <button type="button" class="gnav" id="gPrev" aria-label="Previous photo">←</button>
+        <div class="gdots" id="gDots"></div>
+        <button type="button" class="gnav" id="gNext" aria-label="Next photo">→</button>
+      </div>
+    </div>
+    <div class="ggrid" id="gGrid"></div>
+  </div>
+</section>
+<div class="glb" id="glb" hidden>
+  <div class="glb-back" data-gclose></div>
+  <figure class="glb-box" role="dialog" aria-modal="true" aria-labelledby="glbT">
+    <div class="glb-img"><img id="glbI" alt=""></div>
+    <figcaption><span class="gtag" id="glbG"></span><h3 id="glbT"></h3><p class="gmeta" id="glbM"></p><p id="glbB"></p><p class="gcred" id="glbC"></p><a id="glbL" target="_blank" rel="noopener"></a></figcaption>
+    <button type="button" class="glb-x" data-gclose aria-label="Close">✕</button>
+    <button type="button" class="glb-n p" id="glbP" aria-label="Previous">←</button>
+    <button type="button" class="glb-n n" id="glbN" aria-label="Next">→</button>
+  </figure>
+</div>
 
 <section class="sec sec-li" id="updates">
   <div class="wrap">
@@ -1516,6 +1614,55 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     function onS(){var h=d.documentElement.scrollHeight-innerHeight;if(h>0&&scrollY/h>.35)showCard();}
     addEventListener('scroll',onS,{passive:true});setTimeout(showCard,30000);
   }
+})();
+</script>
+<script>
+/* ===== Gallery data: add a new photo by adding one entry here ===== */
+(function(){
+  var G=[
+    {src:'gallery/studio-portrait.webp',cover:1,cat:'Portraits',title:'Associate Professor, Chandigarh University',meta:'University School of Business · Since Dec 2025',brief:'Promoted to Associate Professor after nearly four years at Chandigarh University, teaching Finance, Marketing and Entrepreneurship on the flagship MBA.'},
+    {src:'gallery/live-session-capstone.webp',cat:'Teaching',title:'Academic Live Session: Capstone Project',meta:'CU Online · MBA Semester 3 · Sep 2026',brief:'Guiding MBA learners from idea to impact: research, planning, execution and presenting a capstone project that solves a real business problem.',link:'https://www.linkedin.com/feed/update/urn:li:activity:7508516506553626626/',linkText:'View on LinkedIn ↗'},
+    {src:'gallery/patent-filed.webp',cat:'Research',title:'Patent filed: Supply Chain Finance using Blockchain',meta:'Indian Patent Office · Filed 13 Jun 2024',brief:'Co-inventor of "Performance Analysis for Supply Chain Finance Management using Blockchain", Application No. 202421045568, one of 7 patents published and filed.'},
+    {src:'https://i.ytimg.com/vi/gmxDzVdg268/hqdefault.jpg',cover:1,cat:'Media',title:'Podcast: Mastering Marketing in the Digital Era',meta:'CU Online · YouTube',brief:'Speaker on why classic marketing ideas still matter as business moves from physical place to online space.',link:'https://www.youtube.com/watch?v=gmxDzVdg268',linkText:'Watch on YouTube ↗'},
+    {src:'gallery/portrait-outdoor.webp',cover:1,cat:'Portraits',title:'The person behind the podium',meta:'Educator · Researcher · Musician',brief:'Music, poetry and public speaking keep the creative side alive, and help me connect with every classroom.'}
+  ];
+  var d=document,slides=d.getElementById('gSlides'),dots=d.getElementById('gDots'),grid=d.getElementById('gGrid'),stage=d.getElementById('gStage'),fbar=d.getElementById('galF');
+  if(!slides)return;
+  function e(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,cur=0,timer=null,list=G.slice(),inView=false;
+  slides.innerHTML=G.map(function(g,i){return '<div class="gslide'+(g.cover?' cover':'')+'" role="group" aria-roledescription="slide" aria-label="'+(i+1)+' of '+G.length+'"><div class="gpic" data-i="'+i+'"><span class="gblur" style="background-image:url(\''+e(g.src)+'\')"></span><img src="'+e(g.src)+'" alt="'+e(g.title)+'" loading="lazy"></div><div class="gcap"><span class="gtag">'+e(g.cat)+'</span><h3>'+e(g.title)+'</h3><p class="gmeta">'+e(g.meta)+'</p><p class="gb">'+e(g.brief)+'</p>'+(g.link?'<a href="'+e(g.link)+'" target="_blank" rel="noopener">'+e(g.linkText||'Read more ↗')+'</a>':'<span></span>')+'</div></div>';}).join('');
+  dots.innerHTML=G.map(function(g,i){return '<button type="button" aria-label="Show photo '+(i+1)+'"><i></i></button>';}).join('');
+  var S=[].slice.call(slides.children),D=[].slice.call(dots.children);
+  function go(i){cur=(i+G.length)%G.length;S.forEach(function(s,k){s.classList.toggle('on',k===cur);});D.forEach(function(b,k){b.classList.remove('on');if(k===cur){void b.offsetWidth;b.classList.add('on');}});schedule();}
+  function schedule(){clearTimeout(timer);if(reduce||!inView||stage.classList.contains('paused'))return;timer=setTimeout(function(){go(cur+1);},6000);}
+  D.forEach(function(b,k){b.addEventListener('click',function(){go(k);});});
+  d.getElementById('gPrev').addEventListener('click',function(){go(cur-1);});
+  d.getElementById('gNext').addEventListener('click',function(){go(cur+1);});
+  stage.addEventListener('mouseenter',function(){stage.classList.add('paused');clearTimeout(timer);});
+  stage.addEventListener('mouseleave',function(){stage.classList.remove('paused');schedule();});
+  var tx=0;stage.addEventListener('touchstart',function(ev){tx=ev.touches[0].clientX;},{passive:true});
+  stage.addEventListener('touchend',function(ev){var dx=ev.changedTouches[0].clientX-tx;if(Math.abs(dx)>45)go(cur+(dx<0?1:-1));},{passive:true});
+  if('IntersectionObserver' in window){new IntersectionObserver(function(es){inView=es[0].isIntersecting;schedule();},{threshold:.35}).observe(stage);}else inView=true;
+  go(0);
+  /* wall + filters */
+  grid.innerHTML=G.map(function(g,i){return '<button type="button" class="gcard" data-i="'+i+'" data-cat="'+e(g.cat)+'"><img src="'+e(g.src)+'" alt="'+e(g.title)+'" loading="lazy"><span class="gc"><span>'+e(g.cat)+'</span><b>'+e(g.title)+'</b></span></button>';}).join('');
+  var cats=['All'];G.forEach(function(g){if(cats.indexOf(g.cat)<0)cats.push(g.cat);});
+  fbar.innerHTML=cats.map(function(c,i){return '<button type="button" class="'+(i?'':'on')+'" data-c="'+e(c)+'">'+e(c)+'</button>';}).join('');
+  fbar.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b)return;[].forEach.call(fbar.children,function(x){x.classList.toggle('on',x===b);});var c=b.dataset.c;
+    [].forEach.call(grid.children,function(card){card.classList.toggle('out',!(c==='All'||card.dataset.cat===c));});
+    list=G.filter(function(g){return c==='All'||g.cat===c;});var first=G.indexOf(list[0]);if(first>-1)go(first);});
+  /* lightbox */
+  var lb=d.getElementById('glb'),li=0,last=null;
+  function show(i){li=(i+G.length)%G.length;var g=G[li];d.getElementById('glbI').src=g.src;d.getElementById('glbI').alt=g.title;d.getElementById('glbG').textContent=g.cat;d.getElementById('glbT').textContent=g.title;d.getElementById('glbM').textContent=g.meta;d.getElementById('glbB').textContent=g.brief;
+    var c=d.getElementById('glbC');c.textContent=g.credit?'📸 '+g.credit:'';c.hidden=!g.credit;var l=d.getElementById('glbL');if(g.link){l.href=g.link;l.textContent=g.linkText||'Read more ↗';l.hidden=false;}else l.hidden=true;}
+  function open(i){last=d.activeElement;show(i);lb.hidden=false;d.body.style.overflow='hidden';lb.querySelector('.glb-x').focus();clearTimeout(timer);}
+  function close(){lb.hidden=true;d.body.style.overflow='';if(last)last.focus();schedule();}
+  grid.addEventListener('click',function(ev){var c=ev.target.closest('.gcard');if(c)open(+c.dataset.i);});
+  slides.addEventListener('click',function(ev){var p=ev.target.closest('.gpic');if(p)open(+p.dataset.i);});
+  lb.querySelectorAll('[data-gclose]').forEach(function(x){x.addEventListener('click',close);});
+  d.getElementById('glbP').addEventListener('click',function(){show(li-1);});
+  d.getElementById('glbN').addEventListener('click',function(){show(li+1);});
+  addEventListener('keydown',function(ev){if(lb.hidden)return;if(ev.key==='Escape')close();if(ev.key==='ArrowLeft')show(li-1);if(ev.key==='ArrowRight')show(li+1);});
 })();
 </script>
 </body>
