@@ -367,6 +367,22 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .qtime{margin:14px 0 4px;font-size:12.5px;color:#6b5f5a}.qtime span{font-weight:700;color:#B3121A}
 .qfacts{padding-left:20px}.qfacts li{margin:4px 0}
 @media (max-width:640px){.insg{grid-template-columns:1fr}.insb{padding:15px}.racts{flex-wrap:wrap}}
+
+.ldrs{display:flex;flex-direction:column;gap:14px}
+.ldr{display:grid;grid-template-columns:84px 1fr;gap:18px;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:18px}
+.ldr .av{width:84px;height:84px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,#E3161E,#7a0d10);display:grid;place-items:center;font-family:var(--serif);font-size:34px;color:#fff;border:2px solid rgba(245,185,66,.5)}
+.ldr .av img{width:100%;height:100%;object-fit:cover}
+.ldr h4{margin:0;font-size:19px}.ldr .lrole{color:#F5B942;font-weight:700;font-size:13.5px;margin:2px 0 8px}
+.ldr .lconf{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;vertical-align:middle;border:1px solid var(--line2);color:var(--muted)}
+.ldr .lconf.high{color:#4ade80;border-color:rgba(74,222,128,.4)}.ldr .lconf.low{color:#fbbf24;border-color:rgba(251,191,36,.4)}
+.ldr p{margin:0 0 10px;font-size:14.5px;line-height:1.6}
+.ldr ul{margin:0 0 10px;padding-left:18px;font-size:14px}.ldr li{margin:3px 0}
+.ldr .lknown{font-size:14px;margin-bottom:10px}.ldr .lknown b{color:#F5B942}
+.ldr .ltalk{background:var(--redsoft);border-left:3px solid var(--red);border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.ldr .ltalk small{display:block;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
+.ldr .lsrc{font-size:12px;color:var(--dim)}.ldr .lsrc a{color:var(--muted);margin-right:10px}
+.ldnone{padding:18px;border:1px dashed var(--line2);border-radius:14px;color:var(--muted);font-size:14.5px}.ldnone a{color:#F5B942}
+@media (max-width:640px){.ldr{grid-template-columns:1fr;gap:10px;padding:15px}.ldr .av{width:64px;height:64px;font-size:26px}}
 @media print{#s-ins .inslens{display:none}body.printkit .qpage{font-size:11px;line-height:1.35}body.printkit .qpage h2{font-size:17px;margin:8px 0 4px}body.printkit .qpage .kq{padding:5px 9px;margin:4px 0}body.printkit .qpage .kfoot{margin-top:6px}body.printkit .qpage .kbox{padding:7px 10px}}
 @page{size:A4;margin:12mm}@media print{body.printkit>*:not(.pov-print){display:none!important}body.printkit .pov-print{position:static;background:#fff;display:block}body.printkit .pov-bar{display:none!important}body.printkit .pov-body{padding:0;overflow:visible}body.printkit .kitdoc{max-width:none;gap:0}body.printkit .kpage{box-shadow:none;border-radius:0;padding:0;font-size:12px;line-height:1.4;page-break-after:always;break-inside:avoid}body.printkit .kpage:last-child{page-break-after:auto}body.printkit .kpage h2{margin:10px 0 5px}body.printkit .kpage li{margin:1px 0}#s-prem{display:none!important}}
 @media print{.dmiss,#s-quiz,.dainote,.dncat,.dtalk,#tl:empty{display:none!important}.dbrief,.dprod,.dnw,.dswot div,.dtrend{background:#fff!important;border-color:#ddd!important;color:#111!important}}
@@ -574,7 +590,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </div>
 
     <nav class="tabs" aria-label="Briefing sections">
-      <a href="#s-about">Overview</a><a href="#s-fin" id="tFin">Numbers</a><a href="#s-ins" id="tIns" hidden>Inside the business</a><a href="#s-strat" id="tStrat" hidden>Strategy</a><a href="#s-hist" id="tHist" hidden>History</a><a href="#s-prod" id="tProd">Products</a><a href="#s-news">Latest news</a><a href="#s-quiz" id="tQuiz" hidden>Quiz</a><a href="#s-q">Interview questions</a><a href="#s-why">Why this company?</a><a href="#s-coach" class="aitab">AI Coach ✨</a><a href="#s-ask">Ask them</a>
+      <a href="#s-about">Overview</a><a href="#s-fin" id="tFin">Numbers</a><a href="#s-ins" id="tIns" hidden>Inside the business</a><a href="#s-lead" id="tLead" hidden>Leaders</a><a href="#s-strat" id="tStrat" hidden>Strategy</a><a href="#s-hist" id="tHist" hidden>History</a><a href="#s-prod" id="tProd">Products</a><a href="#s-news">Latest news</a><a href="#s-quiz" id="tQuiz" hidden>Quiz</a><a href="#s-q">Interview questions</a><a href="#s-why">Why this company?</a><a href="#s-coach" class="aitab">AI Coach ✨</a><a href="#s-ask">Ask them</a>
     </nav>
 
     <article class="card prem" id="s-prem">
@@ -609,6 +625,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div id="insBody"></div>
       <div class="inslens" id="insLens" hidden></div>
       <p class="src" id="insSrc"></p>
+    </article>
+
+    <article class="card" id="s-lead" hidden>
+      <h3>Know the <em>leader</em></h3>
+      <p class="sub">“Do you know who founded us?” and “What do you know about our CEO?” are common questions. Here is who runs the company, a short profile, and a natural way to mention them.</p>
+      <div id="leadBody"></div>
+      <p class="src" id="leadSrc"></p>
     </article>
 
     <article class="card" id="s-strat" hidden>
@@ -1110,7 +1133,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function resetDash(){
     ['rChips','rBadges','comp','swot','tl','prodCards','ncat','dnews','quiz','trend','stOut'].forEach(function(i){$(i).innerHTML='';});$('bcgBtn').classList.remove('on');$('cmpBtn').classList.remove('on');
     ['rBrief','trend','finNa','s-hist','tHist','prodMoreLab','nbrief','talk','s-quiz','tQuiz'].forEach(function(i){$(i).hidden=true;});$('s-strat').hidden=false;$('tStrat').hidden=false;
-    $('finBox').hidden=false;aiNote('');$('s-ins').hidden=true;$('tIns').hidden=true;$('insBody').innerHTML='';$('insLens').hidden=true;lastIns=null;
+    $('finBox').hidden=false;aiNote('');$('s-ins').hidden=true;$('tIns').hidden=true;$('insBody').innerHTML='';$('insLens').hidden=true;lastIns=null;$('s-lead').hidden=true;$('tLead').hidden=true;$('leadBody').innerHTML='';lastLead=null;
     $('trustLine').textContent='Company information comes from Wikipedia and Wikidata and may be a few months old.';
   }
   function chips(D){
@@ -1146,7 +1169,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function afterRender(D){
     var id=runId;resetDash();chips(D);badges({});trend(D,id);D._comp=0;
     var title=D.summary.title,lk='yp_en2:'+nkey(title),local=lsGetJ(lk);
-    newsBrief(title,id);setTimeout(function(){if(id===runId)loadInsights(D,id);},2500);
+    newsBrief(title,id);setTimeout(function(){if(id===runId)loadInsights(D,id);},2500);setTimeout(function(){if(id===runId)loadLeader(D,id);},3500);
     if(local&&local.brief&&local.quiz){applyAI(D,local,{memory:true});return;}
     aiNote('Adding AI brief, SWOT, timeline and quiz…');
     var acc={},meta={},ctx=buildContext(D),left=2,fails=0,lastErr='';
@@ -1343,14 +1366,12 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     function blk(icon,title,wide){var b=el('section','insb'+(wide?' wide':''));var h=el('h4');h.appendChild(el('span',null,icon));h.appendChild(d.createTextNode(' '+title));b.appendChild(h);g.appendChild(b);return b;}
     var bm=I.business_model||{},ST=(bm.streams||[]).filter(function(x){return x&&x.name;}).slice(0,5);
     if(bm.summary||ST.length){var b1=blk('💰','How they make money',true);if(bm.summary)b1.appendChild(el('p',null,String(bm.summary)));if(ST.length){var ul=el('div','instreams');ST.forEach(function(x){var r=el('div','instr');r.appendChild(el('b',null,String(x.name)));if(x.share)r.appendChild(el('em',null,String(x.share)));if(x.note)r.appendChild(el('span',null,String(x.note)));ul.appendChild(r);});b1.appendChild(ul);}}
-    var LD=(I.leadership||[]).filter(function(x){return x&&x.name;}).slice(0,4);
-    if(LD.length){var b2=blk('👤','Who leads it');var lc=el('div','inslead');LD.forEach(function(x){var p=el('div');p.appendChild(el('b',null,String(x.name)));p.appendChild(el('span',null,String(x.role||'')));lc.appendChild(p);});b2.appendChild(lc);b2.appendChild(el('small','insnote','Leaders change. Check the company website the day before.'));}
     var IN=I.industry||{};
     if(IN.name||IN.position){var b3=blk('🌐','Industry snapshot');if(IN.name)b3.appendChild(el('p','insk',String(IN.name)));if(IN.size_growth)kv(b3,'Size & growth',IN.size_growth);if(IN.position)kv(b3,'Where it stands',IN.position);var TR=(IN.trends||[]).filter(function(x){return x&&x.t;}).slice(0,3);if(TR.length){b3.appendChild(el('small','insmini','Trends to mention'));var tl=el('ul','insul');TR.forEach(function(x){var li2=el('li');li2.appendChild(el('b',null,String(x.t)));if(x.impact)li2.appendChild(d.createTextNode(' → '+x.impact));tl.appendChild(li2);});b3.appendChild(tl);}}
     var RM=(I.recent_moves||[]).filter(function(x){return x&&x.move;}).slice(0,4);
     if(RM.length){var b4=blk('🚀','Recent big moves');var t=el('div','insmoves');RM.forEach(function(x){var r=el('div');r.appendChild(el('i',null,String(x.when||'Recent')));var c=el('div');c.appendChild(el('b',null,String(x.move)));if(x.why)c.appendChild(el('span',null,'💬 '+x.why));r.appendChild(c);t.appendChild(r);});b4.appendChild(t);}
     var SL=(I.selection||[]).filter(function(x){return x&&x.round;}).slice(0,5);
-    if(SL.length){var b5=blk('🧭','Selection process (typical)');var o=el('ol','inssteps');SL.forEach(function(x){var li3=el('li');li3.appendChild(el('b',null,String(x.round)));if(x.tests)li3.appendChild(el('span',null,String(x.tests)));if(x.tip)li3.appendChild(el('em',null,'Tip: '+x.tip));o.appendChild(li3);});b5.appendChild(o);b5.appendChild(el('small','insnote','A typical pattern. Rounds vary by college and year, so confirm with your placement cell.'));}
+    if(SL.length){var b5=blk('🧭','Selection process (typical)',true);var o=el('ol','inssteps');SL.forEach(function(x){var li3=el('li');li3.appendChild(el('b',null,String(x.round)));if(x.tests)li3.appendChild(el('span',null,String(x.tests)));if(x.tip)li3.appendChild(el('em',null,'Tip: '+x.tip));o.appendChild(li3);});b5.appendChild(o);b5.appendChild(el('small','insnote','A typical pattern. Rounds vary by college and year, so confirm with your placement cell.'));}
     var RL=(I.roles||[]).filter(function(x){return x&&x.title;}).slice(0,3);
     if(RL.length){var b6=blk('💼','Roles freshers get here',true);var rg=el('div','insroles');RL.forEach(function(x){var c=el('div','insrole');c.appendChild(el('b',null,String(x.title)));if(x.work)c.appendChild(el('p',null,String(x.work)));var ch=el('div','inschips');(x.skills||[]).slice(0,4).forEach(function(z){ch.appendChild(el('span',null,String(z)));});c.appendChild(ch);if((x.kpis||[]).length)c.appendChild(el('small',null,'Measured on: '+x.kpis.slice(0,3).join(' · ')));rg.appendChild(c);});b6.appendChild(rg);}
     var LN=I.lens||{},LP=(LN.points||[]).filter(function(x){return x&&x.h;}).slice(0,5);
@@ -1362,11 +1383,47 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     $('insSrc').textContent='AI analysis from public company facts and recent headlines · as of '+(I.asof||'today')+' · Check numbers and names before quoting them.';
   }
 
+  /* ================= Know the leader ================= */
+  var lastLead=null;
+  function loadLeader(D,id){
+    var title=D.summary.title,lk='yp_lead:'+nkey(title),c=lsGetJ(lk),body=$('leadBody');
+    $('s-lead').hidden=false;$('tLead').hidden=false;
+    if(c&&c.leaders){renderLeader(c,title);return;}
+    loading(body,'Finding who leads '+PH(title),'Founder, CEO and a short profile from public sources. About 10–20 seconds.');$('leadSrc').textContent='';
+    var w=(row(D.info,['website'])||{}).text||'';w=(String(w).match(/(https?:\/\/)?[a-z0-9.-]+\.[a-z]{2,}(\.[a-z]{2})?/i)||[''])[0];
+    postAI2({task:'leader',company:title,context:buildContext(D).slice(0,3000),website:w,small:!!(D.ai&&D.ai.source_type)}).then(function(j){
+      if(id!==runId)return;
+      if(j&&j.ok&&j.data){lsSetJ(lk,j.data);renderLeader(j.data,title);}
+      else{body.innerHTML='';var f=el('div','ldnone');f.appendChild(d.createTextNode((j&&j.error)||'Could not load the leader profile right now. '));var rb=el('button','btn','↻ Try again');rb.type='button';rb.style.marginLeft='8px';rb.addEventListener('click',function(){loadLeader(D,runId);});f.appendChild(rb);body.appendChild(f);}
+    }).catch(function(){if(id===runId){body.innerHTML='';body.appendChild(el('div','ldnone','That took too long. Please search again in a minute.'));}});
+  }
+  function renderLeader(L,title){
+    lastLead=L;var body=$('leadBody');body.innerHTML='';var LS=(L.leaders||[]).filter(function(x){return x&&x.name;});
+    if(!LS.length){var n=el('div','ldnone');n.appendChild(d.createTextNode('We could not find the founder or CEO of '+title+' in public sources. Check the About page of its website, or '));
+      var a=el('a',null,'search LinkedIn for its founder ↗');a.href='https://www.linkedin.com/search/results/people/?keywords='+encodeURIComponent(title+' founder');a.target='_blank';a.rel='noopener';n.appendChild(a);
+      n.appendChild(d.createTextNode('. In the interview you can ask: “I would love to hear how the company started.”'));body.appendChild(n);$('leadSrc').textContent='';return;}
+    var wrap=el('div','ldrs');body.appendChild(wrap);
+    LS.forEach(function(x){var c=el('div','ldr');var av=el('div','av');
+      if(x.img&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(x.img)){var im=el('img');im.src=x.img;im.alt=String(x.name);im.loading='lazy';im.onerror=function(){av.innerHTML='';av.textContent=initials(x.name);};av.appendChild(im);}else av.textContent=initials(x.name);
+      c.appendChild(av);var r=el('div');var h=el('h4',null,String(x.name));var cf=String(x.confidence||'').toLowerCase();
+      if(cf)h.appendChild(el('span','lconf '+cf,cf==='high'?'✓ Well sourced':cf==='low'?'Check before quoting':'From web sources'));r.appendChild(h);
+      r.appendChild(el('div','lrole',String(x.role||'')+(x.since?' · since '+x.since:'')));
+      if(x.profile)r.appendChild(el('p',null,String(x.profile)));
+      var BG=(x.background||[]).filter(Boolean).slice(0,4);if(BG.length){var ul=el('ul');BG.forEach(function(t){ul.appendChild(el('li',null,String(t)));});r.appendChild(ul);}
+      if(x.known_for){var k=el('div','lknown');k.appendChild(el('b',null,'🌟 Known for: '));k.appendChild(d.createTextNode(String(x.known_for)));r.appendChild(k);}
+      if(x.talking_point){var tp=el('div','ltalk');tp.appendChild(el('small',null,'💬 Say it naturally in the interview'));tp.appendChild(d.createTextNode(String(x.talking_point)));r.appendChild(tp);}
+      var SR=(x.sources||[]).filter(function(u){return /^https:\/\//.test(u);}).slice(0,4);if(SR.length){var sr=el('div','lsrc');sr.appendChild(d.createTextNode('Sources: '));SR.forEach(function(u){var a2=el('a',null,u.replace(/^https:\/\/(www\.)?/,'').split('/')[0]+' ↗');a2.href=u;a2.target='_blank';a2.rel='noopener';sr.appendChild(a2);});r.appendChild(sr);}
+      c.appendChild(r);wrap.appendChild(c);});
+    $('leadSrc').textContent='Built from public sources (Wikipedia, company pages, news and professional profiles) · as of '+(L.asof||'today')+' · Leaders change, so check the company website the day before.';
+  }
+  function initials(n){return String(n||'?').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w.charAt(0).toUpperCase();}).join('');}
+
   /* ================= 15-minute drive-day sheet ================= */
   $('quickBtn').addEventListener('click',function(){
     if(!lastData)return;var D=lastData,I=D.info,n=D.summary.title,A=D._ai||D.ai||{},S=lastIns||{},rl=curRole();
     var facts=[];function f(x){x=String(x||'').replace(/\s+/g,' ').trim();if(x&&facts.length<10&&facts.indexOf(x)<0)facts.push(x);}
-    [['Industry',['industry']],['Founded',['founded','formation','established']],['Headquarters',['headquarters','hq']],['Key people',['key people']],['Employees',['number of employees','employees']],['Revenue',['revenue']],['Parent',['parent']],['Employee rating',['employee rating']]].forEach(function(k){var r=row(I,k[1]);if(r){var t=clean(r.items.length?r.items.slice(0,3).join(', '):r.text).slice(0,150);if(t)f(k[0]+': '+t);}});
+    [['Industry',['industry']],['Founded',['founded','formation','established']],['Headquarters',['headquarters','hq']],['Key people',['key people']],['Employees',['number of employees','employees']],['Revenue',['revenue']],['Parent',['parent']],['Employee rating',['employee rating']]].forEach(function(k){if(k[0]==='Key people'&&lastLead&&(lastLead.leaders||[]).length)return;var r=row(I,k[1]);if(r){var t=clean(r.items.length?r.items.slice(0,3).join(', '):r.text).slice(0,150);if(t)f(k[0]+': '+t);}});
+    ((lastLead&&lastLead.leaders)||[]).slice(0,2).forEach(function(x){if(x&&x.name)f('Leader: '+x.name+(x.role?' ('+x.role+')':''));});
     if(S.business_model&&S.business_model.summary)f('How it earns: '+(String(S.business_model.summary).match(/^[^.!?]+[.!?]?/)||[''])[0]);
     if(S.industry&&S.industry.position)f('Market position: '+S.industry.position);
     var pr=prodOf(D);if(!pr.length)pr=(A.products||A.services||[]).map(function(x){return x&&x.name;}).filter(Boolean);if(pr.length)f('Known for: '+pr.slice(0,4).join(', '));
@@ -1466,7 +1523,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
       na.appendChild(tx);na.hidden=false;$('finBox').hidden=!$('tiles').children.length;}
     applyAI(D,P,meta);
     $('trustLine').textContent=meta.src==='website'?'This briefing was built by AI from the company’s own website.':'This briefing was built by AI from a web search.';
-    newsBrief(name,id);setTimeout(function(){if(id===runId)loadInsights(D,id);},2500);
+    newsBrief(name,id);setTimeout(function(){if(id===runId)loadInsights(D,id);},2500);setTimeout(function(){if(id===runId)loadLeader(D,id);},3500);
   }
 
   /* ---------- Stage 2: AI coach ---------- */
