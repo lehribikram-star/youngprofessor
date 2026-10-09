@@ -675,6 +675,247 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
   .js .rv{opacity:1;transform:none}
   .js .hero h1 .l>span{transform:none}
 }
+
+/* ===== Expertise: playable lessons (Marketing, OB, Entrepreneurship, Finance) ===== */
+#expertise{--xp-wood:#4A3A33;--xp-wood2:#221A18;--xp-steel:#A7A9AA;--xp-clay:#B46F43;--xp-clay2:#7E4728;--xp-bulb:#FFD9A0;--xp-warn:#FF8A7A}
+#expertise .lead{margin:0}
+.xp-path{margin:44px 0 18px;padding:20px 22px 18px;border:1px solid var(--line);border-radius:20px;background:var(--bg2)}
+.xp-path-top{display:flex;align-items:baseline;gap:6px 12px;flex-wrap:wrap;font-family:var(--serif);font-size:clamp(21px,2.2vw,26px);line-height:1.2}
+.xp-path-top em{color:var(--red);font-style:italic}
+.xp-arr{color:var(--dim);font-family:var(--sans)}
+.xp-count{margin-left:auto;font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.xp-steps{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.xp-steps a{display:flex;flex-direction:column;gap:2px;text-decoration:none;border-radius:6px}
+.xp-seg{position:relative;height:4px;border-radius:2px;background:var(--line2);overflow:hidden}
+.xp-seg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--red),var(--red2));transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+.xp-done .xp-seg::after{transform:scaleX(1)}
+.xp-ps-sub{margin-top:9px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.xp-ps-out{font-size:14px;line-height:1.3;color:var(--muted)}
+.xp-steps .xp-done .xp-ps-sub{color:var(--red2)}
+.xp-steps .xp-done .xp-ps-out{color:var(--ink)}
+
+.xp-lessons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.xp-lesson{position:relative;display:flex;flex-direction:column;gap:14px;min-width:0;padding:26px 24px 20px;border:1px solid var(--line);border-radius:20px;background:var(--panel);scroll-margin-top:96px;transition:border-color .4s,box-shadow .4s}
+.js .xp-lesson.rv{transition:opacity 1s var(--ease),transform 1s var(--ease),border-color .4s,box-shadow .4s}
+.xp-lesson:hover{border-color:var(--line2)}
+.xp-lesson.xp-done{border-color:rgba(227,22,30,.55);box-shadow:0 30px 70px -45px var(--redglow)}
+.xp-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.xp-period{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--dim)}
+.xp-chip{font-family:var(--mono);font-size:11.5px;padding:4px 10px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);white-space:nowrap;transition:background .3s,border-color .3s,color .3s}
+.xp-lesson.xp-done .xp-chip{background:var(--red);border-color:var(--red);color:#fff}
+.xp-head{display:flex;gap:16px;align-items:flex-start}
+.xp-ic{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--redsoft);color:var(--red);border:1px solid rgba(227,22,30,.25)}
+.xp-ic svg{width:24px;height:24px}
+.xp-lesson h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.5vw,32px);line-height:1.08;margin:0;text-wrap:balance}
+.xp-sub{margin:4px 0 0;color:var(--muted);font-size:15px;line-height:1.5}
+.xp-task{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
+.xp-task b{color:var(--red2);font-weight:700}
+.xp-aside{color:var(--dim)}
+.xp-stage{position:relative;container-type:inline-size;flex:1;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:14px;border-radius:14px;border:1px solid var(--line);background-color:var(--bg2);background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:20px 20px;overflow:hidden}
+.xp-foot{display:flex;align-items:flex-start;gap:12px;min-height:3em}
+.xp-note{flex:1;min-width:0;margin:0;font-family:var(--serif);font-size:18px;line-height:1.35;color:var(--ink)}
+.xp-note[data-tone="done"]{color:var(--red2)}
+.xp-note[data-tone="warn"]{color:var(--xp-warn)}
+.xp-note[data-tone="hint"]{color:var(--muted)}
+.xp-reset{flex:none;background:none;border:0;padding:4px 2px;color:var(--dim);font:500 12.5px var(--mono);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.xp-reset:hover{color:var(--ink)}
+
+/* 1 · Marketing: chai stall */
+.xp-drop{border-radius:10px;transition:background .2s,box-shadow .2s}
+.xp-drop.xp-over{background:var(--redsoft);box-shadow:inset 0 0 0 1.5px var(--red)}
+.xp-stall{display:block;width:100%;max-width:440px;height:auto;margin:0 auto}
+.xp-stall text{font-family:var(--sans)}
+.xs-ground{stroke:var(--line2);stroke-width:1.5}
+.xs-wood{fill:var(--xp-wood)}
+.xs-counter{fill:var(--xp-wood2);stroke:var(--xp-wood);stroke-width:1.5}
+.xs-panel{stroke:var(--xp-wood);stroke-width:1.2}
+.xs-aw1{fill:var(--red);opacity:.3;transition:opacity .7s}
+.xs-aw2{fill:var(--ink);opacity:.12;transition:opacity .7s}
+.xp-launched .xs-aw1{opacity:1}
+.xp-launched .xs-aw2{opacity:.92}
+.xs-sign{fill:var(--bg);stroke:var(--line2)}
+.xt-sign-def{fill:var(--dim);font-size:12px;font-style:italic;text-anchor:middle;transition:opacity .3s}
+.xp-stall .xt-sign{fill:var(--red2);font-family:var(--serif);font-size:20px;font-style:italic;text-anchor:middle}
+.xp-has-product .xt-sign-def{opacity:0}
+.xs-wire{fill:none;stroke:var(--dim);stroke-width:1}
+.xs-bulb{fill:var(--dim);transition:fill .5s}
+.xp-launched .xs-bulb{fill:var(--xp-bulb);filter:url(#xpGlow)}
+.xs-slot rect,.xs-slot path{fill:none;stroke:var(--dim);stroke-width:1.2;stroke-dasharray:4 4}
+.xp-stall .xs-slot text{fill:var(--dim);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-anchor:middle}
+.xs-slot{transition:opacity .25s}
+.xp-has-product .xs-slot-product,.xp-has-price .xs-slot-price,.xp-has-place .xs-slot-place,.xp-has-promo .xs-slot-promo{opacity:0}
+.xs-pg{opacity:0;transform:scale(.8) translateY(8px);transform-box:fill-box;transform-origin:50% 100%;transition:opacity .35s,transform .5s cubic-bezier(.3,1.6,.5,1)}
+.xs-pg.xp-on{opacity:1;transform:none}
+.xs-steel{fill:var(--xp-steel)}
+.xs-handle{fill:none;stroke:var(--xp-steel);stroke-width:3}
+.xs-kulhad{fill:var(--xp-clay)}
+.xs-rim{fill:var(--xp-clay2)}
+.xs-steam{fill:none;stroke:var(--muted);stroke-width:1.6;stroke-linecap:round;opacity:0}
+.xp-has-product .xs-steam{animation:xpSteam 2.6s ease-in-out infinite}
+.xp-has-product .xs-steam:nth-of-type(2){animation-delay:.8s}
+.xp-has-product .xs-steam:nth-of-type(3){animation-delay:1.6s}
+@keyframes xpSteam{0%{opacity:0;transform:translateY(4px)}35%{opacity:.7}100%{opacity:0;transform:translateY(-10px)}}
+.xs-light{fill:var(--ink)}
+.xt-ink-b{fill:var(--bg);font-size:12px;font-weight:800;text-anchor:middle}
+.xt-ink{fill:var(--bg);font-size:10px;font-weight:600;text-anchor:middle}
+.xt-tag{fill:var(--bg);font-size:15px;font-weight:800;text-anchor:middle}
+.xs-string{stroke:var(--dim);stroke-width:1}
+.xs-hole{fill:var(--bg2)}
+.xs-poster{fill:var(--red)}
+.xt-poster-b{fill:#fff;font-size:13px;font-weight:800;text-anchor:middle}
+.xt-poster{fill:#fff;font-size:10.5px;font-weight:600;text-anchor:middle}
+.xs-crowd{opacity:0;transition:opacity .4s}
+.xp-launched .xs-crowd{opacity:1}
+.xs-person{transform-box:fill-box;transform-origin:50% 100%}
+.xp-launched .xs-person{animation:xpPop .5s cubic-bezier(.3,1.6,.5,1) backwards}
+.xp-launched .xs-person:nth-child(2){animation-delay:.12s}
+.xp-launched .xs-person:nth-child(3){animation-delay:.24s}
+.xp-launched .xs-person:nth-child(4){animation-delay:.36s}
+@keyframes xpPop{from{transform:scale(.2);opacity:0}}
+.xs-pp1{fill:var(--red)}.xs-pp2{fill:var(--muted)}.xs-pp3{fill:var(--red2)}.xs-pp4{fill:var(--dim)}
+.xs-phead{fill:var(--ink);opacity:.8}
+.xp-chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.xp-pchip{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-width:0;padding:9px 11px;border-radius:12px;border:1px dashed var(--line2);background:var(--panel);color:var(--ink);font:inherit;text-align:left;transition:border-color .2s,background .2s,opacity .2s}
+.xp-pchip b{font-size:14px;font-weight:700}
+.xp-pchip small{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.xp-pchip:hover:not(:disabled){border-color:var(--red);background:var(--redsoft)}
+.xp-pchip.xp-lifting{opacity:.3}
+.xp-pchip:disabled{opacity:.45;cursor:default;border-style:solid;border-color:var(--line)}
+.xp-pchip:disabled b::before{content:"✓ ";color:var(--red2)}
+.xp-ghost{position:fixed;z-index:80;pointer-events:none;margin:0;border-style:solid!important;border-color:var(--red)!important;background:var(--panel)!important;box-shadow:0 16px 34px rgba(0,0,0,.6),0 0 24px -6px var(--redglow);transform:rotate(-3deg);opacity:1!important}
+@container (max-width:430px){.xp-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 2 · OB: Maslow */
+.xp-tray{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.xp-need{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;border:1px solid var(--line2);background:var(--panel);color:var(--ink);font:600 14px var(--sans);cursor:pointer;transition:opacity .2s,border-color .2s,background .2s}
+.xp-need i{width:10px;height:10px;border-radius:3px;flex:none}
+.xp-need:hover:not(:disabled){border-color:var(--red);background:var(--redsoft)}
+.xp-need:disabled{opacity:.25;cursor:default}
+.xp-pyr{position:relative;height:214px;width:100%;max-width:420px;margin:0 auto}
+.xp-stack{position:absolute;left:0;right:0;top:0;bottom:8px;transform-origin:50% 100%}
+.xp-base{position:absolute;left:3%;right:3%;bottom:0;height:8px;border-radius:4px;background:var(--xp-wood)}
+.xp-blk{position:absolute;left:50%;transform:translateX(-50%);height:37px;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.12;text-align:center;padding:0 6px;box-shadow:inset 0 -3px 0 rgba(0,0,0,.22)}
+.xp-blk b{font-size:12.5px;font-weight:800;white-space:nowrap}
+.xp-blk small{font-family:var(--mono);font-size:10px;opacity:.85;white-space:nowrap}
+.xp-blk.xp-land{animation:xpLand .45s cubic-bezier(.3,1.4,.5,1)}
+@keyframes xpLand{from{transform:translate(-50%,-46px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+.xp-stack.xp-wobble{animation:xpWobble .55s .3s ease-in-out}
+@keyframes xpWobble{0%,100%{transform:rotate(0)}20%{transform:rotate(-3.5deg)}45%{transform:rotate(3deg)}70%{transform:rotate(-1.5deg)}}
+.xp-blk.xp-fall-r{animation:xpFallR 1.1s cubic-bezier(.45,0,.85,.5) forwards}
+.xp-blk.xp-fall-l{animation:xpFallL 1.1s cubic-bezier(.45,0,.85,.5) forwards}
+@keyframes xpFallR{0%{transform:translate(-50%,-46px);opacity:0}25%{transform:translate(-50%,0);opacity:1}50%{transform:translate(-50%,0) rotate(7deg)}100%{transform:translate(calc(-50% + 130px),200px) rotate(52deg);opacity:0}}
+@keyframes xpFallL{0%{transform:translate(-50%,-46px);opacity:0}25%{transform:translate(-50%,0);opacity:1}50%{transform:translate(-50%,0) rotate(-7deg)}100%{transform:translate(calc(-50% - 130px),200px) rotate(-52deg);opacity:0}}
+.xp-ob-done .xp-blk{box-shadow:inset 0 -3px 0 rgba(0,0,0,.22),0 0 24px -4px var(--redglow)}
+
+/* 3 · Entrepreneurship: wheel */
+.xp-ent{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:center}
+.xp-wheel-wrap{position:relative;flex:none;width:180px;aspect-ratio:1;border-radius:50%;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.xp-wheel-wrap:active{cursor:grabbing}
+.xp-wheel{display:block;width:100%;height:100%;transform:rotate(-60deg);transition:transform 1s cubic-bezier(.2,.9,.25,1.04)}
+.xp-wheel.xp-dragging{transition:none}
+.xp-wseg{transition:opacity .4s}
+.xp-wseg[data-k="0"]{fill:var(--red)}
+.xp-wseg[data-k="1"]{fill:var(--ink)}
+.xp-wseg[data-k="2"]{fill:var(--muted)}
+.xp-ent[data-k] .xp-wseg{opacity:.2}
+.xp-ent[data-k="0"] .xp-wseg[data-k="0"],.xp-ent[data-k="1"] .xp-wseg[data-k="1"],.xp-ent[data-k="2"] .xp-wseg[data-k="2"]{opacity:1}
+.xp-wlabel{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.xp-wlabel[data-k="0"]{fill:#fff}
+.xp-wlabel[data-k="1"],.xp-wlabel[data-k="2"]{fill:var(--bg)}
+.xp-hub{position:absolute;inset:31%;border-radius:50%;background:var(--panel);border:1px solid var(--line2);display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+.xp-hub span{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.xp-hub b{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1}
+.xp-pointer{position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-top:16px solid var(--red2);filter:drop-shadow(0 0 6px var(--redglow));pointer-events:none}
+.xp-ent-card{min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.xp-ent-meta{margin:0;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.xp-ent-history{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+.xp-ent-history li{font-size:13px;color:var(--dim);text-decoration:line-through;text-decoration-color:var(--red)}
+.xp-ent-idea{margin:0;font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.18}
+.xp-ent-step{width:100%}
+.xp-pill{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:4px;background:var(--line);color:var(--muted)}
+.xp-ent-step[data-k="0"] .xp-pill{background:var(--red);color:#fff}
+.xp-ent-step[data-k="1"] .xp-pill{background:var(--ink);color:var(--bg)}
+.xp-ent-step[data-k="2"] .xp-pill{background:var(--muted);color:var(--bg)}
+.xp-ent-step p{margin:7px 0 0;font-size:14.5px;line-height:1.45}
+.xp-pivot{display:block;margin-top:6px;color:var(--red2);font-weight:700}
+.xp-spin{border:1px solid var(--line2);background:none;color:var(--ink);font:600 13.5px var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer;transition:all .3s}
+.xp-spin:hover{background:var(--red);border-color:var(--red);color:#fff}
+@container (max-width:440px){.xp-ent{grid-template-columns:1fr;justify-items:center}.xp-ent-card{width:100%}}
+
+/* 4 · Finance: growth */
+.xp-fin-read{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.xp-fin-big{font-family:var(--serif);font-size:clamp(38px,4.4vw,50px);line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.xp-fin-sub{margin:0;color:var(--muted);font-size:14.5px}
+.xp-fin-gain{flex-basis:100%;margin:2px 0 0;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.xp-fin-gain b{color:var(--red2);font-weight:500}
+.xp-plot{position:relative;height:150px;margin-top:8px}
+.xp-plot::after{content:"";position:absolute;left:0;right:0;bottom:0;border-top:1px solid var(--line2)}
+.xp-gl{position:absolute;left:0;right:0;border-top:1px dashed var(--line)}
+.xp-gl span{position:absolute;left:0;bottom:2px;font-family:var(--mono);font-size:10px;color:var(--dim)}
+.xp-bars{position:absolute;inset:0}
+.xp-bar{position:absolute;bottom:0;width:calc(100% / 31 - 2px);margin-left:1px;border-radius:2px 2px 0 0;background:var(--red);opacity:.5;transition:height .25s ease}
+.xp-bar.xp-cur{opacity:1;background:var(--red2);box-shadow:0 0 14px var(--redglow)}
+.xp-si{position:absolute;width:calc(100% / 31 - 2px);margin-left:1px;height:2px;border-radius:1px;background:var(--ink);transition:bottom .25s ease}
+.xp-dm{position:absolute;top:0;bottom:0;border-left:1px dashed var(--dim);transition:border-color .3s}
+.xp-dm span{position:absolute;top:-3px;left:4px;font-family:var(--mono);font-size:10.5px;color:var(--dim);transition:color .3s}
+.xp-dm.xp-hit{border-left-color:var(--red2)}
+.xp-dm.xp-hit span{color:var(--red2)}
+.xp-xaxis{position:relative;height:16px;font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+.xp-xaxis span{position:absolute;top:3px;transform:translateX(-50%);white-space:nowrap}
+.xp-xaxis span:first-child{transform:none}
+.xp-xaxis span:last-child{transform:translateX(-100%)}
+.xp-fin-ctrl{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:10px 14px}
+.xp-fin-ctrl label{font-size:14px;color:var(--muted);white-space:nowrap}
+.xp-fin-ctrl label b{display:inline-block;min-width:2ch;text-align:right;color:var(--ink);font-family:var(--mono);font-weight:500}
+.xp-rates{display:flex;gap:6px}
+.xp-rates button{border:1px solid var(--line2);background:none;color:var(--muted);font:500 12.5px var(--mono);padding:6px 11px;border-radius:999px;cursor:pointer;transition:all .25s}
+.xp-rates button:hover{border-color:var(--red);color:var(--ink)}
+.xp-rates button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.xp-legend{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:12.5px;color:var(--muted)}
+.xp-legend span{display:inline-flex;align-items:center;gap:7px}
+.xp-lg-bar{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--red)}
+.xp-lg-tick{display:inline-block;width:14px;height:2px;background:var(--ink)}
+.xp-range{-webkit-appearance:none;appearance:none;width:100%;height:30px;margin:0;background:transparent;cursor:pointer;--p:16.7%}
+.xp-range::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(to right,var(--red) var(--p),var(--line2) var(--p))}
+.xp-range::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-9px;border-radius:50%;background:var(--ink);border:4px solid var(--red);box-shadow:0 0 0 4px var(--redsoft),0 2px 8px rgba(0,0,0,.5)}
+.xp-range::-moz-range-track{height:4px;border-radius:2px;background:var(--line2)}
+.xp-range::-moz-range-progress{height:4px;border-radius:2px;background:var(--red)}
+.xp-range::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--ink);border:4px solid var(--red)}
+@container (max-width:430px){.xp-fin-ctrl{grid-template-columns:auto minmax(0,1fr)}.xp-rates{grid-column:1 / -1}}
+
+/* Final bell */
+.xp-finale{position:relative;overflow:hidden;margin-top:18px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:30px;align-items:center;padding:32px 34px;border-radius:24px;border:1px solid var(--line2);background:radial-gradient(500px 260px at 100% 0%,rgba(227,22,30,.16),transparent 70%),linear-gradient(150deg,#1a1212,#100c0c);transition:border-color .5s}
+.xp-finale.xp-unlocked{border-color:rgba(227,22,30,.6);background:radial-gradient(500px 260px at 100% 0%,rgba(227,22,30,.32),transparent 70%),linear-gradient(150deg,#1d1112,#100c0c)}
+.xp-seal{width:132px;height:132px}
+.xp-seal svg{display:block;width:100%;height:100%;transition:transform .9s cubic-bezier(.2,1.5,.4,1)}
+.xp-seal-ring{fill:none;stroke:var(--dim);stroke-width:1.5;stroke-dasharray:3 4;transition:stroke .4s}
+.xp-seal-inner{fill:var(--bg2);stroke:var(--line2);transition:fill .4s,stroke .4s}
+.xp-seal-text{fill:var(--dim);font-family:var(--mono);font-size:8.6px;transition:fill .4s}
+.xp-seal-count{fill:var(--ink);font-family:var(--serif);font-size:30px;text-anchor:middle}
+.xp-seal-cap{fill:var(--dim);font-family:var(--mono);font-size:7px;letter-spacing:.16em;text-anchor:middle}
+.xp-unlocked .xp-seal-ring{stroke:var(--red);stroke-dasharray:none}
+.xp-unlocked .xp-seal-text{fill:var(--red2)}
+.xp-unlocked .xp-seal-inner{fill:var(--red);stroke:var(--red2)}
+.xp-unlocked .xp-seal-count{fill:#fff}
+.xp-unlocked .xp-seal-cap{fill:#ffd2d4}
+.xp-unlocked .xp-seal svg{transform:rotate(-12deg) scale(1.06)}
+.xp-finale-k{margin:0 0 8px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red2)}
+.xp-finale h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.1;margin:0 0 8px;text-wrap:balance}
+.xp-finale h3 em{color:var(--red);font-style:italic}
+.xp-finale p{margin:0;color:var(--muted);max-width:58ch;font-size:16px}
+.xp-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:20px}
+
+@media (max-width:900px){.xp-lessons{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .xp-path{margin-top:34px;padding:16px}
+  .xp-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}
+  .xp-ps-out{font-size:13px}
+  .xp-lesson{padding:20px 16px 16px}
+  .xp-stage{padding:12px}
+  .xp-ic{width:42px;height:42px;border-radius:12px}
+  .xp-finale{grid-template-columns:1fr;padding:24px 20px}
+  .xp-seal{width:104px;height:104px}
+}
 </style>
 </head>
 <body>
@@ -782,33 +1023,250 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 
 <section class="sec" id="expertise" style="padding-top:0">
   <div class="wrap">
-    <p class="label rv">Expertise</p>
-    <h2 class="rv">Four disciplines, <em>one</em> classroom.</h2>
-    <div class="cards">
-      <article class="card tilt rv">
-        <span class="no">01</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></svg></div>
-        <h3>Finance</h3>
-        <p>Corporate finance, income tax and governance, the area of my doctoral research.</p>
+    <p class="label rv">Expertise · try a lesson</p>
+    <h2 class="rv">Four subjects that turn students into <em>business leaders.</em></h2>
+    <p class="lead rv">I teach Marketing, Organisational Behaviour, Entrepreneurship and Finance on the flagship MBA and M.A. Economics programmes. Each subject below comes with a lesson you can play in about 30 seconds.</p>
+
+    <nav class="xp-path rv" aria-label="Your progress through the four lessons">
+      <div class="xp-path-top"><span>Student</span><span class="xp-arr" aria-hidden="true">→</span><em>Business leader</em><span class="xp-count" id="xpCount" aria-live="polite">0 of 4 lessons done</span></div>
+      <ol class="xp-steps">
+        <li><a href="#xp-mkt" data-step="mkt"><span class="xp-seg"></span><span class="xp-ps-sub">Marketing</span><span class="xp-ps-out">Understands customers</span></a></li>
+        <li><a href="#xp-ob" data-step="ob"><span class="xp-seg"></span><span class="xp-ps-sub">OB</span><span class="xp-ps-out">Leads people</span></a></li>
+        <li><a href="#xp-ent" data-step="ent"><span class="xp-seg"></span><span class="xp-ps-sub">Entrepreneurship</span><span class="xp-ps-out">Builds and adapts</span></a></li>
+        <li><a href="#xp-fin" data-step="fin"><span class="xp-seg"></span><span class="xp-ps-sub">Finance</span><span class="xp-ps-out">Decides with numbers</span></a></li>
+      </ol>
+    </nav>
+
+    <div class="xp-lessons">
+
+      <!-- 1 · MARKETING -->
+      <article class="xp-lesson rv" id="xp-mkt">
+        <div class="xp-top"><span class="xp-period">Period 01</span><span class="xp-chip" data-chip>30 sec</span></div>
+        <div class="xp-head">
+          <div class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l15-6v14L3 13z"/><path d="M7 13v5a2 2 0 0 0 4 0v-4"/></svg></div>
+          <div><h3>Marketing</h3><p class="xp-sub">Consumer behaviour, digital marketing and brand strategy for modern markets.</p></div>
+        </div>
+        <p class="xp-task"><b>Lesson: launch a chai brand.</b> Drag the 4 Ps onto the stall at the D1 canteen, or tap them.</p>
+        <div class="xp-stage">
+          <div class="xp-drop" id="xpMkDrop">
+            <svg class="xp-stall" id="xpMkStall" viewBox="0 0 380 236" role="img" aria-label="A chai stall at the D1 Block canteen. It fills up as you add each of the 4 Ps.">
+              <defs>
+                <filter id="xpGlow" x="-200%" y="-200%" width="500%" height="500%">
+                  <feGaussianBlur stdDeviation="2.4" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <line class="xs-ground" x1="0" y1="214" x2="380" y2="214"/>
+              <line class="xs-wire" x1="166" y1="48" x2="166" y2="54"/>
+              <line class="xs-wire" x1="232" y1="48" x2="232" y2="54"/>
+              <rect class="xs-sign" x="139" y="16" width="120" height="32" rx="5"/>
+              <text class="xt-sign-def" x="199" y="36">Your brand here</text>
+              <rect class="xs-wood" x="90" y="52" width="218" height="8" rx="3"/>
+              <path class="xs-aw1" d="M94 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw2" d="M120.25 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw1" d="M146.5 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw2" d="M172.75 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw1" d="M199 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw2" d="M225.25 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw1" d="M251.5 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <path class="xs-aw2" d="M277.75 58h26.25v20a13.125 6 0 0 1-26.25 0z"/>
+              <rect class="xs-wood" x="104" y="80" width="6" height="62"/>
+              <rect class="xs-wood" x="288" y="80" width="6" height="62"/>
+              <path class="xs-wire" d="M107 84Q199 94 291 84"/>
+              <g>
+                <circle class="xs-bulb" cx="115" cy="87.8" r="3.2"/>
+                <circle class="xs-bulb" cx="136.5" cy="89.7" r="3.2"/>
+                <circle class="xs-bulb" cx="158" cy="91" r="3.2"/>
+                <circle class="xs-bulb" cx="179.5" cy="91.8" r="3.2"/>
+                <circle class="xs-bulb" cx="201" cy="92" r="3.2"/>
+                <circle class="xs-bulb" cx="222.5" cy="91.7" r="3.2"/>
+                <circle class="xs-bulb" cx="244" cy="90.8" r="3.2"/>
+                <circle class="xs-bulb" cx="265.5" cy="89.4" r="3.2"/>
+                <circle class="xs-bulb" cx="287" cy="87.4" r="3.2"/>
+              </g>
+              <rect class="xs-counter" x="96" y="146" width="206" height="68" rx="3"/>
+              <line class="xs-panel" x1="124" y1="152" x2="124" y2="208"/>
+              <line class="xs-panel" x1="140" y1="152" x2="140" y2="208"/>
+              <rect class="xs-wood" x="92" y="140" width="214" height="8" rx="2"/>
+              <g class="xs-slot xs-slot-product"><rect x="116" y="100" width="136" height="38" rx="6"/><text x="184" y="123">PRODUCT</text></g>
+              <g class="xs-slot xs-slot-promo"><rect x="160" y="158" width="118" height="44" rx="4"/><text x="219" y="184">PROMOTION</text></g>
+              <g class="xs-slot xs-slot-place"><rect x="8" y="100" width="74" height="38" rx="4"/><text x="45" y="123">PLACE</text></g>
+              <g class="xs-slot xs-slot-price"><path d="M306 104h44a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4h-44l-10-14z"/><text x="327" y="122">PRICE</text></g>
+              <g class="xs-pg" data-p="product">
+                <text class="xt-sign" x="199" y="39">Masala Chai</text>
+                <path class="xs-handle" d="M121 118c-11 0-11 16 0 16"/>
+                <rect class="xs-steel" x="120" y="112" width="34" height="28" rx="8"/>
+                <rect class="xs-steel" x="128" y="106" width="18" height="8" rx="3"/>
+                <circle class="xs-steel" cx="137" cy="104" r="3"/>
+                <path class="xs-steel" d="M152 120l16-10 3 3-16 15z"/>
+                <path class="xs-steam" d="M190 119c-4-5 4-8 0-14"/>
+                <path class="xs-steam" d="M212 119c-4-5 4-8 0-14"/>
+                <path class="xs-steam" d="M234 119c-4-5 4-8 0-14"/>
+                <path class="xs-kulhad" d="M182 124h16l-3 16h-10z"/><rect class="xs-rim" x="181" y="122" width="18" height="3" rx="1.5"/>
+                <path class="xs-kulhad" d="M204 124h16l-3 16h-10z"/><rect class="xs-rim" x="203" y="122" width="18" height="3" rx="1.5"/>
+                <path class="xs-kulhad" d="M226 124h16l-3 16h-10z"/><rect class="xs-rim" x="225" y="122" width="18" height="3" rx="1.5"/>
+              </g>
+              <g class="xs-pg" data-p="promo">
+                <rect class="xs-poster" x="160" y="158" width="118" height="44" rx="4"/>
+                <text class="xt-poster-b" x="219" y="177">2 chai · ₹30</text>
+                <text class="xt-poster" x="219" y="193">before 9 am, every day</text>
+              </g>
+              <g class="xs-pg" data-p="place">
+                <rect class="xs-wood" x="42" y="128" width="5" height="86"/>
+                <rect class="xs-light" x="8" y="100" width="74" height="38" rx="4"/>
+                <text class="xt-ink-b" x="45" y="117">D1 Block</text>
+                <text class="xt-ink" x="45" y="130">CU canteen</text>
+              </g>
+              <g class="xs-pg" data-p="price">
+                <line class="xs-string" x1="291" y1="96" x2="310" y2="112"/>
+                <path class="xs-light" d="M306 104h44a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4h-44l-10-14z"/>
+                <circle class="xs-hole" cx="309" cy="118" r="2.4"/>
+                <text class="xt-tag" x="331" y="123">₹20</text>
+              </g>
+              <g class="xs-crowd">
+                <g class="xs-person"><circle class="xs-phead" cx="318" cy="170" r="6.5"/><rect class="xs-pp1" x="310" y="179" width="16" height="35" rx="7"/></g>
+                <g class="xs-person"><circle class="xs-phead" cx="336" cy="172" r="6.5"/><rect class="xs-pp2" x="328" y="181" width="16" height="33" rx="7"/></g>
+                <g class="xs-person"><circle class="xs-phead" cx="354" cy="169" r="6.5"/><rect class="xs-pp3" x="346" y="178" width="16" height="36" rx="7"/></g>
+                <g class="xs-person"><circle class="xs-phead" cx="371" cy="173" r="6"/><rect class="xs-pp4" x="364" y="181" width="14" height="33" rx="7"/></g>
+              </g>
+            </svg>
+          </div>
+          <div class="xp-chips" role="group" aria-label="The 4 Ps">
+            <button type="button" class="xp-pchip" id="xpChipProduct" data-p="product"><b>Product</b><small>masala chai</small></button>
+            <button type="button" class="xp-pchip" id="xpChipPrice" data-p="price"><b>Price</b><small>₹20 a cup</small></button>
+            <button type="button" class="xp-pchip" id="xpChipPlace" data-p="place"><b>Place</b><small>D1 canteen</small></button>
+            <button type="button" class="xp-pchip" id="xpChipPromo" data-p="promo"><b>Promotion</b><small>2 for ₹30</small></button>
+          </div>
+        </div>
+        <div class="xp-foot">
+          <p class="xp-note" aria-live="polite">Psst: every brand starts with a product.</p>
+          <button type="button" class="xp-reset" id="xpMkReset">Reset</button>
+        </div>
       </article>
-      <article class="card tilt rv d1">
-        <span class="no">02</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l15-6v14L3 13z"/><path d="M7 13v5a2 2 0 0 0 4 0v-4"/></svg></div>
-        <h3>Marketing</h3>
-        <p>Consumer behaviour, digital marketing and brand strategy for modern markets.</p>
+
+      <!-- 2 · ORGANISATIONAL BEHAVIOUR -->
+      <article class="xp-lesson rv d1" id="xp-ob">
+        <div class="xp-top"><span class="xp-period">Period 02</span><span class="xp-chip" data-chip>30 sec</span></div>
+        <div class="xp-head">
+          <div class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.2 1.3-4 3-4.5"/></svg></div>
+          <div><h3>Organisational Behaviour</h3><p class="xp-sub">People, teams and leadership, and how organisations get the best from them.</p></div>
+        </div>
+        <p class="xp-task"><b>Lesson: build Maslow’s pyramid.</b> Tap the needs to stack them, bottom first. Get the order wrong and it falls.</p>
+        <div class="xp-stage">
+          <div class="xp-tray" id="xpObTray" role="group" aria-label="Needs to stack">
+            <button type="button" class="xp-need" id="xpNeedEst" data-id="est"><i style="background:#FF6B70"></i>Esteem</button>
+            <button type="button" class="xp-need" id="xpNeedPhys" data-id="phys"><i style="background:#7A0A10"></i>Physiological</button>
+            <button type="button" class="xp-need" id="xpNeedSelf" data-id="self"><i style="background:#FFC9CB"></i>Self-actualisation</button>
+            <button type="button" class="xp-need" id="xpNeedSafe" data-id="safe"><i style="background:#B3121A"></i>Safety</button>
+            <button type="button" class="xp-need" id="xpNeedLove" data-id="love"><i style="background:#E3161E"></i>Love &amp; belonging</button>
+          </div>
+          <div class="xp-pyr"><div class="xp-stack" id="xpObStack"></div><div class="xp-base"></div></div>
+        </div>
+        <div class="xp-foot">
+          <p class="xp-note" aria-live="polite" data-tone="hint">Hint: start with what a person needs to survive.</p>
+          <button type="button" class="xp-reset" id="xpObReset">Reset</button>
+        </div>
       </article>
-      <article class="card tilt rv d2">
-        <span class="no">03</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.2 1.3-4 3-4.5"/></svg></div>
-        <h3>Organisational Behaviour</h3>
-        <p>People, teams and leadership, and how organisations get the best from them.</p>
+
+      <!-- 3 · ENTREPRENEURSHIP -->
+      <article class="xp-lesson rv" id="xp-ent">
+        <div class="xp-top"><span class="xp-period">Period 03</span><span class="xp-chip" data-chip>30 sec</span></div>
+        <div class="xp-head">
+          <div class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2c3 3 4 7 3 11l-3 3-3-3c-1-4 0-8 3-11z"/><circle cx="12" cy="9" r="1.6"/><path d="M9 16l-3 5M15 16l3 5"/></svg></div>
+          <div><h3>Entrepreneurship</h3><p class="xp-sub">From idea to venture: innovation, business models and startup thinking.</p></div>
+        </div>
+        <p class="xp-task"><b>Lesson: pivot a startup.</b> Tap or spin the wheel. Each turn is one step of Build → Measure → Learn. <span class="xp-aside">The startup is made up. The method is real.</span></p>
+        <div class="xp-stage">
+          <div class="xp-ent" id="xpEntBox">
+            <div class="xp-wheel-wrap" id="xpWheelWrap" role="button" tabindex="0" aria-label="Spin the Build, Measure, Learn wheel">
+              <svg class="xp-wheel" id="xpWheel" viewBox="0 0 220 220" aria-hidden="true"></svg>
+              <div class="xp-hub"><span>Loop</span><b id="xpEntLoop">1</b></div>
+              <div class="xp-pointer"></div>
+            </div>
+            <div class="xp-ent-card" aria-live="polite">
+              <p class="xp-ent-meta" id="xpEntMeta">The idea · loop 1 of 3</p>
+              <ol class="xp-ent-history" id="xpEntHistory"></ol>
+              <p class="xp-ent-idea" id="xpEntIdea">Home-made tiffins for hostel students</p>
+              <div class="xp-ent-step" id="xpEntStep">
+                <span class="xp-pill" id="xpEntStepLabel">Ready</span>
+                <p id="xpEntStepText">Spin the wheel to build the first version.</p>
+              </div>
+              <button type="button" class="xp-spin" id="xpEntSpin">Spin the wheel ↻</button>
+            </div>
+          </div>
+        </div>
+        <div class="xp-foot">
+          <p class="xp-note" aria-live="polite" data-tone="hint">Hint: build small first. You can always pivot.</p>
+          <button type="button" class="xp-reset" id="xpEntReset">Reset</button>
+        </div>
       </article>
-      <article class="card tilt rv d3">
-        <span class="no">04</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2c3 3 4 7 3 11l-3 3-3-3c-1-4 0-8 3-11z"/><circle cx="12" cy="9" r="1.6"/><path d="M9 16l-3 5M15 16l3 5"/></svg></div>
-        <h3>Entrepreneurship</h3>
-        <p>From idea to venture: innovation, business models and startup thinking.</p>
+
+      <!-- 4 · FINANCE -->
+      <article class="xp-lesson rv d1" id="xp-fin">
+        <div class="xp-top"><span class="xp-period">Period 04</span><span class="xp-chip" data-chip>30 sec</span></div>
+        <div class="xp-head">
+          <div class="xp-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></svg></div>
+          <div><h3>Finance</h3><p class="xp-sub">Corporate finance, income tax and governance, the area of my doctoral research.</p></div>
+        </div>
+        <p class="xp-task"><b>Lesson: watch ₹10,000 grow.</b> Drag the years and see the bar grow. Try another interest rate too.</p>
+        <div class="xp-stage">
+          <div class="xp-fin-read">
+            <output class="xp-fin-big" id="xpFinBig" for="xpFinYears">₹14,693</output>
+            <p class="xp-fin-sub" id="xpFinSub">after 5 years at 8% a year</p>
+            <p class="xp-fin-gain" id="xpFinGain">You put in ₹10,000. Interest earned: <b>₹4,693</b></p>
+          </div>
+          <div>
+            <div class="xp-plot">
+              <div id="xpFinGrid"></div>
+              <div id="xpFinMarks"></div>
+              <div class="xp-bars" id="xpFinBars"></div>
+            </div>
+            <div class="xp-xaxis" aria-hidden="true">
+              <span style="left:0">0</span>
+              <span style="left:33.87%">10</span>
+              <span style="left:66.13%">20</span>
+              <span style="left:100%">30 yrs</span>
+            </div>
+          </div>
+          <div class="xp-fin-ctrl">
+            <label for="xpFinYears">Years <b id="xpFinYearsOut">5</b></label>
+            <input type="range" class="xp-range" id="xpFinYears" min="0" max="30" step="1" value="5">
+            <div class="xp-rates" role="group" aria-label="Interest rate">
+              <button type="button" id="xpRate6" data-r="6" aria-pressed="false">6%</button>
+              <button type="button" id="xpRate8" data-r="8" aria-pressed="true">8%</button>
+              <button type="button" id="xpRate12" data-r="12" aria-pressed="false">12%</button>
+            </div>
+          </div>
+          <p class="xp-legend"><span><i class="xp-lg-bar"></i>Compound interest</span><span><i class="xp-lg-tick"></i>Simple interest</span></p>
+        </div>
+        <div class="xp-foot">
+          <p class="xp-note" aria-live="polite">Keep dragging. At 8%, money doubles about every 9 years: 72 ÷ 8 = 9. That’s the Rule of 72.</p>
+          <button type="button" class="xp-reset" id="xpFinReset">Reset</button>
+        </div>
       </article>
+    </div>
+
+    <div class="xp-finale rv" id="xpFinale">
+      <div class="xp-seal" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs><path id="xpSealPath" d="M60 60m-47 0a47 47 0 1 1 94 0a47 47 0 1 1-94 0"/></defs>
+          <circle class="xp-seal-ring" cx="60" cy="60" r="57"/>
+          <text class="xp-seal-text"><textPath href="#xpSealPath" textLength="292" lengthAdjust="spacing">BUSINESS LEADER · YOUNGPROFESSOR.IN ·</textPath></text>
+          <circle class="xp-seal-inner" cx="60" cy="60" r="36"/>
+          <text class="xp-seal-count" id="xpSealCount" x="60" y="66">0/4</text>
+          <text class="xp-seal-cap" x="60" y="80">LESSONS</text>
+        </svg>
+      </div>
+      <div>
+        <p class="xp-finale-k" id="xpFinaleK">Final bell</p>
+        <h3 id="xpFinaleTitle">Finish all four lessons to graduate as a <em>business leader.</em></h3>
+        <p id="xpFinaleBody">Each one takes about 30 seconds. The seal fills as you go.</p>
+        <div class="xp-cta">
+          <a class="btn red mag" href="student.html">Enter the Student Zone <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn line mag" href="student.html#ask">Ask me anything</a>
+          <button type="button" class="xp-reset" id="xpAllReset" hidden>Replay all four</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1518,6 +1976,426 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
     function onS(){var h=d.documentElement.scrollHeight-innerHeight;if(h>0&&scrollY/h>.35)showCard();}
     addEventListener('scroll',onS,{passive:true});setTimeout(showCard,30000);
   }
+})();
+</script>
+<script>
+/* Expertise: playable lessons */
+(function () {
+  "use strict";
+  var root = document.getElementById("expertise");
+  if (!root) return;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var $ = function (id) { return document.getElementById(id); };
+  var each = function (list, fn) { Array.prototype.forEach.call(list, fn); };
+
+  /* ---------- shared progress ---------- */
+  var done = { mkt: false, ob: false, ent: false, fin: false };
+  function note(key, text, tone) {
+    var el = document.querySelector("#xp-" + key + " .xp-note");
+    el.textContent = text;
+    if (tone) el.setAttribute("data-tone", tone); else el.removeAttribute("data-tone");
+  }
+  function setDone(key, val) {
+    if (done[key] === val) return;
+    done[key] = val;
+    renderProgress();
+  }
+  function renderProgress() {
+    var n = 0, k;
+    for (k in done) if (done[k]) n++;
+    $("xpCount").textContent = n === 4 ? "All 4 lessons done" : n + " of 4 lessons done";
+    for (k in done) {
+      root.querySelector('.xp-steps [data-step="' + k + '"]').classList.toggle("xp-done", done[k]);
+      var card = $("xp-" + k);
+      card.classList.toggle("xp-done", done[k]);
+      card.querySelector("[data-chip]").textContent = done[k] ? "Lesson done ✓" : "30 sec";
+    }
+    $("xpFinale").classList.toggle("xp-unlocked", n === 4);
+    $("xpSealCount").textContent = n + "/4";
+    $("xpAllReset").hidden = n === 0;
+    if (n === 4) {
+      $("xpFinaleK").textContent = "Class dismissed";
+      $("xpFinaleTitle").innerHTML = "Business leader, <em>unlocked.</em>";
+      $("xpFinaleBody").textContent = "Customers, people, ideas and money. You just met the four things every business leader manages, in about two minutes. A semester in my classroom goes much deeper.";
+    } else {
+      $("xpFinaleK").textContent = "Final bell";
+      $("xpFinaleTitle").innerHTML = "Finish all four lessons to graduate as a <em>business leader.</em>";
+      $("xpFinaleBody").textContent = n === 0
+        ? "Each one takes about 30 seconds. The seal fills as you go."
+        : (4 - n) + (4 - n === 1 ? " lesson to go." : " lessons to go.") + " The seal fills as you go.";
+    }
+  }
+
+  /* ---------- 1 · Marketing ---------- */
+  var MK = {
+    product: "Product is what you sell: masala chai in a kulhad.",
+    price: "Price is what it costs: ₹20 a cup, easy on a student budget.",
+    place: "Place is where buyers find you: right outside D1 Block.",
+    promo: "Promotion is how they hear about it: 2 chai for ₹30 before 9 am."
+  };
+  var stall = $("xpMkStall"), drop = $("xpMkDrop"), placed = {};
+  var chips = Array.prototype.slice.call(root.querySelectorAll(".xp-pchip"));
+  function mkPlace(key) {
+    if (placed[key]) return;
+    placed[key] = true;
+    stall.querySelector('.xs-pg[data-p="' + key + '"]').classList.add("xp-on");
+    stall.classList.add("xp-has-" + key);
+    root.querySelector('.xp-pchip[data-p="' + key + '"]').disabled = true;
+    var left = 4 - Object.keys(placed).length;
+    if (left === 0) {
+      stall.classList.add("xp-launched");
+      note("mkt", "Shabash! Product, price, place and promotion: that’s the marketing mix. Your brand just launched.", "done");
+      setDone("mkt", true);
+    } else {
+      note("mkt", MK[key] + " " + left + " to go.");
+    }
+  }
+  function mkReset() {
+    placed = {};
+    stall.classList.remove("xp-launched", "xp-has-product", "xp-has-price", "xp-has-place", "xp-has-promo");
+    each(stall.querySelectorAll(".xs-pg"), function (g) { g.classList.remove("xp-on"); });
+    chips.forEach(function (c) { c.disabled = false; });
+    note("mkt", "Psst: every brand starts with a product.", "hint");
+    setDone("mkt", false);
+  }
+  function overDrop(x, y) {
+    var r = drop.getBoundingClientRect();
+    return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+  }
+  var drag = null;
+  chips.forEach(function (chip) {
+    chip.addEventListener("pointerdown", function (e) {
+      if (chip.disabled) return;
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      drag = { chip: chip, id: e.pointerId, x0: e.clientX, y0: e.clientY, moved: false, ghost: null };
+      try { chip.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    chip.addEventListener("pointermove", function (e) {
+      if (!drag || drag.chip !== chip || e.pointerId !== drag.id) return;
+      if (!drag.moved && Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) > 6) {
+        drag.moved = true;
+        var r = chip.getBoundingClientRect();
+        var g = chip.cloneNode(true);
+        g.removeAttribute("id");
+        g.classList.add("xp-ghost");
+        g.style.width = r.width + "px";
+        document.body.appendChild(g);
+        drag.ghost = g; drag.ox = e.clientX - r.left; drag.oy = e.clientY - r.top;
+        chip.classList.add("xp-lifting");
+      }
+      if (drag.moved) {
+        drag.ghost.style.left = (e.clientX - drag.ox) + "px";
+        drag.ghost.style.top = (e.clientY - drag.oy) + "px";
+        drop.classList.toggle("xp-over", overDrop(e.clientX, e.clientY));
+      }
+    });
+    function end(e) {
+      if (!drag || drag.chip !== chip) return;
+      var d = drag; drag = null;
+      drop.classList.remove("xp-over");
+      chip.classList.remove("xp-lifting");
+      if (!d.moved) return;
+      chip.setAttribute("data-dragged", "1");
+      setTimeout(function () { chip.removeAttribute("data-dragged"); }, 400);
+      if (d.ghost) d.ghost.remove();
+      if (e.type === "pointerup" && overDrop(e.clientX, e.clientY)) mkPlace(chip.getAttribute("data-p"));
+      else note("mkt", "Drop it on the stall to use it.", "hint");
+    }
+    chip.addEventListener("pointerup", end);
+    chip.addEventListener("pointercancel", end);
+    chip.addEventListener("click", function () {
+      if (chip.getAttribute("data-dragged")) return;
+      mkPlace(chip.getAttribute("data-p"));
+    });
+  });
+  $("xpMkReset").addEventListener("click", mkReset);
+
+  /* ---------- 2 · Organisational Behaviour ---------- */
+  var NEEDS = [
+    { id: "phys", name: "Physiological", work: "fair pay", w: 100, c: "#7A0A10", t: "#F4EFEA" },
+    { id: "safe", name: "Safety", work: "job security", w: 86, c: "#B3121A", t: "#FFFFFF" },
+    { id: "love", name: "Love & belonging", work: "a good team", w: 72, c: "#E3161E", t: "#FFFFFF" },
+    { id: "est", name: "Esteem", work: "recognition", w: 58, c: "#FF6B70", t: "#0B0A0A" },
+    { id: "self", name: "Self-actualisation", work: "meaningful work", w: 46, c: "#FFC9CB", t: "#0B0A0A" }
+  ];
+  var OB_NOTE = {
+    phys: "Physiological first: food, water, sleep. At work, that means fair pay.",
+    safe: "Safety next: a stable, secure life. At work, that means job security.",
+    love: "Love and belonging: friends, family and a team that has your back.",
+    est: "Esteem: respect and recognition for good work."
+  };
+  var tray = $("xpObTray"), stack = $("xpObStack"), level = 0, obBusy = false;
+  function need(id) { for (var i = 0; i < NEEDS.length; i++) if (NEEDS[i].id === id) return NEEDS[i]; }
+  function block(n, lv) {
+    var d = document.createElement("div");
+    d.className = "xp-blk";
+    d.style.width = n.w + "%";
+    d.style.bottom = (lv * 41) + "px";
+    d.style.background = n.c;
+    d.style.color = n.t;
+    d.innerHTML = "<b>" + n.name.replace("&", "&amp;") + "</b><small>at work: " + n.work + "</small>";
+    return d;
+  }
+  function obPlace(id, btn) {
+    if (obBusy || level >= 5) return;
+    var n = need(id), expected = NEEDS[level], el = block(n, level);
+    btn.disabled = true;
+    stack.appendChild(el);
+    if (id === expected.id) {
+      el.classList.add("xp-land");
+      level++;
+      if (level === 5) {
+        stack.parentNode.classList.add("xp-ob-done");
+        note("ob", "That’s Maslow’s hierarchy of needs. Good leaders meet needs from the bottom up, so people can reach their best.", "done");
+        setDone("ob", true);
+      } else {
+        note("ob", OB_NOTE[id]);
+      }
+    } else {
+      obBusy = true;
+      note("ob", level === 0
+        ? "It fell. " + n.name + " can’t be the base. Start with what a person needs to survive."
+        : "It fell. " + n.name + " can’t stand without " + expected.name + " underneath.", "warn");
+      el.classList.add(level % 2 ? "xp-fall-l" : "xp-fall-r");
+      stack.classList.remove("xp-wobble"); void stack.offsetWidth; stack.classList.add("xp-wobble");
+      setTimeout(function () {
+        el.remove();
+        btn.disabled = false;
+        stack.classList.remove("xp-wobble");
+        obBusy = false;
+      }, reduce ? 300 : 1150);
+    }
+  }
+  each(tray.querySelectorAll(".xp-need"), function (b) {
+    b.addEventListener("click", function () { obPlace(b.getAttribute("data-id"), b); });
+  });
+  function obReset() {
+    level = 0; obBusy = false;
+    stack.innerHTML = "";
+    stack.classList.remove("xp-wobble");
+    stack.parentNode.classList.remove("xp-ob-done");
+    each(tray.querySelectorAll(".xp-need"), function (b) { b.disabled = false; });
+    note("ob", "Hint: start with what a person needs to survive.", "hint");
+    setDone("ob", false);
+  }
+  $("xpObReset").addEventListener("click", obReset);
+
+  /* ---------- 3 · Entrepreneurship ---------- */
+  var LOOPS = [
+    { idea: "Home-made tiffins for hostel students",
+      build: "Smallest version: one cook, 20 tiffins a day, orders on a WhatsApp group.",
+      measure: "Day 1: 14 orders. Day 5: 3 orders. Top feedback: “Same dal every day.”",
+      learn: "Students want variety, and they get hungry late at night.",
+      pivot: "Late-night snack box" },
+    { idea: "Late-night snack box, 9 pm to 1 am",
+      build: "Menu on Instagram, four items that change daily, delivery to the hostel gates.",
+      measure: "40 orders a night. 60% are repeat buyers. Orders triple in exam week.",
+      learn: "Exam week is where the real demand is.",
+      pivot: "Exam-week study box" },
+    { idea: "Exam-week study box",
+      build: "Pre-orders open 7 days before exams: snacks, chai and a one-page formula sheet.",
+      measure: "180 pre-orders in 3 days. Students from two other campuses ask for it.",
+      learn: "This one works. Time to scale to other campuses.",
+      pivot: null }
+  ];
+  var STEPS = [
+    { name: "Build", key: "build", tip: "Build the smallest version that can teach you something." },
+    { name: "Measure", key: "measure", tip: "Numbers, not opinions. What did customers actually do?" },
+    { name: "Learn", key: "learn", tip: "Decide: keep going, or pivot." }
+  ];
+  var TOTAL = LOOPS.length * 3;
+  var wheel = $("xpWheel"), wrap = $("xpWheelWrap"), entBox = $("xpEntBox"), spinBtn = $("xpEntSpin");
+  var entN = 0, rot = -60, entBusy = false;
+
+  (function drawWheel() {
+    function P(phi, r) {
+      var t = phi * Math.PI / 180;
+      return (110 + r * Math.sin(t)).toFixed(2) + " " + (110 - r * Math.cos(t)).toFixed(2);
+    }
+    var svg = "";
+    for (var k = 0; k < 3; k++) {
+      var th = -120 * k, a0 = th - 58.5, a1 = th + 58.5, R = 106, r = 40;
+      svg += '<path class="xp-wseg" data-k="' + k + '" d="M' + P(a0, R) + " A" + R + " " + R + " 0 0 1 " + P(a1, R) +
+             " L" + P(a1, r) + " A" + r + " " + r + " 0 0 0 " + P(a0, r) + ' Z"/>';
+      var pos = P(th, 74).split(" ");
+      svg += '<text class="xp-wlabel" data-k="' + k + '" x="' + pos[0] + '" y="' + pos[1] + '" transform="rotate(' + th + " " + pos[0] + " " + pos[1] + ')">' + STEPS[k].name.toUpperCase() + "</text>";
+    }
+    wheel.innerHTML = svg;
+  })();
+
+  function setRot(r, animate) {
+    rot = r;
+    wheel.classList.toggle("xp-dragging", !animate);
+    wheel.style.transform = "rotate(" + r + "deg)";
+  }
+  function entRender() {
+    if (entN === 0) {
+      entBox.removeAttribute("data-k");
+      $("xpEntStep").removeAttribute("data-k");
+      $("xpEntLoop").textContent = "1";
+      $("xpEntMeta").textContent = "The idea · loop 1 of 3";
+      $("xpEntHistory").innerHTML = "";
+      $("xpEntIdea").textContent = LOOPS[0].idea;
+      $("xpEntStepLabel").textContent = "Ready";
+      $("xpEntStepText").textContent = "Spin the wheel to build the first version.";
+      spinBtn.textContent = "Spin the wheel ↻";
+      return;
+    }
+    var k = (entN - 1) % 3, L = Math.floor((entN - 1) / 3), loop = LOOPS[L];
+    entBox.setAttribute("data-k", k);
+    $("xpEntStep").setAttribute("data-k", k);
+    $("xpEntLoop").textContent = String(L + 1);
+    $("xpEntMeta").textContent = "Loop " + (L + 1) + " of 3";
+    $("xpEntHistory").innerHTML = LOOPS.slice(0, L).map(function (x) { return "<li>" + x.idea + "</li>"; }).join("");
+    $("xpEntIdea").textContent = loop.idea;
+    $("xpEntStepLabel").textContent = STEPS[k].name;
+    var t = loop[STEPS[k].key];
+    if (k === 2 && loop.pivot) t += '<span class="xp-pivot">Pivot → ' + loop.pivot + "</span>";
+    $("xpEntStepText").innerHTML = t;
+    if (entN === TOTAL) {
+      note("ent", "Three loops, two pivots, one business that works. That’s Build → Measure → Learn.", "done");
+      setDone("ent", true);
+      spinBtn.textContent = "Start over ↺";
+    } else {
+      note("ent", (k === 2 && loop.pivot) ? "Learning means changing the plan. Spin again to test the new idea." : STEPS[k].tip);
+      spinBtn.textContent = "Spin again ↻";
+    }
+  }
+  function spin() {
+    if (entBusy || entN >= TOTAL) return;
+    entN++;
+    var a = (120 * (entN - 1)) % 360;
+    var delta = ((a - rot) % 360 + 360) % 360;
+    if (delta < 60) delta += 360;
+    if (!reduce) delta += 360;
+    entBusy = true;
+    setRot(rot + delta, !reduce);
+    setTimeout(entRender, reduce ? 0 : 620);
+    setTimeout(function () { entBusy = false; }, reduce ? 0 : 900);
+  }
+  function entReset() {
+    entN = 0; entBusy = false;
+    var delta = ((-60 - rot) % 360 + 360) % 360;
+    if (!reduce) delta += 360;
+    setRot(rot + delta, !reduce);
+    entRender();
+    note("ent", "Hint: build small first. You can always pivot.", "hint");
+    setDone("ent", false);
+  }
+  function spinRequest() {
+    if (entBusy) return;
+    if (entN >= TOTAL) entReset(); else spin();
+  }
+  var dg = null;
+  function angleAt(e) {
+    var r = wrap.getBoundingClientRect();
+    return Math.atan2(e.clientX - (r.left + r.width / 2), -(e.clientY - (r.top + r.height / 2))) * 180 / Math.PI;
+  }
+  wrap.addEventListener("pointerdown", function (e) {
+    if (entBusy) return;
+    if (e.pointerType === "mouse" && e.button !== 0) return;
+    dg = { id: e.pointerId, a0: angleAt(e), base: rot, moved: false, d: 0 };
+    try { wrap.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+  wrap.addEventListener("pointermove", function (e) {
+    if (!dg || e.pointerId !== dg.id) return;
+    var d = angleAt(e) - dg.a0;
+    d = ((d + 540) % 360) - 180;
+    dg.d = d;
+    if (!dg.moved && Math.abs(d) > 4) dg.moved = true;
+    if (dg.moved && entN < TOTAL) setRot(dg.base + d, false);
+  });
+  function dgEnd(e) {
+    if (!dg) return;
+    var g = dg; dg = null;
+    if (!g.moved) { if (e.type === "pointerup") spinRequest(); return; }
+    if (g.d > 25 && entN < TOTAL) { spin(); return; }
+    setRot(g.base, true);
+    if (g.d < -25) note("ent", "Startups only move forward. Spin it clockwise.", "hint");
+  }
+  wrap.addEventListener("pointerup", dgEnd);
+  wrap.addEventListener("pointercancel", dgEnd);
+  wrap.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); spinRequest(); }
+  });
+  spinBtn.addEventListener("click", spinRequest);
+  $("xpEntReset").addEventListener("click", entReset);
+
+  /* ---------- 4 · Finance ---------- */
+  var PRINCIPAL = 10000, rate = 8, yMax = 1;
+  var yrs = $("xpFinYears"), barsEl = $("xpFinBars"), bars = [], sis = [], marks = [];
+  var rateBtns = root.querySelectorAll(".xp-rates button");
+  function inr(n) {
+    var s = String(Math.round(n));
+    if (s.length <= 3) return "₹" + s;
+    return "₹" + s.slice(0, -3).replace(/\B(?=(\d{2})+(?!\d))/g, ",") + "," + s.slice(-3);
+  }
+  function shortInr(v) { return v >= 100000 ? "₹" + (+(v / 100000).toFixed(2)) + "L" : "₹" + (v / 1000) + "K"; }
+  for (var i = 0; i <= 30; i++) {
+    var b = document.createElement("div"); b.className = "xp-bar"; b.style.left = (i / 31 * 100) + "%"; b.style.height = "0%";
+    var s = document.createElement("div"); s.className = "xp-si"; s.style.left = (i / 31 * 100) + "%"; s.hidden = true;
+    barsEl.appendChild(b); barsEl.appendChild(s); bars.push(b); sis.push(s);
+  }
+  function finScale() {
+    yMax = PRINCIPAL * Math.pow(1 + rate / 100, 30) * 1.08;
+    var steps = [10000, 20000, 25000, 50000, 100000, 200000], step = 500000;
+    for (var j = 0; j < steps.length; j++) if (Math.floor(yMax / steps[j]) <= 4) { step = steps[j]; break; }
+    var html = "";
+    for (var v = step; v < yMax; v += step) html += '<div class="xp-gl" style="bottom:' + (v / yMax * 100) + '%"><span>' + shortInr(v) + "</span></div>";
+    $("xpFinGrid").innerHTML = html;
+    var dbl = 72 / rate, mh = "";
+    [[dbl, "2×"], [dbl * 2, "4×"]].forEach(function (m) {
+      if (m[0] <= 30) mh += '<div class="xp-dm" data-y="' + m[0] + '" style="left:' + ((m[0] + 0.5) / 31 * 100) + '%"><span>' + m[1] + "</span></div>";
+    });
+    $("xpFinMarks").innerHTML = mh;
+    marks = Array.prototype.slice.call(root.querySelectorAll(".xp-dm"));
+  }
+  function finRender() {
+    var t = +yrs.value, r = rate / 100, v = PRINCIPAL * Math.pow(1 + r, t);
+    for (var i = 0; i <= 30; i++) {
+      bars[i].style.height = i <= t ? (PRINCIPAL * Math.pow(1 + r, i) / yMax * 100) + "%" : "0%";
+      bars[i].classList.toggle("xp-cur", i === t);
+      sis[i].hidden = !(i >= 1 && i <= t);
+      sis[i].style.bottom = (PRINCIPAL * (1 + r * i) / yMax * 100) + "%";
+    }
+    $("xpFinBig").textContent = inr(v);
+    $("xpFinSub").textContent = "after " + t + (t === 1 ? " year" : " years") + " at " + rate + "% a year";
+    $("xpFinGain").innerHTML = "You put in ₹10,000. Interest earned: <b>" + inr(v - PRINCIPAL) + "</b>";
+    $("xpFinYearsOut").textContent = t;
+    yrs.style.setProperty("--p", (t / 30 * 100) + "%");
+    marks.forEach(function (m) { m.classList.toggle("xp-hit", t >= +m.getAttribute("data-y")); });
+    var dbl = 72 / rate;
+    if (t === 0) {
+      note("fin", "Year 0: ₹10,000 is still ₹10,000. Drag the years.", "hint");
+    } else if (t < dbl) {
+      note("fin", "Keep dragging. At " + rate + "%, money doubles about every " + dbl + " years: 72 ÷ " + rate + " = " + dbl + ". That’s the Rule of 72.");
+    } else {
+      note("fin", "That’s the time value of money. Lesson done. Flip it around: " + inr(v) + " in " + t + " years is worth ₹10,000 today.", "done");
+      setDone("fin", true);
+    }
+  }
+  yrs.addEventListener("input", finRender);
+  each(rateBtns, function (btn) {
+    btn.addEventListener("click", function () {
+      rate = +btn.getAttribute("data-r");
+      each(rateBtns, function (o) { o.setAttribute("aria-pressed", o === btn ? "true" : "false"); });
+      finScale(); finRender();
+    });
+  });
+  function finReset() {
+    rate = 8; yrs.value = 5;
+    each(rateBtns, function (o) { o.setAttribute("aria-pressed", o.getAttribute("data-r") === "8" ? "true" : "false"); });
+    setDone("fin", false);
+    finScale(); finRender();
+  }
+  $("xpFinReset").addEventListener("click", finReset);
+
+  /* ---------- start ---------- */
+  $("xpAllReset").addEventListener("click", function () {
+    mkReset(); obReset(); entReset(); finReset();
+    $("xp-mkt").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  });
+  finScale(); finRender(); renderProgress();
 })();
 </script>
 </body>
