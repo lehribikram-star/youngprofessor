@@ -70,6 +70,12 @@ h3{margin:0;font-size:19px;line-height:1.3}
 .letter-back{margin-top:18px;padding:14px 18px;border-radius:16px;border:1px dashed rgba(244,143,177,.5);background:rgba(244,143,177,.06);font-size:15px;max-width:640px}
 .letter-back b{color:#F48FB1}
 
+.gz{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:22px;padding:16px 20px;border-radius:20px;border:1px solid rgba(245,185,66,.55);background:linear-gradient(110deg,rgba(245,185,66,.16),rgba(155,114,255,.10));text-decoration:none;max-width:760px;transition:transform .3s var(--ease)}
+.gz:hover{transform:translateY(-3px)}
+.gze{font-size:26px;letter-spacing:2px}
+.gz>span:nth-child(2){flex:1 1 280px}.gz b{display:block;font-size:17px}.gz span span{color:var(--muted);font-size:14px}
+.gz em{font-style:normal;padding:10px 18px;border-radius:999px;background:var(--amber);color:#1a1205;font-weight:800}
+.tab.gtab{text-decoration:none;border-style:dashed;border-color:var(--amber);color:var(--amber)}
 /* moods */
 .moods{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:8px 0 0}
 .mood{--c:var(--calm);position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:18px 16px 16px;border-radius:20px;border:1px solid var(--line2);background:var(--panel);color:var(--ink);text-align:left;cursor:pointer;transition:transform .35s var(--ease),border-color .3s,background .3s}
@@ -269,6 +275,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
     <p class="lead">Pick your mood. You'll get a 2-minute activity made for exactly that feeling: smash plates when you're angry, breathe when you're anxious, laugh when you're low. Everything stays private, on this device only.</p>
     <div class="stats" id="stats"></div>
     <div id="pastLetter"></div>
+    <a class="gz" href="games.html"><span class="gze">🎈🤫☕🧶</span><span><b>Just want to escape? Game Zone</b><span>7 original games: Pressure Pop, Backbencher, Chai Tapri Rush and more. Level up from Fresher to CEO.</span></span><em>Play →</em></a>
   </div>
 </header>
 
@@ -535,6 +542,7 @@ var MOODS=[
  {k:'happy',e:'😄',n:'Happy',s:'Good day!',c:'#7BD88F',l:"Let's make it last.",a:['jar','thanks','quiz']},
  {k:'sos',e:'🆘',n:'Really not okay',s:'I need help now',c:'#6FC3B2',l:'You matter. Support is one call away.',a:['sos','breathe']}
 ];
+var GAME={"angry": ["pop", "🎈 Play Pressure Pop"], "anxious": ["glide", "🕊️ Play Breath Glide"], "low": ["backbench", "🤫 Play Backbencher"], "overthinking": ["untangle", "🧶 Play Untangle"], "bored": ["chai", "☕ Play Chai Tapri"], "tired": ["glide", "🕊️ Play Breath Glide"], "overwhelmed": ["priority", "📋 Play Priority Swipe"], "lonely": ["kind", "💗 Play Kind Catch"], "comparing": ["backbench", "🤫 Play Backbencher"], "happy": ["chai", "☕ Play Chai Tapri"]};
 var MBY={};MOODS.forEach(function(m){MBY[m.k]=m});
 
 /* ---------- state + UI ---------- */
@@ -552,7 +560,8 @@ function chooseMood(k){var m=MBY[k];cur.mood=k;
   var st=$('#stage');st.hidden=false;st.style.setProperty('--acc',m.c);document.documentElement.style.setProperty('--acc',m.c);
   $('#sEm').textContent=m.e;$('#sName').textContent=m.n;$('#sLine').textContent=m.l;
   $('#tabs').innerHTML=m.a.length>1?m.a.map(function(a){return '<button class="tab" role="tab" type="button" data-a="'+a+'"><span>'+A[a].e+'</span>'+A[a].t+'</button>'}).join(''):'';
-  $$('#tabs .tab').forEach(function(t){t.onclick=function(){runAct(t.dataset.a)}});
+  if(GAME[k])$('#tabs').insertAdjacentHTML('afterbegin','<a class="tab gtab" href="games.html#'+GAME[k][0]+'">'+GAME[k][1]+'</a>');
+  $$('#tabs .tab[data-a]').forEach(function(t){t.onclick=function(){runAct(t.dataset.a)}});
   var rot=store.get('rot',{}),idx=(rot[k]||0)%m.a.length;if(k==='sos')idx=0;rot[k]=idx+1;store.set('rot',rot);
   runAct(m.a[idx]);
   setTimeout(function(){st.scrollIntoView({behavior:'smooth',block:'start'})},60)}
