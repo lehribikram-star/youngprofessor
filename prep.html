@@ -338,7 +338,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .plan small{color:var(--muted)}.plan ul{margin:6px 0 0;padding-left:18px}.plan li{margin:4px 0}
 .pbadge{position:absolute;top:-12px;left:20px;background:#F5B942;color:#1a1208;font-weight:800;font-size:12px;padding:4px 10px;border-radius:999px}
 .plannote{grid-column:1/-1;text-align:center;color:var(--muted)}
-@media (max-width:800px){.plans{grid-template-columns:1fr}}
+.plhead{grid-column:1/-1;text-align:center;margin-bottom:6px}.plhead h3{margin:0 0 6px}.plhead p{margin:0;color:var(--muted)}
+.plcmp{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin-top:12px;padding:8px 16px;border-radius:999px;border:1px solid rgba(245,185,66,.4);background:rgba(245,185,66,.08);font-size:14px}
+.plcmp b{font-family:var(--sans)!important;font-size:14px!important;font-weight:800!important;color:#ffd98a}
+.plan .pd{font-size:13px;color:#ffd98a;font-weight:700}
+.plan .pd s{color:var(--dim);font-weight:400}
+.plan ul{list-style:none;padding-left:0}.plan li{position:relative;padding-left:22px;font-size:14.5px}
+.plan li:before{content:'✓';position:absolute;left:0;color:#4ade80;font-weight:800}
+.plan li.no{color:var(--dim)}.plan li.no:before{content:'✕';color:var(--dim)}
+.plan li em{font-style:normal;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;color:var(--red2);border:1px solid rgba(227,22,30,.4);border-radius:6px;padding:1px 5px;margin-left:4px;vertical-align:1px}
+.plan .pbuy{margin-top:auto;padding:12px;border-radius:12px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font:800 15px var(--sans);cursor:pointer}
+.plan.best .pbuy{background:#F5B942;border-color:#F5B942;color:#1a1208}
+.plan.best{transform:translateY(-8px)}
+.plan .pfair{font-size:11.5px;color:var(--dim)}
+@media (max-width:800px){.plans{grid-template-columns:1fr}.plan.best{order:-1;transform:none}.plhead{order:-2}}
 
 /* Inside the business + suggestions v2 + 15-min sheet */
 .sugg .sic{background:var(--redsoft)!important;color:var(--ink)!important;font-size:16px}
@@ -492,6 +505,27 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .stnote{font-size:12px;color:var(--dim);margin-top:10px}
 @media (max-width:600px){.stools{grid-template-columns:1fr}.bcg{grid-template-columns:22px 1fr 1fr;min-height:0}.q{padding:9px}.q .it{font-size:12px}}
 @media print{.stools{display:none!important}}
+/* premium badges + frameworks pack */
+.plk{display:inline-block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1a1208;background:linear-gradient(90deg,#F5B942,#ffd98a);border-radius:6px;padding:2px 6px;vertical-align:2px;white-space:nowrap}
+.stbtn{position:relative}.stbtn span.plk{position:absolute;top:8px;right:8px;grid-row:auto;font-size:9.5px;align-self:auto}
+.plk.free{background:rgba(74,222,128,.18);color:#4ade80}
+.rpick{position:relative}.rpick .plk{position:absolute;top:7px;right:7px;font-size:8.5px;padding:1px 5px}
+.fwhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 8px}.fwhead b{font-size:16px}.fwhead small{color:var(--muted);font-size:12.5px;flex-basis:100%}
+.fwgrid{display:flex;flex-wrap:wrap;gap:8px}
+.fwbtn{display:inline-flex;align-items:center;gap:6px;padding:9px 13px;border-radius:999px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font:700 13.5px var(--sans);cursor:pointer}
+.fwbtn:hover,.fwbtn.on{border-color:var(--red)}.fwbtn.on{background:linear-gradient(150deg,rgba(227,22,30,.18),var(--bg2))}
+.fwbtn.fit{border-color:rgba(245,185,66,.55)}.fwbtn.fit::after{content:'for your role';font:600 9.5px var(--mono);letter-spacing:.06em;color:#ffd98a;text-transform:uppercase}
+.fwtitle{font-family:var(--serif);font-size:24px;margin:4px 0 2px}
+.fwbl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:10px}
+.fwbl.m4{grid-template-columns:1fr 1fr}
+.fwc{padding:13px 14px;border-radius:14px;border:1px solid var(--line2);background:var(--bg2)}
+.fwc h5{margin:0 0 6px;font-size:14.5px;display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.fwc h5 span{font:700 10.5px var(--mono);letter-spacing:.04em;padding:2px 7px;border-radius:6px;background:rgba(255,255,255,.06);color:var(--muted);white-space:nowrap}
+.fwc h5 span.g{background:rgba(74,222,128,.12);color:#4ade80}.fwc h5 span.r{background:var(--redsoft);color:var(--red2)}.fwc h5 span.a{background:rgba(245,185,66,.12);color:var(--amber)}
+.fwc ul{margin:0;padding-left:17px;font-size:14px;line-height:1.5}.fwc li{margin:3px 0}
+.demo-note{font-size:12.5px;color:#ffd98a;margin:6px 0 0}
+@media (max-width:600px){.fwbl.m4{grid-template-columns:1fr}}
+@media print{.fwgrid,.fwhead,.plk{display:none!important}}
 /* print = 1-page prep sheet */
 /* stage 2: headlines + AI coach */
 .hlwrap{margin-bottom:18px}
@@ -612,7 +646,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </nav>
 
     <article class="card prem" id="s-prem">
-      <div class="prem-h"><div><span class="prem-tag">⭐ Premium</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Two tools that do hours of prep for you. Free preview while we are in demo.</p></div><button type="button" class="prem-plans" id="plansBtn">See plans · from ₹29</button></div>
+      <div class="prem-h"><div><span class="prem-tag">⭐ Premium</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Tools that do hours of prep for you. Everything marked <span class="plk">🔒 Premium</span> is free to try until payments open.</p></div><button type="button" class="prem-plans" id="plansBtn">See plans · ₹99/month</button></div>
       <div class="prem-grid">
         <button type="button" class="ptool" id="kitBtn"><span class="pi">📄</span><b>Interview Kit</b><small>A ready 3-page PDF for this company and role: 30-second pitch, “Why us?” answer, 10 likely questions with model answers, news talking points and a last-hour checklist.</small><em>Generate my kit →</em></button>
         <button type="button" class="ptool" id="cvBtn"><span class="pi">🎯</span><b>CV × Job Match</b><small>Upload your CV and the job description. Get a match score, missing keywords, stronger CV lines and your own “Tell me about yourself” answer.</small><em>Match my CV →</em></button>
@@ -657,7 +691,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <p class="sub">Where the company stands against its rivals. “Who are our competitors?” is a favourite interview question.</p>
       <div id="comp"></div>
       <div class="dswot" id="swot"></div>
-      <div class="stools"><button type="button" class="stbtn" id="bcgBtn"><span>📊</span><b>BCG matrix</b><small>Stars, cash cows, question marks &amp; dogs in the portfolio</small></button><button type="button" class="stbtn" id="cmpBtn"><span>⚔️</span><b>Competitor analysis</b><small>Side-by-side scores vs its closest rivals</small></button></div>
+      <div class="stools"><button type="button" class="stbtn" id="bcgBtn"><span class="plk">🔒 Premium</span><span>📊</span><b>BCG matrix</b><small>Stars, cash cows, question marks &amp; dogs in the portfolio</small></button><button type="button" class="stbtn" id="cmpBtn"><span class="plk">🔒 Premium</span><span>⚔️</span><b>Competitor analysis</b><small>Side-by-side scores vs its closest rivals</small></button></div>
+      <div class="fwhead"><b>📚 Strategy frameworks pack</b><span class="plk">🔒 Premium</span><small>The frameworks interviewers ask about, built for this company. Gold ones fit your role best. Free to try while payments are being set up.</small></div>
+      <div class="fwgrid" id="fwGrid"></div>
       <div id="stOut"></div>
     </article>
 
@@ -710,7 +746,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div class="chead"><span class="cbadge">✨ AI Coach</span><h3>Practise with your <em>AI coach</em></h3></div>
       <p class="sub">Personal practice for <b id="cCo">this company</b>. Replies take about 10 seconds. The coach can make mistakes, so check facts before you use them.</p>
       <div class="qtabs" id="cTabs"><button type="button" class="on" data-m="q">🎯 My likely questions</button><button type="button" data-m="r">📝 Rate my answer</button><button type="button" data-m="m">🎤 Mock interview</button></div>
-      <div class="lrow"><label class="tog"><input type="checkbox" id="cHing"><span>🇮🇳 Hinglish practice</span></label><small id="cHingNote">Answer in English. Turn this on to speak or type in Hinglish; the coach replies in Hinglish but always shows the polished English version to use in the real interview.</small></div>
+      <div class="lrow"><label class="tog"><input type="checkbox" id="cHing"><span>🇮🇳 Hinglish practice <span class="plk">Premium</span></span></label><small id="cHingNote">Answer in English. Turn this on to speak or type in Hinglish; the coach replies in Hinglish but always shows the polished English version to use in the real interview.</small></div>
 
       <div class="cpane" data-p="q">
         <label class="clab" for="cProfile">Tell the coach about you (optional)</label>
@@ -725,7 +761,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <div class="mmeter" id="rMeter" hidden></div>
         <div class="genlive" id="genLive" hidden></div>
         <p class="note" id="rNote" hidden>Voice answers work in Chrome or Edge. On this browser, type your answer.</p>
-        <div class="btnrow"><button class="btn red" id="cRGo" type="button">Rate my answer →</button><button class="btn" id="cGGo" type="button">🧪 Is my answer generic?</button></div>
+        <div class="btnrow"><button class="btn red" id="cRGo" type="button">Rate my answer →</button><button class="btn" id="cGGo" type="button">🧪 Is my answer generic? <span class="plk">Premium</span></button></div>
       </div>
       <div class="cpane" data-p="m" hidden>
         <div class="mset">
@@ -734,14 +770,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
           <select id="mType" aria-label="Interview round" hidden><option value="mixed">Mixed round</option><option value="HR and behavioural">HR round</option><option value="role skills and technical">Role skills round</option><option value="company knowledge and business awareness">Company knowledge round</option><option value="sales">Sales role-play</option><option value="gd">Group discussion</option><option value="guess">Guesstimate</option><option value="case">Business case</option></select>
         </div>
         <div class="rgrid" id="mRounds" role="radiogroup" aria-label="Choose your round">
-          <button type="button" class="rpick on" data-r="mixed" role="radio" aria-checked="true"><b>🎯 Mixed</b><small>HR + role + company</small></button>
-          <button type="button" class="rpick" data-r="HR and behavioural" role="radio" aria-checked="false"><b>🙋 HR round</b><small>Tell me about yourself, strengths</small></button>
-          <button type="button" class="rpick" data-r="role skills and technical" role="radio" aria-checked="false"><b>🧠 Role skills</b><small>Marketing, finance, HR, ops</small></button>
-          <button type="button" class="rpick" data-r="company knowledge and business awareness" role="radio" aria-checked="false"><b>🏢 Company round</b><small>How well you know them</small></button>
-          <button type="button" class="rpick" data-r="sales" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>🤝 Sales role-play</b><small>Sell to a tough customer</small></button>
-          <button type="button" class="rpick" data-r="gd" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>👥 Group discussion</b><small>GD with 3 other students</small></button>
-          <button type="button" class="rpick" data-r="guess" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>🔢 Guesstimate</b><small>Step-by-step market sizing</small></button>
-          <button type="button" class="rpick" data-r="case" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>📊 Business case</b><small>Clarify, structure, recommend</small></button>
+          <button type="button" class="rpick on" data-r="mixed" role="radio" aria-checked="true"><span class="plk free">Free</span><b>🎯 Mixed</b><small>HR + role + company</small></button>
+          <button type="button" class="rpick" data-r="HR and behavioural" role="radio" aria-checked="false"><span class="plk">🔒</span><b>🙋 HR round</b><small>Tell me about yourself, strengths</small></button>
+          <button type="button" class="rpick" data-r="role skills and technical" role="radio" aria-checked="false"><span class="plk">🔒</span><b>🧠 Role skills</b><small>Marketing, finance, HR, ops</small></button>
+          <button type="button" class="rpick" data-r="company knowledge and business awareness" role="radio" aria-checked="false"><span class="plk">🔒</span><b>🏢 Company round</b><small>How well you know them</small></button>
+          <button type="button" class="rpick" data-r="sales" role="radio" aria-checked="false"><span class="plk">🔒</span><span class="rnew">NEW</span><b>🤝 Sales role-play</b><small>Sell to a tough customer</small></button>
+          <button type="button" class="rpick" data-r="gd" role="radio" aria-checked="false"><span class="plk">🔒</span><span class="rnew">NEW</span><b>👥 Group discussion</b><small>GD with 3 other students</small></button>
+          <button type="button" class="rpick" data-r="guess" role="radio" aria-checked="false"><span class="plk">🔒</span><span class="rnew">NEW</span><b>🔢 Guesstimate</b><small>Step-by-step market sizing</small></button>
+          <button type="button" class="rpick" data-r="case" role="radio" aria-checked="false"><span class="plk">🔒</span><span class="rnew">NEW</span><b>📊 Business case</b><small>Clarify, structure, recommend</small></button>
         </div>
         <p class="rdesc" id="mDesc"></p>
         <div class="chat" id="cChat"></div>
@@ -775,10 +811,23 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   <div class="cvres" id="cvRes" hidden></div>
 </div></div></div>
 <div class="pov" id="planOv" hidden><div class="pov-bar"><b>⭐ Premium plans</b><span class="pov-sp"></span><button type="button" class="btn" data-pclose>✕ Close</button></div><div class="pov-body"><div class="plans">
-  <div class="plan"><span class="pn">Drive Day Pass</span><b>₹29</b><small>24 hours of everything. Perfect the night before an interview.</small><ul><li>Unlimited Interview Kits</li><li>CV × Job Match</li><li>Unlimited voice mock interviews: HR, sales role-play, GD, guesstimate and case rounds</li></ul></div>
-  <div class="plan best"><span class="pbadge">Most popular</span><span class="pn">Monthly</span><b>₹99<i>/month</i></b><small>For students with several interviews coming up.</small><ul><li>Everything in Day Pass</li><li>Readiness meter for every company</li><li>“What did they ask?” from seniors</li><li>24-hour drive plan</li></ul></div>
-  <div class="plan"><span class="pn">Placement Season</span><b>₹249<i>/3 months</i></b><small>The whole placement season, best value.</small><ul><li>Everything in Monthly</li><li>GD &amp; case practice</li><li>Priority new features</li></ul></div>
-  <p class="plannote">💳 UPI, cards and net banking via Razorpay, launching soon. During the demo, premium tools are free to try.</p>
+  <div class="plhead"><h3>Pick your <em>plan</em></h3><p>Everything a management student needs to crack placements, for less than a cup of chai a day.</p>
+    <div class="plcmp"><span>Day Pass: <b>₹49</b> for 1 day</span><span>Monthly: <b>₹99</b> for 30 days</span><span>That is just <b>₹3.30 a day</b></span></div></div>
+  <div class="plan"><span class="pn">Day Pass</span><b>₹49</b><span class="pd">24 hours · one interview</span><small>Only for a single interview tomorrow.</small><ul>
+    <li>1 Interview Kit PDF</li><li>3 mock interviews (any round)</li><li>3 CV matches and 3 generic checks</li><li>BCG, competitor analysis and all frameworks for 1 company</li>
+    <li class="no">Progress tracker</li><li class="no">Seniors’ real questions</li><li class="no">Daily drills</li></ul>
+    <span class="pfair">Upgrade to Monthly within 24 hours for just ₹50 more.</span>
+    <button type="button" class="pbuy" data-plan="day">Get Day Pass · ₹49</button></div>
+  <div class="plan best"><span class="pbadge">⭐ Most popular</span><span class="pn">Monthly</span><b>₹99<i>/month</i></b><span class="pd">₹3.30 a day · <s>₹49 a day</s></span><small>For students with several interviews coming up.</small><ul>
+    <li>10 Interview Kits a month</li><li>25 mock interviews: HR, sales role-play, GD, guesstimate, case</li><li>Unlimited CV match and generic checker</li><li>BCG, competitor analysis + 13 strategy frameworks (PESTEL, Porter’s 5 Forces, 4Ps, Ansoff…) for every company</li><li>Hinglish practice</li>
+    <li>Progress tracker: see your scores improve <em>SOON</em></li><li>“What did they ask?” from seniors <em>SOON</em></li><li>Daily 10-minute drills <em>SOON</em></li></ul>
+    <span class="pfair">Fair use: 10 kits and 25 mock interviews every 30 days.</span>
+    <button type="button" class="pbuy" data-plan="month">Get Monthly · ₹99</button></div>
+  <div class="plan"><span class="pn">Placement Season</span><b>₹249<i>/3 months</i></b><span class="pd">₹2.75 a day · save ₹48</span><small>The whole placement season.</small><ul>
+    <li>Everything in Monthly, for 90 days</li><li>30 Interview Kits and 75 mock interviews</li><li>Panel interview mode <em>SOON</em></li><li>CV rewrite for each job <em>SOON</em></li><li>Interview-day countdown plan <em>SOON</em></li></ul>
+    <span class="pfair">Fair use: 30 kits and 75 mock interviews in 90 days.</span>
+    <button type="button" class="pbuy" data-plan="season">Get Season · ₹249</button></div>
+  <p class="plannote">💳 UPI, cards and net banking. Payments open very soon. Until then, every premium tool is free to try.</p>
 </div></div></div>
 
 <div class="tip" id="tip"></div>
@@ -1162,7 +1211,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   }
   function aiNote(t,plain){var n=$('rAi');n.innerHTML='';if(!t){n.hidden=true;return;}n.hidden=false;if(!plain){var s=el('span','dots');s.innerHTML='<i></i><i></i><i></i>';n.appendChild(s);}n.appendChild(el('span',null,t));}
   function resetDash(){
-    ['rChips','rBadges','comp','swot','tl','prodCards','ncat','dnews','quiz','trend','stOut'].forEach(function(i){$(i).innerHTML='';});$('bcgBtn').classList.remove('on');$('cmpBtn').classList.remove('on');
+    ['rChips','rBadges','comp','swot','tl','prodCards','ncat','dnews','quiz','trend','stOut'].forEach(function(i){$(i).innerHTML='';});$('bcgBtn').classList.remove('on');$('cmpBtn').classList.remove('on');try{paintFw();}catch(e){}
     ['rBrief','trend','finNa','s-hist','tHist','prodMoreLab','nbrief','talk','s-quiz','tQuiz'].forEach(function(i){$(i).hidden=true;});$('s-strat').hidden=false;$('tStrat').hidden=false;
     $('finBox').hidden=false;aiNote('');$('s-ins').hidden=true;$('tIns').hidden=true;$('insBody').innerHTML='';$('insLens').hidden=true;lastIns=null;$('s-lead').hidden=true;$('tLead').hidden=true;$('leadBody').innerHTML='';lastLead=null;
     $('trustLine').textContent='Company information comes from Wikipedia and Wikidata and may be a few months old.';
@@ -1319,6 +1368,10 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function ov(id,show){var o=$(id);o.hidden=!show;d.body.style.overflow=show?'hidden':'';}
   [].forEach.call(d.querySelectorAll('[data-pclose]'),function(b){b.addEventListener('click',function(){ov(b.closest('.pov').id,false);});});
   $('plansBtn').addEventListener('click',function(){ov('planOv',true);});
+  [].forEach.call(d.querySelectorAll('.pbuy'),function(b){b.addEventListener('click',function(){
+    try{localStorage.setItem('yp_plan_interest',b.getAttribute('data-plan'));}catch(e){}
+    ov('planOv',false);toast('Payments open very soon 🎉 Until then, every premium tool is free. Try them now!');
+    var t=$('s-prem');if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
   function curRole(){return (lastData&&lastData.role)||role.value.trim()||'Management Trainee';}
   function PH(x){return esc2(String(x==null?'':x));}
   function esc2(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -1602,14 +1655,20 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function stLoad(kind){
     var D=lastData;if(!D)return;var key=kind+'|'+D.summary.title,out=$('stOut');
     $('bcgBtn').classList.toggle('on',kind==='bcg');$('cmpBtn').classList.toggle('on',kind==='compete');
-    if(stCache[key]){(kind==='bcg'?drawBCG:drawCmp)(stCache[key]);return;}
-    out.innerHTML='';var t=thinking();t.lastChild.textContent=kind==='bcg'?'Building the BCG matrix…':'Comparing with rivals…';out.appendChild(t);
+    [].forEach.call(d.querySelectorAll('#fwGrid .fwbtn'),function(b){b.classList.toggle('on',b.getAttribute('data-k')===kind);});
+    var isFw=kind!=='bcg'&&kind!=='compete',draw=function(R){if(isFw)drawFw(kind,R);else (kind==='bcg'?drawBCG:drawCmp)(R);};
+    if(stCache[key]){draw(stCache[key]);return;}
+    var fwName=(FW.filter(function(f){return f[0]===kind;})[0]||[])[2];
+    out.innerHTML='';var t=thinking();t.lastChild.textContent=kind==='bcg'?'Building the BCG matrix…':kind==='compete'?'Comparing with rivals…':'Building the '+fwName+' for '+D.summary.title+'…';out.appendChild(t);
+    if(isFw)out.scrollIntoView({behavior:'smooth',block:'nearest'});
     var ctx=buildContext(D).slice(0,2600),prods=[].map.call(d.querySelectorAll('.dprod b'),function(b){return b.textContent;});if(prods.length)ctx+='\nMain products/services: '+prods.join(', ');
     var comps=[].map.call(d.querySelectorAll('#comp .dcchips button'),function(b){return b.textContent;});if(comps.length)ctx+='\nMain competitors: '+comps.join(', ');
-    postAI({task:'strategy',kind:kind,company:D.summary.title,context:ctx}).then(function(j){
+    if(isFw){var fin=[].map.call(d.querySelectorAll('#s-fin .tile'),function(x){return x.textContent.replace(/\s+/g,' ').trim();}).filter(Boolean).slice(0,8);if(fin.length)ctx+='\nReported numbers: '+fin.join(' | ');
+      var sw=$('swot').textContent.replace(/\s+/g,' ').trim();if(sw)ctx+='\nSWOT: '+sw.slice(0,700);}
+    postAI(isFw?{task:'framework',kind:kind,company:D.summary.title,context:ctx.slice(0,3000)}:{task:'strategy',kind:kind,company:D.summary.title,context:ctx}).then(function(j){
       if(!lastData||lastData.summary.title!==D.summary.title)return;
       if(!j||!j.ok||!j.data){out.innerHTML='';out.appendChild(el('div','thinking',(j&&j.error)||'Could not build it right now. Please try again in a minute.'));return;}
-      stCache[key]=j.data;(kind==='bcg'?drawBCG:drawCmp)(j.data);
+      stCache[key]=j.data;draw(j.data);
     }).catch(function(){out.innerHTML='';out.appendChild(el('div','thinking','Could not reach the coach. Please try again.'));});
   }
   function tail(out,R){if(R.takeaway)out.appendChild(el('p','about',String(R.takeaway))).style.cssText='font-size:15px;margin-top:12px';
@@ -1642,6 +1701,21 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     if((R.moves||[]).length){var mv=el('div','evb');mv.style.marginTop='10px';mv.appendChild(el('b',null,'👀 Moves to watch'));var u=el('ul');R.moves.forEach(function(x){u.appendChild(el('li',null,String(x)));});mv.appendChild(u);out.appendChild(mv);}
     tail(out,R);
   }
+  /* ---------- Premium strategy frameworks pack ---------- */
+  var FW=[['pestel','🌍','PESTEL'],['five','🛡️','Porter’s 5 Forces'],['tows','🔁','TOWS matrix'],['ansoff','📈','Ansoff matrix'],['mix','🛒','Marketing mix 7Ps'],['stp','🎯','STP'],['channel','🚚','Channel map'],['plc','⏳','Product life cycle'],['value','⛓️','Value chain'],['ratios','💹','Financial ratios'],['seven','🧩','McKinsey 7S'],['vrio','💎','VRIO'],['bmc','🧾','Business Model Canvas']];
+  var FW_FIT={marketing:['mix','stp','plc'],sales:['channel','ansoff','mix'],finance:['ratios','five','bmc'],hr:['seven','vrio','pestel'],ops:['value','channel','five'],analytics:['ratios','bmc','five'],general:['pestel','five','tows']};
+  function fwRole(){try{return lensOf(roleName());}catch(e){return 'general';}}
+  function paintFw(){var g=$('fwGrid');if(!g)return;g.innerHTML='';var fit=FW_FIT[fwRole()]||FW_FIT.general;
+    FW.slice().sort(function(a,b){return (fit.indexOf(a[0])<0?9:fit.indexOf(a[0]))-(fit.indexOf(b[0])<0?9:fit.indexOf(b[0]));}).forEach(function(f){
+      var b=el('button','fwbtn'+(fit.indexOf(f[0])>=0?' fit':''),f[1]+' '+f[2]);b.type='button';b.setAttribute('data-k',f[0]);b.addEventListener('click',function(){stLoad(f[0]);});g.appendChild(b);});}
+  function tagCls(t){t=String(t||'').toLowerCase();if(/positive|strong|low$|^low|sustained|attack|core|invest|scale|key strength|current focus/.test(t))return ' g';if(/negative|weak|^high|disadvantage|decline|harvest|watch|small/.test(t))return ' r';if(/mixed|medium|average|temporary|check|growing|possible|defend|improve|protect/.test(t))return ' a';return '';}
+  function drawFw(kind,R){var out=$('stOut');out.innerHTML='';
+    out.appendChild(el('div','fwtitle',String(R.title||kind)));if(R.summary)out.appendChild(el('p','sub',String(R.summary)));
+    var B=(R.blocks||[]).slice(0,10),g=el('div','fwbl'+(B.length===4?' m4':''));
+    B.forEach(function(x){var c=el('div','fwc');var h=el('h5');h.appendChild(d.createTextNode(String(x.heading||'')));if(x.tag)h.appendChild(el('span',tagCls(x.tag),String(x.tag)));c.appendChild(h);
+      var u=el('ul');(x.points||[]).slice(0,4).forEach(function(pt){u.appendChild(el('li',null,String(pt)));});c.appendChild(u);g.appendChild(c);});
+    out.appendChild(g);tail(out,R);}
+  paintFw();
   $('bcgBtn').addEventListener('click',function(){stLoad('bcg');});
   $('cmpBtn').addEventListener('click',function(){stLoad('compete');});
   /* ================= voice: dictation + interviewer voice + speaking metrics ================= */
