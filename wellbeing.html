@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wellbeing Centre | youngprofessor.in</title>
+<link rel="canonical" href="https://youngprofessor.in/wellbeing.html">
+<meta name="description" content="Pick your mood and get a 2-minute activity made for it: smash plates when angry, breathe when anxious, laugh when low. Free, private, by Dr. Bikram Paul Singh Lehri.">
+<meta name="theme-color" content="#0B0A0A">
+<meta property="og:title" content="Wellbeing Centre | youngprofessor.in">
+<meta property="og:description" content="Pick your mood. Get an activity that actually helps. Free and private.">
+<meta property="og:image" content="https://youngprofessor.in/photo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#0B0A0A; --bg2:#121010; --panel:#171414; --line:#2A2323; --line2:#3A2E2E;
+  --ink:#F4EFEA; --muted:#A39A94; --dim:#6F6661;
+  --red:#E3161E; --red2:#FF3B42; --redsoft:rgba(227,22,30,.10);
+  --calm:#6FC3B2; --amber:#F5B942; --acc:#6FC3B2;
+  --serif:"DM Serif Display", Georgia, serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:24px}
+@media (max-width:600px){.wrap{padding-inline:16px}}
+h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--calm)}
+h3{margin:0;font-size:19px;line-height:1.3}
+.dim{color:var(--muted)}
+.label{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--calm);margin:0 0 14px}
+.label::before{content:"";width:34px;height:1px;background:currentColor}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(11,10,10,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:19px}
+.logo img{width:36px;height:36px;border-radius:50%}
+.logo em{color:var(--red);font-style:normal}
+.nlinks{display:flex;gap:8px;align-items:center}
+.nlinks a{padding:8px 14px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:14px;font-weight:700;color:var(--muted)}
+.nlinks a:hover{color:var(--ink);border-color:var(--calm)}
+@media (max-width:600px){.logo span{display:none}.nlinks a{padding:7px 11px;font-size:13px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:64px 0 36px}
+.hero::before{content:"";position:absolute;right:-160px;top:-200px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(111,195,178,.22),transparent 65%);filter:blur(10px);pointer-events:none}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(40px,7vw,78px);line-height:1;margin-bottom:14px}
+.hero p.lead{font-size:clamp(16px,1.6vw,19px);color:var(--muted);max-width:56ch;margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.stat{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:16px;border:1px solid var(--line2);background:rgba(23,20,20,.75)}
+.stat b{font-family:var(--mono);font-size:20px}
+.stat span{font-size:13.5px;color:var(--muted);line-height:1.25}
+.week{display:flex;gap:6px;align-items:center}
+.week i{font-style:normal;width:30px;height:30px;display:grid;place-items:center;border-radius:10px;background:var(--bg2);border:1px solid var(--line);font-size:16px}
+.week i.today{border-color:var(--calm)}
+.letter-back{margin-top:18px;padding:14px 18px;border-radius:16px;border:1px dashed rgba(244,143,177,.5);background:rgba(244,143,177,.06);font-size:15px;max-width:640px}
+.letter-back b{color:#F48FB1}
+
+/* moods */
+.moods{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:8px 0 0}
+.mood{--c:var(--calm);position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:18px 16px 16px;border-radius:20px;border:1px solid var(--line2);background:var(--panel);color:var(--ink);text-align:left;cursor:pointer;transition:transform .35s var(--ease),border-color .3s,background .3s}
+.mood .em{font-size:34px;line-height:1;transition:transform .35s var(--ease)}
+.mood b{font-size:16px}
+.mood small{font-size:13px;color:var(--muted);line-height:1.3}
+.mood:hover{transform:translateY(-4px);border-color:var(--c)}
+.mood:hover .em{transform:scale(1.15) rotate(-6deg)}
+.mood.on{border-color:var(--c);background:color-mix(in srgb,var(--c) 14%,var(--panel))}
+.mood.sos{border-color:rgba(227,22,30,.55);background:linear-gradient(150deg,rgba(227,22,30,.12),var(--panel))}
+@media (max-width:420px){.moods{grid-template-columns:1fr 1fr}.mood{padding:14px 12px}.mood .em{font-size:28px}}
+
+/* stage */
+.stage{margin:34px 0 0;border-radius:26px;border:1px solid color-mix(in srgb,var(--acc) 45%,var(--line2));background:radial-gradient(500px 240px at 100% 0%,color-mix(in srgb,var(--acc) 16%,transparent),transparent 70%),var(--panel);padding:24px;scroll-margin-top:80px}
+.shead{display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between}
+.shead .who{display:flex;align-items:center;gap:12px}
+.shead .who .em{font-size:38px}
+.shead .who small{display:block;color:var(--muted);font-size:14px}
+.sbtns{display:flex;gap:8px}
+.ibtn{border:1px solid var(--line2);background:var(--bg2);color:var(--ink);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:700;cursor:pointer}
+.ibtn:hover{border-color:var(--acc)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.tab{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--muted);font-weight:700;font-size:14.5px;cursor:pointer;transition:all .25s}
+.tab.on{background:var(--acc);border-color:var(--acc);color:#0b0a0a}
+.adesc{color:var(--muted);margin:12px 0 14px;font-size:15.5px}
+.act{position:relative;min-height:300px;border-radius:20px;background:var(--bg2);border:1px solid var(--line);padding:20px;overflow:hidden}
+@media (max-width:600px){.stage{padding:16px;border-radius:22px}.act{padding:14px}.tabs{flex-wrap:nowrap;overflow-x:auto;margin-inline:-16px;padding-inline:16px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none;padding:9px 13px;font-size:14px}}
+.sfoot{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-top:16px}
+.sfoot .dim{font-size:13.5px}
+
+/* shared bits */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 22px;font-weight:800;font-size:15px;cursor:pointer;background:var(--acc);color:#0b0a0a;transition:transform .25s var(--ease),box-shadow .25s,opacity .2s;text-decoration:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px -10px var(--acc)}
+.btn:disabled{opacity:.45;cursor:default;transform:none;box-shadow:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line2)}
+.btn.ghost:hover{border-color:var(--acc)}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.row.c{justify-content:center}
+.center{text-align:center}
+.topline{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:12px;font-size:15px}
+.topline b{font-family:var(--mono);font-size:18px;color:var(--acc)}
+.big{font-family:var(--serif);font-size:64px;line-height:1;color:var(--acc)}
+.ok{font-size:16.5px;text-align:center;padding:30px 10px;margin:0}
+textarea,input[type=text]{width:100%;background:var(--panel);color:var(--ink);border:1px solid var(--line2);border-radius:14px;padding:12px 14px;font:inherit;font-size:16px;resize:vertical}
+textarea:focus,input[type=text]:focus{outline:none;border-color:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line2);background:var(--panel);color:var(--ink);border-radius:999px;padding:9px 14px;font-size:14.5px;font-weight:600;cursor:pointer;text-align:left}
+.chip.on,.chip:hover{border-color:var(--acc)}
+.chip.on{background:color-mix(in srgb,var(--acc) 22%,var(--panel))}
+.cf{position:absolute;top:-10px;width:9px;height:14px;border-radius:2px;animation:cf 2s ease-in forwards;pointer-events:none;z-index:5}
+@keyframes cf{to{transform:translate(var(--x),420px) rotate(var(--r));opacity:0}}
+.ring{position:relative;width:180px;height:180px;margin:10px auto}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:8}
+.ring .rt{stroke:var(--line2)}
+.ring .rp{stroke:var(--acc);stroke-linecap:round;transition:stroke-dashoffset .3s linear}
+.rtime{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--mono);font-size:34px}
+
+/* smash */
+.plates{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:440px;margin:0 auto}
+.plate{position:relative;aspect-ratio:1;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle,#fff 0 34%,#e9e3dc 35% 52%,#fdfbf8 53% 62%,#d9d0c6 63% 66%,#f6f2ec 67%);box-shadow:0 6px 14px -6px rgba(0,0,0,.7);transition:transform .15s}
+.plate:active{transform:scale(.92)}
+.plate.bk{background:transparent;box-shadow:none;cursor:default}
+.shard{position:absolute;left:45%;top:45%;width:16px;height:12px;background:#efe9e2;clip-path:polygon(0 0,100% 30%,40% 100%);animation:shard .7s ease-out forwards}
+@keyframes shard{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+/* shred */
+.shredbox{position:relative;min-height:60px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:14px}
+.strip{display:inline-block;padding:4px 8px;background:#efe9e2;color:#222;border-radius:3px;font-weight:700;font-size:14px;animation:strip 1.3s ease-in forwards}
+@keyframes strip{40%{background:#F5B942;color:#7a2d00}100%{transform:translate(var(--x),220px) rotate(var(--r));opacity:0;background:#E3161E}}
+/* speed */
+.arena{position:relative;height:320px;border-radius:16px;background:var(--panel);border:1px dashed var(--line2);display:grid;place-items:center;overflow:hidden;touch-action:manipulation}
+.tgt{position:absolute;width:60px;height:60px;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle,#fff 0 18%,var(--acc) 19% 40%,#fff 41% 55%,var(--acc) 56%);box-shadow:0 0 24px -2px var(--acc);transition:left .08s,top .08s}
+/* breathe */
+.orbw{position:relative;width:240px;height:240px;max-width:100%;margin:14px auto 4px;display:grid;place-items:center}
+.orbw::before{content:"";position:absolute;inset:0;border-radius:50%;border:1px dashed color-mix(in srgb,var(--acc) 50%,transparent)}
+.orb{width:100px;height:100px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e4fff8,var(--acc) 50%,#1d5a50);box-shadow:0 0 60px -6px var(--acc);transform:scale(.75);transition:transform 4s ease-in-out}
+.orb.big{transform:scale(2)}
+.ph{position:absolute;font-family:var(--serif);font-size:24px;color:#0b1f1b;pointer-events:none}
+/* grounding */
+.gstep{text-align:center;padding:10px 0}
+.gstep .gem{font-size:56px;display:block;animation:pop .5s var(--ease)}
+.gstep h3{font-size:22px;margin:8px 0 4px}
+.gdots{display:flex;justify-content:center;gap:12px;margin:18px 0;flex-wrap:wrap}
+.gdot{width:48px;height:48px;border-radius:50%;border:2px dashed var(--acc);background:transparent;color:var(--ink);font-size:20px;cursor:pointer;transition:all .3s var(--ease)}
+.gdot.on{background:var(--acc);border-style:solid;transform:scale(1.08)}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
+/* gradient puzzle */
+.gp{display:grid;gap:4px;max-width:380px;margin:0 auto;border-radius:16px;overflow:hidden}
+.gp button{aspect-ratio:1;border:0;cursor:pointer;position:relative;transition:transform .2s,outline .2s;border-radius:4px}
+.gp button.fx::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:rgba(0,0,0,.45)}
+.gp button.sel{transform:scale(.86);outline:3px solid #fff;outline-offset:-3px;z-index:2}
+/* riddles / jokes / cards */
+.card{max-width:560px;margin:0 auto;padding:26px;border-radius:20px;background:var(--panel);border:1px solid var(--line2);text-align:center;animation:pop .45s var(--ease)}
+.card .q{font-size:clamp(19px,2.4vw,23px);font-family:var(--serif);line-height:1.3;margin:6px 0 14px}
+.card .a{font-size:18px;font-weight:800;color:var(--acc);min-height:28px}
+.card .n{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.flipc{perspective:1000px;max-width:420px;margin:0 auto;height:230px;cursor:pointer}
+.flipc .in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s var(--ease)}
+.flipc.on .in{transform:rotateY(180deg)}
+.flipc .f{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;text-align:center;border:1px solid var(--line2)}
+.flipc .fr{background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--acc) 30%,var(--panel)) 0 12px,var(--panel) 12px 24px);font-family:var(--serif);font-size:28px}
+.flipc .bk{transform:rotateY(180deg);background:var(--panel);font-size:18px;font-weight:600}
+.flipc .bk .e{font-size:44px}
+/* memory */
+.mem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:400px;margin:0 auto}
+.mc{aspect-ratio:1;perspective:600px;border:0;background:none;padding:0;cursor:pointer}
+.mc .in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .45s var(--ease)}
+.mc.up .in,.mc.done .in{transform:rotateY(180deg)}
+.mc .f{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;display:grid;place-items:center;font-size:30px}
+.mc .fr{background:linear-gradient(140deg,color-mix(in srgb,var(--acc) 55%,#222),#1d1a1a);border:1px solid var(--line2)}
+.mc .bk{transform:rotateY(180deg);background:var(--panel);border:1px solid var(--acc)}
+.mc.done .bk{background:color-mix(in srgb,var(--acc) 25%,var(--panel))}
+/* quiz */
+.qopts{display:grid;gap:10px;max-width:520px;margin:0 auto}
+.qopt{padding:13px 16px;border-radius:14px;border:1px solid var(--line2);background:var(--panel);color:var(--ink);font-size:16px;font-weight:600;text-align:left;cursor:pointer;transition:all .2s}
+.qopt:hover{border-color:var(--acc)}
+.qopt.right{background:rgba(123,216,143,.2);border-color:#7BD88F}
+.qopt.wrong{background:rgba(227,22,30,.18);border-color:var(--red)}
+.qbar{height:6px;border-radius:9px;background:var(--line);overflow:hidden;margin-bottom:14px}
+.qbar i{display:block;height:100%;background:var(--acc);transition:width 1s linear}
+/* move guide */
+.mv{text-align:center}
+.mv .e{font-size:64px;display:block;animation:pop .5s var(--ease)}
+.mv h3{font-size:24px;margin:8px 0 6px}
+.mv p{max-width:44ch;margin:0 auto;color:var(--muted)}
+.mv .sec{font-family:var(--mono);font-size:44px;color:var(--acc);margin-top:8px}
+.bar{height:8px;border-radius:9px;background:var(--line);overflow:hidden;margin:16px 0 8px}
+.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .25s linear}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--line2)}
+.dots i.on{background:var(--acc)}
+/* dump */
+.dchip{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between;padding:12px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--line2);margin-bottom:8px;animation:pop .35s var(--ease)}
+.dchip span{flex:1 1 200px;font-weight:600}
+.dchip.away{animation:away .9s ease-in forwards}
+@keyframes away{to{transform:translate(60px,-80px) scale(.6);opacity:0;filter:blur(4px)}}
+.sbtn{border:1px solid var(--line2);background:var(--bg2);color:var(--ink);border-radius:999px;padding:7px 12px;font-size:13.5px;font-weight:700;cursor:pointer}
+.sbtn:hover{border-color:var(--acc)}
+/* letters */
+.env{display:block;margin:10px auto;width:220px;height:140px;border:0;cursor:pointer;position:relative;background:linear-gradient(160deg,#f6e3d4,#e9c9b2);border-radius:10px;box-shadow:0 14px 30px -12px rgba(0,0,0,.8);transition:transform .3s var(--ease)}
+.env::before{content:"";position:absolute;left:0;right:0;top:0;height:75px;background:linear-gradient(160deg,#eed2bd,#dcb393);clip-path:polygon(0 0,100% 0,50% 100%);border-radius:10px 10px 0 0}
+.env::after{content:"❤";position:absolute;left:50%;top:58px;transform:translateX(-50%);color:#c2185b;font-size:22px}
+.env:hover{transform:translateY(-4px) rotate(-2deg)}
+.letter{max-width:540px;margin:0 auto;padding:26px 26px 22px;border-radius:6px;background:#f7f1e8;color:#2a211c;font-family:var(--serif);font-size:20px;line-height:1.45;box-shadow:0 18px 40px -16px rgba(0,0,0,.8);animation:pop .6s var(--ease)}
+.letter .sig{display:block;text-align:right;margin-top:14px;font-size:17px;color:#7a5a48}
+/* jar */
+.jar{position:relative;width:170px;height:200px;margin:4px auto 10px;border:3px solid rgba(255,255,255,.35);border-top:0;border-radius:18px 18px 34px 34px;display:flex;flex-wrap:wrap-reverse;align-content:flex-start;gap:3px;padding:8px;overflow:hidden}
+.jar::before{content:"";position:absolute;top:-3px;left:-12px;right:-12px;height:14px;border-radius:6px;background:rgba(255,255,255,.18)}
+.jar i{width:22px;height:22px;border-radius:50%;box-shadow:inset -3px -3px 6px rgba(0,0,0,.3);animation:drop .6s var(--ease)}
+@keyframes drop{from{transform:translateY(-150px)}to{transform:none}}
+.wins{list-style:none;padding:0;margin:10px 0 0;font-size:15px}
+.wins li{padding:8px 0;border-bottom:1px solid var(--line)}
+.wins small{color:var(--dim);font-family:var(--mono);font-size:12px;margin-right:8px}
+/* lane card */
+.lane{max-width:560px;margin:0 auto;padding:24px;border-radius:20px;background:linear-gradient(150deg,color-mix(in srgb,var(--acc) 18%,var(--panel)),var(--panel));border:1px solid var(--acc);animation:pop .5s var(--ease)}
+.lane h3{font-family:var(--serif);font-weight:400;font-size:28px;margin-bottom:12px}
+.lane li{margin-bottom:8px}
+/* sos + help */
+.sosbox{text-align:center;padding:10px}
+.sosbox h3{font-family:var(--serif);font-weight:400;font-size:30px;margin:4px 0 8px}
+.calls{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0}
+.calls a{display:flex;flex-direction:column;align-items:center;padding:14px 22px;border-radius:18px;text-decoration:none;background:var(--red);color:#fff;font-weight:800;font-size:22px;min-width:170px}
+.calls a small{font-size:13px;font-weight:600;opacity:.9}
+.calls a.alt{background:transparent;border:1px solid var(--line2)}
+.help{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;margin:46px 0 0;padding:22px 24px;border-radius:22px;border:1px solid rgba(227,22,30,.35);background:linear-gradient(120deg,rgba(227,22,30,.10),var(--panel))}
+.help p{margin:4px 0 0;color:var(--muted);font-size:15px;max-width:60ch}
+.help .calls{margin:0}
+.help .calls a{min-width:auto;font-size:18px;padding:11px 18px}
+
+/* feel check */
+.feel{margin-top:16px;padding:20px;border-radius:20px;border:1px solid var(--acc);background:color-mix(in srgb,var(--acc) 8%,var(--bg2));text-align:center;animation:pop .45s var(--ease)}
+.feel h3{font-size:20px}
+.fbtns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px}
+.fbtn{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:110px;padding:14px 16px;border-radius:18px;border:1px solid var(--line2);background:var(--panel);color:var(--ink);font-weight:700;cursor:pointer;transition:transform .25s var(--ease),border-color .2s}
+.fbtn span{font-size:32px}
+.fbtn:hover{transform:translateY(-3px);border-color:var(--acc)}
+.feel .msg{font-size:16.5px;margin:6px 0 4px}
+
+footer{border-top:1px solid var(--line);margin-top:70px;padding:26px 0 40px;color:var(--dim);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Wellbeing Centre">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img src="logo-mark.webp" alt="" width="36" height="36"><span>young<em>professor</em>.in</span></a>
+    <div class="nlinks"><a href="student.html">Student Zone</a><a href="prep.html">Placement Prep</a></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="label">Wellbeing Centre</p>
+    <h1>How are you, <em>really</em>?</h1>
+    <p class="lead">Pick your mood. You'll get a 2-minute activity made for exactly that feeling: smash plates when you're angry, breathe when you're anxious, laugh when you're low. Everything stays private, on this device only.</p>
+    <div class="stats" id="stats"></div>
+    <div id="pastLetter"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="moods" id="moods" role="group" aria-label="Choose your mood"></div>
+
+  <section class="stage" id="stage" hidden aria-live="polite">
+    <div class="shead">
+      <div class="who"><span class="em" id="sEm"></span><div><h3 id="sName"></h3><small id="sLine"></small></div></div>
+      <div class="sbtns"><button class="ibtn" id="sound" type="button" aria-label="Sound on or off">🔊 Sound</button><button class="ibtn" id="change" type="button">↺ Change mood</button></div>
+    </div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Activities"></div>
+    <p class="adesc" id="adesc"></p>
+    <div class="act" id="act"></div>
+    <div id="feel"></div>
+    <div class="sfoot"><span class="dim">Take your time. There's no score that matters here.</span><button class="btn" id="done" type="button">I'm done, check how I feel →</button></div>
+  </section>
+
+  <section class="help" aria-label="Helplines">
+    <div><h3>Need to talk to someone right now?</h3><p><b>Tele-MANAS</b> is the Government of India's free mental health helpline, open 24×7 in many Indian languages. In immediate danger, call <b>112</b>. You can also talk to your college counselling cell.</p></div>
+    <div class="calls"><a href="tel:14416">📞 14416</a><a class="alt" href="tel:112">🚨 112</a></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Wellbeing Centre · <a href="student.html">Student Zone</a> · <a href="index.html">youngprofessor.in</a></span><span>Your moods and notes are saved only on this device. Nothing is sent anywhere.</span></div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var store={get:function(k,d){try{var v=localStorage.getItem('yw_'+k);return v?JSON.parse(v):d}catch(e){return d}},set:function(k,v){try{localStorage.setItem('yw_'+k,JSON.stringify(v))}catch(e){}}};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function fmt(s){return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+function today(o){var d=new Date();d.setDate(d.getDate()-(o||0));return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+
+/* ---------- timers that are cleaned when activity changes ---------- */
+var L=[];
+function every(f,ms){var id=setInterval(f,ms);L.push(id);return id}
+function later(f,ms){var id=setTimeout(f,ms);L.push(id);return id}
+function clearLife(){L.forEach(function(i){clearInterval(i);clearTimeout(i)});L=[]}
+
+/* ---------- sound ---------- */
+var AC=null,soundOn=store.get('snd',true);
+function ac(){if(!soundOn)return null;if(!AC){try{AC=new (window.AudioContext||window.webkitAudioContext)()}catch(e){return null}}if(AC.state==='suspended')AC.resume();return AC}
+function tone(f,dur,type,vol,when){var a=ac();if(!a)return;var o=a.createOscillator(),g=a.createGain(),t=a.currentTime+(when||0);o.type=type||'sine';o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol||.12,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+(dur||.25));o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+(dur||.25)+.05)}
+function crash(){var a=ac();if(!a)return;var len=Math.floor(a.sampleRate*.35),b=a.createBuffer(1,len,a.sampleRate),d=b.getChannelData(0);for(var i=0;i<len;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/len,3);var s=a.createBufferSource();s.buffer=b;var f=a.createBiquadFilter();f.type='highpass';f.frequency.value=1600+Math.random()*1600;var g=a.createGain();g.gain.value=.4;s.connect(f);f.connect(g);g.connect(a.destination);s.start();tone(2300+Math.random()*900,.12,'triangle',.05)}
+function chime(){[523,659,784,1047].forEach(function(f,i){tone(f,1.2,'sine',.07,i*.12)})}
+function blip(){tone(660,.08,'square',.035)}
+
+function confetti(host){var c=['#6FC3B2','#F5B942','#E3161E','#9b8cff','#FF8A7A','#7BD88F'];for(var i=0;i<46;i++){var s=document.createElement('i');s.className='cf';s.style.left=(Math.random()*100)+'%';s.style.background=c[i%c.length];s.style.setProperty('--x',(Math.random()*200-100)+'px');s.style.setProperty('--r',(Math.random()*720)+'deg');s.style.animationDelay=(Math.random()*.3)+'s';host.appendChild(s);(function(n){setTimeout(function(){n.remove()},2500)})(s)}}
+
+function ringTimer(host,secs,onEnd){
+  host.innerHTML='<div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="rt"/><circle cx="60" cy="60" r="52" class="rp"/></svg><b class="rtime"></b></div>';
+  var rp=$('.rp',host),tx=$('.rtime',host),C=2*Math.PI*52,end=Date.now()+secs*1000,id;
+  rp.style.strokeDasharray=C;
+  function draw(){var left=Math.max(0,Math.round((end-Date.now())/1000));tx.textContent=fmt(left);rp.style.strokeDashoffset=C*(1-left/secs);if(left<=0){clearInterval(id);if(onEnd)onEnd()}}
+  id=every(draw,250);draw();
+  return {stop:function(){clearInterval(id)}};
+}
+
+/* ---------- content ---------- */
+var RIDDLES=[["What has keys but can't open a single lock?","A keyboard (or a piano)"],["What gets wetter the more it dries?","A towel"],["What has a neck but no head?","A bottle"],["What can you catch but never throw?","A cold"],["What goes up but never comes down?","Your age"],["The more you take, the more you leave behind. What are they?","Footsteps"],["What has many teeth but can't bite?","A comb"],["What has hands but can't clap?","A clock"],["What runs but never walks, and has a mouth but never talks?","A river"],["What can travel around the world while staying in one corner?","A stamp"],["What has one eye but can't see?","A needle"],["What is full of holes but still holds water?","A sponge"],["I'm tall when I'm young and short when I'm old. What am I?","A candle"],["Which word is spelled wrong in every dictionary?","\"Wrong\""],["What belongs to you, but other people use it more than you do?","Your name"],["What comes once in a minute, twice in a moment, but never in a thousand years?","The letter M"],["If you have me, you want to share me. If you share me, you don't have me. What am I?","A secret"],["What can you break without ever touching it?","A promise"],["What has words but never speaks?","A book"],["Some months have 31 days, some have 30. How many have 28?","All twelve of them"],["Which building has the most stories?","A library"],["What can fill a room but takes up no space?","Light"],["What has pages, is always due tomorrow, and never gets done tonight?","An assignment 😄"],["What has a head and a tail but no body?","A coin"],["What gets bigger the more you take away from it?","A hole"],["What can you hold in your right hand but never in your left hand?","Your left elbow"]];
+var JOKES=["My attendance and my bank balance have one thing in common: both are \"short\" by the end of the semester.","Group project with 5 members: 1 does the work, 1 makes the PPT, and 3 ask \"bhai, my name is on it na?\"","I told myself I'd start studying at 9. It's 9:07 now, so obviously I'll start at 10.","Professor: \"This won't come in the exam.\" The entire class: deletes it from memory instantly.","HR: \"Where do you see yourself in 5 years?\" Me: \"Honestly, I'm still figuring out lunch.\"","My laptop has 47 tabs open and I've read none of them. Same as my brain.","Mom: \"Sharma ji's son got placed.\" Me: \"Great, then Sharma ji can pay my fees.\"","I don't procrastinate. I just do my best work in the last 3 hours.","The Wi-Fi went down for 5 minutes, so I talked to my family. They seem like nice people.","Me reading the syllabus on exam eve: \"Wait… there's a Unit 5?\"","The last bench isn't a seat. It's a lifestyle.","My study plan. Day 1: make a timetable. Day 2: decorate the timetable. Day 3: exam.","Canteen samosa: the only thing on campus that has never disappointed me.","Me in a group discussion: wait 9 minutes for a gap, finally speak: \"I agree with him.\"","Excel formulas work perfectly right up until you show them to someone.","8 AM lecture attendance: 12. 8 AM fest registration: 1,200.","My CV says \"team player\". My group project says \"I did everything\".","\"I'll check my phone for 2 minutes.\" Three reels later, it's next Tuesday.","Sleep schedule? I don't have a schedule. I have suggestions.","The confidence of a student starting an exam answer with \"As we all know…\" when they don't.","Me after one good study session: \"I should become a professor.\" Me the next day: asleep at 4 PM.","Assignment instructions: 2,000 words. Me: 1,400 words and a very large font."];
+var TINY=[["💧","Drink a full glass of water"],["🌤️","Open a window or step outside for fresh air"],["🛏️","Make your bed or clear your desk"],["🚿","Wash your face with cool water"],["🎧","Play one song you love and just listen"],["🗑️","Throw away 5 things you don't need"],["🍎","Eat a fruit or a proper snack"],["🚶","Walk around for 2 minutes, anywhere"]];
+var QUIZ=[["Which company owns the Maggi brand?",["Nestlé","ITC","Hindustan Unilever","Britannia"]],["Surf Excel is a brand of which company?",["Hindustan Unilever","Procter & Gamble","Nirma","Jyothy Labs"]],["What does B2B stand for?",["Business to business","Brand to buyer","Business to brand","Buyer to business"]],["In SWOT, what does the 'O' stand for?",["Opportunities","Operations","Objectives","Outputs"]],["Which of the 4Ps is about where the product is sold?",["Place","Price","Promotion","Product"]],["Amul is headquartered in which state?",["Gujarat","Maharashtra","Punjab","Karnataka"]],["What does GST stand for?",["Goods and Services Tax","General Sales Tax","Government Service Tax","Gross Sales Tax"]],["Which body regulates India's stock markets?",["SEBI","RBI","NITI Aayog","IRDAI"]],["Who sets India's repo rate?",["RBI","SEBI","Ministry of Finance","NSE"]],["What does ROI stand for?",["Return on investment","Rate of interest","Revenue over income","Risk of investment"]],["A market with only one seller is called a…",["Monopoly","Oligopoly","Duopoly","Monopsony"]],["How many companies are in the Nifty index on NSE?",["50","30","100","500"]],["In the BCG matrix, high market growth with low market share is a…",["Question mark","Star","Cash cow","Dog"]],["In the Ansoff matrix, a new product in an existing market is…",["Product development","Market development","Diversification","Market penetration"]],["In USP, what does the 'P' stand for?",["Proposition","Price","Product","Promotion"]],["A 'unicorn' startup is valued at over…",["1 billion US dollars","100 million US dollars","1 crore rupees","10 billion US dollars"]],["Which company holds the majority stake in Flipkart?",["Walmart","Amazon","Reliance","SoftBank"]],["In which year was the ₹ symbol officially adopted?",["2010","2004","2014","1999"]],["What does KPI stand for?",["Key performance indicator","Key profit index","Known process input","Key price indicator"]],["At the break-even point, total revenue equals…",["Total cost","Total profit","Fixed cost only","Net profit"]],["A 'bull market' means prices are mostly…",["Rising","Falling","Flat","Frozen"]],["Infosys is headquartered in…",["Bengaluru","Pune","Hyderabad","Mumbai"]],["Which company makes Parle-G biscuits?",["Parle Products","Britannia","ITC","Parle Agro"]],["What does CSR stand for in business?",["Corporate social responsibility","Customer service rating","Cost of sales ratio","Corporate sales report"]]];
+var CARDS=[["✏️","Draw your dream office in 2 minutes. Stick figures are allowed."],["🏷️","Name 10 brands in your kitchen and guess which company owns each one."],["💬","Text a friend the most random, genuine compliment you can think of."],["🗣️","Learn to say \"thank you\" in 3 Indian languages you don't speak."],["🎤","Pitch a silly product to yourself in 60 seconds, like an umbrella for phones."],["📸","Find the oldest photo in your gallery. What was that day like?"],["🏋️","Do 20 squats, then notice how your mood shifted."],["💰","Write 3 things you'd do with ₹1 crore, then 3 things you'd do with ₹100."],["🪴","Rearrange one small corner of your room."],["☕","Make yourself a proper cup of chai or coffee, slowly, and drink it without your phone."],["🔍","Guess the price of 5 things around you, then check online who was closest."],["📰","Write the headline you'd want about yourself 10 years from now."],["🪄","Learn one simple magic trick or a new knot from a video."],["🎵","Hum a song and see if anyone near you can guess it."],["🗺️","Plan a dream 3-day trip under ₹5,000. Where would you go?"],["📝","Write a 4-line poem about your hostel, room or canteen. Make it dramatic."]];
+var STRETCH=[["🔄","Neck rolls","Slowly roll your head in a circle, 3 times each way. Keep your shoulders loose."],["🤷","Shoulder shrugs","Lift your shoulders up to your ears, hold for 2 seconds, then drop. Repeat."],["🙆","Reach for the sky","Interlace your fingers, push your palms up, then lean gently left and right."],["🌀","Seated twist","Sit tall, turn your upper body to the right and hold. Then turn to the left."],["✋","Wrists and fingers","Gently pull your fingers back, then make tight fists and release, a few times."]];
+var ENERGY=[["🚶","March fast","March on the spot, knees high, arms swinging."],["🔁","Arm circles","Big circles forward, then backward."],["⭐","Star jumps","Jumping jacks, or step side to side if you're in a small space."],["🦵","Quick squats","As many as you can, back straight."],["🥊","Punch the air","Fast punches, left right left right."],["🫨","Shake it all out","Shake your hands, arms, legs, whole body. Look silly. It works."]];
+var LETTERS=["I've sat on the other side of many interview tables. Most students who got rejected once got placed later. A no is a date, not a verdict.","Feeling alone in a crowded hostel is more common than anyone admits. Many of the people around you feel it too. Say hi first. They're waiting for someone to.","You don't need a big circle. One person you can be honest with is enough. If you haven't found that person yet, keep looking. They exist.","Your worth isn't your CGPA, your package or your follower count. Those are numbers. You are a person.","Some days the only goal is to get through the day. That counts. Tomorrow you can aim higher.","Call home today, even for two minutes. You don't have to say anything is wrong. Just hearing a familiar voice helps.","The students I remember most weren't always the toppers. They were the ones who were kind when no one was watching.","Loneliness is a signal, like hunger. It isn't a flaw. It just means you need some connection, so go and get a little.","Everyone you admire has had nights like this one. They just don't post about them.","If today was heavy, put it down for an hour. It will still be there later, and you'll be stronger when you pick it up again.","You belong in that classroom. You earned your seat. Don't let one bad week convince you otherwise.","Go somewhere with people today: the canteen, the library, a park. You don't have to talk. Just being around others helps.","You're allowed to ask for help. Asking is a skill, not a weakness. The best managers do it every single day.","I'm proud of you for checking in with yourself. Most people never do."];
+var MSGS={reach:["Hey! Was just thinking about you. How have you been?","Random question: are you free for a quick call this week? I miss talking to you.","Saw something today that reminded me of you 😄 How's life?","Hi! It's been too long. Chai sometime this week?"],thanks:["Just wanted to say thank you for always being there for me. It means a lot.","Thank you for your help the other day. I really needed it 🙏","You made my day better without even knowing it. Thanks!","I'm having a good day and I thought of you. Thanks for being awesome."]};
+
+/* ---------- activities ---------- */
+var A={};
+A.smash={t:'Smash the plates',e:'🍽️',d:'Tap every plate as hard and fast as you want. Turn the sound on. Loud is good.',run:function(el){
+  var n=0;el.innerHTML='<div class="topline"><span>Smashed: <b id="sm">0</b></span><span class="dim">Nobody is watching. Go.</span></div><div class="plates" id="pl"></div>';
+  var pl=$('#pl',el);
+  function fill(){pl.innerHTML='';for(var i=0;i<16;i++){(function(){var b=document.createElement('button');b.type='button';b.className='plate';b.setAttribute('aria-label','Plate');
+    b.addEventListener('pointerdown',function(){if(b.classList.contains('bk'))return;b.classList.add('bk');crash();n++;$('#sm',el).textContent=n;
+      for(var k=0;k<7;k++){var s=document.createElement('i');s.className='shard';s.style.setProperty('--x',(Math.random()*140-70)+'px');s.style.setProperty('--y',(Math.random()*140-70)+'px');s.style.setProperty('--r',(Math.random()*360)+'deg');b.appendChild(s)}
+      if(!$$('.plate:not(.bk)',pl).length)later(fill,450)});pl.appendChild(b)})()}}
+  fill()}};
+A.shred={t:'Shred it',e:'🔥',d:"Type exactly what's making you angry. Any words, any language. It isn't saved, and nobody will see it.",run:function(el){
+  el.innerHTML='<textarea id="sh" rows="5" placeholder="What is really annoying me is…" aria-label="What is annoying you"></textarea><div class="row"><button class="btn" id="go" type="button">Shred &amp; burn 🔥</button></div><div class="shredbox" id="sb"></div>';
+  $('#go',el).onclick=function(){var ta=$('#sh',el),txt=ta.value.trim()||'Everything about today',sb=$('#sb',el);sb.innerHTML='';var w=txt.split(/\s+/).slice(0,90);
+    w.forEach(function(x,i){var s=document.createElement('span');s.className='strip';s.textContent=x;s.style.setProperty('--x',(Math.random()*180-90)+'px');s.style.setProperty('--r',(Math.random()*120-60)+'deg');s.style.animationDelay=(i*.03)+'s';sb.appendChild(s)});
+    ta.value='';crash();later(crash,300);
+    later(function(){sb.innerHTML='<p class="ok">🔥 Shredded and burned. It doesn\'t get to live in your head rent-free. If there\'s more, write more.</p>'},w.length*30+1500)}}};
+A.speed={t:'Speed tap',e:'🎯',d:'Hit the target as many times as you can in 30 seconds. Burn off that energy.',run:function(el){
+  var best=store.get('best_speed',0);
+  el.innerHTML='<div class="topline"><span>Score <b id="sc">0</b></span><span>Time <b id="tm">30</b>s</span><span class="dim">Your best: '+best+'</span></div><div class="arena" id="ar"><button class="btn" id="st" type="button">Start · 30 seconds</button></div>';
+  var ar=$('#ar',el);
+  $('#st',el).onclick=function(){var sc=0,t=30;ar.innerHTML='<button class="tgt" id="tg" type="button" aria-label="Target"></button>';var tg=$('#tg',ar);
+    function move(){tg.style.left=(Math.random()*Math.max(0,ar.clientWidth-64))+'px';tg.style.top=(Math.random()*Math.max(0,ar.clientHeight-64))+'px'}
+    move();tg.addEventListener('pointerdown',function(e){e.preventDefault();sc++;$('#sc',el).textContent=sc;tone(380+Math.min(sc,60)*14,.07,'square',.04);move()});
+    var id=every(function(){t--;$('#tm',el).textContent=t;if(t<=0){clearInterval(id);var nb=sc>best;if(nb)store.set('best_speed',sc);chime();
+      ar.innerHTML='<div class="center"><span class="big">'+sc+'</span><p>'+(nb&&best?'New personal best! 🎉 ':'')+'Feel some of that energy leave?</p><button class="btn" id="again" type="button">Go again</button></div>';
+      $('#again',ar).onclick=function(){runAct(cur.act)}}},1000)}}};
+A.breathe={t:'Breathing bubble',e:'🫧',d:'Follow the bubble. Breathe in as it grows, out as it shrinks. About one minute.',run:function(el){
+  var P={calm:[['Breathe in',4],['Breathe out',6]],box:[['Breathe in',4],['Hold',4],['Breathe out',4],['Hold',4]]},pat='calm',running=false;
+  el.innerHTML='<div class="chips" id="pt" style="justify-content:center"><button class="chip on" data-p="calm" type="button">Calm · in 4, out 6</button><button class="chip" data-p="box" type="button">Box · 4-4-4-4</button></div><div class="orbw"><div class="orb" id="ob"></div><span class="ph" id="ph">Ready</span></div><p class="center dim" id="bc">About 1 minute</p><div class="row c"><button class="btn" id="bs" type="button">Start</button></div>';
+  var ob=$('#ob',el),ph=$('#ph',el),bc=$('#bc',el),bs=$('#bs',el);
+  $$('#pt .chip',el).forEach(function(b){b.onclick=function(){if(running)return;$$('#pt .chip',el).forEach(function(x){x.classList.remove('on')});b.classList.add('on');pat=b.dataset.p}});
+  bs.onclick=function(){if(running)return;running=true;bs.disabled=true;var steps=P[pat],rounds=pat==='calm'?6:4,r=0,i=0;
+    (function go(){if(r>=rounds){ph.textContent='Done';ob.classList.remove('big');bc.textContent='Nice. Notice your shoulders. Are they a little lower now?';running=false;bs.disabled=false;bs.textContent='Again';chime();return}
+      var lab=steps[i][0],s=steps[i][1];ph.textContent=lab;ob.style.transitionDuration=s+'s';if(lab==='Breathe in')ob.classList.add('big');if(lab==='Breathe out')ob.classList.remove('big');
+      bc.textContent='Round '+(r+1)+' of '+rounds;tone(lab==='Breathe in'?392:lab==='Breathe out'?294:330,.7,'sine',.045);i++;if(i>=steps.length){i=0;r++}later(go,s*1000)})()}}};
+A.ground={t:'5-4-3-2-1 game',e:'👀',d:'A quick game that pulls your mind back into the room. Look around and tap a circle for each thing you find.',run:function(el){
+  var S=[[5,'things you can SEE','👀'],[4,'things you can TOUCH','✋'],[3,'things you can HEAR','👂'],[2,'things you can SMELL','👃'],[1,'thing you can TASTE','👅']],k=0;
+  function show(){if(k>=S.length){chime();confetti(el);el.innerHTML='<div class="gstep"><span class="gem">🌿</span><h3>You\'re here. Right now. In this room.</h3><p class="dim">That\'s where calm lives. Anxiety is about the future. You just spent a minute in the present.</p></div>';return}
+    var s=S[k];el.innerHTML='<div class="gstep"><span class="gem">'+s[2]+'</span><h3>Find '+s[0]+' '+s[1]+'</h3><p class="dim">Name each one in your head, then tap a circle.</p><div class="gdots" id="gd"></div><p class="dim mono" style="font-size:13px">Step '+(k+1)+' of 5</p></div>';
+    var gd=$('#gd',el),got=0;for(var i=0;i<s[0];i++){(function(){var b=document.createElement('button');b.type='button';b.className='gdot';b.setAttribute('aria-label','Found one');
+      b.onclick=function(){if(b.classList.contains('on'))return;b.classList.add('on');b.textContent='✓';got++;blip();if(got>=s[0]){k++;later(show,550)}};gd.appendChild(b)})()}}
+  show()}};
+A.gradient={t:'Calm colours',e:'🎨',d:'Tap two tiles to swap them. Put the colours back in a smooth flow. The dotted corners are fixed. Slow is fine.',run:function(el){
+  var N=5,pals=[['#6FC3B2','#F5B942','#9b8cff','#FF8A7A'],['#2E8B8B','#F2C14E','#5B4B8A','#F78154'],['#7FB7BE','#E8F7F2','#BC4B51','#3D405B'],['#F48FB1','#FFE082','#4DB6AC','#5C6BC0']],p=pick(pals);
+  function hx(h){return [1,3,5].map(function(i){return parseInt(h.slice(i,i+2),16)})}
+  var a=hx(p[0]),b=hx(p[1]),c=hx(p[2]),d=hx(p[3]),sol=[];
+  for(var y=0;y<N;y++)for(var x=0;x<N;x++){var u=x/(N-1),v=y/(N-1);sol.push('rgb('+[0,1,2].map(function(k){return Math.round(a[k]*(1-u)*(1-v)+b[k]*u*(1-v)+c[k]*(1-u)*v+d[k]*u*v)}).join(',')+')')}
+  var fixed={0:1};fixed[N-1]=1;fixed[N*(N-1)]=1;fixed[N*N-1]=1;
+  var mov=[];for(var i=0;i<N*N;i++)if(!fixed[i])mov.push(i);
+  var cur=sol.slice(),vals=shuffle(mov.map(function(i){return sol[i]}));mov.forEach(function(i,k){cur[i]=vals[k]});
+  var sel=null,moves=0;
+  el.innerHTML='<div class="topline"><span>Swaps <b id="mv">0</b></span><span class="dim">Corners are fixed. Work out from them.</span></div><div class="gp" id="gp" style="grid-template-columns:repeat('+N+',1fr)"></div>';
+  var gp=$('#gp',el);
+  function draw(){gp.innerHTML='';cur.forEach(function(col,i){var t=document.createElement('button');t.type='button';t.style.background=col;t.setAttribute('aria-label','Tile '+(i+1));if(fixed[i])t.className='fx';if(sel===i)t.classList.add('sel');
+    t.onclick=function(){if(fixed[i])return;if(sel===null){sel=i;blip();draw();return}if(sel===i){sel=null;draw();return}var tmp=cur[sel];cur[sel]=cur[i];cur[i]=tmp;sel=null;moves++;$('#mv',el).textContent=moves;tone(520,.1,'sine',.05);draw();
+      if(cur.every(function(c2,j){return c2===sol[j]})){chime();confetti(el);later(function(){gp.insertAdjacentHTML('afterend','<p class="ok">Beautiful. '+moves+' swaps, and your mind got a short rest.</p>')},400)}};gp.appendChild(t)})}
+  draw()}};
+A.laugh={t:'Laugh break',e:'😂',d:'Short, silly lines about student life. Keep tapping until one gets you.',run:function(el){
+  var pool=shuffle(JOKES.slice()),i=0;
+  function show(){el.innerHTML='<div class="card"><span class="n">'+(i+1)+' / '+pool.length+'</span><p class="q">'+esc(pool[i])+'</p><div class="row c"><button class="btn" id="nx" type="button">😂 Another one</button></div></div>';$('#nx',el).onclick=function(){i=(i+1)%pool.length;blip();show()}}
+  show()}};
+A.riddles={t:'Riddles',e:'🧩',d:'Think for a few seconds before you reveal the answer. Your brain loves a small puzzle.',run:function(el){
+  var pool=shuffle(RIDDLES.slice()),i=0,got=0;
+  function show(){var r=pool[i];el.innerHTML='<div class="card"><span class="n">Riddle '+(i+1)+' · you knew '+got+'</span><p class="q">'+esc(r[0])+'</p><div class="a" id="ra"></div><div class="row c" id="rb"><button class="btn" id="rv" type="button">Show answer</button></div></div>';
+    $('#rv',el).onclick=function(){$('#ra',el).textContent=r[1];tone(784,.3,'sine',.06);$('#rb',el).innerHTML='<button class="btn" id="y" type="button">I got it ✓</button><button class="btn ghost" id="n" type="button">Didn\'t get it</button>';
+      $('#y',el).onclick=function(){got++;next()};$('#n',el).onclick=next}}
+  function next(){i=(i+1)%pool.length;show()}
+  show()}};
+A.tinywin={t:'Tiny win',e:'🏅',d:'Pick one tiny task. Do it in the next 2 minutes. Small wins start to lift a low mood.',run:function(el){
+  var h='<p class="center" style="margin:0 0 12px">Which one can you do right now?</p><div class="chips" style="justify-content:center">';
+  TINY.forEach(function(t,i){h+='<button class="chip" type="button" data-i="'+i+'">'+t[0]+' '+esc(t[1])+'</button>'});el.innerHTML=h+'</div>';
+  $$('.chip',el).forEach(function(b){b.onclick=function(){var t=TINY[+b.dataset.i];
+    el.innerHTML='<div class="center"><span style="font-size:48px">'+t[0]+'</span><h3 style="margin:6px 0">'+esc(t[1])+'</h3><p class="dim" style="margin:0">Go now. Come back when it\'s done.</p><div id="rt"></div><button class="btn" id="dn" type="button">I did it! ✓</button></div>';
+    var tm=ringTimer($('#rt',el),120,function(){chime()});
+    $('#dn',el).onclick=function(){tm.stop();var w=store.get('tiny',0)+1;store.set('tiny',w);chime();confetti(el);
+      el.innerHTML='<p class="ok"><span class="big">✓</span><br>One tiny win done. That\'s '+w+' so far.<br><span class="dim">A low mood shrinks a little with every small thing you finish.</span></p>'}}})}};
+A.dump={t:'Brain dump',e:'🧠',d:"Get every thought out of your head, one at a time. Then sort them. What's out of your hands floats away.",run:function(el){
+  var items=[];
+  function p1(){el.innerHTML='<div style="display:flex;gap:8px"><input type="text" id="di" placeholder="One thought, then press Enter" aria-label="A thought"><button class="btn" id="da" type="button">Add</button></div><div id="dl" style="margin-top:12px"></div><div class="row"><button class="btn ghost" id="dn" type="button" disabled>Done, let\'s sort them →</button></div>';
+    var di=$('#di',el);function add(){var v=di.value.trim();if(!v)return;items.push(v);di.value='';blip();draw();di.focus()}
+    function draw(){$('#dl',el).innerHTML=items.map(function(x){return '<div class="dchip"><span>'+esc(x)+'</span></div>'}).join('');$('#dn',el).disabled=!items.length}
+    $('#da',el).onclick=add;di.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();add()}};$('#dn',el).onclick=p2;di.focus()}
+  function p2(){var can=[],gone=0,left=items.length;
+    el.innerHTML='<p style="margin:0 0 12px">For each one: <b>can you do something about it?</b></p><div id="ds"></div>';
+    var ds=$('#ds',el);items.forEach(function(x){var c=document.createElement('div');c.className='dchip';c.innerHTML='<span>'+esc(x)+'</span><span style="flex:0 0 auto;display:flex;gap:6px"><button class="sbtn" data-k="y" type="button">✅ I can act</button><button class="sbtn" data-k="n" type="button">🍃 Out of my hands</button></span>';
+      $$('.sbtn',c).forEach(function(b){b.onclick=function(){if(b.dataset.k==='n'){gone++;tone(880,.4,'sine',.05);c.classList.add('away');later(function(){c.remove()},850)}else{can.push(x);blip();c.remove()}left--;if(!left)later(function(){p3(can,gone)},gone?900:150)}});ds.appendChild(c)})}
+  function p3(can,gone){chime();
+    el.innerHTML='<div class="center">'+(gone?'<p style="font-size:18px">🍃 <b>'+gone+'</b> thought'+(gone>1?'s':'')+' let go. They were never yours to fix.</p>':'')+(can.length?'<p class="dim" style="margin-bottom:8px">In your control. Pick the easiest one and do one small thing about it in the next hour:</p><div class="chips" style="justify-content:center">'+can.map(function(x){return '<span class="chip">'+esc(x)+'</span>'}).join('')+'</div>':'<p class="dim">Nothing left to carry right now. Your head should feel a little lighter.</p>')+'</div>'}
+  p1()}};
+A.memory={t:'Memory match',e:'🃏',d:"Find all the pairs. Your brain can't overthink and concentrate on this at the same time.",run:function(el){
+  var em=shuffle(['🎯','📚','☕','🚀','🎧','💡','🌱','🏆','🪁','🍕']).slice(0,8),deck=shuffle(em.concat(em)),open=[],lock=false,moves=0,pairs=0,t0=Date.now(),best=store.get('best_mem',0);
+  el.innerHTML='<div class="topline"><span>Moves <b id="mm">0</b></span><span>Pairs <b id="mp">0</b>/8</span><span class="dim">'+(best?'Best: '+best+' moves':'')+'</span></div><div class="mem" id="mg"></div>';
+  var mg=$('#mg',el);
+  deck.forEach(function(e){var b=document.createElement('button');b.type='button';b.className='mc';b.setAttribute('aria-label','Card');b.innerHTML='<span class="in"><span class="f fr"></span><span class="f bk">'+e+'</span></span>';
+    b.onclick=function(){if(lock||b.classList.contains('up')||b.classList.contains('done'))return;b.classList.add('up');blip();open.push([b,e]);
+      if(open.length===2){moves++;$('#mm',el).textContent=moves;var o=open;open=[];
+        if(o[0][1]===o[1][1]){o.forEach(function(x){x[0].classList.add('done')});pairs++;$('#mp',el).textContent=pairs;tone(880,.25,'sine',.06);
+          if(pairs===8){var s=Math.round((Date.now()-t0)/1000);if(!best||moves<best)store.set('best_mem',moves);chime();confetti(el);later(function(){mg.insertAdjacentHTML('afterend','<p class="ok">All pairs in '+moves+' moves and '+s+' seconds. Notice how quiet your head got?</p>')},500)}}
+        else{lock=true;later(function(){o.forEach(function(x){x[0].classList.remove('up')});lock=false},800)}}};mg.appendChild(b)})}};
+A.quiz={t:'60-second business quiz',e:'⚡',d:'How many can you get right in 60 seconds? Quick questions on brands, markets and management.',run:function(el){
+  var best=store.get('best_quiz',0);
+  el.innerHTML='<div class="center" style="padding:30px 0"><span style="font-size:52px">⚡</span><h3 style="margin:8px 0">60 seconds. As many as you can.</h3><p class="dim">Your best so far: '+best+'</p><button class="btn" id="qs" type="button">Start</button></div>';
+  $('#qs',el).onclick=function(){var pool=shuffle(QUIZ.slice()),i=0,sc=0,t=60,busy=false;
+    el.innerHTML='<div class="qbar"><i id="qb" style="width:100%"></i></div><div class="topline"><span>Score <b id="qsc">0</b></span><span>Time <b id="qt">60</b>s</span></div><div id="qq"></div>';
+    function show(){if(i>=pool.length){pool=shuffle(QUIZ.slice());i=0}var q=pool[i],right=q[1][0],opts=shuffle(q[1].slice());busy=false;
+      $('#qq',el).innerHTML='<p class="q" style="font-family:var(--serif);font-size:21px;margin:4px 0 14px;text-align:center">'+esc(q[0])+'</p><div class="qopts">'+opts.map(function(o){return '<button class="qopt" type="button">'+esc(o)+'</button>'}).join('')+'</div>';
+      $$('.qopt',el).forEach(function(b){b.onclick=function(){if(busy)return;busy=true;var ok=b.textContent===right;
+        if(ok){sc++;$('#qsc',el).textContent=sc;b.classList.add('right');tone(880,.15,'sine',.06)}else{b.classList.add('wrong');tone(200,.2,'sawtooth',.04);$$('.qopt',el).forEach(function(x){if(x.textContent===right)x.classList.add('right')})}
+        i++;later(show,ok?450:1100)}})}
+    show();
+    var id=every(function(){t--;$('#qt',el).textContent=t;$('#qb',el).style.width=(t/60*100)+'%';if(t<=0){clearInterval(id);var nb=sc>best;if(nb)store.set('best_quiz',sc);chime();if(nb)confetti(el);
+      el.innerHTML='<div class="center" style="padding:20px 0"><span class="big">'+sc+'</span><p>'+(nb?'New best score! 🎉':'Correct answers in 60 seconds.')+' Handy for interviews too.</p><button class="btn" id="qa" type="button">Play again</button></div>';$('#qa',el).onclick=function(){runAct('quiz')}}},1000)}}};
+A.cards={t:'Pick a card',e:'🎴',d:'Tap the card to get a random 5-minute challenge. Not feeling it? Draw again.',run:function(el){
+  var deck=shuffle(CARDS.slice()),i=0;
+  function show(){el.innerHTML='<div class="flipc" id="fc" role="button" tabindex="0" aria-label="Flip the card"><div class="in"><div class="f fr">Tap to draw 🎴</div><div class="f bk"><span class="e">'+deck[i][0]+'</span><span>'+esc(deck[i][1])+'</span></div></div></div><div class="row c"><button class="btn ghost" id="dr" type="button">Draw another</button></div>';
+    var fc=$('#fc',el);fc.onclick=fc.onkeydown=function(e){if(e.type==='keydown'&&e.key!=='Enter'&&e.key!==' ')return;if(!fc.classList.contains('on')){fc.classList.add('on');tone(660,.2,'triangle',.05)}};
+    $('#dr',el).onclick=function(){i=(i+1)%deck.length;show();later(function(){$('#fc',el).classList.add('on')},60)}}
+  show()}};
+function guide(list,secs,doneMsg){return function(el){
+  el.innerHTML='<div class="mv" id="mv"><span class="e">'+list[0][0]+'</span><h3>Ready?</h3><p>'+list.length+' moves, '+secs+' seconds each. Follow along.</p><div class="row c"><button class="btn" id="mg" type="button">Start</button></div></div>';
+  $('#mg',el).onclick=function(){var k=0,t=0;
+    el.innerHTML='<div class="mv"><span class="e" id="me"></span><h3 id="mt"></h3><p id="md"></p><div class="sec" id="ms"></div></div><div class="bar"><i id="mb"></i></div><div class="dots" id="mdo">'+list.map(function(){return '<i></i>'}).join('')+'</div>';
+    function step(){var m=list[k];$('#me',el).textContent=m[0];$('#me',el).style.animation='none';void $('#me',el).offsetWidth;$('#me',el).style.animation='';$('#mt',el).textContent=m[1];$('#md',el).textContent=m[2];$$('#mdo i',el).forEach(function(d,j){d.classList.toggle('on',j<=k)});t=secs;tone(523,.3,'sine',.06)}
+    step();var id=every(function(){t--;$('#ms',el).textContent=t;$('#mb',el).style.width=((k*secs+(secs-t))/(list.length*secs)*100)+'%';
+      if(t<=0){k++;if(k>=list.length){clearInterval(id);chime();confetti(el);el.innerHTML='<p class="ok"><span class="big">✓</span><br>'+doneMsg+'</p>';return}step()}},1000);$('#ms',el).textContent=secs}}}
+A.stretch={t:'2-minute stretch',e:'🧘',d:'Five gentle moves to wake up a tired body. Move slowly and stop if anything hurts.',run:guide(STRETCH,20,'Done. Your body has more blood flowing now. Drink some water too.')};
+A.energy={t:'60-second energy burst',e:'⚡',d:"Six quick moves, 10 seconds each. It's the fastest way to wake up without coffee.",run:guide(ENERGY,10,'Heart rate up, brain awake. Notice the difference?')};
+A.nap={t:'Power nap',e:'💤',d:"A short nap gives you energy without the grogginess. Keep this page open; it'll chime to wake you.",run:function(el){
+  el.innerHTML='<div class="center"><span style="font-size:52px">💤</span><h3 style="margin:8px 0">How long?</h3><p class="dim" style="margin:0 0 12px">20 minutes or less, so you wake up fresh. Set a phone alarm too, just in case.</p><div class="chips" style="justify-content:center"><button class="chip" data-m="10" type="button">10 min</button><button class="chip" data-m="15" type="button">15 min</button><button class="chip" data-m="20" type="button">20 min</button></div></div>';
+  $$('.chip',el).forEach(function(b){b.onclick=function(){var m=+b.dataset.m;ac();
+    el.innerHTML='<div class="center"><p class="dim" style="margin:0">Close your eyes. Let your thoughts drift.</p><div id="rt"></div><button class="btn ghost" id="st" type="button">Wake up early</button></div>';
+    var tm=ringTimer($('#rt',el),m*60,function(){chime();later(chime,1500);later(chime,3000);el.innerHTML='<p class="ok">☀️ Time to wake up, gently.<br><span class="dim">Sit up slowly, stretch, and drink a glass of water.</span></p>'});
+    $('#st',el).onclick=function(){tm.stop();el.innerHTML='<p class="ok">☀️ Welcome back. Stretch and drink some water.</p>'}}})}};
+A.onething={t:'Just one thing',e:'☝️',d:"When everything feels like too much, you don't need a plan. You need one thing, and one small first step.",run:function(el){
+  el.innerHTML='<p style="margin:0 0 10px">List everything on your plate, <b>one per line</b>.</p><textarea id="ol" rows="6" placeholder="Marketing assignment&#10;Update CV&#10;Call bank&#10;Prepare for Friday\'s test" aria-label="Your tasks"></textarea><div class="row"><button class="btn" id="on" type="button">Next →</button></div>';
+  $('#on',el).onclick=function(){var t=$('#ol',el).value.split('\n').map(function(x){return x.trim()}).filter(Boolean);if(!t.length){$('#ol',el).focus();return}
+    el.innerHTML='<p style="margin:0 0 4px">Now pick <b>just ONE</b>. The one that would bring the most relief.</p><p class="dim" style="margin:0 0 12px;font-size:14px">Everything else can wait for the next 10 minutes.</p><div class="chips">'+t.map(function(x,i){return '<button class="chip" type="button" data-i="'+i+'">'+esc(x)+'</button>'}).join('')+'</div>';
+    $$('.chip',el).forEach(function(b){b.onclick=function(){var task=t[+b.dataset.i];blip();
+      el.innerHTML='<p style="margin:0 0 4px">Your one thing: <b>'+esc(task)+'</b></p><p class="dim" style="margin:0 0 10px">What\'s the very first step? Make it tiny, under 2 minutes. Like "open the file".</p><input type="text" id="fs" placeholder="My first tiny step is…" aria-label="First step"><div class="row"><button class="btn" id="fg" type="button">Start a 10-minute focus</button></div>';
+      $('#fg',el).onclick=function(){var st=$('#fs',el).value.trim()||'Just begin';
+        el.innerHTML='<div class="center"><p style="margin:0">☝️ <b>'+esc(task)+'</b></p><p class="dim" style="margin:4px 0 0">Start with: '+esc(st)+'</p><div id="rt"></div><button class="btn ghost" id="fe" type="button">I finished early</button></div>';
+        function fin(){chime();confetti(el);el.innerHTML='<p class="ok"><span class="big">✓</span><br>10 focused minutes on <b>'+esc(task)+'</b>.<br><span class="dim">The mountain is one step smaller. Keep going, or take a 5-minute break.</span></p>'}
+        var tm=ringTimer($('#rt',el),600,fin);$('#fe',el).onclick=function(){tm.stop();fin()}}}})}}};
+A.letters={t:'Letters for you',e:'💌',d:'Open a short letter from Dr. Lehri. Then, if you like, write one to your future self.',run:function(el){
+  var pool=shuffle(LETTERS.slice()),i=0;
+  function closed(){el.innerHTML='<div class="center"><button class="env" id="ev" type="button" aria-label="Open the letter"></button><p class="dim">Tap to open</p></div>';$('#ev',el).onclick=open}
+  function open(){tone(660,.3,'triangle',.05);el.innerHTML='<div class="letter">'+esc(pool[i])+'<span class="sig">Dr. Lehri</span></div><div class="row c"><button class="btn ghost" id="an" type="button">Open another</button><button class="btn" id="wf" type="button">✍️ Write to future me</button></div>';
+    $('#an',el).onclick=function(){i=(i+1)%pool.length;closed()};$('#wf',el).onclick=write}
+  function write(){el.innerHTML='<p style="margin:0 0 10px">Write a short letter to yourself. It will be waiting for you the next time you visit.</p><textarea id="fl" rows="5" placeholder="Dear me, by the time you read this…" aria-label="Letter to future you"></textarea><div class="row"><button class="btn" id="fsv" type="button">Seal the letter 💌</button></div>';
+    $('#fsv',el).onclick=function(){var v=$('#fl',el).value.trim();if(!v){$('#fl',el).focus();return}store.set('future',{t:v,d:today(),shown:false});chime();el.innerHTML='<p class="ok">💌 Sealed. Future you will find it on a later visit.</p>'}}
+  closed()}};
+function msgAct(kind,intro){return function(el){
+  var list=MSGS[kind];
+  el.innerHTML='<p style="margin:0 0 10px">'+intro+'</p><div class="chips" id="mc">'+list.map(function(m,i){return '<button class="chip" type="button" data-i="'+i+'">'+esc(m)+'</button>'}).join('')+'</div><textarea id="mt" rows="3" style="margin-top:12px" aria-label="Your message"></textarea><div class="row"><a class="btn" id="wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a><button class="btn ghost" id="cp" type="button">Copy</button></div>';
+  var mt=$('#mt',el);function set(i){mt.value=list[i];$$('#mc .chip',el).forEach(function(c){c.classList.toggle('on',+c.dataset.i===i)});upd()}
+  function upd(){$('#wa',el).href='https://wa.me/?text='+encodeURIComponent(mt.value)}
+  $$('#mc .chip',el).forEach(function(c){c.onclick=function(){set(+c.dataset.i)}});mt.oninput=upd;set(0);
+  $('#wa',el).addEventListener('click',function(){var k=store.get('sent',0)+1;store.set('sent',k);later(function(){el.insertAdjacentHTML('beforeend','<p class="ok" style="padding:14px 0 0">💚 Sent. Small messages like this keep friendships alive.</p>')},300)});
+  $('#cp',el).onclick=function(){var b=this;try{navigator.clipboard.writeText(mt.value).then(function(){b.textContent='Copied ✓'})}catch(e){mt.select();document.execCommand('copy');b.textContent='Copied ✓'}}}}
+A.reach={t:'Reach out',e:'📱',d:'Pick a ready message, edit it if you like, and send it to one person. You choose who in WhatsApp.',run:msgAct('reach','Think of one person you haven\'t spoken to in a while. Pick a message:')};
+A.thanks={t:'Say thank you',e:'🙏',d:'Happy moods grow when you share them. Send a quick thank-you to someone who helped you.',run:msgAct('thanks','Who made your life a little better recently? Pick a message for them:')};
+A.lane={t:'Your own lane',e:'🛤️',d:"Social media shows other people's highlight reels. This shows yours. Answer three quick questions.",run:function(el){
+  var Q=['Something you can do today that you couldn\'t do a year ago','A problem you handled recently, big or small','Someone who would say you helped them'];
+  el.innerHTML=Q.map(function(q,i){return '<label style="display:block;margin-bottom:12px"><span style="display:block;font-weight:700;margin-bottom:6px">'+(i+1)+'. '+q+'</span><input type="text" data-i="'+i+'"></label>'}).join('')+'<div class="row"><button class="btn" id="lg" type="button">Show my lane</button></div>';
+  $('#lg',el).onclick=function(){var v=$$('input',el).map(function(x){return x.value.trim()});if(!v.some(Boolean)){$$('input',el)[0].focus();return}
+    var days=Object.keys(store.get('days',{})).length,lifts=store.get('lifts',0);chime();
+    el.innerHTML='<div class="lane"><h3>My own lane</h3><ul>'+v.map(function(x,i){return x?'<li><b>'+['Grown:','Handled:','Helped:'][i]+'</b> '+esc(x)+'</li>':''}).join('')+'</ul>'+(days>1?'<p class="dim" style="margin:10px 0 0">You\'ve also checked in on yourself on '+days+' days'+(lifts?' and lifted your own mood '+lifts+' times':'')+'. That\'s growth too.</p>':'')+'<p style="margin:14px 0 0">The only fair comparison is <b>you, last month</b>. Everyone else is running a different race.</p></div>'}}};
+A.jar={t:'Good days jar',e:'🫙',d:'Drop today\'s win into your jar. On a bad day, come back and read it.',run:function(el){
+  var wins=store.get('wins',[]),C=['#6FC3B2','#F5B942','#FF8A7A','#9b8cff','#7BD88F','#F48FB1'];
+  function draw(anim){el.innerHTML='<div class="jar" id="jr">'+wins.map(function(w,i){return '<i style="background:'+C[i%C.length]+(anim&&i===wins.length-1?'':';animation:none')+'"></i>'}).join('')+'</div><p class="center dim" style="margin:0 0 12px">'+wins.length+' good thing'+(wins.length===1?'':'s')+' saved</p><div style="display:flex;gap:8px"><input type="text" id="jw" placeholder="Today something good was…" aria-label="Your win"><button class="btn" id="ja" type="button">Drop it in</button></div>'+(wins.length?'<ul class="wins">'+wins.slice(-5).reverse().map(function(w){return '<li><small>'+esc(w.d)+'</small>'+esc(w.t)+'</li>'}).join('')+'</ul>':'');
+    var jw=$('#jw',el);function add(){var v=jw.value.trim();if(!v){jw.focus();return}wins.push({t:v,d:today()});if(wins.length>200)wins.shift();store.set('wins',wins);tone(988,.3,'sine',.06);confetti(el);draw(true)}
+    $('#ja',el).onclick=add;jw.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();add()}}}
+  draw(false)}};
+A.sos={t:'Right now',e:'🤝',d:'',run:function(el){
+  el.innerHTML='<div class="sosbox"><h3>You don\'t have to handle this alone.</h3><p class="dim" style="max-width:52ch;margin:0 auto">Talking to someone helps, even if you don\'t know what to say. These numbers are free and open right now.</p><div class="calls"><a href="tel:14416">📞 14416<small>Tele-MANAS · 24×7, free</small></a><a class="alt" href="tel:112">🚨 112<small>Immediate danger</small></a></div><p style="max-width:52ch;margin:0 auto 16px">If you can, tell one person near you right now: a friend, a roommate, family, a warden or a teacher. Just say: <b>"I\'m not okay. Can you stay with me?"</b></p><button class="btn" id="sb" type="button">Breathe with me for a minute</button></div>';
+  $('#sb',el).onclick=function(){runAct('breathe')}}};
+
+var MOODS=[
+ {k:'angry',e:'😤',n:'Angry',s:'Frustrated, irritated',c:'#FF5A5F',l:"Let's get it out of your system.",a:['smash','shred','speed']},
+ {k:'anxious',e:'😟',n:'Anxious',s:'Nervous, restless',c:'#6FC3B2',l:"Let's slow everything down.",a:['breathe','ground','gradient']},
+ {k:'low',e:'😔',n:'Low',s:'Sad, down',c:'#8FA7FF',l:"Let's find one small lift.",a:['laugh','tinywin','riddles']},
+ {k:'overthinking',e:'🌀',n:'Overthinking',s:"Mind won't stop",c:'#B48CFF',l:"Let's get it out of your head.",a:['dump','memory','gradient']},
+ {k:'bored',e:'🥱',n:'Bored',s:'Unmotivated, meh',c:'#F5B942',l:"Let's find a spark.",a:['quiz','cards','riddles']},
+ {k:'tired',e:'😴',n:'Tired',s:'Drained, sleepy',c:'#7FB7BE',l:"Let's get some energy back.",a:['energy','stretch','nap']},
+ {k:'overwhelmed',e:'😵',n:'Overwhelmed',s:'Too much to do',c:'#FF8A5B',l:"Let's make it just one thing.",a:['onething','breathe','dump']},
+ {k:'lonely',e:'🫂',n:'Lonely',s:'Left out, alone',c:'#F48FB1',l:"Let's feel a little more connected.",a:['letters','reach','laugh']},
+ {k:'comparing',e:'📉',n:'Comparing myself',s:'Everyone is ahead',c:'#D9C27C',l:"Let's look at your own lane.",a:['lane','jar','tinywin']},
+ {k:'happy',e:'😄',n:'Happy',s:'Good day!',c:'#7BD88F',l:"Let's make it last.",a:['jar','thanks','quiz']},
+ {k:'sos',e:'🆘',n:'Really not okay',s:'I need help now',c:'#6FC3B2',l:'You matter. Support is one call away.',a:['sos','breathe']}
+];
+var MBY={};MOODS.forEach(function(m){MBY[m.k]=m});
+
+/* ---------- state + UI ---------- */
+var cur={mood:null,act:null};
+function renderMoods(){$('#moods').innerHTML=MOODS.map(function(m){return '<button class="mood'+(m.k==='sos'?' sos':'')+'" type="button" data-k="'+m.k+'" style="--c:'+m.c+'"><span class="em">'+m.e+'</span><b>'+m.n+'</b><small>'+m.s+'</small></button>'}).join('');
+  $$('.mood').forEach(function(b){b.onclick=function(){ac();chooseMood(b.dataset.k)}})}
+function streak(){var d=store.get('days',{}),n=0,o=d[today()]?0:1;while(d[today(o+n)])n++;return n}
+function renderStats(){var d=store.get('days',{}),lifts=store.get('lifts',0),n=streak(),wk='';
+  for(var i=6;i>=0;i--){var m=d[today(i)];wk+='<i'+(i===0?' class="today"':'')+' title="'+today(i)+'">'+(m&&MBY[m]?MBY[m].e:'·')+'</i>'}
+  $('#stats').innerHTML='<div class="stat"><b>'+n+'</b><span>day'+(n===1?'':'s')+' in a row<br>checking in</span></div><div class="stat"><b>'+lifts+'</b><span>times your mood<br>got better here</span></div><div class="stat"><div class="week" aria-label="Your last 7 days">'+wk+'</div></div>'}
+function showPastLetter(){var f=store.get('future',null);if(!f||f.d===today())return;$('#pastLetter').innerHTML='<div class="letter-back">💌 <b>A letter from your past self</b> ('+esc(f.d)+'):<br>'+esc(f.t)+'</div>';if(!f.shown){f.shown=true;store.set('future',f)}}
+function chooseMood(k){var m=MBY[k];cur.mood=k;
+  var d=store.get('days',{});d[today()]=k;var keys=Object.keys(d).sort();while(keys.length>120){delete d[keys.shift()]}store.set('days',d);renderStats();
+  $$('.mood').forEach(function(b){b.classList.toggle('on',b.dataset.k===k)});
+  var st=$('#stage');st.hidden=false;st.style.setProperty('--acc',m.c);document.documentElement.style.setProperty('--acc',m.c);
+  $('#sEm').textContent=m.e;$('#sName').textContent=m.n;$('#sLine').textContent=m.l;
+  $('#tabs').innerHTML=m.a.length>1?m.a.map(function(a){return '<button class="tab" role="tab" type="button" data-a="'+a+'"><span>'+A[a].e+'</span>'+A[a].t+'</button>'}).join(''):'';
+  $$('#tabs .tab').forEach(function(t){t.onclick=function(){runAct(t.dataset.a)}});
+  var rot=store.get('rot',{}),idx=(rot[k]||0)%m.a.length;if(k==='sos')idx=0;rot[k]=idx+1;store.set('rot',rot);
+  runAct(m.a[idx]);
+  setTimeout(function(){st.scrollIntoView({behavior:'smooth',block:'start'})},60)}
+function runAct(a){clearLife();cur.act=a;var act=$('#act');act.innerHTML='';$('#feel').innerHTML='';$('#done').hidden=false;
+  $$('#tabs .tab').forEach(function(t){t.classList.toggle('on',t.dataset.a===a);t.setAttribute('aria-selected',t.dataset.a===a)});
+  $('#adesc').textContent=A[a].d;$('#adesc').hidden=!A[a].d;A[a].run(act)}
+function feelCheck(){$('#done').hidden=true;var f=$('#feel');
+  f.innerHTML='<div class="feel"><h3>How do you feel now, compared to before?</h3><div class="fbtns"><button class="fbtn" data-r="better" type="button"><span>😊</span>Better</button><button class="fbtn" data-r="same" type="button"><span>😐</span>About the same</button><button class="fbtn" data-r="worse" type="button"><span>😕</span>Worse</button></div></div>';
+  $$('.fbtn',f).forEach(function(b){b.onclick=function(){record(b.dataset.r)}});f.scrollIntoView({behavior:'smooth',block:'nearest'})}
+function record(r){var h=store.get('hist',[]);h.push({d:today(),m:cur.mood,a:cur.act,r:r});if(h.length>300)h=h.slice(-300);store.set('hist',h);
+  var lifts=store.get('lifts',0);if(r==='better'){lifts++;store.set('lifts',lifts)}renderStats();
+  var m=MBY[cur.mood],others=m.a.filter(function(x){return x!==cur.act}),nxt=others.length?others[0]:null,msg;
+  if(r==='better'&&cur.mood==='sos'){msg='I\'m glad it eased a little. Please still reach out to someone today, a friend, family or <b>14416</b>. You deserve support, not just a minute of calm.'}
+  else if(r==='better'){chime();confetti($('#act'));msg='That\'s a win. Your mood has lifted <b>'+lifts+'</b> time'+(lifts===1?'':'s')+' here. Come back tomorrow and keep the streak going.'}
+  else if(r==='same'){msg='That\'s okay. Some feelings need more than one try. Want to try something different?'}
+  else{msg='Thank you for being honest. Let\'s try something else. And if it keeps getting heavier, please talk to someone: call <b>14416</b> (free, 24×7).'}
+  var serious=(r!=='better'||cur.mood==='sos')&&(cur.mood==='low'||cur.mood==='lonely'||cur.mood==='anxious'||cur.mood==='sos');
+  $('#feel').innerHTML='<div class="feel"><p class="msg">'+msg+'</p><div class="row c">'+(nxt?'<button class="btn" id="fn" type="button">'+A[nxt].e+' Try '+A[nxt].t+'</button>':'')+(serious?'<a class="btn ghost" href="tel:14416">📞 Call 14416</a>':'')+'<button class="btn ghost" id="fm" type="button">Pick another mood</button></div></div>';
+  if(nxt)$('#fn').onclick=function(){runAct(nxt);$('#stage').scrollIntoView({behavior:'smooth',block:'start'})};
+  $('#fm').onclick=function(){window.scrollTo({top:$('#moods').getBoundingClientRect().top+scrollY-90,behavior:'smooth'})}}
+
+$('#done').onclick=feelCheck;
+$('#change').onclick=function(){clearLife();$('#stage').hidden=true;$$('.mood').forEach(function(b){b.classList.remove('on')});window.scrollTo({top:$('#moods').getBoundingClientRect().top+scrollY-90,behavior:'smooth'})};
+function sndLabel(){$('#sound').textContent=soundOn?'🔊 Sound':'🔇 Muted'}
+$('#sound').onclick=function(){soundOn=!soundOn;store.set('snd',soundOn);sndLabel();if(soundOn)blip()};sndLabel();
+renderMoods();renderStats();showPastLetter();
+function fromHash(){var q=location.hash.replace('#','');if(MBY[q])chooseMood(q)}fromHash();window.addEventListener('hashchange',fromHash);
+})();
+</script>
+</body>
+</html>
