@@ -423,6 +423,24 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .mrb b{font-family:var(--mono);font-size:12.5px;text-align:right}
 @media (max-width:640px){.mrb{grid-template-columns:110px 1fr 40px}.crow{flex-direction:row!important;flex-wrap:wrap;align-items:center!important}.crow textarea{flex:1 1 100%!important;order:-1}.crow .btn{flex:1;justify-content:center}}
 @media print{.mic,.mset,.mmeter{display:none!important}}
+/* role-based rounds + Hinglish + generic checker */
+.lrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:2px 0 14px}.lrow small{font-size:12.5px;color:var(--dim);flex:1;min-width:200px}
+.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px}
+.rpick{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;border-radius:14px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer;text-align:left;font:inherit}
+.rpick b{font-size:13.5px}.rpick small{font-size:11.5px;color:var(--dim);line-height:1.35}
+.rpick.on{border-color:var(--red);background:linear-gradient(150deg,rgba(227,22,30,.18),var(--bg2));box-shadow:0 0 0 1px var(--red) inset}
+.rpick .rnew{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--red2)}
+.rdesc{font-size:13px;color:var(--muted);margin:0 0 12px;padding:9px 12px;border-left:3px solid var(--red);background:rgba(255,255,255,.02);border-radius:0 10px 10px 0}
+.cmsg .ql{white-space:pre-line}.cmsg .gdl{display:block;margin:3px 0}.cmsg .gdl b{color:var(--red2)}
+.cmsg .gdl.mod{color:var(--muted);font-style:italic;margin-top:6px}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.genlive{margin-top:8px;font-size:13px;color:var(--amber);line-height:1.5}.genlive q{color:var(--ink);font-weight:700}
+.gmeter{display:grid;gap:6px}.gmeter .gbar{height:10px;border-radius:6px;background:linear-gradient(90deg,#4ade80,var(--amber) 55%,var(--red));position:relative}
+.gmeter .gpin{position:absolute;top:-4px;width:4px;height:18px;border-radius:3px;background:var(--ink);box-shadow:0 0 0 2px var(--bg2)}
+.gmeter .gends{display:flex;justify-content:space-between;font-size:11.5px;color:var(--dim)}
+.gcl{display:grid;gap:6px}.gcl div{font-size:14px;line-height:1.5}.gcl s{color:var(--red2);text-decoration-thickness:1px}.gcl em{font-style:normal;color:#4ade80}
+@media (max-width:640px){.rgrid{grid-template-columns:repeat(2,1fr)}}
+@media print{.rgrid,.rdesc,.lrow{display:none!important}}
 
 /* ===== placement theme ===== */
 .hero>.wrap{position:relative;z-index:1}.hero{padding-bottom:70px}
@@ -692,6 +710,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div class="chead"><span class="cbadge">✨ AI Coach</span><h3>Practise with your <em>AI coach</em></h3></div>
       <p class="sub">Personal practice for <b id="cCo">this company</b>. Replies take about 10 seconds. The coach can make mistakes, so check facts before you use them.</p>
       <div class="qtabs" id="cTabs"><button type="button" class="on" data-m="q">🎯 My likely questions</button><button type="button" data-m="r">📝 Rate my answer</button><button type="button" data-m="m">🎤 Mock interview</button></div>
+      <div class="lrow"><label class="tog"><input type="checkbox" id="cHing"><span>🇮🇳 Hinglish practice</span></label><small id="cHingNote">Answer in English. Turn this on to speak or type in Hinglish; the coach replies in Hinglish but always shows the polished English version to use in the real interview.</small></div>
 
       <div class="cpane" data-p="q">
         <label class="clab" for="cProfile">Tell the coach about you (optional)</label>
@@ -704,15 +723,27 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <label class="clab" for="cA">Your answer</label>
         <div class="crow"><button class="mic" id="rMic" type="button" aria-label="Answer by voice" aria-pressed="false">🎤</button><textarea id="cA" rows="5" placeholder="Tap 🎤 and say your answer out loud, or type it"></textarea></div>
         <div class="mmeter" id="rMeter" hidden></div>
+        <div class="genlive" id="genLive" hidden></div>
         <p class="note" id="rNote" hidden>Voice answers work in Chrome or Edge. On this browser, type your answer.</p>
-        <button class="btn red" id="cRGo" type="button">Rate my answer →</button>
+        <div class="btnrow"><button class="btn red" id="cRGo" type="button">Rate my answer →</button><button class="btn" id="cGGo" type="button">🧪 Is my answer generic?</button></div>
       </div>
       <div class="cpane" data-p="m" hidden>
         <div class="mset">
           <label class="tog"><input type="checkbox" id="mSpeak" checked><span>🔊 Interviewer speaks</span></label>
           <label class="tog"><input type="checkbox" id="mAuto"><span>🎧 Hands-free</span></label>
-          <select id="mType" aria-label="Interview round"><option value="mixed">Mixed round</option><option value="HR and behavioural">HR round</option><option value="role skills and technical">Role / technical round</option><option value="company knowledge and business awareness">Company knowledge round</option><option value="case and guesstimate">Case / guesstimate round</option></select>
+          <select id="mType" aria-label="Interview round" hidden><option value="mixed">Mixed round</option><option value="HR and behavioural">HR round</option><option value="role skills and technical">Role skills round</option><option value="company knowledge and business awareness">Company knowledge round</option><option value="sales">Sales role-play</option><option value="gd">Group discussion</option><option value="guess">Guesstimate</option><option value="case">Business case</option></select>
         </div>
+        <div class="rgrid" id="mRounds" role="radiogroup" aria-label="Choose your round">
+          <button type="button" class="rpick on" data-r="mixed" role="radio" aria-checked="true"><b>🎯 Mixed</b><small>HR + role + company</small></button>
+          <button type="button" class="rpick" data-r="HR and behavioural" role="radio" aria-checked="false"><b>🙋 HR round</b><small>Tell me about yourself, strengths</small></button>
+          <button type="button" class="rpick" data-r="role skills and technical" role="radio" aria-checked="false"><b>🧠 Role skills</b><small>Marketing, finance, HR, ops</small></button>
+          <button type="button" class="rpick" data-r="company knowledge and business awareness" role="radio" aria-checked="false"><b>🏢 Company round</b><small>How well you know them</small></button>
+          <button type="button" class="rpick" data-r="sales" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>🤝 Sales role-play</b><small>Sell to a tough customer</small></button>
+          <button type="button" class="rpick" data-r="gd" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>👥 Group discussion</b><small>GD with 3 other students</small></button>
+          <button type="button" class="rpick" data-r="guess" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>🔢 Guesstimate</b><small>Step-by-step market sizing</small></button>
+          <button type="button" class="rpick" data-r="case" role="radio" aria-checked="false"><span class="rnew">NEW</span><b>📊 Business case</b><small>Clarify, structure, recommend</small></button>
+        </div>
+        <p class="rdesc" id="mDesc"></p>
         <div class="chat" id="cChat"></div>
         <div class="mmeter" id="mMeter" hidden></div>
         <div class="crow"><button class="mic" id="mMic" type="button" aria-label="Answer by voice" aria-pressed="false">🎤</button><textarea id="cMsg" rows="3" placeholder="Tap 🎤 and speak, or type your answer…" disabled></textarea><button class="btn red" id="cSend" type="button">Start interview →</button></div>
@@ -744,7 +775,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   <div class="cvres" id="cvRes" hidden></div>
 </div></div></div>
 <div class="pov" id="planOv" hidden><div class="pov-bar"><b>⭐ Premium plans</b><span class="pov-sp"></span><button type="button" class="btn" data-pclose>✕ Close</button></div><div class="pov-body"><div class="plans">
-  <div class="plan"><span class="pn">Drive Day Pass</span><b>₹29</b><small>24 hours of everything. Perfect the night before an interview.</small><ul><li>Unlimited Interview Kits</li><li>CV × Job Match</li><li>Unlimited voice mock interviews</li></ul></div>
+  <div class="plan"><span class="pn">Drive Day Pass</span><b>₹29</b><small>24 hours of everything. Perfect the night before an interview.</small><ul><li>Unlimited Interview Kits</li><li>CV × Job Match</li><li>Unlimited voice mock interviews: HR, sales role-play, GD, guesstimate and case rounds</li></ul></div>
   <div class="plan best"><span class="pbadge">Most popular</span><span class="pn">Monthly</span><b>₹99<i>/month</i></b><small>For students with several interviews coming up.</small><ul><li>Everything in Day Pass</li><li>Readiness meter for every company</li><li>“What did they ask?” from seniors</li><li>24-hour drive plan</li></ul></div>
   <div class="plan"><span class="pn">Placement Season</span><b>₹249<i>/3 months</i></b><small>The whole placement season, best value.</small><ul><li>Everything in Monthly</li><li>GD &amp; case practice</li><li>Priority new features</li></ul></div>
   <p class="plannote">💳 UPI, cards and net banking via Razorpay, launching soon. During the demo, premium tools are free to try.</p>
@@ -1625,7 +1656,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     function paint(){if(!meter)return;var s=self.secs(),m=metrics(box.value,s,'voice');meter.hidden=false;
       meter.innerHTML='<span class="rec"></span> Listening… <b>'+Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')+'</b> · '+m.words+' words'+(m.wpm?' · '+m.wpm+' wpm':'')+' · fillers '+m.fcount;
       if(onSilence&&lastHeard&&Date.now()-lastHeard>3500&&m.words>4){self.stop();onSilence();}}
-    this.start=function(){if(!SR||on)return;rec=new SR();rec.lang='en-IN';rec.continuous=true;rec.interimResults=true;base=box.value.trim();finalTxt='';
+    this.start=function(){if(!SR||on)return;rec=new SR();rec.lang=hing()?'hi-IN':'en-IN';rec.continuous=true;rec.interimResults=true;base=box.value.trim();finalTxt='';
       rec.onresult=function(e){var interim='';for(var i=e.resultIndex;i<e.results.length;i++){var t=e.results[i][0].transcript;if(e.results[i].isFinal)finalTxt+=t+' ';else interim+=t;}
         box.value=(base?base+' ':'')+(finalTxt+interim).replace(/\s+/g,' ').trim();lastHeard=Date.now();box.scrollTop=box.scrollHeight;};
       rec.onerror=function(e){if(e.error==='not-allowed'||e.error==='service-not-allowed'){toast('Allow microphone access to answer by voice 🎤');self.stop();}};
@@ -1643,6 +1674,33 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function ctxNow(){return lastData?buildContext(lastData).slice(0,1500):'';}
   function coName(){return (lastData&&lastData.summary&&lastData.summary.title)||co.value.trim()||'this company';}
   function roleName(){return role.value.trim()||'Management Trainee';}
+  function hing(){var c=$('cHing');return !!(c&&c.checked);}
+  function lang(){return hing()?'hinglish':'english';}
+  /* role-based rounds */
+  var RD={
+    'mixed':{n:6,tag:'Question',rep:'Interview report',d:'A real interviewer from {C} asks 6 questions mixing HR, your role and the company. Feedback after every answer.'},
+    'HR and behavioural':{n:6,tag:'Question',rep:'HR round report',d:'Classic HR questions: tell me about yourself, strengths and weaknesses, why {C}, where in 5 years. Use STAR stories with numbers.'},
+    'role skills and technical':{n:6,tag:'Question',rep:'Role round report',d:'Questions on the real work of a {R} at {C}: concepts, KPIs and situations you would handle in the first 90 days.'},
+    'company knowledge and business awareness':{n:6,tag:'Question',rep:'Company round report',d:'How well do you know {C}? Products, numbers, competitors, recent news and strategy. Read the briefing above first.'},
+    'sales':{n:5,tag:'Customer says',rep:'Sales role-play report',d:'You are the salesperson. The coach plays a busy Indian customer of {C} (a shopkeeper, dealer or buyer) who raises real objections. Ask questions first, show value with numbers, handle each objection, then ask for the order.'},
+    'gd':{n:4,tag:'GD turn',rep:'Group discussion report',d:'A GD with three other students (Riya, Arjun and Kabir) and a moderator. Read what they say, then add a NEW point, build on or counter someone by name, use a fact, and keep it under a minute. The last turn asks you to summarise.'},
+    'guess':{n:4,tag:'Step',rep:'Guesstimate report',d:'One guesstimate linked to {C}, solved in 4 steps: clarify and approach, structure, numbers, then sanity check. Say every assumption out loud, and round the maths.'},
+    'case':{n:5,tag:'Case step',rep:'Business case report',d:'A short business case about {C} or its industry. Ask clarifying questions, give a framework that fits, ask for data, then give a crisp recommendation with risks.'}
+  };
+  var SL={content:'Content',structure:'Structure',company_fit:'Company & role fit',communication:'Communication',needs_discovery:'Asking questions',value_pitch:'Value pitch',objection_handling:'Objection handling',closing:'Closing',initiative_leadership:'Initiative & leadership',listening_building:'Building on others',assumptions:'Assumptions',maths:'Maths',sanity_check:'Sanity check',clarifying:'Clarifying questions',framework:'Framework',analysis:'Analysis',recommendation:'Recommendation'};
+  function curRound(){return $('mType').value||'mixed';}
+  function rInfo(){return RD[curRound()]||RD.mixed;}
+  function paintRound(){var r=rInfo();$('mDesc').textContent=r.d.replace(/\{C\}/g,coName()).replace(/\{R\}/g,roleName());}
+  [].forEach.call(d.querySelectorAll('#mRounds .rpick'),function(b){b.addEventListener('click',function(){
+    if(typeof started!=='undefined'&&started&&!confirm('Stop this interview and switch rounds?'))return;
+    $('mType').value=b.getAttribute('data-r');
+    [].forEach.call(d.querySelectorAll('#mRounds .rpick'),function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-checked',on?'true':'false');});
+    paintRound();if(typeof started!=='undefined'&&started){started=false;mBusy=false;try{speechSynthesis.cancel();}catch(e){}dictM.reset();send.textContent='Start '+(curRound()==='gd'?'GD':curRound()==='sales'?'role-play':'round')+' →';send.disabled=false;msg.disabled=true;}
+    else if(typeof send!=='undefined'&&!started)send.textContent='Start '+(curRound()==='gd'?'GD':curRound()==='sales'?'role-play':'round')+' →';
+  });});
+  $('cHing').addEventListener('change',function(){$('cHingNote').textContent=hing()?'Hinglish is on. Speak or type the way you think, e.g. "Maine internship mein 40 retailers handle kiye". The coach replies in Hinglish, and “Say it like this” always gives you the proper English version.':'Answer in English. Turn this on to speak or type in Hinglish; the coach replies in Hinglish but always shows the polished English version to use in the real interview.';
+    dictR.stop();if(typeof dictM!=='undefined')dictM.stop();toast(hing()?'🇮🇳 Hinglish practice on':'English practice on');});
+  paintRound();
 
   /* evaluation card (shared by Rate my answer + mock interview) */
   function evalCard(E,withNext){
@@ -1652,7 +1710,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     function blk(icon,title,body,cls){if(!body||(Array.isArray(body)&&!body.length))return;var b=el('div','evb '+(cls||''));b.appendChild(el('b',null,icon+' '+title));
       if(Array.isArray(body)){var u=el('ul');body.forEach(function(x){u.appendChild(el('li',null,String(typeof x==='string'?x:(x.issue||'')+(x.evidence?' — “'+x.evidence+'”':'')+(x.action?' → '+x.action:''))));});b.appendChild(u);}else b.appendChild(el('p',null,String(body)));c.appendChild(b);}
     blk('✅','What worked',E.worked,'ok');blk('🔧','Fix this',E.fix,'fx');blk('🎯','What the interviewer expected',E.missing,'fx');blk('🗣️','Your delivery',E.delivery,'dl');
-    if(E.better){var b=el('div','evb bt');b.appendChild(el('b',null,'💬 Say it like this'));b.appendChild(el('p',null,String(E.better)));var cp=el('button','btn sm','Copy');cp.type='button';cp.addEventListener('click',function(){try{navigator.clipboard.writeText(String(E.better));toast('Copied');}catch(x){}});b.appendChild(cp);c.appendChild(b);}
+    if(E.better){var b=el('div','evb bt');b.appendChild(el('b',null,hing()?'💬 Say it like this (in English)':'💬 Say it like this'));b.appendChild(el('p',null,String(E.better)));var cp=el('button','btn sm','Copy');cp.type='button';cp.addEventListener('click',function(){try{navigator.clipboard.writeText(String(E.better));toast('Copied');}catch(x){}});b.appendChild(cp);c.appendChild(b);}
     return c;
   }
   /* ---------- Rate my answer (voice or typed) ---------- */
@@ -1661,11 +1719,41 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     if(a.split(/\s+/).length<8){toast('Say or write a little more of your answer first ✍️');$('cA').focus();return;}
     var m=dictR.used?metrics(a,dictR.secs(),'voice'):null;
     showOut(thinking());
-    postAI({task:'evaluate',company:coName(),role:roleName(),context:ctxNow(),question:q||'Tell me about yourself',text:a,m:m}).then(function(j){
+    postAI({task:'evaluate',company:coName(),role:roleName(),context:ctxNow(),question:q||'Tell me about yourself',text:a,m:m,lang:lang()}).then(function(j){
       if(!j||!j.ok||!j.data){result(j&&j.error?j.error:'The coach is busy. Please try again in a minute.');return;}
       var w=el('div');w.appendChild(evalCard(j.data));var again=el('button','btn','↺ Try the answer again');again.type='button';again.style.marginTop='10px';again.addEventListener('click',function(){$('cA').value='';dictR.reset();$('cA').focus();cOut.hidden=true;});w.appendChild(again);showOut(w);
     }).catch(function(){result('Could not reach the coach. Check your internet and try again.');});}
   $('cRGo').addEventListener('click',goR);
+  /* ---------- "Is my answer generic?" : instant free check + AI rewrite ---------- */
+  var CLICHE=['hard ?working','hard worker','team player','passionate','dynamic','reputed (?:company|organi[sz]ation|brand)','learn and grow','grow (?:with|along with) the (?:company|organi[sz]ation)','good work culture','great work culture','growth opportunit(?:y|ies)','quick learner','fast learner','perfectionist','people person','leading (?:company|brand|player)','market leader','think out of the box','out of the box','result[- ]oriented','self[- ]motivated','fast[- ]paced','best in the industry','excellent communication skills?','good communication skills?','great brand','work[- ]life balance','add value','leverage my skills','contribute to the growth','challenging (?:role|environment)','achieve my goals','dream company','i am very honest','multitasking','go[- ]getter','exposure','huge brand','well[- ]known company'];
+  var CLRE=new RegExp('\\b(?:'+CLICHE.join('|')+')\\b','gi');
+  function clichesIn(t){var f={};(String(t).match(CLRE)||[]).forEach(function(x){f[x.toLowerCase()]=1;});return Object.keys(f);}
+  function liveGen(){var a=$('cA').value,c=clichesIn(a),g=$('genLive');if(!c.length||a.split(/\s+/).length<6){g.hidden=true;return;}
+    g.hidden=false;g.innerHTML='⚠️ Sounds like every other candidate: '+c.slice(0,5).map(function(x){return '<q>'+esc(x)+'</q>';}).join(', ')+'. Tap <b>🧪 Is my answer generic?</b> to make it about you and '+esc(coName())+'.';}
+  $('cA').addEventListener('input',liveGen);
+  function genCard(G,a){
+    var c=el('div','ev');var sc=Math.max(0,Math.min(100,+G.generic_score||0));
+    var top=el('div','evtop');top.appendChild(el('span','evscore '+(sc<=35?'hi':sc<=65?'mid':'lo'),sc+'% generic'));top.appendChild(el('span','evv',String(G.label||'')));c.appendChild(top);
+    var gm=el('div','gmeter');var bar=el('div','gbar');var pin=el('span','gpin');pin.style.left='calc('+sc+'% - 2px)';bar.appendChild(pin);gm.appendChild(bar);var ge=el('div','gends');ge.appendChild(el('span',null,'Only you could say this'));ge.appendChild(el('span',null,'Anyone could say this'));gm.appendChild(ge);c.appendChild(gm);
+    if(G.why){var w=el('div','evb');w.appendChild(el('b',null,'🔎 Why'));w.appendChild(el('p',null,String(G.why)));c.appendChild(w);}
+    var cl=(G.cliches||[]).filter(function(x){return x&&(x.phrase||typeof x==='string');});
+    if(!cl.length)cl=clichesIn(a).map(function(x){return {phrase:x,replace_with:''};});
+    if(cl.length){var b=el('div','evb fx');b.appendChild(el('b',null,'🚫 Generic phrases → ✅ say this instead'));var g=el('div','gcl');
+      cl.slice(0,5).forEach(function(x){var r=el('div');r.appendChild(el('s',null,'“'+String(x.phrase||x)+'”'));if(x.replace_with){r.appendChild(d.createTextNode(' → '));r.appendChild(el('em',null,String(x.replace_with)));}g.appendChild(r);});b.appendChild(g);c.appendChild(b);}
+    if(G.add&&G.add.length){var b2=el('div','evb ok');b2.appendChild(el('b',null,'➕ Add these to make it yours'));var u=el('ul');G.add.forEach(function(x){u.appendChild(el('li',null,String(x)));});b2.appendChild(u);c.appendChild(b2);}
+    if(G.specific_version){var bt=el('div','evb bt');bt.appendChild(el('b',null,'💬 Specific version'+(hing()?' (in English)':'')));bt.appendChild(el('p',null,String(G.specific_version)));
+      var row=el('div','btnrow');var cp=el('button','btn sm','Copy');cp.type='button';cp.addEventListener('click',function(){try{navigator.clipboard.writeText(String(G.specific_version));toast('Copied');}catch(x){}});row.appendChild(cp);
+      var use=el('button','btn sm','✍️ Use this as my answer');use.type='button';use.addEventListener('click',function(){$('cA').value=String(G.specific_version);liveGen();$('cA').focus();cOut.hidden=true;toast('Now fill the [brackets] and say it out loud 🎤');});row.appendChild(use);bt.appendChild(row);c.appendChild(bt);}
+    return c;}
+  function goG(){var q=$('cQ').value.trim(),a=$('cA').value.trim();dictR.stop();
+    if(a.split(/\s+/).length<8){toast('Say or write a little more of your answer first ✍️');$('cA').focus();return;}
+    showOut(thinking());
+    postAI({task:'generic',company:coName(),role:roleName(),context:ctxNow(),question:q||'Why do you want to join us?',text:a,lang:lang()}).then(function(j){
+      if(!j||!j.ok||!j.data){var c=clichesIn(a);if(c.length){var w0=el('div');w0.appendChild(genCard({generic_score:Math.min(90,30+c.length*15),label:'Quick check (AI is busy)',why:'These phrases are used by most candidates. Replace each with a fact, a number or an example from your own life.'},a));showOut(w0);return;}
+        result(j&&j.error?j.error:'The coach is busy. Please try again in a minute.');return;}
+      var w=el('div');w.appendChild(genCard(j.data,a));showOut(w);
+    }).catch(function(){result('Could not reach the coach. Check your internet and try again.');});}
+  $('cGGo').addEventListener('click',goG);
   $('ratePitch').addEventListener('click',function(){
     setMode('r');$('cQ').value='Why do you want to join '+coName()+'?';$('cA').value=$('pitch').value;
     $('s-coach').scrollIntoView({behavior:'smooth',block:'start'});
@@ -1677,24 +1765,27 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   var dictM=new Dictate(msg,$('mMic'),$('mMeter'),function(){if($('mAuto').checked&&started&&!mBusy)send.click();});
   if(!SR){$('mNote').textContent='Voice answers work in Chrome or Edge on Android and laptops. On this browser, type your answers.';$('rNote').hidden=false;}
   function bubble(cls,node){var b=el('div','cmsg '+cls);if(typeof node==='string')b.textContent=node;else b.appendChild(node);chat.appendChild(b);chat.scrollTop=chat.scrollHeight;return b;}
-  function askQ(q){curQ=String(q);var n=el('div');n.appendChild(el('span','qtag','Question '+(turns+1)+' of '+TOTAL));n.appendChild(el('p',null,curQ));bubble('ai',n);
+  function qBody(q){var p=el('p','ql');var lines=String(q).split(/\n+/);var isGD=curRound()==='gd'&&lines.length>1;
+    if(!isGD){p.textContent=String(q);return p;}
+    lines.forEach(function(l){var m=l.match(/^\s*([A-Z][a-zA-Z]{1,14}):\s*(.*)$/);var s=el('span','gdl'+(m&&/^moderator$/i.test(m[1])?' mod':''));if(m){s.appendChild(el('b',null,m[1]+': '));s.appendChild(d.createTextNode(m[2]));}else s.textContent=l;p.appendChild(s);});return p;}
+  function askQ(q){curQ=String(q);var n=el('div');n.appendChild(el('span','qtag',rInfo().tag+' · '+(turns+1)+' of '+TOTAL));n.appendChild(qBody(curQ));bubble('ai',n);
     say(curQ,function(){if($('mAuto').checked&&started&&SR){dictM.reset();dictM.start();}});msg.disabled=false;send.disabled=false;if(!('ontouchstart' in window))msg.focus();}
   function mockCall(body,cb){mBusy=true;var th=el('div','cmsg ai');th.appendChild(thinking());chat.appendChild(th);chat.scrollTop=chat.scrollHeight;send.disabled=true;msg.disabled=true;
-    body.task='interview';body.company=coName();body.role=roleName();body.context=ctxNow();body.round=$('mType').value;body.total=TOTAL;
+    body.task='interview';body.company=coName();body.role=roleName();body.context=ctxNow();body.round=curRound();body.total=TOTAL;body.lang=lang();
     postAI(body).then(function(j){th.remove();mBusy=false;if(!j||!j.ok||!j.data){bubble('sys',(j&&j.error)||'The coach is busy. Tap Send again in a minute.');send.disabled=false;msg.disabled=false;return;}cb(j.data);})
       .catch(function(){th.remove();mBusy=false;bubble('sys','Could not reach the coach. Check your internet and tap Send again.');send.disabled=false;msg.disabled=false;});}
   function finish(){mockCall({final:true,history:H},function(R){
-      var c=el('div','mrep');c.appendChild(el('div','qtag','Interview report'));
+      var c=el('div','mrep');c.appendChild(el('div','qtag',rInfo().rep));
       var hd=el('div','mrhead');hd.appendChild(el('div','mrscore',(R.overall!=null?R.overall:'–')+'<small>/100</small>'));hd.firstChild.innerHTML=esc(String(R.overall!=null?R.overall:'–'))+'<small>/100</small>';hd.appendChild(el('div','mrverd',String(R.verdict||'')));c.appendChild(hd);
-      var S=R.scores||{},g=el('div','mrbars');[['content','Content'],['structure','Structure'],['company_fit','Company & role fit'],['communication','Communication']].forEach(function(k){var v=+S[k[0]];if(isNaN(v))return;var r=el('div','mrb');r.appendChild(el('span',null,k[1]));var t=el('i');var f=el('em');f.style.width=Math.max(4,v*10)+'%';t.appendChild(f);r.appendChild(t);r.appendChild(el('b',null,v+'/10'));g.appendChild(r);});c.appendChild(g);
+      var S=R.scores||{},g=el('div','mrbars');Object.keys(S).slice(0,6).map(function(k){return [k,SL[k]||k.replace(/_/g,' ').replace(/^./,function(x){return x.toUpperCase();})];}).forEach(function(k){var v=+S[k[0]];if(isNaN(v))return;var r=el('div','mrb');r.appendChild(el('span',null,k[1]));var t=el('i');var f=el('em');f.style.width=Math.max(4,v*10)+'%';t.appendChild(f);r.appendChild(t);r.appendChild(el('b',null,v+'/10'));g.appendChild(r);});c.appendChild(g);
       function list(t,a,fmt){if(!a||!a.length)return;var b=el('div','evb');b.appendChild(el('b',null,t));var u=el('ul');a.forEach(function(x){u.appendChild(el('li',null,fmt?fmt(x):String(x)));});b.appendChild(u);c.appendChild(b);}
       list('✅ Strengths',R.strengths);list('🔧 Top 3 fixes',R.top_fixes,function(x){return typeof x==='string'?x:(x.issue||'')+(x.evidence?' — you said “'+x.evidence+'”':'')+(x.action?' → '+x.action:'');});list('📅 Your 3-day practice plan',R.practice_plan);
-      if(R.redo_question){var rb=el('button','btn red','🔁 Practise this again: '+String(R.redo_question).slice(0,70));rb.type='button';rb.addEventListener('click',function(){setMode('r');$('cQ').value=String(R.redo_question);$('cA').value='';$('cA').focus();});c.appendChild(rb);}
-      bubble('ai rep',c);send.textContent='↺ New interview';send.disabled=false;started=false;msg.disabled=true;msg.placeholder='Interview finished. Start a new one any time.';say('Your interview is complete. Overall score '+(R.overall||'')+' out of 100.');});}
+      if(R.redo_question){var rb=el('button','btn red','🔁 Practise next: '+String(R.redo_question).slice(0,70));rb.type='button';rb.addEventListener('click',function(){setMode('r');$('cQ').value=String(R.redo_question);$('cA').value='';$('cA').focus();});c.appendChild(rb);}
+      bubble('ai rep',c);send.textContent='↺ Start again';send.disabled=false;started=false;msg.disabled=true;msg.placeholder='Finished. Pick a round above and start again any time.';say('Your '+(curRound()==='gd'?'group discussion':curRound()==='sales'?'role-play':'interview')+' is complete. Overall score '+(R.overall||'')+' out of 100.');});}
   send.addEventListener('click',function(){
     if(mBusy)return;
-    if(!started){chat.innerHTML='';H=[];turns=0;started=true;dictM.reset();send.textContent='Send answer →';msg.placeholder=SR?'Tap 🎤 and speak, or type your answer…':'Type your answer…';
-      bubble('sys','Mock interview · '+coName()+' · '+roleName()+' · '+TOTAL+' questions · '+$('mType').selectedOptions[0].text);
+    if(!started){chat.innerHTML='';H=[];turns=0;started=true;TOTAL=rInfo().n;dictM.reset();send.textContent=curRound()==='sales'?'Reply to customer →':curRound()==='gd'?'Speak in GD →':'Send answer →';msg.placeholder=(SR?'Tap 🎤 and speak, or type':'Type')+(hing()?' in Hinglish or English…':' your answer…');
+      bubble('sys',$('mType').selectedOptions[0].text+' · '+coName()+' · '+roleName()+' · '+TOTAL+' turns'+(hing()?' · Hinglish':''));
       mockCall({history:[]},function(D){if(D.intro)bubble('ai',String(D.intro));askQ(D.next_question||'Tell me about yourself.');});return;}
     dictM.stop();var a=msg.value.trim();if(!a){toast('Answer first: tap 🎤 and speak, or type');return;}
     var m=dictM.used?metrics(a,dictM.secs(),'voice'):metrics(a,0,'typed');
@@ -1706,8 +1797,8 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   msg.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey&&!('ontouchstart' in window)){e.preventDefault();send.click();}});
   function resetCoach(){var n=coName();$('cCo').textContent=n+(role.value.trim()?' · '+role.value.trim():'');
     setMode('q');cOut.hidden=true;$('cQ').value='';$('cA').value='';dictR.reset();dictM.reset();try{speechSynthesis.cancel();}catch(e){}
-    started=false;H=[];turns=0;busy=false;mBusy=false;send.textContent='Start interview →';send.disabled=false;msg.disabled=true;msg.value='';
-    chat.innerHTML='<div class="cmsg sys">The coach plays a real interviewer from '+esc(n)+'. It speaks each question; you answer by voice 🎤 or typing. After every answer you get a score, what worked, exact fixes and a better way to say it.</div>';}
+    started=false;H=[];turns=0;busy=false;mBusy=false;send.textContent='Start interview →';send.disabled=false;msg.disabled=true;msg.value='';paintRound();$('genLive').hidden=true;
+    chat.innerHTML='<div class="cmsg sys">Pick a round above. The coach plays a real interviewer, customer or GD group for '+esc(n)+'. It speaks each turn; you answer by voice 🎤 or typing. After every answer you get a score, what worked, exact fixes and a better way to say it.</div>';}
   window.__prepResetCoach=resetCoach;
 
   /* allow deep links: prep.html?c=Infosys&r=Business%20Analyst */
