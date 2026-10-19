@@ -101,6 +101,21 @@ h3{margin:0;font-size:18px;line-height:1.35}
 .reel .pl{position:absolute;top:42%;left:50%;width:54px;height:54px;margin-left:-27px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.3);transition:transform .4s var(--ease),background .3s}
 .reel .pl svg{width:20px;height:20px;margin-left:3px}
 .reel:hover .pl{transform:scale(1.15);background:var(--red)}
+.lchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.lchips button{border:1px solid var(--line2);background:var(--panel);color:var(--muted);font:700 14px var(--sans);padding:8px 16px;border-radius:999px;cursor:pointer}
+.lchips button.on{background:var(--red);border-color:var(--red);color:#fff}
+.reels{margin-top:24px}
+button.reel{font:inherit;color:#fff;text-align:left;cursor:pointer;width:100%}
+.reel.live .dur{background:var(--red);padding:2px 7px;border-radius:4px;opacity:1}
+.lmodal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.8);backdrop-filter:blur(6px)}
+.lmodal.show{display:flex}
+.lbox{position:relative;width:min(380px,100%);max-height:calc(100vh - 32px);display:flex;flex-direction:column;gap:10px}
+.lframe{position:relative;width:100%;aspect-ratio:9/16;max-height:calc(100vh - 110px);border-radius:18px;overflow:hidden;background:#000;border:1px solid var(--line2)}
+.lframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.lframe .lsoon{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted)}
+.lframe .lsoon b{display:block;color:var(--ink);font-size:20px;margin-bottom:6px}
+.lcap{margin:0;text-align:center;font-weight:700}
+.lx{position:absolute;top:-6px;right:-6px;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);background:var(--panel);color:var(--ink);font-size:22px;cursor:pointer;line-height:1}
 .note{margin-top:22px;color:var(--muted);font-size:15px}
 .note a{color:var(--red2)}
 
@@ -117,32 +132,6 @@ h3{margin:0;font-size:18px;line-height:1.35}
 .tile.spot span{font-size:15px;color:#d8d0ca;max-width:640px}
 .tile.spot .sp-go{margin:0 0 0 auto;flex:none;padding:12px 20px;border-radius:999px;background:var(--red);color:#fff;font-family:var(--sans);font-weight:800;font-size:14px;white-space:nowrap}
 @media (max-width:760px){.tile.spot{flex-direction:column;align-items:flex-start;padding:22px}.tile.spot .sp-go{margin:6px 0 0}}
-/* opportunities from partners */
-.opp{background:radial-gradient(55% 45% at 12% 8%,rgba(245,185,66,.10),transparent 70%),var(--bg)}
-.opp .label{color:var(--amber)}
-.opp h2 em{color:var(--amber)}
-.ogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;margin-top:36px}
-.ocard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--panel);overflow:hidden;transition:transform .45s var(--ease),border-color .3s,box-shadow .45s}
-.ocard:hover{transform:translateY(-6px);border-color:rgba(245,185,66,.5);box-shadow:0 24px 50px -24px rgba(245,185,66,.35)}
-.ocard .oimg{aspect-ratio:16/8;background:linear-gradient(135deg,#2a1f0c,#171414);background-size:cover;background-position:center}
-.ocard .oimg.none{aspect-ratio:auto;height:6px;background:linear-gradient(90deg,var(--amber),var(--red))}
-.ocard .obody{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
-.otag{display:flex;gap:8px;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.otag b{padding:3px 9px;border-radius:999px;background:rgba(245,185,66,.14);color:var(--amber);font-weight:500}
-.ocard h3{margin:2px 0 0;font-size:19px;line-height:1.3}
-.ocard .brand{font-size:14px;color:var(--amber);font-weight:700}
-.ocard p{margin:0;color:var(--muted);font-size:15px;flex:1}
-.ocard .ogo{align-self:flex-start;margin-top:10px;display:inline-flex;gap:8px;align-items:center;padding:10px 18px;border-radius:999px;background:var(--amber);color:#1a1205;font-weight:800;font-size:14px;text-decoration:none;transition:transform .3s}
-.ocard .ogo:hover{transform:translateX(4px)}
-.ocard .until{font-size:12px;color:var(--dim)}
-.oempty{margin-top:36px;padding:34px;border:1px dashed var(--line2);border-radius:22px;text-align:center;color:var(--muted)}
-.oempty b{display:block;color:var(--ink);font-size:18px;margin-bottom:4px}
-.opitch{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:28px;padding:24px 28px;border-radius:22px;border:1px solid rgba(245,185,66,.35);background:linear-gradient(120deg,rgba(245,185,66,.10),rgba(227,22,30,.06))}
-.opitch b{display:block;font-size:18px}
-.opitch span{color:var(--muted);font-size:15px}
-.opitch a{padding:12px 20px;border-radius:999px;border:1.5px solid var(--amber);color:var(--amber);font-weight:800;text-decoration:none;white-space:nowrap;transition:background .3s,color .3s}
-.opitch a:hover{background:var(--amber);color:#1a1205}
-.odisc{margin-top:14px;font-size:12.5px;color:var(--dim)}
 
 /* AI buddy */
 .buddy{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
@@ -215,7 +204,7 @@ footer a{color:var(--muted)}
       <li><a href="#lessons">1-Minute Lessons</a></li>
       <li><a href="prep.html">Placement Prep</a></li>
       <li><a href="professor.html">Professor in Progress</a></li>
-      <li><a href="#partners">Opportunities</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
             <li><a href="#ask">Ask Me</a></li>
       <li><a href="unsaid.html">Unsaid ✨</a></li>
     </ul>
@@ -231,8 +220,8 @@ footer a{color:var(--muted)}
     <div class="tiles">
       <a class="tile spot rv" href="prep.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span><div class="sp-body"><em class="sp-tag">Spotlight · New</em><strong>Placement Prep Room</strong><span>Interview coming up? Type the company and your role. Get its story, numbers, products, latest news and the exact questions you may face, in seconds.</span></div><small class="sp-go">Know Before You Go →</small></a>
       <a class="tile rv" href="professor.html" style="--acc:#F5B942"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg></span><strong>Professor in Progress</strong><span>UGC NET Paper 2 notes for Commerce and Management. Read 3 pages of every unit free.</span><small>Start reading →</small></a>
-      <a class="tile rv d1" href="#lessons"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 9.5v5l4-2.5z" fill="currentColor"/></svg></span><strong>1-Minute Lessons</strong><span>Short reels that explain one idea in 60 seconds.</span><small>Watch →</small></a>
-      <a class="tile rv d2" href="#partners" style="--acc:#F5B942"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></span><strong>Opportunities</strong><span>Courses, events and offers I pick for my students.</span><small>Explore →</small></a>
+      <a class="tile rv d1" href="#lessons"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 9.5v5l4-2.5z" fill="currentColor"/></svg></span><strong>1-Minute Lessons</strong><span>Short reels that explain one idea in 60 seconds, sorted by subject.</span><small>Watch →</small></a>
+      <a class="tile rv d2" href="opportunities.html" style="--acc:#F5B942"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></span><strong>Opportunities</strong><span>Courses and programmes checked by experts before they reach you.</span><small>Explore →</small></a>
       <a class="tile rv d3" href="#ask" style="--acc:#FF8A7A"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.8 1c0 1.7-2.3 2-2.3 3.5M12 17h.01"/></svg></span><strong>Ask Me</strong><span>Doubts, career advice or project help. Write to me directly.</span><small>Ask →</small></a>
     </div>
     <a class="unsaid-cta rv" href="unsaid.html"><b>✨ Things I Never Said</b><span>Many talks are left unsaid. If you have something to tell me, write your heart out here, with or without your name. →</span></a>
@@ -244,18 +233,15 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <p class="label rv">1-Minute Lessons</p>
     <h2 class="rv">Big ideas, <em>one minute</em> each</h2>
-    <p class="lead rv">Short reels on the concepts students ask about most. New lessons are being recorded now.</p>
-    <div class="reels">
-      <div class="reel rv" style="--g:linear-gradient(160deg,#E3161E,#3b0508)"><span class="dur">0:60</span><span class="soon">Coming soon</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip">Marketing</span><strong>The 4 Ps in 60 seconds</strong></div>
-      <div class="reel rv d1" style="--g:linear-gradient(160deg,#F5B942,#4a2e05)"><span class="dur">0:60</span><span class="soon">Coming soon</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip">Finance</span><strong>Time value of money</strong></div>
-      <div class="reel rv d2" style="--g:linear-gradient(160deg,#6FC3B2,#0f332c)"><span class="dur">0:60</span><span class="soon">Coming soon</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip">OB</span><strong>Maslow's hierarchy of needs</strong></div>
-      <div class="reel rv d3" style="--g:linear-gradient(160deg,#FF8A7A,#40130d)"><span class="dur">0:60</span><span class="soon">Coming soon</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip">Entrepreneurship</span><strong>Build, measure, learn</strong></div>
-      <div class="reel rv" style="--g:linear-gradient(160deg,#9b8cff,#1c1540)"><span class="dur">0:60</span><span class="soon">Coming soon</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip">Strategy</span><strong>SWOT analysis made simple</strong></div>
-      <div class="reel rv d1" style="--g:linear-gradient(160deg,#E3161E,#1a0a0b)"><span class="dur">0:60</span><span class="soon">Coming soon</span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip">Projects</span><strong>How to structure a capstone report</strong></div>
-    </div>
+    <p class="lead rv">Short reels on the concepts students ask about most. Pick a subject, tap a reel and learn it in 60 seconds.</p>
+    <div class="lchips rv" id="lChips" role="group" aria-label="Filter lessons by subject"></div>
+    <div class="reels" id="reels"></div>
     <p class="note rv">Want a one-minute lesson on a topic? <a href="#ask">Suggest it here</a> and I will add it to the list.</p>
   </div>
 </section>
+<div class="lmodal" id="lModal" role="dialog" aria-modal="true" aria-label="Lesson player">
+  <div class="lbox"><button type="button" class="lx" id="lClose" aria-label="Close">×</button><div class="lframe" id="lFrame"></div><p class="lcap" id="lCap"></p></div>
+</div>
 
 <section class="sec" id="buddy">
   <div class="wrap buddy">
@@ -277,18 +263,6 @@ footer a{color:var(--muted)}
       <div class="msg me">Financial Management.</div>
       <div class="msg bot">Okay. Let's split it into 5 short daily sessions, starting with the topic that worries you most.</div>
     </div>
-  </div>
-</section>
-
-<section class="sec opp" id="partners">
-  <div class="wrap">
-    <p class="label rv">Opportunities</p>
-    <h2 class="rv">Worth your <em>time</em></h2>
-    <p class="lead rv">Courses, certifications, events and offers from institutions and brands I trust, picked for my students.</p>
-    <div class="ogrid" id="ogrid"></div>
-    <div class="oempty rv" id="oempty"><b>New opportunities are on the way ✨</b>Check back soon. I will share courses, events and offers here that are worth your time.</div>
-    <div class="opitch rv"><div><b>Brands &amp; institutions</b><span>Want to reach a community of motivated business students? Let's collaborate.</span></div><a href="mailto:singhbikrampaul@gmail.com?subject=Partnership%20with%20youngprofessor.in">Partner with me →</a></div>
-    <p class="odisc">Cards marked “Partner” are shared in collaboration with the organisation named. Always check details on the partner's own website before you pay or sign up.</p>
   </div>
 </section>
 
@@ -337,6 +311,53 @@ footer a{color:var(--muted)}
     rvs.forEach(function(el){io.observe(el);});
   } else rvs.forEach(function(el){el.classList.add('in');});
 
+  /* ===== 1-Minute Lessons =====
+     To add a lesson: copy one line below and change it.
+     url = the YouTube Shorts link or the Instagram reel link. Leave url empty ('') to show "Coming soon". */
+  var LESSONS=[
+    {t:'The 4 Ps in 60 seconds',      s:'Marketing',        url:''},
+    {t:'Time value of money',         s:'Finance',          url:''},
+    {t:"Maslow's hierarchy of needs", s:'OB & HR',          url:''},
+    {t:'Build, measure, learn',       s:'Entrepreneurship', url:''},
+    {t:'SWOT analysis made simple',   s:'Strategy',         url:''},
+    {t:'How to structure a capstone report', s:'Projects',  url:''}
+  ];
+  var LCOL={'Marketing':'#E3161E,#3b0508','Finance':'#F5B942,#4a2e05','OB & HR':'#6FC3B2,#0f332c','Entrepreneurship':'#FF8A7A,#40130d','Strategy':'#9b8cff,#1c1540','Projects':'#E3161E,#1a0a0b','UGC NET':'#F5B942,#2a1f0c'};
+  function embed(u){
+    var m=/(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/.exec(u||'');
+    if(m)return 'https://www.youtube-nocookie.com/embed/'+m[1]+'?autoplay=1&rel=0&playsinline=1';
+    m=/instagram\.com\/(?:reel|reels|p)\/([\w-]+)/.exec(u||'');
+    if(m)return 'https://www.instagram.com/reel/'+m[1]+'/embed';
+    return '';
+  }
+  var lf='All', reelsEl=d.getElementById('reels'), lchips=d.getElementById('lChips'), lModal=d.getElementById('lModal'), lFrame=d.getElementById('lFrame');
+  function lDraw(){
+    var subs=['All'];LESSONS.forEach(function(l){if(subs.indexOf(l.s)<0)subs.push(l.s);});
+    lchips.innerHTML='';subs.forEach(function(x){var b=d.createElement('button');b.type='button';b.textContent=x;if(x===lf)b.className='on';b.addEventListener('click',function(){lf=x;lDraw();});lchips.appendChild(b);});
+    reelsEl.innerHTML='';
+    LESSONS.forEach(function(l,i){
+      if(lf!=='All'&&l.s!==lf)return;
+      var live=!!embed(l.url), b=d.createElement('button');
+      b.type='button';b.className='reel in'+(live?' live':'');b.style.setProperty('--g','linear-gradient(160deg,'+(LCOL[l.s]||'#E3161E,#1a0a0b')+')');
+      b.innerHTML='<span class="dur">'+(live?'▶ Watch':'0:60')+'</span>'+(live?'':'<span class="soon">Coming soon</span>')+'<span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></span><span class="chip"></span><strong></strong>';
+      b.querySelector('.chip').textContent=l.s;b.querySelector('strong').textContent=l.t;
+      b.setAttribute('aria-label',l.t+(live?'':' (coming soon)'));
+      b.addEventListener('click',function(){lOpen(l);});
+      reelsEl.appendChild(b);
+    });
+  }
+  function lOpen(l){
+    var src=embed(l.url);lFrame.innerHTML='';
+    if(src){var f=d.createElement('iframe');f.src=src;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title=l.t;lFrame.appendChild(f);}
+    else{lFrame.innerHTML='<div class="lsoon"><div><b>Recording now 🎬</b>This lesson is coming soon. Follow @bikrampaul.s on Instagram to see it first.</div></div>';}
+    d.getElementById('lCap').textContent=l.t;lModal.classList.add('show');
+  }
+  function lClose(){lModal.classList.remove('show');lFrame.innerHTML='';}
+  d.getElementById('lClose').addEventListener('click',lClose);
+  lModal.addEventListener('click',function(e){if(e.target===lModal)lClose();});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape')lClose();});
+  lDraw();
+
   /* Ask form: sends straight to Dr. Lehri (Google Apps Script), email app as backup */
   var ASK_ENDPOINT='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
   d.getElementById('askForm').addEventListener('submit',function(e){
@@ -356,39 +377,6 @@ footer a{color:var(--muted)}
   });
 })();
 
-/* ===== Opportunities from partners (managed in a Google Sheet owned by singhbikrampaul@gmail.com) ===== */
-(function(){
-  var CSV='https://docs.google.com/spreadsheets/d/e/2PACX-1vS4yNKlqZLL62kU4UiZfD4DAPxA4VsRFwNEMdfpEWBGmxU6zfSbrOqy21wHMfmsmaV4_w8qrudUCwpI/pub?output=csv';
-  var grid=document.getElementById('ogrid'),empty=document.getElementById('oempty');if(!grid)return;
-  function parseCSV(t){var rows=[],row=[],f='',q=false;for(var i=0;i<t.length;i++){var ch=t[i];
-    if(q){if(ch==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=ch;}
-    else if(ch==='"')q=true;else if(ch===','){row.push(f);f='';}else if(ch==='\n'){row.push(f);rows.push(row);row=[];f='';}else if(ch!=='\r')f+=ch;}
-    if(f!==''||row.length){row.push(f);rows.push(row);}return rows;}
-  function safeUrl(u){u=(u||'').trim();return /^https:\/\//i.test(u)?u:'';}
-  function parseD(s){var m=/(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec(s||'');if(!m)return null;return new Date(+m[3],+m[2]-1,+m[1],23,59);}
-  function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
-  fetch(CSV+'&t='+Date.now()).then(function(r){return r.text();}).then(function(t){
-    var rows=parseCSV(t),head=(rows.shift()||[]).map(function(h){return h.trim().toLowerCase();});
-    function c(r,k){var i=head.indexOf(k);return i>-1?(r[i]||'').trim():'';}
-    var now=new Date(),n=0;
-    rows.forEach(function(r){
-      if(!/^y(es)?$/i.test(c(r,'show'))||!c(r,'title'))return;
-      var until=parseD(c(r,'until'));if(until&&until<now)return;
-      var link=safeUrl(c(r,'link')),img=safeUrl(c(r,'image'));
-      var card=el('article','ocard');
-      var im=el('div','oimg'+(img?'':' none'));if(img)im.style.backgroundImage='url("'+img.replace(/"/g,'')+'")';card.appendChild(im);
-      var b=el('div','obody');
-      var tg=el('div','otag');tg.appendChild(el('b',null,'Partner'));tg.appendChild(el('span',null,c(r,'type')||'Opportunity'));b.appendChild(tg);
-      b.appendChild(el('h3',null,c(r,'title')));
-      if(c(r,'brand'))b.appendChild(el('div','brand',c(r,'brand')));
-      b.appendChild(el('p',null,c(r,'description')));
-      if(until)b.appendChild(el('div','until','Open till '+until.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})));
-      if(link){var a=el('a','ogo',(c(r,'button')||'Know more')+' →');a.href=link;a.target='_blank';a.rel='noopener sponsored';b.appendChild(a);}
-      card.appendChild(b);grid.appendChild(card);n++;
-    });
-    empty.hidden=n>0;
-  }).catch(function(){});
-})();
 </script>
 </body>
 </html>
