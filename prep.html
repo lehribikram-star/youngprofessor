@@ -574,6 +574,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   details .hint{display:block}
   .card{margin-top:12px;padding:14px}
 }
+/* ===== DEMO MODE (19 Oct 2026): plans and Premium badges hidden, every feature open. Delete this block to bring them back. ===== */
+.plk,#plansBtn,#planOv{display:none!important}
 </style>
 </head>
 <body>
@@ -646,7 +648,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </nav>
 
     <article class="card prem" id="s-prem">
-      <div class="prem-h"><div><span class="prem-tag">⭐ Premium</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Tools that do hours of prep for you. Everything marked <span class="plk">🔒 Premium</span> is free to try until payments open.</p></div><button type="button" class="prem-plans" id="plansBtn">See plans · ₹99/month</button></div>
+      <div class="prem-h"><div><span class="prem-tag">⭐ Pro tools</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Tools that do hours of prep for you. Every tool on this page is open and free to use.</p></div><button type="button" class="prem-plans" id="plansBtn">See plans · ₹99/month</button></div>
       <div class="prem-grid">
         <button type="button" class="ptool" id="kitBtn"><span class="pi">📄</span><b>Interview Kit</b><small>A ready 3-page PDF for this company and role: 30-second pitch, “Why us?” answer, 10 likely questions with model answers, news talking points and a last-hour checklist.</small><em>Generate my kit →</em></button>
         <button type="button" class="ptool" id="cvBtn"><span class="pi">🎯</span><b>CV × Job Match</b><small>Upload your CV and the job description. Get a match score, missing keywords, stronger CV lines and your own “Tell me about yourself” answer.</small><em>Match my CV →</em></button>
