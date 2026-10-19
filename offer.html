@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Before You Sign | Offer Letter Decoder &amp; Offer Comparison | Placement Prep Room</title>
+<link rel="canonical" href="https://youngprofessor.in/offer.html">
+<meta name="description" content="Before You Sign, part of the Placement Prep Room on youngprofessor.in: upload your offer letter and see your real in-hand salary, every term in plain words, red flags like bonds, and questions to ask HR. Compare two offers side by side.">
+<meta name="theme-color" content="#0B0A0A">
+<meta property="og:title" content="Before You Sign | Placement Prep Room">
+<meta property="og:description" content="Decode your offer letter in plain words and compare two offers.">
+<meta property="og:image" content="https://youngprofessor.in/photo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+
+:root{
+  --bg:#0B0A0A; --bg2:#121010; --panel:#171414; --panel2:#1d1919; --line:#2A2323; --line2:#3A2E2E;
+  --ink:#F4EFEA; --muted:#A39A94; --dim:#6F6661;
+  --red:#E3161E; --red2:#FF3B42; --redglow:rgba(227,22,30,.35); --redsoft:rgba(227,22,30,.10);
+  --amber:#F5B942; --ambersoft:rgba(245,185,66,.12); --ok:#3bb273; --oksoft:rgba(59,178,115,.12);
+  --serif:"DM Serif Display", Georgia, serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--red);color:#fff}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red2);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:24px}
+h1,h2{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-.01em}
+h1 em,h2 em{color:var(--red);font-style:italic}
+button{font-family:inherit}
+[hidden]{display:none!important}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(11,10,10,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px}
+.logo img{width:38px;height:38px;border-radius:50%}
+.logo em{font-style:normal;color:var(--red)}
+.back{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:14px;font-weight:700;white-space:nowrap}
+.back:hover{border-color:var(--red)}
+
+/* Placement Prep Room section bar (shared) */
+.ppr{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#140f0f,#0d0b0b)}
+.ppr .wrap{display:flex;align-items:center;gap:18px;padding-block:12px;flex-wrap:wrap}
+.ppr-home{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red2);text-decoration:none;white-space:nowrap}
+.ppr-steps{display:flex;gap:8px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.ppr-steps::-webkit-scrollbar{display:none}
+.ppr-steps a{flex:1;min-width:190px;display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:14px;border:1px solid var(--line2);background:var(--panel);text-decoration:none;transition:border-color .2s,background .2s}
+.ppr-steps a:hover{border-color:var(--red)}
+.ppr-steps a i{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:13px;background:var(--line2)}
+.ppr-steps a b{display:block;font-size:14.5px;line-height:1.2}
+.ppr-steps a small{display:block;color:var(--muted);font-size:12px;line-height:1.3}
+.ppr-steps a.on{border-color:var(--red);background:linear-gradient(120deg,rgba(227,22,30,.22),rgba(227,22,30,.05))}
+.ppr-steps a.on i{background:var(--red);color:#fff}
+@media (max-width:640px){.ppr .wrap{padding-block:8px}.ppr-steps{gap:6px}.ppr-steps a{min-width:0;flex-direction:column;gap:4px;padding:8px 4px;text-align:center}.ppr-steps a small{display:none}.ppr-steps a b{font-size:12px}.ppr-steps a i{width:22px;height:22px;font-size:12px}}
+
+/* hero */
+.hero{padding-block:42px 18px;position:relative}
+.hero h1{font-size:clamp(40px,6vw,72px);line-height:1}
+.hero p{color:var(--muted);font-size:clamp(16px,1.5vw,18.5px);max-width:70ch;margin:14px 0 0}
+.tabs{display:inline-flex;gap:4px;padding:5px;margin-top:24px;border-radius:999px;border:1px solid var(--line2);background:var(--panel)}
+.tabs button{border:0;background:transparent;color:var(--muted);font-weight:800;font-size:15px;padding:10px 20px;border-radius:999px;cursor:pointer}
+.tabs button.on{background:var(--red);color:#fff}
+
+/* common bits */
+.card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line2);background:var(--panel2);color:var(--ink);font-weight:800;font-size:14px;cursor:pointer;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+.btn:hover{border-color:var(--red)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.red:hover{transform:translateY(-1px)}
+.btn.sm{padding:7px 12px;font-size:13px}
+.btn.ai{border-color:rgba(245,185,66,.5);color:var(--amber);background:var(--ambersoft)}
+.btn[disabled]{opacity:.55;pointer-events:none}
+label{display:grid;gap:5px;font-size:12.5px;font-weight:700;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line2);border-radius:10px;padding:10px 12px;width:100%}
+textarea{min-height:92px;resize:vertical;line-height:1.5}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px var(--redsoft)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.hint{font-size:12.5px;color:var(--dim);margin:4px 0 0}
+.note{padding:12px 14px;border-radius:12px;font-size:14px;border:1px solid var(--line2);background:var(--panel2)}
+.note.warn{border-color:rgba(245,185,66,.45);background:var(--ambersoft)}
+.note.err{border-color:rgba(227,22,30,.5);background:var(--redsoft)}
+.note.good{border-color:rgba(59,178,115,.45);background:var(--oksoft)}
+
+.kick{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red2)}
+.load{display:flex;gap:12px;align-items:center;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.dots{display:inline-flex;gap:4px}.dots i{width:7px;height:7px;border-radius:50%;background:var(--red);animation:bl 1s infinite}.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,100%{opacity:.25}50%{opacity:1}}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:90;background:#241d1d;border:1px solid var(--line2);padding:11px 18px;border-radius:999px;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.5);max-width:calc(100% - 32px)}
+footer{margin-top:60px;padding-block:28px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{color:var(--muted)}
+@media (max-width:640px){.wrap{padding-inline:16px}.g2,.g3{grid-template-columns:1fr}.ppr-home{display:none}.tabs{display:flex}.tabs button{flex:1;padding:10px 8px;font-size:14px}.logo{font-size:17px}.back{padding:7px 11px;font-size:13px}}
+/* ===== Before You Sign ===== */
+.oin{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:22px;align-items:start}
+.drop{position:relative;border:1.5px dashed var(--line2);border-radius:16px;padding:26px 16px;text-align:center;color:var(--muted);font-size:14.5px;transition:border-color .2s}
+.drop b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+.drop.ok{border-color:var(--ok);color:var(--ink)}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.or{display:flex;align-items:center;gap:10px;color:var(--dim);font-size:12.5px;margin:14px 0}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.priv{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--muted)}
+.priv b{color:var(--ink)}
+.rep{display:grid;gap:16px;margin-top:22px}
+.rgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:start}
+.big{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.big div{padding:16px;border-radius:16px;border:1px solid var(--line2);background:var(--panel2)}
+.big small{display:block;font-size:12.5px;color:var(--muted)}
+.big b{display:block;font-size:26px;font-family:var(--serif);font-weight:400;line-height:1.15;margin-top:2px}
+.big .hi{border-color:var(--ok);background:var(--oksoft)}
+.big em{font-style:normal;font-size:12.5px;color:var(--muted)}
+.bar{display:flex;height:22px;border-radius:999px;overflow:hidden;margin:14px 0 10px;background:var(--line)}
+.bar span{height:100%}
+.leg{display:grid;gap:6px;font-size:14px}
+.leg div{display:flex;align-items:center;gap:8px}
+.leg i{flex:none;width:12px;height:12px;border-radius:3px}
+.leg b{margin-left:auto;font-weight:700}
+.leg small{color:var(--dim)}
+.terms{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.term{padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--panel2)}
+.term b{display:block;font-size:14.5px;margin-bottom:3px}
+.term span{font-size:14px;color:#d8d0ca}
+.flag{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:12px 14px;border-radius:14px;border:1px solid var(--line);margin-top:8px}
+.flag.high{border-color:rgba(227,22,30,.55);background:var(--redsoft)}
+.flag.medium{border-color:rgba(245,185,66,.5);background:var(--ambersoft)}
+.flag b{display:block}
+.flag span{font-size:14px;color:#d8d0ca}
+.clist{margin:0;padding-left:20px;display:grid;gap:6px;font-size:14.5px}
+.calc{display:grid;gap:12px}
+.calc .g3 label,.calc .g2 label{font-size:12px}
+.steps{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+.steps td{padding:6px 4px;border-bottom:1px solid var(--line)}
+.steps td:last-child{text-align:right;white-space:nowrap}
+.steps tr.t td{font-weight:800;border-bottom:0}
+.disc{font-size:12.5px;color:var(--dim)}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+/* compare */
+.cmp-in{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.cmp-in .card h3{margin:0 0 10px;font-family:var(--serif);font-weight:400;font-size:26px}
+.cmp-in .card h3 em{font-style:normal;color:var(--red)}
+.stars{display:flex;gap:4px}
+.stars button{border:0;background:none;font-size:20px;cursor:pointer;color:var(--line2);padding:0 2px}
+.stars button.on{color:var(--amber)}
+.ctab{width:100%;border-collapse:separate;border-spacing:0;font-size:14.5px;margin-top:4px}
+.ctab th,.ctab td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ctab th{font-size:12px;font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.ctab td.win{color:#7ee0a8;font-weight:800}
+.ctab td.bad{color:#ff9b9f}
+.verdict{display:grid;gap:8px;font-size:15px}
+.verdict p{margin:0;padding:12px 14px;border-radius:12px;background:var(--panel2)}
+@media (max-width:1000px){.oin,.rgrid,.cmp-in{grid-template-columns:1fr}}
+@media (max-width:640px){.big{grid-template-columns:1fr}.terms{grid-template-columns:1fr}.ctab{font-size:13.5px}.ctab th,.ctab td{padding:8px 6px}}
+@media print{
+  body *{visibility:hidden}
+  #report,#report *{visibility:visible}
+  #report{position:absolute;left:0;top:0;width:100%;color:#111}
+  #report .card,#report .term,#report .flag,#report .big div{background:#fff!important;border-color:#bbb!important;color:#111}
+  #report .noprint{display:none!important}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Site">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img src="logo-mark.webp" alt="" width="38" height="38"><span>young<em>professor</em>.in</span></a>
+    <a class="back" href="student.html">← Student Zone</a>
+  </div>
+</nav>
+
+<div class="ppr">
+  <div class="wrap">
+    <a class="ppr-home" href="prep.html">🎯 Placement Prep Room</a>
+    <div class="ppr-steps">
+      <a href="cv.html"><i>1</i><span><b>Get Shortlisted</b><small>Build your CV and match it to the job</small></span></a>
+      <a href="prep.html"><i>2</i><span><b>Know Before You Go</b><small>Research the company, practise the interview</small></span></a>
+      <a href="offer.html" class="on" aria-current="page"><i>3</i><span><b>Before You Sign</b><small>Decode your offer, compare offers</small></span></a>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <header class="hero">
+    <h1>Before <em>You Sign</em></h1>
+    <p>Got an offer letter? Upload it and see what it really means in simple words: your real monthly salary, what is guaranteed and what is not, any bond or penalty, and the questions to ask HR before you sign. Got two offers? Compare them side by side.</p>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" class="on" data-tab="decode" aria-selected="true">📄 Decode my offer</button>
+      <button type="button" role="tab" data-tab="compare" aria-selected="false">⚖️ Compare two offers</button>
+    </div>
+  </header>
+
+  <!-- ============ DECODE ============ -->
+  <section id="tab-decode">
+    <div class="oin">
+      <div class="card">
+        <span class="kick">Option 1 · Upload the offer letter</span>
+        <div class="drop" id="drop" style="margin-top:12px"><b>⬆ Upload your offer letter</b><span id="dropTx">PDF, Word, or a clear photo of the printed letter</span><input type="file" id="oFile" accept=".pdf,.docx,.txt,image/*"></div>
+        <div class="or">or paste the text</div>
+        <label>Offer letter text<textarea id="oText" style="min-height:130px" placeholder="Paste the full offer letter, including the salary breakup (annexure) if there is one."></textarea></label>
+        <div class="note err" id="oErr" hidden style="margin-top:10px"></div>
+        <div class="acts" style="margin-top:12px"><button type="button" class="btn red" id="oGo">🔍 Decode my offer</button></div>
+        <div class="priv" style="margin-top:14px"><span>🔒</span><span><b>Your letter is never saved.</b> Before reading, we hide your name, phone, email, address, PAN and Aadhaar. Only the job terms are read.</span></div>
+      </div>
+      <div class="card calc">
+        <span class="kick">Option 2 · Just type the salary numbers</span>
+        <p class="hint" style="margin:0">Use this if you only have the CTC, or to correct what was read from the letter. All amounts are <b>per year</b> in rupees.</p>
+        <div class="g2">
+          <label>CTC (total cost to company)<input id="cCtc" inputmode="numeric" placeholder="e.g. 800000"></label>
+          <label>Fixed / gross salary <small style="font-weight:500">(leave blank if unknown)</small><input id="cFixed" inputmode="numeric" placeholder="e.g. 640000"></label>
+        </div>
+        <div class="g3">
+          <label>Variable / bonus pay<input id="cVar" inputmode="numeric" placeholder="0"></label>
+          <label>One-time pay (joining, relocation)<input id="cOne" inputmode="numeric" placeholder="0"></label>
+          <label>Employer PF + gratuity + insurance<input id="cBen" inputmode="numeric" placeholder="0"></label>
+        </div>
+        <div class="g3">
+          <label>Basic salary <small style="font-weight:500">(optional)</small><input id="cBasic" inputmode="numeric" placeholder="auto: 40% of fixed"></label>
+          <label>Your PF deduction<select id="cPf"><option value="pct">12% of basic</option><option value="cap">₹1,800 a month (capped)</option><option value="none">No PF</option></select></label>
+          <label>Professional tax / year<input id="cPt" inputmode="numeric" value="2400"></label>
+        </div>
+        <label>Expect to receive this much of the variable pay: <b id="cPayTx">80%</b><input type="range" id="cPay" min="0" max="100" step="10" value="80" style="padding:0;border:0;background:none"></label>
+        <div class="acts"><button type="button" class="btn" id="cGo">🧮 Show my in-hand salary</button></div>
+      </div>
+    </div>
+    <div id="report" class="rep" hidden></div>
+  </section>
+
+  <!-- ============ COMPARE ============ -->
+  <section id="tab-compare" hidden>
+    <p class="hint" style="margin-top:20px">Fill both offers below, or decode each offer letter first and tap “Add to comparison”. Amounts are per year in rupees.</p>
+    <div class="cmp-in" id="cmpIn"></div>
+    <div class="acts" style="margin-top:16px"><button type="button" class="btn red" id="cmpGo">⚖️ Compare</button><button type="button" class="btn" id="cmpClear">Clear both</button></div>
+    <div id="cmpOut" class="rep"></div>
+  </section>
+
+  <p class="disc" style="margin-top:34px">Before You Sign explains your offer in simple words and estimates your salary using the new income tax regime for FY 2026-27 (standard deduction ₹75,000, no tax up to ₹12 lakh taxable income, 4% cess). It is not legal, tax or financial advice. Tax and PF depend on your full situation. For bonds and legal clauses, talk to your placement cell or a lawyer before signing.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Placement Prep Room · <a href="cv.html">Get Shortlisted</a> · <a href="prep.html">Know Before You Go</a> · <a href="offer.html">Before You Sign</a></span>
+    <span><a href="student.html">Student Zone</a> · youngprofessor.in</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var d=document,$=function(id){return d.getElementById(id);};
+  var AI_ENDPOINT='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function toast(t){d.querySelectorAll('.toast').forEach(function(o){o.remove();});var x=d.createElement('div');x.className='toast';x.textContent=t;d.body.appendChild(x);setTimeout(function(){x.remove();},3800);}
+  function num(v){v=String(v==null?'':v).replace(/[₹,\s]/g,'').replace(/lpa|lakh|l$/i,function(){return 'L';});var m=/^([\d.]+)(L)?$/i.exec(v);if(!m)return 0;var n=parseFloat(m[1])||0;return m[2]?n*100000:n;}
+  function inr(n){n=Math.round(n||0);return '₹'+Math.abs(n).toLocaleString('en-IN');}
+  function lakh(n){return '₹'+(Math.round((n||0)/1000)/100).toLocaleString('en-IN',{maximumFractionDigits:2})+' L';}
+
+  /* ---------- tax: new regime FY 2026-27 ---------- */
+  var SLABS=[[400000,0],[800000,.05],[1200000,.10],[1600000,.15],[2000000,.20],[2400000,.25],[Infinity,.30]];
+  function tax(gross){
+    var ti=Math.max(0,gross-75000),t=0,prev=0;
+    SLABS.forEach(function(s){if(ti>prev){t+=(Math.min(ti,s[0])-prev)*s[1];}prev=s[0];});
+    if(ti<=1200000)t=0; else t=Math.min(t,ti-1200000); /* rebate u/s 87A with marginal relief */
+    return Math.round(t*1.04);
+  }
+  /* ---------- in-hand calculator ---------- */
+  function compute(o){
+    var ctc=o.ctc||0,v=o.variable||0,one=o.oneTime||0,ben=o.benefits||0;
+    var fixed=o.fixed||Math.max(0,ctc-v-one-ben);
+    if(!ctc)ctc=fixed+v+one+ben;
+    var basic=o.basic||fixed*0.4;
+    var pf=o.pf==='none'?0:o.pf==='cap'?21600:Math.round(basic*0.12);
+    var pt=o.pt==null?2400:o.pt, pay=(o.payout==null?80:o.payout)/100;
+    var taxReg=tax(fixed), monthly=(fixed-pf-pt-taxReg)/12;
+    var y1Income=fixed+v*pay+one, taxY1=tax(y1Income), y1cash=y1Income-pf-pt-taxY1;
+    return {ctc:ctc,fixed:fixed,variable:v,oneTime:one,benefits:ben,basic:basic,pf:pf,pt:pt,taxReg:taxReg,monthly:monthly,y1cash:y1cash,taxY1:taxY1,payout:pay,
+      guaranteed:fixed, atRisk:v, unreal:ben+one};
+  }
+  function readCalc(){return {ctc:num($('cCtc').value),fixed:num($('cFixed').value),variable:num($('cVar').value),oneTime:num($('cOne').value),benefits:num($('cBen').value),basic:num($('cBasic').value),pf:$('cPf').value,pt:num($('cPt').value),payout:+$('cPay').value};}
+  function fillCalc(o){$('cCtc').value=o.ctc||'';$('cFixed').value=o.fixed||'';$('cVar').value=o.variable||'';$('cOne').value=o.oneTime||'';$('cBen').value=o.benefits||'';$('cBasic').value=o.basic||'';}
+  $('cPay').addEventListener('input',function(){$('cPayTx').textContent=this.value+'%';if(last)showReport(last.ai,readCalc());});
+
+  /* ---------- reading files ---------- */
+  function loadScript(src){return new Promise(function(ok,no){var s=d.createElement('script');s.src=src;s.onload=ok;s.onerror=no;d.head.appendChild(s);});}
+  function readFile(f){var n=f.name.toLowerCase(),tp=f.type||'';
+    if(/\.txt$/.test(n))return f.text();
+    if(/\.pdf$/.test(n))return (window.pdfjsLib?Promise.resolve():loadScript('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js')).then(function(){pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';return f.arrayBuffer();}).then(function(buf){return pdfjsLib.getDocument({data:buf}).promise;}).then(function(pdf){var ps=[];for(var i=1;i<=Math.min(pdf.numPages,8);i++)ps.push(pdf.getPage(i).then(function(pg){return pg.getTextContent();}).then(function(tc){var out='',lastY=null;tc.items.forEach(function(it){var y=it.transform[5];if(lastY!==null&&Math.abs(y-lastY)>4)out+='\n';else if(out)out+=' ';out+=it.str;lastY=y;});return out;}));return Promise.all(ps);}).then(function(a){return a.join('\n');});
+    if(/\.docx$/.test(n))return (window.mammoth?Promise.resolve():loadScript('https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js')).then(function(){return f.arrayBuffer();}).then(function(buf){return mammoth.extractRawText({arrayBuffer:buf});}).then(function(r){return r.value;});
+    if(/^image\//.test(tp)||/\.(jpe?g|png|webp|heic)$/.test(n))return (window.Tesseract?Promise.resolve():loadScript('https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js')).then(function(){
+      return Tesseract.recognize(f,'eng',{logger:function(m){if(m.status==='recognizing text')$('dropTx').textContent='Reading the photo… '+Math.round(m.progress*100)+'%';}});}).then(function(r){return r.data.text;});
+    return Promise.reject(new Error('Please upload a PDF, Word (.docx), photo or .txt file.'));}
+  var fileText='';
+  $('oFile').addEventListener('change',function(){var f=this.files[0];if(!f)return;$('dropTx').textContent='Reading '+f.name+'…';$('drop').classList.remove('ok');
+    readFile(f).then(function(t){fileText=String(t||'').trim();if(fileText.length<150)throw new Error('Could not find enough text. Try a clearer photo, or paste the text.');$('drop').classList.add('ok');$('dropTx').textContent='✅ '+f.name+' read ('+fileText.split(/\s+/).length+' words). Tap Decode.';$('oText').value='';})
+      .catch(function(e){fileText='';$('dropTx').textContent=e.message||'Could not read that file. Please paste the text instead.';});});
+
+  /* ---------- hide personal details before sending ---------- */
+  function mask(t){return String(t)
+    .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g,'[email]')
+    .replace(/(\+91[\s-]?)?\b[6-9]\d{4}[\s-]?\d{5}\b/g,'[phone]')
+    .replace(/\b[A-Z]{5}\d{4}[A-Z]\b/g,'[PAN]')
+    .replace(/\b\d{4}\s?\d{4}\s?\d{4}\b/g,'[Aadhaar]')
+    .replace(/^(\s*(dear|to)\s*,?\s*)(m[rs]s?\.?|miss|dr\.?)?\s*[A-Z][\w.]*(\s+[A-Z][\w.]*){0,3}/gim,'$1[Name]')
+    .replace(/^(\s*(candidate|employee)?\s*name\s*[:\-]\s*).+$/gim,'$1[Name]')
+    .replace(/^(\s*(address|residing at|r\/o)\s*[:\-]?\s*).+$/gim,'$1[Address]')
+    .replace(/\b\d{6}\b(?=\s*$|\s*\n)/gm,'[PIN]');}
+
+  /* ---------- AI decode ---------- */
+  function postAI(body){
+    var call=function(n){return fetch(AI_ENDPOINT,{method:'POST',credentials:'omit',body:JSON.stringify(body)}).then(function(r){return r.json();}).catch(function(e){if(n>0)return call(n-1);throw e;});};
+    return Promise.race([call(1),new Promise(function(_,no){setTimeout(function(){no(new Error('timeout'));},95000);})])
+      .then(function(j){if(j&&!j.ok&&/busy/i.test(j.error||''))return new Promise(function(r){setTimeout(r,2500);}).then(function(){return call(0);});return j;});}
+  var last=null;
+  $('oGo').addEventListener('click',function(){
+    var t=(fileText||$('oText').value||'').trim(),err=$('oErr');err.hidden=true;
+    if(t.length<150){err.textContent='Please upload the offer letter or paste its full text first. Only have the CTC? Use Option 2.';err.hidden=false;return;}
+    var btn=this;btn.disabled=true;btn.textContent='Decoding…';
+    var rep=$('report');rep.hidden=false;rep.innerHTML='<div class="load"><span class="dots"><i></i><i></i><i></i></span><span>Reading your offer like a careful senior would. About 20–30 seconds.</span></div>';
+    rep.scrollIntoView({behavior:'smooth',block:'start'});
+    postAI({task:'offer',text:mask(t).slice(0,15000)}).then(function(j){
+      if(!j||!j.ok||!j.data){var m=(j&&j.error&&!/unknown task/i.test(j.error))?j.error:'Offer reading by AI is switching on very soon. Meanwhile, type the salary numbers in Option 2 to see your real in-hand salary right now.';rep.innerHTML='<div class="note err"><b>Could not decode the letter.</b> '+esc(m)+'</div>';return;}
+      var a=j.data,ben=(+a.employer_pf_yearly||0)+(+a.gratuity_yearly||0)+(+a.insurance_yearly||0);
+      var o={ctc:+a.ctc_yearly||0,fixed:+a.fixed_yearly||0,variable:+a.variable_yearly||0,oneTime:(+a.joining_bonus||0)+(+a.relocation||0),benefits:ben,basic:+a.basic_yearly||0};
+      fillCalc(o);last={ai:a};showReport(a,readCalc());
+    }).catch(function(){rep.innerHTML='<div class="note err"><b>Could not reach the AI.</b> Check your internet and try again, or use Option 2.</div>';})
+      .then(function(){btn.disabled=false;btn.textContent='🔍 Decode my offer';});
+  });
+  $('cGo').addEventListener('click',function(){var o=readCalc();if(!o.ctc&&!o.fixed){toast('Type at least your CTC or fixed salary.');return;}last={ai:last&&last.ai||null};showReport(last.ai,o);$('report').scrollIntoView({behavior:'smooth',block:'start'});});
+
+  /* ---------- report ---------- */
+  function showReport(a,o){
+    var r=compute(o),rep=$('report');rep.hidden=false;a=a||null;
+    var parts=[['Fixed salary (guaranteed)',r.fixed,'#3bb273'],['Variable / bonus (not guaranteed)',r.variable,'#F5B942'],['One-time pay (year 1 only)',r.oneTime,'#9b8cff'],['PF, gratuity, insurance (not in your hand)',r.benefits,'#6F6661']].filter(function(p){return p[1]>0;});
+    var tot=parts.reduce(function(s,p){return s+p[1];},0)||1;
+    var h='';
+    if(a&&a.summary)h+='<div class="card"><span class="kick">In short</span><p style="margin:8px 0 0;font-size:16.5px">'+esc(a.summary)+'</p>'+((a.company||a.role)?'<p class="hint">'+esc([a.role,a.company,a.location].filter(Boolean).join(' · '))+(a.joining_date?' · Joining: '+esc(a.joining_date):'')+(a.offer_valid_till?' · Reply by: '+esc(a.offer_valid_till):'')+'</p>':'')+'</div>';
+    h+='<div class="rgrid"><div class="card"><span class="kick">The real number</span><div class="big" style="margin-top:12px">'+
+      '<div><small>CTC on the letter</small><b>'+lakh(r.ctc)+'</b><em>'+inr(r.ctc)+' a year</em></div>'+
+      '<div class="hi"><small>In your hand, every month</small><b>'+inr(r.monthly)+'</b><em>about, after PF and tax</em></div>'+
+      '<div><small>Cash in your bank in year 1</small><b>'+lakh(r.y1cash)+'</b><em>with '+Math.round(r.payout*100)+'% of variable</em></div></div>'+
+      '<div class="bar">'+parts.map(function(p){return '<span title="'+esc(p[0])+'" style="width:'+(p[1]/tot*100)+'%;background:'+p[2]+'"></span>';}).join('')+'</div>'+
+      '<div class="leg">'+parts.map(function(p){return '<div><i style="background:'+p[2]+'"></i>'+esc(p[0])+' <small>'+Math.round(p[1]/tot*100)+'%</small><b>'+inr(p[1])+'</b></div>';}).join('')+'</div>'+
+      (r.variable/r.ctc>0.2?'<div class="note warn" style="margin-top:12px">🚩 '+Math.round(r.variable/r.ctc*100)+'% of your CTC is variable. That part depends on targets and is not guaranteed.</div>':'')+
+      '<p class="hint" style="margin-top:12px">Only the <b>fixed salary</b> comes every month. Variable pay usually comes once a year if targets are met. One-time pay comes only once. PF and gratuity are yours, but you get them later, not as monthly salary.</p></div>'+
+      '<div class="card"><span class="kick">How we worked out your monthly salary</span><table class="steps">'+
+      '<tr><td>Fixed salary for the year</td><td>'+inr(r.fixed)+'</td></tr>'+
+      '<tr><td>− Your PF ('+(o.pf==='none'?'none':o.pf==='cap'?'capped':'12% of basic '+inr(r.basic))+')</td><td>'+inr(r.pf)+'</td></tr>'+
+      '<tr><td>− Professional tax</td><td>'+inr(r.pt)+'</td></tr>'+
+      '<tr><td>− Income tax (new regime)'+(r.taxReg===0?' <small style="color:var(--ok)">no tax up to ₹12.75 L salary</small>':'')+'</td><td>'+inr(r.taxReg)+'</td></tr>'+
+      '<tr class="t"><td>= In hand for the year</td><td>'+inr(r.monthly*12)+'</td></tr>'+
+      '<tr class="t"><td>÷ 12 = every month</td><td>'+inr(r.monthly)+'</td></tr></table>'+
+      '<p class="hint">Tax in year 1 on salary + variable + one-time pay: '+inr(r.taxY1)+'. Change the numbers in Option 2 above if anything looks wrong, and this updates.</p></div></div>';
+    if(a){
+      var T=(a.terms||[]).filter(function(x){return x&&x.term;});
+      var rules=[['Probation',a.probation],['Notice period',a.notice_period],['Training',a.training],['Location / transfer',a.transfer_clause||a.location],['Working days and hours',a.working_days_hours],['Pay-back (clawback) rule',a.clawback],['Non-compete',a.non_compete],['ESOPs',a.esops]].filter(function(x){return x[1];});
+      if(a.bond&&(a.bond.exists||a.bond.amount))rules.unshift(['Service bond',(a.bond.amount?inr(a.bond.amount)+' ':'')+(a.bond.duration?'for '+a.bond.duration+'. ':'')+(a.bond.details||'')]);
+      if(T.length||rules.length)h+='<div class="card"><span class="kick">Every term, in plain words</span><div class="terms" style="margin-top:12px">'+
+        rules.map(function(x){return '<div class="term"><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></div>';}).join('')+
+        T.map(function(x){return '<div class="term"><b>'+esc(x.term)+'</b><span>'+esc(x.plain)+'</span></div>';}).join('')+'</div></div>';
+      var F=(a.red_flags||[]).filter(function(x){return x&&x.flag;}).sort(function(x,y){var o={high:0,medium:1,low:2};return (o[x.severity]||2)-(o[y.severity]||2);});
+      h+='<div class="rgrid"><div class="card"><span class="kick">🚩 Watch out for</span>'+(F.length?F.map(function(x){return '<div class="flag '+esc(x.severity||'low')+'"><span>'+(x.severity==='high'?'🔴':x.severity==='medium'?'🟠':'🟡')+'</span><div><b>'+esc(x.flag)+'</b><span>'+esc(x.why)+'</span></div></div>';}).join(''):'<p style="margin:10px 0 0">✅ No major red flags found. Still read the full letter before signing.</p>')+'</div>'+
+        '<div class="card"><span class="kick">❓ Ask HR before you sign</span><ol class="clist" style="margin-top:10px">'+(a.ask_hr||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ol>'+
+        ((a.documents||[]).length?'<p class="kick" style="margin:16px 0 8px">📎 Documents to keep ready</p><ul class="clist">'+a.documents.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>':'')+'</div></div>';
+    }
+    h+='<div class="acts noprint"><button type="button" class="btn red" data-add="A">＋ Add to comparison as Offer A</button><button type="button" class="btn" data-add="B">＋ Add as Offer B</button><button type="button" class="btn" id="repPdf">⬇ Save this report as PDF</button></div>';
+    rep.innerHTML=h;
+    rep.querySelectorAll('[data-add]').forEach(function(b){b.onclick=function(){addToCompare(b.dataset.add,a,o);};});
+    $('repPdf').onclick=function(){print();};
+  }
+
+  /* ---------- compare ---------- */
+  var CK='yp_offer_cmp';var C;
+  try{C=JSON.parse(localStorage.getItem(CK)||'null');}catch(e){C=null;}
+  if(!C)C={A:{},B:{}};
+  function saveC(){try{localStorage.setItem(CK,JSON.stringify(C));}catch(e){}}
+  var FIELDS=[['name','Company and role','text','e.g. HUL, Sales Officer'],['ctc','CTC per year','num',''],['fixed','Fixed salary per year','num','blank = work it out'],['variable','Variable / bonus','num','0'],['oneTime','One-time pay','num','0'],['benefits','PF + gratuity + insurance','num','0'],['bond','Bond / penalty amount','num','0'],['bondYrs','Bond period (years)','num','0'],['notice','Notice period (days)','num','e.g. 30'],['location','Location','text','e.g. Gurugram / anywhere']];
+  var RATE=[['learn','Learning and growth'],['brand','Brand value for my CV'],['fit','Fits what I want to do']];
+  function drawCmpIn(){
+    $('cmpIn').innerHTML=['A','B'].map(function(k){var o=C[k]||{};
+      return '<div class="card" data-o="'+k+'"><h3>Offer <em>'+k+'</em></h3><div class="g2">'+FIELDS.map(function(f){return '<label>'+f[1]+'<input data-f="'+f[0]+'" '+(f[2]==='num'?'inputmode="numeric"':'')+' value="'+esc(o[f[0]]||'')+'" placeholder="'+esc(f[3])+'"></label>';}).join('')+'</div>'+
+        '<div style="display:grid;gap:8px;margin-top:12px">'+RATE.map(function(rt){var v=+(o[rt[0]]||0);return '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span style="font-size:13.5px;color:var(--muted);min-width:170px">'+rt[1]+'</span><span class="stars" data-r="'+rt[0]+'">'+[1,2,3,4,5].map(function(i){return '<button type="button" data-v="'+i+'" class="'+(i<=v?'on':'')+'" aria-label="'+i+' of 5">★</button>';}).join('')+'</span></div>';}).join('')+'</div></div>';}).join('');
+  }
+  $('cmpIn').addEventListener('input',function(e){var t=e.target,c=t.closest('[data-o]');if(!c||!t.dataset.f)return;C[c.dataset.o][t.dataset.f]=t.value;saveC();});
+  $('cmpIn').addEventListener('click',function(e){var b=e.target.closest('.stars button');if(!b)return;var c=b.closest('[data-o]'),r=b.parentNode.dataset.r;C[c.dataset.o][r]=+b.dataset.v;saveC();b.parentNode.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',+x.dataset.v<=+b.dataset.v);});});
+  $('cmpClear').addEventListener('click',function(){C={A:{},B:{}};saveC();drawCmpIn();$('cmpOut').innerHTML='';});
+  function addToCompare(k,a,o){
+    var bond=a&&a.bond||{};var nd=a&&a.notice_period?(/(\d+)\s*(day|month)/i.exec(a.notice_period)||[]):[];
+    C[k]={name:a?[a.company,a.role].filter(Boolean).join(', '):'',ctc:o.ctc||'',fixed:o.fixed||'',variable:o.variable||'',oneTime:o.oneTime||'',benefits:o.benefits||'',basic:o.basic||'',bond:bond.amount||'',bondYrs:(/(\d+(\.\d+)?)\s*year/i.exec(bond.duration||'')||[])[1]||((/(\d+)\s*month/i.exec(bond.duration||'')||[])[1]?(+(/(\d+)\s*month/i.exec(bond.duration)[1])/12).toFixed(1):''),notice:nd[1]?(/month/i.test(nd[2])?nd[1]*30:nd[1]):'',location:a?(a.location||''):'',learn:(C[k]||{}).learn,brand:(C[k]||{}).brand,fit:(C[k]||{}).fit};
+    saveC();toast('Added as Offer '+k+'. Open the Compare tab when both are ready.');
+  }
+  $('cmpGo').addEventListener('click',function(){
+    var R={};['A','B'].forEach(function(k){var o=C[k]||{};R[k]={o:o,c:compute({ctc:num(o.ctc),fixed:num(o.fixed),variable:num(o.variable),oneTime:num(o.oneTime),benefits:num(o.benefits),basic:num(o.basic),pf:'pct',pt:2400,payout:80})};});
+    if(!R.A.c.ctc||!R.B.c.ctc){toast('Add at least the CTC for both offers.');return;}
+    var A=R.A,B=R.B,nA=esc(A.o.name||'Offer A'),nB=esc(B.o.name||'Offer B');
+    function row(label,va,vb,fmt,higherBetter){var w=va===vb?'':((va>vb)===higherBetter?'a':'b');return '<tr><td>'+label+'</td><td class="'+(w==='a'?'win':'')+'">'+fmt(va)+'</td><td class="'+(w==='b'?'win':'')+'">'+fmt(vb)+'</td></tr>';}
+    var bondA=num(A.o.bond),bondB=num(B.o.bond),noA=num(A.o.notice),noB=num(B.o.notice);
+    var gA=(+A.o.learn||0)+(+A.o.brand||0)+(+A.o.fit||0),gB=(+B.o.learn||0)+(+B.o.brand||0)+(+B.o.fit||0);
+    var h='<div class="card" style="overflow-x:auto"><table class="ctab"><tr><th></th><th>Offer A</th><th>Offer B</th></tr><tr><td></td><td><b>'+nA+'</b></td><td><b>'+nB+'</b></td></tr>'+
+      row('CTC on the letter',A.c.ctc,B.c.ctc,lakh,true)+
+      row('In hand every month',A.c.monthly,B.c.monthly,inr,true)+
+      row('Guaranteed pay (fixed)',A.c.fixed,B.c.fixed,lakh,true)+
+      row('Not guaranteed (variable)',A.c.variable,B.c.variable,function(v){return v?lakh(v):'None';},false)+
+      row('Cash in year 1',A.c.y1cash,B.c.y1cash,lakh,true)+
+      row('Bond / penalty',bondA,bondB,function(v){return v?inr(v):'None';},false)+
+      row('Notice period',noA,noB,function(v){return v?v+' days':'–';},false)+
+      '<tr><td>Location</td><td>'+esc(A.o.location||'–')+'</td><td>'+esc(B.o.location||'–')+'</td></tr>'+
+      row('Your growth rating',gA,gB,function(v){return v?v+' / 15':'not rated';},true)+'</table></div>';
+    var diff=A.c.monthly-B.c.monthly,P=[];
+    P.push(Math.abs(diff)<500?'Both offers put about the same money in your hand each month.':(diff>0?nA:nB)+' pays about <b>'+inr(Math.abs(diff))+' more per month</b> in hand.');
+    var ctcGap=A.c.ctc-B.c.ctc;if((ctcGap>0)!==(diff>0)&&Math.abs(ctcGap)>20000&&Math.abs(diff)>=500)P.push('Notice: the offer with the bigger CTC is <b>not</b> the one that pays more each month. Look past the CTC headline.');
+    if(bondA||bondB)P.push((bondA&&bondB?'Both offers have a bond.':(bondA?nA:nB)+' has a bond of <b>'+inr(bondA||bondB)+'</b>.')+' Leaving early would cost you, so be sure about the company before you sign.');
+    if(A.c.variable/A.c.ctc>0.2||B.c.variable/B.c.ctc>0.2)P.push('A large part of '+(A.c.variable/A.c.ctc>B.c.variable/B.c.ctc?nA:nB)+' is variable pay, which depends on targets.');
+    if(gA||gB)P.push(gA===gB?'You rated both equally on growth, brand and fit.':'On learning, brand and fit, you rated <b>'+(gA>gB?nA:nB)+'</b> higher ('+Math.max(gA,gB)+' vs '+Math.min(gA,gB)+' out of 15). In the first job, learning often matters more than a small salary gap.');
+    else P.push('Tip: rate both offers on learning, brand and fit above. Money is only part of the decision.');
+    h+='<div class="card"><span class="kick">What this means</span><div class="verdict" style="margin-top:10px">'+P.map(function(p){return '<p>'+p+'</p>';}).join('')+'</div><p class="hint" style="margin-top:12px">This sets out the facts. The decision is yours: talk it over with your family, a senior and your placement cell.</p></div>';
+    $('cmpOut').innerHTML=h;$('cmpOut').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  /* ---------- tabs ---------- */
+  function tab(t){d.querySelectorAll('.tabs button').forEach(function(b){var on=b.dataset.tab===t;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);});$('tab-decode').hidden=t!=='decode';$('tab-compare').hidden=t!=='compare';if(t==='compare')drawCmpIn();try{history.replaceState(null,'','#'+t);}catch(e){}}
+  d.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){tab(b.dataset.tab);});});
+  if(location.hash==='#compare')tab('compare');
+  window.__tax=tax;window.__compute=compute;window.__mask=mask;
+})();
+</script>
+</body>
+</html>

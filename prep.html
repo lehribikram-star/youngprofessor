@@ -574,6 +574,24 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   details .hint{display:block}
   .card{margin-top:12px;padding:14px}
 }
+/* ===== Placement Prep Room: 3 sections ===== */
+.pipe a{padding:6px 11px;border-radius:999px;border:1px solid var(--line2);background:rgba(0,0,0,.35);text-decoration:none;color:inherit;transition:border-color .2s}.pipe a:hover{border-color:var(--red)}.pipe a.done{color:#4ade80;border-color:rgba(74,222,128,.35)}.pipe a.done::before{content:"✓ "}
+/* Placement Prep Room section bar (shared) */
+.ppr{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#140f0f,#0d0b0b)}
+.ppr .wrap{display:flex;align-items:center;gap:18px;padding-block:12px;flex-wrap:wrap}
+.ppr-home{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red2);text-decoration:none;white-space:nowrap}
+.ppr-steps{display:flex;gap:8px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.ppr-steps::-webkit-scrollbar{display:none}
+.ppr-steps a{flex:1;min-width:190px;display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:14px;border:1px solid var(--line2);background:var(--panel);text-decoration:none;transition:border-color .2s,background .2s}
+.ppr-steps a:hover{border-color:var(--red)}
+.ppr-steps a i{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:13px;background:var(--line2)}
+.ppr-steps a b{display:block;font-size:14.5px;line-height:1.2}
+.ppr-steps a small{display:block;color:var(--muted);font-size:12px;line-height:1.3}
+.ppr-steps a.on{border-color:var(--red);background:linear-gradient(120deg,rgba(227,22,30,.22),rgba(227,22,30,.05))}
+.ppr-steps a.on i{background:var(--red);color:#fff}
+@media (max-width:640px){.ppr .wrap{padding-block:8px}.ppr-steps{gap:6px}.ppr-steps a{min-width:0;flex-direction:column;gap:4px;padding:8px 4px;text-align:center}.ppr-steps a small{display:none}.ppr-steps a b{font-size:12px}.ppr-steps a i{width:22px;height:22px;font-size:12px}}
+
+@media (max-width:640px){.ppr-home{display:none}}
 /* ===== DEMO MODE (19 Oct 2026): plans and Premium badges hidden, every feature open. Delete this block to bring them back. ===== */
 .plk,#plansBtn,#planOv{display:none!important}
 </style>
@@ -586,6 +604,18 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   </div>
 </nav>
 
+<div class="ppr">
+  <div class="wrap">
+    <a class="ppr-home" href="prep.html">🎯 Placement Prep Room</a>
+    <div class="ppr-steps">
+      <a href="cv.html"><i>1</i><span><b>Get Shortlisted</b><small>Build your CV and match it to the job</small></span></a>
+      <a href="prep.html" class="on" aria-current="page"><i>2</i><span><b>Know Before You Go</b><small>Research the company, practise the interview</small></span></a>
+      <a href="offer.html"><i>3</i><span><b>Before You Sign</b><small>Decode your offer, compare offers</small></span></a>
+    </div>
+  </div>
+</div>
+
+
 <header class="hero">
   <svg class="skyline" id="skyline" aria-hidden="true" preserveAspectRatio="xMidYMax slice"></svg>
   <div class="wrap">
@@ -594,7 +624,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <h1>Know Before<br>You <em>Go</em></h1>
     <p class="lead">Walking into a placement interview? Type the company and the role you are applying for. In seconds you get a clear briefing: what the company does, its numbers, its products, the latest news, and the questions you are likely to face.</p>
     <div class="pipe" aria-label="Your placement journey">
-      <span class="done">Applied</span><i></i><span class="done">Shortlisted</span><i></i><span class="now">Interview <small>you are here</small></span><i></i><span>Offer 🎉</span>
+      <span class="done">Applied</span><i></i><a class="done" href="cv.html" title="① Get Shortlisted">Shortlisted</a><i></i><span class="now">Interview <small>you are here</small></span><i></i><a href="offer.html" title="③ Before You Sign">Offer 🎉</a>
     </div>
     <form class="search call" id="form" autocomplete="off">
       <div class="callhd"><span>📩 Interview call</span><span class="cid" id="cid">CANDIDATE PREP FILE</span></div>
@@ -651,7 +681,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div class="prem-h"><div><span class="prem-tag">⭐ Pro tools</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Tools that do hours of prep for you. Every tool on this page is open and free to use.</p></div><button type="button" class="prem-plans" id="plansBtn">See plans · ₹99/month</button></div>
       <div class="prem-grid">
         <button type="button" class="ptool" id="kitBtn"><span class="pi">📄</span><b>Interview Kit</b><small>A ready 3-page PDF for this company and role: 30-second pitch, “Why us?” answer, 10 likely questions with model answers, news talking points and a last-hour checklist.</small><em>Generate my kit →</em></button>
-        <button type="button" class="ptool" id="cvBtn"><span class="pi">🎯</span><b>CV × Job Match</b><small>Upload your CV and the job description. Get a match score, missing keywords, stronger CV lines and your own “Tell me about yourself” answer.</small><em>Match my CV →</em></button>
+        <a class="ptool" id="cvLink" href="cv.html#match" style="text-decoration:none"><span class="pi">🎯</span><b>CV × Job Match</b><small>Now in <b>① Get Shortlisted</b>, together with the new CV builder. Build or upload your CV, then match it to this job and get stronger lines and your own answers.</small><em>Open Get Shortlisted →</em></a><button type="button" id="cvBtn" hidden></button>
       </div>
     </article>
 
@@ -1410,6 +1440,9 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   $('cvFile').addEventListener('change',function(){var f=this.files[0];if(!f)return;$('cvFileName').textContent='Reading '+f.name+'…';
     readCV(f).then(function(t){cvTxt=String(t||'').replace(/\s+\n/g,'\n').trim();$('cvFileName').textContent='✅ '+f.name+' ('+cvTxt.split(/\s+/).length+' words read)';$('cvDrop').classList.add('ok');})
       .catch(function(){$('cvFileName').textContent='Could not read that file. Please paste your CV text instead.';});});
+
+  /* CV x Job Match moved to Get Shortlisted: carry company and role across */
+  $('cvLink').addEventListener('click',function(){var co=lastData&&lastData.summary&&lastData.summary.title||'';this.href='cv.html?co='+encodeURIComponent(co)+'&role='+encodeURIComponent(curRole())+'#match';});
   $('cvBtn').addEventListener('click',function(){if(!lastData)return;$('cvFor').textContent=curRole()+' at '+lastData.summary.title;$('cvForm').hidden=false;$('cvRes').hidden=true;ov('cvOv',true);});
   $('cvGo').addEventListener('click',function(){
     var cv=(cvTxt||$('cvText').value||'').trim(),err=$('cvErr');err.hidden=true;
