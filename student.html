@@ -194,6 +194,7 @@ footer a{color:var(--muted)}
 .prep-cta:hover{transform:translateY(-2px);box-shadow:0 22px 50px -20px var(--redglow)}
 .prep-cta b{font-size:18px}
 .prep-cta span{opacity:.85;font-size:15px}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -216,7 +217,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <span class="hi rv"><i>👋</i> Welcome, students</span>
     <h1 class="rv d1">Student <em>Zone</em></h1>
-    <p class="lead rv d2">A space made just for you. Prepare for placements and UGC NET, learn a concept in a minute, discover opportunities worth your time, and ask me anything.</p>
+    <p class="lead rv d2">A space made just for you. Prepare for placements and UGC NET, discover opportunities worth your time, and ask me anything. Everything here is free.</p>
     <div class="tiles">
       <a class="tile spot rv" href="prep.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span><div class="sp-body"><em class="sp-tag">Spotlight · Now 3 tools</em><strong>Placement Prep Room</strong><span>Your whole placement journey in 3 steps: <b>① Get Shortlisted</b>, build your CV and match it to the job · <b>② Know Before You Go</b>, research the company and practise the interview · <b>③ Before You Sign</b>, decode your offer letter.</span></div><small class="sp-go">Open the Prep Room →</small></a>
       <a class="tile rv" href="professor.html" style="--acc:#F5B942"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg></span><strong>Professor in Progress</strong><span>UGC NET Paper 2 notes for Commerce and Management. Read 3 pages of every unit free.</span><small>Start reading →</small></a>
@@ -243,7 +244,8 @@ footer a{color:var(--muted)}
   <div class="lbox"><button type="button" class="lx" id="lClose" aria-label="Close">×</button><div class="lframe" id="lFrame"></div><p class="lcap" id="lCap"></p></div>
 </div>
 
-<section class="sec" id="buddy">
+<!-- AI Buddy: hidden until it is live. Delete the word hidden below to show it again. -->
+<section class="sec" id="buddy" hidden>
   <div class="wrap buddy">
     <div>
       <p class="label rv">AI Buddy · coming soon</p>
@@ -356,6 +358,11 @@ footer a{color:var(--muted)}
   d.getElementById('lClose').addEventListener('click',lClose);
   lModal.addEventListener('click',function(e){if(e.target===lModal)lClose();});
   d.addEventListener('keydown',function(e){if(e.key==='Escape')lClose();});
+  /* Until at least one lesson has a link, hide the lessons section, its tile and its menu link */
+  if(!LESSONS.some(function(l){return !!embed(l.url);})){
+    d.getElementById('lessons').hidden=true;
+    [].forEach.call(d.querySelectorAll('a[href="#lessons"]'),function(a){var li=a.closest('li');(li||a).hidden=true;});
+  }
   lDraw();
 
   /* Ask form: sends straight to Dr. Lehri (Google Apps Script), email app as backup */
