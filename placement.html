@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Placement Prep Room | Student Zone | youngprofessor.in</title>
+<link rel="canonical" href="https://youngprofessor.in/placement.html">
+<meta name="description" content="The Placement Prep Room by Dr. Bikram Paul Singh Lehri: four free steps from your first LinkedIn profile to your first offer letter. LinkedIn Profile Builder, ATS CV Builder, Know Before You Go and Before You Sign.">
+<meta name="theme-color" content="#0B0A0A">
+<meta property="og:title" content="Placement Prep Room | youngprofessor.in">
+<meta property="og:description" content="Four free steps from your first profile to your first offer.">
+<meta property="og:image" content="https://youngprofessor.in/photo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#0B0A0A;--bg2:#121010;--panel:#171414;--line:#2A2323;--line2:#3A2E2E;
+  --ink:#F4EFEA;--muted:#A39A94;--dim:#6F6661;
+  --red:#E3161E;--red2:#FF3B42;--redglow:rgba(227,22,30,.35);--ok:#3bb273;
+  --serif:"DM Serif Display",Georgia,serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red2);outline-offset:3px;border-radius:6px}
+[hidden]{display:none!important}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-.01em}
+em{color:var(--red)}
+.nav{position:sticky;top:0;z-index:40;background:rgba(11,10,10,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px}
+.logo img{width:38px;height:38px;border-radius:50%}
+.logo em{font-style:normal}
+.back{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:14px;font-weight:700;white-space:nowrap}
+/* hero */
+.hero{position:relative;padding:56px 0 30px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-40% -20% auto auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(227,22,30,.22),transparent 65%);z-index:-1;animation:float 12s ease-in-out infinite alternate}
+@keyframes float{to{transform:translate(-60px,40px)}}
+.kick{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:6px 12px;border:1px solid var(--line2);border-radius:999px}
+.kick i{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.hero h1{font-size:clamp(34px,6.4vw,64px);line-height:1.04;margin:18px 0 14px}
+.hero h1 em{font-style:italic}
+.hero p{color:var(--muted);font-size:clamp(16.5px,1.8vw,19px);max-width:56ch;margin:0}
+.prog{display:flex;align-items:center;gap:14px;margin-top:26px;max-width:460px}
+.prog .bar{flex:1;height:8px;border-radius:9px;background:var(--line);overflow:hidden}
+.prog .bar i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--red),var(--ok));transition:width 1.2s var(--ease)}
+.prog span{font-family:var(--mono);font-size:12.5px;color:var(--muted);white-space:nowrap}
+/* path */
+.path{position:relative;margin:34px 0 50px;padding-left:46px}
+.path .line{position:absolute;left:19px;top:24px;bottom:24px;width:2px;background:var(--line)}
+.path .line i{position:absolute;left:0;top:0;width:100%;height:0;background:linear-gradient(var(--red),var(--red2));box-shadow:0 0 12px var(--redglow);transition:height .2s linear}
+.step{position:relative;margin-bottom:18px;opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.step.in{opacity:1;transform:none}
+.step .dot{position:absolute;left:-46px;top:22px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:16px;background:var(--bg);border:2px solid var(--line2);transition:all .4s}
+.step.in .dot{border-color:var(--red);box-shadow:0 0 0 6px rgba(227,22,30,.12)}
+.step.done .dot{background:var(--ok);border-color:var(--ok);color:#fff;box-shadow:0 0 0 6px rgba(59,178,115,.15)}
+.card{position:relative;overflow:hidden;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;padding:24px;border-radius:24px;border:1px solid var(--line);background:var(--panel);text-decoration:none;transition:border-color .3s,transform .35s var(--ease),box-shadow .35s}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at var(--mx,90%) var(--my,0%),rgba(var(--c),.18),transparent 70%);pointer-events:none;transition:opacity .3s}
+.card:hover{border-color:rgba(var(--c),.7);transform:translateY(-3px);box-shadow:0 24px 50px -30px rgba(var(--c),.9)}
+.card .ic{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:30px;background:rgba(var(--c),.14);border:1px solid rgba(var(--c),.45)}
+.card small.k{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgb(var(--c))}
+.card h2{font-size:clamp(23px,2.8vw,30px);line-height:1.15;margin:4px 0 6px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.meta span{font-size:12.5px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line2);color:var(--ink)}
+.meta .soon{border-color:rgba(245,185,66,.5);color:#ffd98a}
+.go{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;background:var(--red);color:#fff;font-weight:800;font-size:15px;white-space:nowrap;box-shadow:0 12px 30px -12px var(--redglow);transition:transform .25s var(--ease)}
+.card:hover .go{transform:translateX(4px)}
+.step.done .go{background:var(--bg2);border:1px solid var(--ok);color:#bff0d3;box-shadow:none}
+.skipn{display:block;margin:8px 0 0 6px;font-size:13px;color:var(--dim)}
+.free{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px 24px;border-radius:22px;border:1px dashed var(--line2);background:var(--bg2);margin-bottom:60px}
+.free b{font-family:var(--serif);font-weight:400;font-size:22px}
+.free span{color:var(--muted);font-size:14.5px}
+.ask{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-weight:800;font-size:14.5px}
+.ask:hover{border-color:var(--red)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-size:14px}
+@media (max-width:720px){
+  .card{grid-template-columns:1fr;gap:12px;padding:20px}
+  .card .ic{width:52px;height:52px;font-size:24px;border-radius:14px}
+  .go{justify-self:start}
+  .path{padding-left:38px}.path .line{left:15px}.step .dot{left:-38px;width:32px;height:32px;font-size:14px}
+  .hero{padding-top:34px}
+  .nav .wrap{height:58px}.logo{font-size:18px}.logo img{width:34px;height:34px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.step{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Site">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img src="logo-mark.webp" alt="" width="38" height="38"><span>young<em>professor</em>.in</span></a>
+    <a class="back" href="student.html">← Student Zone</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <span class="kick"><i></i>Placement Prep Room · Free</span>
+    <h1>From your first profile <em>to your first offer.</em></h1>
+    <p>Four simple steps. Do them in order, or jump straight to the one you need right now. Everything here is free.</p>
+    <div class="prog" aria-live="polite"><div class="bar"><i id="pbar"></i></div><span id="ptxt">0 of 4 done</span></div>
+  </header>
+
+  <div class="path" id="path">
+    <span class="line" aria-hidden="true"><i id="pline"></i></span>
+
+    <div class="step" data-step="1"><span class="dot">1</span>
+      <a class="card" href="linkedin.html" style="--c:10,102,194">
+        <span class="ic">💼</span>
+        <span><small class="k">Step 1 · About 2 minutes</small><h2>LinkedIn Profile Builder</h2>
+          <p>Answer a few quick questions and get your headline, About section, experience lines and skills, ready to copy. Then check your Profile Score.</p>
+          <span class="meta"><span>What you need: just you</span><span>No LinkedIn yet? We'll guide you</span></span></span>
+        <span class="go">Start →</span>
+      </a>
+      <span class="skipn">Already have a strong profile? Skip to Step 2 ↓</span>
+    </div>
+
+    <div class="step" data-step="2"><span class="dot">2</span>
+      <a class="card" href="cv.html" style="--c:227,22,30">
+        <span class="ic">📄</span>
+        <span><small class="k">Step 2 · About 10 minutes</small><h2>CV Builder</h2>
+          <p>Upload your old CV or start fresh. Match it to a job description, edit every line, check your ATS score, and download in Word and PDF.</p>
+          <span class="meta"><span>What you need: your old CV (optional)</span><span>Free Word &amp; PDF</span></span></span>
+        <span class="go">Start →</span>
+      </a>
+      <span class="skipn">CV ready? Skip to Step 3 ↓</span>
+    </div>
+
+    <div class="step" data-step="3"><span class="dot">3</span>
+      <a class="card" href="prep.html" style="--c:245,185,66">
+        <span class="ic">🎯</span>
+        <span><small class="k">Step 3 · Before every interview</small><h2>Know Before You Go</h2>
+          <p>Type the company and your role. Get its story, numbers, products, leaders, latest news and the questions you may face, in seconds.</p>
+          <span class="meta"><span>What you need: company name or website link</span><span class="soon">🎤 AI Coach · Premium · Coming soon</span></span></span>
+        <span class="go">Start →</span>
+      </a>
+      <span class="skipn">Got the offer? Skip to Step 4 ↓</span>
+    </div>
+
+    <div class="step" data-step="4"><span class="dot">4</span>
+      <a class="card" href="offer.html" style="--c:111,195,178">
+        <span class="ic">✍️</span>
+        <span><small class="k">Step 4 · When the offer arrives</small><h2>Before You Sign</h2>
+          <p>Upload your offer letter. Understand every term, spot red flags, see your real in-hand salary and compare two offers side by side.</p>
+          <span class="meta"><span>What you need: your offer letter</span><span>Your details stay private</span></span></span>
+        <span class="go">Start →</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="free">
+    <div><b>Stuck at any step?</b><br><span>Write to me directly. I read every message.</span></div>
+    <a class="ask" href="student.html#ask">💬 Ask your professor</a>
+  </div>
+</main>
+
+<footer><div class="wrap">Placement Prep Room · <a href="student.html">Student Zone</a> · <a href="index.html">youngprofessor.in</a> · Dr. Bikram Paul Singh Lehri</div></footer>
+
+<script>
+(function(){
+  var d=document,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var done={};try{done=JSON.parse(localStorage.getItem('yp_ppr_done')||'{}')||{};}catch(e){}
+  var steps=[].slice.call(d.querySelectorAll('.step')),n=0;
+  steps.forEach(function(s){if(done[s.dataset.step]){s.classList.add('done');s.querySelector('.dot').textContent='✓';s.querySelector('.go').textContent='Open again →';n++;}});
+  d.getElementById('ptxt').textContent=n+' of 4 done';
+  setTimeout(function(){d.getElementById('pbar').style.width=(n/4*100)+'%';},300);
+  if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});steps.forEach(function(s){io.observe(s);});}
+  else steps.forEach(function(s){s.classList.add('in');});
+  var path=d.getElementById('path'),line=d.getElementById('pline'),tick=false;
+  function draw(){tick=false;var r=path.getBoundingClientRect(),p=(innerHeight*.7-r.top)/r.height;p=Math.max(0,Math.min(1,p));line.style.height=(p*100)+'%';}
+  if(reduce)line.style.height='100%';else{addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(draw);}},{passive:true});draw();}
+  if(matchMedia('(hover:hover)').matches)[].forEach.call(d.querySelectorAll('.card'),function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');});});
+})();
+</script>
+</body>
+</html>

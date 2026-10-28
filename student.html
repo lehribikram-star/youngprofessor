@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Student Zone | Dr. Bikram Paul Singh Lehri</title>
 <link rel="canonical" href="https://youngprofessor.in/student.html">
-<meta name="description" content="Student Zone by Dr. Bikram Paul Singh Lehri: one-minute lessons, the Placement Prep Room, UGC NET Paper 2 notes, opportunities from partners and a direct line to ask questions.">
+<meta name="description" content="Student Zone by Dr. Bikram Paul Singh Lehri: six free rooms for your whole journey, led by the Placement Prep Room, UGC NET Paper 2 notes, opportunities from partners and a direct line to ask questions.">
 <meta name="theme-color" content="#0B0A0A">
 <meta property="og:title" content="Student Zone | youngprofessor.in">
 <meta property="og:description" content="One-minute lessons, placement prep, opportunities and a direct line to Dr. Lehri.">
@@ -202,6 +202,77 @@ footer a{color:var(--muted)}
 .leader-cta b{display:block;font-size:18px;margin:2px 0}
 .leader-cta span span{display:block;opacity:.85;font-size:14.5px}
 .leader-cta i{margin-left:auto;font-style:normal;font-size:22px;color:#F5B942}
+
+/* ===== Oct 2026: Student Zone as rooms ===== */
+.szh{position:relative;overflow:hidden;padding-block:80px 30px}
+.szh::before{content:"";position:absolute;inset:-30% -10% auto auto;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(227,22,30,.26),transparent 65%);filter:blur(10px);z-index:-1;animation:szf 14s ease-in-out infinite alternate}
+.szh::after{content:"";position:absolute;inset:auto auto -40% -20%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(111,195,178,.14),transparent 65%);z-index:-1;animation:szf 16s ease-in-out infinite alternate-reverse}
+@keyframes szf{to{transform:translate(-50px,40px)}}
+.szh h1{font-size:clamp(46px,9vw,104px);line-height:.98;margin:18px 0 6px}
+.szh h1 em{color:var(--red);font-style:italic}
+.tagline{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.6vw,40px);margin:0 0 18px;color:var(--muted)}
+.tagline span{display:inline-block;opacity:.18;transform:translateY(8px);transition:opacity .6s ease,transform .6s var(--ease),color .6s,text-shadow .6s}
+.tagline.on span{opacity:1;transform:none;color:var(--ink);text-shadow:0 0 24px rgba(227,22,30,.55)}
+.tagline.on span:nth-child(2){transition-delay:.18s}.tagline.on span:nth-child(3){transition-delay:.36s}.tagline.on span:nth-child(4){transition-delay:.54s}.tagline.on span:nth-child(5){transition-delay:.72s;color:var(--red2)}
+.szj{display:flex;align-items:center;gap:14px;margin-top:28px;max-width:560px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.szj i{flex:1;height:2px;background:var(--line);position:relative;overflow:visible}
+.szj i b{position:absolute;left:0;top:0;height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--red2));box-shadow:0 0 12px var(--redglow);transition:width 2.2s var(--ease) .8s}
+.szj i b::after{content:"";position:absolute;right:-5px;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--red2);box-shadow:0 0 14px var(--red2)}
+.szj.in i b{width:100%}
+.rooms-sec{padding-top:30px}
+.flag{position:relative;overflow:hidden;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:32px;border-radius:30px;text-decoration:none;color:inherit;border:1.5px solid rgba(var(--c),.65);background:radial-gradient(700px 300px at 100% 0%,rgba(var(--c),.3),transparent 65%),linear-gradient(160deg,#1c0d0e,#110a0b);box-shadow:0 30px 70px -40px rgba(var(--c),.9);transition:transform .4s var(--ease),box-shadow .4s}
+.flag::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.07) 50%,transparent 65%);transform:translateX(-100%);animation:sheen 5s ease-in-out 1.5s infinite}
+@keyframes sheen{40%,100%{transform:translateX(100%)}}
+.flag:hover{transform:translateY(-4px);box-shadow:0 40px 80px -40px rgba(var(--c),1)}
+.flag h2{font-size:clamp(32px,4.6vw,52px);line-height:1.05;margin:10px 0 8px}
+.flag h2 em{color:var(--red2);font-style:italic}
+.flag p{margin:0 0 16px;color:#d9cfcb;font-size:16.5px}
+.fl-l{flex:1 1 520px;min-width:0}
+.fsteps{display:flex;flex-wrap:wrap;gap:8px}
+.fsteps span{display:inline-flex;align-items:center;gap:8px;padding:7px 12px 7px 7px;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);font-size:13.5px;font-weight:700}
+.fsteps b{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--red);font-size:12px}
+.fl-go{flex:none;padding:15px 26px;border-radius:999px;background:#fff;color:#111;font-weight:800;font-size:16px;transition:transform .3s var(--ease)}
+.flag:hover .fl-go{transform:translateX(6px)}
+.rstage{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgb(var(--c));margin-right:8px}
+.rb{display:inline-block;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:999px;vertical-align:1px}
+.rb.live{background:rgba(59,178,115,.16);color:#7fe0ad;border:1px solid rgba(59,178,115,.45)}
+.rb.soon{background:rgba(245,185,66,.12);color:#ffd98a;border:1px solid rgba(245,185,66,.4)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px;perspective:1200px;align-items:start}
+.room{position:relative;border-radius:24px;border:1px solid var(--line);background:var(--panel);overflow:hidden;transition:border-color .3s,box-shadow .4s,transform .4s var(--ease);transform-style:preserve-3d}
+.room::before{content:"";position:absolute;inset:0;background:radial-gradient(360px 200px at var(--mx,80%) var(--my,0%),rgba(var(--c),.22),transparent 70%);pointer-events:none}
+.room:hover,.room.open{border-color:rgba(var(--c),.6);box-shadow:0 26px 60px -36px rgba(var(--c),.9)}
+.rtop{all:unset;box-sizing:border-box;display:block;width:100%;padding:24px 22px 18px;cursor:pointer;position:relative}
+.rtop:focus-visible{outline:2px solid var(--red2);outline-offset:-4px;border-radius:24px}
+.rem{display:grid;place-items:center;width:58px;height:58px;margin:16px 0 12px;border-radius:18px;font-size:28px;background:rgba(var(--c),.14);border:1px solid rgba(var(--c),.45);transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.room:hover .rem,.room.open .rem{transform:rotate(-8deg) scale(1.08)}
+.room h3{font-family:var(--serif);font-weight:400;font-size:27px;line-height:1.1;margin:0 0 4px}
+.room p{margin:0;color:var(--muted);font-size:15px}
+.rmore{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:13.5px;font-weight:800;color:rgb(var(--c))}
+.rmore i{font-style:normal;display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;border:1px solid rgba(var(--c),.6);transition:transform .35s var(--ease)}
+.room.open .rmore i{transform:rotate(45deg)}
+.rin{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.rin>*{overflow:hidden;min-height:0}
+.room.open .rin{grid-template-rows:1fr}
+.rin ul{list-style:none;margin:0;padding:0 22px;min-height:0}
+.rin li{border-top:1px solid var(--line)}
+.rin li>a,.rin li>span:first-child{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;font-size:14.5px;font-weight:600;text-decoration:none}
+.rin li{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.rin li>a{flex:1}
+.rin li>span:first-child{padding:11px 0}
+.rin li a:hover span{color:rgb(var(--c))}
+.rin em{font-style:normal;flex:none;font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px}
+.rin em.live{background:rgba(59,178,115,.16);color:#7fe0ad}
+.rin em.soon{background:rgba(245,185,66,.12);color:#ffd98a}
+.rgo{display:inline-block;margin:6px 22px 22px;padding:10px 16px;border-radius:999px;background:rgb(var(--c));color:#111;font-weight:800;font-size:14px;text-decoration:none}
+.rgo.off{background:none;color:var(--muted);padding:6px 0;font-weight:600}
+.rgo.off a{color:var(--ink)}
+.room .rin .rgo{min-height:0}
+.room.sug{text-decoration:none;color:inherit;border-style:dashed}
+.askfab{position:fixed;right:16px;bottom:16px;z-index:30;display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:var(--red);color:#fff;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 14px 30px -10px var(--redglow);transform:translateY(140%);transition:transform .45s var(--ease)}
+.askfab.show{transform:none}
+@media (max-width:1000px){.rgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.rgrid{grid-template-columns:1fr}.szh{padding-block:46px 20px}.flag{padding:24px 20px;border-radius:24px}.fl-go{width:100%;text-align:center}.room h3{font-size:24px}.askfab{right:12px;bottom:12px;padding:11px 15px}}
+@media (prefers-reduced-motion:reduce){.tagline span{opacity:1;transform:none}.szj i b{width:100%}.flag::after{display:none}}
 </style>
 </head>
 <body>
@@ -209,33 +280,64 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <a class="logo" href="index.html" aria-label="youngprofessor.in home"><img class="lmark" src="logo-mark.webp" alt="" width="40" height="40"><span>young<em>professor</em>.in</span></a>
     <ul class="menu">
-      <li><a href="#lessons">1-Minute Lessons</a></li>
-      <li><a href="prep.html">Placement Prep</a></li>
-      <li><a href="professor.html">Professor in Progress</a></li>
-      <li><a href="opportunities.html">Opportunities</a></li>
-            <li><a href="#ask">Ask Me</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="placement.html">Placement Prep</a></li>
+      <li><a href="leader.html">Leader test</a></li>
+      <li><a href="professor.html">UGC NET</a></li>
+      <li><a href="#ask">Ask Me</a></li>
       <li><a href="unsaid.html">Unsaid ✨</a></li>
     </ul>
     <a class="back" href="index.html">← Main site</a>
   </div>
 </nav>
 
-<header class="hero">
+<header class="szh">
   <div class="wrap">
     <span class="hi rv"><i>👋</i> Welcome, students</span>
     <h1 class="rv d1">Student <em>Zone</em></h1>
-    <p class="lead rv d2">A space made just for you. Prepare for placements and UGC NET, discover opportunities worth your time, and ask me anything. Everything here is free.</p>
-    <div class="tiles">
-      <a class="tile spot rv" href="prep.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span><div class="sp-body"><em class="sp-tag">Spotlight · Now 3 tools</em><strong>Placement Prep Room</strong><span>Your whole placement journey in 3 steps: <b>① Get Shortlisted</b>, build your CV and match it to the job · <b>② Know Before You Go</b>, research the company and practise the interview · <b>③ Before You Sign</b>, decode your offer letter.</span></div><small class="sp-go">Open the Prep Room →</small></a>
-      <a class="tile rv" href="professor.html" style="--acc:#F5B942"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg></span><strong>Professor in Progress</strong><span>UGC NET Paper 2 notes for Commerce and Management. Read 3 pages of every unit free.</span><small>Start reading →</small></a>
-      <a class="tile rv d1" href="#lessons"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 9.5v5l4-2.5z" fill="currentColor"/></svg></span><strong>1-Minute Lessons</strong><span>Short reels that explain one idea in 60 seconds, sorted by subject.</span><small>Watch →</small></a>
-      <a class="tile rv d2" href="opportunities.html" style="--acc:#F5B942"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></span><strong>Opportunities</strong><span>Courses and programmes checked by experts before they reach you.</span><small>Explore →</small></a>
-      <a class="tile rv d3" href="#ask" style="--acc:#FF8A7A"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.8 1c0 1.7-2.3 2-2.3 3.5M12 17h.01"/></svg></span><strong>Ask Me</strong><span>Doubts, career advice or project help. Write to me directly.</span><small>Ask →</small></a>
-    </div>
-    <a class="leader-cta rv" href="leader.html"><span class="lc-e" aria-hidden="true">🎯</span><span><small>New · 60-second test</small><b>What kind of business leader are you?</b><span>Brand Builder, Venture Creator or People Leader? Find out and share your result.</span></span><i aria-hidden="true">→</i></a>
-    <a class="unsaid-cta rv" href="unsaid.html"><b>✨ Things I Never Said</b><span>Many talks are left unsaid. If you have something to tell me, write your heart out here, with or without your name. →</span></a>
+    <p class="tagline" aria-label="The zone created for you."><span>The</span> <span>zone</span> <span>created</span> <span>for</span> <span>you.</span></p>
+    <p class="lead rv d2">Six rooms for your whole journey, from your first semester to your first job. Everything here is free, and made by your professor.</p>
+    <div class="szj rv d3" aria-hidden="true"><span>1st semester</span><i><b></b></i><span>First job</span></div>
   </div>
 </header>
+
+<section class="sec rooms-sec" id="rooms">
+  <div class="wrap">
+    <a class="flag rv" href="placement.html" style="--c:227,22,30">
+      <span class="fl-l">
+        <span class="rstage">Get placed · Flagship</span>
+        <span class="rb live">● Open now · 4 tools</span>
+        <h2>🎯 Placement Prep <em>Room</em></h2>
+        <p>From your first profile to your first offer, in four clear steps.</p>
+        <span class="fsteps"><span><b>1</b>LinkedIn Profile Builder</span><span><b>2</b>CV Builder</span><span><b>3</b>Know Before You Go</span><span><b>4</b>Before You Sign</span></span>
+      </span>
+      <span class="fl-go">Enter the room →</span>
+    </a>
+    <div class="rgrid" id="rgrid">
+      <article class="room rv d0" style="--c:111,195,178" data-k="cc">
+        <button type="button" class="rtop" aria-expanded="false"><span class="rstage">Discover</span><span class="rb live">● Open now</span><span class="rem">🧭</span><h3>Career Compass</h3><p>Find your path</p><span class="rmore">What's inside <i>+</i></span></button>
+        <div class="rin"><div class="rin-i"><ul><li><a href="leader.html"><span>What kind of business leader are you?</span><em class="live">Live</em></a></li><li><a href="professor.html"><span>Professor in Progress: UGC NET notes</span><em class="live">Live</em></a></li><li><span>Specialisation Finder</span><em class="soon">Soon</em></li><li><span>Role Roadmaps</span><em class="soon">Soon</em></li><li><span>Free Certifications Board</span><em class="soon">Soon</em></li></ul><a class="rgo" href="leader.html">Take the 60-second test →</a></div></div>
+      </article>
+      <article class="room rv d1" style="--c:155,140,255" data-k="sr">
+        <button type="button" class="rtop" aria-expanded="false"><span class="rstage">Learn</span><span class="rb soon">Opening soon</span><span class="rem">📚</span><h3>Study Room</h3><p>Learn it once, remember it forever</p><span class="rmore">What's inside <i>+</i></span></button>
+        <div class="rin"><div class="rin-i"><ul><li><span>Exam Ready revision sheets</span><em class="soon">Soon</em></li><li><span>Answer Like a Topper</span><em class="soon">Soon</em></li><li><span>1-Minute Lessons</span><em class="soon">Soon</em></li><li><span>Case of the Week</span><em class="soon">Soon</em></li></ul><span class="rgo off">Opening soon · <a href="#ask">Tell me what you need</a></span></div></div>
+      </article>
+      <article class="room rv d2" style="--c:90,170,255" data-k="ps">
+        <button type="button" class="rtop" aria-expanded="false"><span class="rstage">Build</span><span class="rb soon">Opening soon</span><span class="rem">🔬</span><h3>Project Studio</h3><p>Your research and project partner</p><span class="rmore">What's inside <i>+</i></span></button>
+        <div class="rin"><div class="rin-i"><ul><li><span>Topic Finder</span><em class="soon">Soon</em></li><li><span>Questionnaire Builder</span><em class="soon">Soon</em></li><li><span>Sample Size Calculator</span><em class="soon">Soon</em></li><li><span>Report templates: SIP, capstone, dissertation</span><em class="soon">Soon</em></li><li><span>APA Reference Generator</span><em class="soon">Soon</em></li><li><span>Viva Prep</span><em class="soon">Soon</em></li></ul><span class="rgo off">Opening soon · <a href="#ask">Tell me what you need</a></span></div></div>
+      </article>
+      <article class="room rv d0" style="--c:255,138,122" data-k="il">
+        <button type="button" class="rtop" aria-expanded="false"><span class="rstage">Build</span><span class="rb soon">Opening soon</span><span class="rem">🚀</span><h3>Idea Lab</h3><p>Turn ideas into ventures</p><span class="rmore">What's inside <i>+</i></span></button>
+        <div class="rin"><div class="rin-i"><ul><li><span>Business Model Canvas Builder</span><em class="soon">Soon</em></li><li><span>Idea Validation Checklist</span><em class="soon">Soon</em></li><li><span>Pitch Deck Builder</span><em class="soon">Soon</em></li><li><span>Startup schemes & funding guide</span><em class="soon">Soon</em></li><li><span>Competitions calendar</span><em class="soon">Soon</em></li></ul><span class="rgo off">Opening soon · <a href="#ask">Tell me what you need</a></span></div></div>
+      </article>
+      <article class="room rv d1" style="--c:245,185,66" data-k="lg">
+        <button type="button" class="rtop" aria-expanded="false"><span class="rstage">Always here</span><span class="rb live">● Open now</span><span class="rem">🌿</span><h3>The Lounge</h3><p>A safe space, just for you</p><span class="rmore">What's inside <i>+</i></span></button>
+        <div class="rin"><div class="rin-i"><ul><li><a href="#ask"><span>Ask Me: write to your professor</span><em class="live">Live</em></a></li><li><a href="unsaid.html"><span>Things I Never Said</span><em class="live">Live</em></a></li><li><a href="opportunities.html"><span>Opportunities: courses & events</span><em class="live">Live</em></a></li></ul><a class="rgo" href="#ask">💬 Ask your professor →</a></div></div>
+      </article>
+      <a class="room sug rv d2" href="#ask" style="--c:244,239,234"><span class="rtop"><span class="rstage">Your idea</span><span class="rem">💡</span><h3>Suggest a room</h3><p>What would help you most in your studies or career? Tell me and I'll build it.</p><span class="rmore">Write to me →</span></span></a>
+    </div>
+  </div>
+</section>
 
 <main>
 <section class="sec" id="lessons">
@@ -393,5 +495,16 @@ footer a{color:var(--muted)}
 })();
 
 </script>
+<a class="askfab" id="askFab" href="#ask">💬 Stuck? Ask your professor</a>
+<script>(function(){var d=document,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  setTimeout(function(){var t=d.querySelector('.tagline');if(t)t.classList.add('on');var j=d.querySelector('.szj');if(j)j.classList.add('in');},reduce?0:500);
+  [].forEach.call(d.querySelectorAll('.room'),function(r){var b=r.querySelector('.rtop');
+    b.addEventListener('click',function(){var o=!r.classList.contains('open');r.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+    if(matchMedia('(hover:hover) and (pointer:fine)').matches&&!reduce){
+      r.addEventListener('mousemove',function(e){var q=r.getBoundingClientRect(),x=(e.clientX-q.left)/q.width,y=(e.clientY-q.top)/q.height;r.style.setProperty('--mx',x*100+'%');r.style.setProperty('--my',y*100+'%');r.style.transform='rotateX('+((.5-y)*6)+'deg) rotateY('+((x-.5)*7)+'deg) translateY(-4px)';});
+      r.addEventListener('mouseleave',function(){r.style.transform='';});}});
+  var fab=d.getElementById('askFab'),ask=d.getElementById('ask');
+  addEventListener('scroll',function(){var y=scrollY>500,a=ask&&ask.getBoundingClientRect().top<innerHeight*.8;fab.classList.toggle('show',y&&!a);},{passive:true});
+})();</script>
 </body>
 </html>

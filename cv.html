@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Get Shortlisted | CV Builder &amp; CV × Job Match | Placement Prep Room</title>
+<title>CV Builder | ATS CV, Word &amp; PDF | Placement Prep Room</title>
 <link rel="canonical" href="https://youngprofessor.in/cv.html">
 <meta name="description" content="Get Shortlisted, part of the Placement Prep Room on youngprofessor.in: build an ATS-friendly CV for any course and any role, improve it with AI, upload your old CV to make it stronger, and match it to a job description.">
 <meta name="theme-color" content="#0B0A0A">
@@ -94,7 +94,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red);box
 
 /* setup */
 .setup{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:22px}
-.starts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.starts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .start{display:flex;flex-direction:column;gap:4px;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--line2);background:var(--panel2);color:var(--ink);cursor:pointer;position:relative}
 .start:hover{border-color:var(--red)}
 .start b{font-size:15px}
@@ -253,6 +253,26 @@ footer a{color:var(--muted)}
   #printRoot .ph{background:none}
 }
 #printRoot{display:none}
+.ppr-steps a{min-width:160px}
+.ppr-steps a.done i{background:#3bb273;color:#fff}
+.ppr-next{white-space:nowrap;font-size:13.5px;font-weight:800;text-decoration:none;padding:9px 14px;border-radius:999px;border:1px dashed #3A2E2E;color:#A39A94}
+.ppr-next:hover{color:#F4EFEA;border-color:#E3161E}
+@media (max-width:720px){.ppr .wrap{gap:10px}.ppr-next{order:3;margin-left:auto}}
+
+/* Oct 2026: LinkedIn start, JD prompt, edit-on-CV toolbar */
+.jdq{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:12px;padding:12px 14px;border-radius:14px;border:1px dashed var(--line2);background:var(--bg2);font-size:14px}
+.jdq b{font-size:15px}.jdq span{color:var(--muted)}.jdq .jdno{flex-basis:100%;font-size:12.5px;color:var(--dim)}
+.jdup{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13.5px;color:var(--muted)}
+.etb{position:sticky;top:70px;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;margin-bottom:10px;border-radius:14px;border:1px solid var(--red);background:rgba(23,20,20,.96);box-shadow:0 14px 30px -18px var(--redglow)}
+.etb button{border:1px solid var(--line2);background:var(--bg);color:var(--ink);border-radius:9px;padding:7px 10px;font-size:13.5px;font-weight:700;cursor:pointer;min-width:36px}
+.etb button:hover{border-color:var(--red)}
+.etb .done{background:var(--ok);border-color:var(--ok);color:#fff;margin-left:auto}
+.etb .sep{width:1px;height:22px;background:var(--line2)}
+.etb small{flex-basis:100%;color:var(--muted);font-size:12px}
+.cvpage[contenteditable=true]{outline:3px solid rgba(227,22,30,.55);outline-offset:4px;cursor:text}
+.cvpage[contenteditable=true] .pb{display:none}
+.cust{margin-bottom:10px;padding:10px 12px;border-radius:12px;background:var(--ambersoft);border:1px solid rgba(245,185,66,.4);font-size:13.5px}
+.cust button{margin-left:6px;border:0;background:none;color:var(--amber);font-weight:800;text-decoration:underline;cursor:pointer}
 </style>
 </head>
 <body>
@@ -266,19 +286,22 @@ footer a{color:var(--muted)}
 
 <div class="ppr">
   <div class="wrap">
-    <a class="ppr-home" href="prep.html">🎯 Placement Prep Room</a>
+    <a class="ppr-home" href="placement.html">🎯 Placement Prep Room</a>
     <div class="ppr-steps">
-      <a href="cv.html" class="on" aria-current="page"><i>1</i><span><b>Get Shortlisted</b><small>Build your CV and match it to the job</small></span></a>
-      <a href="prep.html"><i>2</i><span><b>Know Before You Go</b><small>Research the company, practise the interview</small></span></a>
-      <a href="offer.html"><i>3</i><span><b>Before You Sign</b><small>Decode your offer, compare offers</small></span></a>
+      <a href="linkedin.html" data-step="1"><i>1</i><span><b>LinkedIn Profile</b><small>Build a profile that gets noticed</small></span></a>
+      <a href="cv.html" class="on" aria-current="page" data-step="2"><i>2</i><span><b>CV Builder</b><small>ATS-ready CV, Word &amp; PDF</small></span></a>
+      <a href="prep.html" data-step="3"><i>3</i><span><b>Know Before You Go</b><small>Research the company</small></span></a>
+      <a href="offer.html" data-step="4"><i>4</i><span><b>Before You Sign</b><small>Decode your offer</small></span></a>
     </div>
+    <a class="ppr-next" href="prep.html">Skip to Step 3 →</a>
   </div>
 </div>
 
 <main class="wrap">
   <header class="hero">
-    <h1>Get <em>Shortlisted</em></h1>
-    <p>Build a clean, ATS-friendly CV for any course and any job, in minutes. Let the AI help you write it, or upload your old CV and make it stronger. Then check it against the job description.</p>
+    <span class="kick" style="margin-bottom:10px;display:inline-block">Step 2 of 4 · Free</span>
+    <h1>CV <em>Builder</em></h1>
+    <p>Build a clean, ATS-friendly CV in minutes. Upload your old CV or start fresh, tailor it to a job description, edit any line on the CV itself, and download it free in Word and PDF.</p>
     <div class="tabs" role="tablist">
       <button type="button" role="tab" class="on" data-tab="build" aria-selected="true">📝 Build my CV</button>
       <button type="button" role="tab" data-tab="match" aria-selected="false">🎯 Match CV to a job</button>
@@ -314,7 +337,9 @@ footer a{color:var(--muted)}
           <label class="start"><b>⬆ Upload my old CV</b><small>PDF or Word. We read it, fill the form and make it stronger.</small><input type="file" id="upFile" accept=".pdf,.docx,.txt"></label>
           <button type="button" class="start" id="helpBtn"><b>🤖 Help me write it</b><small>Answer 6 simple questions. The AI writes your CV lines.</small></button>
           <button type="button" class="start" id="selfBtn"><b>✍️ I'll fill it in</b><small>Type your details. Use ✨ buttons any time.</small></button>
+          <button type="button" class="start" id="liBtn" hidden><b>🔗 Use my LinkedIn answers</b><small>Your answers from Step 1 fill this CV. Nothing to type twice.</small></button>
         </div>
+        <div class="jdq"><b>📋 Have a job description?</b><span>Tailor this CV to it and see the keywords you're missing.</span><button type="button" class="btn sm" id="jdYes">Yes, tailor my CV →</button><span class="jdno">No? Just build. Your CV is made for the role you typed above.</span></div>
         <p class="hint">🔒 Your CV is saved only on this device. Nothing is stored on our server.</p>
       </div>
     </div>
@@ -335,10 +360,22 @@ footer a{color:var(--muted)}
           <div class="styles" role="group" aria-label="CV style"><button type="button" data-s="classic">Classic</button><button type="button" data-s="modern" class="on">Modern</button><button type="button" data-s="compact">Compact</button></div>
           <span class="sp"></span>
           <button type="button" class="btn sm ai" id="allBtn">✨ Improve whole CV</button>
+          <button type="button" class="btn sm" id="editBtn">✏️ Edit on CV</button>
           <button type="button" class="btn sm red" id="pdfBtn">⬇ PDF</button>
           <button type="button" class="btn sm" id="docBtn">⬇ Word</button>
         </div>
         <div class="pages" id="pages"></div>
+        <div class="cust" id="custNote" hidden>✏️ You edited this CV directly. Changes in the form won't show here. <button type="button" id="custReset">Reset to form</button></div>
+        <div class="etb" id="etb" hidden role="toolbar" aria-label="Edit tools">
+          <button type="button" data-c="bold" title="Bold"><b>B</b></button><button type="button" data-c="italic" title="Italic"><i>I</i></button><button type="button" data-c="underline" title="Underline"><u>U</u></button>
+          <span class="sep"></span><button type="button" data-c="insertUnorderedList" title="Bullets">• List</button><button type="button" data-c="insertOrderedList" title="Numbered list">1. List</button>
+          <span class="sep"></span><button type="button" data-z="-1" title="Smaller text">A−</button><button type="button" data-z="1" title="Bigger text">A+</button>
+          <span class="sep"></span><button type="button" data-c="justifyLeft" title="Align left">⟸</button><button type="button" data-c="justifyCenter" title="Centre">≡</button><button type="button" data-c="justifyRight" title="Align right">⟹</button>
+          <span class="sep"></span><button type="button" data-c="undo" title="Undo">↶ Undo</button><button type="button" data-c="redo" title="Redo">↷ Redo</button>
+          <span class="sep"></span><button type="button" data-a="add" title="Add a section">＋ Section</button><button type="button" data-a="up" title="Move this section up">↑ Move</button><button type="button" data-a="down" title="Move this section down">↓ Move</button>
+          <button type="button" class="done" data-a="done">✓ Done</button>
+          <small>Tap any text on the CV to change it. Put your cursor in a section to move it.</small>
+        </div>
         <div class="pv-wrap" id="pvWrap"><div class="pv-scale" id="pvScale"><div class="cvpage modern" id="cvPage"></div></div></div>
         <button type="button" class="btn" id="toMatch">🎯 Check this CV against a job description →</button>
       </aside>
@@ -361,6 +398,7 @@ footer a{color:var(--muted)}
           <label>Company<input id="mCo" placeholder="e.g. Hindustan Unilever"></label>
           <label>Role<input id="mRole" list="roles" placeholder="e.g. Management Trainee"></label>
         </div>
+        <div class="jdup"><label class="btn sm" for="jdFile" style="cursor:pointer">📎 Upload job description (PDF, Word or photo)</label><input type="file" id="jdFile" accept=".pdf,.docx,.txt,image/*" hidden><span id="jdName">or paste it below</span></div>
         <label>Job description<textarea id="mJd" style="min-height:180px" placeholder="Paste the job description from the company website, LinkedIn or the placement notice. The more detail, the better the match."></textarea></label>
         <div class="note err" id="mErr" hidden></div>
         <button type="button" class="btn red" id="mGo">Match my CV →</button>
@@ -551,7 +589,9 @@ footer a{color:var(--muted)}
   var pageCount=1;
   function render(){
     var p=$('cvPage');p.className='cvpage '+(cv.style||'modern')+(isEmpty()?' empty':'');
-    p.innerHTML=isEmpty()?'<div class="hello">Your CV will appear here as you type.</div>':cvHTML();
+    if(typeof editing!=='undefined'&&editing)return;
+    p.innerHTML=isEmpty()?'<div class="hello">Your CV will appear here as you type.</div>':(cv.custom||cvHTML());
+    var cn=$('custNote');if(cn)cn.hidden=!cv.custom;
     var hgt=p.scrollHeight;pageCount=Math.max(1,Math.ceil((hgt-4)/1123));
     for(var i=1;i<pageCount;i++){var pb=d.createElement('div');pb.className='pb';pb.style.top=(1123*i)+'px';pb.innerHTML='<span>Page '+(i+1)+' starts here</span>';p.appendChild(pb);}
     $('pages').innerHTML=isEmpty()?'':'Length: <b>'+pageCount+' page'+(pageCount>1?'s':'')+'</b>'+(pageCount>1&&cv.level!=='experienced'?' · Freshers should keep it to 1 page. Try the Compact style or cut weaker points.':'');
@@ -709,18 +749,98 @@ footer a{color:var(--muted)}
   $('pdfBtn').addEventListener('click',function(){
     if(isEmpty()){toast('Fill in your CV first.');return;}
     if(plain().indexOf('__')>-1&&!confirm('Your CV still has yellow [__] gaps. Download anyway?'))return;
-    var r=$('printRoot');r.innerHTML='<div class="cvpage '+(cv.style||'modern')+'">'+cvHTML()+'</div>';
+    var r=$('printRoot');r.innerHTML='<div class="cvpage '+(cv.style||'modern')+'">'+finalHTML()+'</div>';markDone();
     var t=d.title;d.title=fileBase();setTimeout(function(){print();d.title=t;},60);
     toast('In the print window, choose “Save as PDF”.');
   });
+  function finalHTML(){return cv.custom||cvHTML();}
+  function markDone(){try{var k='yp_ppr_done',p=JSON.parse(localStorage.getItem(k)||'{}')||{};p['2']=1;localStorage.setItem(k,JSON.stringify(p));}catch(e){}}
+  /* Real Word (.docx) file, built in the browser with the free "docx" library */
+  function docxFrom(html){
+    var D=window.docx,serif=cv.style==='classic',font=serif?'Georgia':'Arial',hc=cv.style==='modern'?'8F1218':'111111';
+    var box=d.createElement('div');box.innerHTML=html;var out=[];
+    function runs(node,f){var r=[];[].forEach.call(node.childNodes,function(n){
+      if(n.nodeType===3){var t=n.nodeValue.replace(/\s+/g,' ');if(t)r.push(new D.TextRun({text:t,bold:!!f.b,italics:!!f.i,underline:f.u?{}:undefined,font:font,size:f.sz||21,highlight:f.ph?'yellow':undefined,color:f.c}));return;}
+      if(n.nodeType!==1)return;var tg=n.tagName,nf=Object.assign({},f);
+      if(tg==='B'||tg==='STRONG')nf.b=1;if(tg==='I'||tg==='EM')nf.i=1;if(tg==='U')nf.u=1;if(n.classList.contains('ph'))nf.ph=1;if(n.classList.contains('sub'))nf.c='333333';
+      var fs=parseFloat(n.style&&n.style.fontSize);if(fs)nf.sz=Math.round(fs*1.5);
+      if(tg==='BR'){r.push(new D.TextRun({break:1}));return;}
+      r=r.concat(runs(n,nf));});return r;}
+    function al(el){var t=(el.style&&el.style.textAlign)||(el.getAttribute&&el.getAttribute('align'))||'';return t==='center'?D.AlignmentType.CENTER:t==='right'?D.AlignmentType.RIGHT:undefined;}
+    function walk(el,ctx){[].forEach.call(el.children,function(n){var tg=n.tagName;
+      if(tg==='HEADER'||(tg==='DIV'&&!n.classList.contains('row')&&!n.classList.contains('ttl')&&!n.classList.contains('ct'))){walk(n,{center:ctx.center||(tg==='HEADER'&&serif)});return;}
+      var center=ctx.center?D.AlignmentType.CENTER:undefined;
+      if(tg==='H1'){out.push(new D.Paragraph({alignment:al(n)||center,spacing:{after:60},children:runs(n,{b:1,sz:40})}));return;}
+      if(n.classList.contains('ttl')){out.push(new D.Paragraph({alignment:al(n)||center,children:runs(n,{sz:22,c:'333333'})}));return;}
+      if(n.classList.contains('ct')){out.push(new D.Paragraph({alignment:al(n)||center,spacing:{after:120},children:runs(n,{sz:19,c:'333333'})}));return;}
+      if(tg==='H2'){out.push(new D.Paragraph({alignment:al(n),spacing:{before:220,after:80},border:{bottom:{color:hc,space:1,style:D.BorderStyle.SINGLE,size:6}},children:[new D.TextRun({text:n.textContent.toUpperCase(),bold:true,font:font,size:22,color:hc})]}));return;}
+      if(n.classList.contains('row')){var sp=n.children,left=sp[0],right=n.querySelector('.r');var kids=runs(left||n,{});if(right&&right.textContent.trim()){kids.push(new D.TextRun({text:'\t'+right.textContent.trim(),font:font,size:21,color:'333333'}));}
+        out.push(new D.Paragraph({tabStops:[{type:D.TabStopType.RIGHT,position:10000}],spacing:{before:80},children:kids}));return;}
+      if(tg==='UL'||tg==='OL'){[].forEach.call(n.children,function(li,k){var kids=runs(li,{});if(tg==='OL')kids.unshift(new D.TextRun({text:(k+1)+'. ',font:font,size:21}));
+        out.push(new D.Paragraph(tg==='UL'?{bullet:{level:0},children:kids}:{indent:{left:360},children:kids}));});return;}
+      out.push(new D.Paragraph({alignment:al(n)||center,spacing:{after:40},children:runs(n,{})}));});}
+    walk(box,{});
+    return new D.Document({styles:{default:{document:{run:{font:font,size:21}}}},sections:[{properties:{page:{size:{width:11906,height:16838},margin:{top:907,bottom:907,left:907,right:907}}},children:out}]});
+  }
   $('docBtn').addEventListener('click',function(){
     if(isEmpty()){toast('Fill in your CV first.');return;}
-    var font=cv.style==='classic'?'Georgia,serif':'Arial,sans-serif',hc=cv.style==='modern'?'#8f1218':'#111';
-    var css='body{font-family:'+font+';font-size:10.5pt;line-height:1.35;color:#111}h1{font-size:20pt;margin:0}h2{font-size:11pt;text-transform:uppercase;color:'+hc+';border-bottom:1px solid '+hc+';margin:12pt 0 4pt;padding-bottom:2pt}ul{margin:2pt 0 0 0}p{margin:0}.r{float:right;color:#333}.ttl,.ct{color:#333}'+(cv.style==='classic'?'header{text-align:center}':'');
-    var html='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>'+esc(fileBase())+'</title><style>@page{size:21cm 29.7cm;margin:1.6cm}'+css+'</style></head><body>'+
-      cvHTML().replace(/<div class="row"><span>([\s\S]*?)<\/span><span class="r">([\s\S]*?)<\/span><\/div>/g,'<p><span class="r">$2</span>$1</p>').replace(/<span class="ph">/g,'<span style="background:#fff3b0">')+'</body></html>';
-    var blob=new Blob(['﻿',html],{type:'application/msword'});var a=d.createElement('a');a.href=URL.createObjectURL(blob);a.download=fileBase()+'.doc';d.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);
+    var btn=this;btn.disabled=true;var old=btn.textContent;btn.textContent='⏳ Making Word file…';
+    (window.docx?Promise.resolve():loadScript('https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js')).then(function(){
+      return window.docx.Packer.toBlob(docxFrom(finalHTML()));
+    }).then(function(blob){var a=d.createElement('a');a.href=URL.createObjectURL(blob);a.download=fileBase()+'.docx';d.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},800);markDone();toast('Word file downloaded ✓');})
+    .catch(function(){toast('Could not make the Word file. Check your internet and try again.');})
+    .then(function(){btn.disabled=false;btn.textContent=old;});
   });
+
+  /* ---------- edit directly on the CV ---------- */
+  var editing=false;
+  function cleanCustom(h){return h.replace(/<div class="pb"[\s\S]*?<\/div>/g,'');}
+  function setEdit(on){var p=$('cvPage');editing=on;
+    if(on){if(isEmpty()){toast('Fill in your CV first, then edit it here.');editing=false;return;}
+      if(!cv.custom){cv.custom=cvHTML();save();}
+      if(innerWidth<1000){$('mSwitch').querySelector('[data-m="prev"]').click();}
+      p.innerHTML=cv.custom;p.contentEditable='true';$('etb').hidden=false;$('custNote').hidden=true;$('editBtn').textContent='✓ Done editing';p.focus();toast('Tap any text on the CV to change it');}
+    else{p.contentEditable='false';$('etb').hidden=true;$('editBtn').textContent='✏️ Edit on CV';cv.custom=cleanCustom(p.innerHTML);save();render();}
+  }
+  $('editBtn').addEventListener('click',function(){setEdit(!editing);});
+  var saveT;$('cvPage').addEventListener('input',function(){if(!editing)return;clearTimeout(saveT);saveT=setTimeout(function(){cv.custom=cleanCustom($('cvPage').innerHTML);save();},400);});
+  function caretBlock(){var sel=getSelection();if(!sel.rangeCount)return null;var n=sel.anchorNode;if(n&&n.nodeType===3)n=n.parentNode;var p=$('cvPage');if(!p.contains(n))return null;while(n&&n.parentNode!==p&&n!==p){if(/^(P|LI|H1|H2|DIV)$/.test(n.tagName)&&n.parentNode&&(n.parentNode===p||n.parentNode.tagName==='UL'||n.parentNode.tagName==='OL'||n.parentNode.tagName==='HEADER'))break;n=n.parentNode;}return n===p?null:n;}
+  function sectionOf(node){var p=$('cvPage');while(node&&node.parentNode!==p)node=node.parentNode;if(!node)return null;var h=node;while(h&&h.tagName!=='H2')h=h.previousElementSibling;if(!h)return null;var els=[h],n=h.nextElementSibling;while(n&&n.tagName!=='H2'){els.push(n);n=n.nextElementSibling;}return els;}
+  function prevSec(els){var h=els[0].previousElementSibling;while(h&&h.tagName!=='H2')h=h.previousElementSibling;return h;}
+  $('etb').addEventListener('mousedown',function(e){if(e.target.closest('button'))e.preventDefault();});
+  $('etb').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var p=$('cvPage');
+    if(b.dataset.c){d.execCommand(b.dataset.c,false,null);}
+    else if(b.dataset.z){var bl=caretBlock();if(!bl){toast('Put your cursor in the text first');return;}var cs=parseFloat(getComputedStyle(bl).fontSize)||14;bl.style.fontSize=Math.max(9,Math.min(30,cs+(+b.dataset.z)))+'px';}
+    else if(b.dataset.a==='done'){setEdit(false);return;}
+    else if(b.dataset.a==='add'){var h=d.createElement('h2');h.textContent='New section';var q=d.createElement('p');q.textContent='Write here…';p.appendChild(h);p.appendChild(q);var r=d.createRange();r.selectNodeContents(h);var sl=getSelection();sl.removeAllRanges();sl.addRange(r);h.scrollIntoView({block:'center',behavior:'smooth'});toast('New section added at the end. Type its title.');}
+    else if(b.dataset.a==='up'||b.dataset.a==='down'){var sel=getSelection();var node=sel.anchorNode&&(sel.anchorNode.nodeType===3?sel.anchorNode.parentNode:sel.anchorNode);var els=node&&p.contains(node)?sectionOf(node):null;if(!els){toast('Put your cursor inside a section first');return;}
+      if(b.dataset.a==='up'){var ph=prevSec(els);if(!ph){toast('Already at the top');return;}els.forEach(function(x){p.insertBefore(x,ph);});}
+      else{var last=els[els.length-1],nh=last.nextElementSibling;if(!nh){toast('Already at the bottom');return;}var nEls=sectionOf(nh);var after=nEls[nEls.length-1].nextSibling;els.forEach(function(x){p.insertBefore(x,after);});}
+      els[0].scrollIntoView({block:'center',behavior:'smooth'});}
+    cv.custom=cleanCustom(p.innerHTML);save();});
+  $('custReset').addEventListener('click',function(){if(!confirm('Go back to the CV made from the form? Your direct edits will be removed.'))return;delete cv.custom;save();render();});
+
+  /* ---------- Use my LinkedIn answers (from Step 1) ---------- */
+  var LIA=null;try{LIA=JSON.parse(localStorage.getItem('yp_li_answers')||'null');}catch(e){}
+  if(LIA&&LIA.name)$('liBtn').hidden=false;
+  $('liBtn').addEventListener('click',function(){var c=blank();c.course=LIA.programme||'';c.role=LIA.role||'';c.level='fresher';c.style=cv.style||'modern';
+    c.name=LIA.name||'';c.linkedin=LIA.url||'';c.skills=(LIA.skills||[]).slice(0,8).join(', ');
+    var sp=(LIA.specs||[]).join(' & '),sk=(LIA.skills||[]).slice(0,3).join(', ');
+    c.summary=(LIA.programme||'Management')+(sp?' ('+sp+')':'')+' student preparing for a career as a '+(LIA.role||'professional')+'. Skilled in '+sk+'.'+(LIA.ach?' '+String(LIA.ach).replace(/[.]+$/,'')+'.':'')+' Quick learner who works well in teams and focuses on results.';
+    var ex=String(LIA.exp||'').replace(/\s+/g,' ').trim().split(/[.!?]\s+|\n+/).map(function(x){return x.trim().replace(/[.]+$/,'');}).filter(function(x){return x.split(' ').length>2;});
+    if(ex.length)c.experience=[{role:'[Your role __]',org:'[Organisation __]',dates:'',bullets:ex.join('\n')}];
+    if(LIA.ach)c.achievements=String(LIA.ach);
+    c.education=[{degree:(LIA.programme||'')+(sp?' ('+sp+')':''),institute:'',year:'',score:''}];
+    addVersion('From my LinkedIn answers',c);toast('Filled from Step 1 ✓ Add your college, dates and organisation');
+    var f=$('form').querySelector('[data-f="p"]');if(f){f.open=true;f.scrollIntoView({behavior:'smooth',block:'start'});}});
+
+  /* ---------- job description: yes / upload ---------- */
+  $('jdYes').addEventListener('click',function(){tab('match');scrollTo({top:0,behavior:'smooth'});setTimeout(function(){$('mJd').focus();},500);});
+  $('jdFile').addEventListener('change',function(){var f=this.files[0];this.value='';if(!f)return;$('jdName').textContent='Reading '+f.name+'…';
+    var n=f.name.toLowerCase(),isImg=/^image\//.test(f.type)||/\.(jpe?g|png|webp)$/.test(n);
+    (isImg?(window.Tesseract?Promise.resolve():loadScript('https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js')).then(function(){return Tesseract.recognize(f,'eng');}).then(function(r){return r.data.text;}):readFile(f))
+    .then(function(t){t=String(t||'').trim();if(t.length<40)throw new Error('short');$('mJd').value=t.slice(0,8000);$('jdName').textContent='✓ '+f.name+' added below';toast('Job description added ✓');})
+    .catch(function(){$('jdName').textContent='Could not read that file. Please paste the text below.';});});
 
   /* ---------- mobile switch + tabs ---------- */
   $('mSwitch').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);});$('work').className='work m-'+b.dataset.m;fit();});
@@ -767,5 +887,8 @@ footer a{color:var(--muted)}
   setTimeout(fit,300);
 })();
 </script>
+<script>(function(){try{var k='yp_ppr_done',p=JSON.parse(localStorage.getItem(k)||'{}')||{},me=(document.querySelector('.ppr-steps a.on')||{}).dataset;
+[].forEach.call(document.querySelectorAll('.ppr-steps a'),function(a){if(p[a.dataset.step]&&!a.classList.contains('on'))a.classList.add('done');});
+if(me&&me.step)setTimeout(function(){p[me.step]=1;try{localStorage.setItem(k,JSON.stringify(p));}catch(e){}},45000);}catch(e){}})();</script>
 </body>
 </html>

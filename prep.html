@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Know Before You Go | Placement Prep Room | Dr. Lehri</title>
+<title>Know Before You Go | Step 3 | Placement Prep Room | Dr. Lehri</title>
 <link rel="canonical" href="https://youngprofessor.in/prep.html">
 <meta name="description" content="Placement Prep Room by Dr. Bikram Paul Singh Lehri: type the company and role you are interviewing for and get a structured briefing, charts, latest news links and likely interview questions.">
 <meta name="theme-color" content="#0B0A0A">
@@ -594,6 +594,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 @media (max-width:640px){.ppr-home{display:none}}
 /* ===== DEMO MODE (19 Oct 2026): plans and Premium badges hidden, every feature open. Delete this block to bring them back. ===== */
 .plk,#plansBtn,#planOv{display:none!important}
+.ppr-steps a{min-width:160px}
+.ppr-steps a.done i{background:#3bb273;color:#fff}
+.ppr-next{white-space:nowrap;font-size:13.5px;font-weight:800;text-decoration:none;padding:9px 14px;border-radius:999px;border:1px dashed #3A2E2E;color:#A39A94}
+.ppr-next:hover{color:#F4EFEA;border-color:#E3161E}
+@media (max-width:720px){.ppr .wrap{gap:10px}.ppr-next{order:3;margin-left:auto}}
+
+/* Oct 2026: AI Coach is Premium · Coming soon; paste-URL hint */
+.coach.locked{position:relative;overflow:hidden;min-height:340px}
+.coach.locked>*:not(.lockov){filter:blur(3px);opacity:.28;pointer-events:none;user-select:none}
+.lockov{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;padding:28px;background:radial-gradient(420px 220px at 50% 30%,rgba(245,185,66,.16),rgba(11,10,10,.72) 70%)}
+.lockov .lk{font-size:40px;line-height:1}
+.lockov b{font-family:var(--serif);font-weight:400;font-size:30px}
+.lockov .ptag{display:inline-block;font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1a1208;background:linear-gradient(90deg,#F5B942,#ffd98a);border-radius:999px;padding:5px 12px}
+.lockov p{max-width:46ch;color:var(--muted);margin:4px 0 8px;font-size:15px}
+.urlhint{margin:10px 0 0;font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -606,12 +621,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 
 <div class="ppr">
   <div class="wrap">
-    <a class="ppr-home" href="prep.html">🎯 Placement Prep Room</a>
+    <a class="ppr-home" href="placement.html">🎯 Placement Prep Room</a>
     <div class="ppr-steps">
-      <a href="cv.html"><i>1</i><span><b>Get Shortlisted</b><small>Build your CV and match it to the job</small></span></a>
-      <a href="prep.html" class="on" aria-current="page"><i>2</i><span><b>Know Before You Go</b><small>Research the company, practise the interview</small></span></a>
-      <a href="offer.html"><i>3</i><span><b>Before You Sign</b><small>Decode your offer, compare offers</small></span></a>
+      <a href="linkedin.html" data-step="1"><i>1</i><span><b>LinkedIn Profile</b><small>Build a profile that gets noticed</small></span></a>
+      <a href="cv.html" data-step="2"><i>2</i><span><b>CV Builder</b><small>ATS-ready CV, Word &amp; PDF</small></span></a>
+      <a href="prep.html" class="on" aria-current="page" data-step="3"><i>3</i><span><b>Know Before You Go</b><small>Research the company</small></span></a>
+      <a href="offer.html" data-step="4"><i>4</i><span><b>Before You Sign</b><small>Decode your offer</small></span></a>
     </div>
+    <a class="ppr-next" href="offer.html">Skip to Step 4 →</a>
   </div>
 </div>
 
@@ -640,6 +657,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <button class="go" id="go" type="submit">Prepare me →</button>
     </form>
     <div class="chips" id="roleChips"><span>Quick roles:</span></div>
+    <p class="urlhint">Company not showing in the suggestions? <button type="button" class="linkbtn" id="useUrl">Paste its website link instead →</button></p>
     <div class="steps"><div><b>01</b>Type the company</div><div><b>02</b>Add your role</div><div><b>03</b>Read, practise &amp; save your prep sheet</div></div>
   </div>
 </header>
@@ -678,7 +696,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </nav>
 
     <article class="card prem" id="s-prem">
-      <div class="prem-h"><div><span class="prem-tag">⭐ Pro tools</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Tools that do hours of prep for you. Every tool on this page is open and free to use.</p></div><button type="button" class="prem-plans" id="plansBtn">See plans · ₹99/month</button></div>
+      <div class="prem-h"><div><span class="prem-tag">⭐ Pro tools</span><h3>Get interview-ready <em>in 30 minutes</em></h3><p class="sub">Tools that do hours of prep for you. Every tool on this page is open and free to use.</p></div><button type="button" class="prem-plans" id="plansBtn" hidden></button></div>
       <div class="prem-grid">
         <button type="button" class="ptool" id="kitBtn"><span class="pi">📄</span><b>Interview Kit</b><small>A ready 3-page PDF for this company and role: 30-second pitch, “Why us?” answer, 10 likely questions with model answers, news talking points and a last-hour checklist.</small><em>Generate my kit →</em></button>
         <a class="ptool" id="cvLink" href="cv.html#match" style="text-decoration:none"><span class="pi">🎯</span><b>CV × Job Match</b><small>Now in <b>① Get Shortlisted</b>, together with the new CV builder. Build or upload your CV, then match it to this job and get stronger lines and your own answers.</small><em>Open Get Shortlisted →</em></a><button type="button" id="cvBtn" hidden></button>
@@ -770,11 +788,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <h3>Your answer to <em>“Why us?”</em></h3>
       <p class="sub">A starting draft built from the company's own facts. Make it yours: add a personal reason, your project, or a product you love.</p>
       <textarea id="pitch" aria-label="Your answer to why this company"></textarea>
-      <div id="pitchBtns" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="btn" id="copyPitch" type="button">Copy</button><button class="btn" id="redoPitch" type="button">↺ Another version</button><button class="btn red" id="ratePitch" type="button">✨ Rate my answer</button></div>
+      <div id="pitchBtns" style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap"><button class="btn" id="copyPitch" type="button">Copy</button><button class="btn" id="redoPitch" type="button">↺ Another version</button><button class="btn red" id="ratePitch" type="button" hidden>✨ Rate my answer</button></div>
       <p class="note">Tip: keep it under 60 seconds. Company fact → why it matters to you → what you will bring.</p>
     </article>
 
-    <article class="card coach" id="s-coach">
+    <article class="card coach locked" id="s-coach">
+      <div class="lockov" role="note"><span class="lk">🎤</span><b>AI Coach</b><span class="ptag">Premium · Coming soon</span><p>Practise real interview questions for this company, get your answers rated, and take a full mock interview with an AI coach. This will be part of Premium soon. Everything else on this page is free.</p><a class="btn" href="#s-why">Back to my briefing ↑</a></div>
       <div class="chead"><span class="cbadge">✨ AI Coach</span><h3>Practise with your <em>AI coach</em></h3></div>
       <p class="sub">Personal practice for <b id="cCo">this company</b>. Replies take about 10 seconds. The coach can make mistakes, so check facts before you use them.</p>
       <div class="qtabs" id="cTabs"><button type="button" class="on" data-m="q">🎯 My likely questions</button><button type="button" data-m="r">📝 Rate my answer</button><button type="button" data-m="m">🎤 Mock interview</button></div>
@@ -1619,7 +1638,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
       else st.fail(j&&j.error?j.error:'Could not build the briefing. Please try again.');
     }).catch(function(){building=false;st.fail('That took too long. Please try again in a minute.');});
   }
-  $('urlForm').addEventListener('submit',function(e){e.preventDefault();var u=$('urlIn').value.trim();if(!/[a-z0-9-]\.[a-z]{2,}/i.test(u)){toast('Paste a website like www.company.com');$('urlIn').focus();return;}buildProfile({task:'profile',company:missName,url:u});});
+  $('urlForm').addEventListener('submit',function(e){e.preventDefault();var u=$('urlIn').value.trim();if(!/[a-z0-9-]\.[a-z]{2,}/i.test(u)){toast('Paste a website like www.company.com');$('urlIn').focus();return;}buildProfile({task:'profile',company:missName||$('co').value.trim()||u.replace(/^https?:\/\//,'').replace(/^www\./,'').split(/[./]/)[0],url:u});});
   $('webBtn').addEventListener('click',function(){buildProfile({task:'profile',company:missName||co.value.trim(),web:true});});
   function renderProfile(P,meta){
     var id=runId,name=String(P.name||missName);
@@ -1915,5 +1934,12 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
 })();
 </script>
 
+<script>(function(){try{var k='yp_ppr_done',p=JSON.parse(localStorage.getItem(k)||'{}')||{},me=(document.querySelector('.ppr-steps a.on')||{}).dataset;
+[].forEach.call(document.querySelectorAll('.ppr-steps a'),function(a){if(p[a.dataset.step]&&!a.classList.contains('on'))a.classList.add('done');});
+if(me&&me.step)setTimeout(function(){p[me.step]=1;try{localStorage.setItem(k,JSON.stringify(p));}catch(e){}},45000);}catch(e){}})();</script>
+<script>(function(){var d=document,b=d.getElementById('useUrl');if(!b)return;b.addEventListener('click',function(){var m=d.getElementById('miss'),t=d.getElementById('missT');
+  ['idle','err','report','skel'].forEach(function(id){var e=d.getElementById(id);if(e)e.hidden=true;});
+  if(t)t.textContent='Paste the company\'s website link';m.hidden=false;m.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){var u=d.getElementById('urlIn');if(u)u.focus();},400);});
+  var ai=d.querySelector('.tabs a.aitab');if(ai)ai.textContent=ai.textContent.replace(/AI Coach.*/,'AI Coach · Soon');})();</script>
 </body>
 </html>
