@@ -136,6 +136,32 @@ img{max-width:100%;display:block}
 .btn.follow.on .bell{animation:none}
 .fcount{margin-left:4px;padding:2px 9px;border-radius:999px;background:rgba(255,255,255,.14);font-family:var(--mono);font-size:12.5px;font-weight:600;line-height:1.5}
 .btn.follow.on .fcount{background:var(--line)}
+.grow{position:relative;margin-top:26px;padding:18px 20px 20px;border-radius:22px;max-width:520px;background:linear-gradient(135deg,rgba(227,22,30,.16),rgba(227,22,30,.04) 60%);border:1px solid rgba(227,22,30,.45);box-shadow:0 18px 50px -24px rgba(227,22,30,.7)}
+.grow::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%) 0 0/250% 100%;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:gshine 4.5s linear infinite;pointer-events:none}
+@keyframes gshine{to{background-position:-250% 0}}
+.grow-tag{margin:0 0 14px;font-family:var(--serif);font-size:clamp(21px,2.4vw,27px);line-height:1.2;color:var(--ink)}
+.grow-tag em{color:var(--red2,#FF3B42)}
+.grow-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+.grow .btn.follow{background:var(--red);border-color:var(--red);font-size:16px;padding-left:22px;padding-right:24px;animation:fpulse 2.4s ease-out 2s infinite}
+.grow .btn.follow:hover{background:#ff2a33}
+.grow .btn.follow .bell{animation:sprout 3.2s ease-in-out 2.5s infinite;transform-origin:50% 100%}
+.grow .btn.follow.on{background:transparent;border-color:var(--line2);color:var(--muted);animation:none}
+.grow .btn.follow.on .bell{animation:none}
+.grow-n{font-size:14.5px;color:var(--muted)}
+.grow-n b{font-family:var(--mono);font-size:17px;color:var(--ink);margin-right:2px}
+@keyframes sprout{0%,78%,100%{transform:scale(1)}84%{transform:scale(1.35) rotate(-8deg)}90%{transform:scale(.95) rotate(6deg)}95%{transform:scale(1.1)}}
+@media (prefers-reduced-motion:reduce){.grow::before,.grow .btn.follow,.grow .btn.follow .bell{animation:none}}
+@media (max-width:560px){.grow{padding:16px 16px 18px}.grow .btn.follow{flex:1 1 100%;justify-content:center}}
+/* pre-permission screen */
+.fpre .fbox{text-align:center}
+.fpre .fbox img{width:76px;height:76px;border-radius:50%;box-shadow:0 0 0 3px var(--red);margin:0 auto 14px;display:block}
+.fpre h3{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.2}
+.fpre h3 em{color:var(--red2,#FF3B42)}
+.fpre .yes{display:block;width:100%;margin-top:6px;padding:14px;border:0;border-radius:999px;background:var(--red);color:#fff;font:800 16px var(--sans);cursor:pointer}
+.fpre .no{display:block;margin:10px auto 0;background:none;border:0;color:var(--muted);font:600 14px var(--sans);cursor:pointer;text-decoration:underline}
+.ty-li{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;padding:13px 16px;border-radius:999px;background:#0A66C2;color:#fff;text-decoration:none;font:800 15px var(--sans);box-shadow:0 12px 30px -12px rgba(10,102,194,.9)}
+.ty-li:hover{background:#0b74dd}
+.ty-li .lg{width:26px;height:26px;border-radius:6px;display:grid;place-items:center;background:#fff;color:#0A66C2;font-weight:800;font-size:13px}
 @keyframes ring{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(16deg)}88%{transform:rotate(-14deg)}92%{transform:rotate(10deg)}96%{transform:rotate(-6deg)}}
 @keyframes fpulse{0%{box-shadow:0 0 0 0 rgba(227,22,30,.55)}100%{box-shadow:0 0 0 18px rgba(227,22,30,0)}}
 .fcard{position:fixed;left:20px;bottom:20px;z-index:70;width:min(360px,calc(100% - 40px));padding:18px 18px 16px;border-radius:20px;background:rgba(23,20,20,.96);border:1px solid var(--line2);box-shadow:0 24px 60px -20px rgba(0,0,0,.9),0 0 0 1px rgba(227,22,30,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transform:translateY(140%);opacity:0;transition:transform .7s var(--ease),opacity .5s}
@@ -183,7 +209,7 @@ img{max-width:100%;display:block}
 .badge span{font-size:12.5px;line-height:1.3;color:var(--muted)}
 .badge.b2{right:auto;left:-6%;top:12%;bottom:auto;animation-delay:-2.5s}
 @keyframes float{50%{transform:translateY(-10px)}}
-.scroll-cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--dim);text-decoration:none}
+.scroll-cue{display:none!important;position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--dim);text-decoration:none}
 .scroll-cue i{width:1px;height:44px;background:linear-gradient(var(--red),transparent);animation:drip 1.8s var(--ease) infinite;transform-origin:top}
 @keyframes drip{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
 
@@ -893,10 +919,12 @@ body.menu-open{overflow:hidden}
       </h1>
       <p class="role">Educator and researcher in <span class="type" id="type">Finance</span><br>shaping future-ready business leaders through research, mentorship &amp; academic leadership.</p>
       <p class="motto" aria-label="A student first, a professor later"><span>A student first,</span> <em>a professor later.</em><svg class="motto-line" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8"/></svg></p>
-      <div class="ctas">
-        <a class="btn red mag" href="student.html">I'm a student <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn line mag" href="#research">Explore my research</a>
-        <button type="button" class="btn follow mag" data-follow><span class="bell" aria-hidden="true">🔔</span><span class="ftxt">Follow</span><span class="fcount" id="siteFol" hidden></span></button>
+      <div class="grow">
+        <p class="grow-tag"><em>You bring the dreams,</em> I’ll bring the push.</p>
+        <div class="grow-row">
+          <button type="button" class="btn follow mag" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Let’s Grow Together</span></button>
+          <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> followers</span>
+        </div>
       </div>
     </div>
     <div class="portrait-wrap">
@@ -1540,7 +1568,7 @@ body.menu-open{overflow:hidden}
     function recount(){[].forEach.call(pf.querySelectorAll('button'),function(btn){var c=btn.dataset.c,n=all.filter(function(x){return c==='all'||x.dataset.cat===c;}).length,sp=btn.querySelector('span');if(sp)sp.textContent=n;});
       setNum('liFeat',all.length);moveInd();}
     function apply(S){if(!S||!S.ok)return;
-      if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol');sf.dataset.n=S.site.followers;sf.textContent=fmt(S.site.followers);/* count kept hidden: no follower numbers on the site */}
+      if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol');sf.dataset.n=S.site.followers;sf.textContent=fmt(S.site.followers);/* count shown only from 100 followers */if(S.site.followers>=100)d.getElementById('growN').hidden=false;}
       
       var posts=S.posts||[],li=posts.filter(function(p){return p.p==='li';}).slice(0,8).reverse();
       li.forEach(addLi);if(li.length)recount();
@@ -1580,8 +1608,8 @@ body.menu-open{overflow:hidden}
 </script>
 <div class="fcard" id="fcard" role="dialog" aria-label="Follow Dr. Lehri" hidden>
   <img src="logo-mark.webp" alt="" width="36" height="36">
-  <div class="ft"><b>Get new lessons &amp; updates</b><span>Free · no sign-up · unfollow anytime</span></div>
-  <button type="button" class="go" data-follow>🔔 Follow</button>
+  <div class="ft"><b>You bring the dreams, I’ll bring the push.</b></div>
+  <button type="button" class="go" data-follow>🌱 Let’s Grow</button>
   <button type="button" class="fx" id="fcardX" aria-label="Close">✕</button>
 </div>
 </div>
@@ -1597,6 +1625,14 @@ body.menu-open{overflow:hidden}
   <p>This app's built-in browser can't add Dr. Lehri to your home screen. Tap <b>⋮</b> or <b>⋯</b> and choose <b>Open in Chrome</b> / <b>Open in Safari</b>, then tap Follow again.</p>
   <button type="button" id="fwCopy">Copy link</button>
 </div></div>
+<div class="fmodal fpre" id="fpre" hidden><div class="fbox" role="dialog" aria-modal="true" aria-labelledby="fpTitle">
+  <img src="logo-mark.webp" alt="" width="76" height="76">
+  <h3 id="fpTitle"><em>You bring the dreams,</em><br>I’ll bring the push.</h3>
+  <p>Every morning, one small thought from me to keep you going: for exams, interviews and the tough days.</p>
+  <p><b>On the next box, tap “Allow”</b> so my push can reach you. 🌱</p>
+  <button type="button" class="yes" id="fpYes">Yes, I’m in!</button>
+  <button type="button" class="no" id="fpNo">Maybe later</button>
+</div></div>
 <div class="ftoast" id="ftoast" role="status"></div>
 <div class="tyo" id="ty" hidden>
   <div class="ty-back" data-tyclose></div>
@@ -1605,11 +1641,12 @@ body.menu-open{overflow:hidden}
     <div class="ty-cap" aria-hidden="true">🎓</div>
     <div class="adm">
       <div class="adm-h"><img src="logo-mark.webp" alt="" width="44" height="44"><div><b>youngprofessor.in</b><span>Admission card</span></div><span class="adm-no">Roll no.<b id="tyNo">★</b></span></div>
-      <h3 id="tyTitle">Welcome to the class! 🎉</h3>
-      <p>You're now following Dr. Lehri. New lessons, opportunities and updates will reach your phone first.</p>
+      <h3 id="tyTitle">You’re in. Let’s grow together. 🌱</h3>
+      <p>You bring the dreams, I’ll bring the push. Watch for my morning thought, plus new lessons and opportunities, right on your phone.</p>
       <div class="adm-f"><span class="sig">B. P. S. Lehri</span><span id="tyBatch">Batch of 2026 · Lifelong learner</span></div>
       <span class="adm-stamp" aria-hidden="true">ADMITTED</span>
     </div>
+    <a class="ty-li" href="https://www.linkedin.com/in/drbikrampaulsingh" target="_blank" rel="noopener"><span class="lg">in</span>One more step: follow me on LinkedIn</a>
     <div class="ty-a"><button type="button" class="ty-share" id="tyShare">Share my card</button><button type="button" id="tyClose" data-tyclose>Continue exploring</button></div>
   </div>
 </div>
@@ -1622,7 +1659,7 @@ body.menu-open{overflow:hidden}
   function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
   function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
   function toast(t){var el=d.getElementById('ftoast');el.textContent=t;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove('show');},4500);}
-  function setOn(on){btns.forEach(function(b){b.classList.toggle('on',on);var t=b.querySelector('.ftxt');if(t)t.textContent=on?'Following':'Follow';else b.textContent=on?'✓ Following':'🔔 Follow';});if(on)lsSet(FKEY,'on');}
+  function setOn(on){btns.forEach(function(b){b.classList.toggle('on',on);var t=b.querySelector('.ftxt');if(t)t.textContent=on?'Growing Together ✓':'Let’s Grow Together';else b.textContent=on?'✓ Growing':'🌱 Let’s Grow';});if(on)lsSet(FKEY,'on');}
   var isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
   var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
   if(lsGet(FKEY)==='on')setOn(true);
@@ -1652,8 +1689,20 @@ body.menu-open{overflow:hidden}
       else toast('Notifications are blocked. Allow them in your browser settings to follow.');
     });
   }
+  var pre=d.getElementById('fpre');
   function follow(){
     hideCard(true);
+    if(inApp&&!standalone){wv.hidden=false;return;}
+    if(isiOS&&!standalone){modal.hidden=false;return;}
+    var perm=('Notification' in window)?Notification.permission:'default';
+    if(perm==='denied'){toast('Notifications are blocked. Allow them in your browser settings to grow with me.');return;}
+    if(perm==='default'){pre.hidden=false;return;}
+    goFollow();
+  }
+  d.getElementById('fpYes').addEventListener('click',function(){pre.hidden=true;goFollow();});
+  d.getElementById('fpNo').addEventListener('click',function(){pre.hidden=true;});
+  pre.addEventListener('click',function(e){if(e.target===pre)pre.hidden=true;});
+  function goFollow(){
     if(inApp&&!standalone){wv.hidden=false;return;}
     if(isiOS&&!standalone){modal.hidden=false;return;}
     /* Android / Chrome: show the phone's own "Install app" dialog first, then turn on notifications */
@@ -1675,7 +1724,7 @@ body.menu-open{overflow:hidden}
       else toast('Notifications are blocked. Allow them in your browser settings to follow.');
     });
   }
-  btns.forEach(function(b){b.addEventListener('click',function(){if(b.classList.contains('on')){toast('You are already following 🙌');return;}follow();});});
+  btns.forEach(function(b){b.addEventListener('click',function(){if(b.classList.contains('on')){toast('You’re already growing with me 🌱');return;}follow();});});
   d.getElementById('fmClose').addEventListener('click',function(){modal.hidden=true;});
   modal.addEventListener('click',function(e){if(e.target===modal)modal.hidden=true;});
 
@@ -1683,7 +1732,7 @@ body.menu-open{overflow:hidden}
   var celebrated=false, ty=d.getElementById('ty');
   function celebrate(force){
     if(celebrated&&!force)return;celebrated=true;hideCard(true);
-    var cw=d.getElementById('cWeb'),n=cw&&cw.dataset.n?+cw.dataset.n:0;
+    var cw=d.getElementById('siteFol'),n=cw&&cw.dataset.n?+cw.dataset.n:0;
     d.getElementById('tyNo').textContent=n>0?String(n).padStart(3,'0'):'★';
     d.getElementById('tyBatch').textContent='Batch of '+new Date().getFullYear()+' · Lifelong learner';
     ty.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){ty.classList.add('show');});});
@@ -1691,9 +1740,9 @@ body.menu-open{overflow:hidden}
   }
   function closeTy(){ty.classList.remove('show');setTimeout(function(){ty.hidden=true;},450);}
   ty.querySelectorAll('[data-tyclose]').forEach(function(el){el.addEventListener('click',closeTy);});
-  addEventListener('keydown',function(e){if(e.key==='Escape'&&!ty.hidden)closeTy();});
+  addEventListener('keydown',function(e){if(e.key==='Escape'){if(!ty.hidden)closeTy();pre.hidden=true;}});
   d.getElementById('tyShare').addEventListener('click',function(){
-    var no=d.getElementById('tyNo').textContent,txt='I just joined Dr. Lehri’s class on youngprofessor.in 🎓'+(no!=='★'?' Roll no. '+no+'.':'')+' Free lessons, placement prep and more:';
+    var no=d.getElementById('tyNo').textContent,txt='I just joined Dr. Lehri’s circle on youngprofessor.in 🌱'+(no!=='★'?' Roll no. '+no+'.':'')+' Free lessons, placement prep and more:';
     if(navigator.share){navigator.share({title:'youngprofessor.in',text:txt,url:'https://youngprofessor.in/'}).catch(function(){});}
     else{try{navigator.clipboard.writeText(txt+' https://youngprofessor.in/');toast('Copied! Paste it anywhere to share 🎉');}catch(e){}}
   });
