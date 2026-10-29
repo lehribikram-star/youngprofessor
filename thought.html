@@ -41,7 +41,7 @@ body{min-height:100vh;display:flex;flex-direction:column;align-items:center;just
   <span class="lbl">🌱 Today's push</span>
   <span class="date" id="dt"></span>
   <h1 class="q" id="q">You bring the dreams, I'll bring the push.</h1>
-  <span class="sig">Dr. B. P. S. Lehri</span>
+  <span class="sig">Your push from Dr. Lehri</span>
 </main>
 <div class="acts">
   <button type="button" class="sh" id="sh">Share today's push</button>
@@ -59,7 +59,7 @@ body{min-height:100vh;display:flex;flex-direction:column;align-items:center;just
   fetch('quotes.json').then(function(r){return r.json();}).then(function(Q){var i=((day%Q.length)+Q.length)%Q.length;qEl.textContent=Q[i];}).catch(function(){});
   function toast(s){var t=document.getElementById('t');t.textContent=s;t.classList.add('on');setTimeout(function(){t.classList.remove('on');},3000);}
   document.getElementById('sh').addEventListener('click',function(){
-    var txt='“'+qEl.textContent+'” — Dr. Lehri';
+    var txt='“'+qEl.textContent+'” · Today’s push from Dr. Lehri';
     if(navigator.share)navigator.share({text:txt,url:'https://youngprofessor.in/'}).catch(function(){});
     else{try{navigator.clipboard.writeText(txt+' https://youngprofessor.in/');toast('Copied! Paste it anywhere 🌱');}catch(e){}}
   });
