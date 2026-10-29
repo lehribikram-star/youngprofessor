@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Placement Prep Room | Student Zone | youngprofessor.in</title>
 <link rel="canonical" href="https://youngprofessor.in/placement.html">
-<meta name="description" content="The Placement Prep Room by Dr. Bikram Paul Singh Lehri: four free steps from your first LinkedIn profile to your first offer letter. LinkedIn Profile Builder, ATS CV Builder, Know Before You Go and Before You Sign.">
+<meta name="description" content="The Placement Prep Room by Dr. Bikram Paul Singh Lehri: two free steps from your first interview to your first offer letter: Know Before You Go and Before You Sign.">
 <meta name="theme-color" content="#0B0A0A">
 <meta property="og:title" content="Placement Prep Room | youngprofessor.in">
-<meta property="og:description" content="Four free steps from your first profile to your first offer.">
+<meta property="og:description" content="Two free steps from your first interview to your first offer.">
 <meta property="og:image" content="https://youngprofessor.in/photo.jpg">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -103,51 +103,29 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
 <main class="wrap">
   <header class="hero">
     <span class="kick"><i></i>Placement Prep Room · Free</span>
-    <h1>From your first profile <em>to your first offer.</em></h1>
-    <p>Four simple steps. Do them in order, or jump straight to the one you need right now. Everything here is free.</p>
-    <div class="prog" aria-live="polite"><div class="bar"><i id="pbar"></i></div><span id="ptxt">0 of 4 done</span></div>
+    <h1>From your first interview <em>to your first offer.</em></h1>
+    <p>Two simple steps: walk into the interview knowing the company, then sign the offer knowing every term. Everything here is free.</p>
+    <div class="prog" aria-live="polite"><div class="bar"><i id="pbar"></i></div><span id="ptxt">0 of 2 done</span></div>
   </header>
 
   <div class="path" id="path">
     <span class="line" aria-hidden="true"><i id="pline"></i></span>
 
-    <div class="step" data-step="1"><span class="dot">1</span>
-      <a class="card" href="linkedin.html" style="--c:10,102,194">
-        <span class="ic">💼</span>
-        <span><small class="k">Step 1 · About 2 minutes</small><h2>LinkedIn Profile Builder</h2>
-          <p>Answer a few quick questions and get your headline, About section, experience lines and skills, ready to copy. Then check your Profile Score.</p>
-          <span class="meta"><span>What you need: just you</span><span>No LinkedIn yet? We'll guide you</span></span></span>
-        <span class="go">Start →</span>
-      </a>
-      <span class="skipn">Already have a strong profile? Skip to Step 2 ↓</span>
-    </div>
-
-    <div class="step" data-step="2"><span class="dot">2</span>
-      <a class="card" href="cv.html" style="--c:227,22,30">
-        <span class="ic">📄</span>
-        <span><small class="k">Step 2 · About 10 minutes</small><h2>CV Builder</h2>
-          <p>Upload your old CV or start fresh. Match it to a job description, edit every line, check your ATS score, and download in Word and PDF.</p>
-          <span class="meta"><span>What you need: your old CV (optional)</span><span>Free Word &amp; PDF</span></span></span>
-        <span class="go">Start →</span>
-      </a>
-      <span class="skipn">CV ready? Skip to Step 3 ↓</span>
-    </div>
-
-    <div class="step" data-step="3"><span class="dot">3</span>
+    <div class="step" data-step="3"><span class="dot">1</span>
       <a class="card" href="prep.html" style="--c:245,185,66">
         <span class="ic">🎯</span>
-        <span><small class="k">Step 3 · Before every interview</small><h2>Know Before You Go</h2>
-          <p>Type the company and your role. Get its story, numbers, products, leaders, latest news and the questions you may face, in seconds.</p>
+        <span><small class="k">Step 1 · Before every interview</small><h2>Know Before You Go</h2>
+          <p>Search any company and add your role. Get what it does, its numbers, leaders, values, news and the questions you may face, with the source for every fact.</p>
           <span class="meta"><span>What you need: company name or website link</span><span class="soon">🎤 AI Coach · Premium · Coming soon</span></span></span>
         <span class="go">Start →</span>
       </a>
-      <span class="skipn">Got the offer? Skip to Step 4 ↓</span>
+      <span class="skipn">Got the offer? Skip to Step 2 ↓</span>
     </div>
 
-    <div class="step" data-step="4"><span class="dot">4</span>
+    <div class="step" data-step="4"><span class="dot">2</span>
       <a class="card" href="offer.html" style="--c:111,195,178">
         <span class="ic">✍️</span>
-        <span><small class="k">Step 4 · When the offer arrives</small><h2>Before You Sign</h2>
+        <span><small class="k">Step 2 · When the offer arrives</small><h2>Before You Sign</h2>
           <p>Upload your offer letter. Understand every term, spot red flags, see your real in-hand salary and compare two offers side by side.</p>
           <span class="meta"><span>What you need: your offer letter</span><span>Your details stay private</span></span></span>
         <span class="go">Start →</span>
@@ -169,8 +147,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
   var done={};try{done=JSON.parse(localStorage.getItem('yp_ppr_done')||'{}')||{};}catch(e){}
   var steps=[].slice.call(d.querySelectorAll('.step')),n=0;
   steps.forEach(function(s){if(done[s.dataset.step]){s.classList.add('done');s.querySelector('.dot').textContent='✓';s.querySelector('.go').textContent='Open again →';n++;}});
-  d.getElementById('ptxt').textContent=n+' of 4 done';
-  setTimeout(function(){d.getElementById('pbar').style.width=(n/4*100)+'%';},300);
+  d.getElementById('ptxt').textContent=n+' of 2 done';
+  setTimeout(function(){d.getElementById('pbar').style.width=(n/2*100)+'%';},300);
   if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.2});steps.forEach(function(s){io.observe(s);});}
   else steps.forEach(function(s){s.classList.add('in');});
   var path=d.getElementById('path'),line=d.getElementById('pline'),tick=false;
