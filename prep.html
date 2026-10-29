@@ -991,7 +991,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
       var items=[],seen={};function add(it){var k=bare(it.title);if(!k||seen[k])return;seen[k]=1;items.push(it);}
       var CM=R[3]||[];CM.filter(function(x){return x.k==='al';}).forEach(add);
       R[2].forEach(function(x){add({k:'mem',title:x.n,desc:x.t==='wiki'?'Ready in the Prep Room':'Built earlier from '+(x.w?domOnly(x.w):'the web'),x:x});});
-      R[0].slice(0,5).forEach(function(p){add({k:'wiki',title:p.title,desc:p.description||'',thumb:p.thumbnail&&p.thumbnail.source});});
+      var CM0=(R[3]||[]).length>0;R[0].filter(function(p){return !CM0||BIZ.test(p.description||'');}).slice(0,5).forEach(function(p){add({k:'wiki',title:p.title,desc:p.description||'',thumb:p.thumbnail&&p.thumbnail.source});});
       CM.filter(function(x){return x.k==='nse';}).slice(0,4).forEach(add);
       R[1].filter(function(e){return BIZ.test(e.description||'');}).forEach(function(e){add({k:'wd',title:e.label||e.id,desc:e.description||'',id:e.id});});
       sugg.innerHTML='';sIdx=-1;
@@ -1293,6 +1293,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   var pitchVariant=0;
   function makePitch(D,prod){
     var I=D.info,n=D.summary.title,ind=clean((row(I,['industry'])||{}).text||'').split(' · ')[0],fnd=((row(I,['founded'])||{}).text||'').match(/(1[6-9]\d{2}|20\d{2})/),role=D.role?'the '+D.role+' role':'this role';
+    var AP=((D._ai||D.ai||{}).products||[]).map(function(x){return x&&x.name;}).filter(Boolean);if(AP.length)prod=AP;
     var p1=prod[0]?prod.slice(0,2).join(' and '):'its products';
     var V=[
       'I want to join '+n+' because it is '+(fnd?'a company that has stayed relevant since '+fnd[1]:'a respected name')+(ind?' in '+ind.toLowerCase():'')+'. Brands like '+p1+' show how well it understands its customers. As an MBA student, I want to learn from that customer focus, and in '+role+' I can contribute my [your skill / project], while growing with a company that invests in its people.',
@@ -1383,7 +1384,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     if(P.length){var pc=$('prodCards');pc.innerHTML='';P.forEach(function(x){var c=el('div','dprod'+(x.flagship?' star':''));c.appendChild(el('div','ic',String(x.icon||'•').slice(0,4)));c.appendChild(el('b',null,String(x.name)));if(x.desc)c.appendChild(el('span',null,String(x.desc)));if(x.flagship)c.appendChild(el('em',null,'★ Flagship'));pc.appendChild(c);});
       $('s-prod').hidden=false;$('tProd').hidden=false;$('prodMoreLab').hidden=!$('rProd').children.length&&!$('rProdMore').children.length;}
     quiz(A.quiz);
-    prodOnce();aiSrc();fillPitch();
+    prodOnce();aiSrc();if($('pitch').dataset.edited!=='1')makePitch(D,prodOf(D));else fillPitch();
   }
   /* competitors: names + revenue comparison from Wikipedia where currencies match */
   function competitors(D,names,id){
@@ -1584,7 +1585,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     postAI2({task:'leader',company:title,context:buildContext(D).slice(0,3000),website:w,small:!!(D.ai&&D.ai.source_type)}).then(function(j){
       if(id!==runId)return;
       if(j&&j.ok&&j.data){lsSetJ(lk,j.data);renderLeader(j.data,title);}
-      else{body.innerHTML='';var f=el('div','ldnone');f.appendChild(d.createTextNode((j&&j.error)||'Could not load the leader profile right now. '));var rb=el('button','btn','↻ Try again');rb.type='button';rb.style.marginLeft='8px';rb.addEventListener('click',function(){loadLeader(D,runId);});f.appendChild(rb);body.appendChild(f);}
+      else{body.innerHTML='';var f=el('div','ldnone');f.appendChild(d.createTextNode('We could not confirm who leads '+title+' right now, so we are not guessing. Use “Key people” in the overview above, and check the leadership page of the company website. '));var rb=el('button','btn','↻ Try again');rb.type='button';rb.style.marginLeft='8px';rb.addEventListener('click',function(){loadLeader(D,runId);});f.appendChild(rb);body.appendChild(f);}
     }).catch(function(){if(id===runId){body.innerHTML='';body.appendChild(el('div','ldnone','That took too long. Please search again in a minute.'));}});
   }
   function renderLeader(L,title){
