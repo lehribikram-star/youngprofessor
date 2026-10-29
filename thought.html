@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Today's Push · Dr. Lehri</title>
+<meta name="description" content="Today's push from Dr. Bikram Paul Singh Lehri.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B0A0A">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;600;700;800&display=swap">
+<style>
+:root{--bg:#0B0A0A;--panel:#171414;--line:#2A2323;--ink:#F4EFEA;--muted:#A39A94;--red:#E3161E;--red2:#FF3B42;--serif:"DM Serif Display",Georgia,serif;--sans:"Manrope",system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:var(--sans)}
+body{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 16px;background:radial-gradient(900px 600px at 50% 0%,rgba(227,22,30,.22),transparent 70%),var(--bg)}
+.top{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--serif);font-size:22px;margin-bottom:34px}
+.top img{width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 2px var(--red)}
+.top .w span{color:var(--red2)}
+.card{width:min(620px,100%);text-align:center;padding:40px 28px 34px;border-radius:26px;background:linear-gradient(160deg,rgba(227,22,30,.14),rgba(23,20,20,.9) 55%);border:1px solid rgba(227,22,30,.4);box-shadow:0 30px 80px -30px rgba(227,22,30,.6)}
+.lbl{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red2)}
+.date{display:block;margin-top:6px;font-size:13px;color:var(--muted)}
+.q{margin:26px 0 26px;font-family:var(--serif);font-weight:400;font-size:clamp(28px,6vw,42px);line-height:1.2}
+.q::before{content:"“";display:block;font-size:70px;line-height:.6;color:var(--red);margin-bottom:10px}
+.sig{font-family:"Brush Script MT","Segoe Script",cursive;font-size:24px;color:var(--muted)}
+.acts{display:flex;flex-direction:column;gap:10px;width:min(620px,100%);margin-top:20px}
+.acts a,.acts button{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border-radius:999px;font:800 15px var(--sans);text-decoration:none;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.acts .li{background:#0A66C2;border-color:#0A66C2;color:#fff}
+.acts .li b{width:24px;height:24px;border-radius:6px;display:grid;place-items:center;background:#fff;color:#0A66C2;font-size:13px}
+.acts .sh{background:var(--red);border-color:var(--red);color:#fff}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);padding:12px 18px;border-radius:12px;background:var(--panel);border:1px solid var(--red);opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<a class="top" href="./"><img src="logo-mark.webp" alt="" width="40" height="40"><span class="w">young<span>professor</span>.in</span></a>
+<main class="card">
+  <span class="lbl">🌱 Today's push</span>
+  <span class="date" id="dt"></span>
+  <h1 class="q" id="q">You bring the dreams, I'll bring the push.</h1>
+  <span class="sig">Dr. B. P. S. Lehri</span>
+</main>
+<div class="acts">
+  <button type="button" class="sh" id="sh">Share today's push</button>
+  <a class="li" href="https://www.linkedin.com/in/drbikrampaulsingh" target="_blank" rel="noopener"><b>in</b>Grow with me on LinkedIn</a>
+  <a href="./">Explore youngprofessor.in</a>
+</div>
+<div class="toast" id="t" role="status"></div>
+<script>
+(function(){
+  /* Same order as the daily notification: quote 1 on 30 Oct 2026, then one per day (India time). */
+  var START=Date.UTC(2026,9,30), ist=new Date(Date.now()+5.5*3600e3);
+  var day=Math.floor((Date.UTC(ist.getUTCFullYear(),ist.getUTCMonth(),ist.getUTCDate())-START)/864e5);
+  document.getElementById('dt').textContent=ist.toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+  var qEl=document.getElementById('q');
+  fetch('quotes.json').then(function(r){return r.json();}).then(function(Q){var i=((day%Q.length)+Q.length)%Q.length;qEl.textContent=Q[i];}).catch(function(){});
+  function toast(s){var t=document.getElementById('t');t.textContent=s;t.classList.add('on');setTimeout(function(){t.classList.remove('on');},3000);}
+  document.getElementById('sh').addEventListener('click',function(){
+    var txt='“'+qEl.textContent+'” — Dr. Lehri';
+    if(navigator.share)navigator.share({text:txt,url:'https://youngprofessor.in/'}).catch(function(){});
+    else{try{navigator.clipboard.writeText(txt+' https://youngprofessor.in/');toast('Copied! Paste it anywhere 🌱');}catch(e){}}
+  });
+})();
+</script>
+</body>
+</html>
