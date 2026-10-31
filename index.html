@@ -941,7 +941,7 @@ body.menu-open{overflow:hidden}
       <p class="motto" aria-label="You bring the dreams, I’ll bring the push."><span>You bring the dreams,</span> <em>I’ll bring the push.</em><svg class="motto-line" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8"/></svg></p>
       <div class="gwrap">
         <span class="gring"><button type="button" class="btn follow gbtn" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Let’s Grow Together</span><span class="garr" aria-hidden="true">→</span></button></span>
-        <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> students growing together</span>
+        <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> followers growing together</span>
       </div>
       </div>
     </div>
@@ -1586,7 +1586,7 @@ body.menu-open{overflow:hidden}
     function recount(){[].forEach.call(pf.querySelectorAll('button'),function(btn){var c=btn.dataset.c,n=all.filter(function(x){return c==='all'||x.dataset.cat===c;}).length,sp=btn.querySelector('span');if(sp)sp.textContent=n;});
       setNum('liFeat',all.length);moveInd();}
     function apply(S){if(!S||!S.ok)return;
-      if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol');sf.dataset.n=S.site.followers;sf.textContent=fmt(S.site.followers);/* count shown only from 100 followers */if(S.site.followers>=100)d.getElementById('growN').hidden=false;}
+      if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol');sf.dataset.n=S.site.followers;sf.textContent=fmt(S.site.followers);d.getElementById('growN').hidden=false;}
       
       var posts=S.posts||[],li=posts.filter(function(p){return p.p==='li';}).slice(0,8).reverse();
       li.forEach(addLi);if(li.length)recount();
