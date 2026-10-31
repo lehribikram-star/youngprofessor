@@ -181,7 +181,7 @@ img{max-width:100%;display:block}
 .ty-li{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;padding:13px 16px;border-radius:999px;background:#0A66C2;color:#fff;text-decoration:none;font:800 15px var(--sans);box-shadow:0 12px 30px -12px rgba(10,102,194,.9)}
 .ty-li:hover{background:#0b74dd}
 .ty-li .lg{width:26px;height:26px;border-radius:6px;display:grid;place-items:center;background:#fff;color:#0A66C2;font-weight:800;font-size:13px}
-.pcs{border-top:1px solid var(--line)}
+.pcs{border-block:1px solid var(--line);background:radial-gradient(900px 420px at 15% 0%,rgba(245,185,66,.09),transparent 60%),radial-gradient(800px 420px at 95% 100%,rgba(227,22,30,.12),transparent 60%),var(--bg)}
 .pcs-sub{max-width:620px;margin:-8px 0 28px;font-size:18px;color:var(--muted)}
 .pcs-stats{display:inline-grid;grid-template-columns:repeat(3,auto);gap:0;border:1px solid var(--line);border-radius:18px;background:var(--bg2);overflow:hidden;margin-bottom:30px}
 .pcs-stats div{padding:14px 26px}
@@ -203,6 +203,32 @@ img{max-width:100%;display:block}
 .pcc.first b{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:6px}
 .pcs-cta{display:flex;flex-wrap:wrap;gap:12px}
 @media (max-width:560px){.pcs-stats div{padding:12px 16px}.pcs-stats b{font-size:26px}}
+.hbtns{display:flex;align-items:flex-start;justify-content:center;gap:26px;flex-wrap:wrap}
+.pcb{position:relative;flex:none;width:104px;height:104px;margin-top:-20px;display:grid;place-items:center;text-decoration:none;transition:transform .35s var(--ease)}
+.pcb:hover{transform:scale(1.07)}
+.pcb-rt{position:absolute;inset:0;width:100%;height:100%;animation:pcbspin 20s linear infinite}
+.pcb-rt text{font-family:var(--sans);font-size:8.2px;font-weight:800;fill:#F5B942}
+@keyframes pcbspin{to{transform:rotate(360deg)}}
+.pcb-in{position:relative;width:72px;height:72px;border-radius:50%;display:grid;place-items:center;align-content:center;text-align:center;background:radial-gradient(circle at 35% 30%,#2b2020,#100c0c);border:2px solid #F5B942;animation:pcbglow 3s ease-out 2.5s infinite}
+@keyframes pcbglow{0%{box-shadow:0 0 0 0 rgba(245,185,66,.45),0 12px 30px -10px rgba(245,185,66,.55)}100%{box-shadow:0 0 0 14px rgba(245,185,66,0),0 12px 30px -10px rgba(245,185,66,.55)}}
+.pcb .e{display:block;font-size:17px;line-height:1;margin-bottom:2px}
+.pcb b{font-family:var(--serif);font-weight:400;font-size:12.5px;line-height:1.05;color:#fff}
+@media (max-width:440px){.hbtns{gap:14px}.pcb{margin-top:-14px}}
+@media (prefers-reduced-motion:reduce){.pcb-rt,.pcb-in{animation:none}}
+.newtag{display:inline-block;margin-left:5px;padding:1px 6px;border-radius:999px;background:#F5B942;color:#2a1a05;font-family:var(--sans);font-size:9.5px;font-weight:800;letter-spacing:.06em;vertical-align:3px}
+.dz-card.dz-pc{margin-top:10px;background:radial-gradient(circle at 85% 20%,rgba(245,185,66,.25),transparent 60%),#171111;border:1.5px solid rgba(245,185,66,.6);box-shadow:0 18px 40px -20px rgba(245,185,66,.6)}
+.dz-card.dz-pc small{color:#F5B942;opacity:1}
+.dz-card.dz-pc i{color:#F5B942}
+.ty-pc{display:block;margin-top:12px;text-align:center;font-size:14px;font-weight:700;color:#F5B942;text-decoration:none}
+.ty-pc:hover{text-decoration:underline}
+.pcs-row.auto{display:block;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.pctrack{display:flex;gap:18px;width:max-content;animation:pcmove var(--dur,40s) linear infinite}
+.pcs-row.auto:hover .pctrack{animation-play-state:paused}
+.pctrack .pcc{flex:0 0 330px}
+@keyframes pcmove{to{transform:translateX(calc(-50% - 9px))}}
+.pcc .fm{display:inline-flex;align-items:center;gap:5px;margin-top:12px;padding:3px 10px;border-radius:999px;border:1px solid rgba(245,185,66,.5);color:#F5B942;font-size:11.5px;font-weight:800;letter-spacing:.04em}
+.pcs-stats b{color:#F5B942}
+@media (prefers-reduced-motion:reduce){.pctrack{animation:none}}
 @keyframes ring{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(16deg)}88%{transform:rotate(-14deg)}92%{transform:rotate(10deg)}96%{transform:rotate(-6deg)}}
 @keyframes fpulse{0%{box-shadow:0 0 0 0 rgba(227,22,30,.55)}100%{box-shadow:0 0 0 18px rgba(227,22,30,0)}}
 .fcard{position:fixed;left:20px;bottom:20px;z-index:70;width:min(360px,calc(100% - 40px));padding:18px 18px 16px;border-radius:20px;background:rgba(23,20,20,.96);border:1px solid var(--line2);box-shadow:0 24px 60px -20px rgba(0,0,0,.9),0 0 0 1px rgba(227,22,30,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transform:translateY(140%);opacity:0;transition:transform .7s var(--ease),opacity .5s}
@@ -924,7 +950,7 @@ body.menu-open{overflow:hidden}
       <li><a href="#journey">Journey</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#recognition">Recognition</a></li>
-      <li><a href="circle.html">Push Circle</a></li>
+      <li><a href="circle.html">Push Circle<sup class="newtag" data-until="2026-12-01">NEW</sup></a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a class="sz-pill" href="student.html">Student Zone</a></li>
     </ul>
@@ -933,6 +959,7 @@ body.menu-open{overflow:hidden}
 </nav>
 <div class="drawer" id="drawer" aria-label="Menu">
   <a class="dz-card" href="student.html"><small>For students</small><b>Student Zone</b><span>The zone created for you.</span><i aria-hidden="true">→</i></a>
+  <a class="dz-card dz-pc" href="circle.html"><small>For former students <sup class="newtag" data-until="2026-12-01">NEW</sup></small><b>The Push Circle</b><span>Where my students are now.</span><i aria-hidden="true">→</i></a>
   <div class="dz-row">
     <a href="leader.html"><b>🎯 Leader test</b><span>60 seconds</span></a>
     <a href="placement.html"><b>📄 Placement Prep</b><span>LinkedIn, CV, interviews, offers</span></a>
@@ -943,7 +970,6 @@ body.menu-open{overflow:hidden}
     <a href="#journey">Journey</a>
     <a href="#research">Research</a>
     <a href="#recognition">Recognition</a>
-    <a href="circle.html">🌱 The Push Circle</a>
     <a href="#contact">Contact</a>
   </nav>
   <div class="dz-foot"><a href="mailto:singhbikrampaul@gmail.com">singhbikrampaul@gmail.com</a><span><a href="https://www.linkedin.com/in/drbikrampaulsingh" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/bikrampaul.s/" target="_blank" rel="noopener">Instagram</a></span></div>
@@ -962,9 +988,12 @@ body.menu-open{overflow:hidden}
       <p class="role">Educator and researcher in <span class="type" id="type">Finance</span><br>shaping future-ready business leaders through research, mentorship &amp; academic leadership.</p>
       <div class="pushwrap">
       <p class="motto" aria-label="You bring the dreams, I’ll bring the push."><span>You bring the dreams,</span> <em>I’ll bring the push.</em><svg class="motto-line" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8"/></svg></p>
+      <div class="hbtns">
       <div class="gwrap">
         <span class="gring"><button type="button" class="btn follow gbtn" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Let’s Grow Together</span><span class="garr" aria-hidden="true">→</span></button></span>
         <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> followers growing together</span>
+      </div>
+      <a class="pcb" href="circle.html" aria-label="The Push Circle: where my students are now"><svg class="pcb-rt" viewBox="0 0 104 104" aria-hidden="true"><defs><path id="pcbp" d="M52,52 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#pcbp" textLength="274" lengthAdjust="spacing">WHERE MY STUDENTS ARE NOW · WHERE MY STUDENTS ARE NOW · </textPath></text></svg><span class="pcb-in"><span class="e" aria-hidden="true">🌱</span><b>The Push<br>Circle</b></span></a>
       </div>
       </div>
     </div>
@@ -1235,6 +1264,17 @@ body.menu-open{overflow:hidden}
   </div>
 </section>
 
+<section class="sec pcs" id="circle">
+  <div class="wrap">
+    <p class="label rv">The Push Circle</p>
+    <h2 class="rv">Where the Push <em>Took Them</em></h2>
+    <p class="pcs-sub rv">You brought the dreams, I brought the push. Here’s where it took you.</p>
+    <div class="pcs-stats rv"><div><b id="pcM">0</b><span>Members</span></div><div><b id="pcO">0</b><span>Institutions</span></div><div><b id="pcC">0</b><span>Cities</span></div></div>
+    <div class="pcs-row" id="pcRow" aria-label="Latest stories from former students"></div>
+    <div class="pcs-cta rv"><a class="btn red mag" href="circle.html">See The Push Circle <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn line mag" href="circle.html#add">✍️ Were you my student? Add your story</a></div>
+  </div>
+</section>
+
 <section class="sec sec-li" id="updates">
   <div class="wrap">
     <div class="stage" id="stage">
@@ -1356,17 +1396,6 @@ body.menu-open{overflow:hidden}
       <div class="szchips"><a href="placement.html">🎯 Placement Prep Room</a><a href="prep.html">🎯 Know Before You Go</a><a href="offer.html">✍️ Before You Sign</a><a href="professor.html">🎓 UGC NET</a><a href="leader.html">🧭 Leader test</a><a href="student.html#ask">💬 Ask Me</a></div>
       <a class="btn red mag" href="student.html">Enter the Student Zone <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-  </div>
-</section>
-
-<section class="sec pcs" id="circle">
-  <div class="wrap">
-    <p class="label rv">The Push Circle</p>
-    <h2 class="rv">Where the Push <em>Took Them</em></h2>
-    <p class="pcs-sub rv">You brought the dreams, I brought the push. Here’s where it took you.</p>
-    <div class="pcs-stats rv"><div><b id="pcM">0</b><span>Members</span></div><div><b id="pcO">0</b><span>Institutions</span></div><div><b id="pcC">0</b><span>Cities</span></div></div>
-    <div class="pcs-row" id="pcRow" aria-label="Latest stories from former students"></div>
-    <div class="pcs-cta rv"><a class="btn red mag" href="circle.html">See The Push Circle <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn line mag" href="circle.html#add">✍️ Were you my student? Add your story</a></div>
   </div>
 </section>
 
@@ -1698,6 +1727,7 @@ body.menu-open{overflow:hidden}
       <span class="adm-stamp" aria-hidden="true">ADMITTED</span>
     </div>
     <a class="ty-li" href="https://www.linkedin.com/in/drbikrampaulsingh" target="_blank" rel="noopener"><span class="lg">in</span>One more step: follow me on LinkedIn</a>
+    <a class="ty-pc" href="circle.html#add">🎓 Were you my student? Add your story to The Push Circle →</a>
     <div class="ty-a"><button type="button" class="ty-share" id="tyShare">Share my card</button><button type="button" id="tyClose" data-tyclose>Continue exploring</button></div>
   </div>
 </div>
@@ -1831,11 +1861,14 @@ body.menu-open{overflow:hidden}
   function pic(it){if((it.pt==='photo'||it.pt==='logo')&&it.pv)return '<span class="pp'+(it.pt==='logo'?' lg':'')+'"><img src="https://drive.google.com/thumbnail?id='+encodeURIComponent(it.pv)+'&amp;sz=w200" alt="" loading="lazy" onerror="this.parentNode.className=\'pp\';this.parentNode.style.background=\''+col(it.n)+'\';this.parentNode.textContent=\''+esc(ini(it.n))+'\'"></span>';
     if(it.pt==='avatar'&&AV[it.pv])return '<span class="pp" style="background:#2a2121">'+AV[it.pv]+'</span>';
     return '<span class="pp" style="background:'+col(it.n)+';font-size:19px">'+esc(ini(it.n))+'</span>';}
-  function num(id,n){var el=document.getElementById(id);if(el)el.textContent=n||0;}
+  function countWhenSeen(M){var sec=document.getElementById('circle');function go(){Object.keys(M).forEach(function(id){var el=document.getElementById(id),n=+M[id]||0;if(!el)return;if(n<5){el.textContent=n;return;}var t0=performance.now();(function f(t){var k=Math.min(1,(t-t0)/1400);el.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f);})(t0);});}
+    if(!('IntersectionObserver' in window)||!sec)return go();var io=new IntersectionObserver(function(E){if(E[0].isIntersecting){io.disconnect();go();}},{threshold:.3});io.observe(sec);}
+  document.querySelectorAll('.newtag[data-until]').forEach(function(t){if(Date.now()>Date.parse(t.dataset.until))t.remove();});
   var first='<a class="pcc first" href="circle.html#add"><b>Were you my student?</b><small>Add your story and join The Push Circle 🌱</small></a>';
-  fetch(API,{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){if(!D||!D.ok)throw 0;var L=(D.items||[]).slice(0,6),S=D.stats||{};
-    num('pcM',S.members);num('pcO',S.orgs);num('pcC',S.cities);
-    row.innerHTML=L.map(function(it){return '<a class="pcc" href="circle.html"><div class="w">'+pic(it)+'<div><b>'+esc(it.n)+'</b><small>'+esc([it.d,it.o].filter(Boolean).join(' · '))+(it.l?' · '+esc(it.l):'')+'</small></div></div><q>'+esc(it.m)+'</q></a>';}).join('')+first;
+  fetch(API,{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){if(!D||!D.ok)throw 0;var ALL=D.items||[],T=ALL.length,L=ALL.slice(0,12),S=D.stats||{};
+    countWhenSeen({pcM:S.members,pcO:S.orgs,pcC:S.cities});
+    var cards=L.map(function(it,i){return '<a class="pcc" href="circle.html"><div class="w">'+pic(it)+'<div><b>'+esc(it.n)+'</b><small>'+esc([it.d,it.o].filter(Boolean).join(' · '))+(it.l?' · '+esc(it.l):'')+'</small></div></div><q>'+esc(it.m)+'</q>'+((T-i)<=50?'<span class="fm">★ Founding member</span>':'')+'</a>';}).join('')+first;
+    if(L.length>=4&&!matchMedia('(prefers-reduced-motion: reduce)').matches){row.classList.add('auto');row.innerHTML='<div class="pctrack" style="--dur:'+(L.length*7)+'s">'+cards+cards+'</div>';}else row.innerHTML=cards;
   }).catch(function(){row.innerHTML=first;});
 })();
 </script>

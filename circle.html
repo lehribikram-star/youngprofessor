@@ -98,6 +98,7 @@ button{font:inherit;cursor:pointer}
 .card q{display:block;quotes:"“" "”";font-size:15.5px;line-height:1.6;color:var(--ink2)}
 .card q::before,.card q::after{color:var(--red);font-family:var(--serif);font-size:1.25em;line-height:0}
 .cf{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 10px;margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted)}
+.fm{display:inline-flex;align-items:center;gap:5px;margin-top:12px;padding:3px 10px;border-radius:999px;background:#FFF6DF;border:1px solid #F0D28A;color:#8a5a00;font-size:11.5px;font-weight:800}
 .tag{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:var(--soft);color:var(--red2);font-weight:700}
 .empty{max-width:520px;margin:10px auto;text-align:center;padding:40px 24px;border:2px dashed var(--line);border-radius:24px;background:#fff}
 .empty b{display:block;font-family:var(--serif);font-weight:400;font-size:26px;margin-bottom:6px}
@@ -327,7 +328,7 @@ footer a{color:var(--ink2)}
     var taught=it.t?'🎓 My student at '+esc(it.t):'';
     return '<article class="card" style="animation-delay:'+Math.min(i||0,12)*60+'ms">'+
       '<div class="who">'+picHTML(it)+'<div><b>'+esc(it.n)+'</b><span class="role">'+esc(role)+'</span>'+(it.l?'<span class="loc">📍 '+esc(it.l)+'</span>':'')+'</div></div>'+
-      '<q>'+esc(it.m)+'</q>'+
+      '<q>'+esc(it.m)+'</q>'+(it.fm?'<span class="fm">★ Founding member</span>':'')+
       '<div class="cf">'+(it.f?'<span class="tag">'+esc(it.f)+'</span>':'<span></span>')+'<span>'+(taught||esc(it.dt||''))+'</span></div></article>';
   }
 
@@ -350,7 +351,7 @@ footer a{color:var(--ink2)}
   $('moreBtn').addEventListener('click',function(){shown+=12;render();});
   function load(){
     fetch(API+'?circle=1&v='+Date.now(),{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){
-      if(!D||!D.ok)throw 0;ALL=D.items||[];var S=D.stats||{};
+      if(!D||!D.ok)throw 0;ALL=D.items||[];ALL.forEach(function(x,i){x.fm=(ALL.length-i)<=50;});var S=D.stats||{};
       countUp($('sMem'),S.members||ALL.length);countUp($('sOrg'),S.orgs||0);countUp($('sCity'),S.cities||0);
       var sp=ALL.filter(function(x){return x.ft;})[0];
       if(sp){$('spotC').innerHTML=picHTML(sp)+'<div><blockquote>'+esc(sp.m)+'</blockquote><div class="who" style="margin:0"><div><b>'+esc(sp.n)+'</b><span class="role">'+esc([sp.d,sp.o].filter(Boolean).join(' · '))+'</span>'+(sp.l?'<span class="loc">📍 '+esc(sp.l)+'</span>':'')+'</div></div></div>';$('spot').hidden=false;}
