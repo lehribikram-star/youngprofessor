@@ -149,6 +149,25 @@ img{max-width:100%;display:block}
 .grow .btn.follow.on .bell{animation:none}
 .grow-n{font-size:14.5px;color:var(--muted)}
 .grow-n b{font-family:var(--mono);font-size:17px;color:var(--ink);margin-right:2px}
+@property --ga{syntax:'<angle>';inherits:false;initial-value:0deg}
+.pushwrap{display:inline-flex;flex-direction:column;align-items:center;gap:34px;margin:-14px 0 10px;max-width:100%}
+.pushwrap .motto{margin:0!important}
+.gwrap{display:flex;flex-direction:column;align-items:center;gap:10px}
+.gring{position:relative;display:inline-flex;padding:2px;border-radius:999px;background:conic-gradient(from var(--ga),rgba(227,22,30,.35) 0 60%,#fff 73%,#FF3B42 84%,rgba(227,22,30,.35) 100%);animation:gspin 3.2s linear infinite,gglow 2.4s ease-out 2s infinite}
+@keyframes gspin{to{--ga:360deg}}
+@keyframes gglow{0%{box-shadow:0 0 0 0 rgba(227,22,30,.55)}100%{box-shadow:0 0 0 22px rgba(227,22,30,0)}}
+.btn.follow.gbtn{border:0;padding:16px 26px 16px 22px;font-size:17px;font-weight:800;color:#fff;background:linear-gradient(110deg,#E3161E 42%,#ff6a70 50%,#E3161E 58%) 100% 0/300% 100%;animation:gshine 4.5s ease-in-out 1.5s infinite;box-shadow:0 14px 34px -12px rgba(227,22,30,.9)}
+.btn.follow.gbtn:hover{background:linear-gradient(110deg,#E3161E 42%,#ff6a70 50%,#E3161E 58%) 0 0/300% 100%;transform:translateY(-2px) scale(1.03)}
+@keyframes gshine{0%,55%{background-position:100% 0}100%{background-position:0 0}}
+.gbtn .bell{display:inline-block;animation:sprout 3.2s ease-in-out 2.5s infinite;transform-origin:50% 100%}
+.gbtn .garr{display:inline-block;transition:transform .3s}
+.gbtn:hover .garr{transform:translateX(5px)}
+.gring:has(.on){background:var(--line2);animation:none}
+.btn.follow.gbtn.on{background:var(--bg2);color:var(--muted);animation:none;box-shadow:none;transform:none}
+.gbtn.on .garr{display:none}
+.gbtn.on .bell{animation:none}
+@media (max-width:440px){.pushwrap .motto{font-size:17.5px;white-space:nowrap}.pushwrap{gap:28px}}
+@media (prefers-reduced-motion:reduce){.gring,.btn.follow.gbtn,.gbtn .bell{animation:none}}
 @keyframes sprout{0%,78%,100%{transform:scale(1)}84%{transform:scale(1.35) rotate(-8deg)}90%{transform:scale(.95) rotate(6deg)}95%{transform:scale(1.1)}}
 @media (prefers-reduced-motion:reduce){.grow::before,.grow .btn.follow,.grow .btn.follow .bell{animation:none}}
 @media (max-width:560px){.grow{padding:16px 16px 18px}.grow .btn.follow{flex:1 1 100%;justify-content:center}}
@@ -918,13 +937,12 @@ body.menu-open{overflow:hidden}
         <span class="l"><span><em>Lehri</em></span></span>
       </h1>
       <p class="role">Educator and researcher in <span class="type" id="type">Finance</span><br>shaping future-ready business leaders through research, mentorship &amp; academic leadership.</p>
-      <p class="motto" aria-label="A student first, a professor later"><span>A student first,</span> <em>a professor later.</em><svg class="motto-line" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8"/></svg></p>
-      <div class="grow">
-        <p class="grow-tag"><em>You bring the dreams,</em> I’ll bring the push.</p>
-        <div class="grow-row">
-          <button type="button" class="btn follow mag" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Let’s Grow Together</span></button>
-          <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> followers</span>
-        </div>
+      <div class="pushwrap">
+      <p class="motto" aria-label="You bring the dreams, I’ll bring the push."><span>You bring the dreams,</span> <em>I’ll bring the push.</em><svg class="motto-line" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8"/></svg></p>
+      <div class="gwrap">
+        <span class="gring"><button type="button" class="btn follow gbtn" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Let’s Grow Together</span><span class="garr" aria-hidden="true">→</span></button></span>
+        <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> students growing together</span>
+      </div>
       </div>
     </div>
     <div class="portrait-wrap">
