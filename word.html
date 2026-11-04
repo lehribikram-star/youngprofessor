@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Business Word of the Day · Dr. Lehri</title>
+<title>Concept Corner · Dr. Lehri</title>
 <meta name="description" content="One business word a day, explained simply with an Indian example, by Dr. Bikram Paul Singh Lehri. Learn it, flip it, share it.">
 <meta name="theme-color" content="#0B0A0A">
 <meta property="og:type" content="website">
@@ -126,6 +126,7 @@ a{color:inherit}
 <div class="wrap">
   <div class="top"><a class="logo" href="./"><img src="logo-mark.webp" alt="" width="36" height="36"><span>young<em>professor</em>.in</span></a><a class="zone" href="student.html">Student Zone</a></div>
   <div class="head"><small id="kick">BUSINESS WORD OF THE DAY</small><h1 id="ttl">&nbsp;</h1></div>
+  <p style="text-align:center;margin:-6px 0 16px;font-size:14px;color:var(--muted)">📘 <b style="color:var(--gold)">Concept Corner</b> · You bring the curiosity, I'll bring the meaning.</p>
   <div class="tabs" role="tablist"><button class="on" data-v="today">Today</button><button data-v="bank">My Word Bank</button><button data-v="dict">Dictionary</button></div>
 
   <section class="view" id="v-today">
@@ -325,7 +326,7 @@ fetch('words.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(f
   ALL=A;REL=A.filter(function(x){return x.d<=TODAY});WORDS=REL.filter(function(x){return !x.quiz});
   if(!WORDS.length){$('cardBox').hidden=true;$('soonBox').hidden=false;$('ttl').textContent='Starting soon';return;}
   var todayE=REL.filter(function(x){return x.d===TODAY})[0],want=P.get('w'),qz=P.get('quiz');
-  if(P.get('tab')==='dict'){tab('dict');}
+  if(P.get('tab')==='dict'||P.get('tab')==='bank'){tab(P.get('tab'));}
   if(qz){quiz(/^\d{4}-\d{2}-\d{2}$/.test(qz)&&qz<=TODAY?qz:TODAY);return;}
   var w=want&&WORDS.filter(function(x){return x.s===want})[0];
   if(!w&&todayE&&todayE.quiz){quiz(TODAY);return;}
