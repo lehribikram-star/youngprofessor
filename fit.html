@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Find Your Fit | Choose your MBA/BBA specialisation | youngprofessor.in</title>
+<link rel="canonical" href="https://youngprofessor.in/fit.html">
+<meta name="description" content="Confused between Marketing, Finance, HR, Analytics or Operations? Find Your Fit uses 3 lenses (your interests, the subjects you enjoy and your work style) to show the specialisation that truly fits you. Free, 8 minutes, by Dr. Bikram Paul Singh Lehri.">
+<meta name="theme-color" content="#0B0A0A">
+<meta property="og:title" content="Find Your Fit | End your specialisation confusion">
+<meta property="og:description" content="3 lenses. 8 minutes. One clear answer for your MBA/BBA specialisation, plus your Certificate of Clarity.">
+<meta property="og:image" content="https://youngprofessor.in/photo.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Herr+Von+Muellerhoff&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
+<style>
+:root{--bg:#0B0A0A;--bg2:#121010;--panel:#171414;--line:#2A2323;--line2:#3A2E2E;--ink:#F4EFEA;--muted:#A39A94;--dim:#6F6661;--red:#E3161E;--red2:#FF3B42;--redsoft:rgba(227,22,30,.10);--gold:#E2B85C;--calm:#6FC3B2;
+--serif:"DM Serif Display",Georgia,serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;min-height:100vh;
+background-image:radial-gradient(900px 500px at 85% -10%,rgba(227,22,30,.13),transparent 60%),radial-gradient(700px 500px at -10% 30%,rgba(226,184,92,.06),transparent 60%)}
+a{color:inherit}button{font-family:inherit;cursor:pointer}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:22px}
+.nav{position:sticky;top:0;z-index:40;background:rgba(11,10,10,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:19px}
+.logo img{width:38px;height:38px;border-radius:50%}.logo em{font-style:normal;color:var(--red)}
+.back{display:inline-flex;padding:8px 15px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:14px;font-weight:700}
+.screen{display:none;padding:34px 0 80px;animation:in .5s var(--ease)}.screen.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,8vw,84px);line-height:1;margin:14px 0 10px}h1 em{color:var(--red);font-style:italic}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);line-height:1.1;margin:0 0 10px}
+.tag{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3vw,26px);color:var(--muted);margin:0 0 26px}
+.lead{font-size:17px;color:var(--muted);max-width:720px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px}
+.prob{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:26px 0}
+.prob .card h3{margin:6px 0 6px;font-size:17px}.prob .card p{margin:0;color:var(--muted);font-size:15px}.prob .em{font-size:26px}
+.lenses{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0 26px}
+.lens{position:relative;overflow:hidden}.lens b{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--gold)}.lens h3{margin:8px 0 4px;font-size:19px}.lens p{margin:0;color:var(--muted);font-size:15px}
+.uniq{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 28px;padding:0;list-style:none}.uniq li{border:1px solid var(--line2);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
+.startbox{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:10px}
+.inp{flex:1 1 260px;min-width:0;background:#0f0d0d;border:1px solid var(--line2);border-radius:14px;padding:16px 18px;font-size:17px;color:var(--ink);font-family:inherit}
+.inp:focus{outline:none;border-color:var(--red)}
+.btn{border:0;border-radius:14px;padding:16px 24px;font-size:16px;font-weight:800;background:var(--red);color:#fff;transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{background:var(--red2);transform:translateY(-1px)}.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--ink)}.btn.gold{background:var(--gold);color:#241a05}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.small{font-size:13px;color:var(--dim)}
+.prog{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:14px 0 6px}.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--gold));transition:width .35s var(--ease)}
+.ptop{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted);gap:10px}
+.qbox{max-width:720px;margin:24px auto 0;text-align:center}
+.qn{font-family:var(--mono);font-size:13px;color:var(--dim);letter-spacing:.14em}
+.qt{font-family:var(--serif);font-size:clamp(30px,5.4vw,46px);line-height:1.15;margin:16px 0 30px;min-height:2.4em;display:flex;align-items:center;justify-content:center}
+.opts{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.opt{background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:16px 6px 12px;color:var(--ink);font-size:13px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform .15s,border-color .2s,background .2s}
+.opt span{font-size:30px;line-height:1}@media (hover:hover){.opt:hover{border-color:var(--red);transform:translateY(-2px)}}.opt.sel{background:var(--redsoft);border-color:var(--red)}
+.hint{margin-top:20px;font-size:14px;color:var(--dim)}
+.cheer{margin:18px auto 0;max-width:560px;padding:12px 16px;border-radius:12px;background:rgba(111,195,178,.1);color:var(--calm);font-weight:700;font-size:15px;display:none}
+.navq{display:flex;justify-content:space-between;margin-top:26px}
+.linkbtn{background:none;border:0;color:var(--muted);font-size:14px;font-weight:700;padding:8px 0}
+.subj{display:grid;gap:12px;margin-top:18px}
+.srow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.srow h4{margin:0;font-size:17px}.srow p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+.chips{display:flex;gap:6px}.chip{width:48px;height:48px;border-radius:12px;border:1px solid var(--line2);background:#0f0d0d;font-size:22px;transition:.15s}.chip.sel{border-color:var(--red);background:var(--redsoft);transform:scale(1.06)}
+.pair{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch;margin-top:12px}
+.pair button{background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:18px;color:var(--ink);font-size:16px;font-weight:700;text-align:left;transition:.15s}
+.pair button.sel{border-color:var(--red);background:var(--redsoft)}.pair .or{align-self:center;font-family:var(--serif);font-style:italic;color:var(--dim)}
+.res-hero{text-align:center;padding:10px 0 6px}
+.appr{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3vw,26px);color:var(--gold);max-width:760px;margin:0 auto 18px}
+.topfit{position:relative;overflow:hidden;border-radius:24px;padding:34px 26px;border:1px solid rgba(226,184,92,.35);background:radial-gradient(600px 300px at 50% 0%,rgba(227,22,30,.25),transparent 70%),var(--panel);text-align:center;margin:18px 0}
+.topfit .em{font-size:54px}.topfit h2{font-size:clamp(36px,6vw,58px);margin:8px 0 4px}.pct{font-family:var(--mono);font-size:15px;color:var(--gold);letter-spacing:.14em}
+.topfit p{color:var(--muted);max-width:640px;margin:14px auto 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.cols .card h3{margin:0 0 8px;font-size:17px}.cols ul{margin:0;padding-left:18px;color:var(--muted)}.cols li{margin:4px 0}
+.rank{display:grid;gap:10px;margin-top:10px}.rk{display:grid;grid-template-columns:28px 1fr 56px;gap:10px;align-items:center;font-size:15px}
+.rk .bar{height:10px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:6px}.rk .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:9px}
+.rk b{font-family:var(--mono);font-size:14px;text-align:right;color:var(--gold)}
+.ria{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.ria div{border:1px solid var(--line);border-radius:14px;padding:12px}.ria b{font-family:var(--serif);font-size:26px;color:var(--red)}.ria span{display:block;font-size:13px;color:var(--muted)}
+.sec{margin-top:44px}
+.certwrap{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:26px;align-items:center}
+.certwrap canvas{width:100%;height:auto;border-radius:6px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.sharewrap{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:26px;align-items:center}
+.sharewrap canvas{width:100%;height:auto;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.grow{font-family:var(--serif);font-size:30px;margin:0 0 6px}
+.note{font-size:13px;color:var(--dim);margin-top:30px;border-top:1px solid var(--line);padding-top:16px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:#1f1a1a;border:1px solid var(--line2);padding:12px 18px;border-radius:12px;font-weight:700;transition:transform .3s var(--ease),opacity .3s;opacity:0;z-index:60}.toast.on{transform:translateX(-50%);opacity:1}
+@media (max-width:760px){.certwrap,.sharewrap{grid-template-columns:1fr}.opts{gap:6px}.opt{font-size:11px;padding:12px 2px 10px}.opt span{font-size:26px}.pair{grid-template-columns:1fr}.pair .or{text-align:center}.chip{width:42px;height:42px;font-size:20px}.back{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="logo" href="index.html"><img src="logo-mark.webp" alt="" width="38" height="38"><span>young<em>professor</em>.in</span></a>
+  <a class="back" href="student.html">← Student Zone</a>
+</div></nav>
+
+<!-- START -->
+<section class="screen on" id="s-start"><div class="wrap">
+  <span class="eyebrow">Student Zone · Choose your path</span>
+  <h1>Find Your <em>Fit</em></h1>
+  <p class="tag">You bring the confusion, I'll bring the clarity.</p>
+  <p class="lead">Marketing or Finance? HR or Analytics? Most students choose a specialisation because a friend did, because a senior said "it has scope", or out of fear. Then they spend two years studying something that doesn't feel like them.</p>
+  <div class="prob">
+    <div class="card"><div class="em">😵‍💫</div><h3>The problem</h3><p>Big decision, no real method. Advice is everywhere, but nobody looks at <b>you</b>.</p></div>
+    <div class="card"><div class="em">🎯</div><h3>What this solves</h3><p>In about 8 minutes you get a clear, ranked answer: which specialisation fits you, and why.</p></div>
+    <div class="card"><div class="em">🏅</div><h3>What you take home</h3><p>Your personal <b>Certificate of Clarity</b> with a unique code, plus a share card for your friends.</p></div>
+  </div>
+  <h2>Why it is different: 3 lenses, not 1</h2>
+  <div class="lenses">
+    <div class="card lens"><b>LENS 1 · 60 TAPS</b><h3>What you enjoy</h3><p>The globally trusted O*NET Interest Profiler (U.S. Dept. of Labor) finds your Holland career code.</p></div>
+    <div class="card lens"><b>LENS 2 · 8 TAPS</b><h3>Subjects you love</h3><p>Numbers, people, data, ideas? Your comfort with subjects shapes the right fit.</p></div>
+    <div class="card lens"><b>LENS 3 · 8 TAPS</b><h3>How you like to work</h3><p>Targets or stability, field or desk, people or data: your natural work style.</p></div>
+  </div>
+  <ul class="uniq"><li>🇮🇳 Made for Indian BBA/MBA specialisations</li><li>👨‍🏫 Built by your professor</li><li>🆓 Free, no sign-up</li><li>🔒 Your answers stay on your phone</li></ul>
+  <div class="card">
+    <h3 style="margin:0 0 4px">First, what should I call you?</h3>
+    <p class="small" style="margin:0 0 12px">Your name appears on your certificate. It never leaves your phone.</p>
+    <div class="startbox"><input class="inp" id="nm" maxlength="40" placeholder="Your full name" autocomplete="name"><button class="btn" id="go" disabled>Start my 3 lenses →</button></div>
+    <p class="small" id="resume" style="display:none;margin:12px 0 0"></p>
+  </div>
+</div></section>
+
+<!-- LENS 1 -->
+<section class="screen" id="s-l1"><div class="wrap">
+  <div class="ptop"><span><b style="color:var(--gold)">Lens 1 of 3</b> · What you enjoy</span><span id="l1c">1 / 60</span></div>
+  <div class="prog"><i id="l1p"></i></div>
+  <div class="qbox">
+    <div class="qn">WOULD YOU ENJOY THIS WORK?</div>
+    <div class="qt" id="qt"></div>
+    <div class="opts" id="opts"></div>
+    <div class="cheer" id="cheer"></div>
+    <p class="hint">Don't think about salary or training. Just ask: would I <b>enjoy</b> doing this?</p>
+    <div class="navq"><button class="linkbtn" id="qback">← Back</button><button class="linkbtn" id="qhome">Save &amp; exit</button></div>
+  </div>
+</div></section>
+
+<!-- LENS 2 -->
+<section class="screen" id="s-l2"><div class="wrap">
+  <div class="ptop"><span><b style="color:var(--gold)">Lens 2 of 3</b> · Subjects you love</span><span>Almost there</span></div>
+  <div class="prog"><i style="width:80%"></i></div>
+  <h2 style="margin-top:22px">How do you feel about these subjects?</h2>
+  <p class="lead" style="margin:0">Be honest. 😣 means "please no", 😍 means "I could do this all day".</p>
+  <div class="subj" id="subj"></div>
+  <div class="navq"><button class="linkbtn" onclick="show('s-l1');renderQ()">← Back</button><button class="btn" id="l2go" disabled>Next: work style →</button></div>
+</div></section>
+
+<!-- LENS 3 -->
+<section class="screen" id="s-l3"><div class="wrap">
+  <div class="ptop"><span><b style="color:var(--gold)">Lens 3 of 3</b> · How you like to work</span><span>Last step</span></div>
+  <div class="prog"><i style="width:92%"></i></div>
+  <h2 style="margin-top:22px">Pick the one that sounds more like you</h2>
+  <p class="lead" style="margin:0">There is no right answer. Go with your first instinct.</p>
+  <div id="pairs"></div>
+  <div class="navq"><button class="linkbtn" onclick="show('s-l2')">← Back</button><button class="btn" id="l3go" disabled>Show my fit ✨</button></div>
+</div></section>
+
+<!-- RESULTS -->
+<section class="screen" id="s-res"><div class="wrap">
+  <div class="res-hero"><span class="eyebrow">Your result · 3 lenses combined</span>
+    <p class="appr" id="appr" style="margin-top:14px"></p></div>
+  <div class="topfit"><div class="em" id="tEm"></div><span class="pct" id="tPct"></span><h2 id="tName"></h2><p id="tWhy"></p></div>
+  <div class="cols">
+    <div class="card"><h3>💼 Roles you can grow into</h3><ul id="tRoles"></ul></div>
+    <div class="card"><h3>📚 Strengthen these next</h3><ul id="tNext"></ul></div>
+  </div>
+  <div class="sec"><h2>Your full ranking</h2><p class="lead" style="margin:0">All 8 specialisations, ranked for you.</p><div class="card" style="margin-top:12px"><div class="rank" id="rank"></div></div></div>
+  <div class="sec"><h2>Your career code: <span id="code" style="color:var(--gold)"></span></h2><p class="lead" style="margin:0">From Lens 1. Your three strongest interest areas, in order.</p><div class="ria" id="ria"></div></div>
+
+  <div class="sec certwrap">
+    <canvas id="cert" width="1240" height="1754"></canvas>
+    <div><span class="eyebrow">Your certificate</span><h2 style="margin-top:8px">Certificate of Clarity</h2>
+      <p class="lead">Signed by Dr. Bikram Paul Singh Lehri. It carries a unique code and a QR, so anyone (even a recruiter) can verify it on youngprofessor.in.</p>
+      <p class="small" id="cid"></p>
+      <div class="btns"><button class="btn gold" id="dlPdf">⬇ Download PDF</button><button class="btn ghost" id="dlPng">Download image</button></div></div>
+  </div>
+
+  <div class="sec sharewrap">
+    <canvas id="card" width="1080" height="1350"></canvas>
+    <div><p class="grow">🌱 Let's grow together</p>
+      <p class="lead">Somewhere, a friend is as confused as you were this morning. Send them your card. Ending one friend's confusion today is a good day's work.</p>
+      <div class="btns"><button class="btn" id="shCard">📤 Share my card</button><button class="btn ghost" id="shStyle">🎨 Change style</button></div>
+      <div class="btns"><a class="btn ghost" id="shWa" target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost" id="shLi" target="_blank" rel="noopener">LinkedIn</a><a class="btn ghost" id="shFb" target="_blank" rel="noopener">Facebook</a><button class="btn ghost" id="shDl">Save card</button></div>
+      <p class="small" style="margin-top:12px">For Instagram: tap "Save card" and post it to your story. Tag <b>@lehribikram</b> and I may feature you!</p></div>
+  </div>
+
+  <div class="sec card" style="text-align:center"><h3 style="margin:0 0 6px">Want to talk it through?</h3><p class="lead" style="margin:0 auto 14px">Not sure about your result? Write to your professor in the Student Zone.</p>
+    <div class="btns" style="justify-content:center"><a class="btn" href="student.html#ask">💬 Ask your professor</a><button class="btn ghost" id="again">↺ Retake</button></div></div>
+  <p class="note">Lens 1 uses the O*NET Interest Profiler Short Form by the U.S. Department of Labor, Employment and Training Administration, used under the CC BY 4.0 licence. O*NET® is a trademark of the USDOL/ETA. Lenses 2 and 3 and the specialisation mapping are by Dr. Bikram Paul Singh Lehri. This is a guidance tool, not a final verdict: use it to start a better conversation with yourself.</p>
+</div></section>
+<div class="toast" id="toast"></div>
+
+<script>
+(()=>{
+const $=id=>document.getElementById(id);
+const KEY='yp_fit_v1';
+let S={name:'',a:Array(60).fill(0),i:0,sub:{},sty:{},done:false,rid:''};
+try{const o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&o.a&&o.a.length===60)S=Object.assign(S,o)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2200)};
+window.show=id=>{document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('on',s.id===id));window.scrollTo({top:0,behavior:'smooth'})};
+
+/* ---------- LENS 1: O*NET Interest Profiler Short Form (60 items, CC BY 4.0) ---------- */
+const Q=["Build kitchen cabinets","Lay brick or tile","Develop a new medicine","Study ways to reduce water pollution","Write books or plays","Play a musical instrument","Teach an individual an exercise routine","Help people with personal or emotional problems","Buy and sell stocks and bonds","Manage a retail store","Develop a spreadsheet using computer software","Proofread records or forms",
+"Repair household appliances","Raise fish in a fish hatchery","Conduct chemical experiments","Study the movement of planets","Compose or arrange music","Draw pictures","Give career guidance to people","Perform rehabilitation therapy","Operate a beauty salon or barber shop","Manage a department within a large company","Load computer software into a large computer network","Operate a calculator",
+"Assemble electronic parts","Drive a truck to deliver packages to offices and homes","Examine blood samples using a microscope","Investigate the cause of a fire","Create special effects for movies","Paint sets for plays","Do volunteer work at a non-profit organization","Teach children how to play sports","Start your own business","Negotiate business contracts","Keep shipping and receiving records","Calculate the wages of employees",
+"Test the quality of parts before shipment","Repair and install locks","Develop a way to better predict the weather","Work in a biology lab","Write scripts for movies or television shows","Perform jazz or tap dance","Teach sign language to people with hearing disabilities","Help conduct a group therapy session","Represent a client in a lawsuit","Market a new line of clothing","Inventory supplies using a hand-held computer","Record rent payments",
+"Set up and operate machines to make products","Put out forest fires","Invent a replacement for sugar","Do laboratory tests to identify diseases","Sing in a band","Edit movies","Take care of children at a day-care center","Teach a high-school class","Sell merchandise at a department store","Manage a clothing store","Keep inventory records","Stamp, sort, and distribute mail for an organization"];
+const AREA='RRIIAASSEECC'; // repeats every 12 items
+const OPT=[['😣','Strongly dislike'],['🙁','Dislike'],['🤔','Unsure'],['🙂','Like'],['🤩','Strongly like']];
+const CHEER={12:'🔥 12 done! You are doing great.',24:'⚡ 24 down. Your profile is taking shape…',36:'🚀 More than halfway there!',48:'🌟 Only 12 left. Almost done with Lens 1!'};
+const RIA={R:['Realistic','Hands-on, practical, builds and fixes'],I:['Investigative','Curious, analytical, loves solving puzzles'],A:['Artistic','Creative, expressive, original'],S:['Social','Helps, teaches and cares for people'],E:['Enterprising','Leads, persuades, sells, takes risks'],C:['Conventional','Organised, precise, loves order and data']};
+
+/* ---------- LENS 2 & 3 ---------- */
+const SUB=[['num','Numbers & accounts','Calculations, balance sheets, budgets'],['stat','Statistics & data','Patterns, charts, Excel, research'],['eco','Economics & markets','How markets, prices and the economy move'],['psy','People & psychology','Why people behave the way they do'],['com','Communication & presenting','Speaking, writing, convincing'],['tech','Technology & computers','Software, systems, digital tools'],['law','Law & policies','Rules, contracts, labour laws, trade policy'],['cre','Creativity & design','Ideas, branding, visuals, storytelling']];
+const SUBE=['😣','🙁','😐','🙂','😍'];
+const PAIRS=[['tgt','Earn with targets and incentives','std','A steady, predictable salary'],['fld','Out in the field, meeting people, travelling','dsk','At a desk, deep in focused work'],['ppl','Leading and motivating people','dat','Working with numbers and data'],['fst','Fast-paced, every day different','str','Structured, with clear processes'],['big','Big-picture ideas and strategy','det','Getting every detail exactly right'],['own','Building something of my own someday','corp','Growing up the ladder in a big company'],['glb','Working across countries and cultures','ind','Deep roots in the Indian market'],['sys','Building systems that make things run','rel','Building relationships that make things grow']];
+
+/* ---------- SPECIALISATIONS ---------- */
+const SP={
+mk:{n:'Marketing & Sales',s:'Marketing',c:'MKT',e:'📣',r:{E:.4,A:.25,S:.25,C:.1},sub:['com','psy','cre','eco'],sty:['tgt','fld','ppl','fst','big','rel'],
+ why:'You are energised by people, ideas and persuasion. Marketing rewards exactly that: understanding customers, telling stories and turning attention into sales.',
+ roles:['Brand Manager','Sales & Business Development Manager','Digital Marketing Manager','Market Research Analyst','Key Account Manager'],next:['Consumer behaviour and branding','Digital marketing (SEO, social, ads)','Presentation and negotiation skills'],
+ appr:'{n}, you light up where people and ideas meet. That spark is exactly what great brands are built on.',
+ lines:['From confused to customer-obsessed. 📣','I don\'t just sell products. I build brands.','Every great brand needs a storyteller. Meet one.']},
+fin:{n:'Finance',s:'Finance',c:'FIN',e:'📈',r:{C:.4,E:.3,I:.3},sub:['num','eco','stat'],sty:['std','dsk','dat','str','det','corp'],
+ why:'You enjoy order, numbers and smart decisions. Finance is the language of business, and you seem to speak it naturally.',
+ roles:['Financial Analyst','Investment Banking Analyst','Credit & Risk Analyst','Corporate Finance Manager','Wealth Manager'],next:['Financial statement analysis','Excel and financial modelling','Markets, valuation and banking basics'],
+ appr:'{n}, your mind loves clarity and numbers that add up. That is a rare strength, and money follows it.',
+ lines:['Numbers talk. I listen. 📈','From confused to compounding.','I found my balance sheet of life.']},
+hr:{n:'Human Resource Management',s:'HR',c:'HRM',e:'🤝',r:{S:.5,E:.25,C:.25},sub:['psy','com','law'],sty:['std','ppl','str','rel','corp'],
+ why:'You care about people and how they grow. HR builds the teams, culture and careers that every company runs on.',
+ roles:['HR Business Partner','Talent Acquisition Manager','Learning & Development Manager','Compensation & Benefits Analyst','Employee Relations Manager'],next:['Organisational behaviour','Labour laws and policies','HR analytics and people data'],
+ appr:'{n}, you naturally see the person behind every role. Companies need people like you more than ever.',
+ lines:['People first. Always. 🤝','Great companies are built by great people. I\'ll help build them.','From confused to culture-builder.']},
+ba:{n:'Business Analytics',s:'Analytics',c:'BAN',e:'📊',r:{I:.5,C:.35,R:.15},sub:['stat','tech','num'],sty:['dsk','dat','det','sys'],
+ why:'You are curious and you love finding answers hidden in data. Analytics turns that curiosity into decisions companies trust.',
+ roles:['Business Analyst','Data Analyst','Product Analyst','Marketing / Sales Analytics Lead','Decision Scientist'],next:['Statistics and Excel','SQL, Python or Power BI','Business problem-solving with data'],
+ appr:'{n}, you ask "why?" until the data answers. That curiosity is the most valuable skill of this decade.',
+ lines:['In data I trust. 📊','I found the pattern: it was me.','From confused to data-driven.']},
+ops:{n:'Operations & Supply Chain',s:'Operations',c:'OPS',e:'⚙️',r:{R:.35,C:.35,E:.2,I:.1},sub:['num','stat','tech'],sty:['fld','str','det','sys','corp'],
+ why:'You like making things work, on time and without waste. Operations keeps factories, warehouses and deliveries running across India.',
+ roles:['Operations Manager','Supply Chain Analyst','Procurement Manager','Logistics Manager','Quality / Lean Six Sigma Lead'],next:['Operations research and planning','Supply chain and logistics basics','Lean, Six Sigma and ERP tools'],
+ appr:'{n}, you see how things should run, and you make them run better. Every business needs that engine.',
+ lines:['I make things run. ⚙️','From confused to perfectly optimised.','Smooth operator, officially.']},
+ent:{n:'Entrepreneurship',s:'Entrepreneurship',c:'ENT',e:'🚀',r:{E:.55,A:.25,I:.1,R:.1},sub:['cre','com','eco','num'],sty:['tgt','fst','big','own','rel'],
+ why:'You think big, move fast and want to build something of your own. Entrepreneurship turns that restlessness into ventures.',
+ roles:['Startup Founder','Family Business Leader','New Venture / Innovation Manager','Startup Business Development Lead','Product Manager'],next:['Business model and idea validation','Finance for founders','Selling, pitching and networking'],
+ appr:'{n}, you don\'t wait for opportunities. You imagine them. India\'s next big idea could be yours.',
+ lines:['Not a job seeker. A job creator. 🚀','From confused to founder mode.','I\'m building something. Watch this space.']},
+ib:{n:'International Business',s:'International Business',c:'INT',e:'🌍',r:{E:.4,S:.25,C:.2,I:.15},sub:['eco','law','com'],sty:['fld','glb','big','rel','fst'],
+ why:'You are drawn to the wider world: cultures, markets and big moves. International Business takes Indian brands global and global brands to India.',
+ roles:['Export-Import Manager','International Marketing Manager','Global Sourcing Specialist','Trade & Business Development Executive','Foreign Market Analyst'],next:['International trade and EXIM policy','Global economics and markets','Cross-cultural communication'],
+ appr:'{n}, your thinking already has a passport. The world is a bigger stage, and you belong on it.',
+ lines:['My market is the world. 🌍','From confused to cross-border.','Destination: global.']},
+it:{n:'IT & Systems Management',s:'IT & Systems',c:'ITS',e:'💻',r:{I:.35,C:.35,R:.3},sub:['tech','stat'],sty:['dsk','dat','sys','det','str'],
+ why:'You enjoy logic, systems and technology. IT management bridges business and tech, one of the fastest-growing spaces in India.',
+ roles:['IT Project Manager','ERP / SAP Consultant','Systems Analyst','Product Manager (Tech)','IT Business Consultant'],next:['Information systems and ERP','Project management (Agile, Scrum)','Basics of cloud, data and cybersecurity'],
+ appr:'{n}, you understand how systems think. In a digital India, that makes you the bridge everyone needs.',
+ lines:['Business brain. Tech heart. 💻','From confused to fully configured.','System upgraded: clarity installed.']}
+};
+const ORDER=Object.keys(SP);
+
+/* ---------- START ---------- */
+const nm=$('nm');nm.value=S.name||'';
+const okName=()=>$('go').disabled=nm.value.trim().length<2;okName();
+nm.addEventListener('input',okName);nm.addEventListener('keydown',e=>{if(e.key==='Enter'&&!$('go').disabled)$('go').click()});
+const answered=S.a.filter(Boolean).length;
+if(S.done){$('resume').style.display='block';$('resume').innerHTML='You already have a result. <a href="#" id="seeRes" style="color:var(--gold);font-weight:700">See my result →</a>';$('seeRes').onclick=e=>{e.preventDefault();results()}}
+else if(answered>0){$('resume').style.display='block';$('resume').textContent='Welcome back! You will continue from question '+(Math.min(S.i,59)+1)+'.'}
+$('go').onclick=()=>{S.name=nm.value.trim().replace(/\s+/g,' ');save();if(S.done&&S.a.filter(Boolean).length===60){results();return}show('s-l1');renderQ()};
+
+/* ---------- LENS 1 UI ---------- */
+$('opts').innerHTML=OPT.map((o,k)=>`<button class="opt" data-v="${k+1}"><span>${o[0]}</span>${o[1]}</button>`).join('');
+let lock=false;
+window.renderQ=()=>{const i=S.i;$('qt').textContent=Q[i];$('l1c').textContent=(i+1)+' / 60';$('l1p').style.width=(i/60*75)+'%';
+ document.querySelectorAll('.opt').forEach(b=>b.classList.toggle('sel',+b.dataset.v===S.a[i]));$('qback').style.visibility=i?'visible':'hidden'};
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(lock)return;lock=true;S.a[S.i]=+b.dataset.v;b.classList.add('sel');save();
+ setTimeout(()=>{lock=false;const n=S.i+1;const ch=$('cheer');if(CHEER[n]){ch.textContent=CHEER[n];ch.style.display='block';setTimeout(()=>ch.style.display='none',2200)}
+  if(n>=60||S.a.every(Boolean)&&n>=60){S.i=59;save();show('s-l2');renderSub()}else{S.i=n;save();renderQ()}},220)});
+$('qback').onclick=()=>{if(S.i>0){S.i--;renderQ()}};
+$('qhome').onclick=()=>{save();show('s-start');toast('Saved. Come back anytime.')};
+document.addEventListener('keydown',e=>{if($('s-l1').classList.contains('on')&&e.key>='1'&&e.key<='5'){document.querySelector(`.opt[data-v="${e.key}"]`).click()}});
+
+/* ---------- LENS 2 UI ---------- */
+function renderSub(){$('subj').innerHTML=SUB.map(([k,t,d])=>`<div class="card srow"><div><h4>${t}</h4><p>${d}</p></div><div class="chips">${SUBE.map((e,v)=>`<button class="chip${S.sub[k]===v+1?' sel':''}" data-k="${k}" data-v="${v+1}" aria-label="${t} ${v+1} of 5">${e}</button>`).join('')}</div></div>`).join('');
+ document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{S.sub[c.dataset.k]=+c.dataset.v;save();document.querySelectorAll(`.chip[data-k="${c.dataset.k}"]`).forEach(x=>x.classList.toggle('sel',x===c));chk2()});chk2()}
+const chk2=()=>$('l2go').disabled=SUB.some(s=>!S.sub[s[0]]);
+$('l2go').onclick=()=>{show('s-l3');renderPairs()};
+
+/* ---------- LENS 3 UI ---------- */
+function renderPairs(){$('pairs').innerHTML=PAIRS.map((p,i)=>`<div class="pair"><button data-i="${i}" data-v="${p[0]}" class="${S.sty[i]===p[0]?'sel':''}">${p[1]}</button><span class="or">or</span><button data-i="${i}" data-v="${p[2]}" class="${S.sty[i]===p[2]?'sel':''}">${p[3]}</button></div>`).join('');
+ document.querySelectorAll('.pair button').forEach(b=>b.onclick=()=>{S.sty[b.dataset.i]=b.dataset.v;save();b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));chk3()});chk3()}
+const chk3=()=>$('l3go').disabled=PAIRS.some((p,i)=>!S.sty[i]);
+$('l3go').onclick=()=>{S.done=true;if(!S.rid)S.rid=rnd(4);S.date=S.date||ymd(new Date());save();results()};
+
+/* ---------- SCORING ---------- */
+function score(){
+ const area={R:0,I:0,A:0,S:0,E:0,C:0};S.a.forEach((v,i)=>area[AREA[i%12]]+=v||1);
+ const an={};for(const k in area)an[k]=(area[k]-10)/40;
+ const styleSet=new Set(Object.values(S.sty));
+ const res=ORDER.map(k=>{const p=SP[k];let it=0;for(const l in p.r)it+=p.r[l]*an[l];
+  const su=p.sub.reduce((t,s)=>t+((S.sub[s]||3)-1)/4,0)/p.sub.length;
+  const st=p.sty.filter(t=>styleSet.has(t)).length/p.sty.length;
+  const tot=.5*it+.3*su+.2*st;return{k,p,tot,pct:Math.max(40,Math.min(98,Math.round(30+68*tot)))}}).sort((a,b)=>b.tot-a.tot);
+ const code=Object.keys(area).sort((a,b)=>area[b]-area[a]||'RIASEC'.indexOf(a)-'RIASEC'.indexOf(b)).slice(0,3);
+ return{res,area,code}}
+
+/* ---------- CERT ID (self-verifying) ---------- */
+const AL='ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+function rnd(n){let s='';const a=new Uint32Array(n);(crypto||window.msCrypto).getRandomValues(a);for(const x of a)s+=AL[x%AL.length];return s}
+function ymd(d){return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')}
+function h4(str){let h=0x811c9dc5;for(const ch of str){h^=ch.codePointAt(0);h=Math.imul(h,0x01000193)>>>0}let s='';for(let i=0;i<4;i++){s+=AL[h%AL.length];h=Math.floor(h/AL.length)}return s}
+const norm=s=>s.trim().replace(/\s+/g,' ').toUpperCase();
+function certId(name,key,date,r){return 'FYF-'+date.slice(2,4)+'-'+r+'-'+h4(['YP-FIT-2026',norm(name),key,date,r].join('|'))}
+function niceDate(d){const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return (+d.slice(6))+' '+m[+d.slice(4,6)-1]+' '+d.slice(0,4)}
+
+/* ---------- RESULTS ---------- */
+let R,cardStyle=0,lineIx=0;
+function results(){R=score();const t=R.res[0],p=t.p;show('s-res');
+ $('appr').textContent='"'+p.appr.replace('{n}',S.name.split(' ')[0])+'"';
+ $('tEm').textContent=p.e;$('tPct').textContent='YOUR BEST FIT · '+t.pct+'% MATCH';$('tName').textContent=p.n;$('tWhy').textContent=p.why;
+ $('tRoles').innerHTML=p.roles.map(r=>`<li>${r}</li>`).join('');$('tNext').innerHTML=p.next.map(r=>`<li>${r}</li>`).join('');
+ $('rank').innerHTML=R.res.map((x,i)=>`<div class="rk"><span>${x.p.e}</span><div><b style="float:none;color:var(--ink);font-family:var(--sans)">${i+1}. ${x.p.n}</b><div class="bar"><i style="width:${x.pct}%"></i></div></div><b>${x.pct}%</b></div>`).join('');
+ $('code').textContent=R.code.join(' · ');
+ $('ria').innerHTML=R.code.map(l=>`<div><b>${l}</b> <strong>${RIA[l][0]}</strong><span>${RIA[l][1]}</span></div>`).join('');
+ S.id=certId(S.name,t.k,S.date,S.rid);save();
+ $('cid').innerHTML='Certificate no. <b style="color:var(--gold);font-family:var(--mono)">'+S.id+'</b>';
+ const link='https://youngprofessor.in/fit.html';const txt=`I just found my best-fit specialisation: ${p.n} ${p.e}\nIt took 8 minutes and ended months of confusion.\nFind yours free 👉 ${link}\n🌱 Let's grow together`;
+ $('shWa').href='https://wa.me/?text='+encodeURIComponent(txt);
+ $('shLi').href='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(link);
+ $('shFb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(link);
+ R.txt=txt;
+ fontsReady().then(()=>{drawCert();drawCard()})}
+$('again').onclick=()=>{if(!confirm('Start again? Your current result will be replaced.'))return;const n=S.name;S={name:n,a:Array(60).fill(0),i:0,sub:{},sty:{},done:false,rid:''};save();show('s-start')};
+
+/* ---------- DRAWING HELPERS ---------- */
+function fontsReady(){const f=['700 60px Cinzel','400 60px "DM Serif Display"','italic 400 30px "DM Serif Display"','700 21px Manrope','400 14px Manrope','500 13px "JetBrains Mono"','400 170px "Herr Von Muellerhoff"'];
+ return Promise.all(f.map(x=>document.fonts.load(x).catch(()=>{}))).then(()=>img('logo-badge.png')).then(a=>{IM.logo=a})}
+const IM={};function img(src){return new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=src})}
+function spaced(x,text,cx,y,sp,align='center'){const w=[...text].reduce((t,c)=>t+x.measureText(c).width+sp,0)-sp;let px=align==='center'?cx-w/2:align==='left'?cx:cx-w;for(const c of text){x.fillText(c,px,y);px+=x.measureText(c).width+sp}return w}
+function fit(x,text,font,size,maxW){let s=size;do{x.font=font.replace('#',s)}while(x.measureText(text).width>maxW&&--s>20);return s}
+function band(x,x0,y0,x1,y1,amp,waves,ph){const L=2*(x1-x0)+2*(y1-y0),N=1800;x.beginPath();for(let i=0;i<=N;i++){const s=i/N*L;let px,py,nx,ny;
+ if(s<x1-x0){px=x0+s;py=y0;nx=0;ny=1}else if(s<x1-x0+y1-y0){px=x1;py=y0+s-(x1-x0);nx=-1;ny=0}else if(s<2*(x1-x0)+y1-y0){px=x1-(s-(x1-x0)-(y1-y0));py=y1;nx=0;ny=-1}else{px=x0;py=y1-(s-2*(x1-x0)-(y1-y0));nx=1;ny=0}
+ const o=amp*Math.sin(i/N*waves*2*Math.PI+ph);i?x.lineTo(px+nx*o,py+ny*o):x.moveTo(px+nx*o,py+ny*o)}x.closePath();x.stroke()}
+function goldGrad(x,x0,y0,x1,y1){const g=x.createLinearGradient(x0,y0,x1,y1);g.addColorStop(0,'#f7e19a');g.addColorStop(.35,'#c9a24a');g.addColorStop(.6,'#f3d77f');g.addColorStop(1,'#94681a');return g}
+function textOnQuad(x,text,p0,p1,p2,sp){const pts=[];let L=0,prev=null;for(let i=0;i<=400;i++){const t=i/400,u=1-t;const px=u*u*p0[0]+2*u*t*p1[0]+t*t*p2[0],py=u*u*p0[1]+2*u*t*p1[1]+t*t*p2[1];if(prev)L+=Math.hypot(px-prev[0],py-prev[1]);pts.push([px,py,L]);prev=[px,py]}
+ const ws=[...text].map(c=>x.measureText(c).width);const tw=ws.reduce((a,b)=>a+b,0)+sp*(ws.length-1);let s=(L-tw)/2;
+ const at=d=>{let j=pts.findIndex(p=>p[2]>=d);if(j<1)j=1;const a=pts[j-1],b=pts[j];return[a[0],a[1],Math.atan2(b[1]-a[1],b[0]-a[0])]};
+ [...text].forEach((c,i)=>{const [px,py,ang]=at(s+ws[i]/2);x.save();x.translate(px,py);x.rotate(ang);x.fillText(c,-ws[i]/2,0);x.restore();s+=ws[i]+sp})}
+function textOnCircle(x,text,cx,cy,r,startAng,sp){const ws=[...text].map(c=>x.measureText(c).width);let a=startAng;[...text].forEach((c,i)=>{const da=(ws[i]/2)/r;a+=da;x.save();x.translate(cx+r*Math.cos(a),cy+r*Math.sin(a));x.rotate(a+Math.PI/2);x.fillText(c,-ws[i]/2,0);x.restore();a+=da+sp/r})}
+function star4(x,cx,cy,r){x.beginPath();for(let i=0;i<8;i++){const a=i*Math.PI/4-Math.PI/2,rr=i%2?r*.28:r;x.lineTo(cx+rr*Math.cos(a),cy+rr*Math.sin(a))}x.closePath();x.fill()}
+function qrDraw(x,text,X,Y,size,fg){if(!window.qrcode)return;const q=qrcode(0,'M');q.addData(text);q.make();const n=q.getModuleCount(),m=size/(n+2);x.fillStyle='#fffdf6';x.fillRect(X,Y,size,size);x.fillStyle=fg;for(let r=0;r<n;r++)for(let c=0;c<n;c++)if(q.isDark(r,c))x.fillRect(X+(c+1)*m,Y+(r+1)*m,m+.4,m+.4)}
+
+/* ---------- CERTIFICATE (locked design: arched brand) ---------- */
+const MA='#8a1c2b',GD='#c9a24a',NV='#1d2540';
+function verifyUrl(){const t=R.res[0];return 'https://youngprofessor.in/verify.html?id='+S.id+'&n='+encodeURIComponent(S.name)+'&s='+t.k+'&d='+S.date}
+function drawCert(){const c=$('cert'),x=c.getContext('2d'),W=1240,H=1754,t=R.res[0],t2=R.res[1];x.clearRect(0,0,W,H);
+ let g=x.createRadialGradient(W/2,H*.42,50,W/2,H*.42,1100);g.addColorStop(0,'#fffdf6');g.addColorStop(.7,'#f6eedb');g.addColorStop(1,'#ecdfbf');x.fillStyle=g;x.fillRect(0,0,W,H);
+ x.lineWidth=1;x.globalAlpha=.6;[MA,GD,NV,MA,GD,NV].forEach((col,k)=>{x.strokeStyle=col;band(x,56,56,W-56,H-56,8,200,k*Math.PI/3)});x.globalAlpha=1;
+ x.strokeStyle=MA;x.lineWidth=3;x.strokeRect(88,88,W-176,H-176);x.strokeStyle=goldGrad(x,0,0,W,H);x.lineWidth=1.5;x.strokeRect(98,98,W-196,H-196);
+ x.save();x.translate(W/2,900);x.strokeStyle=GD;x.globalAlpha=.13;x.lineWidth=1;for(let k=0;k<36;k++){x.save();x.rotate(k*5*Math.PI/180);x.beginPath();x.ellipse(0,0,280,101,0,0,2*Math.PI);x.stroke();x.restore()}x.restore();
+ // arched brand
+ x.fillStyle=MA;x.font='700 60px Cinzel';x.textBaseline='alphabetic';textOnQuad(x,'YOUNGPROFESSOR.IN',[230,330],[W/2,110],[W-230,330],9);
+ x.fillStyle=GD;star4(x,W/2,300,22);
+ x.strokeStyle=GD;x.lineWidth=2;const fy=360,fw=200;x.beginPath();x.moveTo(W/2-fw,fy);x.bezierCurveTo(W/2-fw*.6,fy-18,W/2-fw*.3,fy+18,W/2-30,fy);x.moveTo(W/2+fw,fy);x.bezierCurveTo(W/2+fw*.6,fy-18,W/2+fw*.3,fy+18,W/2+30,fy);x.stroke();
+ x.beginPath();x.moveTo(W/2,fy-12);x.lineTo(W/2+12,fy);x.lineTo(W/2,fy+12);x.lineTo(W/2-12,fy);x.closePath();x.fill();
+ x.textBaseline='top';x.fillStyle='#8a6a2a';x.font='700 20px Cinzel';spaced(x,'FIND YOUR FIT',W/2,398,10);
+ x.textAlign='center';
+ x.fillStyle=MA;x.font='400 104px "DM Serif Display"';x.fillText('Certificate of Clarity',W/2,455);
+ x.fillStyle='#5b6378';x.font='italic 400 30px "DM Serif Display"';x.fillText('This is to certify that',W/2,600);
+ x.fillStyle=NV;const fn=fit(x,S.name,'400 #px "DM Serif Display"',96,980);x.fillText(S.name,W/2,645+(96-fn)/2);
+ g=x.createLinearGradient(W/2-300,0,W/2+300,0);g.addColorStop(0,'rgba(201,162,74,0)');g.addColorStop(.5,GD);g.addColorStop(1,'rgba(201,162,74,0)');x.fillStyle=g;x.fillRect(W/2-300,768,600,2);
+ x.fillStyle='#5b6378';x.font='italic 400 29px "DM Serif Display"';x.fillText('has completed the Find Your Fit specialisation assessment',W/2,798);x.fillText('and discovered a clear career direction in',W/2,840);
+ x.fillStyle=MA;const fsp=fit(x,t.p.n,'400 #px "DM Serif Display"',84,960);x.fillText(t.p.n,W/2,910+(84-fsp)/2);
+ // details
+ const cols=[['CAREER CODE',R.code.join(' · ')],['TOP FITS',t.p.s+' '+t.pct+'% · '+t2.p.s+' '+t2.pct+'%'],['ISSUED',niceDate(S.date)]];
+ x.font='700 21px Manrope';const cw=cols.map(c=>x.measureText(c[1]).width+0);const gap=46,tot=cw.reduce((a,b)=>a+b,0)+gap*2;let cx=W/2-tot/2;
+ cols.forEach((col,i)=>{const mid=cx+cw[i]/2;x.fillStyle='#8a6a2a';x.font='500 13px "JetBrains Mono"';x.textAlign='left';spaced(x,col[0],mid,1042,3);x.textAlign='center';x.fillStyle=NV;x.font='700 21px Manrope';x.fillText(col[1],mid,1063);cx+=cw[i]+gap});
+ // signature
+ const sy=1180,lineY=sy+85;drawSig(x,W/2-170,sy,340/900);
+ x.fillStyle=NV;x.fillRect(W/2-210,lineY,420,1.5);x.font='700 21px Manrope';x.fillText('Dr. Bikram Paul Singh Lehri',W/2,lineY+14);x.fillStyle='#5b6378';x.font='400 14px Manrope';x.textAlign='left';spaced(x,'PROFESSOR & MENTOR · FOUNDER',W/2,lineY+42,1.7);x.textAlign='center';
+ // founder's mark
+ const lx=200,ly=1445;x.fillStyle=MA;x.beginPath();x.arc(lx,ly,57,0,7);x.fill();x.fillStyle=GD;x.beginPath();x.arc(lx,ly,56,0,7);x.fill();x.fillStyle='#fffaf0';x.beginPath();x.arc(lx,ly,54,0,7);x.fill();
+ if(IM.logo){x.save();x.beginPath();x.arc(lx,ly,50,0,7);x.clip();x.drawImage(IM.logo,lx-50,ly-50,100,100);x.restore()}
+ x.textAlign='left';x.font='700 13px Cinzel';x.fillStyle='#8a6a2a';spaced(x,"FOUNDER'S MARK",268,1428,2.9,'left');x.fillStyle=MA;spaced(x,'YOUNGPROFESSOR.IN',268,1450,2.9,'left');x.textAlign='center';
+ // seal
+ drawSeal(x,W/2,1465,80);
+ // QR
+ qrDraw(x,verifyUrl(),970,1405,104,NV);x.fillStyle=NV;x.font='500 15px "JetBrains Mono"';x.fillText(S.id,1022,1517);x.fillStyle='#5b6378';x.font='500 13px "JetBrains Mono"';x.fillText('Scan to verify',1022,1538);
+ x.fillStyle=MA;x.font='italic 400 25px "DM Serif Display"';x.fillText('"You bring the dreams, I\'ll bring the push."',W/2,1572);
+ x.fillStyle='#8a7f6a';x.font='400 12px Manrope';x.fillText('Based on the O*NET Interest Profiler (U.S. Dept. of Labor, CC BY 4.0). A guidance tool, not a final verdict.',W/2,1620);
+ x.textAlign='left'}
+function drawSig(x,X,Y,k){x.save();x.translate(X,Y);x.scale(k,k);x.translate(450,150);x.rotate(-5*Math.PI/180);x.translate(-450,-150);
+ x.fillStyle=x.strokeStyle='#1b3a9a';x.font='400 170px "Herr Von Muellerhoff"';x.textAlign='left';x.textBaseline='alphabetic';
+ const a=x.measureText('Bikram').width,sp=x.measureText(' ').width-34,b=x.measureText('Paul').width,L=450-(a+sp+b)/2;
+ x.lineWidth=.6;x.fillText('Bikram',L,170);x.strokeText('Bikram',L,170);x.fillText('Paul',L+a+sp,170);x.strokeText('Paul',L+a+sp,170);
+ x.lineCap='round';x.lineWidth=2.4;x.beginPath();x.moveTo(120,212);x.bezierCurveTo(330,196,560,186,800,160);x.stroke();
+ x.lineWidth=2.2;x.beginPath();x.moveTo(150,228);x.bezierCurveTo(360,214,580,204,770,182);x.stroke();x.restore();x.textAlign='center';x.textBaseline='top'}
+function drawSeal(x,cx,cy,R0){const k=R0/100;x.save();x.translate(cx,cy);x.scale(k,k);
+ x.beginPath();for(let i=0;i<60;i++){const a=i/60*2*Math.PI,r=i%2?92:100;x.lineTo(r*Math.cos(a),r*Math.sin(a))}x.closePath();x.fillStyle=goldGrad(x,-100,-100,100,100);x.shadowColor='rgba(0,0,0,.25)';x.shadowBlur=14;x.shadowOffsetY=6;x.fill();x.shadowColor='transparent';
+ x.strokeStyle='#fff7d8';x.lineWidth=2;x.beginPath();x.arc(0,0,80,0,7);x.stroke();x.fillStyle=goldGrad(x,-74,-74,74,74);x.beginPath();x.arc(0,0,74,0,7);x.fill();x.strokeStyle='#94681a';x.lineWidth=1;x.stroke();
+ x.fillStyle='#5a3d0a';x.font='700 11.5px Cinzel';x.textBaseline='middle';{const tx='YOUNGPROFESSOR.IN ✦ CERTIFIED ✦ ',ws=[...tx].reduce((t,c)=>t+x.measureText(c).width,0);textOnCircle(x,tx,0,0,62,-Math.PI,(2*Math.PI*62-ws)/[...tx].length)}
+ x.fillStyle=MA;x.beginPath();x.arc(0,0,50,0,7);x.fill();x.strokeStyle='#f3d77f';x.lineWidth=2;x.stroke();
+ x.textAlign='center';x.fillStyle='#f3d77f';x.font='700 11px Cinzel';x.fillText('FIND YOUR',0,-14);x.fillStyle='#fff';x.font='700 26px Cinzel';x.fillText('FIT',0,8);x.fillStyle='#f3d77f';x.font='400 9px Cinzel';x.fillText('PATH FOUND',0,28);
+ x.textBaseline='top';x.restore()}
+
+/* ---------- SHARE CARDS ---------- */
+const STYLES=['Boarding Pass','Clarity Express','Route Found'];
+function drawCard(){const c=$('card'),x=c.getContext('2d'),W=1080,H=1350,t=R.res[0],p=t.p,line=p.lines[lineIx%p.lines.length],first=S.name;x.clearRect(0,0,W,H);x.textAlign='center';x.textBaseline='alphabetic';
+ let g=x.createRadialGradient(W*.8,0,50,W*.8,0,1300);g.addColorStop(0,'#3a0f14');g.addColorStop(.55,'#140d0d');g.addColorStop(1,'#0B0A0A');x.fillStyle=g;x.fillRect(0,0,W,H);
+ x.fillStyle='#E2B85C';x.font='700 30px Cinzel';spaced(x,'YOUNGPROFESSOR.IN',W/2,110,8);
+ x.fillStyle='#F4EFEA';x.font='italic 400 52px "DM Serif Display"';wrap(x,line,W/2,200,900,62);
+ const s=cardStyle%3;
+ if(s===0)boarding(x,W,p,t,first);else if(s===1)train(x,W,p,t,first);else route(x,W,p,t,first);
+ x.textAlign='center';x.fillStyle='#F4EFEA';x.font='700 34px Manrope';x.fillText('Find your fit free 👉 youngprofessor.in/fit',W/2,1220);
+ x.fillStyle='#E2B85C';x.font='italic 400 32px "DM Serif Display"';x.fillText("🌱 Let's grow together",W/2,1275)}
+function wrap(x,text,cx,y,maxW,lh){const w=text.split(' ');let l='',ys=y;const out=[];for(const word of w){const tt=l?l+' '+word:word;if(x.measureText(tt).width>maxW&&l){out.push(l);l=word}else l=tt}out.push(l);out.forEach((s,i)=>x.fillText(s,cx,ys+i*lh))}
+function rr(x,X,Y,w,h,r){x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath()}
+function lbl(x,t,X,Y,col='#8a6a2a',al='left'){x.textAlign=al;x.fillStyle=col;x.font='500 20px "JetBrains Mono"';x.fillText(t,X,Y)}
+function boarding(x,W,p,t,nm){const X=90,Y=330,w=W-180,h=800;
+ x.save();x.shadowColor='rgba(0,0,0,.5)';x.shadowBlur=40;x.shadowOffsetY=16;rr(x,X,Y,w,h,34);x.fillStyle='#fbf5e6';x.fill();x.restore();
+ x.save();rr(x,X,Y,w,h,34);x.clip();x.fillStyle=MA;x.fillRect(X,Y,w,130);x.fillStyle=GD;x.fillRect(X,Y+130,w,6);x.restore();
+ x.textAlign='left';x.fillStyle='#f3d77f';x.font='700 32px Cinzel';x.fillText('BOARDING PASS',X+50,Y+78);x.textAlign='right';x.fillStyle='#fff';x.font='500 22px "JetBrains Mono"';x.fillText('FLIGHT '+p.c+'-26 · CLASS: CLARITY',X+w-50,Y+76);
+ lbl(x,'FROM',X+60,Y+215);lbl(x,'TO',X+w-60,Y+215,'#8a6a2a','right');
+ x.textAlign='left';x.fillStyle=NV;x.font='400 120px "DM Serif Display"';x.fillText('CNF',X+55,Y+335);x.textAlign='right';x.fillStyle=MA;x.fillText(p.c,X+w-55,Y+335);
+ x.textAlign='left';x.fillStyle='#5b6378';x.font='700 24px Manrope';x.fillText('Confusion',X+60,Y+378);x.textAlign='right';x.fillStyle=MA;fit(x,p.n,'700 #px Manrope',24,330);x.fillText(p.n,X+w-60,Y+378);
+ x.textAlign='center';x.font='56px sans-serif';x.fillText('✈️',W/2,Y+300);x.strokeStyle=GD;x.setLineDash([6,10]);x.lineWidth=3;x.beginPath();x.moveTo(X+290,Y+282);x.lineTo(W/2-50,Y+282);x.moveTo(W/2+50,Y+282);x.lineTo(X+w-290,Y+282);x.stroke();x.setLineDash([]);
+ const rowY=Y+470;
+ lbl(x,'PASSENGER',X+60,rowY);lbl(x,'SEAT',X+560,rowY);lbl(x,'MATCH',X+w-60,rowY,'#8a6a2a','right');
+ x.textAlign='left';x.fillStyle=NV;fit(x,nm,'700 #px Manrope',40,460);x.fillText(nm,X+60,rowY+52);x.font='700 40px Manrope';x.fillText(R.code.join('-'),X+560,rowY+52);x.textAlign='right';x.fillStyle=MA;x.fillText(t.pct+'%',X+w-60,rowY+52);
+ x.strokeStyle='#d8cbaa';x.setLineDash([10,10]);x.lineWidth=2;x.beginPath();x.moveTo(X+30,Y+600);x.lineTo(X+w-30,Y+600);x.stroke();x.setLineDash([]);
+ x.fillStyle='#0B0A0A';x.beginPath();x.arc(X,Y+600,26,0,7);x.arc(X+w,Y+600,26,0,7);x.fill();
+ let bx=X+60;const seed=S.id||'FYF';for(let i=0;bx<X+560;i++){const wv=2+((seed.charCodeAt(i%seed.length)*(i+7))%7);x.fillStyle=NV;x.fillRect(bx,Y+650,wv,110);bx+=wv+3}
+ lbl(x,'GATE',X+600,Y+670);x.textAlign='left';x.fillStyle=NV;x.font='700 27px Manrope';x.fillText('youngprofessor.in/fit',X+600,Y+712);lbl(x,'BOARDING: NOW',X+600,Y+755,MA)}
+function train(x,W,p,t,nm){const X=90,Y=330,w=W-180,h=800;
+ x.save();x.shadowColor='rgba(0,0,0,.5)';x.shadowBlur=40;x.shadowOffsetY=16;rr(x,X,Y,w,h,20);x.fillStyle='#f3ead0';x.fill();x.restore();
+ x.strokeStyle=MA;x.lineWidth=4;rr(x,X+24,Y+24,w-48,h-48,12);x.stroke();
+ x.textAlign='center';x.fillStyle=MA;x.font='700 46px Cinzel';x.fillText('CLARITY EXPRESS',W/2,Y+110);lbl(x,'TRAIN NO. '+p.c+'26 · PNR '+(S.id||'').slice(-4)+' · 1st AC',W/2,Y+150,NV,'center');
+ x.fillStyle=NV;x.font='400 64px "DM Serif Display"';x.fillText('Confusion Jn.',W/2,Y+270);x.font='60px sans-serif';x.fillText('🚆',W/2,Y+360);x.fillStyle=MA;fit(x,p.n,'400 #px "DM Serif Display"',64,760);x.fillText(p.n,W/2,Y+460);
+ lbl(x,'DEPARTED: CONFUSION   ·   ARRIVED: CLARITY',W/2,Y+510,'#8a6a2a','center');
+ x.fillStyle='#d8cbaa';x.fillRect(X+60,Y+560,w-120,2);
+ lbl(x,'PASSENGER',X+80,Y+620);lbl(x,'COACH',X+w-80,Y+620,'#8a6a2a','right');x.textAlign='left';x.fillStyle=NV;fit(x,nm,'700 #px Manrope',40,500);x.fillText(nm,X+80,Y+672);x.textAlign='right';x.font='700 40px Manrope';x.fillText(R.code.join('-'),X+w-80,Y+672);
+ x.textAlign='center';x.fillStyle=MA;x.font='700 30px Manrope';x.fillText('Match '+t.pct+'% · Confirmed ✔',W/2,Y+745)}
+function route(x,W,p,t,nm){const X=90,Y=330,w=W-180,h=800;
+ x.save();x.shadowColor='rgba(0,0,0,.5)';x.shadowBlur=40;x.shadowOffsetY=16;rr(x,X,Y,w,h,34);x.fillStyle='#fbf5e6';x.fill();x.restore();
+ x.save();rr(x,X,Y,w,h,34);x.clip();x.strokeStyle='rgba(29,37,64,.07)';x.lineWidth=2;for(let i=0;i<20;i++){x.beginPath();x.moveTo(X,Y+i*44);x.lineTo(X+w,Y+i*44);x.stroke();x.beginPath();x.moveTo(X+i*48,Y);x.lineTo(X+i*48,Y+h);x.stroke()}x.restore();
+ x.textAlign='left';x.fillStyle=MA;x.font='700 40px Cinzel';x.fillText('ROUTE FOUND',X+60,Y+90);lbl(x,'NAVIGATING '+nm.toUpperCase(),X+60,Y+130,NV);
+ x.strokeStyle=MA;x.lineWidth=8;x.setLineDash([2,18]);x.lineCap='round';x.beginPath();x.moveTo(X+150,Y+620);x.bezierCurveTo(X+120,Y+420,X+500,Y+560,X+460,Y+380);x.bezierCurveTo(X+430,Y+250,X+780,Y+330,X+w-150,Y+250);x.stroke();x.setLineDash([]);
+ // wrong turns
+ x.strokeStyle='#bbb2a0';x.lineWidth=5;x.setLineDash([2,14]);[[X+300,Y+520,X+250,Y+700],[X+620,Y+330,X+590,Y+200]].forEach(a=>{x.beginPath();x.moveTo(a[0],a[1]);x.lineTo(a[2],a[3]);x.stroke()});x.setLineDash([]);
+ x.fillStyle='#8a7f6a';x.font='700 22px Manrope';x.fillText('"What will my friends take?"',X+120,Y+740);x.textAlign='center';x.fillText('"Which has scope?"',X+590,Y+180);
+ x.textAlign='center';x.font='60px sans-serif';x.fillText('😵‍💫',X+150,Y+660);x.fillStyle=NV;x.font='700 22px Manrope';x.fillText('Me, last week',X+150,Y+590-110);
+ x.font='70px sans-serif';x.fillText('🚩',X+w-140,Y+240);x.fillStyle=MA;fit(x,p.n,'400 #px "DM Serif Display"',46,420);x.textAlign='right';x.fillText(p.n,X+w-60,Y+450);x.fillStyle=NV;x.font='700 26px Manrope';x.fillText(p.e+' '+t.pct+'% match',X+w-60,Y+492)}
+
+$('shStyle').onclick=()=>{cardStyle++;lineIx++;drawCard();toast('Style: '+STYLES[cardStyle%3])};
+const blob=c=>new Promise(r=>c.toBlob(r,'image/png'));
+function dl(url,name){const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove()}
+const fname=()=>(S.name||'student').replace(/[^a-z0-9]+/gi,'-');
+$('shDl').onclick=async()=>{const b=await blob($('card'));dl(URL.createObjectURL(b),'find-your-fit-'+fname()+'.png')};
+$('shCard').onclick=async()=>{const b=await blob($('card'));const f=new File([b],'find-your-fit.png',{type:'image/png'});
+ if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],text:R.txt});return}catch(e){if(e.name==='AbortError')return}}
+ dl(URL.createObjectURL(b),'find-your-fit-'+fname()+'.png');try{await navigator.clipboard.writeText(R.txt);toast('Card saved, caption copied!')}catch(e){toast('Card saved!')}};
+$('dlPng').onclick=async()=>{const b=await blob($('cert'));dl(URL.createObjectURL(b),'Certificate-of-Clarity-'+fname()+'.png')};
+$('dlPdf').onclick=async()=>{const bt=$('dlPdf');bt.textContent='Preparing…';
+ try{if(!window.jspdf)await new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)});
+  const pdf=new window.jspdf.jsPDF({orientation:'portrait',unit:'mm',format:'a4'});pdf.addImage($('cert').toDataURL('image/jpeg',.95),'JPEG',0,0,210,297);pdf.setProperties({title:'Certificate of Clarity - '+S.name,author:'youngprofessor.in'});pdf.save('Certificate-of-Clarity-'+fname()+'.pdf')}
+ catch(e){toast('PDF failed, downloading image instead');$('dlPng').click()}bt.textContent='⬇ Download PDF'};
+if(location.hash==='#result'&&S.done)results();
+})();
+</script>
+</body>
+</html>
