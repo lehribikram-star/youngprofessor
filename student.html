@@ -499,5 +499,6 @@ footer a{color:var(--muted)}
   var fab=d.getElementById('askFab'),ask=d.getElementById('ask');
   addEventListener('scroll',function(){var y=scrollY>500,a=ask&&ask.getBoundingClientRect().top<innerHeight*.8;fab.classList.toggle('show',y&&!a);},{passive:true});
 })();</script>
+<script>(function(){var p=new URLSearchParams(location.search).get('ask');if(!p)return;var m=document.getElementById('fMsg'),s=document.getElementById('fTopic');if(s)s.value='Concept doubt';if(m)m.value='Business Dictionary request: please add or explain "'+p.slice(0,80)+'" in simple words.';})();</script>
 </body>
 </html>
