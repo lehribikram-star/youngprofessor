@@ -366,20 +366,31 @@ function dictApi(q,dym){fetch('https://api.dictionaryapi.dev/api/v2/entries/en/'
 function notFound(t){card('<div class="dcard"><span class="src">SEARCH THE WEB</span><h3>'+esc(t)+'</h3><p>This term isn\'t in the open dictionaries yet. Tap a source below to see it on the web, or ask me to add it to our dictionary.</p><div class="acts"><a class="pri" href="https://www.google.com/search?q='+encodeURIComponent(t)+'+meaning+in+business" target="_blank" rel="noopener">🔎 See it on Google</a><a href="'+reqLink(t)+'">➕ Request this word</a></div>'+more(t)+'</div>')}
 function bindPick(){$('dres').querySelectorAll('button[data-t]').forEach(function(b){b.onclick=function(){wikiCard(b.dataset.t)}})}
 function toks(x){return x.toLowerCase().replace(/[^a-z0-9 ]+/g,' ').split(/\s+/).filter(function(t){return t.length>2})}
-function rel(title,q){var T=toks(title).join(' '),Q=toks(q);if(!Q.length)return true;var hit=Q.filter(function(t){return T.indexOf(t.slice(0,Math.max(4,t.length-2)))>=0}).length;return hit/Q.length>=.5}
-function localTop(q){var L=localFind(q);if(!L.length)return null;var w=L[0],n=w.w.toLowerCase(),qq=q.toLowerCase();return(n===qq||(w.f||'').toLowerCase()===qq||n.indexOf(qq)===0||n.indexOf(qq)>=0||(qq.length>3&&lev(qq,n)<=Math.max(1,Math.floor(qq.length/4))))?w:null}
-function lookup(q){q=q.trim();if(!q)return;var L=localTop(q);
-  if(L&&L.w.toLowerCase()===q.toLowerCase()){ourCard(L);return}
+function inits(x){return x.replace(/\(.*?\)/g,'').split(/[\s\-\/]+/).filter(Boolean).map(function(p){return p[0]}).join('').toLowerCase()}
+function isAcr(q){return /^[A-Za-z&]{2,10}$/.test(q)&&(q===q.toUpperCase()||(q.length<=5&&!/[aeiou]{2}/i.test(q)))}
+function rel(title,q){if(isAcr(q)){var I=inits(title),k=0,Q=q.toLowerCase();for(var i=0;i<I.length&&k<Q.length;i++)if(I[i]===Q[k])k++;if(k===Q.length&&I[0]===Q[0])return true;return title.toLowerCase().replace(/[^a-z0-9]/g,'')===Q}
+  var T=toks(title).join(' '),Qs=toks(q);if(!Qs.length)return true;var hit=Qs.filter(function(t){return T.indexOf(t.slice(0,Math.max(4,t.length-2)))>=0}).length;return hit/Qs.length>=(rel.lax?.5:.66)}
+var JUNK=/^(list of|index of|outline of)|\((disambiguation|album|ep|film|song|band|tv series|novel|video game|magazine|single|play|musical)\)/i;
+function clean(q){return q.replace(/[?!.]+$/,'').replace(/^(what\s+(is|are|does)\s+(the\s+)?(meaning\s+of\s+)?|meaning\s+of\s+|define\s+|definition\s+of\s+|explain\s+|full\s+form\s+of\s+)/i,'').replace(/\s+(meaning|definition|full form|in business|in hindi)$/i,'').trim()||q}
+function localTop(q){var L=localFind(q),qq=q.toLowerCase();
+  if(isAcr(q)){var A=DW().filter(function(w){return inits(w.w)===qq||w.w.toLowerCase()===qq||(w.f||'').toLowerCase()===qq});return A.length?A[0]:null}
+  if(!L.length)return null;var w=L[0],n=w.w.toLowerCase();return(n===qq||(w.f||'').toLowerCase()===qq||n.indexOf(qq)===0||n.indexOf(qq)>=0||(qq.length>3&&lev(qq,n)<=Math.max(1,Math.floor(qq.length/4))))?w:null}
+function pick(lists,q,lax){rel.lax=!!lax;var seen={},out=[];lists.forEach(function(L){L.forEach(function(t){if(!seen[t]&&!JUNK.test(t)&&rel(t,q)){seen[t]=1;out.push(t)}})});rel.lax=false;return out}
+var SYN={'4ps':'Marketing mix','4 ps':'Marketing mix','4ps of marketing':'Marketing mix','4 ps of marketing':'Marketing mix','7ps':'Marketing mix','7ps of marketing':'Marketing mix','bottom line':'Net income','top line':'Revenue','mclr':'Marginal cost of funds based lending rate','hr audit':'Human resource management','smart goals':'SMART criteria','pestle':'PEST analysis','pestel':'PEST analysis','pest':'PEST analysis','bcg matrix':'Growth–share matrix'};
+function lookup(q0){q0=q0.trim();if(!q0)return;var q=clean(q0);if(SYN[q.toLowerCase()]){wikiCard(SYN[q.toLowerCase()],'',q);return}var L=localTop(q);
+  if(L&&(L.w.toLowerCase()===q.toLowerCase()||isAcr(q))){ourCard(L);return}
   card('<p class="muted"><span class="spin"></span>Searching the world dictionary…</p>');
-  wikiSearch(q).then(function(r){
-    if(r.titles.length&&r.titles[0].toLowerCase()===q.toLowerCase()){wikiCard(r.titles[0],'',q);return}
+  var none={titles:[],sug:null},safe=function(p){return p.catch(function(){return none})};
+  Promise.all([safe(wikiSearch(q)),safe(wikiSearch(q+' business economics')),isAcr(q)?safe(wikiSearch(q+' India')):Promise.resolve(none)]).then(function(R){var r=R[0],rb=R[1],ri=R[2];
+    var ex=r.titles.filter(function(t){return t.toLowerCase()===q.toLowerCase()&&!JUNK.test(t)})[0];if(ex){wikiCard(ex,'',q);return}
     if(r.sug){var loc=localTop(r.sug);if(loc&&loc.w.toLowerCase()===r.sug.toLowerCase()){ourCard(loc);return}}
     if(L){ourCard(L);return}
-    if(r.sug&&!r.titles.length){var dym='<p class="dym">Showing results for <b>'+esc(r.sug)+'</b>. You typed “'+esc(q)+'”.</p>';return wikiSearch(r.sug).then(function(r2){if(r2.titles.length)wikiCard(r2.titles[0],dym,r.sug);else dictApi(r.sug,dym)})}
-    var good=r.titles.filter(function(t){return rel(t,q)});
-    if(good.length){wikiCard(good[0],'',q);return}
-    return wikiSearch(q+' business economics').then(function(r3){var g3=r3.titles.filter(function(t){return rel(t,q)});if(g3.length)wikiCard(g3[0],'',q);else if(r.titles.length)wikiCard(r.titles[0],'',q);else dictApi(q)})
-  }).catch(function(){if(L)ourCard(L);else dictApi(q)})}
+    var c=pick([rb.titles,r.titles,ri.titles],q);if(!c.length&&!isAcr(q))c=pick([r.titles.slice(0,2),rb.titles.slice(0,2)],q,1);
+    var sg=isAcr(q)?null:(r.sug||rb.sug);
+    if(sg&&sg.toLowerCase()!==q.toLowerCase()&&(!c.length||lev(q.toLowerCase(),sg.toLowerCase())<=3)){var dym='<p class="dym">Showing results for <b>'+esc(sg)+'</b>. You typed “'+esc(q0)+'”.</p>';
+      return Promise.all([safe(wikiSearch(sg)),safe(wikiSearch(sg+' business economics'))]).then(function(S){var e2=S[0].titles.filter(function(t){return t.toLowerCase()===sg.toLowerCase()&&!JUNK.test(t)})[0];var c2=e2?[e2]:pick([S[1].titles,S[0].titles],sg);if(c2.length)wikiCard(c2[0],dym,sg);else if(c.length)wikiCard(c[0],'',q);else dictApi(sg,dym)})}
+    if(c.length){wikiCard(c[0],'',q);return}
+    dictApi(q)}).catch(function(){if(L)ourCard(L);else dictApi(q)})}
 var sT=0,sI=-1;
 function suggest(){var q=$('q').value.trim(),S=$('sugg');clearTimeout(sT);if(q.length<2){S.hidden=true;return}
   var loc=localFind(q).slice(0,4);var paint=function(world){var items=loc.map(function(w){return{t:w.w,k:'l',w:w}});
