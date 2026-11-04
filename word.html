@@ -258,7 +258,8 @@ function makeImage(){
   c.toBlob(function(b){shareBlob=b},'image/png');
   });
 }
-function caption(w){return 'Learnt a new business word today: '+w.w+' 💡\n'+w.m+'\n\nThanks to Dr. Bikram Paul Singh Lehri 🌱 One word a day, free:\n'+link(w)+'\n\n#BusinessWordOfTheDay #YoungProfessor';}
+var FOLLOW={li:'linkedin.com/in/drbikrampaulsingh',fb:'facebook.com/lehribikram'};
+function caption(w,p){return 'Learnt a new business word today: '+w.w+' 💡\n'+w.m+'\n\nThanks to Dr. Bikram Paul Singh Lehri 🌱 One word a day, free:\n'+link(w)+(FOLLOW[p]?'\nFollow him: '+FOLLOW[p]:'')+'\n\n#BusinessWordOfTheDay #YoungProfessor';}
 function link(w){return SITE+'word.html?w='+w.s;}
 function copy(t){try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t);return true}}catch(e){}try{var a=d.createElement('textarea');a.value=t;d.body.appendChild(a);a.select();d.execCommand('copy');a.remove();return true}catch(e){return false}}
 function download(){if(!shareBlob){toast('Getting the image ready… tap again');makeImage();return;}var a=d.createElement('a');a.href=URL.createObjectURL(shareBlob);a.download='word-'+cur.s+'-youngprofessor.png';d.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},2000);}
@@ -269,8 +270,8 @@ d.querySelectorAll('.sb').forEach(function(b){b.addEventListener('click',functio
     var file=shareBlob&&new File([shareBlob],'word-'+w.s+'.png',{type:'image/png'});
     if(file&&navigator.canShare&&navigator.canShare({files:[file]})){toast('Your prof\'s handle '+IG+' is copied. Paste it on your story ✨');navigator.share({files:[file]}).catch(function(){});}
     else{download();toast('Image saved. Add it to your Instagram story and paste '+IG+' ✨');}}
-  else if(s==='li'){copy(caption(w));toast('Caption copied. Paste it, then type @Bikram to tag your prof ✨');setTimeout(function(){open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(link(w)),'_blank','noopener')},700);}
-  else if(s==='fb'){copy(caption(w));toast('Caption copied. Paste it in your post and tag your prof ✨');setTimeout(function(){open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(link(w)),'_blank','noopener')},700);}
+  else if(s==='li'){copy(caption(w,'li'));toast('Caption copied. Paste it, then type @Bikram to tag your prof ✨');setTimeout(function(){open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(link(w)),'_blank','noopener')},700);}
+  else if(s==='fb'){copy(caption(w,'fb'));toast('Caption copied. Paste it, then type @Bikram to tag your prof ✨');setTimeout(function(){open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(link(w)),'_blank','noopener')},700);}
   else if(s==='sv'){download();toast('Saved! Share it anywhere and tag '+IG+' 🌱');}
 });});
 
