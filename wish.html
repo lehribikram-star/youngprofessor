@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Festival wishes · Dr. Lehri</title>
+<meta name="description" content="Festival wishes from Dr. Bikram Paul Singh Lehri.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B0A0A">
+<meta property="og:title" content="A festival wish from Dr. Bikram Paul Singh Lehri">
+<meta property="og:image" content="https://youngprofessor.in/logo-badge.png">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;700;800&display=swap">
+<style>
+:root{--bg:#0B0A0A;--panel:#171414;--line:#2A2323;--ink:#F4EFEA;--muted:#A39A94;--red:#E3161E;--red2:#FF3B42;--gold:#F5B942;--serif:"DM Serif Display",Georgia,serif;--sans:"Manrope",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:radial-gradient(900px 600px at 50% 0%,rgba(245,185,66,.18),transparent 70%),var(--bg);color:var(--ink);font-family:var(--sans);display:flex;flex-direction:column;align-items:center;padding:28px 16px 50px}
+.top{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--serif);font-size:20px;margin-bottom:28px}
+.top img{width:36px;height:36px;border-radius:50%;box-shadow:0 0 0 2px var(--red)}
+.top em{font-style:normal;color:var(--red2)}
+.card{position:relative;width:min(560px,100%);text-align:center;padding:44px 26px 34px;border-radius:28px;overflow:hidden;background:radial-gradient(circle at 50% 0%,#4a2a0d 0,#1a100c 55%,#0B0A0A);border:1px solid rgba(245,185,66,.5);box-shadow:0 30px 80px -30px rgba(245,185,66,.45)}
+.card::before{content:"";position:absolute;inset:12px;border:1px solid rgba(245,185,66,.25);border-radius:20px;pointer-events:none}
+.card>*:not(.spark){position:relative;z-index:1}
+.spark{z-index:0;position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold);opacity:.7;animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:.9;transform:scale(1.2)}}
+.lbl{font-size:12px;font-weight:800;letter-spacing:.2em;color:var(--gold)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,8vw,50px);line-height:1.1;margin:14px 0 18px;background:linear-gradient(180deg,#FFE7A6,#E0A93A);-webkit-background-clip:text;background-clip:text;color:transparent}
+.msg{font-size:clamp(18px,4.6vw,22px);line-height:1.5;font-weight:600;max-width:440px;margin:0 auto}
+.from{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12)}
+.from img{width:54px;height:54px}
+.from b{display:block;font-size:15px;text-align:left}
+.from span{font-size:13px;color:var(--red2);font-weight:700}
+.acts{display:flex;flex-direction:column;gap:10px;width:min(560px,100%);margin-top:20px}
+.acts a,.acts button{display:flex;justify-content:center;align-items:center;gap:8px;padding:14px;border-radius:999px;font:800 15px var(--sans);text-decoration:none;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.acts .wa{background:#1fae55;border-color:#1fae55;color:#fff}
+.acts .gold{background:var(--gold);border-color:var(--gold);color:#1a100c}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);padding:12px 18px;border-radius:12px;background:var(--panel);border:1px solid var(--gold);opacity:0;transition:opacity .3s;pointer-events:none;font-weight:700}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<a class="top" href="./"><img src="logo-mark.webp" alt="" width="36" height="36"><span>young<em>professor</em>.in</span></a>
+<main class="card" id="card">
+  <span class="lbl" id="lbl">FESTIVAL WISHES</span>
+  <h1 id="t">Warm wishes</h1>
+  <p class="msg" id="m">Wishing you and your family happiness, health and success.</p>
+  <div class="from"><img src="logo-badge.png" alt=""><div><b>Dr. Bikram Paul Singh Lehri</b><span>youngprofessor.in</span></div></div>
+</main>
+<div class="acts">
+  <button type="button" class="wa" id="wa">Send this wish on WhatsApp</button>
+  <button type="button" class="gold" id="sh">Share with friends</button>
+  <a href="./">Explore youngprofessor.in</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(function(){
+  var d=document,$=function(i){return d.getElementById(i)};
+  var c=$('card');for(var i=0;i<14;i++){var s=d.createElement('i');s.className='spark';s.style.left=(5+Math.random()*90)+'%';s.style.top=(4+Math.random()*90)+'%';s.style.animationDelay=(Math.random()*2.4)+'s';c.appendChild(s);}
+  var today=new Date(Date.now()+5.5*3600e3).toISOString().slice(0,10),q=new URLSearchParams(location.search).get('d');
+  var want=(q&&/^\d{4}-\d{2}-\d{2}$/.test(q)&&q<=today)?q:today,cur=null;
+  function toast(s){var t=$('toast');t.textContent=s;t.classList.add('on');setTimeout(function(){t.classList.remove('on')},3000);}
+  function text(){return (cur?cur.t+'\n'+cur.m:$('t').textContent)+'\n\nWith warm wishes from Dr. Bikram Paul Singh Lehri 🌱\nhttps://youngprofessor.in/';}
+  fetch('festivals.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(F){
+    cur=F.filter(function(f){return f.d===want})[0];
+    if(!cur){var past=F.filter(function(f){return f.d<=today});cur=past[past.length-1]||null;
+      var next=F.filter(function(f){return f.d>today})[0];
+      if(!cur&&next){$('lbl').textContent='COMING UP';$('t').textContent=next.n;$('m').textContent='Festival wishes arrive on your phone on the day. Follow to get them.';return;}}
+    if(cur){$('lbl').textContent=cur.n.toUpperCase();$('t').textContent=cur.t;$('m').textContent=cur.m;d.title=cur.n+' wishes · Dr. Lehri';}
+  }).catch(function(){});
+  $('wa').onclick=function(){location.href='https://wa.me/?text='+encodeURIComponent(text());};
+  $('sh').onclick=function(){var t=text();if(navigator.share)navigator.share({text:t}).catch(function(){});else{try{navigator.clipboard.writeText(t);toast('Copied! Paste it anywhere 🌱');}catch(e){}}};
+})();
+</script>
+</body>
+</html>
