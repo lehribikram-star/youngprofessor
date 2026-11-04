@@ -347,27 +347,39 @@ function card(h){$('dres').innerHTML=h;$('sugg').hidden=true}
 function ourCard(w){var c=w.tw?'<span class="lb">DON\'T CONFUSE</span><p><b>'+esc(w.w)+'</b>: '+esc(w.wm)+'<br><b>'+esc(w.tw)+'</b>: '+esc(w.tm)+'</p>':'';
   card('<div class="dcard"><span class="src">📘 CONCEPT CORNER · '+esc(w.t.toUpperCase())+'</span><h3>'+esc(w.w)+'</h3>'+(w.f?'<div class="ff">'+esc(w.f)+'</div>':'')+'<span class="lb">MEANING</span><p>'+esc(w.m)+'</p><span class="lb">EXAMPLE</span><p>'+esc(w.e)+'</p>'+c+
   '<div class="acts">'+(w.d<=TODAY?'<a class="pri" href="word.html?w='+w.s+'">Open the full card →</a>':'<span class="muted" style="align-self:center">Full card arrives on '+fmt(w.d).split(',')[0]+'</span>')+'</div></div>');scrollTo({top:$('dres').getBoundingClientRect().top+scrollY-90,behavior:'smooth'})}
-function wikiCard(t,dym){card('<p class="muted"><span class="spin"></span>Looking up “'+esc(t)+'”…</p>');
+function more(q){var e=encodeURIComponent(q);return '<p class="muted" style="font-size:12px;margin-top:12px">More sources: <a href="https://www.google.com/search?q='+e+'+meaning+in+business" target="_blank" rel="noopener" style="color:var(--gold)">Google</a> · <a href="https://www.investopedia.com/search?q='+e+'" target="_blank" rel="noopener" style="color:var(--gold)">Investopedia</a> · <a href="https://en.wikipedia.org/w/index.php?search='+e+'" target="_blank" rel="noopener" style="color:var(--gold)">Wikipedia</a></p>'}
+function wikiCard(t,dym,q){card('<p class="muted"><span class="spin"></span>Looking up “'+esc(t)+'”…</p>');
   wikiSum(t).then(function(j){
-    if(j.type==='disambiguation'){return wikiSearch(t+' business').then(function(r){card((dym||'')+'<div class="dcard"><span class="src">🌍 WORLD DICTIONARY</span><h3>'+esc(j.title)+'</h3><p>This term has more than one meaning. Pick the one you need:</p><div class="acts">'+r.titles.slice(0,5).map(function(x){return '<button data-t="'+esc(x)+'">'+esc(x)+'</button>'}).join('')+'</div></div>');bindPick()})}
+    if(j.type==='disambiguation'){return wikiSearch(t+' business economics').then(function(r){if(!r.titles.length)throw 0;card((dym||'')+'<div class="dcard"><span class="src">🌍 WORLD DICTIONARY</span><h3>'+esc(j.title)+'</h3><p>This term has more than one meaning. Pick the one you need:</p><div class="acts">'+r.titles.slice(0,6).map(function(x){return '<button data-t="'+esc(x)+'">'+esc(x)+'</button>'}).join('')+'</div>'+more(q||t)+'</div>');bindPick()})}
+    if(!j.extract)throw 0;
     var isSaved=saved().some(function(x){return x.t===j.title});
-    card((dym||'')+'<div class="dcard"><span class="src">🌍 WORLD DICTIONARY</span><h3>'+esc(j.title)+'</h3>'+(j.description?'<div class="ff">'+esc(j.description)+'</div>':'')+'<p>'+esc(j.extract||'')+'</p>'+
-     '<p class="muted" style="font-size:12px">Source: <a href="'+esc((j.content_urls&&j.content_urls.mobile&&j.content_urls.mobile.page)||'https://en.wikipedia.org')+'" target="_blank" rel="noopener" style="color:var(--gold)">Wikipedia</a> (CC BY-SA)</p>'+
-     '<div class="acts"><button id="svB">'+(isSaved?'⭐ Saved':'☆ Save this term')+'</button><a href="'+reqLink(j.title)+'">💬 Ask Dr. Lehri to explain simply</a></div></div>');
-    $('svB').onclick=function(){var S=saved().filter(function(x){return x.t!==j.title});S.unshift({t:j.title,x:(j.extract||'').slice(0,160)});ls('yp_dict_saved',S.slice(0,100));this.textContent='⭐ Saved';showSaved()};
-  }).catch(function(){notFound(t)})}
-function notFound(t){card('<div class="dcard"><span class="src">NOT FOUND YET</span><h3>'+esc(t)+'</h3><p>I couldn\'t find this term. Check the spelling, or ask me to add it to the dictionary.</p><div class="acts"><a class="pri" href="'+reqLink(t)+'">➕ Request this word</a></div></div>')}
+    card((dym||'')+'<div class="dcard"><span class="src">🌍 WORLD DICTIONARY</span><h3>'+esc(j.title)+'</h3>'+(j.description?'<div class="ff">'+esc(j.description)+'</div>':'')+'<p>'+esc(j.extract)+'</p>'+
+     '<p class="muted" style="font-size:12px">Source: <a href="'+esc((j.content_urls&&j.content_urls.mobile&&j.content_urls.mobile.page)||'https://en.wikipedia.org')+'" target="_blank" rel="noopener" style="color:var(--gold)">Wikipedia</a> (CC BY-SA 4.0)</p>'+
+     '<div class="acts"><button id="svB">'+(isSaved?'⭐ Saved':'☆ Save this term')+'</button><a href="'+reqLink(j.title)+'">💬 Ask Dr. Lehri to explain simply</a></div>'+more(q||j.title)+'</div>');
+    $('svB').onclick=function(){var S=saved().filter(function(x){return x.t!==j.title});S.unshift({t:j.title,x:j.extract.slice(0,160)});ls('yp_dict_saved',S.slice(0,100));this.textContent='⭐ Saved';showSaved()};
+  }).catch(function(){dictApi(q||t,dym)})}
+function dictApi(q,dym){fetch('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(q.trim().toLowerCase())).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(A){
+    var e=A[0],defs=[];(e.meanings||[]).forEach(function(m){(m.definitions||[]).slice(0,2).forEach(function(x){defs.push({p:m.partOfSpeech,d:x.definition,ex:x.example})})});if(!defs.length)throw 0;
+    card((dym||'')+'<div class="dcard"><span class="src">📖 ENGLISH DICTIONARY</span><h3>'+esc(e.word)+'</h3>'+(e.phonetic?'<div class="ff">'+esc(e.phonetic)+'</div>':'')+defs.slice(0,4).map(function(x){return '<span class="lb">'+esc((x.p||'').toUpperCase())+'</span><p>'+esc(x.d)+(x.ex?'<br><i class="muted">e.g. '+esc(x.ex)+'</i>':'')+'</p>'}).join('')+
+     '<p class="muted" style="font-size:12px">Source: <a href="https://en.wiktionary.org/wiki/'+encodeURIComponent(e.word)+'" target="_blank" rel="noopener" style="color:var(--gold)">Wiktionary</a> via Free Dictionary API (CC BY-SA)</p><div class="acts"><a href="'+reqLink(q)+'">💬 Ask Dr. Lehri for the business meaning</a></div>'+more(q)+'</div>')
+  }).catch(function(){notFound(q)})}
+function notFound(t){card('<div class="dcard"><span class="src">SEARCH THE WEB</span><h3>'+esc(t)+'</h3><p>This term isn\'t in the open dictionaries yet. Tap a source below to see it on the web, or ask me to add it to our dictionary.</p><div class="acts"><a class="pri" href="https://www.google.com/search?q='+encodeURIComponent(t)+'+meaning+in+business" target="_blank" rel="noopener">🔎 See it on Google</a><a href="'+reqLink(t)+'">➕ Request this word</a></div>'+more(t)+'</div>')}
 function bindPick(){$('dres').querySelectorAll('button[data-t]').forEach(function(b){b.onclick=function(){wikiCard(b.dataset.t)}})}
-function lookup(q){q=q.trim();if(!q)return;var L=localFind(q);
-  if(L.length&&L[0].w.toLowerCase()===q.toLowerCase()){ourCard(L[0]);return}
+function toks(x){return x.toLowerCase().replace(/[^a-z0-9 ]+/g,' ').split(/\s+/).filter(function(t){return t.length>2})}
+function rel(title,q){var T=toks(title).join(' '),Q=toks(q);if(!Q.length)return true;var hit=Q.filter(function(t){return T.indexOf(t.slice(0,Math.max(4,t.length-2)))>=0}).length;return hit/Q.length>=.5}
+function localTop(q){var L=localFind(q);if(!L.length)return null;var w=L[0],n=w.w.toLowerCase(),qq=q.toLowerCase();return(n===qq||(w.f||'').toLowerCase()===qq||n.indexOf(qq)===0||n.indexOf(qq)>=0||(qq.length>3&&lev(qq,n)<=Math.max(1,Math.floor(qq.length/4))))?w:null}
+function lookup(q){q=q.trim();if(!q)return;var L=localTop(q);
+  if(L&&L.w.toLowerCase()===q.toLowerCase()){ourCard(L);return}
   card('<p class="muted"><span class="spin"></span>Searching the world dictionary…</p>');
   wikiSearch(q).then(function(r){
-    if(r.titles.length&&r.titles[0].toLowerCase()===q.toLowerCase()){wikiCard(r.titles[0]);return}
-    if(r.sug){var loc=localFind(r.sug);if(loc.length&&loc[0].w.toLowerCase()===r.sug.toLowerCase()){ourCard(loc[0]);return}
-      var dym='<p class="dym">Showing results for <b>'+esc(r.sug)+'</b>. You typed “'+esc(q)+'”.</p>';return wikiSearch(r.sug).then(function(r2){wikiCard(r2.titles[0]||r.sug,dym)})}
-    if(L.length){ourCard(L[0]);return}
-    if(r.titles.length){wikiCard(r.titles[0]);return}
-    notFound(q)}).catch(function(){if(L.length)ourCard(L[0]);else card('<p class="muted">You seem to be offline. Words from Concept Corner still work below.</p>')})}
+    if(r.titles.length&&r.titles[0].toLowerCase()===q.toLowerCase()){wikiCard(r.titles[0],'',q);return}
+    if(r.sug){var loc=localTop(r.sug);if(loc&&loc.w.toLowerCase()===r.sug.toLowerCase()){ourCard(loc);return}}
+    if(L){ourCard(L);return}
+    if(r.sug&&!r.titles.length){var dym='<p class="dym">Showing results for <b>'+esc(r.sug)+'</b>. You typed “'+esc(q)+'”.</p>';return wikiSearch(r.sug).then(function(r2){if(r2.titles.length)wikiCard(r2.titles[0],dym,r.sug);else dictApi(r.sug,dym)})}
+    var good=r.titles.filter(function(t){return rel(t,q)});
+    if(good.length){wikiCard(good[0],'',q);return}
+    return wikiSearch(q+' business economics').then(function(r3){var g3=r3.titles.filter(function(t){return rel(t,q)});if(g3.length)wikiCard(g3[0],'',q);else if(r.titles.length)wikiCard(r.titles[0],'',q);else dictApi(q)})
+  }).catch(function(){if(L)ourCard(L);else dictApi(q)})}
 var sT=0,sI=-1;
 function suggest(){var q=$('q').value.trim(),S=$('sugg');clearTimeout(sT);if(q.length<2){S.hidden=true;return}
   var loc=localFind(q).slice(0,4);var paint=function(world){var items=loc.map(function(w){return{t:w.w,k:'l',w:w}});
