@@ -422,8 +422,8 @@ d.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){tab(
 /* ---------- start ---------- */
 fetch('words.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(A){
   ALL=A;REL=A.filter(function(x){return x.d<=TODAY});WORDS=REL.filter(function(x){return !x.quiz});
-  fetch('glossary.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(G){GL=G;if(!$('v-dict').hidden)renderDict()}).catch(function(){});
-  if(P.get('tab')==='dict'||P.get('q')){tab('dict');if(P.get('q')){$('q').value=P.get('q');renderDict();lookup(P.get('q'))}}
+  fetch('glossary.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(G){GL=G}).catch(function(){}).then(function(){if(!$('v-dict').hidden)renderDict();if(P.get('q'))lookup(P.get('q'))});
+  if(P.get('tab')==='dict'||P.get('q')){tab('dict');if(P.get('q')){$('q').value=P.get('q');renderDict()}}
   if(!WORDS.length){$('cardBox').hidden=true;$('soonBox').hidden=false;$('ttl').textContent='Starting soon';return;}
   var todayE=REL.filter(function(x){return x.d===TODAY})[0],want=P.get('w'),qz=P.get('quiz');
   if(P.get('tab')==='bank'){tab('bank');}
