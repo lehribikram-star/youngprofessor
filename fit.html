@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Find Your Fit | Choose your MBA/BBA specialisation | youngprofessor.in</title>
+<title>Find Your Fit | Specialisation finder for Management Students | youngprofessor.in</title>
 <link rel="canonical" href="https://youngprofessor.in/fit.html">
 <meta name="description" content="Confused between Marketing, Finance, HR, Analytics or Operations? Find Your Fit uses 3 lenses (your interests, the subjects you enjoy and your work style) to show the specialisation that truly fits you. Free, 8 minutes, by Dr. Bikram Paul Singh Lehri.">
 <meta name="theme-color" content="#0B0A0A">
 <meta property="og:title" content="Find Your Fit | End your specialisation confusion">
-<meta property="og:description" content="3 lenses. 8 minutes. One clear answer for your MBA/BBA specialisation, plus your Certificate of Clarity.">
+<meta property="og:description" content="3 lenses. 8 minutes. One clear answer for your specialisation as a Management Student, plus your Certificate of Clarity.">
 <meta property="og:image" content="https://youngprofessor.in/photo.jpg">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Herr+Von+Muellerhoff&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@700&family=Herr+Von+Muellerhoff&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
 <style>
 :root{--bg:#0B0A0A;--bg2:#121010;--panel:#171414;--line:#2A2323;--line2:#3A2E2E;--ink:#F4EFEA;--muted:#A39A94;--dim:#6F6661;--red:#E3161E;--red2:#FF3B42;--redsoft:rgba(227,22,30,.10);--gold:#E2B85C;--calm:#6FC3B2;
@@ -59,6 +59,16 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 .opt span{font-size:30px;line-height:1}@media (hover:hover){.opt:hover{border-color:var(--red);transform:translateY(-2px)}}.opt.sel{background:var(--redsoft);border-color:var(--red)}
 .hint{margin-top:20px;font-size:14px;color:var(--dim)}
 .cheer{margin:18px auto 0;max-width:560px;padding:12px 16px;border-radius:12px;background:rgba(111,195,178,.1);color:var(--calm);font-weight:700;font-size:15px;display:none}
+.mini{display:flex;gap:8px;justify-content:center;align-items:flex-end;height:46px;margin:22px auto 0}.mini div{display:flex;flex-direction:column;align-items:center;gap:4px;font:700 11px var(--mono);color:var(--dim)}.mini i{display:block;width:18px;border-radius:5px 5px 2px 2px;background:linear-gradient(var(--gold),var(--red));transition:height .4s var(--ease)}
+.up{max-width:620px;margin:8vh auto 0;text-align:center}.up-b{font-size:76px;line-height:1;margin-bottom:14px;animation:pop .7s var(--ease) both}.up h2{margin:10px 0 8px}.up .btn{margin-top:22px}
+.up-f{margin:18px auto 0;padding:14px 18px;border:1px dashed var(--line2);border-radius:14px;color:var(--muted);font-size:15px;max-width:520px}
+@keyframes pop{0%{transform:scale(.3) rotate(-12deg);opacity:0}60%{transform:scale(1.15)}100%{transform:none;opacity:1}}
+.spin{animation:wob 1.2s ease-in-out infinite}@keyframes wob{50%{transform:scale(1.15) rotate(8deg)}}
+.rev{list-style:none;padding:0;margin:22px auto 0;text-align:left;max-width:520px}.rev li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted);animation:pop .5s var(--ease) both}.rev li b{color:var(--calm)}
+.conf{margin-top:18px}.conf b.lv{font-family:var(--mono);letter-spacing:.1em}
+.top3{display:grid;gap:12px;margin-top:12px}.t3{display:flex;gap:14px;align-items:center}.t3 .em2{font-size:34px}.t3 h3{margin:0}.t3 small{color:var(--gold);font-family:var(--mono);letter-spacing:.1em}
+.b5{display:grid;gap:10px}.b5>div{display:grid;grid-template-columns:170px 1fr 40px;gap:10px;align-items:center;font-size:14px}.b5 .bar{height:8px;margin:0;border-radius:9px;background:var(--line);overflow:hidden}.b5 .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:9px}
+@media (max-width:520px){.b5>div{grid-template-columns:1fr 40px;row-gap:6px}.b5 .bar{grid-column:1/-1;grid-row:2}}
 .navq{display:flex;justify-content:space-between;margin-top:26px}
 .linkbtn{background:none;border:0;color:var(--muted);font-size:14px;font-weight:700;padding:8px 0}
 .subj{display:grid;gap:12px;margin-top:18px}
@@ -110,69 +120,91 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
   <p class="lead">Marketing or Finance? HR or Analytics? Most students choose a specialisation because a friend did, because a senior said "it has scope", or out of fear. Then they spend two years studying something that doesn't feel like them.</p>
   <div class="prob">
     <div class="card"><div class="em">😵‍💫</div><h3>The problem</h3><p>Big decision, no real method. Advice is everywhere, but nobody looks at <b>you</b>.</p></div>
-    <div class="card"><div class="em">🎯</div><h3>What this solves</h3><p>In about 8 minutes you get a clear, ranked answer: which specialisation fits you, and why.</p></div>
+    <div class="card"><div class="em">🎯</div><h3>What this solves</h3><p>In about 10 minutes you get your top 3 specialisations, ranked, with how confident the result is and why.</p></div>
     <div class="card"><div class="em">🏅</div><h3>What you take home</h3><p>Your personal <b>Certificate of Clarity</b> with a unique code, plus a share card for your friends.</p></div>
   </div>
-  <h2>Why it is different: 3 lenses, not 1</h2>
+  <h2>Why it is different: real science, Indian jobs</h2>
   <div class="lenses">
-    <div class="card lens"><b>LENS 1 · 60 TAPS</b><h3>What you enjoy</h3><p>The globally trusted O*NET Interest Profiler (U.S. Dept. of Labor) finds your Holland career code.</p></div>
-    <div class="card lens"><b>LENS 2 · 8 TAPS</b><h3>Subjects you love</h3><p>Numbers, people, data, ideas? Your comfort with subjects shapes the right fit.</p></div>
-    <div class="card lens"><b>LENS 3 · 8 TAPS</b><h3>How you like to work</h3><p>Targets or stability, field or desk, people or data: your natural work style.</p></div>
+    <div class="card lens"><b>LEVEL 1 · 60 TAPS</b><h3>What excites you</h3><p>The O*NET Interest Profiler (U.S. Dept. of Labor), used by career counsellors worldwide, finds your Holland career code.</p></div>
+    <div class="card lens"><b>LEVEL 2 · 20 TAPS</b><h3>How you're wired</h3><p>The Mini-IPIP, a published Big Five personality scale used by psychologists, reads your natural work personality.</p></div>
+    <div class="card lens"><b>LEVEL 3 · 8 TAPS</b><h3>Your strengths</h3><p>The subjects you're comfortable with add the final touch.</p></div>
+    <div class="card lens"><b>LEVEL 4 · THE REVEAL</b><h3>Your top 3 fits</h3><p>Matched against official Indian job groups (NCO-2015, Govt. of India) and real job data, with a confidence check.</p></div>
   </div>
-  <ul class="uniq"><li>🇮🇳 Made for Indian BBA/MBA specialisations</li><li>👨‍🏫 Built by your professor</li><li>🆓 Free, no sign-up</li><li>🔒 Your answers stay on your phone</li></ul>
+  <ul class="uniq"><li>🇮🇳 Made for Indian Management Students</li><li>👨‍🏫 Built by your professor</li><li>🆓 Free, no sign-up</li><li>🔒 Your answers stay on your phone</li></ul>
   <div class="card">
     <h3 style="margin:0 0 4px">First, what should I call you?</h3>
     <p class="small" style="margin:0 0 12px">Your name appears on your certificate. It never leaves your phone.</p>
-    <div class="startbox"><input class="inp" id="nm" maxlength="40" placeholder="Your full name" autocomplete="name"><button class="btn" id="go" disabled>Start my 3 lenses →</button></div>
+    <div class="startbox"><input class="inp" id="nm" maxlength="40" placeholder="Your full name" autocomplete="name"><button class="btn" id="go" disabled>Start the quest →</button></div>
     <p class="small" id="resume" style="display:none;margin:12px 0 0"></p>
   </div>
 </div></section>
 
 <!-- LENS 1 -->
 <section class="screen" id="s-l1"><div class="wrap">
-  <div class="ptop"><span><b style="color:var(--gold)">Lens 1 of 3</b> · What you enjoy</span><span id="l1c">1 / 60</span></div>
+  <div class="ptop"><span><b style="color:var(--gold)">Level 1 of 4</b> · What excites you</span><span id="l1c">1 / 60</span></div>
   <div class="prog"><i id="l1p"></i></div>
   <div class="qbox">
     <div class="qn">WOULD YOU ENJOY THIS WORK?</div>
     <div class="qt" id="qt"></div>
     <div class="opts" id="opts"></div>
     <div class="cheer" id="cheer"></div>
+    <div class="mini" id="mini" aria-hidden="true"></div>
     <p class="hint">Don't think about salary or training. Just ask: would I <b>enjoy</b> doing this?</p>
     <div class="navq"><button class="linkbtn" id="qback">← Back</button><button class="linkbtn" id="qhome">Save &amp; exit</button></div>
   </div>
 </div></section>
 
+<!-- LEVEL UP -->
+<section class="screen" id="s-up"><div class="wrap"><div class="up">
+  <div class="up-b" id="upB"></div><span class="eyebrow" id="upE"></span>
+  <h2 id="upH"></h2><p class="lead" id="upP"></p><div class="up-f" id="upF"></div>
+  <button class="btn" id="upGo"></button>
+</div></div></section>
+
+<!-- LEVEL 2: Mini-IPIP -->
+<section class="screen" id="s-lp"><div class="wrap">
+  <div class="ptop"><span><b style="color:var(--gold)">Level 2 of 4</b> · How you're wired</span><span id="lpc">1 / 20</span></div>
+  <div class="prog"><i id="lpp"></i></div>
+  <div class="qbox">
+    <div class="qn">HOW ACCURATELY DOES THIS DESCRIBE YOU?</div>
+    <div class="qt" id="pt"></div>
+    <div class="opts" id="popts"></div>
+    <p class="hint">Describe yourself as you <b>generally are now</b>, not as you wish to be. Be honest; nobody else sees this.</p>
+    <div class="navq"><button class="linkbtn" id="pback">← Back</button><button class="linkbtn" id="phome">Save &amp; exit</button></div>
+  </div>
+</div></section>
+
 <!-- LENS 2 -->
 <section class="screen" id="s-l2"><div class="wrap">
-  <div class="ptop"><span><b style="color:var(--gold)">Lens 2 of 3</b> · Subjects you love</span><span>Almost there</span></div>
-  <div class="prog"><i style="width:80%"></i></div>
+  <div class="ptop"><span><b style="color:var(--gold)">Level 3 of 4</b> · Your strengths</span><span>Last level</span></div>
+  <div class="prog"><i style="width:90%"></i></div>
   <h2 style="margin-top:22px">How do you feel about these subjects?</h2>
   <p class="lead" style="margin:0">Be honest. 😣 means "please no", 😍 means "I could do this all day".</p>
   <div class="subj" id="subj"></div>
-  <div class="navq"><button class="linkbtn" onclick="show('s-l1');renderQ()">← Back</button><button class="btn" id="l2go" disabled>Next: work style →</button></div>
+  <div class="navq"><button class="linkbtn" onclick="show('s-lp');renderP()">← Back</button><button class="btn" id="l2go" disabled>Reveal my fit ✨</button></div>
 </div></section>
 
-<!-- LENS 3 -->
-<section class="screen" id="s-l3"><div class="wrap">
-  <div class="ptop"><span><b style="color:var(--gold)">Lens 3 of 3</b> · How you like to work</span><span>Last step</span></div>
-  <div class="prog"><i style="width:92%"></i></div>
-  <h2 style="margin-top:22px">Pick the one that sounds more like you</h2>
-  <p class="lead" style="margin:0">There is no right answer. Go with your first instinct.</p>
-  <div id="pairs"></div>
-  <div class="navq"><button class="linkbtn" onclick="show('s-l2')">← Back</button><button class="btn" id="l3go" disabled>Show my fit ✨</button></div>
-</div></section>
+<!-- REVEAL -->
+<section class="screen" id="s-rev"><div class="wrap"><div class="up">
+  <div class="up-b spin">🔍</div><span class="eyebrow">Level 4 · The reveal</span><h2>Finding your fit…</h2>
+  <ul class="rev" id="revL"></ul>
+</div></div></section>
 
 <!-- RESULTS -->
 <section class="screen" id="s-res"><div class="wrap">
-  <div class="res-hero"><span class="eyebrow">Your result · 3 lenses combined</span>
+  <div class="res-hero"><span class="eyebrow">Your result · 88 answers, 3 levels</span>
     <p class="appr" id="appr" style="margin-top:14px"></p></div>
   <div class="topfit"><div class="em" id="tEm"></div><span class="pct" id="tPct"></span><h2 id="tName"></h2><p id="tWhy"></p></div>
+  <div class="card conf" id="conf"></div>
+  <div class="sec"><h2>Your top 3</h2><p class="lead" style="margin:0">Most students fit more than one field. These three suit you best.</p><div class="top3" id="top3"></div></div>
+  <div class="sec"><h2>How you're wired</h2><p class="lead" style="margin:0">From Level 2 (Mini-IPIP). Compared with an average student.</p><div class="card" style="margin-top:12px"><div class="b5" id="b5"></div></div></div>
+  <p class="small" style="margin:18px 0 0">Job titles follow India's National Classification of Occupations 2015 (Ministry of Labour &amp; Employment).</p>
   <div class="cols">
-    <div class="card"><h3>💼 Roles you can grow into</h3><ul id="tRoles"></ul></div>
+    <div class="card"><h3>💼 Jobs in India you can grow into</h3><ul id="tRoles"></ul><p class="small" id="tEmp" style="margin:10px 0 0"></p></div>
     <div class="card"><h3>📚 Strengthen these next</h3><ul id="tNext"></ul></div>
   </div>
   <div class="sec"><h2>Your full ranking</h2><p class="lead" style="margin:0">All 8 specialisations, ranked for you.</p><div class="card" style="margin-top:12px"><div class="rank" id="rank"></div></div></div>
-  <div class="sec"><h2>Your career code: <span id="code" style="color:var(--gold)"></span></h2><p class="lead" style="margin:0">From Lens 1. Your three strongest interest areas, in order.</p><div class="ria" id="ria"></div></div>
+  <div class="sec"><h2>Your career code: <span id="code" style="color:var(--gold)"></span></h2><p class="lead" style="margin:0">From Level 1. Your three strongest interest areas, in order.</p><div class="ria" id="ria"></div></div>
 
   <div class="sec certwrap">
     <canvas id="cert" width="1240" height="1754"></canvas>
@@ -193,16 +225,83 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 
   <div class="sec card" style="text-align:center"><h3 style="margin:0 0 6px">Want to talk it through?</h3><p class="lead" style="margin:0 auto 14px">Not sure about your result? Write to your professor in the Student Zone.</p>
     <div class="btns" style="justify-content:center"><a class="btn" href="student.html#ask">💬 Ask your professor</a><button class="btn ghost" id="again">↺ Retake</button></div></div>
-  <p class="note">Lens 1 uses the O*NET Interest Profiler Short Form by the U.S. Department of Labor, Employment and Training Administration, used under the CC BY 4.0 licence. O*NET® is a trademark of the USDOL/ETA. Lenses 2 and 3 and the specialisation mapping are by Dr. Bikram Paul Singh Lehri. This is a guidance tool, not a final verdict: use it to start a better conversation with yourself.</p>
+  <p class="note">Level 1 uses the O*NET Interest Profiler Short Form by the U.S. Department of Labor, Employment and Training Administration, under the CC BY 4.0 licence; O*NET® is a trademark of USDOL/ETA. Level 2 uses the Mini-IPIP (Donnellan, Oswald, Baird &amp; Lucas, 2006, <i>Psychological Assessment</i>), from the public-domain International Personality Item Pool. Jobs come from India's National Classification of Occupations 2015 (DGE, Ministry of Labour &amp; Employment), linked through ISCO-08 to O*NET 31.0 interest and work-style data. Personality norms are provisional until our Indian student pilot. This is a guidance tool, not a final verdict: use it to start a better conversation with yourself.</p>
 </div></section>
 <div class="toast" id="toast"></div>
 
 <script>
+/* Find Your Fit 2.0 scoring engine. Pure functions, shared by the page and the test harness. */
+(function(root){
+const ORDER=['mk','fin','hr','ba','ops','ent','ib','it'];
+/* 11-dim targets per specialisation: RIASEC (z across the 8 areas, from O*NET 31.0 OI via NCO-2015 -> ISCO-08 -> SOC)
+   + Big Five E,A,C,Stability,Openness (z across areas, from O*NET 31.0 Work Styles importance) */
+const T={mk:[-1.034,-0.798,2.304,0.387,0.812,-1.797,1.098,-0.219,-1.38,-0.081,0.726],
+fin:[-1.514,-0.242,-0.584,0.158,0.222,1.11,-0.25,-0.168,0.986,0.541,-0.846],
+hr:[-0.663,-0.43,0.575,2.237,0.083,-1.319,0.439,2.079,-0.594,0.121,-0.548],
+ba:[0.422,2.077,-0.013,-0.975,-2.054,1.11,-1.817,-0.916,-0.08,-1.996,0.529],
+ops:[1.604,-0.251,-0.958,-1.147,0.204,0.214,-0.186,-0.235,0.467,0.099,-0.522],
+ent:[-0.402,-0.572,-0.174,0.287,1.394,-0.264,1.284,-0.095,0.378,1.704,0.577],
+ib:[0.917,-0.986,-1.029,-0.588,0.326,0.433,-0.106,-0.333,0.109,0.091,-1.097],
+it:[0.67,1.201,-0.12,-0.358,-0.986,0.513,-0.463,-0.113,0.113,-0.479,1.182]};
+/* Mini-IPIP (Donnellan et al., 2006; IPIP, public domain). f = factor, k = +1 / -1 keyed */
+const IPIP=[['Am the life of the party.','E',1],['Sympathize with others’ feelings.','A',1],['Get chores done right away.','C',1],['Have frequent mood swings.','N',1],['Have a vivid imagination.','I',1],
+['Don’t talk a lot.','E',-1],['Am not interested in other people’s problems.','A',-1],['Often forget to put things back in their proper place.','C',-1],['Am relaxed most of the time.','N',-1],['Am not interested in abstract ideas.','I',-1],
+['Talk to a lot of different people at parties.','E',1],['Feel others’ emotions.','A',1],['Like order.','C',1],['Get upset easily.','N',1],['Have difficulty understanding abstract ideas.','I',-1],
+['Keep in the background.','E',-1],['Am not really interested in others.','A',-1],['Make a mess of things.','C',-1],['Seldom feel blue.','N',-1],['Do not have a good imagination.','I',-1]];
+/* Provisional norms for 4-20 scale sums (to be replaced by Indian pilot norms) */
+const NORM={E:[12.5,3.5],A:[15.5,2.8],C:[13.5,3.0],N:[11.5,3.2],I:[15.0,3.0]};
+const SUBMAP={mk:['com','psy','cre','eco'],fin:['num','eco','stat'],hr:['psy','com','law'],ba:['stat','tech','num'],ops:['num','stat','tech'],ent:['cre','com','eco','num'],ib:['eco','law','com'],it:['tech','stat']};
+const W={int:.50,per:.35,sub:.15};
+const AREA='RRIIAASSEECC';
+
+function riasec(a){const s={R:0,I:0,A:0,S:0,E:0,C:0};a.forEach((v,i)=>s[AREA[i%12]]+=(v||3)-1);return s} // 0..40 each (O*NET scoring)
+function big5(p){const s={E:0,A:0,C:0,N:0,I:0};IPIP.forEach(([t,f,k],i)=>{const v=p[i]||3;s[f]+=k>0?v:6-v});return s} // 4..20
+function ips(v){const m=v.reduce((a,b)=>a+b,0)/v.length;const sd=Math.sqrt(v.reduce((a,b)=>a+(b-m)**2,0)/v.length)||1;return v.map(x=>(x-m)/sd)}
+
+function quality(st){ // st: {a:[60], p:[20], ta:[ms...], tp:[ms...]}
+ const flags=[];
+ const all=st.a.concat(st.p);
+ const cnt={};all.forEach(v=>cnt[v]=(cnt[v]||0)+1);
+ const top=Math.max(...Object.values(cnt))/all.length;
+ if(top>=.8)flags.push('same');
+ const t=(st.ta||[]).concat(st.tp||[]).filter(x=>x>0).sort((a,b)=>a-b);
+ if(t.length>20&&t[Math.floor(t.length/2)]<900)flags.push('fast');
+ // Mini-IPIP contradictions: agreeing strongly with both a +keyed and a -keyed item of the same factor
+ let contra=0;['E','A','C','N','I'].forEach(f=>{const pos=[],neg=[];IPIP.forEach(([x,ff,k],i)=>{if(ff===f)(k>0?pos:neg).push(st.p[i]||3)});
+  pos.forEach(a=>neg.forEach(b=>{if(a>=4&&b>=4)contra++;if(a<=2&&b<=2)contra++}))});
+ if(contra>=4)flags.push('contra');
+ const sdA=Math.sqrt(st.a.reduce((s,v)=>s+(v-3)**2,0)/st.a.length);
+ return{flags,contra,ok:!flags.length}}
+
+function score(st){
+ const r=riasec(st.a),b=big5(st.p);
+ const iv=ips(['R','I','A','S','E','C'].map(k=>r[k]));
+ const z={E:(b.E-NORM.E[0])/NORM.E[1],A:(b.A-NORM.A[0])/NORM.A[1],C:(b.C-NORM.C[0])/NORM.C[1],St:-(b.N-NORM.N[0])/NORM.N[1],O:(b.I-NORM.I[0])/NORM.I[1]};
+ const pv=[z.E,z.A,z.C,z.St,z.O];
+ const subs=st.sub||{};const subMean=(()=>{const v=Object.values(subs);return v.length?v.reduce((a,b)=>a+b,0)/v.length:3})();
+ const res=ORDER.map(k=>{const t=T[k];
+  let int=0;for(let i=0;i<6;i++)int+=iv[i]*t[i];int/=6;
+  let per=0;for(let i=0;i<5;i++)per+=pv[i]*t[6+i];per/=5;
+  const su=SUBMAP[k].reduce((a,s)=>a+((subs[s]||3)-subMean),0)/SUBMAP[k].length/2;
+  const tot=W.int*int+W.per*per+W.sub*su;return{k,int,per,sub:su,tot}}).sort((a,b)=>b.tot-a.tot);
+ const q=quality(st);const gap=res[0].tot-res[1].tot;
+ let conf=gap>=CAL.hi?'High':gap>=CAL.mid?'Medium':'Close call';
+ if(!q.ok)conf=conf==='High'?'Medium':'Low';
+ res.forEach(x=>x.pct=Math.max(35,Math.min(97,Math.round(CAL.p0+CAL.p1*x.tot))));
+ const code=['R','I','A','S','E','C'].sort((x,y)=>r[y]-r[x]||'RIASEC'.indexOf(x)-'RIASEC'.indexOf(y)).slice(0,3);
+ return{res,r,b,z,code,q,gap,conf}}
+const CAL={hi:.30,mid:.12,p0:62,p1:35};
+const api={ORDER,T,IPIP,NORM,SUBMAP,W,CAL,riasec,big5,score,quality};
+if(typeof module!=='undefined')module.exports=api;else root.FYF=api;
+})(this);
+</script>
+<script>
 (()=>{
 const $=id=>document.getElementById(id);
-const KEY='yp_fit_v1';
-let S={name:'',a:Array(60).fill(0),i:0,sub:{},sty:{},done:false,rid:''};
-try{const o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&o.a&&o.a.length===60)S=Object.assign(S,o)}catch(e){}
+const KEY='yp_fit_v2';
+const fresh=n=>({name:n||'',a:Array(60).fill(0),i:0,p:Array(20).fill(0),j:0,ta:[],tp:[],sub:{},done:false,rid:''});
+let S=fresh();
+try{const o=JSON.parse(localStorage.getItem(KEY)||'null');if(o&&o.a&&o.a.length===60&&o.p&&o.p.length===20)S=Object.assign(S,o)}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2200)};
 window.show=id=>{document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('on',s.id===id));window.scrollTo({top:0,behavior:'smooth'})};
@@ -227,42 +326,42 @@ const PAIRS=[['tgt','Earn with targets and incentives','std','A steady, predicta
 const SP={
 mk:{n:'Marketing & Sales',s:'Marketing',c:'MKT',e:'📣',r:{E:.4,A:.25,S:.25,C:.1},sub:['com','psy','cre','eco'],sty:['tgt','fld','ppl','fst','big','rel'],
  why:'You are energised by people, ideas and persuasion. Marketing rewards exactly that: understanding customers, telling stories and turning attention into sales.',
- roles:['Brand Manager','Sales & Business Development Manager','Digital Marketing Manager','Market Research Analyst','Key Account Manager'],next:['Consumer behaviour and branding','Digital marketing (SEO, social, ads)','Presentation and negotiation skills'],
+ roles:['Management Trainee – Sales & Marketing','Product / Brand Manager','Market Research Analyst','Account Executive (Advertising)','Sales & Marketing Manager'],emp:'HUL, ITC, Dabur, Asian Paints, P&amp;G, Nestlé India',next:['Consumer behaviour and branding','Digital marketing (SEO, social, ads)','Presentation and negotiation skills'],
  appr:'{n}, you light up where people and ideas meet. That spark is exactly what great brands are built on.',
  lines:['From confused to customer-obsessed. 📣','I don\'t just sell products. I build brands.','Every great brand needs a storyteller. Meet one.']},
 fin:{n:'Finance',s:'Finance',c:'FIN',e:'📈',r:{C:.4,E:.3,I:.3},sub:['num','eco','stat'],sty:['std','dsk','dat','str','det','corp'],
  why:'You enjoy order, numbers and smart decisions. Finance is the language of business, and you seem to speak it naturally.',
- roles:['Financial Analyst','Investment Banking Analyst','Credit & Risk Analyst','Corporate Finance Manager','Wealth Manager'],next:['Financial statement analysis','Excel and financial modelling','Markets, valuation and banking basics'],
+ roles:['Associate – Finance & Accounting','Financial Analyst','Credit & Loans Officer','Financial & Investment Adviser','Finance Manager'],emp:'HDFC Bank, SBI, ICICI, Kotak, Bajaj Finserv, Deloitte, EY',next:['Financial statement analysis','Excel and financial modelling','Markets, valuation and banking basics'],
  appr:'{n}, your mind loves clarity and numbers that add up. That is a rare strength, and money follows it.',
  lines:['Numbers talk. I listen. 📈','From confused to compounding.','I found my balance sheet of life.']},
 hr:{n:'Human Resource Management',s:'HR',c:'HRM',e:'🤝',r:{S:.5,E:.25,C:.25},sub:['psy','com','law'],sty:['std','ppl','str','rel','corp'],
  why:'You care about people and how they grow. HR builds the teams, culture and careers that every company runs on.',
- roles:['HR Business Partner','Talent Acquisition Manager','Learning & Development Manager','Compensation & Benefits Analyst','Employee Relations Manager'],next:['Organisational behaviour','Labour laws and policies','HR analytics and people data'],
+ roles:['HR Executive / HR Manager','Talent Acquisition (Recruitment) Specialist','Training & Staff Development Professional','Personnel & Careers Professional','Employee Relations Specialist'],emp:'TCS, Infosys, Wipro, Reliance, TeamLease, Randstad',next:['Organisational behaviour','Labour laws and policies','HR analytics and people data'],
  appr:'{n}, you naturally see the person behind every role. Companies need people like you more than ever.',
  lines:['People first. Always. 🤝','Great companies are built by great people. I\'ll help build them.','From confused to culture-builder.']},
 ba:{n:'Business Analytics',s:'Analytics',c:'BAN',e:'📊',r:{I:.5,C:.35,R:.15},sub:['stat','tech','num'],sty:['dsk','dat','det','sys'],
  why:'You are curious and you love finding answers hidden in data. Analytics turns that curiosity into decisions companies trust.',
- roles:['Business Analyst','Data Analyst','Product Analyst','Marketing / Sales Analytics Lead','Decision Scientist'],next:['Statistics and Excel','SQL, Python or Power BI','Business problem-solving with data'],
+ roles:['Business / Management Analyst','Data Analyst','Systems Analyst','Statistical Associate','Data Scientist'],emp:'Fractal, Mu Sigma, Accenture, Amazon India, Flipkart, Deloitte',next:['Statistics and Excel','SQL, Python or Power BI','Business problem-solving with data'],
  appr:'{n}, you ask "why?" until the data answers. That curiosity is the most valuable skill of this decade.',
  lines:['In data I trust. 📊','I found the pattern: it was me.','From confused to data-driven.']},
 ops:{n:'Operations & Supply Chain',s:'Operations',c:'OPS',e:'⚙️',r:{R:.35,C:.35,E:.2,I:.1},sub:['num','stat','tech'],sty:['fld','str','det','sys','corp'],
  why:'You like making things work, on time and without waste. Operations keeps factories, warehouses and deliveries running across India.',
- roles:['Operations Manager','Supply Chain Analyst','Procurement Manager','Logistics Manager','Quality / Lean Six Sigma Lead'],next:['Operations research and planning','Supply chain and logistics basics','Lean, Six Sigma and ERP tools'],
+ roles:['Associate – Supply Chain Management','Purchase Executive','Vendor Development Executive','Supply & Logistics Manager','Manufacturing / Plant Operations Manager'],emp:'Tata Motors, Maruti Suzuki, Mahindra Logistics, Delhivery, Amazon India',next:['Operations research and planning','Supply chain and logistics basics','Lean, Six Sigma and ERP tools'],
  appr:'{n}, you see how things should run, and you make them run better. Every business needs that engine.',
  lines:['I make things run. ⚙️','From confused to perfectly optimised.','Smooth operator, officially.']},
 ent:{n:'Entrepreneurship',s:'Entrepreneurship',c:'ENT',e:'🚀',r:{E:.55,A:.25,I:.1,R:.1},sub:['cre','com','eco','num'],sty:['tgt','fst','big','own','rel'],
  why:'You think big, move fast and want to build something of your own. Entrepreneurship turns that restlessness into ventures.',
- roles:['Startup Founder','Family Business Leader','New Venture / Innovation Manager','Startup Business Development Lead','Product Manager'],next:['Business model and idea validation','Finance for founders','Selling, pitching and networking'],
+ roles:['Founder / Working Proprietor','Family Business Leader','Retail & Wholesale Trade Manager','Business Development Manager','Startup Operations Lead'],emp:'Your own venture, family business, startups under Startup India',next:['Business model and idea validation','Finance for founders','Selling, pitching and networking'],
  appr:'{n}, you don\'t wait for opportunities. You imagine them. India\'s next big idea could be yours.',
  lines:['Not a job seeker. A job creator. 🚀','From confused to founder mode.','I\'m building something. Watch this space.']},
 ib:{n:'International Business',s:'International Business',c:'INT',e:'🌍',r:{E:.4,S:.25,C:.2,I:.15},sub:['eco','law','com'],sty:['fld','glb','big','rel','fst'],
  why:'You are drawn to the wider world: cultures, markets and big moves. International Business takes Indian brands global and global brands to India.',
- roles:['Export-Import Manager','International Marketing Manager','Global Sourcing Specialist','Trade & Business Development Executive','Foreign Market Analyst'],next:['International trade and EXIM policy','Global economics and markets','Cross-cultural communication'],
+ roles:['Export Manager','Manager – Import & Export','Clearing & Forwarding Agent','Trade Broker / Sourcing Specialist','International Sales Professional'],emp:'Tata International, Adani Ports, DP World, Maersk, export houses',next:['International trade and EXIM policy','Global economics and markets','Cross-cultural communication'],
  appr:'{n}, your thinking already has a passport. The world is a bigger stage, and you belong on it.',
  lines:['My market is the world. 🌍','From confused to cross-border.','Destination: global.']},
 it:{n:'IT & Systems Management',s:'IT & Systems',c:'ITS',e:'💻',r:{I:.35,C:.35,R:.3},sub:['tech','stat'],sty:['dsk','dat','sys','det','str'],
  why:'You enjoy logic, systems and technology. IT management bridges business and tech, one of the fastest-growing spaces in India.',
- roles:['IT Project Manager','ERP / SAP Consultant','Systems Analyst','Product Manager (Tech)','IT Business Consultant'],next:['Information systems and ERP','Project management (Agile, Scrum)','Basics of cloud, data and cybersecurity'],
+ roles:['IT Services Manager','Systems Analyst','Database Designer / Administrator','ICT Sales Professional','IT Project Manager'],emp:'TCS, Infosys, HCLTech, Wipro, IBM, Accenture',next:['Information systems and ERP','Project management (Agile, Scrum)','Basics of cloud, data and cybersecurity'],
  appr:'{n}, you understand how systems think. In a digital India, that makes you the bridge everyone needs.',
  lines:['Business brain. Tech heart. 💻','From confused to fully configured.','System upgraded: clarity installed.']}
 };
@@ -274,44 +373,60 @@ const okName=()=>$('go').disabled=nm.value.trim().length<2;okName();
 nm.addEventListener('input',okName);nm.addEventListener('keydown',e=>{if(e.key==='Enter'&&!$('go').disabled)$('go').click()});
 const answered=S.a.filter(Boolean).length;
 if(S.done){$('resume').style.display='block';$('resume').innerHTML='You already have a result. <a href="#" id="seeRes" style="color:var(--gold);font-weight:700">See my result →</a>';$('seeRes').onclick=e=>{e.preventDefault();results()}}
-else if(answered>0){$('resume').style.display='block';$('resume').textContent='Welcome back! You will continue from question '+(Math.min(S.i,59)+1)+'.'}
-$('go').onclick=()=>{S.name=nm.value.trim().replace(/\s+/g,' ');save();if(S.done&&S.a.filter(Boolean).length===60){results();return}show('s-l1');renderQ()};
+else if(answered>0){$('resume').style.display='block';$('resume').textContent='Welcome back! You will continue where you left off.'}
+$('go').onclick=()=>{S.name=nm.value.trim().replace(/\s+/g,' ');save();if(S.done){results();return}
+ if(S.a.every(Boolean)&&S.p.every(Boolean)){show('s-l2');renderSub()}else if(S.a.every(Boolean)){show('s-lp');renderP()}else{show('s-l1');renderQ()}};
 
 /* ---------- LENS 1 UI ---------- */
 $('opts').innerHTML=OPT.map((o,k)=>`<button class="opt" data-v="${k+1}"><span>${o[0]}</span>${o[1]}</button>`).join('');
-let lock=false;
-window.renderQ=()=>{const i=S.i;$('qt').textContent=Q[i];$('l1c').textContent=(i+1)+' / 60';$('l1p').style.width=(i/60*75)+'%';
+let lock=false,t0=0;
+const miniBars=()=>{const r=FYF.riasec(S.a.map(v=>v||1));$('mini').innerHTML='RIASEC'.split('').map(l=>`<div><i style="height:${4+r[l]}px"></i>${l}</div>`).join('')};
+window.renderQ=()=>{const i=S.i;t0=performance.now();miniBars();$('qt').textContent=Q[i];$('l1c').textContent=(i+1)+' / 60';$('l1p').style.width=(i/60*75)+'%';
  document.querySelectorAll('.opt').forEach(b=>b.classList.toggle('sel',+b.dataset.v===S.a[i]));$('qback').style.visibility=i?'visible':'hidden'};
-document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(lock)return;lock=true;S.a[S.i]=+b.dataset.v;b.classList.add('sel');save();
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(lock)return;lock=true;S.ta[S.i]=Math.round(performance.now()-t0);S.a[S.i]=+b.dataset.v;b.classList.add('sel');save();
  setTimeout(()=>{lock=false;const n=S.i+1;const ch=$('cheer');if(CHEER[n]){ch.textContent=CHEER[n];ch.style.display='block';setTimeout(()=>ch.style.display='none',2200)}
-  if(n>=60||S.a.every(Boolean)&&n>=60){S.i=59;save();show('s-l2');renderSub()}else{S.i=n;save();renderQ()}},220)});
+  if(n>=60){S.i=59;save();levelUp(1)}else{S.i=n;save();renderQ()}},220)});
 $('qback').onclick=()=>{if(S.i>0){S.i--;renderQ()}};
 $('qhome').onclick=()=>{save();show('s-start');toast('Saved. Come back anytime.')};
-document.addEventListener('keydown',e=>{if($('s-l1').classList.contains('on')&&e.key>='1'&&e.key<='5'){document.querySelector(`.opt[data-v="${e.key}"]`).click()}});
+document.addEventListener('keydown',e=>{if(e.key<'1'||e.key>'5')return;if($('s-l1').classList.contains('on'))document.querySelector(`.opt:not(.popt)[data-v="${e.key}"]`).click();else if($('s-lp').classList.contains('on'))document.querySelector(`.popt[data-v="${e.key}"]`).click()});
 
-/* ---------- LENS 2 UI ---------- */
+/* ---------- LEVEL UP ---------- */
+const NICK={R:['🛠️','The Maker'],I:['🔬','The Thinker'],A:['🎨','The Creator'],S:['🤝','The Helper'],E:['📣','The Persuader'],C:['🗂️','The Organiser']};
+const B5N={E:['⚡','The Energiser','Extraversion','You get energy from people and action.'],A:['💛','The Connector','Agreeableness','You notice how others feel and you build trust.'],C:['🎯','The Planner','Conscientiousness','You like order and you finish what you start.'],St:['🧘','The Steady Mind','Emotional stability','You stay calm when things get messy.'],O:['🧭','The Explorer','Openness to ideas','You love new ideas and big-picture thinking.']};
+function levelUp(n){const r=FYF.riasec(S.a);
+ if(n===1){const top=['R','I','A','S','E','C'].sort((x,y)=>r[y]-r[x])[0];
+  $('upB').textContent=NICK[top][0];$('upE').textContent='Level 1 complete · badge unlocked';$('upH').textContent=NICK[top][1];
+  $('upP').textContent='Your strongest interest area is '+RIA[top][0]+': '+RIA[top][1].toLowerCase()+'.';
+  $('upF').innerHTML='🧠 <b>Did you know?</b> Psychologist John Holland showed that people are happiest in work that matches their interest type. You just found yours.';
+  $('upGo').textContent='Start Level 2: How you\'re wired →';$('upGo').onclick=()=>{show('s-lp');renderP()}}
+ else{const z=FYF.score(S).z;const top=Object.keys(z).sort((x,y)=>z[y]-z[x])[0];
+  $('upB').textContent=B5N[top][0];$('upE').textContent='Level 2 complete · second badge unlocked';$('upH').textContent=B5N[top][1];
+  $('upP').textContent='Your stand-out trait is '+B5N[top][2]+'. '+B5N[top][3];
+  $('upF').innerHTML='📊 <b>Did you know?</b> The Big Five is the most researched personality model in psychology. Companies like yours-to-be use it in hiring.';
+  $('upGo').textContent='Start Level 3: Your strengths →';$('upGo').onclick=()=>{show('s-l2');renderSub()}}
+ show('s-up')}
+
+/* ---------- LEVEL 2 UI: Mini-IPIP ---------- */
+const POPT=[['1','Very inaccurate'],['2','Moderately inaccurate'],['3','Neither'],['4','Moderately accurate'],['5','Very accurate']];
+$('popts').innerHTML=POPT.map((o,k)=>`<button class="opt popt" data-v="${k+1}"><span>${o[0]}</span>${o[1]}</button>`).join('');
+let plock=false,p0=0;
+window.renderP=()=>{const j=S.j;p0=performance.now();$('pt').textContent='I '+FYF.IPIP[j][0].charAt(0).toLowerCase()+FYF.IPIP[j][0].slice(1);$('lpc').textContent=(j+1)+' / 20';$('lpp').style.width=(75+j/20*15)+'%';
+ document.querySelectorAll('.popt').forEach(b=>b.classList.toggle('sel',+b.dataset.v===S.p[j]));$('pback').style.visibility=j?'visible':'hidden'};
+document.querySelectorAll('.popt').forEach(b=>b.onclick=()=>{if(plock)return;plock=true;S.tp[S.j]=Math.round(performance.now()-p0);S.p[S.j]=+b.dataset.v;b.classList.add('sel');save();
+ setTimeout(()=>{plock=false;const n=S.j+1;if(n>=20){S.j=19;save();levelUp(2)}else{S.j=n;save();renderP()}},220)});
+$('pback').onclick=()=>{if(S.j>0){S.j--;renderP()}else{show('s-l1');renderQ()}};
+$('phome').onclick=()=>{save();show('s-start');toast('Saved. Come back anytime.')};
+
+/* ---------- LEVEL 3 UI ---------- */
 function renderSub(){$('subj').innerHTML=SUB.map(([k,t,d])=>`<div class="card srow"><div><h4>${t}</h4><p>${d}</p></div><div class="chips">${SUBE.map((e,v)=>`<button class="chip${S.sub[k]===v+1?' sel':''}" data-k="${k}" data-v="${v+1}" aria-label="${t} ${v+1} of 5">${e}</button>`).join('')}</div></div>`).join('');
  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{S.sub[c.dataset.k]=+c.dataset.v;save();document.querySelectorAll(`.chip[data-k="${c.dataset.k}"]`).forEach(x=>x.classList.toggle('sel',x===c));chk2()});chk2()}
 const chk2=()=>$('l2go').disabled=SUB.some(s=>!S.sub[s[0]]);
-$('l2go').onclick=()=>{show('s-l3');renderPairs()};
-
-/* ---------- LENS 3 UI ---------- */
-function renderPairs(){$('pairs').innerHTML=PAIRS.map((p,i)=>`<div class="pq${S.sty[i]?' done':''}"><div class="pqh">QUESTION ${i+1} OF 8 <span>PICK ONE</span></div><div class="pair"><button data-i="${i}" data-v="${p[0]}" class="${S.sty[i]===p[0]?'sel':''}">${p[1]}</button><span class="or">or</span><button data-i="${i}" data-v="${p[2]}" class="${S.sty[i]===p[2]?'sel':''}">${p[3]}</button></div></div>`).join('');
- document.querySelectorAll('.pair button').forEach(b=>b.onclick=()=>{S.sty[b.dataset.i]=b.dataset.v;save();b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));b.closest('.pq').classList.add('done');chk3()});chk3()}
-const chk3=()=>$('l3go').disabled=PAIRS.some((p,i)=>!S.sty[i]);
-$('l3go').onclick=()=>{S.done=true;if(!S.rid)S.rid=rnd(4);S.date=S.date||ymd(new Date());save();results()};
+$('l2go').onclick=()=>{S.done=true;if(!S.rid)S.rid=rnd(4);S.date=S.date||ymd(new Date());save();reveal()};
+function reveal(){show('s-rev');const L=['Reading your 60 interest answers','Scoring your Big Five personality','Matching with 33 official Indian job groups (NCO-2015)','Checking your answers are consistent'];$('revL').innerHTML='';
+ L.forEach((x,i)=>setTimeout(()=>{$('revL').insertAdjacentHTML('beforeend',`<li><b>✓</b> ${x}</li>`)},500+i*750));setTimeout(results,500+L.length*750+500)}
 
 /* ---------- SCORING ---------- */
-function score(){
- const area={R:0,I:0,A:0,S:0,E:0,C:0};S.a.forEach((v,i)=>area[AREA[i%12]]+=v||1);
- const an={};for(const k in area)an[k]=(area[k]-10)/40;
- const styleSet=new Set(Object.values(S.sty));
- const res=ORDER.map(k=>{const p=SP[k];let it=0;for(const l in p.r)it+=p.r[l]*an[l];
-  const su=p.sub.reduce((t,s)=>t+((S.sub[s]||3)-1)/4,0)/p.sub.length;
-  const st=p.sty.filter(t=>styleSet.has(t)).length/p.sty.length;
-  const tot=.5*it+.3*su+.2*st;return{k,p,tot,pct:Math.max(40,Math.min(98,Math.round(30+68*tot)))}}).sort((a,b)=>b.tot-a.tot);
- const code=Object.keys(area).sort((a,b)=>area[b]-area[a]||'RIASEC'.indexOf(a)-'RIASEC'.indexOf(b)).slice(0,3);
- return{res,area,code}}
+function score(){const R=FYF.score(S);R.res.forEach(x=>x.p=SP[x.k]);return R}
 
 /* ---------- CERT ID (self-verifying) ---------- */
 const AL='ABCDEFGHJKMNPQRSTUVWXYZ23456789';
@@ -327,7 +442,8 @@ let R,cardStyle=0,lineIx=0;
 function results(){R=score();const t=R.res[0],p=t.p;show('s-res');
  $('appr').textContent='"'+p.appr.replace('{n}',S.name.split(' ')[0])+'"';
  $('tEm').textContent=p.e;$('tPct').textContent='YOUR BEST FIT · '+t.pct+'% MATCH';$('tName').textContent=p.n;$('tWhy').textContent=p.why;
- $('tRoles').innerHTML=p.roles.map(r=>`<li>${r}</li>`).join('');$('tNext').innerHTML=p.next.map(r=>`<li>${r}</li>`).join('');
+ $('tRoles').innerHTML=p.roles.map(r=>`<li>${r}</li>`).join('');$('tEmp').innerHTML='<b>Who hires:</b> '+p.emp;
+ renderConf();$('tNext').innerHTML=p.next.map(r=>`<li>${r}</li>`).join('');
  $('rank').innerHTML=R.res.map((x,i)=>`<div class="rk"><span>${x.p.e}</span><div><b style="float:none;color:var(--ink);font-family:var(--sans)">${i+1}. ${x.p.n}</b><div class="bar"><i style="width:${x.pct}%"></i></div></div><b>${x.pct}%</b></div>`).join('');
  $('code').textContent=R.code.join(' · ');
  $('ria').innerHTML=R.code.map(l=>`<div><b>${l}</b> <strong>${RIA[l][0]}</strong><span>${RIA[l][1]}</span></div>`).join('');
@@ -336,10 +452,22 @@ function results(){R=score();const t=R.res[0],p=t.p;show('s-res');
  const link='https://youngprofessor.in/fit.html';const txt=`I just found my best-fit specialisation: ${p.n} ${p.e}\nIt took 8 minutes and ended months of confusion.\nFind yours free 👉 ${link}\n🌱 Let's grow together`;
  R.txt=txt;
  fontsReady().then(()=>{drawCert();drawCard()})}
-$('again').onclick=()=>{if(!confirm('Start again? Your current result will be replaced.'))return;const n=S.name;S={name:n,a:Array(60).fill(0),i:0,sub:{},sty:{},done:false,rid:''};save();show('s-start')};
+$('again').onclick=()=>{if(!confirm('Start again? Your current result will be replaced.'))return;S=fresh(S.name);save();show('s-start')};
+function renderConf(){const L=['Strong fit','Good fit','Also fits'];
+ $('top3').innerHTML=R.res.slice(0,3).map((x,i)=>`<div class="card t3"><div class="em2">${x.p.e}</div><div><small>${i+1} · ${L[i].toUpperCase()} · ${x.pct}%</small><h3>${x.p.n}</h3><p class="small" style="margin:4px 0 0">${x.p.roles.slice(0,2).join(' · ')}</p></div></div>`).join('');
+ const a=R.res[0].p.s,b=R.res[1].p.s,Q=R.q.flags;
+ const msg={'High':`Your answers point clearly to <b>${a}</b>. A retake would very likely give the same answer.`,
+  'Medium':`<b>${a}</b> leads, with <b>${b}</b> close behind. Both are good choices for you.`,
+  'Close call':`It's a close call between <b>${a}</b> and <b>${b}</b>. Both suit you. Look at the jobs below and talk it through with your professor.`,
+  'Low':`Your answers had some warning signs, so treat this result as rough.`}[R.conf];
+ const why={fast:'you answered very fast',same:'many answers were the same',contra:'some personality answers contradicted each other'};
+ $('conf').innerHTML=`<h3 style="margin:0 0 6px">Confidence: <b class="lv" style="color:${R.conf==='High'?'var(--calm)':R.conf==='Low'?'var(--red)':'var(--gold)'}">${R.conf.toUpperCase()}</b></h3><p class="lead" style="margin:0">${msg}</p>`+(Q.length?`<p class="small" style="margin:10px 0 0">⚠️ We noticed ${Q.map(f=>why[f]).join(' and ')}. For an accurate result, <a href="#" id="redo" style="color:var(--gold)">retake slowly</a>.</p>`:'');
+ if(Q.length)$('redo').onclick=e=>{e.preventDefault();$('again').click()};
+ const z=R.z,T5=[['E','Extraversion'],['A','Agreeableness'],['C','Conscientiousness'],['St','Emotional stability'],['O','Openness to ideas']];
+ $('b5').innerHTML=T5.map(([k,n])=>{const pc=Math.round(100/(1+Math.exp(-1.7*z[k])));return `<div><span>${B5N[k][0]} ${n}</span><div class="bar"><i style="width:${pc}%"></i></div><b>${pc}</b></div>`}).join('')+'<p class="small" style="margin:4px 0 0">Number = roughly where you sit out of 100 students. No trait is good or bad.</p>'}
 
 /* ---------- DRAWING HELPERS ---------- */
-function fontsReady(){const f=['700 60px Cinzel','400 60px "DM Serif Display"','italic 400 30px "DM Serif Display"','700 21px Manrope','400 14px Manrope','500 13px "JetBrains Mono"','400 170px "Herr Von Muellerhoff"'];
+function fontsReady(){const f=['700 60px Cinzel','400 60px "DM Serif Display"','italic 400 30px "DM Serif Display"','700 21px Manrope','400 14px Manrope','500 13px "JetBrains Mono"','400 170px "Herr Von Muellerhoff"','400 80px "Great Vibes"','700 80px "Playfair Display"'];
  return Promise.all(f.map(x=>document.fonts.load(x).catch(()=>{}))).then(()=>img('logo-badge.png')).then(a=>{IM.logo=a})}
 const IM={};function img(src){return new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=src})}
 function spaced(x,text,cx,y,sp,align='center'){const w=[...text].reduce((t,c)=>t+x.measureText(c).width+sp,0)-sp;let px=align==='center'?cx-w/2:align==='left'?cx:cx-w;for(const c of text){x.fillText(c,px,y);px+=x.measureText(c).width+sp}return w}
@@ -410,12 +538,97 @@ function drawSeal(x,cx,cy,R0){const k=R0/100;x.save();x.translate(cx,cy);x.scale
  x.textBaseline='top';x.restore()}
 
 /* ---------- SHARE CARDS ---------- */
-const STYLES=['Boarding Pass','Clarity Express','Route Found'];
-function drawCard(){const c=$('card'),x=c.getContext('2d'),W=1080,H=1350,t=R.res[0],p=t.p,line=p.lines[lineIx%p.lines.length],first=S.name;x.clearRect(0,0,W,H);x.textAlign='center';x.textBaseline='alphabetic';
+function SPC(x,t,cx,y,s,al){const a=x.textAlign;x.textAlign='left';spaced(x,t,cx,y,s,al||'center');x.textAlign=a}
+/* ---------- PREMIUM NAME-FIRST CARDS (6 shapes) ---------- */
+const ROLE={mk:'Future Brand Leader',fin:'Future Finance Leader',hr:'Future People Leader',ba:'Future Data Strategist',ops:'Future Operations Head',ent:'Future Founder',ib:'Future Global Leader',it:'Future Tech Leader'};
+function nameParts(){const n=(S.name||'Student').trim().split(/\s+/);return n.length>1?[n[0],n.slice(1).join(' ')]:[n[0],'']}
+function brandRow(x,cy,dark){const W=1080;x.save();x.textBaseline='alphabetic';x.font='400 42px "DM Serif Display"';const a=x.measureText('young').width,b=x.measureText('professor').width,c=x.measureText('.in').width;const tw=Math.max(a+b+c,330),r=40,tot=r*2+20+tw;let lx=W/2-tot/2;
+ x.fillStyle='#E3161E';x.beginPath();x.arc(lx+r,cy,r+5,0,7);x.fill();if(IM.logo){x.save();x.beginPath();x.arc(lx+r,cy,r,0,7);x.clip();x.drawImage(IM.logo,lx,cy-r,r*2,r*2);x.restore()}
+ let tx=lx+r*2+20;x.textAlign='left';x.fillStyle=dark?'#2a1d1a':'#F4EFEA';x.fillText('young',tx,cy+4);x.fillStyle='#E3161E';x.fillText('professor',tx+a,cy+4);x.fillStyle=dark?'#2a1d1a':'#F4EFEA';x.fillText('.in',tx+a+b,cy+4);
+ x.font='500 15px "JetBrains Mono"';x.fillStyle=dark?'#7a6560':'#A39A94';SPC(x,'DR. BIKRAM PAUL SINGH LEHRI',tx,cy+32,3.2,'left');x.restore()}
+function ctaBar(x,bg){const W=1080,H=1350;x.save();rr(x,70,H-156,940,100,50);x.fillStyle=bg||'#E3161E';x.shadowColor='rgba(0,0,0,.35)';x.shadowBlur=30;x.fill();x.restore();
+ x.textBaseline='middle';x.fillStyle='#fff';x.font='700 32px Manrope';x.textAlign='left';x.fillText('Find yours free →',112,H-106);x.textAlign='right';x.fillText('youngprofessor.in/fit',W-112,H-106);x.textBaseline='alphabetic';x.textAlign='center'}
+function gGold(x,x0,x1){const g=x.createLinearGradient(x0,0,x1,0);g.addColorStop(0,'#9c711a');g.addColorStop(.3,'#e9c766');g.addColorStop(.45,'#fff1bf');g.addColorStop(.6,'#c9a24a');g.addColorStop(1,'#8a641a');return g}
+function shadowed(x,f){x.save();x.shadowColor='rgba(0,0,0,.55)';x.shadowBlur=50;x.shadowOffsetY=24;f();x.restore()}
+function pill(x,cx,cy,text,bg,fg,font){x.font=font;const w=x.measureText(text).width+70;rr(x,cx-w/2,cy-42,w,84,22);x.fillStyle=bg;x.fill();x.fillStyle=fg;x.textBaseline='middle';x.fillText(text,cx,cy+2);x.textBaseline='alphabetic'}
+function bgRad(x,c0,c1,c2){const W=1080,H=1350;let g=x.createRadialGradient(W/2,H*.3,50,W/2,H*.3,1100);g.addColorStop(0,c0);g.addColorStop(.6,c1);g.addColorStop(1,c2);x.fillStyle=g;x.fillRect(0,0,W,H)}
+/* 1 · Clarity Stamp: perforated postage stamp */
+function cStamp(x,t,p){const W=1080;bgRad(x,'#6a1020','#2a0a10','#140608');brandRow(x,100,0);
+ const X=120,Y=200,w=840,h=900,o=document.createElement('canvas');o.width=w;o.height=h;const y=o.getContext('2d');let g=y.createLinearGradient(0,0,w,h);g.addColorStop(0,'#fffaf2');g.addColorStop(1,'#f1e3c6');y.fillStyle=g;y.fillRect(0,0,w,h);
+ y.globalCompositeOperation='destination-out';const rr2=13,st=40;for(let i=st/2;i<w;i+=st){y.beginPath();y.arc(i,0,rr2,0,7);y.arc(i,h,rr2,0,7);y.fill()}for(let j=st/2;j<h;j+=st){y.beginPath();y.arc(0,j,rr2,0,7);y.arc(w,j,rr2,0,7);y.fill()}
+ shadowed(x,()=>x.drawImage(o,X,Y));x.strokeStyle='#c9a24a';x.lineWidth=2;x.strokeRect(X+38,Y+38,w-76,h-76);x.strokeStyle='#8a1c2b';x.lineWidth=1;x.strokeRect(X+48,Y+48,w-96,h-96);
+ x.textAlign='center';x.fillStyle='#8a1c2b';x.font='italic 400 46px "DM Serif Display"';x.fillText('“Clarity looks good on me.”',W/2,Y+150);
+ x.fillStyle=gGold(x,W/2-110,W/2+110);x.fillRect(W/2-110,Y+190,220,2);
+ x.fillStyle='#2a1d1a';fit(x,S.name,'700 #px "Playfair Display"',112,680);x.fillText(S.name,W/2,Y+320);
+ x.fillStyle='#8a6a2a';x.font='500 22px "JetBrains Mono"';SPC(x,'★ '+ROLE[t.k].toUpperCase()+' ★',W/2,Y+380,5);
+ pill(x,W/2,Y+480,p.e+' '+p.n+'  ·  '+t.pct+'%','#8a1c2b','#fff','700 36px Manrope');
+ x.fillStyle='#7a6560';x.font='400 24px Manrope';x.fillText('Found with the 3-lens Find Your Fit test',W/2,Y+590);
+ x.fillStyle='#8a1c2b';x.font='italic 400 36px "DM Serif Display"';x.fillText('Confusion? Never again.',W/2,Y+680);
+ drawSeal(x,X+w-70,Y+h-60,82);x.textAlign='center';x.textBaseline='alphabetic';ctaBar(x)}
+/* 2 · Cover Star: magazine with spine, page curl and barcode */
+function cCover(x,t,p){const W=1080;x.fillStyle='#141010';x.fillRect(0,0,W,1350);const [f,l]=nameParts();
+ x.save();x.translate(W/2,640);x.rotate(-2*Math.PI/180);x.translate(-W/2,-640);const X=100,Y=60,w=880,h=1110;
+ shadowed(x,()=>{x.fillStyle='#E3161E';x.fillRect(X,Y,w,h)});let g=x.createLinearGradient(0,Y,0,Y+h);g.addColorStop(0,'#E3161E');g.addColorStop(.6,'#8a1c2b');g.addColorStop(1,'#3a0a12');x.fillStyle=g;x.fillRect(X,Y,w,h);
+ g=x.createLinearGradient(X,0,X+40,0);g.addColorStop(0,'rgba(0,0,0,.45)');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(X,Y,40,h);
+ x.textAlign='left';x.fillStyle='#fff';x.font='700 190px "Playfair Display"';x.fillText('YP',X+56,Y+190);
+ x.textAlign='right';x.font='500 17px "JetBrains Mono"';x.fillStyle='#ffe3c4';SPC(x,'CAREER EDITION',X+w-50,Y+70,3,'right');SPC(x,'YOUNGPROFESSOR.IN',X+w-50,Y+100,3,'right');SPC(x,'DR. BIKRAM PAUL S. LEHRI',X+w-50,Y+130,3,'right');
+ x.textAlign='left';x.fillStyle='#f3d9a0';x.font='500 22px "JetBrains Mono"';SPC(x,'COVER STORY',X+60,Y+270,5,'left');
+ x.fillStyle='#fff';fit(x,f,'700 #px "Playfair Display"',150,720);x.fillText(f,X+56,Y+410);if(l){fit(x,l,'700 #px "Playfair Display"',150,720);x.fillText(l,X+56,Y+550)}
+ x.font='italic 400 58px "DM Serif Display"';x.fillText('“I don\'t guess. I know.”',X+60,Y+(l?660:540));
+ const lines=[p.e+' '+p.n+' · '+t.pct+'% match','The making of a '+ROLE[t.k],'How 8 minutes ended the confusion'];x.font='700 32px Manrope';
+ lines.forEach((s,i)=>{const yy=Y+760+i*62;x.fillStyle='#E2B85C';x.fillRect(X+60,yy-30,6,40);x.fillStyle='#fff';fit(x,s,'700 #px Manrope',32,700);x.fillText(s,X+84,yy)});
+ x.fillStyle='#E2B85C';x.beginPath();x.arc(X+w-130,Y+520,96,0,7);x.fill();x.fillStyle='#2a1d1a';x.textAlign='center';x.font='700 22px Manrope';x.fillText('EXCLUSIVE',X+w-130,Y+500);x.font='700 54px "Playfair Display"';x.fillText(t.pct+'%',X+w-130,Y+556);
+ x.fillStyle='#fff';x.fillRect(X+w-200,Y+h-120,150,80);x.fillStyle='#111';for(let i=0,bx=X+w-190;bx<X+w-60;i++){const bw=1+((i*7)%4);x.fillRect(bx,Y+h-110,bw,50);bx+=bw+2}
+ x.beginPath();x.moveTo(X+w,Y+h-90);x.lineTo(X+w-90,Y+h);x.lineTo(X+w,Y+h);x.closePath();x.fillStyle='#141010';x.fill();
+ x.beginPath();x.moveTo(X+w,Y+h-90);x.lineTo(X+w-90,Y+h);x.lineTo(X+w-70,Y+h-70);x.closePath();g=x.createLinearGradient(X+w-90,Y+h-90,X+w,Y+h);g.addColorStop(0,'#f3d9a0');g.addColorStop(1,'#8a6a2a');x.fillStyle=g;x.fill();
+ x.restore();x.textAlign='center';ctaBar(x,'#0B0A0A')}
+/* 3 · Clarity Award: medal on a ribbon */
+function cMedal(x,t,p){const W=1080;x.fillStyle='#0B0A0A';x.fillRect(0,0,W,1350);let g=x.createRadialGradient(W/2,640,60,W/2,640,700);g.addColorStop(0,'rgba(226,184,92,.28)');g.addColorStop(1,'rgba(226,184,92,0)');x.fillStyle=g;x.fillRect(0,0,W,1350);brandRow(x,90,0);
+ const cy=690,R0=330;[[-1,'#8a1c2b'],[1,'#a51d2f']].forEach(([s,c])=>{x.beginPath();x.moveTo(W/2+s*330,150);x.lineTo(W/2+s*200,150);x.lineTo(W/2+s*20,cy-R0+40);x.lineTo(W/2+s*150,cy-R0+40);x.closePath();x.fillStyle=c;x.fill();x.strokeStyle='#E2B85C';x.lineWidth=4;x.stroke()});
+ shadowed(x,()=>{x.beginPath();x.arc(W/2,cy,R0,0,7);x.fillStyle=gGold(x,W/2-R0,W/2+R0);x.fill()});
+ x.beginPath();for(let i=0;i<72;i++){const a=i/72*Math.PI*2,r=i%2?R0-18:R0-6;x.lineTo(W/2+r*Math.cos(a),cy+r*Math.sin(a))}x.closePath();x.strokeStyle='rgba(90,61,10,.5)';x.lineWidth=2;x.stroke();
+ x.beginPath();x.arc(W/2,cy,R0-36,0,7);x.fillStyle='#140d0d';x.fill();x.strokeStyle='#E2B85C';x.lineWidth=3;x.stroke();
+ x.textAlign='center';x.font='80px sans-serif';x.fillText('🏆',W/2,cy-150);x.fillStyle='#E2B85C';x.font='500 20px "JetBrains Mono"';SPC(x,'THE CLARITY AWARD GOES TO',W/2,cy-80,4);
+ x.fillStyle=gGold(x,W/2-250,W/2+250);fit(x,S.name,'700 #px "Playfair Display"',96,500);x.fillText(S.name,W/2,cy+20);
+ x.fillStyle='#ddd';x.font='400 28px Manrope';x.fillText('for finding a true fit in',W/2,cy+80);x.fillStyle='#ff4a50';fit(x,p.n,'700 #px "Playfair Display"',50,480);x.fillText(p.n,W/2,cy+150);
+ x.fillStyle='#E2B85C';x.font='500 24px "JetBrains Mono"';SPC(x,'“CERTIFIED SURE OF MYSELF.”',W/2,1090,4);x.fillStyle='#A39A94';x.font='400 24px Manrope';x.fillText(ROLE[t.k]+' · '+t.pct+'% match',W/2,1135);ctaBar(x)}
+/* 4 · Marquee: cinema board with light bulbs */
+function cMarquee(x,t,p){const W=1080;x.fillStyle='#0B0A0A';x.fillRect(0,0,W,1350);brandRow(x,90,0);const [f,l]=nameParts();
+ const X=70,Y=180,w=940,h=920;shadowed(x,()=>{rr(x,X,Y,w,h,40);x.fillStyle='#8a1c2b';x.fill()});rr(x,X+56,Y+56,w-112,h-112,18);x.fillStyle='#0d0909';x.fill();x.strokeStyle='#E2B85C';x.lineWidth=3;x.stroke();
+ const bulb=(bx,by)=>{let g=x.createRadialGradient(bx,by,2,bx,by,22);g.addColorStop(0,'#fffbe6');g.addColorStop(.4,'#ffd76a');g.addColorStop(1,'rgba(255,200,80,0)');x.fillStyle=g;x.beginPath();x.arc(bx,by,22,0,7);x.fill()};
+ for(let bx=X+40;bx<=X+w-40;bx+=60){bulb(bx,Y+28);bulb(bx,Y+h-28)}for(let by=Y+88;by<=Y+h-88;by+=60){bulb(X+28,by);bulb(X+w-28,by)}
+ x.textAlign='center';x.fillStyle='#E2B85C';x.font='500 24px "JetBrains Mono"';SPC(x,'NOW INTRODUCING',W/2,Y+170,7);
+ x.lineWidth=3;x.strokeStyle='#E2B85C';fit(x,f.toUpperCase(),'700 #px "Playfair Display"',140,760);x.strokeText(f.toUpperCase(),W/2,Y+320);
+ x.fillStyle='#fff';if(l){fit(x,l.toUpperCase(),'700 #px "Playfair Display"',140,760);x.fillText(l.toUpperCase(),W/2,Y+460)}
+ const by=Y+(l?560:460);x.font='700 30px Manrope';const s=ROLE[t.k]+' · '+p.e+' '+p.n;const sw=Math.min(x.measureText(s).width+60,760);rr(x,W/2-sw/2,by-40,sw,70,35);x.strokeStyle='#E3161E';x.lineWidth=3;x.stroke();x.fillStyle='#fff';fit(x,s,'700 #px Manrope',30,700);x.textBaseline='middle';x.fillText(s,W/2,by-4);x.textBaseline='alphabetic';
+ x.fillStyle='#fff';x.font='700 70px "Playfair Display"';x.fillText('Future decided.',W/2,Y+(l?720:640));x.fillStyle='#ff3b42';x.fillText('Watch me.',W/2,Y+(l?800:720));ctaBar(x)}
+/* 5 · Hall of Clarity: arched plaque with screws */
+function cPlaque(x,t,p){const W=1080;let g=x.createLinearGradient(0,0,0,1350);g.addColorStop(0,'#2a0a10');g.addColorStop(1,'#0B0A0A');x.fillStyle=g;x.fillRect(0,0,W,1350);brandRow(x,90,0);
+ const X=130,Y=190,w=820,h=920,ar=w/2;const path=()=>{x.beginPath();x.moveTo(X,Y+h);x.lineTo(X,Y+ar);x.arc(X+ar,Y+ar,ar,Math.PI,0);x.lineTo(X+w,Y+h);x.closePath()};
+ shadowed(x,()=>{path();g=x.createLinearGradient(X,Y,X+w,Y+h);g.addColorStop(0,'#7a1424');g.addColorStop(1,'#3a0a12');x.fillStyle=g;x.fill()});
+ path();x.strokeStyle=gGold(x,X,X+w);x.lineWidth=12;x.stroke();x.save();x.translate(W/2,Y+h/2);x.scale(.94,.95);x.translate(-W/2,-(Y+h/2));path();x.strokeStyle='rgba(226,184,92,.5)';x.lineWidth=2;x.stroke();x.restore();
+ [[X+60,Y+h-60],[X+w-60,Y+h-60],[X+150,Y+190],[X+w-150,Y+190]].forEach(([sx,sy])=>{x.beginPath();x.arc(sx,sy,14,0,7);x.fillStyle=gGold(x,sx-14,sx+14);x.fill();x.strokeStyle='#5a3d0a';x.lineWidth=2;x.beginPath();x.moveTo(sx-8,sy-8);x.lineTo(sx+8,sy+8);x.stroke()});
+ x.textAlign='center';x.fillStyle=gGold(x,W/2-200,W/2+200);x.font='500 26px "JetBrains Mono"';SPC(x,'✦ HALL OF CLARITY ✦',W/2,Y+260,6);
+ shadowed(x,()=>{rr(x,W/2-290,Y+310,580,190,10);x.fillStyle=gGold(x,W/2-290,W/2+290);x.fill()});x.fillStyle='#3a2a08';fit(x,S.name,'700 #px "Playfair Display"',76,520);x.fillText(S.name,W/2,Y+410);x.font='500 20px "JetBrains Mono"';SPC(x,ROLE[t.k].toUpperCase(),W/2,Y+460,4);
+ x.fillStyle='#fff';fit(x,p.e+' '+p.n,'700 #px "Playfair Display"',58,640);x.fillText(p.e+' '+p.n,W/2,Y+600);x.fillStyle='#f3d9a0';x.font='500 22px "JetBrains Mono"';SPC(x,t.pct+'% MATCH · CAREER CODE '+R.code.join('·'),W/2,Y+650,4);
+ x.font='italic 400 46px "DM Serif Display"';x.fillText('“Some people wonder.',W/2,Y+760);x.fillText('I found out.”',W/2,Y+815);ctaBar(x)}
+/* 6 · Signed Letter: torn paper with wax seal */
+function cLetter(x,t,p){const W=1080;bgRad(x,'#3a0f14','#1a0a0c','#0B0A0A');const X=90,Y=70,w=900,h=1060;
+ let sd=7;const rnd=()=>{sd=(sd*9301+49297)%233280;return sd/233280};const pts=[];for(let i=0;i<=40;i++)pts.push([X+w*i/40,Y+rnd()*14]);for(let i=0;i<=46;i++)pts.push([X+w-rnd()*14,Y+h*i/46]);for(let i=40;i>=0;i--)pts.push([X+w*i/40,Y+h-rnd()*14]);for(let i=46;i>=0;i--)pts.push([X+rnd()*14,Y+h*i/46]);
+ shadowed(x,()=>{x.beginPath();pts.forEach((q,i)=>i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1]));x.closePath();let g=x.createLinearGradient(0,Y,0,Y+h);g.addColorStop(0,'#fffdf6');g.addColorStop(1,'#f3e8cf');x.fillStyle=g;x.fill()});
+ brandRow(x,Y+90,1);x.textAlign='center';x.fillStyle='#8a1c2b';x.font='italic 400 44px "DM Serif Display"';x.fillText('I didn\'t follow the crowd.',W/2,Y+250);x.fillStyle='#1d2540';x.font='700 76px "Playfair Display"';x.fillText('I found my fit.',W/2,Y+335);
+ x.fillStyle='#8a1c2b';fit(x,S.name,'400 #px "Great Vibes"',150,760);x.fillText(S.name,W/2,Y+520);x.fillStyle='rgba(29,37,64,.45)';x.fillRect(W/2-270,Y+550,540,2);
+ x.fillStyle='#8a6a2a';x.font='500 22px "JetBrains Mono"';SPC(x,ROLE[t.k].toUpperCase(),W/2,Y+600,5);
+ x.fillStyle='#1d2540';fit(x,p.e+' '+p.n,'700 #px "Playfair Display"',62,700);x.fillText(p.e+' '+p.n,W/2,Y+720);x.fillStyle='#5b6378';x.font='500 20px "JetBrains Mono"';SPC(x,t.pct+'% MATCH · '+R.code.join('·'),W/2,Y+770,4);
+ const sx=X+w-150,sy=Y+h-140;shadowed(x,()=>{x.beginPath();for(let i=0;i<24;i++){const a=i/24*Math.PI*2,r=86+(i%2?6:0)+rnd()*4;x.lineTo(sx+r*Math.cos(a),sy+r*Math.sin(a))}x.closePath();let g=x.createRadialGradient(sx-25,sy-25,10,sx,sy,95);g.addColorStop(0,'#c0303f');g.addColorStop(1,'#5e0f1b');x.fillStyle=g;x.fill()});
+ x.beginPath();x.arc(sx,sy,58,0,7);x.strokeStyle='rgba(255,220,200,.45)';x.lineWidth=2;x.setLineDash([4,5]);x.stroke();x.setLineDash([]);x.fillStyle='#ffe9d0';x.font='700 46px Cinzel';x.textBaseline='middle';x.fillText('YP',sx,sy-4);x.font='500 11px "JetBrains Mono"';x.fillText('FOUND MY FIT',sx,sy+32);x.textBaseline='alphabetic';ctaBar(x,'#8a1c2b')}
+const NEWC=[cStamp,cCover,cMedal,cMarquee,cPlaque,cLetter];
+const STYLES=['Clarity Stamp','Cover Star','Clarity Award','Marquee','Hall of Clarity','Signed Letter','Boarding Pass','Clarity Express','Route Found'];
+function drawCard(){const st=cardStyle%STYLES.length;if(st<6){const c=$('card'),x=c.getContext('2d'),t=R.res[0];x.clearRect(0,0,1080,1350);x.textAlign='center';x.textBaseline='alphabetic';NEWC[st](x,t,t.p);return}drawOld(st-6)}
+function drawOld(s){const c=$('card'),x=c.getContext('2d'),W=1080,H=1350,t=R.res[0],p=t.p,line=p.lines[lineIx%p.lines.length],first=S.name;x.clearRect(0,0,W,H);x.textAlign='center';x.textBaseline='alphabetic';
  let g=x.createRadialGradient(W*.8,0,50,W*.8,0,1300);g.addColorStop(0,'#3a0f14');g.addColorStop(.55,'#140d0d');g.addColorStop(1,'#0B0A0A');x.fillStyle=g;x.fillRect(0,0,W,H);
  x.fillStyle='#E2B85C';x.font='700 30px Cinzel';spaced(x,'YOUNGPROFESSOR.IN',W/2,110,8);
  x.fillStyle='#F4EFEA';x.font='italic 400 52px "DM Serif Display"';wrap(x,line,W/2,200,900,62);
- const s=cardStyle%3;
  if(s===0)boarding(x,W,p,t,first);else if(s===1)train(x,W,p,t,first);else route(x,W,p,t,first);
  x.textAlign='center';x.fillStyle='#F4EFEA';x.font='700 34px Manrope';x.fillText('Find your fit free 👉 youngprofessor.in/fit',W/2,1220);
  x.fillStyle='#E2B85C';x.font='italic 400 32px "DM Serif Display"';x.fillText("🌱 Let's grow together",W/2,1275)}
@@ -457,7 +670,7 @@ function route(x,W,p,t,nm){const X=90,Y=330,w=W-180,h=800;
  x.textAlign='center';x.font='60px sans-serif';x.fillText('😵‍💫',X+150,Y+660);x.fillStyle=NV;x.font='700 22px Manrope';x.fillText('Me, last week',X+150,Y+590-110);
  x.font='70px sans-serif';x.fillText('🚩',X+w-140,Y+240);x.fillStyle=MA;fit(x,p.n,'400 #px "DM Serif Display"',46,420);x.textAlign='right';x.fillText(p.n,X+w-60,Y+450);x.fillStyle=NV;x.font='700 26px Manrope';x.fillText(p.e+' '+t.pct+'% match',X+w-60,Y+492)}
 
-$('shStyle').onclick=()=>{cardStyle++;lineIx++;drawCard();toast('Style: '+STYLES[cardStyle%3])};
+$('shStyle').onclick=()=>{cardStyle++;lineIx++;drawCard();toast('Style '+(cardStyle%STYLES.length+1)+' of '+STYLES.length+': '+STYLES[cardStyle%STYLES.length])};
 const blob=c=>new Promise(r=>c.toBlob(r,'image/png'));
 function dl(url,name){const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove()}
 const fname=()=>(S.name||'student').replace(/[^a-z0-9]+/gi,'-');
@@ -465,10 +678,10 @@ $('shDl').onclick=async()=>{const b=await blob($('card'));dl(URL.createObjectURL
 function storyBlob(){const c=document.createElement('canvas');c.width=1080;c.height=1920;const x=c.getContext('2d');let g=x.createLinearGradient(0,0,0,1920);g.addColorStop(0,'#3a0f14');g.addColorStop(.5,'#140d0d');g.addColorStop(1,'#0B0A0A');x.fillStyle=g;x.fillRect(0,0,1080,1920);
  x.textAlign='center';x.fillStyle='#E2B85C';x.font='700 34px Cinzel';x.fillText('MY RESULT IS IN 🎯',540,190);x.drawImage($('card'),0,285,1080,1350);
  x.fillStyle='#F4EFEA';x.font='700 40px Manrope';x.fillText('Find yours free',540,1730);x.fillStyle='#E2B85C';x.font='700 46px Manrope';x.fillText('youngprofessor.in/fit',540,1800);return blob(c)}
-const CAP={ig:p=>`I found my best-fit specialisation: ${p.n} ${p.e}\nFind yours free 👉 youngprofessor.in/fit\n@bikrampaul.s 🌱 #FindYourFit #MBA #BBA`,
+const CAP={ig:p=>`I found my best-fit specialisation: ${p.n} ${p.e}\nFind yours free 👉 youngprofessor.in/fit\n@bikrampaul.s 🌱 #FindYourFit #ManagementStudents`,
  wa:p=>`I just found my best-fit specialisation: ${p.n} ${p.e}\nTook 8 minutes. Find yours free 👉 https://youngprofessor.in/fit.html 🌱`,
  fb:p=>`Confused between Marketing, Finance, HR or Analytics? I was too.\nFind Your Fit says my best fit is ${p.n} ${p.e}\nTry it free 👉 https://youngprofessor.in/fit.html\n🌱 Let's grow together`,
- li:p=>`I just took "Find Your Fit", a free 3-lens specialisation assessment by Dr. Bikram Paul Singh Lehri (based on the O*NET Interest Profiler).\n\nMy best-fit specialisation: ${p.n} ${p.e}\n\nIf you're a BBA/MBA student choosing a specialisation, try it here: https://youngprofessor.in/fit.html\n\n#FindYourFit #MBA #CareerClarity`};
+ li:p=>`I just took "Find Your Fit", a free 3-lens specialisation assessment by Dr. Bikram Paul Singh Lehri (based on the O*NET Interest Profiler).\n\nMy best-fit specialisation: ${p.n} ${p.e}\n\nIf you're a Management Student choosing a specialisation, try it here: https://youngprofessor.in/fit.html\n\n#FindYourFit #ManagementStudents #CareerClarity`};
 const HOW={ig:'Caption copied ✓ Now tap Instagram → Story → Post',wa:'Caption copied ✓ Now tap WhatsApp → My status → Send',fb:'Caption copied ✓ Now tap Facebook, paste the caption and Post',li:'Caption copied ✓ Now tap LinkedIn, paste the caption and Post'};
 document.querySelectorAll('[data-sh]').forEach(btn=>btn.onclick=async()=>{const k=btn.dataset.sh,p=R.res[0].p,cap=CAP[k](p);
  const b=(k==='ig'||k==='wa')?await storyBlob():await blob($('card'));const f=new File([b],'find-your-fit-'+fname()+'.png',{type:'image/png'});
