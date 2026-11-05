@@ -65,9 +65,11 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 .srow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
 .srow h4{margin:0;font-size:17px}.srow p{margin:2px 0 0;font-size:13px;color:var(--muted)}
 .chips{display:flex;gap:6px}.chip{width:48px;height:48px;border-radius:12px;border:1px solid var(--line2);background:#0f0d0d;font-size:22px;transition:.15s}.chip.sel{border-color:var(--red);background:var(--redsoft);transform:scale(1.06)}
-.pair{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch;margin-top:12px}
+.pq{background:#120f0f;border:1px solid var(--line);border-radius:20px;padding:16px 16px 18px;margin-top:22px}.pq.done{border-color:rgba(226,184,92,.45)}
+.pqh{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--gold);margin-bottom:12px}.pqh span{color:var(--dim)}
+.pair{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch}
 .pair button{background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:18px;color:var(--ink);font-size:16px;font-weight:700;text-align:left;transition:.15s}
-.pair button.sel{border-color:var(--red);background:var(--redsoft)}.pair .or{align-self:center;font-family:var(--serif);font-style:italic;color:var(--dim)}
+.pair button.sel{border-color:var(--red);background:var(--redsoft)}.pair button.sel:after{content:' ✓';color:var(--red2)}.pair .or{align-self:center;justify-self:center;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--dim);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 10px}
 .res-hero{text-align:center;padding:10px 0 6px}
 .appr{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3vw,26px);color:var(--gold);max-width:760px;margin:0 auto 18px}
 .topfit{position:relative;overflow:hidden;border-radius:24px;padding:34px 26px;border:1px solid rgba(226,184,92,.35);background:radial-gradient(600px 300px at 50% 0%,rgba(227,22,30,.25),transparent 70%),var(--panel);text-align:center;margin:18px 0}
@@ -87,6 +89,8 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 .sharewrap{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:26px;align-items:center}
 .sharewrap canvas{width:100%;height:auto;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
 .grow{font-family:var(--serif);font-size:30px;margin:0 0 6px}
+.sh4{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.sh4 button{border:0;border-radius:14px;padding:14px 12px;font:800 15px var(--sans);color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+.s-ig{background:linear-gradient(45deg,#f9a825,#e91e63 45%,#8e24aa)}.s-wa{background:#1fa855}.s-fb{background:#1877f2}.s-li{background:#0a66c2}.sh4 small{display:block;font-weight:600;font-size:11px;opacity:.85}
 .note{font-size:13px;color:var(--dim);margin-top:30px;border-top:1px solid var(--line);padding-top:16px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:#1f1a1a;border:1px solid var(--line2);padding:12px 18px;border-radius:12px;font-weight:700;transition:transform .3s var(--ease),opacity .3s;opacity:0;z-index:60}.toast.on{transform:translateX(-50%);opacity:1}
 @media (max-width:760px){.certwrap,.sharewrap{grid-template-columns:1fr}.opts{gap:6px}.opt{font-size:11px;padding:12px 2px 10px}.opt span{font-size:26px}.pair{grid-template-columns:1fr}.pair .or{text-align:center}.chip{width:42px;height:42px;font-size:20px}.back{display:none}}
@@ -182,9 +186,9 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
     <canvas id="card" width="1080" height="1350"></canvas>
     <div><p class="grow">🌱 Let's grow together</p>
       <p class="lead">Somewhere, a friend is as confused as you were this morning. Send them your card. Ending one friend's confusion today is a good day's work.</p>
-      <div class="btns"><button class="btn" id="shCard">📤 Share my card</button><button class="btn ghost" id="shStyle">🎨 Change style</button></div>
-      <div class="btns"><a class="btn ghost" id="shWa" target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost" id="shLi" target="_blank" rel="noopener">LinkedIn</a><a class="btn ghost" id="shFb" target="_blank" rel="noopener">Facebook</a><button class="btn ghost" id="shDl">Save card</button></div>
-      <p class="small" style="margin-top:12px">For Instagram: tap "Save card" and post it to your story. Tag <b>@bikrampaul.s</b> and I may feature you!</p></div>
+      <div class="sh4"><button class="s-ig" data-sh="ig">📸 <span>Instagram<small>Story</small></span></button><button class="s-wa" data-sh="wa">💬 <span>WhatsApp<small>Status</small></span></button><button class="s-fb" data-sh="fb">👍 <span>Facebook<small>Post</small></span></button><button class="s-li" data-sh="li">💼 <span>LinkedIn<small>Post</small></span></button></div>
+      <div class="btns"><button class="btn ghost" id="shStyle">🎨 Change style</button><button class="btn ghost" id="shDl">⬇ Save card</button></div>
+      <p class="small" style="margin-top:12px">Tap one: your card and caption are ready instantly. Just choose the app and tap <b>Post</b>. Tag <b>@bikrampaul.s</b> on Instagram and I may feature you!</p></div>
   </div>
 
   <div class="sec card" style="text-align:center"><h3 style="margin:0 0 6px">Want to talk it through?</h3><p class="lead" style="margin:0 auto 14px">Not sure about your result? Write to your professor in the Student Zone.</p>
@@ -292,8 +296,8 @@ const chk2=()=>$('l2go').disabled=SUB.some(s=>!S.sub[s[0]]);
 $('l2go').onclick=()=>{show('s-l3');renderPairs()};
 
 /* ---------- LENS 3 UI ---------- */
-function renderPairs(){$('pairs').innerHTML=PAIRS.map((p,i)=>`<div class="pair"><button data-i="${i}" data-v="${p[0]}" class="${S.sty[i]===p[0]?'sel':''}">${p[1]}</button><span class="or">or</span><button data-i="${i}" data-v="${p[2]}" class="${S.sty[i]===p[2]?'sel':''}">${p[3]}</button></div>`).join('');
- document.querySelectorAll('.pair button').forEach(b=>b.onclick=()=>{S.sty[b.dataset.i]=b.dataset.v;save();b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));chk3()});chk3()}
+function renderPairs(){$('pairs').innerHTML=PAIRS.map((p,i)=>`<div class="pq${S.sty[i]?' done':''}"><div class="pqh">QUESTION ${i+1} OF 8 <span>PICK ONE</span></div><div class="pair"><button data-i="${i}" data-v="${p[0]}" class="${S.sty[i]===p[0]?'sel':''}">${p[1]}</button><span class="or">or</span><button data-i="${i}" data-v="${p[2]}" class="${S.sty[i]===p[2]?'sel':''}">${p[3]}</button></div></div>`).join('');
+ document.querySelectorAll('.pair button').forEach(b=>b.onclick=()=>{S.sty[b.dataset.i]=b.dataset.v;save();b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('sel',x===b));b.closest('.pq').classList.add('done');chk3()});chk3()}
 const chk3=()=>$('l3go').disabled=PAIRS.some((p,i)=>!S.sty[i]);
 $('l3go').onclick=()=>{S.done=true;if(!S.rid)S.rid=rnd(4);S.date=S.date||ymd(new Date());save();results()};
 
@@ -330,9 +334,6 @@ function results(){R=score();const t=R.res[0],p=t.p;show('s-res');
  S.id=certId(S.name,t.k,S.date,S.rid);save();
  $('cid').innerHTML='Certificate no. <b style="color:var(--gold);font-family:var(--mono)">'+S.id+'</b>';
  const link='https://youngprofessor.in/fit.html';const txt=`I just found my best-fit specialisation: ${p.n} ${p.e}\nIt took 8 minutes and ended months of confusion.\nFind yours free 👉 ${link}\n🌱 Let's grow together`;
- $('shWa').href='https://wa.me/?text='+encodeURIComponent(txt);
- $('shLi').href='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(link);
- $('shFb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(link);
  R.txt=txt;
  fontsReady().then(()=>{drawCert();drawCard()})}
 $('again').onclick=()=>{if(!confirm('Start again? Your current result will be replaced.'))return;const n=S.name;S={name:n,a:Array(60).fill(0),i:0,sub:{},sty:{},done:false,rid:''};save();show('s-start')};
@@ -461,9 +462,23 @@ const blob=c=>new Promise(r=>c.toBlob(r,'image/png'));
 function dl(url,name){const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove()}
 const fname=()=>(S.name||'student').replace(/[^a-z0-9]+/gi,'-');
 $('shDl').onclick=async()=>{const b=await blob($('card'));dl(URL.createObjectURL(b),'find-your-fit-'+fname()+'.png')};
-$('shCard').onclick=async()=>{const b=await blob($('card'));const f=new File([b],'find-your-fit.png',{type:'image/png'});
- if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],text:R.txt});return}catch(e){if(e.name==='AbortError')return}}
- dl(URL.createObjectURL(b),'find-your-fit-'+fname()+'.png');try{await navigator.clipboard.writeText(R.txt);toast('Card saved, caption copied!')}catch(e){toast('Card saved!')}};
+function storyBlob(){const c=document.createElement('canvas');c.width=1080;c.height=1920;const x=c.getContext('2d');let g=x.createLinearGradient(0,0,0,1920);g.addColorStop(0,'#3a0f14');g.addColorStop(.5,'#140d0d');g.addColorStop(1,'#0B0A0A');x.fillStyle=g;x.fillRect(0,0,1080,1920);
+ x.textAlign='center';x.fillStyle='#E2B85C';x.font='700 34px Cinzel';x.fillText('MY RESULT IS IN 🎯',540,190);x.drawImage($('card'),0,285,1080,1350);
+ x.fillStyle='#F4EFEA';x.font='700 40px Manrope';x.fillText('Find yours free',540,1730);x.fillStyle='#E2B85C';x.font='700 46px Manrope';x.fillText('youngprofessor.in/fit',540,1800);return blob(c)}
+const CAP={ig:p=>`I found my best-fit specialisation: ${p.n} ${p.e}\nFind yours free 👉 youngprofessor.in/fit\n@bikrampaul.s 🌱 #FindYourFit #MBA #BBA`,
+ wa:p=>`I just found my best-fit specialisation: ${p.n} ${p.e}\nTook 8 minutes. Find yours free 👉 https://youngprofessor.in/fit.html 🌱`,
+ fb:p=>`Confused between Marketing, Finance, HR or Analytics? I was too.\nFind Your Fit says my best fit is ${p.n} ${p.e}\nTry it free 👉 https://youngprofessor.in/fit.html\n🌱 Let's grow together`,
+ li:p=>`I just took "Find Your Fit", a free 3-lens specialisation assessment by Dr. Bikram Paul Singh Lehri (based on the O*NET Interest Profiler).\n\nMy best-fit specialisation: ${p.n} ${p.e}\n\nIf you're a BBA/MBA student choosing a specialisation, try it here: https://youngprofessor.in/fit.html\n\n#FindYourFit #MBA #CareerClarity`};
+const HOW={ig:'Caption copied ✓ Now tap Instagram → Story → Post',wa:'Caption copied ✓ Now tap WhatsApp → My status → Send',fb:'Caption copied ✓ Now tap Facebook, paste the caption and Post',li:'Caption copied ✓ Now tap LinkedIn, paste the caption and Post'};
+document.querySelectorAll('[data-sh]').forEach(btn=>btn.onclick=async()=>{const k=btn.dataset.sh,p=R.res[0].p,cap=CAP[k](p);
+ const b=(k==='ig'||k==='wa')?await storyBlob():await blob($('card'));const f=new File([b],'find-your-fit-'+fname()+'.png',{type:'image/png'});
+ try{await navigator.clipboard.writeText(cap)}catch(e){}
+ if(navigator.canShare&&navigator.canShare({files:[f]})){toast(HOW[k]);try{await navigator.share(k==='ig'?{files:[f]}:{files:[f],text:cap});return}catch(e){if(e.name==='AbortError')return}}
+ dl(URL.createObjectURL(b),f.name);
+ if(k==='fb'){window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://youngprofessor.in/fit.html'),'_blank');toast('Card saved & caption copied ✓ Add the image to your post')}
+ else if(k==='li'){window.open('https://www.linkedin.com/feed/?shareActive=true&text='+encodeURIComponent(cap),'_blank');toast('Card saved ✓ Attach it to your LinkedIn post and Post')}
+ else if(k==='wa'){window.open('https://wa.me/?text='+encodeURIComponent(cap),'_blank');toast('Card saved ✓ For Status, open WhatsApp on your phone')}
+ else toast('Card saved & caption copied ✓ Open Instagram on your phone → Story')});
 $('dlPng').onclick=async()=>{const b=await blob($('cert'));dl(URL.createObjectURL(b),'Certificate-of-Clarity-'+fname()+'.png')};
 $('dlPdf').onclick=async()=>{const bt=$('dlPdf');bt.textContent='Preparing…';
  try{if(!window.jspdf)await new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)});
