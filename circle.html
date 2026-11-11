@@ -132,6 +132,10 @@ footer a{color:var(--ink2)}
 .f input[type=text],.f input[type=email],.f select,.f textarea{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit;font-size:15px;color:var(--ink)}
 .f textarea{min-height:110px;resize:vertical}
 .f input:focus,.f select:focus,.f textarea:focus{outline:2px solid rgba(227,22,30,.35);border-color:transparent}
+.f input[type=url]{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit;font-size:15px;color:var(--ink)}
+.starts{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.starts button{border:1px dashed var(--line);background:#fff;border-radius:999px;padding:5px 11px;font:inherit;font-size:12.5px;color:var(--ink2);cursor:pointer}.starts button:hover{border-color:var(--red);color:var(--red)}
+.card .push{display:block;margin-top:12px;padding:9px 12px;border-radius:12px;background:var(--soft);font-size:13.5px;color:var(--ink2)}.card .push b{color:var(--red2)}
+.card .li{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:5px;background:#0A66C2;color:#fff;font:800 12px/1 Arial,sans-serif;text-decoration:none;margin-left:6px;vertical-align:2px}
 .cnt{display:block;text-align:right;font-size:12px;color:var(--muted);margin-top:4px}
 .cnt.hot{color:var(--red)}
 .pk{display:flex;gap:8px;margin-bottom:12px}
@@ -247,10 +251,14 @@ footer a{color:var(--ink2)}
           <div><label for="fOrg">Organisation</label><input type="text" id="fOrg" maxlength="80" placeholder="e.g. Punjab University" autocomplete="organization" required></div>
           <div><label for="fLoc">Location</label><input type="text" id="fLoc" maxlength="50" placeholder="e.g. Chandigarh" required></div>
           <div><label for="fField">Your field</label><select id="fField" required></select></div>
-          <div><label for="fTaught">Where did I teach you? <i>(optional)</i></label><select id="fTaught"></select></div>
-          <div class="full" id="fTaughtOW" hidden><label for="fTaughtO">Name of the institution</label><input type="text" id="fTaughtO" maxlength="80"></div>
+          <div class="full" id="fFieldOW" hidden><label for="fFieldO">Type your field</label><input type="text" id="fFieldO" maxlength="40" placeholder="e.g. Banking, Media, Law"></div>
+          <div><label for="fTaught">Where did our paths cross? <i>(optional)</i></label><select id="fTaught"></select></div>
+          <div class="full" id="fTaughtOW" hidden><label for="fTaughtO">Type the college, university or place</label><input type="text" id="fTaughtO" maxlength="80" placeholder="e.g. a workshop, FDP or another college"></div>
+          <div><label for="fBatch">Batch / year <i>(optional)</i></label><input type="text" id="fBatch" maxlength="20" placeholder="e.g. 2019–21"></div>
+          <div><label for="fLi">LinkedIn profile <i>(optional)</i></label><input type="url" id="fLi" maxlength="150" placeholder="linkedin.com/in/yourname"></div>
           <div class="full"><label for="fEmail">Email <i>(private, never shown)</i></label><input type="email" id="fEmail" maxlength="100" autocomplete="email" required></div>
-          <div class="full"><label for="fMsg">A short message about me</label><textarea id="fMsg" maxlength="300" placeholder="What do you remember from my classes? How did they help you get where you are?" required></textarea><span class="cnt" id="cnt">0 / 300</span></div>
+          <div class="full"><label for="fMsg">Your message to me</label><div class="starts" id="starts"><button type="button">You helped me believe…</button><button type="button">One thing I still remember…</button><button type="button">Today I am… because…</button><button type="button">Thank you for…</button></div><textarea id="fMsg" maxlength="300" placeholder="Anything you'd like to share: a lesson that stayed with you, a moment that changed something, or simply where life has taken you." required></textarea><span class="cnt" id="cnt">0 / 300</span></div>
+          <div class="full"><label for="fPush">The push that mattered most <i>(optional)</i></label><input type="text" id="fPush" maxlength="140" placeholder="e.g. A piece of advice before my interview"></div>
           <div class="full">
             <label>Your picture <i>(optional)</i></label>
             <div class="pk" role="tablist">
@@ -325,10 +333,11 @@ footer a{color:var(--ink2)}
 
   function cardHTML(it,i){
     var role=[it.d,it.o].filter(Boolean).join(' · ');
-    var taught=it.t?'🎓 My student at '+esc(it.t):'';
+    var taught=it.t?'🎓 Paths crossed at '+esc(it.t)+(it.b?' · '+esc(it.b):''):(it.b?'🎓 Batch '+esc(it.b):'');
+    var li=/^https?:\/\/([a-z]+\.)?linkedin\.com\//i.test(it.li||'')?'<a class="li" href="'+esc(it.li)+'" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>':'';
     return '<article class="card" style="animation-delay:'+Math.min(i||0,12)*60+'ms">'+
-      '<div class="who">'+picHTML(it)+'<div><b>'+esc(it.n)+'</b><span class="role">'+esc(role)+'</span>'+(it.l?'<span class="loc">📍 '+esc(it.l)+'</span>':'')+'</div></div>'+
-      '<q>'+esc(it.m)+'</q>'+(it.fm?'<span class="fm">★ Founding member</span>':'')+
+      '<div class="who">'+picHTML(it)+'<div><b>'+esc(it.n)+li+'</b><span class="role">'+esc(role)+'</span>'+(it.l?'<span class="loc">📍 '+esc(it.l)+'</span>':'')+'</div></div>'+
+      '<q>'+esc(it.m)+'</q>'+(it.p?'<span class="push"><b>🌱 The push that mattered:</b> '+esc(it.p)+'</span>':'')+(it.fm?'<span class="fm">★ Founding member</span>':'')+
       '<div class="cf">'+(it.f?'<span class="tag">'+esc(it.f)+'</span>':'<span></span>')+'<span>'+(taught||esc(it.dt||''))+'</span></div></article>';
   }
 
@@ -336,10 +345,11 @@ footer a{color:var(--ink2)}
   var ALL=[],shown=12,filt='All';
   function countUp(el,n){n=+n||0;if(matchMedia('(prefers-reduced-motion: reduce)').matches||n<5){el.textContent=n;return;}var t0=performance.now();(function f(t){var k=Math.min(1,(t-t0)/1200);el.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f);})(t0);}
   function chips(){var c=$('chips');var list=['All'].concat(FIELDS);
-    c.innerHTML=list.map(function(f){var n=f==='All'?ALL.length:ALL.filter(function(x){return x.f===f;}).length;if(f!=='All'&&!n)return '';return '<button type="button" data-f="'+esc(f)+'" class="'+(f===filt?'on':'')+'">'+esc(f)+'<span>'+n+'</span></button>';}).join('');}
+    c.innerHTML=list.map(function(f){var n=f==='All'?ALL.length:ALL.filter(function(x){return fk(x)===f;}).length;if(f!=='All'&&!n)return '';return '<button type="button" data-f="'+esc(f)+'" class="'+(f===filt?'on':'')+'">'+esc(f)+'<span>'+n+'</span></button>';}).join('');}
+  function fk(x){return FIELDS.indexOf(x.f)>-1?x.f:'Other';}
   function render(){
     var q=$('q').value.trim().toLowerCase();
-    var L=ALL.filter(function(x){return (filt==='All'||x.f===filt)&&(!q||[x.n,x.d,x.o,x.l,x.t].join(' ').toLowerCase().indexOf(q)>-1);});
+    var L=ALL.filter(function(x){return (filt==='All'||fk(x)===filt)&&(!q||[x.n,x.d,x.o,x.l,x.t].join(' ').toLowerCase().indexOf(q)>-1);});
     var g=$('grid');
     if(!ALL.length){g.innerHTML='<div class="empty"><b>Be the first in the Circle</b><p>Were you my student? Your story could be the first one on this wall.</p><button type="button" class="addbtn" data-add>✍️ Add your story</button></div>';$('moreBtn').hidden=true;return;}
     if(!L.length){g.innerHTML='<div class="empty"><b>No match</b><p>Try another name, organisation or city.</p></div>';$('moreBtn').hidden=true;return;}
@@ -370,7 +380,9 @@ footer a{color:var(--ink2)}
   d.addEventListener('click',function(e){if(e.target.closest('[data-add]')){e.preventDefault();open();}else if(e.target.closest('[data-close]')||e.target===mod)close();});
   addEventListener('keydown',function(e){if(e.key==='Escape'&&!mod.hidden)close();});
   if(location.hash==='#add')setTimeout(open,300);
-  $('fTaught').addEventListener('change',function(){$('fTaughtOW').hidden=this.value!=='Other';preview();});
+  $('fTaught').addEventListener('change',function(){$('fTaughtOW').hidden=this.value!=='Other';if(this.value==='Other')$('fTaughtO').focus();preview();});
+  $('fField').addEventListener('change',function(){$('fFieldOW').hidden=this.value!=='Other';if(this.value==='Other')$('fFieldO').focus();preview();});
+  $('starts').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var m=$('fMsg'),s=b.textContent.replace(/…$/,' ');if(!m.value.trim())m.value=s;else if(m.value.length+s.length<300)m.value=m.value.replace(/\s*$/,' ')+s;m.focus();m.setSelectionRange(m.value.length,m.value.length);form.dispatchEvent(new Event('input'));});
   d.querySelectorAll('.pk button').forEach(function(b){b.addEventListener('click',function(){
     pt=b.dataset.pt;d.querySelectorAll('.pk button').forEach(function(x){x.classList.toggle('on',x===b);});
     $('pUp').hidden=!(pt==='photo'||pt==='logo');$('pAv').hidden=pt!=='avatar';$('pNone').hidden=pt!=='none';
@@ -392,8 +404,10 @@ footer a{color:var(--ink2)}
     .catch(function(m){err(m);$('fFile').value='';});});
   function val(id){return $(id).value.trim();}
   function taught(){var t=val('fTaught');return t==='Other'?val('fTaughtO'):t;}
+  function field(){var f=val('fField');return f==='Other'?(val('fFieldO')||'Other'):f;}
+  function liUrl(){var u=val('fLi');if(!u)return '';if(!/^https?:\/\//i.test(u))u='https://'+u.replace(/^\/+/,'');return u;}
   function curItem(){var n=val('fName')||'Your Name';
-    var it={n:n,d:val('fDes')||'Your designation',o:val('fOrg')||'Organisation',l:val('fLoc')||'City',f:val('fField'),t:taught(),m:val('fMsg')||'Your message about me will appear here.'};
+    var it={n:n,d:val('fDes')||'Your designation',o:val('fOrg')||'Organisation',l:val('fLoc')||'City',f:field(),t:taught(),b:val('fBatch'),p:val('fPush'),li:liUrl(),m:val('fMsg')||'Your message to me will appear here.'};
     if((pt==='photo'||pt==='logo')&&pic){it.pt=pt;it.pv=pic.url;}else if(pt==='avatar'&&av){it.pt='avatar';it.pv=av;}else it.pt='none';return it;}
   function preview(){$('pvCard').innerHTML=cardHTML(curItem(),0);}
   form.addEventListener('input',function(){var n=$('fMsg').value.length;$('cnt').textContent=n+' / 300';$('cnt').classList.toggle('hot',n>270);preview();});
@@ -402,16 +416,19 @@ footer a{color:var(--ink2)}
     var need=[['fName','your full name'],['fDes','your designation'],['fOrg','your organisation'],['fLoc','your location'],['fField','your field'],['fEmail','your email'],['fMsg','a short message']];
     for(var i=0;i<need.length;i++){if(!val(need[i][0])){err('Please add '+need[i][1]+'.');$(need[i][0]).focus();return;}}
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('fEmail'))){err('Please check your email address.');$('fEmail').focus();return;}
+    if(val('fField')==='Other'&&!val('fFieldO')){err('Please type your field.');$('fFieldO').focus();return;}
+    if(val('fTaught')==='Other'&&!val('fTaughtO')){err('Please type where our paths crossed.');$('fTaughtO').focus();return;}
+    if(val('fLi')&&!/^https?:\/\/([a-z]+\.)?linkedin\.com\//i.test(liUrl())){err('Please paste your LinkedIn profile link (linkedin.com/in/…), or leave it empty.');$('fLi').focus();return;}
     if(val('fMsg').length<15){err('Please write a little more in your message (at least 15 characters).');$('fMsg').focus();return;}
     if(!$('fOk').checked){err('Please tick the box to agree your card can be shown.');return;}
-    var it=curItem(),body={task:'circle',name:val('fName'),desig:val('fDes'),org:val('fOrg'),loc:val('fLoc'),field:val('fField'),taught:taught(),email:val('fEmail'),msg:val('fMsg'),pt:it.pt,pic:it.pt==='avatar'?av:((it.pt==='photo'||it.pt==='logo')?pic.url:''),consent:true,website:val('fWeb')};
+    var it=curItem(),body={task:'circle',name:val('fName'),desig:val('fDes'),org:val('fOrg'),loc:val('fLoc'),field:field(),taught:taught(),batch:val('fBatch'),push:val('fPush'),li:liUrl(),email:val('fEmail'),msg:val('fMsg'),pt:it.pt,pic:it.pt==='avatar'?av:((it.pt==='photo'||it.pt==='logo')?pic.url:''),consent:true,website:val('fWeb')};
     var b=$('send');b.disabled=true;b.textContent='Sending…';
     fetch(API,{method:'POST',credentials:'omit',body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(R){
       if(!R||!R.ok)throw new Error(R&&R.error||'');
       var url='https://youngprofessor.in/circle.html',txt='I’m part of The Push Circle 🌱 Former students of Dr. Bikram Paul Singh Lehri, and where the push took us: ';
       $('shLi').href='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(url);
       $('shWa').href='https://wa.me/?text='+encodeURIComponent(txt+url);
-      form.hidden=true;ty.hidden=false;form.reset();pic='';av='';$('dp').textContent='📷';$('dropS').textContent='JPG, PNG or WebP · up to 2 MB';$('cnt').textContent='0 / 300';
+      form.hidden=true;ty.hidden=false;form.reset();$('fFieldOW').hidden=true;$('fTaughtOW').hidden=true;pic='';av='';$('dp').textContent='📷';$('dropS').textContent='JPG, PNG or WebP · up to 2 MB';$('cnt').textContent='0 / 300';
     }).catch(function(x){err((x&&x.message)||'Something went wrong. Please check your internet and try again.');})
     .then(function(){b.disabled=false;b.textContent='Join The Push Circle 🌱';});
   });
