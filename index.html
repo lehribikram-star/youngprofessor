@@ -1874,7 +1874,7 @@ body.menu-open{overflow:hidden}
   var first='<a class="pcc first" href="circle.html#add"><b>Were you my student?</b><small>Add your story and join The Push Circle 🌱</small></a>';
   fetch(API,{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){if(!D||!D.ok)throw 0;var ALL=D.items||[],T=ALL.length,L=ALL.slice(0,12),S=D.stats||{};
     countWhenSeen({pcM:S.members,pcO:S.orgs,pcC:S.cities});
-    function mk(it,i){return '<a class="pcc" href="circle.html"><div class="w">'+pic(it)+'<div><b>'+esc(it.n)+'</b><small>'+esc([it.d,it.o].filter(Boolean).join(' · '))+(it.l?' · '+esc(it.l):'')+'</small></div></div><q>'+esc(it.m)+'</q>'+((T-i)<=50?'<span class="fm">★ Founding member</span>':'')+'</a>';}
+    function mk(it,i){return '<a class="pcc" href="circle.html"><div class="w">'+pic(it)+'<div><b>'+esc(it.n)+'</b><small>'+esc([it.d,it.o].filter(Boolean).join(' · '))+(it.l?' · '+esc(it.l):'')+'</small></div></div><q>'+esc(it.m)+'</q>'+'</a>';}
     var cards=L.map(mk).join('')+first;
     if(L.length>=4&&!matchMedia('(prefers-reduced-motion: reduce)').matches){row.classList.add('auto');var R2=L.slice().reverse().map(function(it,i){return mk(it,L.length-1-i);}).join('')+first;row.innerHTML='<div class="pctrack" style="--dur:'+(L.length*7)+'s">'+cards+cards+'</div><div class="pctrack rev" style="--dur:'+(L.length*8)+'s">'+R2+R2+'</div>';}else row.innerHTML=cards;
   }).catch(function(){row.innerHTML=first;});

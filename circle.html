@@ -357,7 +357,7 @@ footer a{color:var(--ink2)}
     return '<article class="card pol" style="--r:'+r+'deg;--r2:'+(r/3)+'deg;animation-delay:'+Math.min(i||0,12)*60+'ms"><span class="pin" aria-hidden="true"></span>'+
       '<div class="photo">'+picHTML(it)+'</div>'+
       '<div class="cap"><b>'+esc(it.n)+li+'</b><span class="role">'+esc(role)+'</span>'+(it.l?'<span class="loc">📍 '+esc(it.l)+'</span>':'')+'</div>'+
-      '<q>'+esc(it.m)+'</q>'+(it.p?'<span class="push"><b>🌱 The push that mattered:</b> '+esc(it.p)+'</span>':'')+(it.fm?'<span class="fm">★ Founding member</span>':'')+
+      '<q>'+esc(it.m)+'</q>'+(it.p?'<span class="push"><b>🌱 The push that mattered:</b> '+esc(it.p)+'</span>':'')+
       '<div class="cf">'+(it.f?'<span class="tag">'+esc(it.f)+'</span>':'<span></span>')+'<span>'+(taught||esc(it.dt||''))+'</span></div></article>';
   }
 
