@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Approval alerts | youngprofessor.in</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0B0A0A;color:#F4EFEA;font-family:Manrope,system-ui,sans-serif;text-align:center}
+.b{max-width:420px;padding:30px 24px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:30px;margin:12px 0 8px}
+p{color:#A39A94;line-height:1.55}
+button{margin-top:14px;padding:15px 22px;border:0;border-radius:999px;background:#E3161E;color:#fff;font-weight:800;font-size:16px;width:100%}
+button:disabled{opacity:.6}
+.s{margin-top:16px;font-weight:700;color:#E2B85C}
+</style>
+</head>
+<body>
+<div class="b">
+  <div style="font-size:54px">🔔</div>
+  <h1>Push Circle approval alerts</h1>
+  <p>For Dr. Lehri's phone only. Turn this on to get a notification with <b>Approve</b> and <b>Reject</b> buttons whenever a new story or opportunity arrives.</p>
+  <button type="button" id="go">Turn on alerts on this phone</button>
+  <div class="s" id="st"></div>
+</div>
+<script>
+(function(){
+  var API='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
+  var APP_ID='e66bc870-e40b-4d6e-b0db-d5188b2db31c',st=document.getElementById('st'),go=document.getElementById('go');
+  window.OneSignalDeferred=window.OneSignalDeferred||[];
+  var sc=document.createElement('script');sc.src='https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';sc.defer=true;document.head.appendChild(sc);
+  OneSignalDeferred.push(async function(OS){
+    await OS.init({appId:APP_ID,serviceWorkerPath:'OneSignalSDKWorker.js',notifyButton:{enable:false},promptOptions:{slidedown:{prompts:[]}}});
+    go.onclick=async function(){
+      go.disabled=true;st.textContent='Asking for permission…';
+      try{
+        if(!OS.Notifications.permission)await OS.Notifications.requestPermission();
+        await OS.User.PushSubscription.optIn();
+        var id=null;for(var i=0;i<20&&!id;i++){id=OS.User.PushSubscription.id;if(!id)await new Promise(function(r){setTimeout(r,500);});}
+        if(!id)throw new Error('Please allow notifications for this site, then try again.');
+        var R=await (await fetch(API,{method:'POST',credentials:'omit',body:JSON.stringify({task:'adminReg',sub:id})})).json();
+        if(!R||!R.ok)throw new Error(R&&R.error||'Something went wrong.');
+        st.textContent='Almost done! Open the email we just sent you on this phone and tap the confirm link.';
+      }catch(e){st.textContent=e.message||'Something went wrong. Please try again.';go.disabled=false;}
+    };
+  });
+})();
+</script>
+</body>
+</html>

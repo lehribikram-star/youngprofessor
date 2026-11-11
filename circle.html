@@ -193,6 +193,46 @@ footer a{color:var(--ink2)}
 .pol q{margin-top:12px;font-size:15px;text-align:center}
 .pol .fm{display:flex;width:max-content;margin:12px auto 0}
 @media (max-width:640px){.card.pol{--r:0deg!important;transform:rotate(calc(var(--r2,0deg)))}}
+
+/* guide + connect + opportunities */
+.pol .gv{display:block;margin-top:10px;text-align:center;font-size:12.5px;font-weight:700;color:#7a5a00}
+.pol .acts{display:flex;justify-content:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.pol .ask{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:999px;border:0;background:var(--red);color:#fff;font-weight:800;font-size:13px;box-shadow:0 8px 18px -10px rgba(227,22,30,.8);cursor:pointer}
+.pol .ask:hover{background:var(--red2)}
+.pol .ask[disabled]{background:#cfc6bd;box-shadow:none;cursor:default}
+.pol .inb{display:inline-flex;align-items:center;gap:6px;padding:9px 13px;border-radius:999px;background:#0A66C2;color:#fff;font-weight:800;font-size:13px;text-decoration:none}
+.pol .og{display:block;margin-top:10px;text-align:center;font-size:12.5px;font-weight:700;color:#1f7a3f}
+.gtag{display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:4px 10px;border-radius:999px;background:#FFF6DF;border:1px solid #F0D28A;color:#7a5a00;font-size:12px;font-weight:800}
+.sm .mbox{width:min(520px,100%)}
+.sbody{padding:22px;display:grid;gap:14px}
+.sbody p.lead{margin:0;color:var(--ink2);font-size:14.5px;line-height:1.55}
+.tchips{display:flex;flex-wrap:wrap;gap:8px}
+.tchips button{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700;font-size:13.5px;color:var(--ink2);cursor:pointer}
+.tchips button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.done{padding:34px 24px;text-align:center}.done .big{font-size:54px}.done h3{font-family:var(--serif);font-weight:400;font-size:28px;margin:10px 0 6px}.done p{margin:0 auto;max-width:400px;color:var(--muted)}
+.sw{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.sw b{display:block;font-size:15.5px}.sw small{color:var(--muted)}
+.tg{position:relative;width:56px;height:32px;flex:none;border-radius:999px;border:0;background:#d9d0c7;cursor:pointer;transition:background .25s}
+.tg::after{content:"";position:absolute;top:4px;left:4px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.2);transition:transform .25s}
+.tg.on{background:#1f9d55}.tg.on::after{transform:translateX(24px)}
+.opps{padding:10px 0 30px}
+.opps h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.5vw,46px);text-align:center;margin:0}
+.opps .wsub{text-align:center}
+.ohead{display:flex;justify-content:center;margin:6px 0 22px}
+.ogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.oc{display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--sh);text-decoration:none;color:inherit;transition:transform .3s,box-shadow .3s}
+.oc:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(60,30,20,.4)}
+.oc .oi{aspect-ratio:1.91/1;background:linear-gradient(135deg,#fde8e8,#fff4e0);display:grid;place-items:center;overflow:hidden;font-family:var(--serif);font-size:22px;color:var(--red2);padding:12px;text-align:center}
+.oc .oi img{width:100%;height:100%;object-fit:cover}
+.oc .ob{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.oc .ot{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--red2)}
+.oc .ot span:last-child{color:var(--muted);letter-spacing:0;text-transform:none;font-weight:600}
+.oc b{font-size:16px;line-height:1.35}
+.oc .on2{font-size:13.5px;color:var(--ink2)}
+.oc .ow{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.oc .ow i{font-style:normal;font-weight:800;color:var(--red)}
+.oempty{max-width:520px;margin:0 auto;text-align:center;padding:30px 22px;border:2px dashed var(--line);border-radius:22px;background:#fff;color:var(--muted)}
+.mng{display:block;margin:14px auto 0;background:none;border:0;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer}
 </style>
 </head>
 <body>
@@ -202,6 +242,7 @@ footer a{color:var(--ink2)}
     <nav>
       <a class="lnk" href="./">Home</a>
       <a class="lnk" href="#wall">The wall</a>
+      <a class="lnk" href="#opps">Opportunities</a>
       <a class="lnk" href="student.html">Student Zone</a>
       <button type="button" class="addbtn" data-add>✍️ Add your story</button>
     </nav>
@@ -245,11 +286,21 @@ footer a{color:var(--ink2)}
   </div>
 </section>
 
+<section class="opps" id="opps">
+  <div class="wrap">
+    <h2>Opportunities from the Circle</h2>
+    <p class="wsub">Jobs, internships and openings shared by members. Every link goes to the official page.</p>
+    <div class="ohead"><button type="button" class="addbtn" data-share>🔗 Members: share an opportunity</button></div>
+    <div class="ogrid" id="ogrid"></div>
+  </div>
+</section>
+
 <section class="wrap bcta">
   <div class="box">
     <h3>Were you my student?</h3>
     <p>Wherever you are today, I’d love to see it. Add your story to The Push Circle. It takes two minutes.</p>
     <button type="button" class="addbtn" data-add>✍️ Add your story</button>
+    <button type="button" class="mng" data-manage>Already a member? Manage my card</button>
   </div>
 </section>
 </main>
@@ -291,6 +342,7 @@ footer a{color:var(--ink2)}
             <div id="pAv" hidden><div class="avs" id="avs"></div><p class="hint">Pick a character that feels like you.</p></div>
             <p class="hint" id="pNone" hidden>Your initials will appear in a coloured circle.</p>
           </div>
+          <div class="full"><label class="ok"><input type="checkbox" id="fGuide"><span><b>🤝 I'm happy to be contacted for guidance</b> by students and followers. They message you through this website; your email stays private. You can turn this off anytime.</span></label></div>
           <div class="full"><label class="ok"><input type="checkbox" id="fOk" required><span>I agree that my name, designation, organisation, location, picture and message can be shown publicly on youngprofessor.in. I can ask for them to be removed at any time.</span></label></div>
           <div class="hp" aria-hidden="true"><label for="fWeb">Website</label><input type="text" id="fWeb" tabindex="-1" autocomplete="off"></div>
           <div class="full"><div class="err" id="err" role="alert"></div></div>
@@ -317,6 +369,60 @@ footer a{color:var(--ink2)}
   </div>
 </div>
 <div class="toast" id="toast" role="status"></div>
+
+<!-- Ask for guidance -->
+<div class="mod sm" id="cmod" hidden>
+  <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="cTitle">
+    <div class="mhead"><div><b id="cTitle">Ask for guidance</b><small id="cSub">Your message goes privately by email</small></div><button type="button" class="x" data-xclose aria-label="Close">✕</button></div>
+    <form class="sbody f" id="cform" novalidate>
+      <p class="lead full" id="cLead"></p>
+      <div class="full"><label for="cName">Your name</label><input type="text" id="cName" maxlength="60" autocomplete="name"></div>
+      <div class="full"><label for="cEmail">Your email <i>(so they can reply)</i></label><input type="email" id="cEmail" maxlength="100" autocomplete="email"></div>
+      <div class="full"><label for="cMsg">What would you like guidance on?</label><textarea id="cMsg" maxlength="600" placeholder="Be specific, e.g. I'm a final-year management student preparing for Big 4 interviews. Could you share how you prepared?"></textarea></div>
+      <div class="full"><label class="ok"><input type="checkbox" id="cOk"><span>I'll be respectful of their time. Members volunteer to help.</span></label></div>
+      <div class="hp" aria-hidden="true"><input type="text" id="cWeb" tabindex="-1" autocomplete="off"></div>
+      <div class="full"><div class="err" id="cErr" role="alert"></div></div>
+      <div class="full"><button type="submit" class="send" id="cSend">Send request</button></div>
+    </form>
+    <div class="done" id="cDone" hidden><div class="big">💌</div><h3>Sent!</h3><p id="cDoneP"></p></div>
+  </div>
+</div>
+
+<!-- Share an opportunity -->
+<div class="mod sm" id="omod" hidden>
+  <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="oTitle">
+    <div class="mhead"><div><b id="oTitle">Share an opportunity</b><small>For Push Circle members · takes 20 seconds</small></div><button type="button" class="x" data-xclose aria-label="Close">✕</button></div>
+    <form class="sbody f" id="oform" novalidate>
+      <div class="full"><label for="oUrl">Paste the link</label><input type="url" id="oUrl" maxlength="500" placeholder="https://… (official job post, internship page or notice)"></div>
+      <div class="full"><label>What is it?</label><div class="tchips" id="oType"><button type="button" data-t="Job">Job</button><button type="button" data-t="Internship">Internship</button><button type="button" data-t="Project">Project</button><button type="button" data-t="Research">Research</button><button type="button" data-t="Other">Other</button></div></div>
+      <div class="full"><label for="oNote">A short note <i>(optional)</i></label><input type="text" id="oNote" maxlength="160" placeholder="e.g. Good for finance freshers, apply before Friday"></div>
+      <div class="full"><label for="oEmail">Your member email <i>(the one you joined with)</i></label><input type="email" id="oEmail" maxlength="100" autocomplete="email"></div>
+      <div class="hp" aria-hidden="true"><input type="text" id="oWeb" tabindex="-1" autocomplete="off"></div>
+      <div class="full"><div class="err" id="oErr" role="alert"></div></div>
+      <div class="full"><button type="submit" class="send" id="oSend">Share with students</button></div>
+    </form>
+    <div class="done" id="oDone" hidden><div class="big">🌱</div><h3>Thank you for giving back!</h3><p>Your link will appear here once Dr. Lehri approves it.</p></div>
+  </div>
+</div>
+
+<!-- Manage my card -->
+<div class="mod sm" id="mmod" hidden>
+  <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="mgTitle">
+    <div class="mhead"><div><b id="mgTitle">Manage my card</b><small>For Push Circle members</small></div><button type="button" class="x" data-xclose aria-label="Close">✕</button></div>
+    <form class="sbody f" id="mform" novalidate>
+      <p class="lead full">Enter the email you joined with. We'll send you a private link to manage your card.</p>
+      <div class="full"><input type="email" id="mEmail" maxlength="100" autocomplete="email" placeholder="you@example.com" aria-label="Your email"></div>
+      <div class="full"><div class="err" id="mErr" role="alert"></div></div>
+      <div class="full"><button type="submit" class="send" id="mSend">Send my private link</button></div>
+    </form>
+    <div class="done" id="mDone" hidden><div class="big">📬</div><h3>Check your email</h3><p>If this email belongs to a Push Circle card, a private link is on its way.</p></div>
+    <div class="sbody" id="mPanel" hidden>
+      <p class="lead">Hi <b id="mName"></b>, here's your card setting.</p>
+      <div class="sw"><span><b>🤝 Open to guide</b><small>Students and followers can message you through the website.</small></span><button type="button" class="tg" id="mTg" role="switch" aria-checked="false" aria-label="Open to guide"></button></div>
+      <p class="lead" id="mNote" style="font-size:13px;color:var(--muted)"></p>
+    </div>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -358,18 +464,19 @@ footer a{color:var(--ink2)}
       '<div class="photo">'+picHTML(it)+'</div>'+
       '<div class="cap"><b>'+esc(it.n)+li+'</b><span class="role">'+esc(role)+'</span>'+(it.l?'<span class="loc">📍 '+esc(it.l)+'</span>':'')+'</div>'+
       '<q>'+esc(it.m)+'</q>'+(it.p?'<span class="push"><b>🌱 The push that mattered:</b> '+esc(it.p)+'</span>':'')+
+      (it.os?'<span class="og">🌱 Gave back: '+it.os+' opportunit'+(it.os>1?'ies':'y')+' shared</span>':'')+(it.g?'<span class="gv">🤝 Open to guide</span><div class="acts">'+(it.busy?'<button type="button" class="ask" disabled>'+esc(String(it.n).split(' ')[0])+' is busy this week</button>':'<button type="button" class="ask" data-ask="'+esc(it.id)+'" data-n="'+esc(it.n)+'">🤝 Ask for guidance</button>')+(li?'<a class="inb" href="'+esc(it.li)+'" target="_blank" rel="noopener">in Profile</a>':'')+'</div>':'')+
       '<div class="cf">'+(it.f?'<span class="tag">'+esc(it.f)+'</span>':'<span></span>')+'<span>'+(taught||esc(it.dt||''))+'</span></div></article>';
   }
 
   /* ---------- wall ---------- */
   var ALL=[],shown=12,filt='All';
   function countUp(el,n){n=+n||0;if(matchMedia('(prefers-reduced-motion: reduce)').matches||n<5){el.textContent=n;return;}var t0=performance.now();(function f(t){var k=Math.min(1,(t-t0)/1200);el.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f);})(t0);}
-  function chips(){var c=$('chips');var list=['All'].concat(FIELDS);
-    c.innerHTML=list.map(function(f){var n=f==='All'?ALL.length:ALL.filter(function(x){return fk(x)===f;}).length;if(f!=='All'&&!n)return '';return '<button type="button" data-f="'+esc(f)+'" class="'+(f===filt?'on':'')+'">'+esc(f)+'<span>'+n+'</span></button>';}).join('');}
+  function chips(){var c=$('chips');var list=['All'].concat(ALL.some(function(x){return x.g;})?['__g']:[]).concat(FIELDS);
+    c.innerHTML=list.map(function(f){var n=f==='All'?ALL.length:f==='__g'?ALL.filter(function(x){return x.g;}).length:ALL.filter(function(x){return fk(x)===f;}).length;if(f!=='All'&&!n)return '';return '<button type="button" data-f="'+esc(f)+'" class="'+(f===filt?'on':'')+'">'+(f==='__g'?'🤝 Open to guide':esc(f))+'<span>'+n+'</span></button>';}).join('');}
   function fk(x){return FIELDS.indexOf(x.f)>-1?x.f:'Other';}
   function render(){
     var q=$('q').value.trim().toLowerCase();
-    var L=ALL.filter(function(x){return (filt==='All'||fk(x)===filt)&&(!q||[x.n,x.d,x.o,x.l,x.t].join(' ').toLowerCase().indexOf(q)>-1);});
+    var L=ALL.filter(function(x){return (filt==='All'||(filt==='__g'?x.g:fk(x)===filt))&&(!q||[x.n,x.d,x.o,x.l,x.t].join(' ').toLowerCase().indexOf(q)>-1);});
     var g=$('grid');
     if(!ALL.length){g.innerHTML='<div class="empty"><b>Be the first in the Circle</b><p>Were you my student? Your story could be the first one on this wall.</p><button type="button" class="addbtn" data-add>✍️ Add your story</button></div>';$('moreBtn').hidden=true;return;}
     if(!L.length){g.innerHTML='<div class="empty"><b>No match</b><p>Try another name, organisation or city.</p></div>';$('moreBtn').hidden=true;return;}
@@ -441,7 +548,7 @@ footer a{color:var(--ink2)}
     if(val('fLi')&&!/^https?:\/\/([a-z]+\.)?linkedin\.com\//i.test(liUrl())){err('Please paste your LinkedIn profile link (linkedin.com/in/…), or leave it empty.');$('fLi').focus();return;}
     if(val('fMsg').length<15){err('Please write a little more in your message (at least 15 characters).');$('fMsg').focus();return;}
     if(!$('fOk').checked){err('Please tick the box to agree your card can be shown.');return;}
-    var it=curItem(),body={task:'circle',name:val('fName'),desig:val('fDes'),org:val('fOrg'),loc:val('fLoc'),field:field(),taught:taught(),batch:val('fBatch'),push:val('fPush'),li:liUrl(),email:val('fEmail'),msg:val('fMsg'),pt:it.pt,pic:it.pt==='avatar'?av:((it.pt==='photo'||it.pt==='logo')?pic.url:''),consent:true,website:val('fWeb')};
+    var it=curItem(),body={task:'circle',name:val('fName'),desig:val('fDes'),org:val('fOrg'),loc:val('fLoc'),field:field(),taught:taught(),batch:val('fBatch'),push:val('fPush'),li:liUrl(),guide:$('fGuide').checked,email:val('fEmail'),msg:val('fMsg'),pt:it.pt,pic:it.pt==='avatar'?av:((it.pt==='photo'||it.pt==='logo')?pic.url:''),consent:true,website:val('fWeb')};
     var b=$('send');b.disabled=true;b.textContent='Sending…';
     fetch(API,{method:'POST',credentials:'omit',body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(R){
       if(!R||!R.ok)throw new Error(R&&R.error||'');
@@ -453,6 +560,59 @@ footer a{color:var(--ink2)}
     .then(function(){b.disabled=false;b.textContent='Join The Push Circle 🌱';});
   });
   preview();
+
+  /* ---------- small modals: guidance, share, manage ---------- */
+  function sOpen(m){$(m).hidden=false;d.body.style.overflow='hidden';}
+  function sClose(m){$(m).hidden=true;d.body.style.overflow='';}
+  d.addEventListener('click',function(e){var x=e.target.closest('[data-xclose]');if(x){sClose(x.closest('.mod').id);return;}
+    if(e.target.classList&&e.target.classList.contains('sm'))sClose(e.target.id);
+    var a=e.target.closest('[data-ask]');if(a){askTo=a.dataset.ask;var first=a.dataset.n.split(' ')[0];$('cTitle').textContent='Ask '+first+' for guidance';$('cLead').textContent=first+' volunteers to help students and followers. Your message goes privately to their email, and they reply to you directly if they are available.';$('cform').hidden=false;$('cDone').hidden=true;$('cErr').classList.remove('on');sOpen('cmod');setTimeout(function(){$('cName').focus();},60);}
+    if(e.target.closest('[data-share]')){$('oform').hidden=false;$('oDone').hidden=true;sOpen('omod');}
+    if(e.target.closest('[data-manage]')){$('mform').hidden=false;$('mDone').hidden=true;$('mPanel').hidden=true;sOpen('mmod');}});
+  addEventListener('keydown',function(e){if(e.key==='Escape')['cmod','omod','mmod'].forEach(function(m){if(!$(m).hidden)sClose(m);});});
+  var askTo='';
+  function post(body){return fetch(API,{method:'POST',credentials:'omit',body:JSON.stringify(body)}).then(function(r){return r.json();});}
+  function serr(id,m){var e=$(id);e.textContent=m||'';e.classList.toggle('on',!!m);}
+  $('cform').addEventListener('submit',function(e){e.preventDefault();serr('cErr','');
+    if(!val('cName'))return serr('cErr','Please add your name.');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('cEmail')))return serr('cErr','Please check your email address.');
+    if(val('cMsg').length<20)return serr('cErr','Please write a little more (at least 20 characters), so they know how to help.');
+    if(!$('cOk').checked)return serr('cErr','Please tick the box first.');
+    var b=$('cSend');b.disabled=true;b.textContent='Sending…';
+    post({task:'connect',to:askTo,name:val('cName'),email:val('cEmail'),msg:val('cMsg'),ok:true,website:val('cWeb')}).then(function(R){if(!R||!R.ok)throw new Error(R&&R.error||'');
+      $('cDoneP').textContent=(R.first||'They')+' will reply by email if available. Members volunteer their time, so please be patient.';$('cform').hidden=true;$('cDone').hidden=false;$('cMsg').value='';$('cOk').checked=false;load();})
+    .catch(function(x){serr('cErr',(x&&x.message)||'Something went wrong. Please try again.');}).then(function(){b.disabled=false;b.textContent='Send request';});});
+  var otype='';
+  $('oType').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;otype=b.dataset.t;[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);});});
+  $('oform').addEventListener('submit',function(e){e.preventDefault();serr('oErr','');
+    var u=val('oUrl');if(u&&!/^https?:\/\//i.test(u))u='https://'+u;
+    if(!/^https?:\/\/[^\s]+\.[^\s]+/i.test(u))return serr('oErr','Please paste the full link.');
+    if(!otype)return serr('oErr','Please choose what it is.');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('oEmail')))return serr('oErr','Please enter the email you joined with.');
+    var b=$('oSend');b.disabled=true;b.textContent='Checking the link…';
+    post({task:'opp',email:val('oEmail'),url:u,type:otype,note:val('oNote'),website:val('oWeb')}).then(function(R){if(!R||!R.ok)throw new Error(R&&R.error||'');$('oform').hidden=true;$('oDone').hidden=false;$('oUrl').value='';$('oNote').value='';})
+    .catch(function(x){serr('oErr',(x&&x.message)||'Something went wrong. Please try again.');}).then(function(){b.disabled=false;b.textContent='Share with students';});});
+  $('mform').addEventListener('submit',function(e){e.preventDefault();serr('mErr','');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('mEmail')))return serr('mErr','Please check your email address.');
+    var b=$('mSend');b.disabled=true;post({task:'manageLink',email:val('mEmail')}).then(function(){$('mform').hidden=true;$('mDone').hidden=false;}).catch(function(){serr('mErr','Something went wrong. Please try again.');}).then(function(){b.disabled=false;});});
+  var mk=null;
+  function setTg(on){$('mTg').classList.toggle('on',on);$('mTg').setAttribute('aria-checked',on?'true':'false');}
+  var mh=location.hash.match(/^#manage=([^.]+)\.(.+)$/);
+  if(mh){mk={id:decodeURIComponent(mh[1]),s:decodeURIComponent(mh[2])};$('mform').hidden=true;$('mDone').hidden=true;$('mPanel').hidden=false;$('mName').textContent='…';sOpen('mmod');
+    post({task:'manageGet',id:mk.id,s:mk.s}).then(function(R){if(!R||!R.ok)throw new Error(R&&R.error||'');$('mName').textContent=String(R.name).split(' ')[0];setTg(R.guide);$('mNote').textContent=R.live?'Changes show on the wall within a few minutes.':'Your card is waiting for approval. This setting will apply once it is live.';})
+    .catch(function(x){$('mPanel').hidden=true;$('mform').hidden=false;serr('mErr',(x&&x.message)||'This link is not valid. Please ask for a new one.');});}
+  $('mTg').addEventListener('click',function(){if(!mk)return;var on=!this.classList.contains('on');setTg(on);$('mNote').textContent='Saving…';
+    post({task:'manageSet',id:mk.id,s:mk.s,guide:on}).then(function(R){if(!R||!R.ok)throw 0;$('mNote').textContent=on?'Done. You are open to guide. Thank you for giving back!':'Done. You will not get new requests.';}).catch(function(){setTg(!on);$('mNote').textContent='Could not save. Please try again.';});});
+  if(location.hash==='#share')setTimeout(function(){$('oform').hidden=false;sOpen('omod');},300);
+
+  /* ---------- opportunities ---------- */
+  function oppCard(o){
+    var img=o.img?'<img src="'+esc(o.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.textContent=this.parentNode.dataset.s">':esc(o.site||'Opportunity');
+    return '<a class="oc" href="'+esc(o.url)+'" target="_blank" rel="noopener nofollow"><span class="oi" data-s="'+esc(o.site||'Opportunity')+'">'+img+'</span><span class="ob"><span class="ot"><span>'+esc(o.type)+'</span><span>'+esc(o.dt)+'</span></span><b>'+esc(o.title||o.site)+'</b>'+(o.note?'<span class="on2">“'+esc(o.note)+'”</span>':'')+'<span class="ow"><span>Shared by '+esc(o.by)+(o.byOrg?', '+esc(o.byOrg):'')+'</span><i>Open →</i></span></span></a>';}
+  fetch(API+'?opps=1&v='+Date.now(),{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){var L=(D&&D.items)||[];
+    $('ogrid').innerHTML=L.length?L.map(oppCard).join(''):'<div class="oempty">No open opportunities right now. Members, share one and help a junior take their next step.</div>';
+    if(location.hash==='#opps')$('opps').scrollIntoView();})
+  .catch(function(){$('ogrid').innerHTML='<div class="oempty">Opportunities are resting. Please refresh in a moment.</div>';});
 })();
 </script>
 </body>

@@ -29,6 +29,16 @@ h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(44px,8vw
 .door h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:28px;margin:0 0 4px}.door p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
 .door .go{margin-left:auto;font-weight:800;color:var(--calm);white-space:nowrap}
 @media(max-width:560px){.door{padding:20px 18px}.door .go{display:none}.door h2{font-size:24px}}
+.lo{margin:-40px 0 70px}.lo[hidden]{display:none}
+.lo h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:28px;margin:0 0 4px}.lo .ls{margin:0 0 16px;color:var(--muted);font-size:14.5px}
+.log{display:grid;gap:12px}
+.loc{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:18px;background:var(--panel);border:1px solid var(--line);text-decoration:none;color:inherit;transition:transform .25s,border-color .25s}
+.loc:hover{transform:translateY(-2px);border-color:var(--gold)}
+.loc .lt{flex:none;padding:5px 10px;border-radius:999px;background:rgba(226,184,92,.12);color:var(--gold);font-size:11.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.loc b{display:block;font-size:15.5px;line-height:1.35}.loc small{color:var(--muted);font-size:12.5px}
+.loc i{margin-left:auto;font-style:normal;font-weight:800;color:var(--gold);white-space:nowrap}
+.lall{display:inline-block;margin-top:14px;color:var(--gold);font-weight:800;text-decoration:none}
+@media(max-width:560px){.loc i{display:none}}
 </style>
 </head>
 <body>
@@ -43,5 +53,20 @@ h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(44px,8vw
   <a class="door" href="unsaid.html"><span class="em">✨</span><span><h2>Things I Never Said</h2><p>Honest notes from a professor to his students, the things we rarely say in class.</p></span><span class="go">Read →</span></a>
   <a class="door" href="opportunities.html"><span class="em">🚀</span><span><h2>Opportunities</h2><p>Courses, events and chances to grow, picked for students like you.</p></span><span class="go">Explore →</span></a>
 </main>
+<section class="wrap lo" id="lo" hidden>
+  <h3>🌱 From the Push Circle</h3>
+  <p class="ls">Fresh openings shared by my former students. Every link goes to the official page.</p>
+  <div class="log" id="log"></div>
+  <a class="lall" href="circle.html#opps">See all opportunities →</a>
+</section>
+<script>
+(function(){
+  var API='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec?opps=1';
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  fetch(API,{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){var L=((D&&D.items)||[]).slice(0,3);if(!L.length)return;
+    document.getElementById('log').innerHTML=L.map(function(o){return '<a class="loc" href="'+esc(o.url)+'" target="_blank" rel="noopener nofollow"><span class="lt">'+esc(o.type)+'</span><span><b>'+esc(o.title||o.site)+'</b><small>'+esc(o.site)+' · shared by '+esc(o.by)+'</small></span><i>Open →</i></a>';}).join('');
+    document.getElementById('lo').hidden=false;}).catch(function(){});
+})();
+</script>
 </body>
 </html>
