@@ -73,6 +73,10 @@
   "kotak": {
    "label": "Kotak FY26 results (Choice / Capital Market)",
    "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
   }
  },
  "tiles": [
@@ -394,6 +398,13 @@
      "icici"
     ],
     "me": true
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
    },
    {
     "name": "Kotak Mahindra Bank",

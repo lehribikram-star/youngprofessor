@@ -86,6 +86,10 @@
   "wiki": {
    "label": "Wikipedia (with citations)",
    "url": "https://en.wikipedia.org/wiki/HDFC_Bank"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
   }
  },
  "tiles": [
@@ -427,6 +431,13 @@
     "v": 50147,
     "s": [
      "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
     ]
    },
    {

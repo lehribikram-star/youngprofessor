@@ -1,0 +1,992 @@
+{
+ "id": "kotak-mahindra-bank",
+ "name": "Kotak Mahindra Bank",
+ "short": "KM",
+ "color": "#ED1C24",
+ "line": "A leading private bank with a large financial-services group",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: KOTAKBANK · BSE: 500247",
+ "website": "https://www.kotak.com",
+ "news_query": "Kotak Mahindra Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1739461"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (NewKerala / IANS)",
+   "url": "https://www.newkerala.com/news/a/kotak-mahindra-bank-q2-standalone-profit-rises-29-299.htm"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Lakshmishree)",
+   "url": "https://lakshmishree.com/news/?p=9031"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (Lapaas Voice)",
+   "url": "https://lapaasvoice.com/kotak-mahindra-banks-q2-fy27-consolidated-net-profit-rises-26-to-%E2%82%B95645-crore/"
+  },
+  "fy26b": {
+   "label": "FY26 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/kotak-bank-share-price-in-focus-pat-rises-yoy-in-q4-fy26-results"
+  },
+  "fy26c": {
+   "label": "FY26 results, deposits & CASA (Wealthy / Capital Market)",
+   "url": "https://www.wealthy.in/invest/news/stock/1689114"
+  },
+  "net": {
+   "label": "Q4 FY26 review: branches and ATMs (BOBCAPS)",
+   "url": "https://barodaetrade.com/Reports/KotakMahindraBank-Q4FY26ResultReview3May26-Research.pdf"
+  },
+  "hr": {
+   "label": "FY26 headcount, annual report (HR Katha)",
+   "url": "https://www.hrkatha.com/?p=58678"
+  },
+  "hr2": {
+   "label": "FY26 headcount (People Matters)",
+   "url": "https://www.peoplematters.in/amp/news/strategic-hr/hdfc-axis-and-kotak-shed-over-7700-roles-as-tech-reshapes-banking-work-50823"
+  },
+  "ceo": {
+   "label": "Vaswani takes charge (Deccan Herald / PTI)",
+   "url": "https://www.deccanherald.com/business/veteran-banker-ashok-vaswani-assumes-charge-as-kotak-mahindra-banks-md-ceo-2831331"
+  },
+  "next": {
+   "label": "RBI approves Anup Kumar Saha as next CEO (Business Today)",
+   "url": "https://businesstoday.in/industry/banks/story/who-is-anup-kumar-saha-the-new-md-and-ceo-of-kotak-mahindra-bank-558960-2026-10-01"
+  },
+  "next2": {
+   "label": "RBI approves Anup Kumar Saha (Moneylife)",
+   "url": "https://www.moneylife.in/article/delhi-high-court-shocked-to-find-one-arbitrator-handled-axis-banks-4155-arbitrations-in-5-years/article/kotak-mahindra-bank-rbi-approves-anup-kumar-sahas-3year-term-as-mdceo/81813.html"
+  },
+  "chair": {
+   "label": "Chairman reappointed to Oct 2027 (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/rbi-approves-reappointment-of-c-s-rajan-as-kotak-mahindra-banks-part-time-chairman"
+  },
+  "chair2": {
+   "label": "Chairman reappointed (Investywise, from BSE filing)",
+   "url": "https://www.investywise.com/?p=15027"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Kotak_Mahindra_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  }
+ },
+ "tiles": [
+  {
+   "v": 14008,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 2276,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 74054,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹4,212 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +29%"
+  },
+  {
+   "v": "1.04%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "4.31%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "21.9%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "A leading private bank with 2,276 branches (March 2026) and about 5.1 crore customers (September 2026).",
+   "s": [
+    "net",
+    "q2"
+   ]
+  },
+  {
+   "t": "MD & CEO Ashok Vaswani (since Jan 2024) steps down on 31 Dec 2026; RBI has approved Anup Kumar Saha as the next MD & CEO from 1 Jan 2027.",
+   "s": [
+    "next",
+    "next2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 standalone net profit was ₹14,008 crore, up 2% on a like-for-like basis.",
+   "s": [
+    "kotak",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit rose 29% to ₹4,212 crore; Gross NPA improved to 1.04%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "One of the best-capitalised banks: capital adequacy of 21.9% in September 2026.",
+   "s": [
+    "q2"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1985",
+   "t": "Uday Kotak started Kotak Mahindra Finance as a finance company.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2003",
+   "t": "Became a bank: the first Indian finance company (NBFC) to get a banking licence.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2015",
+   "t": "Merged with ING Vysya Bank.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "Jan 2024",
+   "t": "Ashok Vaswani became MD & CEO after founder Uday Kotak stepped down; C S Rajan became Part-time Chairman.",
+   "s": [
+    "ceo"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "RBI approved Anup Kumar Saha as the next MD & CEO, from 1 Jan 2027.",
+   "s": [
+    "next",
+    "next2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Kotak earns mainly from the gap between interest on loans and interest paid to depositors, plus fees. Its group companies in broking, car finance, life insurance and asset management add a large share of group profit.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to people and businesses",
+   "Earns interest gap + fees",
+   "Group companies add profit"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹8,459 cr (+16%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2c",
+     "q2b"
+    ]
+   },
+   {
+    "k": "Net Interest Income FY26",
+    "v": "₹30,010 cr (+6%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO. That's why Kotak's next CEO needed RBI clearance in 2026.",
+   "Kotak competes with HDFC Bank, ICICI Bank and Axis Bank, and is known for a high CASA ratio and strong capital.",
+   "Big theme for interviews: banks are investing heavily in technology and AI."
+  ],
+  "s": [
+   "next"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AV",
+   "name": "Ashok Vaswani",
+   "role": "MD & CEO (until 31 Dec 2026)",
+   "since": "since Jan 2024",
+   "note": "Earlier at Citigroup and Barclays. Chose not to seek reappointment when his term ends.",
+   "s": [
+    "ceo",
+    "next"
+   ]
+  },
+  {
+   "ini": "AS",
+   "name": "Anup Kumar Saha",
+   "role": "Whole-time Director; next MD & CEO",
+   "since": "from 1 Jan 2027",
+   "note": "Joined Kotak in Jan 2026 to lead retail banking, analytics and marketing; earlier at Bajaj Finance (2017–2026).",
+   "s": [
+    "next",
+    "next2"
+   ]
+  },
+  {
+   "ini": "CR",
+   "name": "C S Rajan",
+   "role": "Part-time Chairman",
+   "since": "since Jan 2024",
+   "note": "Former IAS officer (1978 batch); current term runs to Oct 2027.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹14,008 cr",
+    "term": "Net profit",
+    "s": [
+     "kotak",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net Interest Income",
+    "v": "₹30,010 cr (+6%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net interest margin (Q4)",
+    "v": "4.67%",
+    "term": "Net interest margin",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "43.3%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Total deposits",
+    "v": "₹5.72 lakh cr (+15%)",
+    "term": "Deposits",
+    "s": [
+     "fy26c",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net advances",
+    "v": "₹4.96 lakh cr (+16%)",
+    "term": "Advances",
+    "s": [
+     "fy26c",
+     "fy26b"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Standalone net profit ₹4,212 cr, up 29%; group profit ₹5,645 cr, up 26%.",
+     "s": [
+      "q2b",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Net Interest Income ₹8,459 cr, up 16%, but margin fell to 4.31%.",
+     "term": "Net interest margin",
+     "s": [
+      "q2c",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Gross NPA improved to 1.04%; Net NPA 0.24%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2d"
+     ]
+    }
+   ]
+  },
+  "say": "Kotak's profit rose 29% last quarter, its bad loans are just about 1%, and it is preparing for a change of CEO in January 2027."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ],
+    "me": true
+   }
+  ],
+  "note": "Kotak is smaller than HDFC, ICICI and Axis by profit, but has one of the highest capital ratios."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches",
+    "v": "2,276"
+   },
+   {
+    "k": "ATMs",
+    "v": "2,727"
+   },
+   {
+    "k": "Branches added in FY26",
+    "v": "128"
+   }
+  ],
+  "local": "Kotak opens fewer branches than its big rivals and spends more on technology, so many roles focus on digital and relationship banking.",
+  "s": [
+   "net"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees (standalone)",
+    "v": "74,054"
+   },
+   {
+    "k": "Permanent employees",
+    "v": "60,357"
+   },
+   {
+    "k": "Change in FY26",
+    "v": "−1,269"
+   },
+   {
+    "k": "Attrition (permanent)",
+    "v": "32.5%"
+   }
+  ],
+  "note": "From the FY 2025-26 annual report. Hiring focused on technology roles, and attrition improved from 33.3% a year earlier."
+ },
+ "csr": {
+  "t": "Kotak's CSR work is run mainly through the Kotak Education Foundation and focuses on education, livelihoods and healthcare.",
+  "s": [
+   "wiki"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Very strong capital: adequacy 21.9%",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Low bad loans: Gross NPA 1.04%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Net interest margin fell to 4.31%",
+    "s": [
+     "q2d"
+    ]
+   },
+   {
+    "t": "High attrition: 32.5% for permanent staff",
+    "s": [
+     "hr"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Large surplus capital for growth or acquisitions",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Group companies in broking, insurance and car finance",
+    "s": [
+     "q2d"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Leadership change in Jan 2027",
+    "s": [
+     "next"
+    ]
+   },
+   {
+    "t": "Bigger rivals HDFC, ICICI and Axis compete for deposits",
+    "s": [
+     "hdfc",
+     "icici",
+     "axis"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.04%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "4.31%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "21.9%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "43.3%",
+     "term": "CASA ratio"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Customers",
+     "v": "5.1 crore"
+    },
+    {
+     "k": "Branches",
+     "v": "2,276"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "43.3%",
+     "term": "CASA ratio"
+    },
+    {
+     "k": "Q2 profit growth",
+     "v": "29%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "74,054"
+    },
+    {
+     "k": "Branches",
+     "v": "2,276"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹14,008 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Customers",
+     "v": "5.1 crore"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "74,054"
+    },
+    {
+     "k": "Branches",
+     "v": "2,276"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹14,008 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Customers",
+     "v": "5.1 crore"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "74,054"
+    },
+    {
+     "k": "Branches",
+     "v": "2,276"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹14,008 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Customers",
+     "v": "5.1 crore"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "74,054"
+    },
+    {
+     "k": "Branches",
+     "v": "2,276"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹14,008 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Customers",
+     "v": "5.1 crore"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why is Kotak's capital adequacy so high, and why does it matter?",
+     "a": "It holds a lot of surplus capital (21.9% in Sep 2026), which protects against losses and lets it grow or acquire without raising money."
+    },
+    {
+     "q": "Profit rose 29% but margin fell. How?",
+     "a": "Interest income grew 16% and provisions were lower, even though the margin dropped to 4.31%."
+    },
+    {
+     "q": "What is CASA, and what is Kotak's?",
+     "a": "Current and savings account deposits as a share of total deposits; cheap funds for the bank. Kotak's was 43.3% in March 2026."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you market Kotak's app-based savings account to college students?",
+     "a": "Instant digital onboarding, campus ambassadors, UPI rewards and simple money-management features."
+    },
+    {
+     "q": "Kotak has fewer branches than rivals. How would you win customers in a new city?",
+     "a": "Digital-first campaigns, partnerships with employers for salary accounts, and a few well-placed branches."
+    }
+   ],
+   "HR": [
+    {
+     "q": "Kotak's attrition is about 32.5%. How would you reduce it?",
+     "a": "Better onboarding, internal job moves (Kotak recorded 6,500 in FY26), clear growth paths and manager training."
+    },
+    {
+     "q": "How would you manage a CEO transition for employees?",
+     "a": "Clear communication, continuity of goals, and visible leadership connect sessions."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a Kotak 811 savings account.",
+     "a": "Ask about needs, then link instant digital opening, app features and offers. Close with a clear next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can technology reduce errors in account opening?",
+     "a": "Digital KYC, automated checks and tracking turnaround time at each step."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Kotak Mahindra Bank?",
+     "a": "A leading private bank: ₹14,008 cr profit in FY26, very strong capital, and a new CEO, Anup Kumar Saha, from Jan 2027."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Kotak Mahindra Bank?",
+     "a": "Ashok Vaswani is MD & CEO until 31 Dec 2026; Anup Kumar Saha takes over on 1 Jan 2027. C S Rajan is Part-time Chairman."
+    },
+    {
+     "q": "What recent news about Kotak caught your attention?",
+     "a": "The CEO change is a good one. Or pick a story from the live news section and give your own view in two lines."
+    },
+    {
+     "q": "Why Kotak Mahindra Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Kotak combines strong discipline with ambition: profit rose 29% last quarter, bad loans are about 1%, and it holds some of the strongest capital in Indian banking. With a new CEO from January 2027 and a big push on technology, it is entering a new phase. I want to be part of that and contribute to [your role] from day one.",
+  "ask": [
+   "What changes do you expect under the new leadership from January 2027?",
+   "How is the bank using its surplus capital to grow?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should banks hold more capital than required?",
+    "for": "Kotak's 21.9% capital makes it very safe.",
+    "against": "Unused capital can lower returns for shareholders."
+   },
+   {
+    "t": "Digital-first or branch-first banking?",
+    "for": "Kotak grew with fewer branches and more tech spending.",
+    "against": "Rivals use large branch networks to reach small towns."
+   }
+  ],
+  "avoid": [
+   "Don't say Uday Kotak is the CEO; he stepped down in 2023.",
+   "Don't say Ashok Vaswani will continue; Anup Kumar Saha takes over on 1 Jan 2027.",
+   "Don't confuse Kotak Mahindra Bank with Mahindra & Mahindra; they are separate groups."
+  ],
+  "night": [
+   "CEO: Ashok Vaswani → Anup Kumar Saha from 1 Jan 2027",
+   "Chairman: C S Rajan",
+   "FY26 net profit: ₹14,008 cr",
+   "Q2 FY27 profit: ₹4,212 cr (+29%)",
+   "Gross NPA 1.04% · Capital 21.9%",
+   "Rivals: HDFC Bank, ICICI Bank, Axis Bank",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who becomes Kotak's MD & CEO on 1 Jan 2027?",
+   "o": [
+    "Anup Kumar Saha",
+    "Uday Kotak",
+    "Amitabh Chaudhry"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Kotak became a bank in…",
+   "o": [
+    "1985",
+    "2003",
+    "2015"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Kotak's capital adequacy in Sep 2026 was about…",
+   "o": [
+    "12%",
+    "16%",
+    "22%"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Kotak's Gross NPA in Sep 2026?",
+   "o": [
+    "1.04%",
+    "3.2%",
+    "5%"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which bank merged into Kotak in 2015?",
+   "o": [
+    "ING Vysya Bank",
+    "Lakshmi Vilas Bank",
+    "UTI Bank"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "12 Nov 2026"
+}

@@ -1,0 +1,987 @@
+{
+ "id": "axis-bank",
+ "name": "Axis Bank",
+ "short": "AX",
+ "color": "#97144D",
+ "line": "India's third-largest private sector bank",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: AXISBANK · BSE: 532215",
+ "website": "https://www.axis.bank.in",
+ "news_query": "Axis Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Business Standard)",
+   "url": "https://www.business-standard.com/s/2gA4A8b"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1737538"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results, NIM 3.36% (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q2-net-profit-surges-38-to-rs-7003-crore-nim-at-3-36-key-details-562244-2026-10-17"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/axis-bank-q2-results-2026-net-profit-jumps-38-to-7003-cr"
+  },
+  "fy26b": {
+   "label": "Axis Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/amp/business/axis-bank-q4-profit-rises-9-qoq-to-7071-crore-marginally-lower-yoy-as-provisions-surge"
+  },
+  "net": {
+   "label": "Q4 FY26: branches and ATMs (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1687644"
+  },
+  "net2": {
+   "label": "Q4 FY26: distribution network (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1687602"
+  },
+  "hr": {
+   "label": "FY26 headcount (Business Today)",
+   "url": "https://www.businesstoday.in/jobs/story/axis-bank-layoffs-lenders-headcount-fell-by-3000-in-fy26-due-to-tech-push-527608-2026-04-27"
+  },
+  "hr2": {
+   "label": "FY26 headcount, HDFC, Axis, Kotak (People Matters)",
+   "url": "https://www.peoplematters.in/amp/news/strategic-hr/hdfc-axis-and-kotak-shed-over-7700-roles-as-tech-reshapes-banking-work-50823"
+  },
+  "ceo": {
+   "label": "CEO term to Dec 2027 (Business Today)",
+   "url": "https://businesstoday.in/industry/banks/story/axis-bank-extends-ceo-amitabh-chaudhrys-term-by-three-years-till-dec-31-2027-426859-2024-04-25"
+  },
+  "ceo2": {
+   "label": "CEO term to Dec 2027 (IIFL)",
+   "url": "https://www.indiainfoline.com/news/business/axis-bank-extends-amitabh-chaudhrys-ceo-term-re-appoints-directors"
+  },
+  "chair": {
+   "label": "RBI approves Chairman's new term (Axis Bank filing)",
+   "url": "https://www.ticker.app/lse/AXB/rns/2026-07-07/RBI-Approval/3890L"
+  },
+  "chair2": {
+   "label": "Chairman reappointment (Board Stewardship)",
+   "url": "https://boardstewardship.com/rbi-approves-nurani-subramanian-vishwanathans-reappointment-as-part-time-chairman-of-axis-bank/"
+  },
+  "ar": {
+   "label": "Axis Bank Annual Report 2025-26",
+   "url": "https://www.axis.bank.in/annual-reports/2025-2026/index.html"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Axis_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  }
+ },
+ "tiles": [
+  {
+   "v": 24457,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 6275,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 101300,
+   "fmt": "num",
+   "label": "Employees (approx.)",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹7,003 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +37.6%"
+  },
+  {
+   "v": "1.16%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "3.36%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "16.27%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "A large private bank with 6,275 branches and extension counters and 12,796 ATMs (March 2026).",
+   "s": [
+    "net",
+    "net2"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO Amitabh Chaudhry since January 2019; his current term runs to 31 December 2027.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 net profit was ₹24,457 crore, down 7%, mainly because the bank set aside more money for possible bad loans.",
+   "s": [
+    "axis",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit jumped 37.6% to ₹7,003 crore as provisions fell; Gross NPA improved to 1.16%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Its net interest margin slipped to 3.36% in Q2 FY27, lower than most large rivals.",
+   "s": [
+    "q2c",
+    "q2d"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1993",
+   "t": "Started as UTI Bank, promoted by Unit Trust of India and other financial institutions.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2007",
+   "t": "Renamed Axis Bank.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2019",
+   "t": "Amitabh Chaudhry, earlier CEO of HDFC Life, became MD & CEO.",
+   "s": [
+    "ceo"
+   ]
+  },
+  {
+   "y": "2023",
+   "t": "Took over Citibank's consumer business in India.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "Oct 2023",
+   "t": "Former RBI Deputy Governor N S Vishwanathan became Part-time Chairman.",
+   "s": [
+    "chair2"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Vishwanathan began a new three-year term as Chairman, approved by RBI.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Axis earns mainly from the gap between the interest it charges on loans and the interest it pays depositors, plus fees from cards, payments, loans and group companies in mutual funds, broking and finance.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to people and businesses",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹15,371 cr (+11.8%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2d"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q4 FY26",
+    "v": "₹14,457 cr (+5%)",
+    "term": "Net Interest Income",
+    "s": [
+     "net2",
+     "hr"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO and Chairman. That's why Axis's Chairman needed RBI clearance for his 2026 term.",
+   "Axis competes with HDFC Bank and ICICI Bank for salaried customers, cards and business loans.",
+   "Big theme for interviews: banks are opening branches while using AI to keep headcount flat."
+  ],
+  "s": [
+   "chair"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AC",
+   "name": "Amitabh Chaudhry",
+   "role": "MD & CEO",
+   "since": "since Jan 2019",
+   "note": "Earlier MD & CEO of HDFC Life for over nine years. Engineer from BITS Pilani and MBA from IIM Ahmedabad. Current term runs to Dec 2027.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "NV",
+   "name": "N S Vishwanathan",
+   "role": "Non-Executive (Part-time) Chairman",
+   "since": "since Oct 2023",
+   "note": "Former Deputy Governor of the Reserve Bank of India; new term from 27 Oct 2026 to Oct 2029.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹24,457 cr (−7%)",
+    "term": "Net profit",
+    "s": [
+     "axis",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net profit Q4 FY26",
+    "v": "₹7,071 cr (−0.6%)",
+    "term": "Net profit",
+    "s": [
+     "axis",
+     "net2"
+    ]
+   },
+   {
+    "k": "Net interest margin (Q4)",
+    "v": "3.62%",
+    "term": "Net interest margin",
+    "s": [
+     "net2",
+     "hr"
+    ]
+   },
+   {
+    "k": "Gross NPA (Mar 2026)",
+    "v": "1.23%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Branches & extension counters",
+    "v": "6,275",
+    "s": [
+     "net",
+     "net2"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹1 per share",
+    "term": "Dividend",
+    "s": [
+     "axis"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹7,003 cr, up 37.6%, helped by provisions falling about half.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Net Interest Income ₹15,371 cr, up 11.8%; margin 3.36%.",
+     "term": "Net Interest Income",
+     "s": [
+      "q2",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA improved to 1.16% and Net NPA to 0.35%; capital adequacy 16.27%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "q2d"
+     ]
+    }
+   ]
+  },
+  "say": "Axis Bank's profit rose 38% last quarter mainly because it needed to set aside much less for bad loans, while its margin is still under pressure."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ],
+    "me": true
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   }
+  ],
+  "note": "Axis Bank is third among private banks by profit, after HDFC Bank and ICICI Bank."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches & extension counters",
+    "v": "6,275"
+   },
+   {
+    "k": "ATMs",
+    "v": "12,796"
+   },
+   {
+    "k": "Branches added in FY26",
+    "v": "about 400"
+   }
+  ],
+  "local": "Axis Bank added about 400 branches in FY26 while its staff fell, so new branches are run with smaller, more sales-focused teams.",
+  "s": [
+   "net",
+   "hr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees (Mar 2026)",
+    "v": "about 1,01,300"
+   },
+   {
+    "k": "Employees (Mar 2025)",
+    "v": "about 1,04,400"
+   },
+   {
+    "k": "Change in FY26",
+    "v": "about −3,100"
+   }
+  ],
+  "note": "Headcount fell even as branches grew, a sign of more automation. Axis says an AI assistant now helps its branch staff answer queries."
+ },
+ "csr": {
+  "t": "Axis Bank's CSR work is run mainly through the Axis Bank Foundation, focused on rural livelihoods and skills.",
+  "s": [
+   "wiki"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Profit up 37.6% in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Gross NPA down to 1.16%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Net interest margin fell to 3.36%",
+    "s": [
+     "q2c"
+    ]
+   },
+   {
+    "t": "FY26 profit fell 7% on higher provisions",
+    "s": [
+     "axis"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "About 400 new branches added in FY26",
+    "s": [
+     "net",
+     "hr"
+    ]
+   },
+   {
+    "t": "Cards and payments customers from the Citi deal",
+    "s": [
+     "wiki"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "HDFC Bank and ICICI Bank compete for the same customers",
+    "s": [
+     "hdfc",
+     "icici"
+    ]
+   },
+   {
+    "t": "Pressure on margins as deposit costs stay high",
+    "s": [
+     "q2c"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.16%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "3.36%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "16.27%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.35%",
+     "term": "Net NPA"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "6,275"
+    },
+    {
+     "k": "ATMs",
+     "v": "12,796"
+    },
+    {
+     "k": "New branches FY26",
+     "v": "about 400"
+    },
+    {
+     "k": "Q2 profit growth",
+     "v": "37.6%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "about 1,01,300"
+    },
+    {
+     "k": "Branches",
+     "v": "6,275"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹24,457 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹7,003 cr"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "about 1,01,300"
+    },
+    {
+     "k": "Branches",
+     "v": "6,275"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹24,457 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹7,003 cr"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "about 1,01,300"
+    },
+    {
+     "k": "Branches",
+     "v": "6,275"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹24,457 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹7,003 cr"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "about 1,01,300"
+    },
+    {
+     "k": "Branches",
+     "v": "6,275"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹24,457 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹7,003 cr"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did Axis Bank's profit rise 38% while operating profit grew only about 6%?",
+     "a": "Because provisions (money set aside for bad loans) fell sharply. Lower credit costs, not just core income, drove the jump."
+    },
+    {
+     "q": "Why did FY26 profit fall 7%?",
+     "a": "The bank made higher provisions, including a one-time buffer for standard assets in Q4, which reduced profit."
+    },
+    {
+     "q": "What is net interest margin, and what is Axis's?",
+     "a": "The gap between interest earned and paid, as a % of assets. Axis's was 3.36% in Q2 FY27."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you market Axis credit cards to first-time earners?",
+     "a": "Simple digital onboarding, rewards linked to UPI and online shopping, and clear messages on responsible use."
+    },
+    {
+     "q": "Axis added about 400 branches. How would you launch one in a small town?",
+     "a": "Local events, current accounts for shopkeepers, salary accounts with nearby employers, and local-language messaging."
+    }
+   ],
+   "HR": [
+    {
+     "q": "Axis's headcount fell while branches grew. How would you keep employees engaged?",
+     "a": "Reskilling for digital and sales roles, internal moves, clear career paths and fair workload."
+    },
+    {
+     "q": "How would you reduce attrition among new branch staff?",
+     "a": "Better onboarding, buddy mentors, realistic targets and early recognition."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me an Axis Bank salary account.",
+     "a": "Ask about needs first, then link zero-balance, app, card offers and insurance to them. Close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can AI help branch operations?",
+     "a": "Answering staff queries quickly, faster KYC checks and fewer manual errors. Axis already uses an AI assistant for branch queries."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Axis Bank?",
+     "a": "India's third-largest private bank: ₹24,457 cr profit in FY26, 6,275 branches, led by Amitabh Chaudhry."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Axis Bank?",
+     "a": "Amitabh Chaudhry is MD & CEO (since Jan 2019); N S Vishwanathan is Part-time Chairman."
+    },
+    {
+     "q": "What recent news about Axis Bank caught your attention?",
+     "a": "Pick one story from the live news section and give your own view in two lines."
+    },
+    {
+     "q": "Why Axis Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Axis Bank is in a strong recovery phase: profit rose 38% last quarter and bad loans fell to 1.16%. It added about 400 branches last year and is using AI to make its people more productive. I want to grow with a bank that is modernising this fast, and contribute to [your role] from day one.",
+  "ask": [
+   "How is the bank planning to improve its margins in the coming year?",
+   "What does success look like for a new joiner in the first six months?",
+   "How are AI tools changing day-to-day work in this team?"
+  ],
+  "gd": [
+   {
+    "t": "Will AI reduce bank jobs?",
+    "for": "Axis's headcount fell by about 3,100 in FY26 while branches grew.",
+    "against": "Sales, advisory and technology roles keep growing."
+   },
+   {
+    "t": "Should banks chase growth or protect margins?",
+    "for": "Faster loan growth builds market share.",
+    "against": "Axis's margin fell to 3.36% as competition for deposits rose."
+   }
+  ],
+  "avoid": [
+   "Don't call it UTI Bank; it was renamed Axis Bank in 2007.",
+   "Don't say FY26 profit grew; it fell 7%. The 38% jump was in Q2 FY27.",
+   "Don't confuse Axis Bank with Axis Mutual Fund or Axis Securities; they are group companies."
+  ],
+  "night": [
+   "CEO: Amitabh Chaudhry · Chairman: N S Vishwanathan",
+   "FY26 net profit: ₹24,457 cr (−7%)",
+   "Q2 FY27 profit: ₹7,003 cr (+37.6%)",
+   "Gross NPA 1.16% (Sep 2026)",
+   "6,275 branches",
+   "Rivals: HDFC Bank, ICICI Bank, Kotak, SBI",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Axis Bank's MD & CEO?",
+   "o": [
+    "Amitabh Chaudhry",
+    "Sandeep Bakhshi",
+    "Ashok Vaswani"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Axis Bank was earlier called…",
+   "o": [
+    "UTI Bank",
+    "IDBI Bank",
+    "Global Trust Bank"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Q2 FY27 profit growth was about…",
+   "o": [
+    "8%",
+    "38%",
+    "80%"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Why did FY26 profit fall?",
+   "o": [
+    "Higher provisions",
+    "Lower deposits",
+    "New taxes"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Branches in March 2026?",
+   "o": [
+    "2,300",
+    "6,275",
+    "23,000"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "12 Nov 2026"
+}

@@ -44,6 +44,36 @@
    ]
   },
   {
+   "id": "axis-bank",
+   "name": "Axis Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#97144D",
+   "short": "AX",
+   "aliases": [
+    "axis bank",
+    "axis",
+    "axis bank ltd",
+    "axis bank limited",
+    "axisbank",
+    "uti bank"
+   ]
+  },
+  {
+   "id": "kotak-mahindra-bank",
+   "name": "Kotak Mahindra Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#ED1C24",
+   "short": "KM",
+   "aliases": [
+    "kotak mahindra bank",
+    "kotak bank",
+    "kotak",
+    "kotak mahindra",
+    "kotakbank",
+    "kotak 811"
+   ]
+  },
+  {
    "id": "hul",
    "name": "Hindustan Unilever",
    "sector": "FMCG · Mumbai",
