@@ -1,0 +1,935 @@
+{
+ "id": "sbi",
+ "name": "State Bank of India",
+ "short": "SBI",
+ "color": "#1A5BA6",
+ "line": "India's largest bank, owned mainly by the Government of India",
+ "sector": "Public sector banking",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: SBIN · BSE: 500112",
+ "website": "https://sbi.co.in",
+ "news_query": "State Bank of India",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Indian Masterminds)",
+   "url": "https://indianmasterminds.com/news/sbi-q2-fy27-results-net-profit-rises-14-percent-net-interest-income-247849/"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Sarkaritel)",
+   "url": "https://www.sarkaritel.com/?p=420571"
+  },
+  "q2c": {
+   "label": "Q2 FY27 earnings summary (Quartr)",
+   "url": "https://quartr.com/events/state-bank-of-india-sbin-q2-26-27_3exvnmPA"
+  },
+  "fy26": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "fy26b": {
+   "label": "SBI FY26 (Sahi)",
+   "url": "https://www.sahi.com/blogs/sbi-q4-fy26-results-record-profit-stock-crash-explained"
+  },
+  "ar": {
+   "label": "SBI data as of 31.03.2026 (Hello Banker, from annual report)",
+   "url": "https://hellobanker.in/how-big-is-sbi-check-business-branches-employees-customers-and-all-data-as-of-2026/"
+  },
+  "ar2": {
+   "label": "SBI business model, from Annual Report 2025-26 (The Strategy Story)",
+   "url": "https://thestrategystory.com/blog/state-bank-of-india-business-model-in-2026-how-sbi-makes-money/"
+  },
+  "hire": {
+   "label": "SBI hiring plans (Business Today)",
+   "url": "https://www.businesstoday.in/jobs/story/sbi-plans-12000-new-hires-up-to-250-more-branches-in-fy27-553515-2026-09-06"
+  },
+  "chair": {
+   "label": "Setty became 27th Chairman (Utkarsh)",
+   "url": "https://utkarsh.com/current-affairs/national/appointment-update/cs-setty-takes-over-as-the-27th-chairman-of-sbi"
+  },
+  "chair2": {
+   "label": "SBI leadership team (Zee Business)",
+   "url": "https://www.zeebiz.com/personal-finance/banking/news-ashwini-kumar-tewari-reappointed-as-sbi-managing-director-until-2027-385919"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/State_Bank_of_India"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  }
+ },
+ "tiles": [
+  {
+   "v": 80032,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 23265,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 245131,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹80,032 cr",
+   "k": "Net profit",
+   "s": "FY 2025-26 · record"
+  },
+  {
+   "v": "1.39%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "53 crore",
+   "k": "Customers",
+   "s": "Mar 2026"
+  },
+  {
+   "v": "10 crore+",
+   "k": "YONO users",
+   "s": "Mar 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "India's largest bank: about 53 crore customers, 23,265 branches and 64,245 ATMs (March 2026).",
+   "s": [
+    "ar",
+    "ar2"
+   ]
+  },
+  {
+   "t": "Led by Chairman C S Setty, its 27th Chairman, since 28 August 2024, with four Managing Directors.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "t": "Record FY 2025-26 net profit of ₹80,032 crore, the highest of any Indian bank.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 profit rose 14.3% to ₹23,038 crore; Gross NPA fell to 1.39%, the lowest in over two decades.",
+   "s": [
+    "q2",
+    "q2c"
+   ]
+  },
+  {
+   "t": "Strongly digital: its YONO app has over 10 crore registered users.",
+   "s": [
+    "ar",
+    "fy26"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1806",
+   "t": "Roots in the Bank of Calcutta, later the Imperial Bank of India.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "1955",
+   "t": "Imperial Bank nationalised and renamed State Bank of India.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2017",
+   "t": "Associate banks and Bharatiya Mahila Bank merged into SBI.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "Aug 2024",
+   "t": "C S Setty took charge as the 27th Chairman.",
+   "s": [
+    "chair"
+   ]
+  },
+  {
+   "y": "FY 2025-26",
+   "t": "Record annual profit of ₹80,032 crore.",
+   "s": [
+    "fy26"
+   ]
+  }
+ ],
+ "model": {
+  "how": "SBI earns mainly from the gap between interest on its huge loan book and interest paid to depositors. It also earns fees and runs subsidiaries in cards, insurance and mutual funds, and handles large amounts of government business.",
+  "flow": [
+   "53 crore customers deposit money",
+   "Bank lends to people, farmers, businesses, government",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹49,143 cr (+15%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) and Government of India (as main owner)",
+  "points": [
+   "SBI's Chairman and MDs are appointed by the Government, usually from its own senior MDs.",
+   "As a public sector bank, SBI also carries out government schemes such as Jan Dhan accounts.",
+   "It competes with private banks like HDFC Bank and ICICI Bank on deposits and loans."
+  ],
+  "s": [
+   "chair",
+   "ar"
+  ]
+ },
+ "people": [
+  {
+   "ini": "CS",
+   "name": "C S Setty",
+   "role": "Chairman",
+   "since": "since 28 Aug 2024",
+   "note": "SBI's 27th Chairman. Earlier SBI's Managing Director for international banking, global markets and technology.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "ini": "AT",
+   "name": "Ashwini Kumar Tewari",
+   "role": "Managing Director",
+   "since": "tenure to Dec 2027",
+   "note": "One of four MDs; oversees corporate banking and subsidiaries.",
+   "s": [
+    "chair2"
+   ]
+  },
+  {
+   "ini": "RA",
+   "name": "Rama Mohan Rao Amara",
+   "role": "Managing Director",
+   "since": "",
+   "note": "In charge of retail business and operations.",
+   "s": [
+    "chair2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹80,032 cr (+12.9%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.49%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.39%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "ar"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "15.40%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "ar"
+    ]
+   },
+   {
+    "k": "Return on equity",
+    "v": "18.57%",
+    "s": [
+     "ar"
+    ]
+   },
+   {
+    "k": "Transactions on digital channels",
+    "v": "98.7%",
+    "s": [
+     "ar",
+     "ar2"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹23,038 cr, up 14.3%.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Gross advances ₹52.08 lakh cr (+17.8%); deposits ₹62.78 lakh cr (+12.3%).",
+     "term": "Advances",
+     "s": [
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.39%, Net NPA 0.36%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "SBI is India's most profitable bank, earning ₹80,032 crore in FY26, and serves about 53 crore customers."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ],
+    "me": true
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   }
+  ],
+  "note": "SBI earned the highest profit of any Indian bank in FY26."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches",
+    "v": "23,265"
+   },
+   {
+    "k": "ATMs / ADWMs",
+    "v": "64,245"
+   },
+   {
+    "k": "Customer Service Points",
+    "v": "~80,000"
+   },
+   {
+    "k": "Customers",
+    "v": "53 crore"
+   }
+  ],
+  "local": "With branches in almost every town and village, SBI is a major employer across Punjab and North India, and often posts new officers to rural and semi-urban branches.",
+  "s": [
+   "ar",
+   "ar2"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Total workforce",
+    "v": "2,45,131"
+   },
+   {
+    "k": "People hired in FY26",
+    "v": "25,633"
+   },
+   {
+    "k": "Officers hired in FY26",
+    "v": "4,640"
+   },
+   {
+    "k": "Planned hires in FY27",
+    "v": "11,000–12,000"
+   }
+  ],
+  "note": "SBI is one of India's largest employers and recruits officers mainly through its Probationary Officer (PO) exams, plus specialist and campus hiring."
+ },
+ "csr": {
+  "t": "SBI spent ₹709 crore on CSR in FY 2025-26, reaching more than 58 lakh beneficiaries, and runs 164 rural self-employment training institutes (RSETIs).",
+  "s": [
+   "ar"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Record FY26 profit of ₹80,032 cr",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "t": "Unmatched reach: 23,265 branches, 53 crore customers",
+    "s": [
+     "ar"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Lower capital adequacy (15.40%) than large private peers",
+    "s": [
+     "ar"
+    ]
+   },
+   {
+    "t": "Huge workforce and branch network are costly",
+    "s": [
+     "ar2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Over 10 crore YONO users and 98.7% digital transactions",
+    "s": [
+     "ar"
+    ]
+   },
+   {
+    "t": "Loan growth of 17.8% in Q2 FY27",
+    "s": [
+     "q2c"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Private banks compete hard for urban customers",
+    "s": [
+     "hdfc",
+     "icici"
+    ]
+   },
+   {
+    "t": "Government ownership can slow decisions",
+    "s": [
+     "wiki"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and key ratios.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.39%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.36%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "15.40%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Return on equity",
+     "v": "18.57%"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Customers",
+     "v": "53 crore"
+    },
+    {
+     "k": "YONO users",
+     "v": "10 crore+"
+    },
+    {
+     "k": "Branches",
+     "v": "23,265"
+    },
+    {
+     "k": "Digital transactions",
+     "v": "98.7%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Workforce",
+     "v": "2,45,131"
+    },
+    {
+     "k": "Hired in FY26",
+     "v": "25,633"
+    },
+    {
+     "k": "Branches",
+     "v": "23,265"
+    },
+    {
+     "k": "Customers",
+     "v": "53 crore"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Workforce",
+     "v": "2,45,131"
+    },
+    {
+     "k": "Hired in FY26",
+     "v": "25,633"
+    },
+    {
+     "k": "Branches",
+     "v": "23,265"
+    },
+    {
+     "k": "Customers",
+     "v": "53 crore"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Workforce",
+     "v": "2,45,131"
+    },
+    {
+     "k": "Hired in FY26",
+     "v": "25,633"
+    },
+    {
+     "k": "Branches",
+     "v": "23,265"
+    },
+    {
+     "k": "Customers",
+     "v": "53 crore"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Workforce",
+     "v": "2,45,131"
+    },
+    {
+     "k": "Hired in FY26",
+     "v": "25,633"
+    },
+    {
+     "k": "Branches",
+     "v": "23,265"
+    },
+    {
+     "k": "Customers",
+     "v": "53 crore"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "SBI hires officers mainly through its Probationary Officer (PO) exam (prelims, mains, interview). Campus and specialist hiring varies, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Preliminary exam",
+    "d": "English, quantitative aptitude, reasoning"
+   },
+   {
+    "t": "Main exam",
+    "d": "Reasoning, data analysis, economy and banking awareness, English"
+   },
+   {
+    "t": "Interview & group exercise",
+    "d": "Personality and banking knowledge"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "How did SBI earn a record profit in FY26?",
+     "a": "Strong loan growth, better asset quality and lower provisions lifted FY26 profit to ₹80,032 cr."
+    },
+    {
+     "q": "What is the provision coverage ratio?",
+     "a": "The share of bad loans already covered by money set aside. Higher means safer."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "Only a part of SBI's customers use YONO. How would you increase it?",
+     "a": "Branch-assisted onboarding, regional-language campaigns, cashback on first UPI use, and simple tutorials for first-time users."
+    }
+   ],
+   "HR": [
+    {
+     "q": "SBI hired over 25,000 people in FY26. What challenges does that create?",
+     "a": "Training at scale, posting people to rural branches, and keeping young officers motivated."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "How would you sell a home loan in a small town?",
+     "a": "Use SBI's trust and wide reach, explain EMIs simply, and tie up with local builders."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can SBI serve 53 crore customers efficiently?",
+     "a": "More digital self-service, business correspondents in villages, and automation of routine tasks."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about SBI?",
+     "a": "India's largest bank: ₹80,032 cr profit in FY26, 23,265 branches, about 53 crore customers, led by Chairman C S Setty."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads SBI?",
+     "a": "Chairman C S Setty (since Aug 2024), with four Managing Directors."
+    },
+    {
+     "q": "Why SBI?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "SBI is the bank that reaches every corner of India, with about 53 crore customers and branches in almost every town, and it earned a record ₹80,032 crore last year. I want to build my career where my work touches millions of people, including families in towns like mine, and contribute to [your role] in India's largest bank.",
+  "ask": [
+   "How is SBI using YONO and AI to change branch roles?",
+   "What does the first posting for a new officer usually look like?",
+   "Which business areas is the bank growing fastest?"
+  ],
+  "gd": [
+   {
+    "t": "Should public sector banks be privatised?",
+    "for": "Private ownership can bring speed and efficiency.",
+    "against": "SBI earned record profits and serves financial inclusion goals."
+   },
+   {
+    "t": "Can digital banking replace branches in India?",
+    "for": "98.7% of SBI transactions are already digital.",
+    "against": "Rural customers still need branches and correspondents."
+   }
+  ],
+  "avoid": [
+   "Don't call SBI a private bank; it is a public sector bank, majority-owned by the government.",
+   "Don't confuse SBI with SBI Life, SBI Cards or SBI Mutual Fund; they are group companies.",
+   "Don't name an old Chairman; C S Setty has led since Aug 2024."
+  ],
+  "night": [
+   "Chairman: C S Setty",
+   "FY26 net profit: ₹80,032 cr (record)",
+   "Gross NPA 1.39% (Sep 2026)",
+   "23,265 branches · 53 crore customers",
+   "YONO: 10 crore+ users",
+   "Rivals: HDFC Bank, ICICI Bank, Bank of Baroda, PNB",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is SBI's Chairman?",
+   "o": [
+    "Dinesh Khara",
+    "C S Setty",
+    "Rajiv Kumar"
+   ],
+   "a": 1
+  },
+  {
+   "q": "SBI's FY26 net profit was about…",
+   "o": [
+    "₹50,000 cr",
+    "₹80,000 cr",
+    "₹1.2 lakh cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Roughly how many customers does SBI serve?",
+   "o": [
+    "5 crore",
+    "53 crore",
+    "100 crore"
+   ],
+   "a": 1
+  },
+  {
+   "q": "SBI is a…",
+   "o": [
+    "Private bank",
+    "Public sector bank",
+    "Foreign bank"
+   ],
+   "a": 1
+  },
+  {
+   "q": "SBI's digital app is called…",
+   "o": [
+    "iMobile",
+    "YONO",
+    "PayZapp"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "12 Nov 2026"
+}

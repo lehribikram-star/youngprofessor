@@ -1,0 +1,869 @@
+{
+ "id": "itc",
+ "name": "ITC Limited",
+ "short": "ITC",
+ "color": "#2E5E3E",
+ "line": "Diversified Indian company: FMCG, cigarettes, agri-business and paperboards",
+ "sector": "FMCG & conglomerate",
+ "hq": "Kolkata, West Bengal",
+ "listed": "NSE: ITC · BSE: 500875",
+ "website": "https://www.itcportal.com",
+ "news_query": "ITC Limited",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1743698"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Multibagg / IRIS)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/itc-q2-profit-cigarette-decline-ppt-cmw05v7ou00bq2vpenevy4bgk"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/itc-q2-results-standalone-pat-at-4137-cr"
+  },
+  "fy26": {
+   "label": "FY26 results (Arihant Capital / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25141010640"
+  },
+  "fy26b": {
+   "label": "FY26 results (Sahi, NSE filing)",
+   "url": "https://www.sahi.com/blogs/itc-q4-2026-results"
+  },
+  "seg": {
+   "label": "FY26 segment revenue (ScanX)",
+   "url": "https://scanx.trade/stock-market-news/companies/itc-q4-results-revenue-surges-to-217b-rupees-declares-final-dividend-of-8-per-share/40904430"
+  },
+  "cmd": {
+   "label": "ITC annual report 2026: Board of Directors",
+   "url": "https://itcportal.com/content/dam/itc-corporate/investors/annual-report-2026/itc-r-and-a-bod-and-committees-2026.pdf"
+  },
+  "cmd2": {
+   "label": "ITC 115th AGM speech, 23 Jul 2026",
+   "url": "https://itcportal.com/content/dam/itc-corporate/agm/2026/agm-speech-2026.pdf"
+  },
+  "brands": {
+   "label": "ITC FMCG strategy (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/itc-targets-rs-8-lakh-crore-fmcg-market-by-2035-chairman-md-sanjiv-puri-banks-on-ai-premiumisation-digital-growth"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/ITC_Limited"
+  }
+ },
+ "tiles": [
+  {
+   "v": 20286,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (standalone)",
+   "term": "Net profit"
+  },
+  {
+   "v": 30578,
+   "fmt": "cr",
+   "label": "Revenue Q2 FY27",
+   "sub": "Jul–Sep 2026"
+  },
+  {
+   "v": 30,
+   "fmt": "num",
+   "label": "FMCG brands",
+   "sub": "30+"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹4,137 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "standalone · −20.1%"
+  },
+  {
+   "v": "₹7,218 cr",
+   "k": "FMCG-Others revenue",
+   "s": "Q2 FY27 · +19.1%"
+  },
+  {
+   "v": "28 crore",
+   "k": "Households reached",
+   "s": "by its FMCG brands"
+  },
+  {
+   "v": "70+",
+   "k": "Export countries",
+   "s": "FMCG products"
+  }
+ ],
+ "brief": [
+  {
+   "t": "One of India's biggest companies, with businesses in FMCG (foods, personal care, stationery), cigarettes, agri-business and paperboards.",
+   "s": [
+    "seg",
+    "wiki"
+   ]
+  },
+  {
+   "t": "Led by Chairman & Managing Director Sanjiv Puri, who has been Chairman since May 2019.",
+   "s": [
+    "cmd",
+    "cmd2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 standalone net profit was ₹20,286 crore.",
+   "s": [
+    "seg",
+    "fy26"
+   ]
+  },
+  {
+   "t": "Q2 FY27 profit fell about 20% because of much higher cigarette taxes, while non-cigarette FMCG grew 19%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Its FMCG brands (Aashirvaad, Sunfeast, Bingo!, Classmate and more) reach about 28 crore households.",
+   "s": [
+    "brands"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1910",
+   "t": "Founded as the Imperial Tobacco Company of India.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "1970s–2000s",
+   "t": "Diversified into hotels, paperboards, agri-business and packaged foods.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2019",
+   "t": "Sanjiv Puri became Chairman.",
+   "s": [
+    "cmd2",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Jan 2025",
+   "t": "Hotels business demerged into ITC Hotels Ltd.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "Aug 2026",
+   "t": "Acquired the Century Pulp and Paper business.",
+   "s": [
+    "q2c"
+   ]
+  }
+ ],
+ "model": {
+  "how": "ITC earns most of its profit from cigarettes, and reinvests that cash to build FMCG brands, agri-business and paper and packaging. Its strategy is to grow non-cigarette businesses so the company depends less on tobacco.",
+  "flow": [
+   "Buys crops (wheat, tobacco, spices) from farmers",
+   "Makes foods, cigarettes, paper and packaging",
+   "Sells through a vast distribution network",
+   "Profit after costs, excise duty and tax"
+  ],
+  "facts": [
+   {
+    "k": "FMCG segment revenue FY26",
+    "v": "₹61,309 cr",
+    "term": "Segment",
+    "s": [
+     "seg"
+    ]
+   },
+   {
+    "k": "Agri Business revenue FY26",
+    "v": "₹20,296 cr",
+    "term": "Segment",
+    "s": [
+     "seg"
+    ]
+   },
+   {
+    "k": "Paperboards, Paper & Packaging FY26",
+    "v": "₹8,766 cr",
+    "term": "Segment",
+    "s": [
+     "seg"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Several: FSSAI (foods), tax authorities (cigarette excise), environmental regulators (paper)",
+  "points": [
+   "Cigarette taxes have a big effect on ITC's profits.",
+   "In foods and personal care, ITC competes with HUL, Nestlé and Britannia.",
+   "Big interview theme: ITC's shift from tobacco to FMCG."
+  ],
+  "s": [
+   "q2b"
+  ]
+ },
+ "people": [
+  {
+   "ini": "SP",
+   "name": "Sanjiv Puri",
+   "role": "Chairman & Managing Director",
+   "since": "Chairman since May 2019",
+   "note": "Joined ITC in 1986; also a former President of CII.",
+   "s": [
+    "cmd",
+    "cmd2"
+   ]
+  },
+  {
+   "ini": "SD",
+   "name": "Supratim Dutta",
+   "role": "Executive Director & CFO",
+   "since": "",
+   "note": "Heads finance on ITC's board.",
+   "s": [
+    "cmd"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026)",
+  "rows": [
+   {
+    "k": "Net profit (standalone)",
+    "v": "₹20,286 cr",
+    "term": "Net profit",
+    "s": [
+     "seg",
+     "fy26"
+    ]
+   },
+   {
+    "k": "Net profit (consolidated)",
+    "v": "₹20,689 cr",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "FMCG segment revenue",
+    "v": "₹61,309 cr",
+    "term": "Segment",
+    "s": [
+     "seg"
+    ]
+   },
+   {
+    "k": "Agri Business revenue",
+    "v": "₹20,296 cr",
+    "term": "Segment",
+    "s": [
+     "seg"
+    ]
+   },
+   {
+    "k": "Final dividend",
+    "v": "₹8 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "seg"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Standalone net profit ₹4,137 cr, down 20.1%, as higher cigarette taxes hit earnings.",
+     "term": "Excise duty",
+     "s": [
+      "q2b",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Non-cigarette segment revenue grew 18% and segment results 24%.",
+     "s": [
+      "q2b"
+     ]
+    },
+    {
+     "t": "Paperboards, paper & packaging results rose 47.6%.",
+     "s": [
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "ITC is reducing its reliance on cigarettes: its other businesses grew results 24% last quarter even as cigarette profits fell."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Hindustan Unilever",
+   "Nestlé India",
+   "Britannia",
+   "Tata Consumer",
+   "Godfrey Phillips (cigarettes)",
+   "JK Paper (paper)"
+  ],
+  "note": "ITC competes in different industries, so compare business by business."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "FMCG brands",
+    "v": "30+"
+   },
+   {
+    "k": "Households reached",
+    "v": "~28 crore"
+   },
+   {
+    "k": "Export countries",
+    "v": "70+"
+   }
+  ],
+  "local": "ITC's agri-business works with farmers across India, and its foods are sold in shops across Punjab and North India.",
+  "s": [
+   "brands"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "ITC's CSR and sustainability work includes watershed development, afforestation, livestock development and women's empowerment, mainly in its agri-business areas.",
+  "s": [
+   "wiki"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Cash-rich cigarette business funds growth",
+    "s": [
+     "wiki"
+    ]
+   },
+   {
+    "t": "Non-cigarette results up 24% in Q2 FY27",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Profit still depends heavily on cigarettes",
+    "s": [
+     "q2b"
+    ]
+   },
+   {
+    "t": "Q2 FY27 profit fell about 20%",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Large FMCG market; 30+ brands reaching 28 crore households",
+    "s": [
+     "brands"
+    ]
+   },
+   {
+    "t": "Paper and packaging growth (results +47.6%)",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Higher cigarette taxes and regulation",
+    "s": [
+     "q2b"
+    ]
+   },
+   {
+    "t": "Strong FMCG rivals like HUL and Nestlé",
+    "s": [
+     "wiki"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "ITC is a classic BCG example: Cigarettes act as the cash cow funding FMCG-Others (a growing question mark/star). We don't plot exact market shares because ITC doesn't publish them.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "Very high. Many national, regional and new digital brands fight for shelf space."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. D2C brands start easily online, but national distribution is hard to build."
+   },
+   {
+    "k": "Substitutes",
+    "v": "High. Shoppers switch between brands and private labels easily."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Rising. Modern trade and quick-commerce apps negotiate harder on margins."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium. Prices of palm oil, crude-linked chemicals and crops swing costs."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "GST rates and government rural schemes affect demand."
+   },
+   {
+    "k": "Economic",
+    "v": "Inflation and rural incomes drive volumes."
+   },
+   {
+    "k": "Social",
+    "v": "Young consumers want premium, natural and convenient products."
+   },
+   {
+    "k": "Technological",
+    "v": "Quick commerce, e-commerce and AI-led consumer insights."
+   },
+   {
+    "k": "Legal",
+    "v": "Food safety, labelling and advertising rules."
+   },
+   {
+    "k": "Environmental",
+    "v": "Plastic packaging and water use are under scrutiny."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Many brands across price points and pack sizes."
+   },
+   {
+    "k": "Price",
+    "v": "Low-price small packs for rural India, premium variants for cities."
+   },
+   {
+    "k": "Place",
+    "v": "Kirana shops, modern trade, e-commerce and quick commerce."
+   },
+   {
+    "k": "Promotion",
+    "v": "TV and digital advertising, influencers, in-store displays."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Reach more shops and households with existing brands."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in rural India and exports."
+   },
+   {
+    "k": "Product development",
+    "v": "Premium and health-focused variants."
+   },
+   {
+    "k": "Diversification",
+    "v": "New categories and acquisitions of digital-first brands."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "FMCG": "Fast-Moving Consumer Goods: everyday products like soap, tea, biscuits, sold quickly at low prices.",
+  "Revenue from operations": "Money earned from selling products and services, before costs.",
+  "Net profit": "What is left after all costs and taxes.",
+  "EBITDA margin": "Operating profit before interest, tax and depreciation, as a % of sales. Shows how efficiently the core business runs.",
+  "Underlying sales growth": "Sales growth after removing one-off effects (like acquisitions or tax changes). Shows real demand.",
+  "Underlying volume growth": "Growth in the number of units sold, not just higher prices. The best sign of real consumer demand.",
+  "Distribution reach": "How many shops and outlets stock the company's products.",
+  "General trade": "Small neighbourhood kirana shops, the backbone of FMCG sales in India.",
+  "Modern trade": "Supermarkets and organised retail chains like DMart or Reliance Smart.",
+  "Quick commerce": "10–30 minute delivery apps like Blinkit, Zepto and Swiggy Instamart.",
+  "Premiumisation": "Consumers moving to higher-priced, better products, which raises profit per unit.",
+  "Brand equity": "The value a brand adds because people know, trust and prefer it.",
+  "Demerger": "Separating one business into a new, independent company.",
+  "Excise duty": "A tax on making certain goods, such as cigarettes. It is collected by the company and paid to the government.",
+  "Segment": "A separate business line reported on its own in the company's results.",
+  "Attrition": "The % of employees who leave in a year.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Net profit FY26",
+     "v": "₹20,286 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "FMCG revenue FY26",
+     "v": "₹61,309 cr",
+     "term": "Segment"
+    },
+    {
+     "k": "Q2 profit change",
+     "v": "−20.1%"
+    },
+    {
+     "k": "Dividend",
+     "v": "₹8/share",
+     "term": "Dividend"
+    }
+   ],
+   "measured": [
+    "Accuracy of monthly closing",
+    "Cost savings found",
+    "Quality of business analysis"
+   ],
+   "skills": [
+    "Excel and financial modelling",
+    "Reading a P&L",
+    "Costing and margin analysis"
+   ],
+   "tip": "Know revenue, profit and margin, and why volume growth matters more than price growth."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "FMCG brands",
+     "v": "30+"
+    },
+    {
+     "k": "Households",
+     "v": "28 crore"
+    },
+    {
+     "k": "FMCG-Others growth",
+     "v": "19.1%"
+    },
+    {
+     "k": "Exports",
+     "v": "70+ countries"
+    }
+   ],
+   "measured": [
+    "Market share and brand growth",
+    "Campaign results",
+    "New product success"
+   ],
+   "skills": [
+    "Consumer insight",
+    "Brand positioning",
+    "Digital and quick-commerce marketing"
+   ],
+   "tip": "Pick one brand you use, know its target customer, and suggest one idea to grow it."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Businesses",
+     "v": "FMCG, Agri, Paper"
+    },
+    {
+     "k": "Brands",
+     "v": "30+"
+    },
+    {
+     "k": "CMD",
+     "v": "Sanjiv Puri"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Hiring quality and speed",
+    "Retention of key talent",
+    "Engagement scores"
+   ],
+   "skills": [
+    "Talent acquisition",
+    "Performance management",
+    "HR analytics"
+   ],
+   "tip": "FMCG companies value leadership and frontline sales talent. Talk about building capability in sales teams."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Businesses",
+     "v": "FMCG, Agri, Paper"
+    },
+    {
+     "k": "Brands",
+     "v": "30+"
+    },
+    {
+     "k": "CMD",
+     "v": "Sanjiv Puri"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Secondary sales and distribution reach",
+    "New outlets added",
+    "Collections and stock levels"
+   ],
+   "skills": [
+    "Distributor management",
+    "Retail negotiation",
+    "Data-based beat planning"
+   ],
+   "tip": "Expect 'How will you increase sales in a town where our brand is weak?' Talk about outlets, displays and schemes."
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Businesses",
+     "v": "FMCG, Agri, Paper"
+    },
+    {
+     "k": "Brands",
+     "v": "30+"
+    },
+    {
+     "k": "CMD",
+     "v": "Sanjiv Puri"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "On-time, in-full delivery",
+    "Inventory days",
+    "Cost per unit"
+   ],
+   "skills": [
+    "Supply chain basics",
+    "Excel",
+    "Process improvement"
+   ],
+   "tip": "Talk about reducing stock-outs and wastage across many small shops."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Businesses",
+     "v": "FMCG, Agri, Paper"
+    },
+    {
+     "k": "Brands",
+     "v": "30+"
+    },
+    {
+     "k": "CMD",
+     "v": "Sanjiv Puri"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Business basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and a case or situational test"
+   },
+   {
+    "t": "Group discussion or case",
+    "d": "Often a marketing or business case"
+   },
+   {
+    "t": "Interviews",
+    "d": "Functional interview, then HR or leadership round"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did ITC's profit fall in Q2 FY27 even though revenue rose?",
+     "a": "Gross revenue rose mainly because of higher cigarette excise duty collected, but cigarette profits fell 27%, so overall profit dropped about 20%."
+    },
+    {
+     "q": "What is the difference between gross and net revenue at ITC?",
+     "a": "Gross revenue includes excise duty collected for the government; net revenue removes it, so net revenue shows the real business."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "Pick one ITC food brand and suggest how to grow it.",
+     "a": "For example Aashirvaad or Sunfeast: define the target customer and suggest one quick-commerce or regional campaign idea."
+    },
+    {
+     "q": "How can ITC compete with HUL and Nestlé?",
+     "a": "Use its agri sourcing strength, strong distribution and fast innovation in foods."
+    }
+   ],
+   "HR": [
+    {
+     "q": "ITC runs very different businesses. How would you build a common culture?",
+     "a": "Shared values, cross-business rotations for trainees, and common leadership programmes."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "How would you push a new ITC snack in small towns?",
+     "a": "Small price packs, retailer schemes, in-store visibility and sampling at schools and fairs."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How does ITC's agri-business help its foods business?",
+     "a": "It sources crops like wheat directly from farmers, ensuring quality and cost control for brands like Aashirvaad."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about ITC?",
+     "a": "A diversified company in FMCG, cigarettes, agri and paper, led by Sanjiv Puri; FY26 net profit ₹20,286 cr."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads ITC?",
+     "a": "Sanjiv Puri is Chairman & Managing Director."
+    },
+    {
+     "q": "Name three ITC brands.",
+     "a": "Aashirvaad, Sunfeast, Bingo!, Classmate, Yippee! or Fiama. Say why you like one."
+    },
+    {
+     "q": "Why ITC?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "ITC is transforming itself: its non-cigarette businesses grew results 24% last quarter, and its 30+ FMCG brands reach about 28 crore households. Working across foods, agri and packaging gives a young professional unmatched variety. I want to be part of this transformation and contribute to [your role] at one of India's most diversified companies.",
+  "ask": [
+   "Which FMCG categories is ITC betting on next?",
+   "How do trainees move across ITC's businesses?",
+   "How is ITC using AI-led consumer insights in product development?"
+  ],
+  "gd": [
+   {
+    "t": "Should cigarette taxes keep rising?",
+    "for": "Higher taxes reduce smoking and improve health.",
+    "against": "Very high taxes can push illegal trade and hurt farmers."
+   },
+   {
+    "t": "Are conglomerates still relevant?",
+    "for": "ITC uses cash from one business to grow others.",
+    "against": "Investors often prefer focused companies; ITC demerged hotels."
+   }
+  ],
+  "avoid": [
+   "Don't say ITC still runs hotels directly; ITC Hotels is now a separate company.",
+   "Don't talk only about cigarettes; show you know the FMCG brands.",
+   "Don't confuse gross revenue (with taxes) and net revenue."
+  ],
+  "night": [
+   "CMD: Sanjiv Puri",
+   "FY26 standalone profit ₹20,286 cr",
+   "Q2 FY27 profit ₹4,137 cr (−20.1%)",
+   "Non-cigarette results +24%",
+   "5 brands: Aashirvaad, Sunfeast, Bingo!, Classmate, Fiama",
+   "Rivals: HUL, Nestlé, Britannia",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is ITC's Chairman & MD?",
+   "o": [
+    "Sanjiv Puri",
+    "Priya Nair",
+    "Nitin Paranjpe"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Why did ITC's Q2 FY27 profit fall?",
+   "o": [
+    "Lower food sales",
+    "Higher cigarette taxes",
+    "Hotel losses"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which is an ITC brand?",
+   "o": [
+    "Aashirvaad",
+    "Dove",
+    "Maggi"
+   ],
+   "a": 0
+  },
+  {
+   "q": "ITC's headquarters is in…",
+   "o": [
+    "Mumbai",
+    "Kolkata",
+    "Delhi"
+   ],
+   "a": 1
+  },
+  {
+   "q": "ITC Hotels is now…",
+   "o": [
+    "Closed",
+    "A separate company",
+    "Part of FMCG"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "12 Nov 2026"
+}

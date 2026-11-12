@@ -1,0 +1,910 @@
+{
+ "id": "hul",
+ "name": "Hindustan Unilever",
+ "short": "HU",
+ "color": "#1F36C7",
+ "line": "India's largest FMCG company, the Indian arm of Unilever",
+ "sector": "FMCG",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: HINDUNILVR · BSE: 500696",
+ "website": "https://www.hul.co.in",
+ "news_query": "Hindustan Unilever",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1740511"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Lapaas Voice)",
+   "url": "https://lapaasvoice.com/hul-q2-fy27-results-net-profit-rises-4-to-%E2%82%B92790-crore-volume-growth-reaches-7/"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (5paisa)",
+   "url": "https://www.5paisa.com/blog/hindustan-unilever-q2-results-profit-2790-crore"
+  },
+  "fy26": {
+   "label": "FY26 results (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/hul-q4fy26-profit-rises-21-revenue-up-8-yoy"
+  },
+  "fy26b": {
+   "label": "FY26 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hindustan-unilever-share-price-in-focus-on-q4-fy26-earnings-results-net-profit-up-21-yoy"
+  },
+  "fy26c": {
+   "label": "FY26 consolidated review (broker report via Business Standard)",
+   "url": "https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2026-05/17778735970.25624000.pdf"
+  },
+  "gov": {
+   "label": "HUL Corporate Governance Report 2025-26",
+   "url": "https://www.hul.co.in/files/corporate-governance-report-2025-26.pdf"
+  },
+  "agm": {
+   "label": "HUL 93rd AGM minutes",
+   "url": "https://www.hul.co.in/files/minutes-of-the-93rd-annual-general-meeting.pdf"
+  },
+  "hr": {
+   "label": "FY26 workforce (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hul-reduces-permanent-workforce-by-8-6-and-worker-count-by-5-3-in-fy26"
+  },
+  "site": {
+   "label": "HUL press release, FY 2026 results",
+   "url": "https://www.hul.co.in/news/press-releases/2026/march-quarter-and-financial-year-2026-results/"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Hindustan_Unilever"
+  }
+ },
+ "tiles": [
+  {
+   "v": 64468,
+   "fmt": "cr",
+   "label": "Revenue",
+   "sub": "FY 2025-26",
+   "term": "Revenue from operations"
+  },
+  {
+   "v": 18226,
+   "fmt": "cr",
+   "label": "Revenue Q2 FY27",
+   "sub": "Jul–Sep 2026"
+  },
+  {
+   "v": 7499,
+   "fmt": "num",
+   "label": "Permanent employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹18,226 cr",
+   "k": "Revenue Q2 FY27",
+   "s": "+14.5%"
+  },
+  {
+   "v": "15%",
+   "k": "Underlying sales growth",
+   "s": "Q2 FY27 · 14-quarter high"
+  },
+  {
+   "v": "7%",
+   "k": "Volume growth",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "22.6%",
+   "k": "EBITDA margin",
+   "s": "Q2 FY27"
+  }
+ ],
+ "brief": [
+  {
+   "t": "India's largest FMCG company, owned majority by Unilever, with brands like Dove, Lux, Surf Excel, Rin, Lipton and Knorr.",
+   "s": [
+    "wiki",
+    "site"
+   ]
+  },
+  {
+   "t": "Led by CEO & MD Priya Nair since 1 August 2025; Nitin Paranjpe is Non-Executive Chairman.",
+   "s": [
+    "gov",
+    "agm"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) revenue rose 14.5% to ₹18,226 crore, with 15% underlying sales growth, its best in 14 quarters.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 net profit was ₹2,790 crore, up about 4%; costs rose faster than sales.",
+   "s": [
+    "q2",
+    "q2c"
+   ]
+  },
+  {
+   "t": "FY26 was the first year after the ice-cream business (Kwality Wall's) was demerged into a separate company.",
+   "s": [
+    "fy26"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1933",
+   "t": "Lever Brothers starts manufacturing in India; the company traces its roots here.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2007",
+   "t": "Renamed Hindustan Unilever Limited.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2020",
+   "t": "Merged GSK Consumer Healthcare India (Horlicks, Boost).",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "Mar 2022",
+   "t": "Nitin Paranjpe became Non-Executive Chairman.",
+   "s": [
+    "gov"
+   ]
+  },
+  {
+   "y": "Aug 2025",
+   "t": "Priya Nair became CEO & MD, the first woman to lead HUL.",
+   "s": [
+    "gov",
+    "agm"
+   ]
+  },
+  {
+   "y": "FY26",
+   "t": "Ice-cream business demerged into a separate listed company.",
+   "s": [
+    "fy26"
+   ]
+  }
+ ],
+ "model": {
+  "how": "HUL makes and sells everyday products in Home Care, Beauty & Wellbeing, Personal Care and Foods. It earns by selling huge volumes through millions of shops, keeping costs low through scale, and charging more for premium brands.",
+  "flow": [
+   "Buys raw materials (oils, chemicals, tea)",
+   "Makes products in its factories",
+   "Sells through distributors to lakhs of shops and online",
+   "Profit after costs, advertising and tax"
+  ],
+  "facts": [
+   {
+    "k": "Revenue from operations FY26",
+    "v": "₹64,468 cr",
+    "term": "Revenue from operations",
+    "s": [
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Home Care underlying sales growth, Q2 FY27",
+    "v": "22%",
+    "term": "Underlying sales growth",
+    "s": [
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "FSSAI (food), BIS standards, and ASCI for advertising",
+  "points": [
+   "FMCG demand depends on rural incomes, inflation and GST rates.",
+   "Quick-commerce apps and D2C brands are changing how products are sold.",
+   "Big interview theme: volume growth vs price growth."
+  ],
+  "s": [
+   "q2"
+  ]
+ },
+ "people": [
+  {
+   "ini": "PN",
+   "name": "Priya Nair",
+   "role": "CEO & Managing Director",
+   "since": "since 1 Aug 2025",
+   "note": "First woman to lead HUL; focuses on 'volume-led' profitable growth.",
+   "s": [
+    "gov",
+    "q2c"
+   ]
+  },
+  {
+   "ini": "NP",
+   "name": "Nitin Paranjpe",
+   "role": "Non-Executive Chairman",
+   "since": "since 31 Mar 2022",
+   "note": "Former CEO of HUL and senior Unilever leader.",
+   "s": [
+    "gov"
+   ]
+  },
+  {
+   "ini": "NG",
+   "name": "Niranjan Gupta",
+   "role": "Executive Director & CFO",
+   "since": "since 1 Nov 2025",
+   "note": "Heads finance for the company.",
+   "s": [
+    "gov"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 and latest quarter (consolidated)",
+  "rows": [
+   {
+    "k": "Revenue from operations FY26",
+    "v": "₹64,468 cr (+5.1%)",
+    "term": "Revenue from operations",
+    "s": [
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Reported net profit FY26",
+    "v": "₹15,059 cr",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Note on FY26 profit",
+    "v": "Includes one-time gains",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "k": "Revenue Q2 FY27",
+    "v": "₹18,226 cr (+14.5%)",
+    "term": "Revenue from operations",
+    "s": [
+     "q2b",
+     "q2c"
+    ]
+   },
+   {
+    "k": "Net profit Q2 FY27",
+    "v": "₹2,790 cr (+3.9%)",
+    "term": "Net profit",
+    "s": [
+     "q2",
+     "q2c"
+    ]
+   },
+   {
+    "k": "EBITDA margin Q2 FY27",
+    "v": "22.6%",
+    "term": "EBITDA margin",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Underlying sales growth 15%, the highest in 14 quarters; volume growth 7%.",
+     "term": "Underlying volume growth",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Home Care grew 22% and Beauty & Wellbeing 16%.",
+     "s": [
+      "q2b"
+     ]
+    },
+    {
+     "t": "EBITDA margin fell to 22.6% from 24.0% as costs rose.",
+     "term": "EBITDA margin",
+     "s": [
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "HUL's sales grew 15% last quarter, its fastest in over three years, driven by real volume growth of 7%."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "ITC",
+   "Nestlé India",
+   "Procter & Gamble India",
+   "Godrej Consumer",
+   "Dabur",
+   "Marico",
+   "Colgate-Palmolive India"
+  ],
+  "note": "Different companies report differently, so compare growth rates rather than raw profit."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Permanent employees",
+    "v": "7,499"
+   },
+   {
+    "k": "Workers",
+    "v": "17,490"
+   }
+  ],
+  "local": "HUL products reach shops in almost every town in Punjab and North India. Sales roles often cover a territory of distributors and retail outlets.",
+  "s": [
+   "hr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Permanent employees",
+    "v": "7,499"
+   },
+   {
+    "k": "Workers",
+    "v": "17,490"
+   },
+   {
+    "k": "Change in permanent staff, FY26",
+    "v": "−8.6%"
+   }
+  ],
+  "note": "From the FY26 annual report. HUL's management trainee programme is one of India's best-known for Management Students."
+ },
+ "csr": {
+  "t": "HUL's sustainability and CSR work includes water conservation, plastic collection and recycling, and livelihood programmes for rural women.",
+  "s": [
+   "wiki"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "India's strongest brand portfolio across categories",
+    "s": [
+     "wiki"
+    ]
+   },
+   {
+    "t": "Sales growth of 15% in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Profit grew much slower (about 4%) than sales",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Margins fell from 24.0% to 22.6%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Strong demand in Home Care (+22%) and premium beauty",
+    "s": [
+     "q2b"
+    ]
+   },
+   {
+    "t": "Quick commerce and rural growth",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Digital-first D2C brands and ITC, Nestlé, P&G compete hard",
+    "s": [
+     "wiki"
+    ]
+   },
+   {
+    "t": "Rising raw-material costs squeeze margins",
+    "s": [
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "HUL reports segments (Home Care, Beauty & Wellbeing, Personal Care, Foods), but not market shares, so we don't plot a BCG matrix. In interviews, discuss which segment grows fastest (Home Care, +22% in Q2 FY27).",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "Very high. Many national, regional and new digital brands fight for shelf space."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. D2C brands start easily online, but national distribution is hard to build."
+   },
+   {
+    "k": "Substitutes",
+    "v": "High. Shoppers switch between brands and private labels easily."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Rising. Modern trade and quick-commerce apps negotiate harder on margins."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium. Prices of palm oil, crude-linked chemicals and crops swing costs."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "GST rates and government rural schemes affect demand."
+   },
+   {
+    "k": "Economic",
+    "v": "Inflation and rural incomes drive volumes."
+   },
+   {
+    "k": "Social",
+    "v": "Young consumers want premium, natural and convenient products."
+   },
+   {
+    "k": "Technological",
+    "v": "Quick commerce, e-commerce and AI-led consumer insights."
+   },
+   {
+    "k": "Legal",
+    "v": "Food safety, labelling and advertising rules."
+   },
+   {
+    "k": "Environmental",
+    "v": "Plastic packaging and water use are under scrutiny."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Many brands across price points and pack sizes."
+   },
+   {
+    "k": "Price",
+    "v": "Low-price small packs for rural India, premium variants for cities."
+   },
+   {
+    "k": "Place",
+    "v": "Kirana shops, modern trade, e-commerce and quick commerce."
+   },
+   {
+    "k": "Promotion",
+    "v": "TV and digital advertising, influencers, in-store displays."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Reach more shops and households with existing brands."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in rural India and exports."
+   },
+   {
+    "k": "Product development",
+    "v": "Premium and health-focused variants."
+   },
+   {
+    "k": "Diversification",
+    "v": "New categories and acquisitions of digital-first brands."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "FMCG": "Fast-Moving Consumer Goods: everyday products like soap, tea, biscuits, sold quickly at low prices.",
+  "Revenue from operations": "Money earned from selling products and services, before costs.",
+  "Net profit": "What is left after all costs and taxes.",
+  "EBITDA margin": "Operating profit before interest, tax and depreciation, as a % of sales. Shows how efficiently the core business runs.",
+  "Underlying sales growth": "Sales growth after removing one-off effects (like acquisitions or tax changes). Shows real demand.",
+  "Underlying volume growth": "Growth in the number of units sold, not just higher prices. The best sign of real consumer demand.",
+  "Distribution reach": "How many shops and outlets stock the company's products.",
+  "General trade": "Small neighbourhood kirana shops, the backbone of FMCG sales in India.",
+  "Modern trade": "Supermarkets and organised retail chains like DMart or Reliance Smart.",
+  "Quick commerce": "10–30 minute delivery apps like Blinkit, Zepto and Swiggy Instamart.",
+  "Premiumisation": "Consumers moving to higher-priced, better products, which raises profit per unit.",
+  "Brand equity": "The value a brand adds because people know, trust and prefer it.",
+  "Demerger": "Separating one business into a new, independent company.",
+  "Excise duty": "A tax on making certain goods, such as cigarettes. It is collected by the company and paid to the government.",
+  "Segment": "A separate business line reported on its own in the company's results.",
+  "Attrition": "The % of employees who leave in a year.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Revenue Q2 FY27",
+     "v": "₹18,226 cr",
+     "term": "Revenue from operations"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹2,790 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "EBITDA margin",
+     "v": "22.6%",
+     "term": "EBITDA margin"
+    },
+    {
+     "k": "Sales growth",
+     "v": "15%",
+     "term": "Underlying sales growth"
+    }
+   ],
+   "measured": [
+    "Accuracy of monthly closing",
+    "Cost savings found",
+    "Quality of business analysis"
+   ],
+   "skills": [
+    "Excel and financial modelling",
+    "Reading a P&L",
+    "Costing and margin analysis"
+   ],
+   "tip": "Know revenue, profit and margin, and why volume growth matters more than price growth."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Underlying sales growth",
+     "v": "15%",
+     "term": "Underlying sales growth"
+    },
+    {
+     "k": "Volume growth",
+     "v": "7%",
+     "term": "Underlying volume growth"
+    },
+    {
+     "k": "Home Care growth",
+     "v": "22%"
+    },
+    {
+     "k": "Beauty & Wellbeing",
+     "v": "16%"
+    }
+   ],
+   "measured": [
+    "Market share and brand growth",
+    "Campaign results",
+    "New product success"
+   ],
+   "skills": [
+    "Consumer insight",
+    "Brand positioning",
+    "Digital and quick-commerce marketing"
+   ],
+   "tip": "Pick one brand you use, know its target customer, and suggest one idea to grow it."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Permanent employees",
+     "v": "7,499"
+    },
+    {
+     "k": "Workers",
+     "v": "17,490"
+    },
+    {
+     "k": "CEO",
+     "v": "Priya Nair"
+    },
+    {
+     "k": "Sales growth Q2",
+     "v": "15%",
+     "term": "Underlying sales growth"
+    }
+   ],
+   "measured": [
+    "Hiring quality and speed",
+    "Retention of key talent",
+    "Engagement scores"
+   ],
+   "skills": [
+    "Talent acquisition",
+    "Performance management",
+    "HR analytics"
+   ],
+   "tip": "FMCG companies value leadership and frontline sales talent. Talk about building capability in sales teams."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Permanent employees",
+     "v": "7,499"
+    },
+    {
+     "k": "Workers",
+     "v": "17,490"
+    },
+    {
+     "k": "CEO",
+     "v": "Priya Nair"
+    },
+    {
+     "k": "Sales growth Q2",
+     "v": "15%",
+     "term": "Underlying sales growth"
+    }
+   ],
+   "measured": [
+    "Secondary sales and distribution reach",
+    "New outlets added",
+    "Collections and stock levels"
+   ],
+   "skills": [
+    "Distributor management",
+    "Retail negotiation",
+    "Data-based beat planning"
+   ],
+   "tip": "Expect 'How will you increase sales in a town where our brand is weak?' Talk about outlets, displays and schemes."
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Permanent employees",
+     "v": "7,499"
+    },
+    {
+     "k": "Workers",
+     "v": "17,490"
+    },
+    {
+     "k": "CEO",
+     "v": "Priya Nair"
+    },
+    {
+     "k": "Sales growth Q2",
+     "v": "15%",
+     "term": "Underlying sales growth"
+    }
+   ],
+   "measured": [
+    "On-time, in-full delivery",
+    "Inventory days",
+    "Cost per unit"
+   ],
+   "skills": [
+    "Supply chain basics",
+    "Excel",
+    "Process improvement"
+   ],
+   "tip": "Talk about reducing stock-outs and wastage across many small shops."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Permanent employees",
+     "v": "7,499"
+    },
+    {
+     "k": "Workers",
+     "v": "17,490"
+    },
+    {
+     "k": "CEO",
+     "v": "Priya Nair"
+    },
+    {
+     "k": "Sales growth Q2",
+     "v": "15%",
+     "term": "Underlying sales growth"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Business basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and a case or situational test"
+   },
+   {
+    "t": "Group discussion or case",
+    "d": "Often a marketing or business case"
+   },
+   {
+    "t": "Interviews",
+    "d": "Functional interview, then HR or leadership round"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "HUL's sales grew 15% but profit only 4%. Why?",
+     "a": "Costs, especially raw materials and brand investment, rose faster, so the EBITDA margin fell from 24.0% to 22.6%."
+    },
+    {
+     "q": "Why does volume growth matter more than price growth?",
+     "a": "Volume growth means more people are buying; price growth alone can hide falling demand."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "Pick one HUL brand and suggest how to grow it among young buyers.",
+     "a": "Choose a brand you know, define its target customer, and suggest one digital or quick-commerce idea with a clear message."
+    },
+    {
+     "q": "How would you sell HUL products in rural Punjab?",
+     "a": "Small affordable packs, strong kirana distribution, local-language promotions and village fairs."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you attract top talent to HUL's sales teams?",
+     "a": "Show fast growth paths, early responsibility through management trainee rotations, and strong training."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "How would you increase sales in a town where our brand is weak?",
+     "a": "Add outlets, improve shelf visibility, run trade schemes, and track sales by beat."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you reduce stock-outs across lakhs of shops?",
+     "a": "Better demand forecasting, distributor stock tracking and faster replenishment."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about HUL?",
+     "a": "India's largest FMCG company, led by CEO Priya Nair; Q2 FY27 revenue ₹18,226 cr with 15% growth."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads HUL?",
+     "a": "Priya Nair, CEO & MD (since Aug 2025); Nitin Paranjpe is Non-Executive Chairman."
+    },
+    {
+     "q": "Name three HUL brands you use.",
+     "a": "For example Dove, Surf Excel, Lipton, Knorr, Rin or Lux. Say why you like one of them."
+    },
+    {
+     "q": "Why HUL?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "HUL's brands are part of almost every Indian home, and last quarter it grew sales 15%, its fastest in over three years, under Priya Nair's leadership. I want to learn how great brands are built and sold at India's scale, from big cities to small towns like mine, and contribute to [your role] at the company that sets the standard in FMCG.",
+  "ask": [
+   "How is HUL changing its approach for quick commerce?",
+   "What does a management trainee rotation look like here?",
+   "Which category is the company betting on most for growth?"
+  ],
+  "gd": [
+   {
+    "t": "Are D2C brands a threat to FMCG giants?",
+    "for": "D2C brands grow fast online with niche products.",
+    "against": "Giants like HUL have scale, distribution and trust."
+   },
+   {
+    "t": "Will quick commerce kill the kirana store?",
+    "for": "Urban shoppers prefer 10-minute delivery.",
+    "against": "Kiranas still dominate small towns and rural India."
+   }
+  ],
+  "avoid": [
+   "Don't say HUL still owns Kwality Wall's ice cream; that business was demerged.",
+   "Don't confuse HUL (India) with Unilever (the global parent).",
+   "Don't name the old CEO; Priya Nair has led since Aug 2025."
+  ],
+  "night": [
+   "CEO & MD: Priya Nair · Chairman: Nitin Paranjpe",
+   "Q2 FY27 revenue ₹18,226 cr (+14.5%)",
+   "Sales growth 15%, volume growth 7%",
+   "5 brands: Dove, Surf Excel, Lux, Lipton, Knorr",
+   "Rivals: ITC, Nestlé, P&G, Dabur, Marico",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Pick one brand and one growth idea",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is HUL's CEO & MD?",
+   "o": [
+    "Rohit Jawa",
+    "Priya Nair",
+    "Sanjiv Puri"
+   ],
+   "a": 1
+  },
+  {
+   "q": "HUL's underlying sales growth in Q2 FY27 was…",
+   "o": [
+    "2%",
+    "15%",
+    "40%"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which business did HUL demerge?",
+   "o": [
+    "Tea",
+    "Ice cream",
+    "Detergents"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which is an HUL brand?",
+   "o": [
+    "Aashirvaad",
+    "Surf Excel",
+    "Maggi"
+   ],
+   "a": 1
+  },
+  {
+   "q": "HUL's parent company is…",
+   "o": [
+    "P&G",
+    "Unilever",
+    "Nestlé"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "12 Nov 2026"
+}

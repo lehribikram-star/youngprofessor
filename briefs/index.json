@@ -1,7 +1,75 @@
 {
-  "updated": "12 Nov 2026",
-  "companies": [
-    {"id": "hdfc-bank", "name": "HDFC Bank", "sector": "Banking · Mumbai", "color": "#004C8F", "short": "HB",
-     "aliases": ["hdfc bank", "hdfc bank ltd", "hdfc bank limited", "hdfcbank", "hdfc"]}
-  ]
+ "updated": "12 Nov 2026",
+ "companies": [
+  {
+   "id": "hdfc-bank",
+   "name": "HDFC Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#004C8F",
+   "short": "HB",
+   "aliases": [
+    "hdfc bank",
+    "hdfc bank ltd",
+    "hdfc bank limited",
+    "hdfcbank",
+    "hdfc"
+   ]
+  },
+  {
+   "id": "icici-bank",
+   "name": "ICICI Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#AE282E",
+   "short": "IB",
+   "aliases": [
+    "icici bank",
+    "icici",
+    "icici bank ltd",
+    "icici bank limited",
+    "icicibank"
+   ]
+  },
+  {
+   "id": "sbi",
+   "name": "State Bank of India",
+   "sector": "Public sector bank · Mumbai",
+   "color": "#1A5BA6",
+   "short": "SBI",
+   "aliases": [
+    "sbi",
+    "state bank of india",
+    "state bank",
+    "sbi bank",
+    "sbin"
+   ]
+  },
+  {
+   "id": "hul",
+   "name": "Hindustan Unilever",
+   "sector": "FMCG · Mumbai",
+   "color": "#1F36C7",
+   "short": "HU",
+   "aliases": [
+    "hul",
+    "hindustan unilever",
+    "hindustan unilever limited",
+    "hindustan unilever ltd",
+    "unilever india",
+    "hindunilvr"
+   ]
+  },
+  {
+   "id": "itc",
+   "name": "ITC Limited",
+   "sector": "FMCG & conglomerate · Kolkata",
+   "color": "#2E5E3E",
+   "short": "ITC",
+   "aliases": [
+    "itc",
+    "itc limited",
+    "itc ltd",
+    "itc limited india"
+   ]
+  }
+ ]
 }

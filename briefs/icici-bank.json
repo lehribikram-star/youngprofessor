@@ -1,0 +1,986 @@
+{
+ "id": "icici-bank",
+ "name": "ICICI Bank",
+ "short": "IB",
+ "color": "#AE282E",
+ "line": "India's second-largest private sector bank",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: ICICIBANK · BSE: 532174 · NYSE: IBN",
+ "website": "https://www.icici.bank.in",
+ "news_query": "ICICI Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/icici-bank-q2-results-2026-net-profit-rises-20-to-14843-cr"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1737579"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (NewKerala / IANS)",
+   "url": "https://www.newkerala.com/news/a/icici-bank-q2-net-profit-rises-20-rs-930.htm"
+  },
+  "q4": {
+   "label": "ICICI Bank: Performance review, quarter ended 31 Mar 2026",
+   "url": "https://www.icici.bank.in/about-us/news-room/2026/performance-review-quarter-ended-march-31-2026"
+  },
+  "fy26": {
+   "label": "FY26 results (Capital Market via Wealthy)",
+   "url": "https://www.wealthy.in/invest/news/stock/1686230"
+  },
+  "ceo": {
+   "label": "RBI approves CEO reappointment (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/rbi-clears-sandeep-bakhshis-reappointment-as-icici-bank-ceo-till-2028-532974-2026-05-23"
+  },
+  "ceo2": {
+   "label": "RBI approves CEO reappointment (Board Stewardship)",
+   "url": "https://boardstewardship.com/rbi-approves-reappointment-of-sandeep-bakhshi-as-ceo-md-of-icici-bank/"
+  },
+  "chair": {
+   "label": "ICICI Bank: Chairman profile",
+   "url": "https://www.icici.bank.in/about-us/board-of-directors/pradeep-kumar-sinha"
+  },
+  "chair2": {
+   "label": "Chairman appointment (Board Stewardship)",
+   "url": "https://boardstewardship.com/icici-bank-appoints-ex-cabinet-secretary-pradeep-sinha-as-chairman/"
+  },
+  "hr": {
+   "label": "FY26 workforce, annual report (People Matters)",
+   "url": "https://www.peoplematters.in/news/business/icici-bank-cuts-over-5100-jobs-in-fy26-biggest-workforce-reduction-among-private-banks-50952"
+  },
+  "hr2": {
+   "label": "FY26 workforce (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/behind-the-reduction-in-workforce-in-indias-top-three-private-sector-banks-544050-2026-07-20"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/ICICI_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  }
+ },
+ "tiles": [
+  {
+   "v": 50147,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 7511,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 124324,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹14,843 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +20.1%"
+  },
+  {
+   "v": "1.20%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "4.18%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "17.18%",
+   "k": "Capital adequacy",
+   "s": "Mar 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "One of India's largest private banks, with 7,511 branches and over 12,000 ATMs (March 2026).",
+   "s": [
+    "q4",
+    "fy26"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO Sandeep Bakhshi since October 2018; RBI approved a new two-year term from 4 Oct 2026 to Oct 2028.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 net profit was ₹50,147 crore, up about 6%.",
+   "s": [
+    "fy26",
+    "icici"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit jumped 20.1% to ₹14,843 crore, and Gross NPA fell to 1.20%.",
+   "s": [
+    "q2",
+    "q2c"
+   ]
+  },
+  {
+   "t": "Loans grew 30% and deposits 27.1% in the year to Sep 2026, among the fastest in large banks.",
+   "s": [
+    "q2c"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1955",
+   "t": "ICICI (Industrial Credit and Investment Corporation of India) set up to fund Indian industry.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "1994",
+   "t": "ICICI Bank started as a bank.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2002",
+   "t": "Parent ICICI Ltd merged into ICICI Bank, creating a universal bank.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2018",
+   "t": "Sandeep Bakhshi became MD & CEO.",
+   "s": [
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Jul 2024",
+   "t": "Former Cabinet Secretary Pradeep Kumar Sinha became Part-time Chairman.",
+   "s": [
+    "chair2"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Bakhshi began a new two-year term as MD & CEO, approved by RBI.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Like every bank, ICICI earns mainly from the gap between the interest it charges on loans and the interest it pays depositors, plus fees from cards, loans and its insurance, mutual fund and broking group companies.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to people and businesses",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income FY26",
+    "v": "₹88,075 cr",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹25,339 cr (+17.7%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2c"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO. That's why ICICI's 2026 CEO term needed RBI clearance.",
+   "Private banks compete with public sector giants like SBI and with fintech payment apps.",
+   "Big theme for interviews: banks racing to grow deposits as loan demand rises."
+  ],
+  "s": [
+   "ceo"
+  ]
+ },
+ "people": [
+  {
+   "ini": "SB",
+   "name": "Sandeep Bakhshi",
+   "role": "MD & CEO",
+   "since": "since Oct 2018",
+   "note": "Earlier Whole-time Director and COO of ICICI Bank, and MD & CEO of ICICI Prudential Life. Current term runs to Oct 2028.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "PS",
+   "name": "Pradeep Kumar Sinha",
+   "role": "Part-time Chairman",
+   "since": "since Jul 2024",
+   "note": "Former Cabinet Secretary of India; joined the IAS in 1977.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹50,147 cr (+6.2%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "icici"
+    ]
+   },
+   {
+    "k": "Net Interest Income",
+    "v": "₹88,075 cr (+8.5%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.40%",
+    "term": "Gross NPA",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.33%",
+    "term": "Net NPA",
+    "s": [
+     "q4",
+     "fy26"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "17.18%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "q4",
+     "fy26"
+    ]
+   },
+   {
+    "k": "Average CASA ratio (Q4)",
+    "v": "38.6%",
+    "term": "CASA ratio",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "k": "Total deposits",
+    "v": "₹17.95 lakh cr (+11.4%)",
+    "term": "Deposits",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "k": "Total loans",
+    "v": "₹15.54 lakh cr (+15.8%)",
+    "term": "Advances",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹12 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "icici"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹14,843 cr, up 20.1%.",
+     "s": [
+      "q2",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Loans up 30% to ₹18.32 lakh cr; deposits up 27.1% to ₹20.50 lakh cr.",
+     "term": "Advances",
+     "s": [
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA improved to 1.20%; Net NPA 0.30%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "ICICI Bank grew its profit 20% last quarter while its bad loans fell to just 1.2% of all loans."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ],
+    "me": true
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   }
+  ],
+  "note": "Among private banks, ICICI Bank is second to HDFC Bank in profit."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches",
+    "v": "7,511"
+   },
+   {
+    "k": "ATMs & cash recyclers",
+    "v": "12,087"
+   },
+   {
+    "k": "New branches in FY26",
+    "v": "528"
+   }
+  ],
+  "local": "ICICI Bank opened 528 new branches in FY26, many in smaller cities and rural areas, where branch banking and sales roles are often based.",
+  "s": [
+   "q4"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Total employees",
+    "v": "1,24,324"
+   },
+   {
+    "k": "Permanent employees",
+    "v": "1,24,029"
+   },
+   {
+    "k": "Women (permanent)",
+    "v": "39,785"
+   },
+   {
+    "k": "Change in FY26",
+    "v": "−6,633"
+   }
+  ],
+  "note": "From the FY 2025-26 annual report. The bank opened 528 branches while its headcount fell, a sign of more automation and productivity."
+ },
+ "csr": {
+  "t": "ICICI Bank's CSR is run mainly through the ICICI Foundation for Inclusive Growth, focused on skill training, rural livelihoods and healthcare.",
+  "s": [
+   "wiki"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Strong growth: Q2 FY27 profit up 20.1%",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Clean loan book: Gross NPA 1.20%",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Net interest margin slipped to 4.18% in Q2 FY27",
+    "s": [
+     "q2b"
+    ]
+   },
+   {
+    "t": "Headcount fell by 6,633 in FY26, raising questions on workload",
+    "s": [
+     "hr"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Rural and business-banking loans grew about 25% in FY26",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "t": "528 new branches add reach in smaller towns",
+    "s": [
+     "q4"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "HDFC Bank and SBI compete for the same deposits",
+    "s": [
+     "sbi",
+     "hdfc"
+    ]
+   },
+   {
+    "t": "Fintechs and NBFCs target retail lending",
+    "s": [
+     "wiki"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.20%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "4.18%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "17.18%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "CASA (avg, Q4)",
+     "v": "38.6%",
+     "term": "CASA ratio"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "7,511"
+    },
+    {
+     "k": "ATMs",
+     "v": "12,087"
+    },
+    {
+     "k": "New branches FY26",
+     "v": "528"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "27.1%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "1,24,324"
+    },
+    {
+     "k": "Branches",
+     "v": "7,511"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹50,147 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Loan growth",
+     "v": "30%"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "1,24,324"
+    },
+    {
+     "k": "Branches",
+     "v": "7,511"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹50,147 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Loan growth",
+     "v": "30%"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "1,24,324"
+    },
+    {
+     "k": "Branches",
+     "v": "7,511"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹50,147 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Loan growth",
+     "v": "30%"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "1,24,324"
+    },
+    {
+     "k": "Branches",
+     "v": "7,511"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹50,147 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Loan growth",
+     "v": "30%"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did ICICI Bank's profit grow faster than its interest margin?",
+     "a": "Profit rose 20.1% in Q2 FY27 thanks to strong loan growth and lower provisions, even though the net interest margin fell to 4.18%."
+    },
+    {
+     "q": "What is Net NPA, and what is ICICI Bank's?",
+     "a": "Bad loans after subtracting money already set aside for them. ICICI Bank's Net NPA was 0.30% in Sep 2026."
+    },
+    {
+     "q": "Why does capital adequacy matter?",
+     "a": "It shows the bank's cushion against losses. ICICI Bank's was 17.18% in March 2026, well above RBI's minimum."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you attract young customers to ICICI Bank?",
+     "a": "Mobile-first onboarding, student and first-salary accounts, and a smooth app experience, with offers linked to UPI and cards."
+    },
+    {
+     "q": "ICICI opened 528 branches in FY26. How would you market a new branch in a small town?",
+     "a": "Local events, shopkeeper current accounts, farmer and gold loan camps, and messaging in the local language."
+    }
+   ],
+   "HR": [
+    {
+     "q": "ICICI's headcount fell while branches grew. How would you keep staff motivated?",
+     "a": "Clear growth paths, reskilling for digital work, recognition, and workload balancing across branches."
+    },
+    {
+     "q": "How would you onboard hundreds of new branch staff quickly?",
+     "a": "Standard training modules, buddy systems, digital learning, and 30-60-90 day goals."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me an ICICI Bank savings account.",
+     "a": "Ask about needs first, then link app, UPI, debit card and sweep-FD features to them. Close with a clear next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you reduce loan processing time?",
+     "a": "Digital KYC, pre-approved offers, fewer manual checks, and tracking turnaround time at each step."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about ICICI Bank?",
+     "a": "India's second-largest private bank: ₹50,147 cr profit in FY26, 7,511 branches, led by Sandeep Bakhshi."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads ICICI Bank?",
+     "a": "Sandeep Bakhshi is MD & CEO (since Oct 2018); Pradeep Kumar Sinha is Part-time Chairman (since Jul 2024)."
+    },
+    {
+     "q": "What recent news about ICICI Bank caught your attention?",
+     "a": "Pick one story from the live news section and give your own view in two lines."
+    },
+    {
+     "q": "Why ICICI Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "ICICI Bank combines strong growth with discipline: profit rose 20% last quarter while bad loans fell to just 1.2%. With 528 new branches added last year, it is clearly investing in towns like mine. I want to learn banking at a place that grows this fast without compromising quality, and contribute to [your role] from day one.",
+  "ask": [
+   "How is the bank balancing fast loan growth with asset quality in this team?",
+   "What does success look like for a new joiner in the first six months?",
+   "How is the bank using automation in this function?"
+  ],
+  "gd": [
+   {
+    "t": "Will automation reduce bank jobs?",
+    "for": "ICICI's headcount fell by 6,633 in FY26 while branches grew.",
+    "against": "New roles in sales, technology and advisory keep growing."
+   },
+   {
+    "t": "Private banks vs public sector banks: who serves India better?",
+    "for": "Private banks are faster and more digital.",
+    "against": "SBI earned the highest profit in FY26 and reaches the most people."
+   }
+  ],
+  "avoid": [
+   "Don't confuse ICICI Bank with ICICI Prudential Life or ICICI Lombard; they are separate listed companies.",
+   "Don't call it a public sector bank. It's private.",
+   "Don't quote old NPA figures; Gross NPA is now 1.20% (Sep 2026)."
+  ],
+  "night": [
+   "CEO: Sandeep Bakhshi · Chairman: Pradeep Kumar Sinha",
+   "FY26 net profit: ₹50,147 cr",
+   "Q2 FY27 profit: ₹14,843 cr (+20.1%)",
+   "Gross NPA 1.20% (Sep 2026)",
+   "7,511 branches",
+   "Rivals: HDFC Bank, SBI, Axis, Kotak",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is ICICI Bank's MD & CEO?",
+   "o": [
+    "Sandeep Bakhshi",
+    "Anup Bagchi",
+    "C S Setty"
+   ],
+   "a": 0
+  },
+  {
+   "q": "ICICI Bank's FY26 net profit was about…",
+   "o": [
+    "₹14,000 cr",
+    "₹50,000 cr",
+    "₹80,000 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Gross NPA in Sep 2026 was…",
+   "o": [
+    "1.20%",
+    "3.5%",
+    "6%"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Who approves a private bank's CEO?",
+   "o": [
+    "SEBI",
+    "RBI",
+    "IRDAI"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Branches in March 2026?",
+   "o": [
+    "2,500",
+    "7,511",
+    "22,000"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "12 Nov 2026"
+}

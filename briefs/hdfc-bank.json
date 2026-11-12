@@ -1,314 +1,1110 @@
 {
-  "id": "hdfc-bank",
-  "name": "HDFC Bank",
-  "short": "HB",
-  "color": "#004C8F",
-  "line": "India's largest private sector bank",
-  "sector": "Banking",
-  "hq": "Mumbai, Maharashtra",
-  "listed": "NSE: HDFCBANK · BSE: 500180 · NYSE: HDB",
-  "website": "https://www.hdfcbank.com",
-  "news_query": "HDFC Bank",
-  "checked": "12 Nov 2026",
-  "src": {
-    "fy26": {"label": "FY 2025-26 results (Capital Market report)", "url": "https://www.wealthy.in/invest/news/stock/1686229"},
-    "fy26b": {"label": "FY 2025-26 results (JM Financial)", "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"},
-    "q4": {"label": "Q4 FY26 results (Angel One)", "url": "https://www.angelone.in/news/stocks/hdfc-bank-q4-fy26-results-net-profit-up-9-percent-rs-13-dividend-announced"},
-    "q2": {"label": "Q2 FY27 results (JM Financial)", "url": "https://www.jmfinancialservices.in/market-news-and-insights/1737548"},
-    "q2b": {"label": "Q2 FY27 results (Hello Banker)", "url": "https://hellobanker.in/?p=91790"},
-    "net": {"label": "FY26 network (Equitybulls)", "url": "https://equitybulls.com/category.php?id=369213"},
-    "chair": {"label": "RBI approves chairman (Outlook Business)", "url": "https://www.outlookbusiness.com/corporate/rbi-approves-ex-chief-election-commissioner-rajiv-kumar-as-hdfc-bank-chairman"},
-    "chair2": {"label": "Chairman effective 15 Jul 2026 (Free Press Journal)", "url": "https://www.freepressjournal.in/business/hdfc-bank-names-rajiv-kumar-as-part-time-chairman-after-market-hours-rbi-approves-three-year-appointment-effective-july-15"},
-    "ceo": {"label": "Bagchi takes charge (Business Today)", "url": "https://www.businesstoday.in/latest/corporate/story/after-sashidhar-jagadishan-anup-bagchi-takes-charge-as-hdfc-bank-md-and-ceo-563841-2026-10-27"},
-    "ceo2": {"label": "Bagchi takes charge (Free Press Journal)", "url": "https://freepressjournal.in/business/anup-bagchi-takes-charge-as-hdfc-banks-new-md-ceo"},
-    "cfo": {"label": "New CFO from 1 Dec 2026 (Outlook Business)", "url": "https://www.outlookbusiness.com/markets/hdfc-bank-shares-ease-after-rajiv-kumar-named-part-time-chairman"},
-    "chairq": {"label": "Chairman resignation (Angel One)", "url": "https://www.angelone.in/news/stocks/hdfc-bank-share-price-in-focus-announces-part-time-chairman-resignation-and-interim-appointment"},
-    "hr": {"label": "FY26 annual report, workforce (People Matters)", "url": "https://www.peoplematters.in/news/strategic-hr/hdfc-bank-cuts-overall-workforce-by-3343-but-adds-nearly-4800-managers-50803"},
-    "hr2": {"label": "FY26 hiring & turnover (People Matters)", "url": "https://www.peoplematters.in/news/strategic-hr/hdfc-axis-and-kotak-shed-over-7700-roles-as-tech-reshapes-banking-work-50823"},
-    "sbi": {"label": "SBI FY26 results (Free Press Journal)", "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"},
-    "icici": {"label": "ICICI Bank FY26 results (Free Press Journal)", "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"},
-    "kotak": {"label": "Kotak FY26 results (Choice / Capital Market)", "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"},
-    "site": {"label": "HDFC Bank website", "url": "https://www.hdfcbank.com"},
-    "wiki": {"label": "Wikipedia (with citations)", "url": "https://en.wikipedia.org/wiki/HDFC_Bank"}
+ "id": "hdfc-bank",
+ "name": "HDFC Bank",
+ "short": "HB",
+ "color": "#004C8F",
+ "line": "India's largest private sector bank",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: HDFCBANK · BSE: 500180 · NYSE: HDB",
+ "website": "https://www.hdfcbank.com",
+ "news_query": "HDFC Bank",
+ "checked": "12 Nov 2026",
+ "src": {
+  "fy26": {
+   "label": "FY 2025-26 results (Capital Market report)",
+   "url": "https://www.wealthy.in/invest/news/stock/1686229"
   },
-  "tiles": [
-    {"v": 74671, "fmt": "cr", "label": "Net profit", "sub": "FY 2025-26", "term": "Net profit"},
-    {"v": 9689, "fmt": "num", "label": "Branches", "sub": "Mar 2026"},
-    {"v": 211178, "fmt": "num", "label": "Employees", "sub": "Mar 2026"}
-  ],
-  "brief": [
-    {"t": "India's largest private sector bank. It merged with its parent, HDFC Ltd (the home-loan company), on 1 July 2023.", "s": ["wiki"]},
-    {"t": "New leadership: Anup Bagchi became MD & CEO on 27 Oct 2026, and Rajiv Kumar became Part-time Chairman on 15 Jul 2026.", "s": ["ceo", "chair"]},
-    {"t": "FY 2025-26 net profit was ₹74,671 crore, up about 11% over the previous year.", "s": ["fy26", "fy26b"]},
-    {"t": "Loan quality is strong: Gross NPA fell to 1.11% in Sep 2026, among the lowest in Indian banking.", "s": ["q2", "q2b"]},
-    {"t": "Deposits grew 18.8% to about ₹33.3 lakh crore by Sep 2026, a key focus after the merger.", "s": ["q2"]}
-  ],
-  "timeline": [
-    {"y": "1994", "t": "Set up as one of the first private banks after RBI opened banking to private players; promoted by HDFC Ltd.", "s": ["wiki"]},
-    {"y": "2000", "t": "Merged with Times Bank.", "s": ["wiki"]},
-    {"y": "2008", "t": "Acquired Centurion Bank of Punjab.", "s": ["wiki"]},
-    {"y": "2023", "t": "Merged with parent HDFC Ltd, creating India's largest private bank.", "s": ["wiki"]},
-    {"y": "Mar 2026", "t": "Chairman Atanu Chakraborty resigned; Keki Mistry served as interim chairman.", "s": ["chairq"]},
-    {"y": "Jul 2026", "t": "Rajiv Kumar (former Finance Secretary and Chief Election Commissioner) became Part-time Chairman.", "s": ["chair", "chair2"]},
-    {"y": "Oct 2026", "t": "Anup Bagchi took charge as MD & CEO, succeeding Sashidhar Jagdishan.", "s": ["ceo", "ceo2"]}
-  ],
-  "model": {
-    "how": "A bank earns mainly by lending money at a higher rate than it pays depositors. That gap is its Net Interest Income. It also earns fees from cards, loans, and selling insurance and mutual funds.",
-    "flow": ["Depositors put money in (savings, current, fixed deposits)", "Bank lends it out (home, personal, car, business loans)", "Earns interest gap + fees", "Keeps profit after costs and provisions"],
-    "facts": [
-      {"k": "Net Interest Income FY26", "v": "₹1,28,686 cr", "term": "Net Interest Income", "s": ["fy26b"]},
-      {"k": "Other (fee + other) income FY26", "v": "₹62,533 cr", "term": "Other income", "s": ["fy26b"]}
-    ]
+  "fy26b": {
+   "label": "FY 2025-26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
   },
-  "industry": {
-    "regulator": "Reserve Bank of India (RBI)",
-    "points": [
-      "Banks need RBI approval to appoint their chairman and CEO. That's why HDFC Bank's 2026 leadership changes waited for RBI clearance.",
-      "Private banks compete with public sector banks (like SBI) and fast-growing digital payments and fintech firms.",
-      "Big theme for interviews: banks are racing to raise deposits as loan demand grows."
-    ],
-    "s": ["chair", "fy26"]
+  "q4": {
+   "label": "Q4 FY26 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hdfc-bank-q4-fy26-results-net-profit-up-9-percent-rs-13-dividend-announced"
   },
-  "people": [
-    {"ini": "AB", "name": "Anup Bagchi", "role": "MD & CEO", "since": "since 27 Oct 2026", "note": "Spent over 30 years in the ICICI Group; was MD & CEO of ICICI Prudential Life before joining. Term runs to Oct 2029.", "s": ["ceo", "ceo2"]},
-    {"ini": "RK", "name": "Rajiv Kumar", "role": "Part-time Chairman", "since": "since 15 Jul 2026", "note": "Former Finance Secretary and 25th Chief Election Commissioner of India. Three-year term approved by RBI.", "s": ["chair", "chair2"]},
-    {"ini": "SJ", "name": "Sashidhar Jagdishan", "role": "Former MD & CEO", "since": "2020 to Oct 2026", "note": "Led the bank through the HDFC Ltd merger.", "s": ["ceo"]}
-  ],
-  "people_changes": [
-    {"t": "Puneet Sharma takes over as Chief Financial Officer from 1 Dec 2026.", "s": ["cfo"]}
-  ],
-  "numbers": {
-    "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
-    "rows": [
-      {"k": "Total income", "v": "₹3,70,055 cr", "term": "Total income", "s": ["fy26"]},
-      {"k": "Net profit", "v": "₹74,671 cr (+10.9%)", "term": "Net profit", "s": ["fy26", "fy26b"]},
-      {"k": "Net profit margin", "v": "20.2%", "term": "Net profit margin", "calc": "Net profit ÷ Total income", "s": ["fy26"]},
-      {"k": "Gross NPA", "v": "1.15%", "term": "Gross NPA", "s": ["fy26", "q4"]},
-      {"k": "Net NPA", "v": "0.38%", "term": "Net NPA", "s": ["fy26", "q4"]},
-      {"k": "Capital adequacy ratio", "v": "19.7%", "term": "Capital adequacy ratio", "s": ["fy26", "q4"]},
-      {"k": "CASA ratio", "v": "34.1%", "term": "CASA ratio", "s": ["fy26b"]},
-      {"k": "Cost-to-income ratio", "v": "38.0%", "term": "Cost-to-income ratio", "s": ["fy26b"]},
-      {"k": "Total deposits", "v": "₹31.05 lakh cr (+14.4%)", "term": "Deposits", "s": ["q4"]},
-      {"k": "Gross advances (loans)", "v": "₹29.60 lakh cr (+12%)", "term": "Advances", "s": ["q4"]},
-      {"k": "Dividend", "v": "₹15.50 per share", "term": "Dividend", "s": ["q4"]}
-    ],
-    "latest": {
-      "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
-      "points": [
-        {"t": "Net profit ₹19,510 cr, up 4.7%. Lower treasury gains held back growth.", "term": "Treasury gains", "s": ["q2", "q2b"]},
-        {"t": "Total deposits ₹33.27 lakh cr, up 18.8%.", "term": "Deposits", "s": ["q2"]},
-        {"t": "Gross NPA improved to 1.11%; Net NPA 0.37%.", "term": "Gross NPA", "s": ["q2b"]}
-      ]
-    },
-    "say": "HDFC Bank keeps about ₹20 as profit from every ₹100 it earns, and only about 1 in every 100 rupees it lends has gone bad."
+  "q2": {
+   "label": "Q2 FY27 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1737548"
   },
-  "rivals": {
-    "metric": "Net profit, FY 2025-26 (standalone)",
-    "list": [
-      {"name": "State Bank of India", "v": 80032, "s": ["sbi"]},
-      {"name": "HDFC Bank", "v": 74671, "me": true, "s": ["fy26"]},
-      {"name": "ICICI Bank", "v": 50147, "s": ["icici"]},
-      {"name": "Kotak Mahindra Bank", "v": 14008, "s": ["kotak"]}
-    ],
-    "note": "SBI is a public sector bank. Among private banks, HDFC Bank earns the most profit."
+  "q2b": {
+   "label": "Q2 FY27 results (Hello Banker)",
+   "url": "https://hellobanker.in/?p=91790"
   },
-  "network": {
-    "rows": [
-      {"k": "Branches", "v": "9,689", "s": ["net"]},
-      {"k": "ATMs", "v": "21,172", "s": ["net"]},
-      {"k": "Cities & towns", "v": "4,175", "s": ["net"]},
-      {"k": "Branches in semi-urban & rural areas", "v": "About 50%", "s": ["net"]}
-    ],
-    "local": "With half its branches in semi-urban and rural areas, HDFC Bank has a large presence across Punjab and North India. Branch banking and sales roles are often posted in these towns."
+  "net": {
+   "label": "FY26 network (Equitybulls)",
+   "url": "https://equitybulls.com/category.php?id=369213"
   },
-  "employer": {
-    "rows": [
-      {"k": "Employees", "v": "2,11,178", "s": ["hr"]},
-      {"k": "Women in workforce", "v": "27%", "s": ["hr"]},
-      {"k": "Women in management", "v": "16%", "s": ["hr"]},
-      {"k": "Employee turnover", "v": "23.1%", "term": "Attrition", "s": ["hr", "hr2"]},
-      {"k": "Learning per employee", "v": "64.7 hours", "s": ["hr"]},
-      {"k": "Staff trained in GenAI", "v": "50,000+", "s": ["hr"]},
-      {"k": "People hired in FY26", "v": "45,902", "s": ["hr2"]}
-    ],
-    "note": "From the bank's FY 2025-26 annual report. In FY26 the bank had fewer non-supervisory staff and more managers, and invested heavily in AI training."
+  "chair": {
+   "label": "RBI approves chairman (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/rbi-approves-ex-chief-election-commissioner-rajiv-kumar-as-hdfc-bank-chairman"
   },
-  "csr": {
-    "t": "HDFC Bank's CSR programme is called Parivartan. It works on rural development, education, skill training, healthcare and financial literacy.",
-    "s": ["site"]
+  "chair2": {
+   "label": "Chairman effective 15 Jul 2026 (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/hdfc-bank-names-rajiv-kumar-as-part-time-chairman-after-market-hours-rbi-approves-three-year-appointment-effective-july-15"
   },
-  "swot": {
-    "s": [{"t": "Largest private bank; FY26 net profit ₹74,671 cr", "s": ["fy26"]}, {"t": "Very clean loan book: Gross NPA 1.11%", "s": ["q2b"]}],
-    "w": [{"t": "CASA ratio of 34.1% is lower than before the merger, so deposits cost more", "s": ["fy26b"]}, {"t": "Employee turnover is high, at 23.1%", "s": ["hr"]}],
-    "o": [{"t": "About half the branches are in semi-urban and rural India, where many people still lack bank loans", "s": ["net"]}, {"t": "AI to cut costs: 50,000+ staff trained in GenAI", "s": ["hr"]}],
-    "t": [{"t": "SBI and ICICI Bank compete hard for the same deposits and customers", "s": ["sbi", "icici"]}, {"t": "Leadership changes in 2026 put governance in focus", "s": ["chairq"]}]
+  "ceo": {
+   "label": "Bagchi takes charge (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/after-sashidhar-jagadishan-anup-bagchi-takes-charge-as-hdfc-bank-md-and-ceo-563841-2026-10-27"
   },
-  "bcg": null,
-  "bcg_note": "A BCG matrix needs separate product businesses with market-share data. A bank reports one main banking business, so BCG doesn't fit well here and we won't guess. For banks, interviewers prefer competitor analysis and the key ratios above.",
-  "frameworks": {
-    "porter": [
-      {"k": "Rivalry", "v": "High. SBI, ICICI, Axis and Kotak all chase the same customers."},
-      {"k": "New entrants", "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."},
-      {"k": "Substitutes", "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."},
-      {"k": "Buyer power", "v": "Medium to high. Customers can switch banks easily for better rates."},
-      {"k": "Supplier power", "v": "Depositors are the 'suppliers' of money; higher deposit rates elsewhere pull them away."}
-    ],
-    "pestle": [
-      {"k": "Political", "v": "Government push for financial inclusion and digital payments."},
-      {"k": "Economic", "v": "RBI interest-rate moves change lending margins."},
-      {"k": "Social", "v": "Young customers prefer mobile-first banking."},
-      {"k": "Technological", "v": "AI, UPI and digital lending reshape branches."},
-      {"k": "Legal", "v": "RBI approves top appointments and sets capital rules."},
-      {"k": "Environmental", "v": "Green finance and ESG reporting (BRSR) are growing."}
-    ],
-    "fourp": [
-      {"k": "Product", "v": "Accounts, cards, home, car and personal loans, insurance, mutual funds."},
-      {"k": "Price", "v": "Interest rates and fees, set against rivals."},
-      {"k": "Place", "v": "9,689 branches, 21,172 ATMs and mobile apps."},
-      {"k": "Promotion", "v": "Strong brand, cross-selling to existing customers, digital campaigns."}
-    ],
-    "ansoff": [
-      {"k": "Market penetration", "v": "Sell more products to existing customers (cross-sell)."},
-      {"k": "Market development", "v": "Grow in semi-urban and rural India."},
-      {"k": "Product development", "v": "New digital and MSME lending products."},
-      {"k": "Diversification", "v": "Group companies in insurance and asset management (HDFC Life, HDFC AMC)."}
-    ],
-    "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+  "ceo2": {
+   "label": "Bagchi takes charge (Free Press Journal)",
+   "url": "https://freepressjournal.in/business/anup-bagchi-takes-charge-as-hdfc-banks-new-md-ceo"
   },
-  "roles": {
-    "Finance": {
-      "kv": [{"k": "Gross NPA", "v": "1.11%", "term": "Gross NPA"}, {"k": "CASA ratio", "v": "34.1%", "term": "CASA ratio"}, {"k": "Capital adequacy", "v": "19.7%", "term": "Capital adequacy ratio"}, {"k": "Cost-to-income", "v": "38.0%", "term": "Cost-to-income ratio"}],
-      "measured": ["Accuracy of reports and reconciliations", "Meeting RBI reporting deadlines", "Cost control"],
-      "skills": ["Excel (pivot tables, formulas)", "Reading a bank balance sheet", "Basics of RBI rules and Basel III"],
-      "tip": "Know the difference between Gross and Net NPA, and why CASA lowers a bank's cost of funds."
-    },
-    "Marketing": {
-      "kv": [{"k": "Branches", "v": "9,689"}, {"k": "ATMs", "v": "21,172"}, {"k": "Cities & towns", "v": "4,175"}, {"k": "Semi-urban/rural branches", "v": "~50%"}],
-      "measured": ["New customers acquired", "Products sold per customer (cross-sell)", "Campaign response rates"],
-      "skills": ["Customer segmentation", "Digital marketing basics", "Clear selling and presentation"],
-      "tip": "Think about how to reach young and semi-urban customers through mobile and branch campaigns."
-    },
-    "HR": {
-      "kv": [{"k": "Employees", "v": "2,11,178"}, {"k": "Turnover", "v": "23.1%", "term": "Attrition"}, {"k": "Women in workforce", "v": "27%"}, {"k": "Hired in FY26", "v": "45,902"}],
-      "measured": ["Time to hire", "Attrition in the first year", "Training completion"],
-      "skills": ["Recruitment at scale", "Onboarding design", "HR analytics in Excel"],
-      "tip": "The bank hires about 46,000 people a year and loses nearly as many. Ideas to reduce early attrition will impress."
-    },
-    "Sales": {
-      "kv": [{"k": "Deposits", "v": "₹33.3 lakh cr"}, {"k": "Deposit growth", "v": "18.8%"}, {"k": "Branches", "v": "9,689"}, {"k": "CASA ratio", "v": "34.1%", "term": "CASA ratio"}],
-      "measured": ["Accounts opened and deposits raised", "Loans and cards sold", "Customer retention"],
-      "skills": ["Product knowledge", "Handling objections", "Target discipline"],
-      "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
-    },
-    "Operations": {
-      "kv": [{"k": "Branches", "v": "9,689"}, {"k": "ATMs", "v": "21,172"}, {"k": "Cost-to-income", "v": "38.0%", "term": "Cost-to-income ratio"}, {"k": "GenAI-trained staff", "v": "50,000+"}],
-      "measured": ["Turnaround time (TAT)", "Error-free processing", "Audit and compliance scores"],
-      "skills": ["Process mapping", "KYC and compliance basics", "Attention to detail"],
-      "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
-    },
-    "Other": {
-      "kv": [{"k": "Industry", "v": "Banking"}, {"k": "HQ", "v": "Mumbai"}, {"k": "Regulator", "v": "RBI"}, {"k": "Founded", "v": "1994"}],
-      "measured": ["Depends on the role"],
-      "skills": ["Banking basics", "Communication", "Excel"],
-      "tip": "Pick a role above to see role-specific preparation."
-    }
+  "cfo": {
+   "label": "New CFO from 1 Dec 2026 (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/markets/hdfc-bank-shares-ease-after-rajiv-kumar-named-part-time-chairman"
   },
-  "interview": {
-    "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
-    "steps": [
-      {"t": "Online test", "d": "Aptitude, reasoning and English"},
-      {"t": "Group discussion", "d": "For some roles, such as management trainee"},
-      {"t": "Personal interview", "d": "Role knowledge, the bank and HR questions"}
-    ],
-    "questions": {
-      "Finance": [
-        {"q": "What is NPA, and what is HDFC Bank's Gross NPA?", "a": "An NPA is a loan on which the borrower hasn't paid for 90 days. HDFC Bank's Gross NPA was 1.11% in Sep 2026, one of the lowest in India."},
-        {"q": "Why does CASA ratio matter to a bank?", "a": "CASA deposits pay little or no interest, so a higher CASA ratio means cheaper money for lending. HDFC Bank's CASA ratio was 34.1% in Mar 2026."},
-        {"q": "How did the HDFC Ltd merger change the bank?", "a": "It brought in a large home-loan book funded by borrowings, so the bank now needs to grow deposits faster. That's why deposit growth (18.8% in Sep 2026) is watched closely."}
-      ],
-      "Marketing": [
-        {"q": "How would you get more college students to open an HDFC Bank account?", "a": "Use campus tie-ups, a zero-balance student account, app-first onboarding and referral rewards. Link it to a first credit card later."},
-        {"q": "How is HDFC Bank's brand different from SBI's?", "a": "SBI is seen as the trusted government bank with the widest reach; HDFC Bank is seen as a fast, service-focused private bank. Give one example you've experienced."},
-        {"q": "Half its branches are in semi-urban and rural areas. How would you market there?", "a": "Use local language, branch events, shopkeeper current accounts, and gold or tractor loans relevant to the area."}
-      ],
-      "HR": [
-        {"q": "Employee turnover is about 23%. How would you reduce it?", "a": "Better onboarding, realistic job previews for sales roles, a buddy system, clear growth paths and early recognition. Track 90-day attrition."},
-        {"q": "How would you hire 45,000+ people a year efficiently?", "a": "Campus tie-ups, online assessments, standard interview scorecards and an HR tech system to track candidates."},
-        {"q": "How do you handle an unhappy high-performing employee?", "a": "Listen first, find the real issue (pay, manager, growth), act on what you can, and follow up."}
-      ],
-      "Sales": [
-        {"q": "Sell me a savings account.", "a": "Ask about the customer's needs first, then link features (app, UPI, debit card, sweep FD) to those needs. Close with a clear next step."},
-        {"q": "How will you handle monthly targets?", "a": "Break the target into daily activity, focus on existing customers for cross-sell, and track progress each week."}
-      ],
-      "Operations": [
-        {"q": "How would you cut account-opening time?", "a": "Digital KYC, pre-filled forms, removing duplicate checks, and tracking turnaround time at each step."},
-        {"q": "What is KYC and why does it matter?", "a": "Know Your Customer: verifying identity to prevent fraud and money laundering. It's required by RBI."}
-      ],
-      "Other": [
-        {"q": "What do you know about HDFC Bank?", "a": "India's largest private bank. It merged with HDFC Ltd in 2023, earned ₹74,671 cr profit in FY26, and is led by MD & CEO Anup Bagchi since Oct 2026."}
-      ],
-      "common": [
-        {"q": "Who leads HDFC Bank?", "a": "Anup Bagchi is MD & CEO (since 27 Oct 2026). Rajiv Kumar is Part-time Chairman (since 15 Jul 2026)."},
-        {"q": "What recent news about HDFC Bank caught your attention?", "a": "Pick one story from the live news section and give your own view in two lines."},
-        {"q": "Why HDFC Bank?", "a": "Use the 'Why us?' draft below and add your own reason."}
-      ]
-    },
-    "why_us": "HDFC Bank is India's largest private bank, and it has kept its loan quality strong even while growing fast: Gross NPA is just 1.11%. With half its branches in semi-urban and rural India, it's reaching customers in towns like mine. I'd like to start my career where I can learn banking at that scale and contribute to [your role] from day one.",
-    "ask": [
-      "With deposit growth now a priority, how does that shape this team's targets in the first year?",
-      "What does the first six months look like for a new joiner in this role?",
-      "How is the bank using AI in day-to-day work in this function?"
-    ],
-    "gd": [
-      {"t": "Will AI replace bank jobs?", "for": "Routine work is automated; the bank trained 50,000+ staff in GenAI.", "against": "New roles grow in tech, data and advisory; managers increased in FY26."},
-      {"t": "Are private banks better than public sector banks?", "for": "Faster service and tech adoption.", "against": "SBI earned the highest profit in FY26 and has the widest reach."},
-      {"t": "UPI and fintech: threat or opportunity for banks?", "for": "Fintechs win payment customers.", "against": "Banks still hold deposits and give loans; partnerships help both."}
-    ],
-    "avoid": [
-      "Don't confuse HDFC Bank with HDFC Life or HDFC AMC; they are separate listed companies.",
-      "Don't say Sashidhar Jagdishan is the CEO; Anup Bagchi took charge on 27 Oct 2026.",
-      "Don't call HDFC Bank a public sector bank. It's private."
-    ],
-    "night": [
-      "CEO: Anup Bagchi · Chairman: Rajiv Kumar",
-      "FY26 net profit: ₹74,671 cr",
-      "Gross NPA 1.11% (Sep 2026)",
-      "Merged with HDFC Ltd on 1 Jul 2023",
-      "9,689 branches · 21,172 ATMs",
-      "Rivals: SBI, ICICI, Axis, Kotak",
-      "Read 2 headlines from the live news",
-      "Practise your 'Why us?' aloud, in under 60 seconds",
-      "Keep 2 questions ready to ask them",
-      "Know your role's 3 key terms"
-    ]
+  "chairq": {
+   "label": "Chairman resignation (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hdfc-bank-share-price-in-focus-announces-part-time-chairman-resignation-and-interim-appointment"
   },
-  "quiz": [
-    {"q": "Who is HDFC Bank's MD & CEO (Nov 2026)?", "o": ["Sashidhar Jagdishan", "Anup Bagchi", "Aditya Puri"], "a": 1},
-    {"q": "When did HDFC Bank merge with HDFC Ltd?", "o": ["2019", "2021", "2023"], "a": 2},
-    {"q": "HDFC Bank's Gross NPA in Sep 2026 was about…", "o": ["1.1%", "4.5%", "9%"], "a": 0},
-    {"q": "Which regulator approves HDFC Bank's CEO?", "o": ["SEBI", "RBI", "IRDAI"], "a": 1},
-    {"q": "Roughly how many branches does it have?", "o": ["2,500", "9,700", "25,000"], "a": 1}
-  ],
-  "glossary": {
-    "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
-    "Net profit margin": "Net profit as a % of total income. 20% means ₹20 profit for every ₹100 earned.",
-    "Total income": "Everything the bank earns: interest on loans plus fees and other income.",
-    "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
-    "Other income": "Money earned apart from interest, such as fees, commissions and trading gains.",
-    "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
-    "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
-    "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
-    "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
-    "Cost-to-income ratio": "Operating costs as a % of income. Lower means the bank runs more efficiently.",
-    "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
-    "Advances": "Loans given by the bank to customers and businesses.",
-    "Dividend": "Part of the profit paid to shareholders, per share.",
-    "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
-    "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
-    "RBI": "Reserve Bank of India, which regulates all banks in India.",
-    "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
-    "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
-    "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
-    "Cross-sell": "Selling an extra product (like a credit card) to an existing customer."
+  "hr": {
+   "label": "FY26 annual report, workforce (People Matters)",
+   "url": "https://www.peoplematters.in/news/strategic-hr/hdfc-bank-cuts-overall-workforce-by-3343-but-adds-nearly-4800-managers-50803"
+  },
+  "hr2": {
+   "label": "FY26 hiring & turnover (People Matters)",
+   "url": "https://www.peoplematters.in/news/strategic-hr/hdfc-axis-and-kotak-shed-over-7700-roles-as-tech-reshapes-banking-work-50823"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "site": {
+   "label": "HDFC Bank website",
+   "url": "https://www.hdfcbank.com"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/HDFC_Bank"
   }
+ },
+ "tiles": [
+  {
+   "v": 74671,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 9689,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 211178,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "India's largest private sector bank. It merged with its parent, HDFC Ltd (the home-loan company), on 1 July 2023.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "t": "New leadership: Anup Bagchi became MD & CEO on 27 Oct 2026, and Rajiv Kumar became Part-time Chairman on 15 Jul 2026.",
+   "s": [
+    "ceo",
+    "chair"
+   ]
+  },
+  {
+   "t": "FY 2025-26 net profit was ₹74,671 crore, up about 11% over the previous year.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Loan quality is strong: Gross NPA fell to 1.11% in Sep 2026, among the lowest in Indian banking.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Deposits grew 18.8% to about ₹33.3 lakh crore by Sep 2026, a key focus after the merger.",
+   "s": [
+    "q2"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1994",
+   "t": "Set up as one of the first private banks after RBI opened banking to private players; promoted by HDFC Ltd.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2000",
+   "t": "Merged with Times Bank.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2008",
+   "t": "Acquired Centurion Bank of Punjab.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "2023",
+   "t": "Merged with parent HDFC Ltd, creating India's largest private bank.",
+   "s": [
+    "wiki"
+   ]
+  },
+  {
+   "y": "Mar 2026",
+   "t": "Chairman Atanu Chakraborty resigned; Keki Mistry served as interim chairman.",
+   "s": [
+    "chairq"
+   ]
+  },
+  {
+   "y": "Jul 2026",
+   "t": "Rajiv Kumar (former Finance Secretary and Chief Election Commissioner) became Part-time Chairman.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Anup Bagchi took charge as MD & CEO, succeeding Sashidhar Jagdishan.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "A bank earns mainly by lending money at a higher rate than it pays depositors. That gap is its Net Interest Income. It also earns fees from cards, loans, and selling insurance and mutual funds.",
+  "flow": [
+   "Depositors put money in (savings, current, fixed deposits)",
+   "Bank lends it out (home, personal, car, business loans)",
+   "Earns interest gap + fees",
+   "Keeps profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income FY26",
+    "v": "₹1,28,686 cr",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Other (fee + other) income FY26",
+    "v": "₹62,533 cr",
+    "term": "Other income",
+    "s": [
+     "fy26b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "Banks need RBI approval to appoint their chairman and CEO. That's why HDFC Bank's 2026 leadership changes waited for RBI clearance.",
+   "Private banks compete with public sector banks (like SBI) and fast-growing digital payments and fintech firms.",
+   "Big theme for interviews: banks are racing to raise deposits as loan demand grows."
+  ],
+  "s": [
+   "chair",
+   "fy26"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AB",
+   "name": "Anup Bagchi",
+   "role": "MD & CEO",
+   "since": "since 27 Oct 2026",
+   "note": "Spent over 30 years in the ICICI Group; was MD & CEO of ICICI Prudential Life before joining. Term runs to Oct 2029.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "RK",
+   "name": "Rajiv Kumar",
+   "role": "Part-time Chairman",
+   "since": "since 15 Jul 2026",
+   "note": "Former Finance Secretary and 25th Chief Election Commissioner of India. Three-year term approved by RBI.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "ini": "SJ",
+   "name": "Sashidhar Jagdishan",
+   "role": "Former MD & CEO",
+   "since": "2020 to Oct 2026",
+   "note": "Led the bank through the HDFC Ltd merger.",
+   "s": [
+    "ceo"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Puneet Sharma takes over as Chief Financial Officer from 1 Dec 2026.",
+   "s": [
+    "cfo"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Total income",
+    "v": "₹3,70,055 cr",
+    "term": "Total income",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "k": "Net profit",
+    "v": "₹74,671 cr (+10.9%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net profit margin",
+    "v": "20.2%",
+    "term": "Net profit margin",
+    "calc": "Net profit ÷ Total income",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.15%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "q4"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.38%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "q4"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "19.7%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "q4"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "34.1%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Cost-to-income ratio",
+    "v": "38.0%",
+    "term": "Cost-to-income ratio",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Total deposits",
+    "v": "₹31.05 lakh cr (+14.4%)",
+    "term": "Deposits",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "k": "Gross advances (loans)",
+    "v": "₹29.60 lakh cr (+12%)",
+    "term": "Advances",
+    "s": [
+     "q4"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹15.50 per share",
+    "term": "Dividend",
+    "s": [
+     "q4"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹19,510 cr, up 4.7%. Lower treasury gains held back growth.",
+     "term": "Treasury gains",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Total deposits ₹33.27 lakh cr, up 18.8%.",
+     "term": "Deposits",
+     "s": [
+      "q2"
+     ]
+    },
+    {
+     "t": "Gross NPA improved to 1.11%; Net NPA 0.37%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "HDFC Bank keeps about ₹20 as profit from every ₹100 it earns, and only about 1 in every 100 rupees it lends has gone bad."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "me": true,
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   }
+  ],
+  "note": "SBI is a public sector bank. Among private banks, HDFC Bank earns the most profit."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches",
+    "v": "9,689",
+    "s": [
+     "net"
+    ]
+   },
+   {
+    "k": "ATMs",
+    "v": "21,172",
+    "s": [
+     "net"
+    ]
+   },
+   {
+    "k": "Cities & towns",
+    "v": "4,175",
+    "s": [
+     "net"
+    ]
+   },
+   {
+    "k": "Branches in semi-urban & rural areas",
+    "v": "About 50%",
+    "s": [
+     "net"
+    ]
+   }
+  ],
+  "local": "With half its branches in semi-urban and rural areas, HDFC Bank has a large presence across Punjab and North India. Branch banking and sales roles are often posted in these towns."
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees",
+    "v": "2,11,178",
+    "s": [
+     "hr"
+    ]
+   },
+   {
+    "k": "Women in workforce",
+    "v": "27%",
+    "s": [
+     "hr"
+    ]
+   },
+   {
+    "k": "Women in management",
+    "v": "16%",
+    "s": [
+     "hr"
+    ]
+   },
+   {
+    "k": "Employee turnover",
+    "v": "23.1%",
+    "term": "Attrition",
+    "s": [
+     "hr",
+     "hr2"
+    ]
+   },
+   {
+    "k": "Learning per employee",
+    "v": "64.7 hours",
+    "s": [
+     "hr"
+    ]
+   },
+   {
+    "k": "Staff trained in GenAI",
+    "v": "50,000+",
+    "s": [
+     "hr"
+    ]
+   },
+   {
+    "k": "People hired in FY26",
+    "v": "45,902",
+    "s": [
+     "hr2"
+    ]
+   }
+  ],
+  "note": "From the bank's FY 2025-26 annual report. In FY26 the bank had fewer non-supervisory staff and more managers, and invested heavily in AI training."
+ },
+ "csr": {
+  "t": "HDFC Bank's CSR programme is called Parivartan. It works on rural development, education, skill training, healthcare and financial literacy.",
+  "s": [
+   "site"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Largest private bank; FY26 net profit ₹74,671 cr",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "t": "Very clean loan book: Gross NPA 1.11%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "CASA ratio of 34.1% is lower than before the merger, so deposits cost more",
+    "s": [
+     "fy26b"
+    ]
+   },
+   {
+    "t": "Employee turnover is high, at 23.1%",
+    "s": [
+     "hr"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "About half the branches are in semi-urban and rural India, where many people still lack bank loans",
+    "s": [
+     "net"
+    ]
+   },
+   {
+    "t": "AI to cut costs: 50,000+ staff trained in GenAI",
+    "s": [
+     "hr"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "SBI and ICICI Bank compete hard for the same deposits and customers",
+    "s": [
+     "sbi",
+     "icici"
+    ]
+   },
+   {
+    "t": "Leadership changes in 2026 put governance in focus",
+    "s": [
+     "chairq"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. A bank reports one main banking business, so BCG doesn't fit well here and we won't guess. For banks, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. SBI, ICICI, Axis and Kotak all chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; higher deposit rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI approves top appointments and sets capital rules."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, home, car and personal loans, insurance, mutual funds."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "9,689 branches, 21,172 ATMs and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Strong brand, cross-selling to existing customers, digital campaigns."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers (cross-sell)."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance and asset management (HDFC Life, HDFC AMC)."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.11%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "34.1%",
+     "term": "CASA ratio"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "19.7%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Cost-to-income",
+     "v": "38.0%",
+     "term": "Cost-to-income ratio"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know the difference between Gross and Net NPA, and why CASA lowers a bank's cost of funds."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "9,689"
+    },
+    {
+     "k": "ATMs",
+     "v": "21,172"
+    },
+    {
+     "k": "Cities & towns",
+     "v": "4,175"
+    },
+    {
+     "k": "Semi-urban/rural branches",
+     "v": "~50%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about how to reach young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "2,11,178"
+    },
+    {
+     "k": "Turnover",
+     "v": "23.1%",
+     "term": "Attrition"
+    },
+    {
+     "k": "Women in workforce",
+     "v": "27%"
+    },
+    {
+     "k": "Hired in FY26",
+     "v": "45,902"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "The bank hires about 46,000 people a year and loses nearly as many. Ideas to reduce early attrition will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Deposits",
+     "v": "₹33.3 lakh cr"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "18.8%"
+    },
+    {
+     "k": "Branches",
+     "v": "9,689"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "34.1%",
+     "term": "CASA ratio"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "9,689"
+    },
+    {
+     "k": "ATMs",
+     "v": "21,172"
+    },
+    {
+     "k": "Cost-to-income",
+     "v": "38.0%",
+     "term": "Cost-to-income ratio"
+    },
+    {
+     "k": "GenAI-trained staff",
+     "v": "50,000+"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Industry",
+     "v": "Banking"
+    },
+    {
+     "k": "HQ",
+     "v": "Mumbai"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI"
+    },
+    {
+     "k": "Founded",
+     "v": "1994"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What is NPA, and what is HDFC Bank's Gross NPA?",
+     "a": "An NPA is a loan on which the borrower hasn't paid for 90 days. HDFC Bank's Gross NPA was 1.11% in Sep 2026, one of the lowest in India."
+    },
+    {
+     "q": "Why does CASA ratio matter to a bank?",
+     "a": "CASA deposits pay little or no interest, so a higher CASA ratio means cheaper money for lending. HDFC Bank's CASA ratio was 34.1% in Mar 2026."
+    },
+    {
+     "q": "How did the HDFC Ltd merger change the bank?",
+     "a": "It brought in a large home-loan book funded by borrowings, so the bank now needs to grow deposits faster. That's why deposit growth (18.8% in Sep 2026) is watched closely."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you get more college students to open an HDFC Bank account?",
+     "a": "Use campus tie-ups, a zero-balance student account, app-first onboarding and referral rewards. Link it to a first credit card later."
+    },
+    {
+     "q": "How is HDFC Bank's brand different from SBI's?",
+     "a": "SBI is seen as the trusted government bank with the widest reach; HDFC Bank is seen as a fast, service-focused private bank. Give one example you've experienced."
+    },
+    {
+     "q": "Half its branches are in semi-urban and rural areas. How would you market there?",
+     "a": "Use local language, branch events, shopkeeper current accounts, and gold or tractor loans relevant to the area."
+    }
+   ],
+   "HR": [
+    {
+     "q": "Employee turnover is about 23%. How would you reduce it?",
+     "a": "Better onboarding, realistic job previews for sales roles, a buddy system, clear growth paths and early recognition. Track 90-day attrition."
+    },
+    {
+     "q": "How would you hire 45,000+ people a year efficiently?",
+     "a": "Campus tie-ups, online assessments, standard interview scorecards and an HR tech system to track candidates."
+    },
+    {
+     "q": "How do you handle an unhappy high-performing employee?",
+     "a": "Listen first, find the real issue (pay, manager, growth), act on what you can, and follow up."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a savings account.",
+     "a": "Ask about the customer's needs first, then link features (app, UPI, debit card, sweep FD) to those needs. Close with a clear next step."
+    },
+    {
+     "q": "How will you handle monthly targets?",
+     "a": "Break the target into daily activity, focus on existing customers for cross-sell, and track progress each week."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you cut account-opening time?",
+     "a": "Digital KYC, pre-filled forms, removing duplicate checks, and tracking turnaround time at each step."
+    },
+    {
+     "q": "What is KYC and why does it matter?",
+     "a": "Know Your Customer: verifying identity to prevent fraud and money laundering. It's required by RBI."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about HDFC Bank?",
+     "a": "India's largest private bank. It merged with HDFC Ltd in 2023, earned ₹74,671 cr profit in FY26, and is led by MD & CEO Anup Bagchi since Oct 2026."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads HDFC Bank?",
+     "a": "Anup Bagchi is MD & CEO (since 27 Oct 2026). Rajiv Kumar is Part-time Chairman (since 15 Jul 2026)."
+    },
+    {
+     "q": "What recent news about HDFC Bank caught your attention?",
+     "a": "Pick one story from the live news section and give your own view in two lines."
+    },
+    {
+     "q": "Why HDFC Bank?",
+     "a": "Use the 'Why us?' draft below and add your own reason."
+    }
+   ]
+  },
+  "why_us": "HDFC Bank is India's largest private bank, and it has kept its loan quality strong even while growing fast: Gross NPA is just 1.11%. With half its branches in semi-urban and rural India, it's reaching customers in towns like mine. I'd like to start my career where I can learn banking at that scale and contribute to [your role] from day one.",
+  "ask": [
+   "With deposit growth now a priority, how does that shape this team's targets in the first year?",
+   "What does the first six months look like for a new joiner in this role?",
+   "How is the bank using AI in day-to-day work in this function?"
+  ],
+  "gd": [
+   {
+    "t": "Will AI replace bank jobs?",
+    "for": "Routine work is automated; the bank trained 50,000+ staff in GenAI.",
+    "against": "New roles grow in tech, data and advisory; managers increased in FY26."
+   },
+   {
+    "t": "Are private banks better than public sector banks?",
+    "for": "Faster service and tech adoption.",
+    "against": "SBI earned the highest profit in FY26 and has the widest reach."
+   },
+   {
+    "t": "UPI and fintech: threat or opportunity for banks?",
+    "for": "Fintechs win payment customers.",
+    "against": "Banks still hold deposits and give loans; partnerships help both."
+   }
+  ],
+  "avoid": [
+   "Don't confuse HDFC Bank with HDFC Life or HDFC AMC; they are separate listed companies.",
+   "Don't say Sashidhar Jagdishan is the CEO; Anup Bagchi took charge on 27 Oct 2026.",
+   "Don't call HDFC Bank a public sector bank. It's private."
+  ],
+  "night": [
+   "CEO: Anup Bagchi · Chairman: Rajiv Kumar",
+   "FY26 net profit: ₹74,671 cr",
+   "Gross NPA 1.11% (Sep 2026)",
+   "Merged with HDFC Ltd on 1 Jul 2023",
+   "9,689 branches · 21,172 ATMs",
+   "Rivals: SBI, ICICI, Axis, Kotak",
+   "Read 2 headlines from the live news",
+   "Practise your 'Why us?' aloud, in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is HDFC Bank's MD & CEO (Nov 2026)?",
+   "o": [
+    "Sashidhar Jagdishan",
+    "Anup Bagchi",
+    "Aditya Puri"
+   ],
+   "a": 1
+  },
+  {
+   "q": "When did HDFC Bank merge with HDFC Ltd?",
+   "o": [
+    "2019",
+    "2021",
+    "2023"
+   ],
+   "a": 2
+  },
+  {
+   "q": "HDFC Bank's Gross NPA in Sep 2026 was about…",
+   "o": [
+    "1.1%",
+    "4.5%",
+    "9%"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which regulator approves HDFC Bank's CEO?",
+   "o": [
+    "SEBI",
+    "RBI",
+    "IRDAI"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Roughly how many branches does it have?",
+   "o": [
+    "2,500",
+    "9,700",
+    "25,000"
+   ],
+   "a": 1
+  }
+ ],
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net profit margin": "Net profit as a % of total income. 20% means ₹20 profit for every ₹100 earned.",
+  "Total income": "Everything the bank earns: interest on loans plus fees and other income.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Other income": "Money earned apart from interest, such as fees, commissions and trading gains.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Cost-to-income ratio": "Operating costs as a % of income. Lower means the bank runs more efficiently.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer."
+ },
+ "kpis": [
+  {
+   "v": "₹74,671 cr",
+   "k": "Net profit",
+   "s": "FY 2025-26 · +10.9%"
+  },
+  {
+   "v": "1.11%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "34.1%",
+   "k": "CASA ratio",
+   "s": "Mar 2026"
+  },
+  {
+   "v": "19.7%",
+   "k": "Capital adequacy",
+   "s": "RBI minimum 11.9%"
+  }
+ ]
 }
