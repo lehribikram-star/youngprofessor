@@ -39,6 +39,7 @@ h1,h2,h3,h4{margin:0;font-weight:400}
 .pill{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--line2);font-size:13px;font-weight:700;background:none;cursor:pointer;text-decoration:none;white-space:nowrap}
 .pill:hover{border-color:var(--red)}
 @media (max-width:350px){.logo span{display:none}}
+@media (max-width:480px){.bt{display:none}.nav .pill{padding:7px 12px}}
 
 /* search */
 .hero{padding:30px 0 10px;position:relative}
@@ -280,7 +281,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 <body>
 <nav class="nav"><div class="wrap">
   <a class="logo" href="index.html"><img src="logo-mark.webp" alt=""><span>young<em>professor</em>.in</span></a>
-  <div style="display:flex;gap:8px"><a class="pill" href="placement.html">← Placement Prep</a><button class="pill" id="newBtn" hidden>↺ New search</button></div>
+  <div style="display:flex;gap:8px"><a class="pill" href="placement.html" aria-label="Back to Placement Prep">←<span class="bt"> Placement Prep</span></a><button class="pill" id="newBtn" hidden>↺ New search</button></div>
 </div></nav>
 
 <main class="wrap">
