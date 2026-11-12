@@ -988,6 +988,15 @@ body.cpon{overflow:hidden}
 <footer><div class="wrap"><span>Placement Prep Room · <a href="student.html">Student Zone</a></span><span>youngprofessor.in</span></div></footer>
 
 <script>
+/* Verified briefings (Nov 2026): ready-made companies open brief.html; all others use the live research below */
+(function(){var L=null;try{fetch('briefs/index.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(j){L=j.companies||[];}).catch(function(){L=[];});}catch(e){L=[];}
+function n(s){return String(s||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();}
+function rl(t){t=String(t||'').toLowerCase();if(/\bhr\b|human|talent|people|recruit/.test(t))return 'HR';if(/market|brand|digital/.test(t))return 'Marketing';if(/sales|relationship|business dev/.test(t))return 'Sales';if(/financ|account|credit|audit|treasur|analyst|bank|invest/.test(t))return 'Finance';if(/operat|supply|logist/.test(t))return 'Operations';return 'Finance';}
+document.addEventListener('submit',function(e){if(!L||!e.target||e.target.id!=='form')return;var co=document.getElementById('co'),v=n(co&&co.value);if(!v)return;
+var c=L.filter(function(x){return n(x.name)===v||(x.aliases||[]).map(n).indexOf(v)>-1;})[0];if(!c)return;
+e.preventDefault();e.stopImmediatePropagation();var r=document.getElementById('role');location.href='brief.html?c='+c.id+'&r='+rl(r&&r.value);},true);})();
+</script>
+<script>
 /* Stage 2: live headlines + AI coach (Google Apps Script web app under singhbikrampaul@gmail.com) */
 var NEWS_ENDPOINT='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
 try{fetch(NEWS_ENDPOINT).catch(function(){});}catch(e){}
