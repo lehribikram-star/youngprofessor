@@ -104,6 +104,16 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 .note{font-size:13px;color:var(--dim);margin-top:30px;border-top:1px solid var(--line);padding-top:16px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:#1f1a1a;border:1px solid var(--line2);padding:12px 18px;border-radius:12px;font-weight:700;transition:transform .3s var(--ease),opacity .3s;opacity:0;z-index:60}.toast.on{transform:translateX(-50%);opacity:1}
 @media (max-width:760px){.certwrap,.sharewrap{grid-template-columns:1fr}.opts{gap:6px}.opt{font-size:11px;padding:12px 2px 10px}.opt span{font-size:26px}.pair{grid-template-columns:1fr}.pair .or{text-align:center}.chip{width:42px;height:42px;font-size:20px}.back{display:none}}
+.cu-promo{display:flex;align-items:center;gap:16px;margin-top:22px;padding:20px 22px;border-radius:20px;text-decoration:none;position:relative;overflow:hidden;border:1px solid rgba(226,184,92,.55);background:linear-gradient(120deg,rgba(226,184,92,.16),rgba(23,20,20,.7) 60%);box-shadow:0 18px 44px -24px rgba(226,184,92,.7);transition:transform .25s var(--ease)}
+.cu-promo:hover{transform:translateY(-2px)}
+.cu-promo::after{content:"";position:absolute;top:0;bottom:0;width:34%;left:-40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.1),transparent);animation:cuSw 3.2s var(--ease) infinite}
+@keyframes cuSw{0%{left:-40%}45%,100%{left:120%}}
+.cu-l{font-size:38px;line-height:1;animation:cuWig 2.6s ease-in-out infinite}
+@keyframes cuWig{0%,70%,100%{transform:none}78%{transform:rotate(-12deg)}86%{transform:rotate(10deg)}}
+.cu-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}.cu-t b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,3vw,26px);line-height:1.15}.cu-t small{color:var(--muted);font-size:14px}
+.cu-b{flex:none;padding:12px 18px;border-radius:14px;background:linear-gradient(180deg,#F0CC78,#D9A944);color:#1a1205;font-weight:800;font-size:15px;white-space:nowrap}
+@media(max-width:640px){.cu-promo{flex-wrap:wrap;padding:18px}.cu-b{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){.cu-promo::after,.cu-l{animation:none}}
 </style>
 </head>
 <body>
@@ -203,6 +213,7 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
     <div class="card"><h3>💼 Jobs in India you can grow into</h3><ul id="tRoles"></ul><p class="small" id="tEmp" style="margin:10px 0 0"></p></div>
     <div class="card"><h3>📚 Strengthen these next</h3><ul id="tNext"></ul></div>
   </div>
+  <a class="cu-promo" id="cuGo" href="career-unlock.html"><span class="cu-l">🔓</span><span class="cu-t"><span class="eyebrow">Next step · Career Unlock</span><b>Your fit is unlocked. Now see every job it opens.</b><small id="cuTx">Private and government jobs, with detailed briefs.</small></span><span class="cu-b">Explore jobs →</span></a>
   <div class="sec"><h2>Your full ranking</h2><p class="lead" style="margin:0">All 8 specialisations, ranked for you.</p><div class="card" style="margin-top:12px"><div class="rank" id="rank"></div></div></div>
   <div class="sec"><h2>Your career code: <span id="code" style="color:var(--gold)"></span></h2><p class="lead" style="margin:0">From Level 1. Your three strongest interest areas, in order.</p><div class="ria" id="ria"></div></div>
 
@@ -446,6 +457,7 @@ function results(){R=score();const t=R.res[0],p=t.p;show('s-res');
  renderConf();$('tNext').innerHTML=p.next.map(r=>`<li>${r}</li>`).join('');
  $('rank').innerHTML=R.res.map((x,i)=>`<div class="rk"><span>${x.p.e}</span><div><b style="float:none;color:var(--ink);font-family:var(--sans)">${i+1}. ${x.p.n}</b><div class="bar"><i style="width:${x.pct}%"></i></div></div><b>${x.pct}%</b></div>`).join('');
  $('code').textContent=R.code.join(' · ');
+ {const a=R.res[0],b2=R.res[1];$('cuGo').href='career-unlock.html?s='+a.k+','+b2.k;$('cuTx').textContent='Start with '+a.p.n+' × '+b2.p.n+': private and government jobs, with detailed briefs.'}
  $('ria').innerHTML=R.code.map(l=>`<div><b>${l}</b> <strong>${RIA[l][0]}</strong><span>${RIA[l][1]}</span></div>`).join('');
  S.id=certId(S.name,t.k,S.date,S.rid);save();
  $('cid').innerHTML='Certificate no. <b style="color:var(--gold);font-family:var(--mono)">'+S.id+'</b>';
