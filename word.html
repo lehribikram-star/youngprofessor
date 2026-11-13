@@ -170,8 +170,9 @@ a{color:inherit}
         <div class="face bk">
           <div class="b-h"><small>THE FLIP SIDE</small><div id="bW"></div></div>
           <div class="b-in">
+            <div class="blk"><h4>📖 DEFINITION</h4><p id="bD"></p></div>
+            <div class="blk" id="bYk"><h4>🔤 ETYMOLOGY</h4><p id="bY"></p></div>
             <div class="blk"><h4>📍 INDIAN EXAMPLE</h4><p id="bE"></p></div>
-            <div class="blk"><h4>🎤 SAY IT IN AN INTERVIEW</h4><p id="bI"></p></div>
             <div class="blk"><h4>⚠️ DON'T CONFUSE WITH</h4><div class="twin"><div><b id="tA"></b><span id="tAm"></span></div><div><b id="tB"></b><span id="tBm"></span></div></div></div>
           </div>
           <div class="b-br"><img src="logo-badge.png" alt="">Dr. Bikram Paul Singh Lehri · youngprofessor.in</div>
@@ -244,7 +245,7 @@ function show(w,push){
   $('cTh').textContent=w.t+' · NO. '+String(i+1).padStart(3,'0');
   $('cW').textContent=w.w;fit($('cW'),w.w);
   $('cF').textContent=w.f||'';$('cM').textContent=w.m;
-  $('bW').textContent=w.w;$('bE').textContent=w.e;$('bI').textContent=w.i;
+  $('bW').textContent=w.w;$('bE').textContent=w.e;$('bD').textContent=w.m;$('bY').textContent=w.y||'';$('bYk').hidden=!w.y;
   $('tA').textContent=w.w;$('tAm').textContent=w.wm;$('tB').textContent=w.tw;$('tBm').textContent=w.tm;
   $('ttl').textContent=(w.d===TODAY?'Today · ':fmt(w.d).split(',')[0]+' · ')+w.t;
   $('flip').classList.remove('over');

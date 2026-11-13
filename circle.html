@@ -260,7 +260,7 @@ footer a{color:var(--ink2)}
       <button type="button" class="addbtn" data-add>✍️ Were you my student? Add your story</button>
       <a class="ghost" href="#wall">See the wall ↓</a>
     </div>
-    <div class="stats" aria-live="polite">
+    <div class="stats" id="stats" aria-live="polite" hidden>
       <div><b id="sMem">0</b><span>Members</span></div>
       <div><b id="sOrg">0</b><span>Institutions</span></div>
       <div><b id="sCity">0</b><span>Cities</span></div>
@@ -489,7 +489,7 @@ footer a{color:var(--ink2)}
   function load(){
     fetch(API+'?circle=1&v='+Date.now(),{credentials:'omit'}).then(function(r){return r.json();}).then(function(D){
       if(!D||!D.ok)throw 0;ALL=D.items||[];ALL.forEach(function(x,i){x.fm=(ALL.length-i)<=50;});var S=D.stats||{};
-      countUp($('sMem'),S.members||ALL.length);countUp($('sOrg'),S.orgs||0);countUp($('sCity'),S.cities||0);
+      var nm=S.members||ALL.length;if(nm>0){$('stats').hidden=false;}countUp($('sMem'),S.members||ALL.length);countUp($('sOrg'),S.orgs||0);countUp($('sCity'),S.cities||0);
       var sp=ALL.filter(function(x){return x.ft;})[0];
       if(sp){$('spotC').innerHTML=picHTML(sp)+'<div><blockquote>'+esc(sp.m)+'</blockquote><div class="who" style="margin:0"><div><b>'+esc(sp.n)+'</b><span class="role">'+esc([sp.d,sp.o].filter(Boolean).join(' · '))+'</span>'+(sp.l?'<span class="loc">📍 '+esc(sp.l)+'</span>':'')+'</div></div></div>';$('spot').hidden=false;}
       chips();render();
