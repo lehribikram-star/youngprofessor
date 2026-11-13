@@ -755,6 +755,12 @@ body.cpon{overflow:hidden}
         <input id="co" placeholder="Any company: e.g. HUL, TCS, HDFC Bank, Deloitte" required aria-autocomplete="list" aria-controls="sugg">
         <div class="sugg" id="sugg" hidden role="listbox"></div>
       </div>
+      <button type="button" class="addweb" id="addWeb">🌐 Not in the suggestions? <b>Add its official website</b></button>
+      <div class="fld wfld" id="wfld" hidden>
+        <label for="web">Company's official website</label>
+        <input id="web" inputmode="url" autocomplete="off" placeholder="e.g. www.companyname.com">
+        <small class="whint">We'll read the company's own website and build your briefing from it.</small>
+      </div>
       <div class="fld">
         <label for="role">Position you are applying for</label>
         <input id="role" placeholder="e.g. Management Trainee, Sales Executive">
@@ -762,14 +768,13 @@ body.cpon{overflow:hidden}
       <button class="go" id="go" type="submit">Prepare me →</button>
     </form>
     <div class="chips" id="roleChips"><span>Quick roles:</span></div>
-    <p class="urlhint">Company not showing in the suggestions? <button type="button" class="linkbtn" id="useUrl">Paste its website link instead →</button></p>
     <div class="steps"><div><b>01</b>Type the company</div><div><b>02</b>Add your role</div><div><b>03</b>Read, practise &amp; save your prep sheet</div></div>
   </div>
 </header>
 
 <main class="wrap" id="main">
   <div class="state" id="idle"><b>Your briefing will appear here</b>Try: Hindustan Unilever · HDFC Bank · Infosys · Nestlé India · Deloitte · Amazon</div>
-  <div class="skel" id="skel" hidden><i></i><i></i><i></i></div>
+  <div class="skel" id="skel" hidden><div class="file"><div class="tag">CANDIDATE PREP FILE</div><h3 id="skN">Researching…</h3><div class="sub" id="skR">live research</div><div class="lstamp">LIVE RESEARCH</div><div class="pbar"><i id="skB"></i></div><div class="skst" id="skSt">Searching trusted public sources…</div></div></div>
   <div class="state" id="err" hidden></div>
   <div class="card dmiss" id="miss" hidden>
     <div class="em">🔎</div>
@@ -1088,10 +1093,12 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
           role.focus();});
         sugg.appendChild(b);});
       var wb=sbtn('🌐','Not in the list? Use the company’s website','Paste its website link, or let us find it on the web');wb.classList.add('sweb');
-      wb.addEventListener('click',function(){sugg.hidden=true;showMiss(v,true);});sugg.appendChild(wb);
+      wb.addEventListener('click',function(){sugg.hidden=true;openWeb();});sugg.appendChild(wb);
       sugg.hidden=false;
     });
   }
+  function openWeb(){$('wfld').hidden=false;$('addWeb').hidden=true;setTimeout(function(){$('web').focus();},60);}
+  $('addWeb').addEventListener('click',openWeb);
   function buildFromUrl(u,name){$('idle').hidden=true;$('report').hidden=true;$('err').hidden=true;$('skel').hidden=true;missName=name||domOnly(u);
     var m=$('miss');m.hidden=false;$('missT').textContent='Building a briefing from '+domOnly(u);$('urlIn').value=u;building=false;
     setTimeout(function(){m.scrollIntoView({behavior:'smooth',block:'center'});},60);buildProfile({task:'profile',company:name||'',url:u});}
@@ -1106,6 +1113,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
 
   /* ---------- lookup ---------- */
   form.addEventListener('submit',function(e){e.preventDefault();var v=co.value.trim();if(!v){co.focus();return;}sugg.hidden=true;sTok++;clearTimeout(sTimer);
+    var wv=($('web').value||'').trim();if(wv){if(!/[a-z0-9-]\.[a-z]{2,}/i.test(wv)){toast('Paste a website like www.company.com');$('web').focus();return;}buildFromUrl(wv,v);return;}
     if(!picked&&isUrl(v)){buildFromUrl(v,'');return;}
     if(pickedMem&&pickedMem===v){openMemory(v);return;}
     if(pickedWd&&pickedWd.title===v){resolveWd(pickedWd);return;}
@@ -1210,6 +1218,14 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   function clean(t){return (t||'').replace(/^[\s▲▼]*(increase|decrease|steady)?\s*/i,'').replace(/\s*\[\d+\]/g,'').trim();}
 
   /* ---------- render ---------- */
+  function fillAbout(D){var name=D.summary.title,P=D.ai||{},I=D.info||{rows:{}},ab=$('rAbout');
+    var fb=function(){if($('rName').textContent!==name)return;var r=function(k){return ((row(I,[k])||{}).text)||'';};var ind=String(P.industry||r('industry')||''),hq=String(P.headquarters||r('headquarters')||''),fd=String(P.founded||r('founded')||'');
+      var t=P.tagline&&String(P.tagline).length>30?String(P.tagline):'';
+      if(!t&&ind)t=name+' is a company in '+ind.replace(/\.$/,'')+(hq?', headquartered in '+hq.replace(/\.$/,''):'')+(fd?', founded in '+fd.replace(/\.$/,''):'')+'.';
+      if(t){ab.textContent=t;ab.hidden=false;}else ab.hidden=true;};
+    getJSON(REST+'/page/summary/'+encodeURIComponent(name.replace(/ /g,'_'))).then(function(x){if($('rName').textContent!==name)return;
+      if(x&&x.type!=='disambiguation'&&x.extract&&BIZ.test((x.description||'')+' '+x.extract)){ab.textContent=x.extract;ab.hidden=false;var src=$('rSrc');if(src&&!/Wikipedia/.test(src.textContent)){src.appendChild(d.createTextNode(' · '));var a=el('a',null,'Wikipedia ↗');a.href=(x.content_urls&&x.content_urls.desktop&&x.content_urls.desktop.page)||('https://en.wikipedia.org/wiki/'+encodeURIComponent(name.replace(/ /g,'_')));a.target='_blank';a.rel='noopener';src.appendChild(a);}}
+      else fb();}).catch(fb);}
   function render(D){
     var S=D.summary,I=D.info,name=S.title,desc=S.description||'';
     $('skel').hidden=true;$('report').hidden=false;
@@ -1218,7 +1234,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     var lg=$('rLogo');lg.innerHTML='';lg.className='rlogo';
     var logo=I.logo||(S.thumbnail&&/^https:\/\/(upload|thumb)\.wikimedia\.org\//.test(S.thumbnail.source)?S.thumbnail.source:null);
     if(logo){var im=el('img');im.src=logo;im.alt=name+' logo';lg.appendChild(im);}else{lg.classList.add('none');lg.textContent=name.charAt(0);}
-    $('rAbout').textContent=S.extract||'';
+    $('rAbout').textContent=S.extract||'';$('rAbout').hidden=false;if(!S.extract)fillAbout(D);
     var wiki='https://en.wikipedia.org/wiki/'+encodeURIComponent(name.replace(/ /g,'_'));
     $('rSrc').innerHTML='Source: <a href="'+wiki+'" target="_blank" rel="noopener">Wikipedia ↗</a>';
 
@@ -1288,7 +1304,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     var h=$('headlines'),hw=$('hlWrap');h.innerHTML='';hw.hidden=!NEWS_ENDPOINT;$('hlNote').textContent='Fetching the latest headlines…';
     if(NEWS_ENDPOINT){var tok=name;var getNews=function(n){return fetch(NEWS_ENDPOINT+'?q='+qp).then(function(r){return r.json();}).catch(function(e){if(n>0)return new Promise(function(ok){setTimeout(ok,1500);}).then(function(){return getNews(n-1);});throw e;});};getNews(2).then(function(items){
       if(tok!==name)return;
-      (Array.isArray(items)?items:[]).slice(0,6).forEach(function(it){if(!/^https:\/\//.test(it.link||''))return;var a=el('a');a.href=it.link;a.target='_blank';a.rel='noopener';a.appendChild(el('div',null,it.title));a.appendChild(el('small',null,[it.source,it.date].filter(Boolean).join(' · ')));h.appendChild(a);});
+      (Array.isArray(items)?items:[]).slice(0,6).forEach(function(it){if(!/^https:\/\//.test(it.link||'')||JUNK.test(it.title||''))return;var a=el('a');a.href=it.link;a.target='_blank';a.rel='noopener';a.appendChild(el('div',null,it.title));a.appendChild(el('small',null,[it.source,it.date].filter(Boolean).join(' · ')));h.appendChild(a);});
       $('hlNote').textContent=h.children.length?'From the last two weeks. Tap to read.':'No fresh headlines in the last two weeks. Use the links below.';}).catch(function(){$('hlNote').textContent='Headlines could not load right now. Use the links below.';});}
   }
 
@@ -1552,7 +1568,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   var NCAT={results:['📈','Results'],launch:['🚀','Launches'],deal:['🤝','Deals'],people:['👤','People'],other:['📰','Other']};
 
   /* ===== Premium (demo): Interview Kit + CV x Job match ===== */
-  var PNEWS='';
+  var PNEWS='',JUNK=/quote and history|stock price,? (news|&|and)|share price,? (news|&|and|today|live)|stock price (today|live|-|\|)|live (nse|bse)|price chart|stock quote|& chart|\bjobs? 20\d\d|recruitment 20\d\d|vacanc(y|ies)|apply online|eligibility,? salary/i;
   function postAI2(body){return postAI(body).then(function(j){if(j&&!j.ok&&/busy/i.test(j.error||''))return new Promise(function(r){setTimeout(r,2500);}).then(function(){return postAI(body);});return j;});}
   function ov(id,show){var o=$(id);o.hidden=!show;d.body.style.overflow=show?'hidden':'';}
   [].forEach.call(d.querySelectorAll('[data-pclose]'),function(b){b.addEventListener('click',function(){ov(b.closest('.pov').id,false);});});
@@ -1918,7 +1934,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
     if(!AI_ENDPOINT)return;
     postAI({task:'news',company:name}).then(function(j){
       if(id!==runId||!j||!j.ok||!(j.items||[]).length)return;
-      var items=j.items.filter(function(x){return /^https:\/\//.test(x.link||'');});if(!items.length)return;PNEWS=items.map(function(x){return x.title+(x.brief?' - '+x.brief:'');}).join('\n');
+      var items=j.items.filter(function(x){return /^https:\/\//.test(x.link||'')&&!JUNK.test(x.title||'');});if(!items.length)return;PNEWS=items.map(function(x){return x.title+(x.brief?' - '+x.brief:'');}).join('\n');
       var cnt={};items.forEach(function(x){var k=NCAT[x.cat]?x.cat:'other';x.cat=k;cnt[k]=(cnt[k]||0)+1;});
       var cat=$('ncat'),box=$('dnews');cat.innerHTML='';
       function show(f){box.innerHTML='';items.forEach(function(x){if(f&&x.cat!==f)return;var c=el('div','dnw');var tp=el('div','top');tp.appendChild(el('b',null,NCAT[x.cat][0]+' '+NCAT[x.cat][1]));tp.appendChild(el('span',null,[x.source,x.date].filter(Boolean).join(' · ')));c.appendChild(tp);c.appendChild(el('h4',null,x.title));if(x.brief)c.appendChild(el('p',null,x.brief));var a=el('a',null,'Read full story →');a.href=x.link;a.target='_blank';a.rel='noopener';c.appendChild(a);box.appendChild(c);});
@@ -2258,7 +2274,7 @@ var AI_ENDPOINT=NEWS_ENDPOINT;
   window.__prepResetCoach=resetCoach;
 
   /* allow deep links: prep.html?c=Infosys&r=Business%20Analyst */
-  var P=new URLSearchParams(location.search);if(P.get('c')){co.value=P.get('c');role.value=P.get('r')||'';run(co.value,role.value);}
+  var P=new URLSearchParams(location.search);if(P.get('w')){co.value=P.get('c')||'';role.value=P.get('r')||'';$('wfld').hidden=false;$('addWeb').hidden=true;$('web').value=P.get('w');buildFromUrl(P.get('w'),co.value);}else if(P.get('c')){co.value=P.get('c');role.value=P.get('r')||'';run(co.value,role.value);}
 })();
 </script>
 
@@ -2269,5 +2285,126 @@ if(me&&me.step)setTimeout(function(){p[me.step]=1;try{localStorage.setItem(k,JSO
   ['idle','err','report','skel'].forEach(function(id){var e=d.getElementById(id);if(e)e.hidden=true;});
   if(t)t.textContent='Paste the company\'s website link';m.hidden=false;m.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){var u=d.getElementById('urlIn');if(u)u.focus();},400);});
   var ai=d.querySelector('.tabs a.aitab');if(ai)ai.textContent=ai.textContent.replace(/AI Coach.*/,'AI Coach · Soon');})();</script>
+<style>
+/* ===== Nov 2026: premium layer for live-research briefings ===== */
+.addweb{display:block;width:100%;margin:2px 0 0;padding:11px 13px;border:1px dashed var(--line2);border-radius:12px;background:transparent;color:var(--muted);font:600 13.5px var(--sans);text-align:left;cursor:pointer}
+.addweb b{color:var(--amber)}
+.addweb:hover{border-color:var(--amber);color:var(--ink)}
+.wfld input{border-color:rgba(245,185,66,.55)}
+.whint{display:block;color:var(--muted);font-size:12.5px;padding-left:4px}
+.search.call .addweb,.search.call .wfld{grid-column:1/-1;order:5}
+@media (max-width:760px){.search.call .addweb,.search.call .wfld{order:0}}
+.skel{display:grid;place-items:center;min-height:52vh;margin:24px 0;perspective:1200px}
+.skel .file{width:min(100%,440px);background:linear-gradient(160deg,#211b1b,#151212);border:1px solid var(--line2);border-radius:18px;padding:22px;position:relative;transform-origin:left center;animation:kflip .7s var(--ease) both;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+@keyframes kflip{from{transform:rotateY(-70deg);opacity:0}to{transform:none;opacity:1}}
+.skel .tag{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--red)}
+.skel h3{font-family:var(--serif);font-weight:400;font-size:30px;margin:8px 0 2px;line-height:1.15;padding-right:120px;overflow-wrap:anywhere}
+.skel .sub{color:var(--muted);font-size:14px}
+.skel .lstamp{position:absolute;right:16px;top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--amber);border:2px solid var(--amber);padding:5px 8px;border-radius:8px;transform:rotate(-8deg) scale(2.2);opacity:0;animation:kstamp .45s .55s var(--ease) forwards}
+@keyframes kstamp{to{transform:rotate(-8deg) scale(1);opacity:1}}
+.skel .pbar{height:4px;background:var(--line);border-radius:4px;margin-top:16px;overflow:hidden}
+.skel .pbar i{display:block;height:100%;width:0;border-radius:0;background:linear-gradient(90deg,var(--red),var(--amber));animation:none;transition:width 9s cubic-bezier(.1,.6,.2,1)}
+.skel .skst{margin-top:12px;font-size:13.5px;color:var(--muted);min-height:1.5em;transition:opacity .25s}
+.lstrip{margin-top:14px;padding:14px 16px;border-radius:16px;border:1px solid rgba(245,185,66,.35);background:linear-gradient(135deg,rgba(245,185,66,.08),rgba(245,185,66,.02))}
+.lstrip .lpill{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;color:var(--amber)}
+.lstrip .lpill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px var(--amber);animation:klp 1.6s infinite}
+@keyframes klp{50%{opacity:.35}}
+.lstrip p{margin:6px 0 10px;font-size:13.5px;color:var(--muted);line-height:1.5}
+.lstrip .lb{display:flex;flex-wrap:wrap;gap:8px}
+.lstrip .lb button{border:1px solid var(--line2);background:var(--bg2);color:var(--ink);border-radius:12px;padding:9px 12px;font:800 13px var(--sans);cursor:pointer}
+.lstrip .lb button.req{border-color:rgba(245,185,66,.55);color:var(--amber)}
+.lstrip .lb button[disabled]{opacity:.75;cursor:default}
+.est{display:inline-block;margin-left:6px;font-size:11px;font-weight:800;color:var(--amber);border:1px solid rgba(245,185,66,.4);border-radius:999px;padding:1px 7px;vertical-align:middle;white-space:nowrap;font-family:var(--sans);letter-spacing:0}
+.report .card.kr{opacity:0;transform:translateY(26px)}
+.report .card.kr.in{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.kswipe{display:none;align-items:center;gap:10px;margin:14px 0 6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
+.kswipe .kd{display:flex;gap:5px}.kswipe .kd i{width:6px;height:6px;border-radius:50%;background:var(--line2);transition:all .3s}.kswipe .kd i.on{width:18px;border-radius:4px;background:var(--red)}
+@media (max-width:640px){
+ .dnews,.headlines{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ .dnews::-webkit-scrollbar,.headlines::-webkit-scrollbar{display:none}
+ .dnews>.dnw,.headlines>a{flex:0 0 86%;scroll-snap-align:start;min-height:150px}
+ .kswipe{display:flex}
+}
+.cfab,.tabs a.aitab{display:none!important}
+.kmod{position:fixed;inset:0;z-index:90;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.62)}
+.kmod .kbox{width:min(620px,100%);max-height:88vh;overflow:auto;background:var(--panel2);border:1px solid var(--line2);border-radius:20px 20px 0 0;padding:22px 20px calc(22px + env(safe-area-inset-bottom));position:relative;animation:kup .3s var(--ease)}
+@media (min-width:700px){.kmod{align-items:center}.kmod .kbox{border-radius:20px}}
+@keyframes kup{from{transform:translateY(40px);opacity:0}}
+.kmod h4{font-family:var(--serif);font-weight:400;font-size:25px;margin:0 30px 6px 0}
+.kmod .kx{position:absolute;right:14px;top:10px;background:none;border:0;font-size:26px;line-height:1;color:var(--muted);cursor:pointer}
+.kmod p.m{color:var(--muted);font-size:14px;margin:0 0 4px}
+.kmod label{display:block;font-size:13px;font-weight:800;color:var(--muted);margin:12px 0 0}
+.kmod label small{font-weight:500;opacity:.8}
+.kmod input,.kmod textarea{display:block;width:100%;margin-top:6px;background:var(--bg2);border:1px solid var(--line2);border-radius:12px;padding:12px;font:15px var(--sans);color:var(--ink)}
+.kmod textarea{min-height:84px;resize:vertical}
+.kmod input:focus,.kmod textarea:focus{outline:none;border-color:var(--red)}
+.kmod .send{margin-top:16px;width:100%;padding:14px;border:0;border-radius:12px;background:var(--red);color:#fff;font:800 15px var(--sans);cursor:pointer}
+.kmod .send[disabled]{opacity:.7}
+.kmod .ok{margin:10px 0 0;font-size:14px}
+.kmod .ok a{color:var(--calm)}
+@media (prefers-reduced-motion:reduce){.report .card.kr{opacity:1;transform:none}.skel .file{animation:none}.skel .lstamp{animation:none;opacity:1;transform:rotate(-8deg)}}
+@media print{.lstrip,.kswipe,.kmod,.addweb{display:none!important}.report .card.kr{opacity:1!important;transform:none!important}}
+</style>
+<script>(function(){
+var d=document,$=function(i){return d.getElementById(i)};
+var ASK='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+
+/* 1. arrival: candidate prep file while the live research runs */
+var sk=$('skel'),stT=null,LINES=['Searching trusted public sources…','Reading what the company does…','Checking the latest news…','Finding the numbers that matter…','Writing your interview briefing…'];
+function stageOn(){var n=(($('co')||{}).value||'').trim()||'Your company',r=(($('role')||{}).value||'').trim();
+  $('skN').textContent=n;$('skR').textContent=(r?r+' · ':'')+'live research';
+  var b=$('skB');b.style.transition='none';b.style.width='0';void b.offsetWidth;b.style.transition='';b.style.width='92%';
+  var k=0,s=$('skSt');s.textContent=LINES[0];clearInterval(stT);
+  stT=setInterval(function(){if(k>=LINES.length-1){clearInterval(stT);return}k++;s.style.opacity=0;setTimeout(function(){s.textContent=LINES[k];s.style.opacity=1},250)},1800)}
+function stageOff(){clearInterval(stT);var b=$('skB');if(b)b.style.width='100%'}
+if(sk)new MutationObserver(function(){if(sk.hidden)stageOff();else stageOn()}).observe(sk,{attributes:true,attributeFilter:['hidden']});
+
+/* 2. after the briefing renders: live strip, estimate marks, reveal, swipe news */
+var rep=$('report');if(!rep)return;
+function company(){return (($('rName')||{}).textContent||'').trim()}
+function verified(){return !!d.querySelector('#rBadges .bv')}
+function reqKey(n){return 'kbyg-req:'+n.toLowerCase()}
+function strip(){var old=$('liveStrip'),name=company();if(!name)return;
+  if(verified()){if(old)old.remove();return}
+  if(old&&old.dataset.n===name)return;if(old)old.remove();
+  var req=false;try{req=!!localStorage.getItem(reqKey(name))}catch(e){}
+  var s=d.createElement('div');s.className='lstrip';s.id='liveStrip';s.dataset.n=name;
+  s.innerHTML='<span class="lpill">Live research · not yet verified</span><p>Built just now for you from public sources. Figures marked <span class="est">≈ estimate</span> come from an AI web search, so check the annual report before you quote them.</p><div class="lb"><button type="button" class="req" id="kReq"'+(req?' disabled':'')+'>'+(req?'✓ Verified briefing requested':'⭐ Request a verified briefing')+'</button><button type="button" id="kWrong">⚑ Report a wrong fact</button></div>';
+  var a=$('rBadges');a.parentNode.insertBefore(s,a.nextSibling);
+  $('kReq').addEventListener('click',reqForm);$('kWrong').addEventListener('click',wrongForm)}
+var EST=/^\s*(approx\.?|approximately|about|around|roughly|est\.?|estimated|~)\s*[\d₹$]/i;
+function markEst(){[].forEach.call(rep.querySelectorAll('b,strong,span,em,small,div,td'),function(e){if(e.children.length||e.getAttribute('data-k'))return;var t=e.textContent;
+  if(t.length<48&&EST.test(t)){e.setAttribute('data-k','1');var s=d.createElement('span');s.className='est';s.textContent='≈ estimate';s.title='AI estimate from a web search, not a verified figure';e.appendChild(s)}})}
+var io=('IntersectionObserver' in window)&&!reduce?new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:.04}):null;
+function reveal(){if(!io)return;[].forEach.call(rep.querySelectorAll('.card'),function(c){if(c.getAttribute('data-r'))return;if(c.hidden||!c.offsetParent)return;c.setAttribute('data-r','1');
+  if(c.getBoundingClientRect().top<innerHeight*.9)return;c.classList.add('kr');io.observe(c)})}
+function upd(row,bar){var f=row.firstElementChild;if(!f)return;var w=f.getBoundingClientRect().width+12,i=Math.min(row.children.length-1,Math.round(row.scrollLeft/w));
+  [].forEach.call(bar.querySelectorAll('.kd i'),function(x,k){x.classList.toggle('on',k===i)});var c=bar.querySelector('.kc');if(c)c.textContent=(i+1)+' / '+row.children.length}
+function swipers(){[$('dnews'),$('headlines')].forEach(function(row){if(!row)return;var n=row.children.length,bar=row.previousElementSibling;
+  if(!(bar&&bar.classList.contains('kswipe')))bar=null;
+  if(n<2){if(bar)bar.remove();return}
+  if(!bar){bar=d.createElement('div');bar.className='kswipe';row.parentNode.insertBefore(bar,row);row.addEventListener('scroll',function(){upd(row,bar)},{passive:true})}
+  if(+bar.getAttribute('data-n')!==n){bar.setAttribute('data-n',n);bar.innerHTML='<span>SWIPE</span><span class="kd">'+new Array(n+1).join('<i></i>')+'</span><span class="kc"></span>';row.scrollLeft=0;upd(row,bar)}})}
+var tm;new MutationObserver(function(){clearTimeout(tm);tm=setTimeout(function(){if(rep.hidden)return;strip();markEst();reveal();swipers()},150)}).observe(rep,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});
+
+/* 3. forms that reach Dr. Lehri (same route as the Ask page) */
+function modal(html){var m=d.createElement('div');m.className='kmod';m.innerHTML='<div class="kbox" role="dialog" aria-modal="true"><button class="kx" type="button" aria-label="Close">×</button>'+html+'</div>';d.body.appendChild(m);
+  m.addEventListener('click',function(e){if(e.target===m||e.target.classList.contains('kx'))m.remove()});var f=m.querySelector('textarea,input');if(f&&!('ontouchstart' in window))f.focus();return m}
+function send(topic,msg,name,contact){return fetch(ASK,{method:'POST',body:JSON.stringify({task:'ask',name:name||'Student (Know Before You Go)',programme:'',topic:topic,message:msg,contact:contact||''})}).then(function(r){return r.json()}).then(function(j){if(!j||!j.ok)throw new Error('send');return j})}
+function wire(m,topic,build,okMsg,label,after){var f=m.querySelector('form');f.addEventListener('submit',function(e){e.preventDefault();var msg=build(f.elements);if(msg===false)return;
+  var b=f.querySelector('.send'),ok=f.querySelector('.ok');b.disabled=true;b.textContent='Sending…';ok.textContent='';
+  send(topic,msg,f.elements.n.value.trim(),f.elements.c.value.trim()).then(function(){ok.textContent=okMsg;b.textContent='Sent ✓';if(after)after()})
+   .catch(function(){b.disabled=false;b.textContent=label;ok.innerHTML='Could not send right now. <a href="student.html#ask">Use the Ask page instead →</a>'})})}
+function role(){return ((($('role')||{}).value)||'').trim()}
+function wrongForm(){var name=company(),L='Send to Dr. Lehri →';
+  var m=modal('<h4>Spotted a wrong fact?</h4><p class="m">Thank you. Tell me which fact on the <b>'+esc(name)+'</b> briefing looks wrong. I read every report.</p><form novalidate><label>Which fact looks wrong?<textarea name="f" placeholder="e.g. The CEO name in Know them"></textarea></label><label>What is correct? Add a source link if you have one <small>(optional)</small><textarea name="x" placeholder="e.g. New CEO since March 2026, source: company press release"></textarea></label><label>Your name <small>(optional)</small><input name="n" autocomplete="name"></label><label>Email or phone for my reply <small>(optional)</small><input name="c" autocomplete="email"></label><button class="send" type="submit">'+L+'</button><p class="ok" role="status"></p></form>');
+  wire(m,'Wrong fact: '+name,function(E){var v=E.f.value.trim();if(!v){E.f.focus();return false}return 'Company: '+name+'\nRole: '+role()+'\nBriefing type: live research (not verified)\nPage: '+location.href+'\n\nWrong fact: '+v+'\n\nCorrection / source: '+E.x.value.trim()},'✅ Sent. Thank you for helping every student!',L)}
+function reqForm(){var name=company(),L='Send request →';
+  var m=modal('<h4>Request a verified briefing</h4><p class="m">I will research <b>'+esc(name)+'</b> properly, check every key fact against two trusted sources, and add it to the ready-made list for all students.</p><form novalidate><label>When is your interview? <small>(optional)</small><input name="w" placeholder="e.g. 20 November"></label><label>Your name <small>(optional)</small><input name="n" autocomplete="name"></label><label>Email or phone so I can tell you when it is ready <small>(optional)</small><input name="c" autocomplete="email"></label><button class="send" type="submit">'+L+'</button><p class="ok" role="status"></p></form>');
+  wire(m,'Verified briefing request: '+name,function(E){return 'Please add a verified briefing for: '+name+'\nRole: '+role()+'\nInterview date: '+E.w.value.trim()+'\nPage: '+location.href},'✅ Request sent. Thank you!',L,function(){try{localStorage.setItem(reqKey(name),'1')}catch(e){}var b=$('kReq');if(b){b.disabled=true;b.textContent='✓ Verified briefing requested'}})}
+})();</script>
+
 </body>
 </html>

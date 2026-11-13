@@ -161,6 +161,23 @@ table.nt tr:last-child td{border-bottom:0}
 a.news{display:block;text-decoration:none;opacity:0;transform:translateX(30px);transition:opacity .5s var(--ease),transform .5s var(--ease),border-color .2s}
 a.news.in{opacity:1;transform:none}
 #s-news{overflow-x:clip}
+.addweb{display:block;width:100%;margin:10px 0 0;padding:10px 12px;border:1px dashed var(--line2);border-radius:12px;background:none;color:var(--muted);font:600 13.5px var(--sans);text-align:left;cursor:pointer}
+.addweb b{color:var(--amber)}
+.addweb:hover{border-color:var(--amber);color:var(--ink)}
+#web{border-color:rgba(245,185,66,.55)}
+.nrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.nrow a.news .rd{display:block;margin-top:10px;font-size:13px;font-weight:800;color:var(--red)}
+.ncount{display:none;align-items:center;gap:10px;margin:0 0 10px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
+.ncount .kd{display:flex;gap:5px}.ncount .kd i{width:6px;height:6px;border-radius:50%;background:var(--line2);transition:all .3s}.ncount .kd i.on{width:18px;border-radius:4px;background:var(--red)}
+@media (max-width:640px){.nrow{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.nrow::-webkit-scrollbar{display:none}.nrow a.news{flex:0 0 84%;scroll-snap-align:start;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}.ncount{display:flex}}
+.sf label{display:block;font-size:13px;font-weight:800;color:var(--muted);margin:12px 0 0}
+.sf label small{font-weight:500;opacity:.8}
+.sf input,.sf textarea{display:block;width:100%;margin-top:6px;background:var(--bg2);border:1px solid var(--line2);border-radius:12px;padding:12px;font:15px var(--sans);color:var(--ink)}
+.sf textarea{min-height:84px;resize:vertical}
+.sf input:focus,.sf textarea:focus{outline:none;border-color:var(--red)}
+.sf .send{margin-top:16px;width:100%;padding:14px;border:0;border-radius:12px;background:var(--red);color:#fff;font:800 15px var(--sans);cursor:pointer}
+.sf .send[disabled]{opacity:.7}
+.sf .ok{margin:10px 0 0;font-size:14px}
 a.news:hover{border-color:var(--red)}
 a.news .m{font-size:12px;color:var(--muted)}
 a.news h4{margin:4px 0 0;font-size:15px;font-weight:700;line-height:1.4}
@@ -251,6 +268,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
       <p class="lbl">Company</p>
       <input class="inp" id="co" placeholder="Start typing… e.g. HDFC Bank" aria-label="Company name">
       <div class="sugg" id="sugg" hidden></div>
+      <button type="button" class="addweb" id="addWeb">🌐 Not in the list? <b>Add its official website</b></button>
+      <div id="wfld" hidden><p class="lbl" style="margin-top:16px">Company's official website</p><input class="inp" id="web" inputmode="url" autocomplete="off" placeholder="e.g. www.companyname.com" aria-label="Company's official website"><p class="hint" style="margin-top:6px">We'll read the company's own website and build your briefing from it.</p></div>
       <p class="lbl" style="margin-top:18px">Your role</p>
       <div class="chips" id="roles"></div>
       <button class="go" id="go" type="submit">Prepare me →</button>
@@ -281,6 +300,7 @@ var ROLES=['Marketing','Finance','HR','Sales','Operations','Other'];
 var P=new URLSearchParams(location.search);
 var role=ROLES.indexOf(P.get('r'))>-1?P.get('r'):'Finance';
 var INDEX=null,D=null,picked=null,newsItems=[];
+var JUNK=/quote and history|stock price,? (news|&|and)|share price,? (news|&|and|today|live)|stock price (today|live|-|\|)|live (nse|bse)|price chart|stock quote|& chart|\bjobs? 20\d\d|recruitment 20\d\d|vacanc(y|ies)|apply online|eligibility,? salary/i;
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function norm(s){return String(s||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim()}
 var tt;function toast(m){var t=$('toast');t.textContent=m;t.classList.add('in');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('in')},2400)}
@@ -294,16 +314,19 @@ var co=$('co'),sugg=$('sugg');
 function showSugg(){var q=norm(co.value);if(!q||!INDEX){sugg.hidden=true;return}
   var list=INDEX.filter(function(c){return norm(c.name).indexOf(q)>-1||(c.aliases||[]).some(function(a){return norm(a).indexOf(q)===0})}).slice(0,6);
   var h=list.map(function(c){return '<button type="button" class="opt" data-id="'+c.id+'"><span class="mark" style="background:'+c.color+'">'+esc(c.short)+'</span><span><b>'+esc(c.name)+'</b><small>'+esc(c.sector)+'</small></span><span class="ver">✓ Verified</span></button>'}).join('');
-  if(!findReady(co.value))h+='<button type="button" class="opt" data-live="1"><span class="mark" style="background:#3A2E2E">🔎</span><span><b>'+esc(co.value.trim())+'</b><small>Research this company live</small></span><span class="livet">Live research</span></button>';
+  if(!findReady(co.value))h+='<button type="button" class="opt" data-live="1"><span class="mark" style="background:#3A2E2E">🔎</span><span><b>'+esc(co.value.trim())+'</b><small>Research this company live</small></span><span class="livet">Live research</span></button><button type="button" class="opt" data-web="1"><span class="mark" style="background:#3A2E2E">🌐</span><span><b>Use its official website</b><small>Paste the company\'s website link</small></span></button>';
   sugg.innerHTML=h;sugg.hidden=false}
 co.addEventListener('input',function(){picked=null;idxP.then(showSugg)});
-sugg.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;if(b.dataset.id){picked=b.dataset.id;co.value=INDEX.filter(function(c){return c.id===picked})[0].name}sugg.hidden=true;$('go').focus()});
+function openWeb(){$('wfld').hidden=false;$('addWeb').hidden=true;setTimeout(function(){$('web').focus()},60)}
+$('addWeb').addEventListener('click',openWeb);
+sugg.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;if(b.dataset.web){sugg.hidden=true;openWeb();return}if(b.dataset.id){picked=b.dataset.id;co.value=INDEX.filter(function(c){return c.id===picked})[0].name}sugg.hidden=true;$('go').focus()});
 d.addEventListener('click',function(e){if(!e.target.closest('#form'))sugg.hidden=true});
-$('form').addEventListener('submit',function(e){e.preventDefault();var v=co.value.trim();if(!v){co.focus();return}
+$('form').addEventListener('submit',function(e){e.preventDefault();var v=co.value.trim(),w=$('web').value.trim();if(!v&&!w){co.focus();return}
+  if(w){if(!/[a-z0-9-]\.[a-z]{2,}/i.test(w)){toast('Paste a website like www.company.com');$('web').focus();return}location.href='prep.html?c='+encodeURIComponent(v)+'&r='+encodeURIComponent(role==='Other'?'':role)+'&w='+encodeURIComponent(w);return}
   idxP.then(function(){var c=picked?{id:picked}:findReady(v);
     if(c){history.replaceState(null,'','?c='+c.id+'&r='+role);open(c.id)}
     else location.href='prep.html?c='+encodeURIComponent(v)+'&r='+encodeURIComponent(role==='Other'?'':role);})});
-$('newBtn').addEventListener('click',function(){$('res').hidden=true;$('stage').hidden=true;$('search').hidden=false;$('dock').classList.remove('in');this.hidden=true;co.value='';picked=null;history.replaceState(null,'',location.pathname);scrollTo(0,0);co.focus()});
+$('newBtn').addEventListener('click',function(){$('res').hidden=true;$('stage').hidden=true;$('search').hidden=false;$('dock').classList.remove('in');this.hidden=true;co.value='';picked=null;$('web').value='';$('wfld').hidden=true;$('addWeb').hidden=false;history.replaceState(null,'',location.pathname);scrollTo(0,0);co.focus()});
 
 /* ---------- open a ready briefing ---------- */
 function open(id){
@@ -321,11 +344,15 @@ function open(id){
 /* ---------- live news ---------- */
 var newsP=null;
 function loadNews(id){newsP=new Promise(function(ok){var tries=2;(function go(){
-  idxP.then(function(){var c=INDEX.filter(function(x){return x.id===id})[0]||{};return fetch(NEWS+'?q='+encodeURIComponent(c.news||c.name||co.value))}).then(function(r){return r.json()}).then(function(a){newsItems=(Array.isArray(a)?a:[]).filter(function(x){return /^https:\/\//.test(x.link||'')}).slice(0,6);ok(newsItems)}).catch(function(){if(tries-->0)setTimeout(go,1500);else ok([])});})()})}
+  idxP.then(function(){var c=INDEX.filter(function(x){return x.id===id})[0]||{};return fetch(NEWS+'?q='+encodeURIComponent(c.news||c.name||co.value))}).then(function(r){return r.json()}).then(function(a){newsItems=(Array.isArray(a)?a:[]).filter(function(x){return /^https:\/\//.test(x.link||'')&&!JUNK.test(x.title||'')}).slice(0,6);ok(newsItems)}).catch(function(){if(tries-->0)setTimeout(go,1500);else ok([])});})()})}
 function newsHtml(items){
   if(!items.length)return '<p class="muted">Live headlines could not load right now. <a href="https://news.google.com/search?q='+encodeURIComponent(D.news_query)+'" target="_blank" rel="noopener">Open the latest news ↗</a></p>';
-  return items.map(function(n){return '<a class="card news" href="'+esc(n.link)+'" target="_blank" rel="noopener"><div class="m">'+esc(n.source||'')+(n.date?' · '+esc(n.date):'')+'</div><h4>'+esc(n.title)+'</h4></a>'}).join('');
+  return (items.length>1?'<div class="ncount" id="ncount"><span>SWIPE</span><span class="kd">'+new Array(items.length+1).join('<i></i>')+'</span><span class="kc">1 / '+items.length+'</span></div>':'')+'<div class="nrow" id="nrow">'+items.map(function(n){return '<a class="card news" href="'+esc(n.link)+'" target="_blank" rel="noopener"><div><div class="m">'+esc(n.source||'')+(n.date?' · '+esc(n.date):'')+'</div><h4>'+esc(n.title)+'</h4></div><span class="rd">Read story →</span></a>'}).join('')+'</div>';
 }
+
+function bindRow(){var r=$('nrow'),c=$('ncount');if(!r||!c)return;var dots=c.querySelectorAll('.kd i'),k=c.querySelector('.kc'),n=r.children.length;
+  function u(){var f=r.firstElementChild;if(!f)return;var i=Math.min(n-1,Math.round(r.scrollLeft/(f.getBoundingClientRect().width+12)));[].forEach.call(dots,function(x,j){x.classList.toggle('on',j===i)});k.textContent=(i+1)+' / '+n}
+  r.addEventListener('scroll',u,{passive:true});u()}
 
 /* ---------- helpers ---------- */
 function S(keys,rep){keys=(keys||[]).filter(function(k){return D.src&&D.src[k]});if(!keys.length)return '';var n=keys.length;
@@ -394,7 +421,7 @@ function render(){
   else els.forEach(function(e){e.classList.add('in');fx(e)});
   setTimeout(function(){$('dock').classList.add('in')},reduce?0:900);
   paintFw('swot');quiz();
-  (newsP||Promise.resolve(newsItems)).then(function(items){$('newsBox').innerHTML=newsHtml(items);var s=$('s-news');if(s.classList.contains('in'))fx(s)});
+  (newsP||Promise.resolve(newsItems)).then(function(items){$('newsBox').innerHTML=newsHtml(items);bindRow();var s=$('s-news');if(s.classList.contains('in'))fx(s)});
   var tabsEl=$('tabs'),secs=[].slice.call(r.querySelectorAll('.sec'));
   tabsEl.addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;var t=$('s-'+b.dataset.go);t.classList.add('in');fx(t);t.scrollIntoView({behavior:reduce?'auto':'smooth'})});
   if(window.__ypScroll)removeEventListener('scroll',window.__ypScroll);window.__ypScroll=function(){var cur=secs[0];secs.forEach(function(s){if(s.getBoundingClientRect().top<170)cur=s});[].forEach.call(tabsEl.children,function(b){var on='s-'+b.dataset.go===cur.id;if(on!==b.classList.contains('on')){b.classList.toggle('on',on);if(on)b.scrollIntoView({inline:'center',block:'nearest'})}})};addEventListener('scroll',window.__ypScroll,{passive:true});
@@ -431,7 +458,13 @@ d.addEventListener('click',function(e){
   var t=e.target.closest('.term');if(t){var w=t.dataset.term;openSheet('<p class="kick" style="margin:0 0 8px">Meaning in simple words</p><h4>'+esc(w)+'</h4><p style="font-size:16px">'+esc(D.glossary[w])+'</p><p class="small">More business words in <a href="word.html">Concept Corner</a>.</p>');return}
   var s=e.target.closest('.src');if(s){var ks=s.dataset.src.split(','),rep=s.classList.contains('rep');openSheet('<h4>'+(ks.length>1?'Sources':'Source')+'</h4><p class="muted">'+(ks.length>1?'These sources agree on this fact.':'Where this fact comes from.')+' Checked '+esc(D.checked)+'.</p><ul>'+ks.map(function(k){var x=D.src[k];return x?'<li><a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(x.label)+' ↗</a></li>':''}).join('')+'</ul>');return}
 });
-$('dWrong').onclick=function(){openSheet('<h4>Spotted a wrong fact?</h4><p class="muted">Thank you for helping keep this accurate for every student. Tell me which fact on the '+esc(D.name)+' page looks wrong, and the correct source if you have one.</p><p><a class="btn" href="student.html#ask">💬 Report it to your professor →</a></p>')};
+var ASK=NEWS;
+function sendAsk(topic,msg,name,contact){return fetch(ASK,{method:'POST',body:JSON.stringify({task:'ask',name:name||'Student (Know Before You Go)',programme:'',topic:topic,message:msg,contact:contact||''})}).then(function(r){return r.json()}).then(function(j){if(!j||!j.ok)throw new Error('send');return j})}
+$('dWrong').onclick=function(){var L='Send to Dr. Lehri →';openSheet('<h4>Spotted a wrong fact?</h4><p class="muted">Thank you for helping keep this accurate for every student. Tell me which fact on the <b>'+esc(D.name)+'</b> page looks wrong. I check every report and fix it for everyone.</p><form class="sf" id="wf" novalidate><label>Which fact looks wrong?<textarea name="f" placeholder="e.g. The net profit figure in Numbers"></textarea></label><label>What is correct? Add a source link if you have one <small>(optional)</small><textarea name="x" placeholder="e.g. Correct figure and the link where you saw it"></textarea></label><label>Your name <small>(optional)</small><input name="n" autocomplete="name"></label><label>Email or phone for my reply <small>(optional)</small><input name="c" autocomplete="email"></label><button class="send" type="submit">'+L+'</button><p class="ok" id="wfOk" role="status"></p></form>');
+  $('wf').addEventListener('submit',function(e){e.preventDefault();var E=this.elements,f=E.f.value.trim();if(!f){E.f.focus();return}var b=this.querySelector('.send'),ok=$('wfOk');b.disabled=true;b.textContent='Sending…';ok.textContent='';
+    sendAsk('Wrong fact: '+D.name,'Company: '+D.name+'\nRole: '+role+'\nBriefing type: verified\nPage: '+location.href+'\n\nWrong fact: '+f+'\n\nCorrection / source: '+E.x.value.trim(),E.n.value.trim(),E.c.value.trim())
+     .then(function(){ok.textContent='✅ Sent. Thank you for helping every student!';b.textContent='Sent ✓'})
+     .catch(function(){b.disabled=false;b.textContent=L;ok.innerHTML='Could not send right now. <a href="student.html#ask">Use the Ask page instead →</a>'})})};
 $('dShare').onclick=function(){var u=location.origin+location.pathname+'?c='+D.id+'&r='+role,t=D.name+' interview briefing, verified, on youngprofessor.in';
   if(navigator.share)navigator.share({title:t,url:u}).catch(function(){});else (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){toast('Link copied')}).catch(function(){toast(u)})};
 
