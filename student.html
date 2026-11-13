@@ -289,7 +289,7 @@ a.room:not(.sug) .rtop>p{font-family:var(--serif);font-style:italic;font-size:18
 .bs{display:flex;flex-direction:column;gap:22px}
 .bs-shelf{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:5px;height:300px;margin:0 6px 16px}
 .bs-shelf::after{content:"";position:absolute;left:-8px;right:-8px;bottom:-14px;height:14px;border-radius:3px;background:linear-gradient(#6b4a2a,#3b2816);box-shadow:0 16px 26px -8px #000}
-.bk{flex:none;width:var(--w);height:var(--h);border:0;padding:12px 0 10px;border-radius:4px 4px 2px 2px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#fff;position:relative;cursor:pointer;font-family:inherit;
+.bk{text-decoration:none;flex:none;width:var(--w);height:var(--h);border:0;padding:12px 0 10px;border-radius:4px 4px 2px 2px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#fff;position:relative;cursor:pointer;font-family:inherit;
 background:linear-gradient(90deg,rgba(0,0,0,.4),transparent 20%,transparent 80%,rgba(0,0,0,.45)),linear-gradient(180deg,rgba(var(--c),.9),rgba(var(--c),.45)),#1a1414;
 opacity:0;transform:translateX(280px) rotate(10deg);transition:translate .35s var(--ease),box-shadow .3s;-webkit-tap-highlight-color:transparent}
 .bs.go .bk{animation:bkIn .75s cubic-bezier(.3,1.5,.5,1) forwards;animation-delay:calc(var(--i)*.1s)}
@@ -329,6 +329,18 @@ opacity:0;transform:translateX(280px) rotate(10deg);transition:translate .35s va
  .bk{width:var(--wl);height:var(--hl)}.bk .tt{font-size:18px}.bk .be{font-size:22px}.bk .tg{font-size:9px}
  .bs-open{flex:1;min-height:330px}.bs-pg{padding:32px 28px}.bs-pg h3{font-size:36px}.bs-pg .tq{font-size:18px}.bs-pg p,.bs-pg ul{font-size:14.5px}.bs-pg .bi{font-size:56px}
 }
+
+.bs{align-items:center}
+.bs-l{width:100%}
+.bk.pull{translate:0 -46px!important;box-shadow:0 26px 40px -12px rgba(0,0,0,.8),0 0 0 2px #F6DFA4;transition:translate .28s cubic-bezier(.3,1.4,.5,1)}
+#bkFly{position:fixed;z-index:300;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#fff;text-align:center;overflow:hidden;
+background:radial-gradient(120% 80% at 50% 30%,rgba(var(--c),.9),rgba(var(--c),.35) 60%,transparent 90%),#0B0A0A;box-shadow:0 30px 80px rgba(0,0,0,.7);
+transition:left .5s cubic-bezier(.7,0,.2,1),top .5s cubic-bezier(.7,0,.2,1),width .5s cubic-bezier(.7,0,.2,1),height .5s cubic-bezier(.7,0,.2,1),border-radius .5s}
+#bkFly i{font-style:normal;font-size:64px;opacity:0;transform:scale(.6);transition:opacity .3s .3s,transform .4s .3s cubic-bezier(.3,1.5,.5,1)}
+#bkFly b{font-family:var(--serif);font-weight:400;font-size:clamp(30px,6vw,56px);line-height:1.05;opacity:0;transform:translateY(10px);transition:opacity .3s .38s,transform .4s .38s}
+#bkFly small{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:#F6DFA4;opacity:0;transition:opacity .3s .45s}
+#bkFly.go i,#bkFly.go b,#bkFly.go small{opacity:1;transform:none}
+@media (min-width:760px){.bs{justify-content:center}.bs-l{width:auto}.bs-shelf{justify-content:center}}
 @media (prefers-reduced-motion:reduce){#szIntro{display:none}.bk{opacity:1;transform:none;animation:none!important}.bs-open{opacity:1;transform:none;transition:none}.bs-pg.r.flip{animation:none}}
 </style>
 </head>
@@ -365,9 +377,8 @@ opacity:0;transform:translateX(280px) rotate(10deg);transition:translate .35s va
 <section class="sec rooms-sec" id="rooms">
   <div class="wrap">
     <div class="bs" id="bs">
-      <div class="bs-l"><div class="bs-shelf" role="list" aria-label="Student Zone rooms"><button class="bk" type="button" data-k="fit" aria-label="Find Your Fit" style="--c:226,184,92;--h:230px;--w:44px;--hl:290px;--wl:72px;--i:0"><span class=tg>START HERE</span><span class="be">🧭</span><span class="tt">Find Your Fit</span><span class="vo">VOL 1</span></button><button class="bk" type="button" data-k="cu" aria-label="Career Unlock" style="--c:120,170,255;--h:250px;--w:46px;--hl:320px;--wl:76px;--i:1"><span class=tg>NEW</span><span class="be">🔓</span><span class="tt">Career Unlock</span><span class="vo">VOL 2</span></button><button class="bk" type="button" data-k="word" aria-label="Concept Corner" style="--c:111,195,178;--h:205px;--w:42px;--hl:270px;--wl:66px;--i:2"><span class="be">📘</span><span class="tt">Concept Corner</span><span class="vo">VOL 3</span></button><button class="bk sel" type="button" data-k="prep" aria-label="Placement Prep Room" style="--c:227,22,30;--h:255px;--w:50px;--hl:330px;--wl:84px;--i:3"><span class=tg>FLAGSHIP</span><span class="be">🎯</span><span class="tt">Placement Prep Room</span><span class="vo">VOL 4</span></button><button class="bk" type="button" data-k="lounge" aria-label="The Lounge" style="--c:150,220,120;--h:215px;--w:42px;--hl:280px;--wl:68px;--i:4"><span class="be">🌿</span><span class="tt">The Lounge</span><span class="vo">VOL 5</span></button><button class="bk lean" type="button" data-k="circle" aria-label="Push Circle" style="--c:200,120,255;--h:195px;--w:42px;--hl:255px;--wl:64px;--i:5"><span class="be">🌱</span><span class="tt">Push Circle</span><span class="vo">VOL 6</span></button></div>
-      <p class="bs-hint">Tap a book to open it · <a href="#ask">💡 Suggest a new book</a></p></div>
-      <div class="bs-open" id="bsOpen" aria-live="polite"></div>
+      <div class="bs-l"><nav class="bs-shelf" aria-label="Student Zone rooms"><a class="bk" href="fit.html" data-k="fit" aria-label="Find Your Fit" style="--c:226,184,92;--h:230px;--w:44px;--hl:290px;--wl:72px;--i:0"><span class=tg>START HERE</span><span class="be">🧭</span><span class="tt">Find Your Fit</span><span class="vo">VOL 1</span></a><a class="bk" href="career-unlock.html" data-k="cu" aria-label="Career Unlock" style="--c:120,170,255;--h:250px;--w:46px;--hl:320px;--wl:76px;--i:1"><span class=tg>NEW</span><span class="be">🔓</span><span class="tt">Career Unlock</span><span class="vo">VOL 2</span></a><a class="bk" href="word.html" data-k="word" aria-label="Concept Corner" style="--c:111,195,178;--h:205px;--w:42px;--hl:270px;--wl:66px;--i:2"><span class="be">📘</span><span class="tt">Concept Corner</span><span class="vo">VOL 3</span></a><a class="bk" href="placement.html" data-k="prep" aria-label="Placement Prep Room" style="--c:227,22,30;--h:255px;--w:50px;--hl:330px;--wl:84px;--i:3"><span class=tg>FLAGSHIP</span><span class="be">🎯</span><span class="tt">Placement Prep Room</span><span class="vo">VOL 4</span></a><a class="bk" href="lounge.html" data-k="lounge" aria-label="The Lounge" style="--c:150,220,120;--h:215px;--w:42px;--hl:280px;--wl:68px;--i:4"><span class="be">🌿</span><span class="tt">The Lounge</span><span class="vo">VOL 5</span></a><a class="bk lean" href="circle.html" data-k="circle" aria-label="Push Circle" style="--c:200,120,255;--h:195px;--w:42px;--hl:255px;--wl:64px;--i:5"><span class="be">🌱</span><span class="tt">Push Circle</span><span class="vo">VOL 6</span></a></nav>
+      <p class="bs-hint">Tap a book to step inside · <a href="#ask">💡 Suggest a new book</a></p></div>
     </div>
   </div>
 </section>
@@ -528,21 +539,27 @@ opacity:0;transform:translateX(280px) rotate(10deg);transition:translate .35s va
 })();
 
 </script>
-<script>(function(){var d=document;
-var R={
-fit:{e:'🧭',n:'Find Your Fit',k:'Choose your path · Start here',t:"You bring the confusion, I'll bring the clarity.",p:'Three short tests show which specialisation suits you. You get a Certificate of Clarity at the end.',h:'fit.html'},
-cu:{e:'🔓',n:'Career Unlock',k:'Explore your jobs · New',t:"You bring your specialisation, I'll bring every door it opens.",p:'204 jobs, private and government, for every specialisation and every combination of two, each with a full brief.',h:'career-unlock.html'},
-word:{e:'📘',n:'Concept Corner',k:'Learn daily',t:"You bring the curiosity, I'll bring the meaning.",p:'One business word a day, explained simply with an Indian example. Flip it, learn it, share it.',h:'word.html'},
-prep:{e:'🎯',n:'Placement Prep Room',k:'Get placed · Flagship',t:"You bring the ambition, I'll bring the preparation.",l:['1 · Know Before You Go','2 · Before You Sign'],h:'placement.html'},
-lounge:{e:'🌿',n:'The Lounge',k:'Always here',t:"You bring what's on your mind, I'll bring a listening ear.",p:'Ask me anything, read Things I Never Said, and find courses and events.',h:'lounge.html'},
-circle:{e:'🌱',n:'Push Circle',k:'Former students',t:'Where the push took them.',p:'Former students, where they work today and what they remember. Were you my student? Add your story.',h:'circle.html'}};
-var bs=d.getElementById('bs'),ob=d.getElementById('bsOpen');if(!bs)return;
-function show(k,flip){var r=R[k];ob.innerHTML='<div class="bs-pg l"><div class="bi">'+r.e+'</div><span class="ks">'+r.k+'</span><h3>'+r.n+'</h3></div><div class="bs-pg r'+(flip?' flip':'')+'"><p class="tq">'+r.t+'</p>'+(r.l?'<ul><li>'+r.l.join('</li><li>')+'</li></ul>':'<p>'+r.p+'</p>')+'<a class="eb" href="'+r.h+'">Enter the room →</a></div>';}
-show('prep',false);
-[].forEach.call(bs.querySelectorAll('.bk'),function(b){b.addEventListener('click',function(){[].forEach.call(bs.querySelectorAll('.bk'),function(x){x.classList.toggle('sel',x===b)});show(b.dataset.k,true);
- if(innerWidth<760){var q=ob.getBoundingClientRect();if(q.bottom>innerHeight)ob.scrollIntoView({behavior:'smooth',block:'nearest'})}})});
-function go(){bs.classList.add('go');var r=ob.querySelector('.bs-pg.r');if(r){setTimeout(function(){r.classList.add('flip')},800)}}
+<script>(function(){var d=document,bs=d.getElementById('bs');if(!bs)return;
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function go(){bs.classList.add('go')}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();setTimeout(go,d.getElementById('szIntro')?900:0)}},{threshold:.2});io.observe(bs)}else go();
+var busy=false;
+[].forEach.call(bs.querySelectorAll('.bk'),function(b){b.addEventListener('click',function(e){
+ if(e.metaKey||e.ctrlKey||e.shiftKey||e.button)return;
+ var href=b.getAttribute('href');if(reduce){return}
+ e.preventDefault();if(busy)return;busy=true;
+ b.classList.add('pull');
+ setTimeout(function(){
+  var r=b.getBoundingClientRect(),f=d.createElement('div');f.id='bkFly';
+  f.style.setProperty('--c',getComputedStyle(b).getPropertyValue('--c'));
+  f.style.left=r.left+'px';f.style.top=r.top+'px';f.style.width=r.width+'px';f.style.height=r.height+'px';
+  f.innerHTML='<i>'+b.querySelector('.be').textContent+'</i><b>'+b.querySelector('.tt').textContent+'</b><small>OPENING…</small>';
+  d.body.appendChild(f);f.getBoundingClientRect();
+  f.style.left='0px';f.style.top='0px';f.style.width=innerWidth+'px';f.style.height=innerHeight+'px';f.style.borderRadius='0';f.classList.add('go');
+  setTimeout(function(){location.href=href},620);
+ },260);
+})});
+addEventListener('pageshow',function(e){var f=d.getElementById('bkFly');if(f)f.remove();busy=false;[].forEach.call(bs.querySelectorAll('.bk.pull'),function(x){x.classList.remove('pull')})});
 })();</script>
 <a class="askfab" id="askFab" href="#ask">💬 Stuck? Ask your professor</a>
 <script>(function(){var d=document,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
