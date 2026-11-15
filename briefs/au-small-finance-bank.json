@@ -1,0 +1,1067 @@
+{
+ "id": "au-small-finance-bank",
+ "name": "AU Small Finance Bank",
+ "short": "AU",
+ "color": "#6D2077",
+ "line": "A Jaipur-born small finance bank on its way to becoming a universal bank",
+ "sector": "Banking (small finance bank)",
+ "hq": "Jaipur, Rajasthan",
+ "listed": "NSE: AUBANK · BSE: 540611",
+ "website": "https://www.au.bank.in",
+ "news_query": "AU Small Finance Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Business Standard)",
+   "url": "https://www.business-standard.com/companies/quarterly-results/au-small-finance-bank-q2fy27-result-net-profit-jumps-53-to-858-crore-126102400743_1.html"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/au-small-finance-bank-reports-53-q2-fy27-profit-rise-deposits-grow-286-as-asset-quality-improves"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (EquityBulls)",
+   "url": "https://www.equitybulls.com/news/377648/au-small-finance-bank-delivers-strong-performance-for-q2-and-h1-fy-2026-27-with"
+  },
+  "fy26": {
+   "label": "AU SFB Q4 FY26 press release (official)",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "fy26b": {
+   "label": "FY26 results (Business Upturn)",
+   "url": "https://businessupturn.com/business/corporates/au-small-finance-bank-q4-results-profit-jumps-65-to-e2-82-b9832-crore-nim-expands-to-5-96/"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 result review (Baroda eTrade)",
+   "url": "https://barodaetrade.com/Reports/AUSmallFinanceBank-Q4FY26ResultReview28Apr26-Research.pdf"
+  },
+  "fy26d": {
+   "label": "FY26 results (Upstox)",
+   "url": "https://upstox.com/news/market-news/earnings/au-small-finance-bank-q4-profit-soars-65-yo-y-to-832-crore-nii-up-23-dividend-recommended/article-192796/"
+  },
+  "fy26e": {
+   "label": "Q4 FY26 business update (Muthoot / Capital Market)",
+   "url": "https://www.muthootsecurities.com/News/Detailed-News/AU-Small-Finance-Bank-rises-as-total-deposits-rise-23-percent-YoY-to-Rs-1-53-lakh-crore-in-Q4/1684343"
+  },
+  "ub": {
+   "label": "RBI in-principle approval for universal bank (AU press release)",
+   "url": "https://www.au.bank.in/content/dam/aubank/in/en/pdfs/press-release/2025/au-small-finance-bank-makes-history-receives-in-principle-approval-from-the-rbi-to-become-a-universal-bank---7th-august-2025.pdf"
+  },
+  "ub2": {
+   "label": "RBI in-principle approval (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/capital-market-news/rbi-grants-in-principle-approval-to-au-small-finance-bank-limited-for-transition-into-a-universal-bank-125080800599_1.html"
+  },
+  "agm": {
+   "label": "AU SFB AGM transcript, 5 Sep 2026 (official)",
+   "url": "https://www.au.bank.in/content-fragmnets/disclosure/2026-2027/Transcript-AGM-September-5-2026.pdf"
+  },
+  "icra": {
+   "label": "ICRA rating rationale, 1 Oct 2026",
+   "url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=146130"
+  },
+  "fin": {
+   "label": "Fincare merger (Deccan Herald)",
+   "url": "https://www.deccanherald.com/business/companies/fincare-merges-with-au-small-finance-bank-2960779"
+  },
+  "fin2": {
+   "label": "Fincare merger approved by RBI (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/fincare-small-finance-bank-merger-with-au-sfb-gets-rbi-approval-124030401129_1.html"
+  },
+  "about": {
+   "label": "AU Bank: About us (official)",
+   "url": "https://www.au.bank.in/about-us"
+  },
+  "ceo2": {
+   "label": "CEO re-appointment approved (Business Standard)",
+   "url": "https://www.business-standard.com/companies/people/au-gets-rbi-nod-to-reappoint-ceo-agarwal-for-three-years-126021301721_1.html"
+  },
+  "chair": {
+   "label": "H.R. Khan re-appointed Chairman (Board Stewardship)",
+   "url": "https://boardstewardship.com/former-rbi-dy-governor-hr-khan-reappointed-as-chairman-of-au-small-finance-bank/"
+  },
+  "metro": {
+   "label": "Mumbai Metro station naming rights (afaqs)",
+   "url": "https://www.afaqs.com/news/mktg/au-small-finance-bank-secures-naming-rights-for-mumbai-metro-station-12802912"
+  },
+  "metro2": {
+   "label": "Mumbai Metro station naming rights (EquityBulls)",
+   "url": "https://www.equitybulls.com/news/378947/au-small-finance-bank-secures-naming-rights-and-station-wide-branding-for-bandra"
+  },
+  "csr": {
+   "label": "AU Bank CSR (official)",
+   "url": "https://www.au.bank.in/csr"
+  },
+  "csr2": {
+   "label": "AU Bank CSR (Outlook)",
+   "url": "https://www.outlookindia.com/csr/csr-2023/au-bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 2641,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · +25%",
+   "term": "Net profit"
+  },
+  {
+   "v": 2790,
+   "fmt": "num",
+   "label": "Touchpoints",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 59200,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026 · 59,200+"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹858 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +53%"
+  },
+  {
+   "v": "1.99%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "5.8%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "28.6%",
+   "k": "Deposit growth",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in Jaipur in 1996 by Sanjay Agarwal as AU Financiers, a vehicle-finance company; became a small finance bank in April 2017.",
+   "s": [
+    "about",
+    "ub",
+    "ub2"
+   ]
+  },
+  {
+   "t": "In August 2025 it became the first small finance bank to get RBI's in-principle approval to turn into a universal bank; the final licence was still pending in Oct 2026.",
+   "s": [
+    "ub",
+    "ub2",
+    "agm",
+    "icra"
+   ]
+  },
+  {
+   "t": "Led by founder and MD & CEO Sanjay Agarwal, re-appointed for three years from April 2026; former RBI Deputy Governor H.R. Khan is Chairman.",
+   "s": [
+    "fy26",
+    "ceo2",
+    "chair",
+    "agm"
+   ]
+  },
+  {
+   "t": "FY 2025-26 net profit rose 25% to ₹2,641 crore.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit jumped 53% to ₹858 crore, with deposits up 28.6%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1996",
+   "t": "Sanjay Agarwal founded AU Financiers in Jaipur.",
+   "s": [
+    "about",
+    "ub"
+   ]
+  },
+  {
+   "y": "Apr 2017",
+   "t": "Began operations as a small finance bank.",
+   "s": [
+    "ub",
+    "ub2"
+   ]
+  },
+  {
+   "y": "Apr 2024",
+   "t": "Fincare Small Finance Bank merged into AU, the first merger of two SFBs.",
+   "s": [
+    "fin",
+    "fin2"
+   ]
+  },
+  {
+   "y": "Aug 2025",
+   "t": "RBI gave in-principle approval to become a universal bank.",
+   "s": [
+    "ub",
+    "ub2"
+   ]
+  },
+  {
+   "y": "Nov 2026",
+   "t": "Bought naming rights to a Mumbai Metro station, 'AU Bank Bandra Colony'.",
+   "s": [
+    "metro",
+    "metro2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "AU lends mainly to small businesses, vehicle buyers, home buyers and self-employed people in smaller towns, often at higher rates. It funds this with fast-growing retail deposits and earns a wide interest gap.",
+  "flow": [
+   "Customers deposit money (savings, FDs)",
+   "Bank lends to vehicle buyers, MSMEs, home buyers",
+   "Earns a wide interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income FY26",
+    "v": "₹9,113 cr (+14%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹2,820 cr (+32%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "Small finance banks must give most loans to small borrowers and priority sectors; a universal bank has fewer such limits.",
+   "AU is the first SFB on the path to becoming a full universal bank.",
+   "Big theme for interviews: how small finance banks grow into mainstream banks."
+  ],
+  "s": [
+   "ub",
+   "agm"
+  ]
+ },
+ "people": [
+  {
+   "ini": "SA",
+   "name": "Sanjay Agarwal",
+   "role": "Founder, MD & CEO",
+   "since": "founded 1996",
+   "note": "Chartered Accountant who built AU from a vehicle-finance firm into a bank. Re-appointed for three years from 19 Apr 2026.",
+   "s": [
+    "fy26",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "HK",
+   "name": "H.R. Khan",
+   "role": "Part-time Chairman",
+   "since": "re-appointed from Dec 2024",
+   "note": "Former Deputy Governor of the Reserve Bank of India.",
+   "s": [
+    "chair",
+    "agm"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹2,641 cr (+25%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net Interest Income",
+    "v": "₹9,113 cr (+14%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Net interest margin",
+    "v": "5.65%",
+    "term": "Net interest margin",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "2.03%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.74%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "18.7%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "about 28%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Deposits",
+    "v": "₹1.53 lakh cr (+23%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹1 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹858 cr, up 53%.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Deposits ₹1.70 lakh cr (+28.6%); gross advances ₹1.50 lakh cr (+27.9%); CASA 29.5%.",
+     "term": "Advances",
+     "s": [
+      "q2b",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.99%, Net NPA 0.81%; NIM 5.8%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "AU grew its profit 53% last quarter and is set to become India's first small finance bank to turn into a universal bank."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   },
+   {
+    "name": "AU Small Finance Bank",
+    "v": 2641,
+    "s": [
+     "r_au"
+    ],
+    "me": true
+   },
+   {
+    "name": "IDFC FIRST Bank",
+    "v": 1636,
+    "s": [
+     "r_idfc"
+    ]
+   },
+   {
+    "name": "IndusInd Bank",
+    "v": 933,
+    "s": [
+     "r_iib"
+    ]
+   }
+  ],
+  "note": "AU is much smaller than the big private banks, so compare growth rates rather than size."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Touchpoints (Mar 2026)",
+    "v": "2,790"
+   },
+   {
+    "k": "States & UTs",
+    "v": "21 states, 4 UTs"
+   },
+   {
+    "k": "Customers",
+    "v": "1.2 crore+"
+   }
+  ],
+  "local": "Born in Rajasthan, AU has a strong presence in North and West India, including Punjab, and many roles are in branch banking and small-business lending.",
+  "s": [
+   "fy26",
+   "about"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees (Mar 2026)",
+    "v": "59,200+"
+   }
+  ],
+  "note": "From the bank's FY26 results release. Exact counts vary slightly across the bank's own statements."
+ },
+ "csr": {
+  "t": "AU's CSR runs through AU Foundation, with programmes in skill development (AU Ignite), women's entrepreneurship (AU Udyogini), sports, healthcare and water conservation.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Fast growth: Q2 FY27 profit +53%",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Strong capital: 18.7%",
+    "s": [
+     "fy26"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "CASA ratio about 28–30%, lower than big banks",
+    "s": [
+     "fy26",
+     "q2b"
+    ]
+   },
+   {
+    "t": "Gross NPA near 2%",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Universal bank licence will open bigger loans and new products",
+    "s": [
+     "ub",
+     "agm"
+    ]
+   },
+   {
+    "t": "ICRA raised its rating outlook to Positive (Oct 2026)",
+    "s": [
+     "icra",
+     "q2b"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Large private banks compete for the same customers",
+    "s": [
+     "hdfc",
+     "icici"
+    ]
+   },
+   {
+    "t": "Small-borrower loans can be hit by economic slowdowns",
+    "s": [
+     "icra"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Small finance bank": "A bank licensed by RBI to serve small businesses, farmers and low-income customers, with rules on how much it must lend to them.",
+  "Universal bank": "A full-service bank that can offer all banking products to all customers, like HDFC Bank or SBI.",
+  "Touchpoints": "All places where customers can reach the bank: branches, banking outlets and service centres."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.99%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "5.8%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "18.7%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "29.5%",
+     "term": "CASA ratio"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Customers",
+     "v": "1.2 crore+"
+    },
+    {
+     "k": "Touchpoints",
+     "v": "2,790"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "28.6%"
+    },
+    {
+     "k": "States & UTs",
+     "v": "25"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "59,200+"
+    },
+    {
+     "k": "Touchpoints",
+     "v": "2,790"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹2,641 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Jaipur"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "59,200+"
+    },
+    {
+     "k": "Touchpoints",
+     "v": "2,790"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹2,641 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Jaipur"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "59,200+"
+    },
+    {
+     "k": "Touchpoints",
+     "v": "2,790"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹2,641 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Jaipur"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "59,200+"
+    },
+    {
+     "k": "Touchpoints",
+     "v": "2,790"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹2,641 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Jaipur"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What changes when a small finance bank becomes a universal bank?",
+     "a": "Fewer rules on whom it must lend to, bigger loan limits and more products, so it can compete directly with large private banks."
+    },
+    {
+     "q": "Why is AU's margin high?",
+     "a": "It lends to small businesses and vehicle buyers at higher rates; its NIM was 5.8% in Q2 FY27."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you rebrand AU when the 'Small' tag goes?",
+     "a": "Keep the trust it built in small towns, while showing big-bank strength through city campaigns like the Mumbai Metro station."
+    },
+    {
+     "q": "How would you raise AU's CASA ratio?",
+     "a": "Salary-account tie-ups, a strong app, and current accounts for small businesses it already lends to."
+    }
+   ],
+   "HR": [
+    {
+     "q": "AU has about 59,000 employees. How would you prepare them for the universal bank move?",
+     "a": "Training on new products and rules, clear career paths and communication about what changes."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell an AU fixed deposit to a retired teacher.",
+     "a": "Ask about needs, then explain safety, interest rate, and deposit insurance simply, and close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you integrate two banks' systems after a merger like Fincare?",
+     "a": "Map processes, migrate data in phases, train staff and keep customers informed."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about AU Small Finance Bank?",
+     "a": "A small finance bank founded in Jaipur by Sanjay Agarwal, with ₹2,641 cr FY26 profit and RBI's in-principle nod to become a universal bank."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads AU Small Finance Bank?",
+     "a": "Founder Sanjay Agarwal is MD & CEO; H.R. Khan, former RBI Deputy Governor, is Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the Mumbai Metro station naming rights (Nov 2026) or the universal bank licence process."
+    },
+    {
+     "q": "Why AU?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "AU started in Jaipur as a small vehicle-finance firm and is now a fast-growing bank in 21 states, growing profit 53% last quarter and preparing to become a universal bank. Joining during this change means learning how a bank scales up. I want to be part of that journey and contribute to [your role].",
+  "ask": [
+   "How will the universal bank licence change this team's work?",
+   "Which customer segments is AU targeting next?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should small finance banks become universal banks?",
+    "for": "It lets them grow and compete with big banks.",
+    "against": "They may drift away from serving small borrowers."
+   },
+   {
+    "t": "Can regional banks compete with national giants?",
+    "for": "AU grew from Rajasthan to 21 states.",
+    "against": "Big banks have lower funding costs and bigger brands."
+   }
+  ],
+  "avoid": [
+   "Don't say AU is already a universal bank; it has in-principle approval, with the final licence pending.",
+   "Don't call it an NBFC; it has been a bank since 2017.",
+   "Don't confuse AU Small Finance Bank with AU Financiers (its old name) or other SFBs like Ujjivan."
+  ],
+  "night": [
+   "MD & CEO: Sanjay Agarwal · Chairman: H.R. Khan",
+   "HQ Jaipur · founded 1996",
+   "FY26 profit: ₹2,641 cr (+25%)",
+   "Q2 FY27 profit: ₹858 cr (+53%)",
+   "Universal bank: in-principle nod Aug 2025",
+   "Rivals: Ujjivan SFB, Equitas SFB, IDFC FIRST, private banks",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Where is AU Small Finance Bank headquartered?",
+   "o": [
+    "Jaipur",
+    "Pune",
+    "Chennai"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Who founded AU?",
+   "o": [
+    "Sanjay Agarwal",
+    "V. Vaidyanathan",
+    "Uday Kotak"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which bank merged into AU in 2024?",
+   "o": [
+    "Fincare SFB",
+    "Equitas SFB",
+    "Bandhan"
+   ],
+   "a": 0
+  },
+  {
+   "q": "In Aug 2025 RBI gave AU in-principle approval to become…",
+   "o": [
+    "An NBFC",
+    "A universal bank",
+    "A payments bank"
+   ],
+   "a": 1
+  },
+  {
+   "q": "AU's Q2 FY27 profit growth was about…",
+   "o": [
+    "5%",
+    "53%",
+    "153%"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "15 Nov 2026"
+}

@@ -1,0 +1,1075 @@
+{
+ "id": "indusind-bank",
+ "name": "IndusInd Bank",
+ "short": "IIB",
+ "color": "#8B1D41",
+ "line": "A Hinduja-promoted private bank, rebuilding after its 2025 accounting lapse",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra (registered office in Pune)",
+ "listed": "NSE: INDUSINDBK · BSE: 532187",
+ "website": "https://www.indusind.bank.in",
+ "news_query": "IndusInd Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/indusind-bank-q2-fy-27-results/"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (TaxGuru)",
+   "url": "https://taxguru.in/?p=1093754"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (IndiaIPO)",
+   "url": "https://www.indiaipo.in/news/detail/indusind-bank-q2-profit-at-rs-1242-crore-nii-up-4-yoy"
+  },
+  "q2d": {
+   "label": "Q2 FY27 result review (PL Capital)",
+   "url": "https://plindia.com/ResReport/IIB-24-10-26-PL.pdf"
+  },
+  "q2e": {
+   "label": "Q2 FY27 results (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-banks/indusind-banks-profit-up-51-qq-at-rs1242-cr"
+  },
+  "fy26": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  },
+  "fy26b": {
+   "label": "FY26 results (Business Today)",
+   "url": "https://businesstoday.in/markets/stocks/story/indusind-bank-q4-results-turns-profitable-with-rs-594-crore-pat-declares-dividend-check-amount-record-date-527359-2026-04-24"
+  },
+  "fy26c": {
+   "label": "FY26 results (Muthoot Securities / Capital Market)",
+   "url": "https://www.muthootsecurities.com/CorporateInfo/ComNews/IndusInd-Bank-Ltd/25117010032"
+  },
+  "fy26d": {
+   "label": "FY26 results (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/bankingfinance/IndusInd-Bank-FY26-Profit-Plummets-65percent-to-indian-rupee889-Cr-Recommends-indian-rupee150-Dividend/69eb5273bca97ee106af36c9"
+  },
+  "fy26e": {
+   "label": "Q4 FY26 business update (Arihant / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25096010111"
+  },
+  "brsr": {
+   "label": "IndusInd Bank BRSR 2025-26 (official)",
+   "url": "https://www.indusind.bank.in/content/dam/indusind-corporate/generic/Business-Responsibility-and-Sustainability-Report-(BRSR)-FY-2025-26.pdf"
+  },
+  "ceo": {
+   "label": "Rajiv Anand appointed MD & CEO (Business Standard)",
+   "url": "https://www.business-standard.com/companies/people/indusind-bank-appoints-rajiv-anand-md-ceo-3-years-125080401694_1.html"
+  },
+  "ceo2": {
+   "label": "Rajiv Anand appointed MD & CEO (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/indus-ind-bank-appoints-rajiv-anand-former-deputy-md-of-axis-bank-as-md-and-ceo-for-3-years-key-details-to-know/article-179184"
+  },
+  "chair": {
+   "label": "Arijit Basu named Chairman (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/indusind-bank-share-price-in-focus-appoints-arijit-basu-as-new-part-time-new-chairman"
+  },
+  "chair2": {
+   "label": "Arijit Basu named Chairman (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/ex-sbi-md-arijit-basu-named-indusinds-part-time-chair-all-about-veteran-banker"
+  },
+  "hist": {
+   "label": "IndusInd Bank: #Just25 history page (official)",
+   "url": "https://www.indusind.bank.in/in/en/microsites/just25.html"
+  },
+  "hinduja": {
+   "label": "Hinduja Group: IndusInd Bank",
+   "url": "https://www.hindujagroup.com/indusind-bank.html"
+  },
+  "bfil": {
+   "label": "Bharat Financial merger date (Business Standard / PTI)",
+   "url": "https://www.business-standard.com/article/pti-stories/lnduslnd-bank-bharat-fin-merger-to-be-effective-from-july-4-119061901234_1.html"
+  },
+  "gcc": {
+   "label": "GCC banking vertical (IndusInd press release)",
+   "url": "https://www.indusind.bank.in/content/dam/indusind-corporate/corporate-announcement/Others/Press-Release-28-09-2026.pdf"
+  },
+  "gcc2": {
+   "label": "GCC banking vertical (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/indusind-bank-share-price-in-focus-launches-dedicated-banking-vertical-for-gccs"
+  },
+  "irdai": {
+   "label": "IRDAI penalty (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/indusind-bank-fined-1-crore-by-irdai-over-insurance-grievance-compliance"
+  },
+  "irdai2": {
+   "label": "IRDAI penalty (ScanX)",
+   "url": "https://scanx.trade/stock-market-news/companies/indusind-bank-fined-1-crore-irdai-grievance-lapses/50667214"
+  },
+  "bridge": {
+   "label": "IndusInd Bank CSR profile (Bridgespan)",
+   "url": "https://www.bridgespan.org/insights/funder-profiles-pay-what-it-takes-principles-in-action/indusind-bank-csr"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/IndusInd_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 933,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (−64.7%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 3136,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 46694,
+   "fmt": "num",
+   "label": "Permanent employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹1,242 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "consolidated · loss a year ago"
+  },
+  {
+   "v": "2.73%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "3.23%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "16.59%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "A private bank promoted by the Hinduja Group, started in 1994; about 3,136 branches and banking outlets (March 2026).",
+   "s": [
+    "hist",
+    "hinduja",
+    "brsr"
+   ]
+  },
+  {
+   "t": "In 2025, accounting lapses in its derivatives book (about ₹1,979 crore) led CEO Sumant Kathpalia to resign.",
+   "s": [
+    "ceo",
+    "wiki"
+   ]
+  },
+  {
+   "t": "Rajiv Anand, former Deputy MD of Axis Bank, has been MD & CEO since 25 Aug 2025; ex-SBI MD Arijit Basu became Chairman on 31 Jan 2026.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 standalone profit fell 64.7% to ₹933 crore as the bank cleaned up its books.",
+   "s": [
+    "fy26",
+    "fy26d"
+   ]
+  },
+  {
+   "t": "Recovery under way: Q2 FY27 (Jul–Sep 2026) profit was ₹1,242 crore against a loss a year earlier, and Gross NPA fell to 2.73%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1994",
+   "t": "IndusInd Bank started; inaugurated by then Finance Minister Dr Manmohan Singh.",
+   "s": [
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "y": "2004",
+   "t": "Merged with Ashok Leyland Finance.",
+   "s": [
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "y": "2011",
+   "t": "Bought Deutsche Bank's credit card business in India.",
+   "s": [
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Jul 2019",
+   "t": "Microfinance lender Bharat Financial Inclusion merged into the bank.",
+   "s": [
+    "bfil",
+    "wiki"
+   ]
+  },
+  {
+   "y": "2025",
+   "t": "Derivative accounting lapses came to light; CEO resigned; Rajiv Anand took over in Aug 2025.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Jan 2026",
+   "t": "Arijit Basu became Part-time Chairman.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "IndusInd earns mainly from the interest gap between loans and deposits. It is known for vehicle loans, microfinance (through Bharat Financial) and corporate banking, plus fees from cards and other products.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends: vehicle, microfinance, business and personal loans",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹4,569 cr (+3.6%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2c",
+     "q2d"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q4 FY26",
+    "v": "₹4,371 cr",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26b",
+     "fy26c"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO and Chairman; both changed at IndusInd in 2025–26.",
+   "Strong governance and accurate accounting are now a big theme for all banks after IndusInd's 2025 lapse.",
+   "It competes with larger private banks such as HDFC Bank, ICICI Bank and Axis Bank."
+  ],
+  "s": [
+   "ceo",
+   "chair"
+  ]
+ },
+ "people": [
+  {
+   "ini": "RA",
+   "name": "Rajiv Anand",
+   "role": "MD & CEO",
+   "since": "since 25 Aug 2025",
+   "note": "Chartered Accountant; earlier Deputy MD of Axis Bank and founding MD & CEO of Axis AMC. Term runs to Aug 2028.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "AB",
+   "name": "Arijit Basu",
+   "role": "Part-time Chairman",
+   "since": "since 31 Jan 2026",
+   "note": "Former Managing Director of SBI; term runs to Jan 2029.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹933 cr (−64.7%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "3.43%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "1.00%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "17.48%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "about 31.2%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26c",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Net advances",
+    "v": "₹3.16 lakh cr (−8.4%)",
+    "term": "Advances",
+    "s": [
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹1.50 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Consolidated net profit ₹1,242 cr, against a loss of ₹437 cr a year earlier.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Deposits ₹4.29 lakh cr (+10.1%); advances ₹3.63 lakh cr (+11.4%).",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Gross NPA 2.73%, Net NPA 0.83%; capital adequacy 16.59%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "q2e"
+     ]
+    }
+   ]
+  },
+  "say": "IndusInd Bank is back in profit, earning ₹1,242 crore last quarter after a difficult 2025, under new CEO Rajiv Anand."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   },
+   {
+    "name": "AU Small Finance Bank",
+    "v": 2641,
+    "s": [
+     "r_au"
+    ]
+   },
+   {
+    "name": "IDFC FIRST Bank",
+    "v": 1636,
+    "s": [
+     "r_idfc"
+    ]
+   },
+   {
+    "name": "IndusInd Bank",
+    "v": 933,
+    "s": [
+     "r_iib"
+    ],
+    "me": true
+   }
+  ],
+  "note": "FY26 profit was low because of the 2025 clean-up; compare the recovery in recent quarters too."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches & banking outlets",
+    "v": "3,136"
+   },
+   {
+    "k": "Offices in India",
+    "v": "71"
+   },
+   {
+    "k": "Overseas",
+    "v": "London, Abu Dhabi, Dubai (rep. offices)"
+   }
+  ],
+  "local": "IndusInd has a wide branch and vehicle-finance presence across North India, and its microfinance arm works deep in rural areas.",
+  "s": [
+   "brsr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Permanent employees",
+    "v": "46,694"
+   },
+   {
+    "k": "Total employees",
+    "v": "49,449"
+   }
+  ],
+  "note": "From the FY 2025-26 BRSR (31 Mar 2026). New leadership has made compliance, risk and controls high-priority areas."
+ },
+ "csr": {
+  "t": "IndusInd's CSR focuses on rural development, the environment, education and employability, inclusive sports and livelihoods.",
+  "s": [
+   "brsr",
+   "bridge"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Back to profit: ₹1,242 cr in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Strong capital: adequacy 16.59%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "FY26 profit fell 64.7% after the accounting lapse",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "t": "Gross NPA 2.73%, higher than large private peers",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "New GCC banking vertical launched in Sep 2026",
+    "s": [
+     "gcc",
+     "gcc2"
+    ]
+   },
+   {
+    "t": "Loans growing again: +11.4% in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Rebuilding trust after the 2025 lapse; IRDAI fined it ₹1 cr in Sep 2026",
+    "s": [
+     "irdai",
+     "irdai2"
+    ]
+   },
+   {
+    "t": "Bigger private banks compete for the same customers",
+    "s": [
+     "hdfc",
+     "icici",
+     "axis"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Derivatives": "Financial contracts (such as currency swaps) whose value depends on another asset. Wrong accounting of these caused IndusInd's 2025 problem.",
+  "Governance": "The rules, controls and oversight that make sure a company is run honestly and correctly.",
+  "Microfinance": "Small loans, often to women's groups in villages, without collateral."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "2.73%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "3.23%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "16.59%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.83%",
+     "term": "Net NPA"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "3,136"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "10.1%"
+    },
+    {
+     "k": "Loan growth",
+     "v": "11.4%"
+    },
+    {
+     "k": "CEO",
+     "v": "Rajiv Anand"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "46,694"
+    },
+    {
+     "k": "Branches",
+     "v": "3,136"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,242 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Promoter",
+     "v": "Hinduja Group"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "46,694"
+    },
+    {
+     "k": "Branches",
+     "v": "3,136"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,242 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Promoter",
+     "v": "Hinduja Group"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "46,694"
+    },
+    {
+     "k": "Branches",
+     "v": "3,136"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,242 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Promoter",
+     "v": "Hinduja Group"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "46,694"
+    },
+    {
+     "k": "Branches",
+     "v": "3,136"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,242 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Promoter",
+     "v": "Hinduja Group"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What went wrong at IndusInd Bank in 2025?",
+     "a": "Accounting lapses in its derivatives book, about ₹1,979 cr, were found. It cut profit and led to the CEO's resignation."
+    },
+    {
+     "q": "Why does strong internal control matter for a bank?",
+     "a": "Banks hold public money; wrong numbers hurt trust, share price and depositors. Controls catch errors early."
+    },
+    {
+     "q": "Profit is back but FY26 fell 64.7%. How do you read that?",
+     "a": "FY26 absorbed the clean-up costs; Q2 FY27 profit of ₹1,242 cr shows recovery, but asset quality must keep improving."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you rebuild customer trust in IndusInd Bank?",
+     "a": "Transparent communication, strong service, visible new leadership and simple, honest product messaging."
+    },
+    {
+     "q": "How would you market vehicle loans in a small town?",
+     "a": "Tie-ups with local dealers, quick approvals, regional-language campaigns and loan melas."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you keep employees motivated after a leadership crisis?",
+     "a": "Clear communication from leaders, stable goals, recognition and a strong focus on ethics and training."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "A customer is worried about IndusInd's 2025 news. What do you say?",
+     "a": "Acknowledge it honestly; explain RBI regulation, deposit insurance basics, the new management and the return to profit."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you strengthen controls in a bank's treasury operations?",
+     "a": "Independent checks, daily reconciliations, automated alerts and regular audits."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about IndusInd Bank?",
+     "a": "A Hinduja-promoted private bank started in 1994, led by MD & CEO Rajiv Anand, back to profit in FY27 after a 2025 accounting lapse."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads IndusInd Bank?",
+     "a": "Rajiv Anand is MD & CEO (since Aug 2025); Arijit Basu is Part-time Chairman (since Jan 2026)."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the new banking vertical for Global Capability Centres (Sep 2026) or the Q2 FY27 recovery."
+    },
+    {
+     "q": "Why IndusInd Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "IndusInd Bank is in a turnaround: after a hard 2025, it returned to profit with ₹1,242 crore last quarter under a new CEO and Chairman, and it is investing in new areas like banking for global capability centres. Joining during a rebuild means learning fast and seeing real change. I want to contribute to [your role] as the bank grows stronger.",
+  "ask": [
+   "What are the leadership's top priorities for the next two years?",
+   "How has the bank strengthened its controls since 2025?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should bank CEOs be held personally responsible for accounting lapses?",
+    "for": "Leaders set the culture and controls.",
+    "against": "Lapses can happen deep in a team; systems and auditors also share blame."
+   },
+   {
+    "t": "Can a bank fully recover trust after a scandal?",
+    "for": "IndusInd returned to profit within about a year.",
+    "against": "Trust is slow to rebuild; customers and investors stay cautious."
+   }
+  ],
+  "avoid": [
+   "Don't name Sumant Kathpalia as CEO; he resigned in 2025. Rajiv Anand leads now.",
+   "Don't call IndusInd a public sector bank; it is private, promoted by the Hinduja Group.",
+   "Don't speak negatively about the bank's past; show you understand the recovery."
+  ],
+  "night": [
+   "CEO: Rajiv Anand · Chairman: Arijit Basu",
+   "FY26 profit: ₹933 cr (−64.7%)",
+   "Q2 FY27 profit: ₹1,242 cr (back to profit)",
+   "Gross NPA 2.73% (Sep 2026)",
+   "Promoter: Hinduja Group · started 1994",
+   "Rivals: HDFC Bank, ICICI Bank, Axis, Kotak",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is IndusInd Bank's MD & CEO?",
+   "o": [
+    "Sumant Kathpalia",
+    "Rajiv Anand",
+    "Amitabh Chaudhry"
+   ],
+   "a": 1
+  },
+  {
+   "q": "IndusInd Bank's promoter group is…",
+   "o": [
+    "Tata Group",
+    "Hinduja Group",
+    "Birla Group"
+   ],
+   "a": 1
+  },
+  {
+   "q": "What caused IndusInd's 2025 problem?",
+   "o": [
+    "A cyber attack",
+    "Derivative accounting lapses",
+    "A merger"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Q2 FY27 profit was about…",
+   "o": [
+    "₹1,242 cr",
+    "₹12,420 cr",
+    "A loss"
+   ],
+   "a": 0
+  },
+  {
+   "q": "IndusInd Bank started in…",
+   "o": [
+    "1969",
+    "1994",
+    "2015"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "15 Nov 2026"
+}

@@ -1,0 +1,1051 @@
+{
+ "id": "pnb",
+ "name": "Punjab National Bank",
+ "short": "PNB",
+ "color": "#A6192E",
+ "line": "A leading public sector bank, founded in Lahore in 1894",
+ "sector": "Public sector banking",
+ "hq": "New Delhi (Dwarka)",
+ "listed": "NSE: PNB · BSE: 532461",
+ "website": "https://pnb.bank.in",
+ "news_query": "Punjab National Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/pnbs-q2-fy27-net-profit-climbs-128-to-5532-crore-gnpa-ratio-improves"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (PSU Watch)",
+   "url": "https://psuwatch.com/newsupdates/pnb-q2-profit-rises-13-to-rs-5532-crore-as-bad-loans-decline"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Upstox)",
+   "url": "https://upstox.com/news/market-news/earnings/punjab-national-bank-q2-fy-27-result-net-profit-jumps-13-nii-grows-to-11-601-crore-yo-y/article-202011/"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/punjab-national-bank-share-price-and-q2-fy-27-results/"
+  },
+  "fy26": {
+   "label": "FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "fy26b": {
+   "label": "FY26 results (Arihant / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25125010268"
+  },
+  "fy26c": {
+   "label": "FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/pnb-q4-results-fy26-profit-asset-quality-dividend-5-may/"
+  },
+  "dr": {
+   "label": "PNB FY26 Directors' Report (via IIFL)",
+   "url": "https://www.indiainfoline.com/company/punjab-national-bank/reports/directors-report"
+  },
+  "orig": {
+   "label": "PNB: Origin of PNB (official)",
+   "url": "https://pnb.bank.in/origin-of-PNB.html"
+  },
+  "orig2": {
+   "label": "History of PNB (Groww)",
+   "url": "https://groww.in/blog/complete-history-of-pnb"
+  },
+  "merge": {
+   "label": "RBI press release on 2020 bank mergers",
+   "url": "https://www.rbi.org.in/SCRIPTS/BS_PressReleaseDisplay.aspx?prid=49590"
+  },
+  "merge2": {
+   "label": "PNB-OBC-UBI merger from 1 Apr 2020 (Business Today)",
+   "url": "https://www.businesstoday.in/sectors/banks/merged-entity-of-ubi-pnb-obc-to-become-operational-from-april-1-2020/story/379073.html"
+  },
+  "ceo": {
+   "label": "PNB: MD & CEO profile (official)",
+   "url": "https://pnb.bank.in/Shri-Ashok-Chandra-MD-and-CEO.html"
+  },
+  "ceo2": {
+   "label": "Ashok Chandra appointed (Angel One)",
+   "url": "https://www.angelone.in/news/share-market/government-appoints-ashok-chandra-as-md-and-ceo-of-punjab-national-bank"
+  },
+  "chair": {
+   "label": "Chairman's tenure ends (FilingReader)",
+   "url": "https://filingreader.com/news-wire/mumbai/2025-11-07/pnb-non-executive-chairman-ananthakrishnan-completes-tenure"
+  },
+  "chair2": {
+   "label": "Chairman's tenure ends (ScanX)",
+   "url": "https://scanx.trade/stock-market-news/stocks/pnb-chairman-k-g-ananthakrishnan-concludes-tenure-after-three-years/24038428"
+  },
+  "gov": {
+   "label": "PNB shareholding (Upstox)",
+   "url": "https://upstox.com/stocks/punjab-national-bank-shareholding/"
+  },
+  "gov2": {
+   "label": "PNB shareholding (Choice)",
+   "url": "https://choiceindia.com/stocks/punjab-national-bank-shareholding-pattern"
+  },
+  "army": {
+   "label": "PNB media statements (official)",
+   "url": "https://pnb.bank.in/media-statements.html"
+  },
+  "army2": {
+   "label": "Indian Army credit cards (Outlook Business / PTI)",
+   "url": "https://www.outlookbusiness.com/corporate/pnb-inks-pact-with-indian-army-to-offer-curated-credit-cards-to-army-personnel"
+  },
+  "ai": {
+   "label": "PNB AI Summit 2026 (Indian Masterminds)",
+   "url": "https://indianmasterminds.com/news/pnb-ai-summit-2026-ai-first-banking-cybersecurity-quantum-safe-229348/"
+  },
+  "csr": {
+   "label": "PNB Farmers' Welfare Trust (official)",
+   "url": "https://www.pnb.bank.in/PNB-farmers-welfare-trust.html"
+  },
+  "csr2": {
+   "label": "PNB CSR (IndiaCSR)",
+   "url": "https://indiacsr.in/punjab-national-banks-commitment-to-corporate-social-responsibility-csr-2024/"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Punjab_National_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 16904,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · record",
+   "term": "Net profit"
+  },
+  {
+   "v": 10324,
+   "fmt": "num",
+   "label": "Domestic branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 96738,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹5,532 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +12.8%"
+  },
+  {
+   "v": "2.55%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "2.58%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "17.95%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Founded in Lahore in 1894 with Lala Lajpat Rai among its early leaders; now headquartered in New Delhi.",
+   "s": [
+    "orig",
+    "orig2"
+   ]
+  },
+  {
+   "t": "A public sector bank: the Government of India owns about 70% of its shares.",
+   "s": [
+    "gov",
+    "gov2"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO Ashok Chandra since 16 January 2025.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "t": "Record FY 2025-26 net profit of ₹16,904 crore; Gross NPA fell to 2.95% from 3.95%.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit rose 12.8% to ₹5,532 crore; Gross NPA improved further to 2.55%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1894",
+   "t": "Incorporated in Lahore; opened for business in April 1895.",
+   "s": [
+    "orig",
+    "orig2"
+   ]
+  },
+  {
+   "y": "1947",
+   "t": "Registered office moved from Lahore to Delhi after Partition.",
+   "s": [
+    "orig",
+    "orig2"
+   ]
+  },
+  {
+   "y": "1969",
+   "t": "Nationalised along with 13 other banks.",
+   "s": [
+    "orig",
+    "orig2"
+   ]
+  },
+  {
+   "y": "Apr 2020",
+   "t": "Oriental Bank of Commerce and United Bank of India merged into PNB.",
+   "s": [
+    "merge",
+    "merge2"
+   ]
+  },
+  {
+   "y": "Jan 2025",
+   "t": "Ashok Chandra took charge as MD & CEO.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "FY 2025-26",
+   "t": "Record annual profit of ₹16,904 crore.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  }
+ ],
+ "model": {
+  "how": "PNB earns mainly from the gap between interest on loans and interest paid on deposits, plus fees. As a public sector bank it also runs many government schemes, farm lending and financial-inclusion work.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to people, farmers, MSMEs and companies",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹11,601 cr (+10.8%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2c"
+    ]
+   },
+   {
+    "k": "Total business FY26",
+    "v": "₹29.70 lakh cr (+10.7%)",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) and Government of India (as main owner)",
+  "points": [
+   "The Government appoints the MD & CEO and Executive Directors of public sector banks.",
+   "Public sector banks merged into fewer, bigger banks in 2019–2020; PNB absorbed two banks.",
+   "Big theme for interviews: public sector banks have cleaned up bad loans and now earn record profits."
+  ],
+  "s": [
+   "merge",
+   "fy26"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AC",
+   "name": "Ashok Chandra",
+   "role": "MD & CEO",
+   "since": "since 16 Jan 2025",
+   "note": "Earlier Executive Director of Canara Bank.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹16,904 cr (+1.6%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "2.95%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.29%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "17.74%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "37.0%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Deposits",
+    "v": "₹17.11 lakh cr (+9.2%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Global advances",
+    "v": "₹12.59 lakh cr (+12.7%)",
+    "term": "Advances",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹3 per share",
+    "term": "Dividend",
+    "s": [
+     "dr",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹5,532 cr, up 12.8%.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Deposits ₹17.77 lakh cr (+9.9%); advances ₹13.41 lakh cr (+14.7%); CASA 36.6%.",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA 2.55%, Net NPA 0.25%; capital adequacy 17.95%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "q2d"
+     ]
+    }
+   ]
+  },
+  "say": "PNB earned a record ₹16,904 crore in FY26 and has cut its bad loans to about 2.5%, showing a strong public sector turnaround."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "Bank of Baroda",
+    "v": 20021,
+    "s": [
+     "r_bob"
+    ]
+   },
+   {
+    "name": "Punjab National Bank",
+    "v": 16904,
+    "s": [
+     "r_pnb"
+    ],
+    "me": true
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   }
+  ],
+  "note": "Among public sector banks, PNB is third by FY26 profit after SBI and Bank of Baroda."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Domestic branches",
+    "v": "10,324"
+   },
+   {
+    "k": "ATMs",
+    "v": "11,065"
+   },
+   {
+    "k": "Business correspondents (Jun 2026)",
+    "v": "about 33,000"
+   }
+  ],
+  "local": "With deep roots in Punjab and North India, PNB is one of the biggest bank employers in the region, and new officers are often posted to rural and semi-urban branches.",
+  "s": [
+   "dr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees (Mar 2026)",
+    "v": "96,738"
+   },
+   {
+    "k": "Officer hiring",
+    "v": "Mainly IBPS PO + specialist notices"
+   }
+  ],
+  "note": "From the FY26 Directors' Report. PNB is a major public sector employer."
+ },
+ "csr": {
+  "t": "PNB's CSR focuses on rural self-employment and farmer training, including 12 Farmers' Training Centres run by the PNB Farmers' Welfare Trust.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Record FY26 profit of ₹16,904 cr",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "t": "Strong capital: adequacy 17.95%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Net interest margin only 2.58%, lower than private banks",
+    "s": [
+     "q2c",
+     "q2d"
+    ]
+   },
+   {
+    "t": "Gross NPA 2.55%, still above top private banks",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Loans growing 14.7% in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "AI-led banking push (PNB AI Summit 2026) and Army credit-card tie-up",
+    "s": [
+     "army",
+     "ai"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Private banks compete for urban customers",
+    "s": [
+     "hdfc",
+     "icici"
+    ]
+   },
+   {
+    "t": "Government ownership can slow decisions",
+    "s": [
+     "gov"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and key ratios.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Amalgamation": "Two or more companies combining into one. PNB absorbed Oriental Bank of Commerce and United Bank of India in 2020.",
+  "IBPS": "Institute of Banking Personnel Selection, which runs common recruitment exams for public sector banks.",
+  "MCLR": "Marginal Cost of funds based Lending Rate: the base rate a bank uses to price many loans."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "2.55%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.25%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "17.95%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "2.58%",
+     "term": "Net interest margin"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "10,324"
+    },
+    {
+     "k": "ATMs",
+     "v": "11,065"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "36.6%",
+     "term": "CASA ratio"
+    },
+    {
+     "k": "Loan growth",
+     "v": "14.7%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "96,738"
+    },
+    {
+     "k": "Branches",
+     "v": "10,324"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹16,904 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 70%"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "96,738"
+    },
+    {
+     "k": "Branches",
+     "v": "10,324"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹16,904 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 70%"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "96,738"
+    },
+    {
+     "k": "Branches",
+     "v": "10,324"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹16,904 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 70%"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "96,738"
+    },
+    {
+     "k": "Branches",
+     "v": "10,324"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹16,904 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 70%"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Public sector banks hire most officers through the common IBPS PO exam, and specialist officers through their own notices. Campus hiring varies, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "IBPS PO preliminary exam",
+    "d": "English, quantitative aptitude, reasoning"
+   },
+   {
+    "t": "IBPS PO main exam",
+    "d": "Reasoning, data analysis, banking and economy awareness, English"
+   },
+   {
+    "t": "Interview",
+    "d": "Personality, banking knowledge and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "How did PNB cut Gross NPA from 3.95% to 2.95% in a year?",
+     "a": "Better recoveries, write-offs of old bad loans and fewer new defaults, plus faster loan growth."
+    },
+    {
+     "q": "Why is PNB's margin lower than private banks'?",
+     "a": "It has more low-yield government and corporate loans and higher-cost deposits; its global NIM was 2.58% in Q2 FY27."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you attract young customers to PNB?",
+     "a": "Mobile-first account opening, student and first-salary accounts, and campaigns that mix the bank's trust with modern features."
+    },
+    {
+     "q": "PNB signed a credit-card deal with the Indian Army. Why is that smart?",
+     "a": "It gives a large, stable customer base with regular salaries and builds loyalty."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you prepare 96,000 employees for AI-led banking?",
+     "a": "Step-by-step digital training, champions in each zone, and showing staff how AI removes routine work."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a PNB current account to a shopkeeper in a small town.",
+     "a": "Ask about cash and UPI needs, then link QR collections, overdraft and a trusted government bank."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you speed up loan processing at a rural branch?",
+     "a": "Digital KYC, pre-filled forms, business correspondents for document collection and tracking turnaround time."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about PNB?",
+     "a": "A leading public sector bank, founded in Lahore in 1894, led by MD & CEO Ashok Chandra, with a record ₹16,904 cr profit in FY26."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads PNB?",
+     "a": "Ashok Chandra is MD & CEO (since Jan 2025)."
+    },
+    {
+     "q": "Which banks merged into PNB?",
+     "a": "Oriental Bank of Commerce and United Bank of India, from 1 April 2020."
+    },
+    {
+     "q": "Why PNB?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "PNB was born in Punjab in 1894 with the vision of a truly Indian bank, and today it is a strong public sector bank with record profits of ₹16,904 crore and steadily falling bad loans. Its reach across North India means my work would touch families and small businesses in towns like mine. I want to grow with PNB and contribute to [your role].",
+  "ask": [
+   "How is PNB using AI in branch and credit work?",
+   "What does the first posting for a new officer usually look like?",
+   "Which loan segments is the bank growing fastest?"
+  ],
+  "gd": [
+   {
+    "t": "Were public sector bank mergers a good idea?",
+    "for": "Bigger banks like PNB now earn record profits and have stronger capital.",
+    "against": "Mergers caused staff and system integration problems for years."
+   },
+   {
+    "t": "Should the government reduce its stake in public sector banks?",
+    "for": "More private investors can bring efficiency.",
+    "against": "Government ownership supports rural and social banking goals."
+   }
+  ],
+  "avoid": [
+   "Don't call PNB a private bank; it is a public sector bank, about 70% owned by the government.",
+   "Don't say Oriental Bank of Commerce still exists separately; it merged into PNB in 2020.",
+   "Don't quote old bad-loan figures; Gross NPA is now 2.55% (Sep 2026)."
+  ],
+  "night": [
+   "MD & CEO: Ashok Chandra",
+   "Founded 1894, Lahore · HQ New Delhi",
+   "FY26 profit: ₹16,904 cr (record)",
+   "Q2 FY27 profit: ₹5,532 cr (+12.8%)",
+   "Gross NPA 2.55% (Sep 2026)",
+   "Rivals: SBI, Bank of Baroda, Canara Bank",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Where was PNB founded?",
+   "o": [
+    "Mumbai",
+    "Lahore",
+    "Kolkata"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who is PNB's MD & CEO?",
+   "o": [
+    "Ashok Chandra",
+    "C S Setty",
+    "Debadatta Chand"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which bank merged into PNB in 2020?",
+   "o": [
+    "Dena Bank",
+    "Oriental Bank of Commerce",
+    "Vijaya Bank"
+   ],
+   "a": 1
+  },
+  {
+   "q": "PNB's FY26 net profit was about…",
+   "o": [
+    "₹6,900 cr",
+    "₹16,900 cr",
+    "₹80,000 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Government's stake in PNB is about…",
+   "o": [
+    "30%",
+    "51%",
+    "70%"
+   ],
+   "a": 2
+  }
+ ],
+ "checked": "15 Nov 2026"
+}

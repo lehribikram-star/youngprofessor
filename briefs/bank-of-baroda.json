@@ -1,0 +1,1038 @@
+{
+ "id": "bank-of-baroda",
+ "name": "Bank of Baroda",
+ "short": "BoB",
+ "color": "#F15A22",
+ "line": "A large public sector bank with a big overseas network",
+ "sector": "Public sector banking",
+ "hq": "Vadodara, Gujarat (corporate centre in Mumbai)",
+ "listed": "NSE: BANKBARODA · BSE: 532134",
+ "website": "https://bankofbaroda.bank.in",
+ "news_query": "Bank of Baroda",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (FinTechBizNews)",
+   "url": "https://www.fintechbiznews.com/lenders-banks/bobs-highest-ever-qtrly-net-profit-of-rs65-bn"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1742548"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Indian Masterminds)",
+   "url": "https://indianmasterminds.com/news/bank-of-baroda-q2-fy27-results-net-profit-rises-35-8-percent-operating-profit-246862/"
+  },
+  "fy26": {
+   "label": "FY26 results (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-banks/bobs-net-profit-up-by-22-at-inr-20021-cr-for-fy26"
+  },
+  "fy26b": {
+   "label": "FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "fy26c": {
+   "label": "FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/bank-of-baroda-q4-profit-rises-11-to-5616-crore-fy26-net-profit-crosses-20000-crore"
+  },
+  "hist": {
+   "label": "Bank of Baroda: Foundation Day (official)",
+   "url": "https://bankofbaroda.bank.in/foundation-day"
+  },
+  "merge2": {
+   "label": "Vijaya, Dena merge into BoB (Business Standard / PTI)",
+   "url": "https://www.business-standard.com/amp/article/pti-stories/vijaya-bank-dena-bank-to-become-bob-from-apr-1-119033100270_1.html"
+  },
+  "off": {
+   "label": "Bank of Baroda: offices & branches (official)",
+   "url": "https://bankofbaroda.bank.in/about-us/offices-branches"
+  },
+  "dr": {
+   "label": "BoB FY26 Directors' Report (via IIFL)",
+   "url": "https://www.indiainfoline.com/company/bank-of-baroda/directors-report/5456"
+  },
+  "ceo": {
+   "label": "Debadatta Chand takes charge (People Matters)",
+   "url": "https://www.peoplematters.in/news/appointments/debadatta-chand-takes-charge-as-md-and-ceo-of-bank-of-baroda-38307"
+  },
+  "ceo2": {
+   "label": "BoB corporate governance filing (NSE)",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_152548_24042026115238_iXBRL_WEB.html"
+  },
+  "ext": {
+   "label": "CEO term extended (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/debadatta-chand-bank-of-baroda-md-ceo-tenure-extended-three-years"
+  },
+  "ext2": {
+   "label": "CEO term extended (Daily Pioneer)",
+   "url": "https://dailypioneer.com/news/slug-lite/govt-extends-tenure-of-managing-directors-of-boi-bank-of-baroda-for-3-years?year=2026"
+  },
+  "gov": {
+   "label": "BoB shareholding (Upstox)",
+   "url": "https://upstox.com/stocks/bank-of-baroda-shareholding/"
+  },
+  "gov2": {
+   "label": "BoB shareholding (Choice)",
+   "url": "https://choiceindia.com/stocks/bank-of-baroda-shareholding-pattern"
+  },
+  "mclr": {
+   "label": "MCLR raised (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/bank-of-baroda-hikes-mclr-across-most-tenors-effective-november-12"
+  },
+  "mclr2": {
+   "label": "MCLR raised (Sahi)",
+   "url": "https://www.sahi.com/news/bank-of-baroda-adjusts-mclr-rates-with-one-month-at-8-00-and-one-year-at-8-85"
+  },
+  "csr": {
+   "label": "Bank of Baroda: social commitment (official)",
+   "url": "https://bankofbaroda.bank.in/about-us/social-commitment"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Bank_of_Baroda"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 20021,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 8648,
+   "fmt": "num",
+   "label": "Domestic branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 75376,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹6,532 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +35.8% · record"
+  },
+  {
+   "v": "1.78%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "2.74%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27 (global)"
+  },
+  {
+   "v": "16.61%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Founded in 1908 in Baroda (Vadodara) by Maharaja Sayajirao Gaekwad III; nationalised in 1969.",
+   "s": [
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "t": "Government of India owns about 64% of the bank.",
+   "s": [
+    "gov",
+    "gov2"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO Debadatta Chand since 1 July 2023; the government extended his term by three years from July 2026.",
+   "s": [
+    "ceo",
+    "ext",
+    "ext2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 net profit was ₹20,021 crore, up 2.2%, crossing ₹20,000 crore.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy26c"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit jumped 35.8% to ₹6,532 crore, its highest-ever quarter; Gross NPA fell to 1.78%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1908",
+   "t": "Founded in Baroda by Maharaja Sayajirao Gaekwad III.",
+   "s": [
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "y": "1969",
+   "t": "Nationalised along with 13 other banks.",
+   "s": [
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Apr 2019",
+   "t": "Vijaya Bank and Dena Bank merged into BoB, India's first three-way bank merger.",
+   "s": [
+    "hist",
+    "merge2"
+   ]
+  },
+  {
+   "y": "Jul 2023",
+   "t": "Debadatta Chand became MD & CEO.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Record quarterly profit of ₹6,532 crore.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "model": {
+  "how": "BoB earns mainly from the interest gap between loans and deposits, plus fees. It also has a large international business and subsidiaries in cards, insurance and asset management.",
+  "flow": [
+   "Customers deposit money in India and abroad",
+   "Bank lends to people, farmers, MSMEs and companies",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income FY26",
+    "v": "₹47,682 cr (+2.5%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹13,026 cr (+9%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) and Government of India (as main owner)",
+  "points": [
+   "The Government appoints and extends the terms of public sector bank MDs.",
+   "BoB has a large overseas network of about 80 branches and offices.",
+   "Big theme for interviews: public sector banks now post record profits after cleaning up bad loans."
+  ],
+  "s": [
+   "ext",
+   "off"
+  ]
+ },
+ "people": [
+  {
+   "ini": "DC",
+   "name": "Debadatta Chand",
+   "role": "MD & CEO",
+   "since": "since 1 Jul 2023",
+   "note": "Succeeded Sanjiv Chadha; term extended by three years from 1 July 2026.",
+   "s": [
+    "ceo",
+    "ext",
+    "ext2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹20,021 cr (+2.2%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net Interest Income",
+    "v": "₹47,682 cr (+2.5%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.89%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.45%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "15.82%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Domestic CASA ratio",
+    "v": "38.9%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26b",
+     "fy26"
+    ]
+   },
+   {
+    "k": "Global deposits",
+    "v": "₹16.48 lakh cr (+12.0%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Global advances",
+    "v": "₹14.30 lakh cr (+16.2%)",
+    "term": "Advances",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹8.50 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26b",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹6,532 cr, up 35.8%, the highest ever.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Global deposits ₹17.45 lakh cr (+16.4%); global advances ₹15.12 lakh cr (+18.3%).",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.78%, Net NPA 0.37%; capital adequacy 16.61%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "Bank of Baroda earned its highest-ever quarterly profit of ₹6,532 crore in Jul–Sep 2026, with bad loans down to 1.78%."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "Bank of Baroda",
+    "v": 20021,
+    "s": [
+     "r_bob"
+    ],
+    "me": true
+   },
+   {
+    "name": "Punjab National Bank",
+    "v": 16904,
+    "s": [
+     "r_pnb"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   }
+  ],
+  "note": "Bank of Baroda is the second most profitable public sector bank after SBI."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Domestic branches",
+    "v": "8,648"
+   },
+   {
+    "k": "ATMs",
+    "v": "9,538"
+   },
+   {
+    "k": "Overseas branches/offices",
+    "v": "80"
+   }
+  ],
+  "local": "BoB has a large branch network across North India and is one of the few Indian banks with big operations abroad, which creates international banking roles.",
+  "s": [
+   "off",
+   "dr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Regular domestic employees",
+    "v": "75,376"
+   },
+   {
+    "k": "Officer hiring",
+    "v": "IBPS PO + specialist notices"
+   }
+  ],
+  "note": "From the FY26 Directors' Report (31 Mar 2026)."
+ },
+ "csr": {
+  "t": "BoB's CSR covers youth skill development (it supports 67 rural self-employment training institutes), health, sanitation, education and women's empowerment.",
+  "s": [
+   "csr",
+   "dr"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Record quarterly profit: ₹6,532 cr in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Low bad loans for a public bank: Gross NPA 1.78%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "FY26 profit grew only 2.2%",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "t": "Global margin of 2.74% is lower than private banks",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Loans growing 18.3%",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Large overseas network of 80 offices",
+    "s": [
+     "off"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Private banks compete for urban customers",
+    "s": [
+     "hdfc",
+     "icici"
+    ]
+   },
+   {
+    "t": "Rising rates push up funding costs (MCLR raised in Nov 2026)",
+    "s": [
+     "mclr",
+     "mclr2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and key ratios.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Amalgamation": "Two or more companies combining into one. Vijaya Bank and Dena Bank merged into Bank of Baroda in 2019.",
+  "IBPS": "Institute of Banking Personnel Selection, which runs common recruitment exams for public sector banks.",
+  "MCLR": "Marginal Cost of funds based Lending Rate: the base rate a bank uses to price many loans."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.78%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.37%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "16.61%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "2.74%",
+     "term": "Net interest margin"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "8,648"
+    },
+    {
+     "k": "ATMs",
+     "v": "9,538"
+    },
+    {
+     "k": "Overseas offices",
+     "v": "80"
+    },
+    {
+     "k": "Loan growth",
+     "v": "18.3%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,376"
+    },
+    {
+     "k": "Branches",
+     "v": "8,648"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹20,021 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 64%"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,376"
+    },
+    {
+     "k": "Branches",
+     "v": "8,648"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹20,021 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 64%"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,376"
+    },
+    {
+     "k": "Branches",
+     "v": "8,648"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹20,021 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 64%"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,376"
+    },
+    {
+     "k": "Branches",
+     "v": "8,648"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹20,021 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 64%"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Public sector banks hire most officers through the common IBPS PO exam, and specialist officers through their own notices. Campus hiring varies, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "IBPS PO preliminary exam",
+    "d": "English, quantitative aptitude, reasoning"
+   },
+   {
+    "t": "IBPS PO main exam",
+    "d": "Reasoning, data analysis, banking and economy awareness, English"
+   },
+   {
+    "t": "Interview",
+    "d": "Personality, banking knowledge and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "BoB's Q2 profit rose 35.8% but FY26 profit only 2.2%. Why the difference?",
+     "a": "Quarterly profit benefits from loan growth and lower provisions; the full year FY26 was held back by slower interest income growth."
+    },
+    {
+     "q": "What is Net NPA, and what is BoB's?",
+     "a": "Bad loans after money set aside for them. BoB's was 0.37% in Sep 2026."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you market BoB to NRIs?",
+     "a": "Use its overseas branches, easy remittance, NRI deposit products and campaigns in Gulf and UK diaspora communities."
+    },
+    {
+     "q": "How would you attract young customers to a 118-year-old bank?",
+     "a": "Combine heritage and trust with a simple app, UPI rewards and student offers."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you integrate staff after a bank merger?",
+     "a": "Common training, mixed teams, clear career paths and fair postings. BoB did this after merging Vijaya and Dena."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a BoB home loan to a young salaried couple.",
+     "a": "Understand their budget, explain EMI and tenure simply, highlight trust and fast processing, and close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can a public bank cut loan turnaround time?",
+     "a": "Digital document collection, automated credit checks and tracking each stage."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Bank of Baroda?",
+     "a": "A public sector bank founded in 1908, led by Debadatta Chand, with ₹20,021 cr FY26 profit and a record ₹6,532 cr in Q2 FY27."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Bank of Baroda?",
+     "a": "Debadatta Chand is MD & CEO (since Jul 2023; term extended from Jul 2026)."
+    },
+    {
+     "q": "Which banks merged into BoB?",
+     "a": "Vijaya Bank and Dena Bank, from 1 April 2019."
+    },
+    {
+     "q": "Why Bank of Baroda?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Bank of Baroda combines over a century of trust with strong momentum: it just posted its highest-ever quarterly profit of ₹6,532 crore, and its bad loans are among the lowest of public sector banks. Its overseas network also offers a rare global exposure. I want to grow with BoB and contribute to [your role].",
+  "ask": [
+   "Which segments are driving the bank's loan growth?",
+   "What international opportunities exist for young officers?",
+   "How is the bank using digital tools in branches?"
+  ],
+  "gd": [
+   {
+    "t": "Were public sector bank mergers a success?",
+    "for": "BoB's merger with Vijaya and Dena created a bigger, more profitable bank.",
+    "against": "Integrating staff and systems took years."
+   },
+   {
+    "t": "Should Indian banks expand abroad?",
+    "for": "Overseas branches serve NRIs and trade finance.",
+    "against": "Foreign operations bring extra risk and regulation."
+   }
+  ],
+  "avoid": [
+   "Don't call BoB a private bank; the government owns about 64%.",
+   "Don't say Dena Bank or Vijaya Bank still exist; they merged into BoB in 2019.",
+   "Don't mix standalone (₹6,532 cr) and consolidated (₹6,737 cr) Q2 profit."
+  ],
+  "night": [
+   "MD & CEO: Debadatta Chand",
+   "Founded 1908 · HQ Vadodara",
+   "FY26 profit: ₹20,021 cr",
+   "Q2 FY27 profit: ₹6,532 cr (+35.8%, record)",
+   "Gross NPA 1.78% (Sep 2026)",
+   "Rivals: SBI, PNB, Canara Bank",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who founded Bank of Baroda?",
+   "o": [
+    "Lala Lajpat Rai",
+    "Maharaja Sayajirao Gaekwad III",
+    "Jamsetji Tata"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who is BoB's MD & CEO?",
+   "o": [
+    "Debadatta Chand",
+    "Ashok Chandra",
+    "Rajiv Anand"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which banks merged into BoB in 2019?",
+   "o": [
+    "Vijaya & Dena",
+    "OBC & United",
+    "Andhra & Corporation"
+   ],
+   "a": 0
+  },
+  {
+   "q": "BoB's record Q2 FY27 profit was about…",
+   "o": [
+    "₹653 cr",
+    "₹6,532 cr",
+    "₹65,320 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "BoB was founded in…",
+   "o": [
+    "1908",
+    "1955",
+    "1994"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "15 Nov 2026"
+}

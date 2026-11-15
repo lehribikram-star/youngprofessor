@@ -1,5 +1,5 @@
 {
- "updated": "12 Nov 2026",
+ "updated": "15 Nov 2026",
  "companies": [
   {
    "id": "hdfc-bank",
@@ -99,6 +99,79 @@
     "itc limited",
     "itc ltd",
     "itc limited india"
+   ]
+  },
+  {
+   "id": "indusind-bank",
+   "name": "IndusInd Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#8B1D41",
+   "short": "IIB",
+   "aliases": [
+    "indusind bank",
+    "indusind",
+    "indus ind bank",
+    "indusind bank ltd",
+    "indusind bank limited",
+    "indusindbk"
+   ]
+  },
+  {
+   "id": "pnb",
+   "name": "Punjab National Bank",
+   "sector": "Public sector bank · New Delhi",
+   "color": "#A6192E",
+   "short": "PNB",
+   "aliases": [
+    "pnb",
+    "punjab national bank",
+    "punjab national",
+    "pnb bank",
+    "punjab national bank ltd"
+   ]
+  },
+  {
+   "id": "bank-of-baroda",
+   "name": "Bank of Baroda",
+   "sector": "Public sector bank · Vadodara",
+   "color": "#F15A22",
+   "short": "BoB",
+   "aliases": [
+    "bank of baroda",
+    "bob",
+    "baroda bank",
+    "bankbaroda",
+    "bank of baroda ltd"
+   ]
+  },
+  {
+   "id": "idfc-first-bank",
+   "name": "IDFC FIRST Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#9C1D26",
+   "short": "IF",
+   "aliases": [
+    "idfc first bank",
+    "idfc first",
+    "idfc bank",
+    "idfc",
+    "idfcfirstb",
+    "idfc first bank ltd"
+   ]
+  },
+  {
+   "id": "au-small-finance-bank",
+   "name": "AU Small Finance Bank",
+   "sector": "Small finance bank · Jaipur",
+   "color": "#6D2077",
+   "short": "AU",
+   "aliases": [
+    "au small finance bank",
+    "au bank",
+    "au sfb",
+    "au small finance",
+    "aubank",
+    "au financiers"
    ]
   }
  ]

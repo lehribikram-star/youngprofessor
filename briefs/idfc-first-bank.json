@@ -1,0 +1,1064 @@
+{
+ "id": "idfc-first-bank",
+ "name": "IDFC FIRST Bank",
+ "short": "IF",
+ "color": "#9C1D26",
+ "line": "A fast-growing private bank built on retail lending and a high CASA ratio",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra (registered office in Chennai)",
+ "listed": "NSE: IDFCFIRSTB · BSE: 539437",
+ "website": "https://www.idfcfirst.bank.in",
+ "news_query": "IDFC FIRST Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (company release via ANI / ThePrint)",
+   "url": "https://theprint.in/ani-press-releases/idfc-first-bank-q2-fy27-results-pat-up-196-5-yoy-at-₹-1045-crore/3081505/"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/idfc-first-bank-reports-q2-fy27-pat-of-1045-crore-deposits-up-259-earns-bbb-rating"
+  },
+  "ip": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27 (official)",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Sahi)",
+   "url": "https://www.sahi.com/news/idfc-first-bank-q2-pat-rises-196-5-yoy-to-10-45-billion"
+  },
+  "q2d": {
+   "label": "Q2 FY27 earnings call notes (CompoundingAI)",
+   "url": "https://compoundingai.in/market-news/idfcfirstb-q2-fy27-earnings-call"
+  },
+  "fy26": {
+   "label": "IDFC FIRST Bank Q4 FY26 press release (official)",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/news-media/press-release/Press-release-Q4FY26.pdf"
+  },
+  "fy26b": {
+   "label": "Q4 FY26 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1687679"
+  },
+  "fy26c": {
+   "label": "FY26 results (Investywise)",
+   "url": "https://www.investywise.com/?p=75574"
+  },
+  "fy26d": {
+   "label": "FY26 dividend (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/bankingfinance/IDFC-First-Bank-Proposes-indian-rupee025-Dividend-for-FY2025-26-Awaiting-Approvals/69eca59f5a43f6b807bb9dc1"
+  },
+  "brsr": {
+   "label": "IDFC FIRST Bank BRSR 2025-26 (official)",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/annual-report/Business-Responsibility-and-Sustainability-Report-FY-2025-2026.pdf"
+  },
+  "cf": {
+   "label": "IDFC Bank and Capital First merged (official)",
+   "url": "https://www.idfcfirst.bank.in/about-us/news-and-media/press-releases/idfc-bank-capital-first-merged-on-Dec-18"
+  },
+  "cf2": {
+   "label": "IDFC FIRST Bank created (Business Today)",
+   "url": "https://www.businesstoday.in/top-story/idfc-bank-acquires-capital-first-creates-idfc-first-bank/story/302177.html"
+  },
+  "idfc": {
+   "label": "IDFC Ltd merger completed (Business Standard / PTI)",
+   "url": "https://business-standard.com/companies/news/idfc-first-bank-announces-completion-of-idfc-ltd-merger-effective-oct-1-124092701325_1.html"
+  },
+  "idfc2": {
+   "label": "IDFC Ltd merger completed (ANI / ThePrint)",
+   "url": "https://theprint.in/ani-press-releases/idfc-first-bank-announces-the-successful-completion-of-merger-with-idfc-limited/2288132"
+  },
+  "wp": {
+   "label": "Warburg Pincus share allotment (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/idfc-first-bank-raises-4876-cr-via-share-allotment-to-warburg-pincus"
+  },
+  "wp2": {
+   "label": "Warburg Pincus share allotment (Newsdrum / PTI)",
+   "url": "https://www.newsdrum.in/business/idfc-first-bank-raises-rs-4876-cr-by-allotting-shares-to-warburg-pincus-firm-9615471"
+  },
+  "ceo": {
+   "label": "V. Vaidyanathan re-appointed (Business Standard)",
+   "url": "https://www.business-standard.com/markets/capital-market-news/idfc-first-bank-re-appoints-v-vaidyanathan-as-md-ceo-124092000422_1.html"
+  },
+  "ceo2": {
+   "label": "RBI approves re-appointment (IIFL)",
+   "url": "https://www.indiainfoline.com/news/banks/rbi-approves-v-vaidyanathans-reappointment-as-idfc-first-bank-ceo-for-3-years"
+  },
+  "chair": {
+   "label": "Next Chairperson named (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/idfc-first-bank-appoints-sganesh-kumar-as-part-time-chairperson-from-may-2027"
+  },
+  "chair2": {
+   "label": "Next Chairperson named (Investywise)",
+   "url": "https://www.investywise.com/?p=122951"
+  },
+  "sp": {
+   "label": "S&P rating (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/IDFCFIRSTB_13082026184520_IDFCFIRSTB_Credit_Rating_SP_13082026.pdf"
+  },
+  "sp2": {
+   "label": "S&P rating (Muthoot Securities / Capital Market)",
+   "url": "https://www.muthootsecurities.com/News/Detailed-News/SandP-Global-Ratings-assigned-BBB-and-A-3-credit-ratings-with-a-stable-outlook-to-IDFC-First-Bank/5008298"
+  },
+  "our": {
+   "label": "IDFC FIRST Bank: Our Bank (official)",
+   "url": "https://www.idfcfirst.bank.in/about-us/our-bank"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/IDFC_First_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 1636,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26",
+   "term": "Net profit"
+  },
+  {
+   "v": 1147,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 43059,
+   "fmt": "num",
+   "label": "Permanent employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹1,045 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +196.5%"
+  },
+  {
+   "v": "1.32%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "5.58%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "47.6%",
+   "k": "CASA ratio",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Formed in December 2018 when IDFC Bank merged with Capital First; IDFC Ltd merged into the bank in October 2024, so it now has no promoter.",
+   "s": [
+    "cf",
+    "cf2",
+    "idfc",
+    "idfc2"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO V. Vaidyanathan, re-appointed until December 2027; Sanjeeb Chaudhuri is Part-time Chairman.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "chair"
+   ]
+  },
+  {
+   "t": "FY 2025-26 net profit was ₹1,636 crore, after a ₹483 crore hit from a fraud at a Chandigarh branch in Q4.",
+   "s": [
+    "ip",
+    "fy26c"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit nearly tripled (+196.5%) to ₹1,045 crore; customer deposits grew 26.9%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Known for one of the highest margins among large banks: NIM 5.58% in Q2 FY27, with a CASA ratio near 48%.",
+   "s": [
+    "ip",
+    "q2c"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "Oct 2015",
+   "t": "IDFC Bank started operations, inaugurated by PM Narendra Modi.",
+   "s": [
+    "ip",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Dec 2018",
+   "t": "Merged with V. Vaidyanathan's Capital First to form IDFC FIRST Bank.",
+   "s": [
+    "cf",
+    "cf2"
+   ]
+  },
+  {
+   "y": "Oct 2024",
+   "t": "Parent IDFC Ltd merged into the bank.",
+   "s": [
+    "idfc",
+    "idfc2"
+   ]
+  },
+  {
+   "y": "Aug 2025",
+   "t": "Raised about ₹4,876 crore from a Warburg Pincus affiliate as part of a ₹7,500 crore deal.",
+   "s": [
+    "wp",
+    "wp2"
+   ]
+  },
+  {
+   "y": "Aug 2026",
+   "t": "Got its first international credit rating, BBB- from S&P.",
+   "s": [
+    "sp",
+    "sp2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "IDFC FIRST earns mainly from interest on retail, rural and small-business loans, which carry higher rates, funded by a large share of low-cost savings and current account deposits. This gives it a high net interest margin.",
+  "flow": [
+   "Customers deposit money (strong savings accounts)",
+   "Bank lends mainly to individuals, MSMEs and rural borrowers",
+   "Earns a wide interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹6,184 cr (+21.0%)",
+    "term": "Net Interest Income",
+    "s": [
+     "ip",
+     "q2c"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q4 FY26",
+    "v": "₹5,677 cr (+15.7%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26b",
+     "fy26"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO and Chairman; IDFC FIRST's next Chairperson awaits RBI approval.",
+   "Newer private banks compete with HDFC Bank, ICICI Bank and Kotak for savings deposits.",
+   "Big theme for interviews: fraud control at branches, after the Chandigarh case."
+  ],
+  "s": [
+   "chair",
+   "fy26c"
+  ]
+ },
+ "people": [
+  {
+   "ini": "VV",
+   "name": "V. Vaidyanathan",
+   "role": "MD & CEO",
+   "since": "since Dec 2018",
+   "note": "Founder of Capital First, which merged with IDFC Bank. Current term runs to 18 Dec 2027.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "cf"
+   ]
+  },
+  {
+   "ini": "SC",
+   "name": "Sanjeeb Chaudhuri",
+   "role": "Part-time Chairman",
+   "since": "term to 9 May 2027",
+   "note": "S. Ganesh Kumar is named to take over from 10 May 2027, subject to RBI approval.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹1,636 cr (+7%)",
+    "term": "Net profit",
+    "s": [
+     "ip",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.61%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.48%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "15.60%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "49.8%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Customer deposits",
+    "v": "₹2.84 lakh cr (+17.3%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Loans & advances",
+    "v": "₹2.90 lakh cr (+20.0%)",
+    "term": "Advances",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹0.25 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26b",
+     "fy26d"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹1,045 cr, up 196.5% from ₹352 cr.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Customer deposits ₹3.41 lakh cr (+26.9%); loans ₹3.47 lakh cr (+30.1%).",
+     "term": "Advances",
+     "s": [
+      "q2b",
+      "ip"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.32%, Net NPA 0.40%; capital adequacy 14.67%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "ip"
+     ]
+    }
+   ]
+  },
+  "say": "IDFC FIRST Bank nearly tripled its profit to ₹1,045 crore last quarter, with deposits growing about 27%."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   },
+   {
+    "name": "AU Small Finance Bank",
+    "v": 2641,
+    "s": [
+     "r_au"
+    ]
+   },
+   {
+    "name": "IDFC FIRST Bank",
+    "v": 1636,
+    "s": [
+     "r_idfc"
+    ],
+    "me": true
+   },
+   {
+    "name": "IndusInd Bank",
+    "v": 933,
+    "s": [
+     "r_iib"
+    ]
+   }
+  ],
+  "note": "IDFC FIRST is smaller than the big four private banks but is growing loans and deposits much faster."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches (Sep 2026)",
+    "v": "about 1,200"
+   },
+   {
+    "k": "Customers",
+    "v": "40 million+"
+   }
+  ],
+  "local": "IDFC FIRST is adding branches fast in smaller cities, and many roles focus on retail sales, rural lending and relationship banking.",
+  "s": [
+   "ip",
+   "q2",
+   "our"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Permanent employees",
+    "v": "43,059"
+   }
+  ],
+  "note": "From the FY 2025-26 BRSR (31 Mar 2026)."
+ },
+ "csr": {
+  "t": "IDFC FIRST's CSR is run through its FIRST Impact unit, covering education, livelihoods, financial literacy, women entrepreneurs and dairy farmers.",
+  "s": [
+   "brsr",
+   "our"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "High margin: NIM 5.58%",
+    "s": [
+     "ip"
+    ]
+   },
+   {
+    "t": "Fast deposit growth: +26.9% customer deposits",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "FY26 profit hit by a ₹483 cr branch fraud",
+    "s": [
+     "fy26c",
+     "ip"
+    ]
+   },
+   {
+    "t": "Capital adequacy 14.67%, lower than big peers",
+    "s": [
+     "ip"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "First international rating (S&P BBB-) opens global funding",
+    "s": [
+     "sp",
+     "sp2"
+    ]
+   },
+   {
+    "t": "Fresh capital from Warburg Pincus",
+    "s": [
+     "wp",
+     "wp2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Bigger private banks compete for savings deposits",
+    "s": [
+     "hdfc",
+     "icici",
+     "kotak"
+    ]
+   },
+   {
+    "t": "Unsecured retail loans can turn bad quickly in a downturn",
+    "s": [
+     "wiki"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Reverse merger": "When a parent company merges into its own subsidiary. IDFC Ltd merged into IDFC FIRST Bank in 2024.",
+  "Credit rating": "An agency's grade of how safely a borrower can repay. BBB- is investment grade.",
+  "Unsecured loan": "A loan given without collateral, such as a personal loan or credit card."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.32%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "5.58%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "14.67%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "47.6%",
+     "term": "CASA ratio"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Customers",
+     "v": "40 million+"
+    },
+    {
+     "k": "Branches",
+     "v": "about 1,200"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "26.9%"
+    },
+    {
+     "k": "Loan growth",
+     "v": "30.1%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "43,059"
+    },
+    {
+     "k": "Branches",
+     "v": "about 1,200"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,045 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "V. Vaidyanathan"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "43,059"
+    },
+    {
+     "k": "Branches",
+     "v": "about 1,200"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,045 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "V. Vaidyanathan"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "43,059"
+    },
+    {
+     "k": "Branches",
+     "v": "about 1,200"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,045 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "V. Vaidyanathan"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "43,059"
+    },
+    {
+     "k": "Branches",
+     "v": "about 1,200"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,045 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "V. Vaidyanathan"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why is IDFC FIRST's margin so much higher than other banks'?",
+     "a": "It lends more to retail and small borrowers at higher rates and funds itself with a high share of low-cost CASA deposits."
+    },
+    {
+     "q": "Why did profit jump 196% in Q2 FY27?",
+     "a": "The year-ago quarter was weak because of high provisions on microfinance; this year NII grew 21% and credit costs eased."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "IDFC FIRST pays good savings rates. How would you market that to young earners?",
+     "a": "Digital campaigns showing monthly interest credit, zero-fee features and an easy app, targeted at first-salary customers."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you prevent branch fraud through people practices?",
+     "a": "Job rotation, maker-checker rules, ethics training, whistle-blower channels and strong supervision."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me an IDFC FIRST savings account.",
+     "a": "Ask about needs, then link interest rate, zero fees and app features. Close with a clear next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can technology reduce fraud risk in branches?",
+     "a": "Real-time alerts on unusual transactions, digital approvals and regular audits."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about IDFC FIRST Bank?",
+     "a": "A private bank formed in 2018 by the IDFC Bank–Capital First merger, led by V. Vaidyanathan, with a high margin and fast growth."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads IDFC FIRST Bank?",
+     "a": "V. Vaidyanathan is MD & CEO; Sanjeeb Chaudhuri is Chairman until May 2027."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, S&P's first international rating (BBB-) in Aug 2026, or the jump in Q2 profit."
+    },
+    {
+     "q": "Why IDFC FIRST Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "IDFC FIRST Bank is one of India's fastest-growing banks: deposits grew about 27% and profit nearly tripled last quarter, built on a customer-first model and strong technology. It is still young enough that new joiners can make a visible difference. I want to grow with it and contribute to [your role].",
+  "ask": [
+   "How will the bank keep growing deposits this fast?",
+   "What has changed in branch controls after the Chandigarh case?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should banks pay high savings rates to grow deposits?",
+    "for": "IDFC FIRST built a 47–50% CASA ratio this way.",
+    "against": "High deposit costs can squeeze margins."
+   },
+   {
+    "t": "Is fast loan growth risky?",
+    "for": "Loans growing 30% can hide future bad loans.",
+    "against": "Good underwriting and technology can grow safely."
+   }
+  ],
+  "avoid": [
+   "Don't call it IDFC Bank; the name has been IDFC FIRST Bank since 2018.",
+   "Don't say IDFC Ltd is its promoter; IDFC Ltd merged into the bank in 2024.",
+   "Don't quote the 196% growth without context: the year-ago quarter was weak."
+  ],
+  "night": [
+   "MD & CEO: V. Vaidyanathan",
+   "FY26 profit: ₹1,636 cr",
+   "Q2 FY27 profit: ₹1,045 cr (+196.5%)",
+   "Gross NPA 1.32% · NIM 5.58%",
+   "CASA about 48%",
+   "Rivals: HDFC Bank, ICICI Bank, Kotak, Axis",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is IDFC FIRST Bank's MD & CEO?",
+   "o": [
+    "V. Vaidyanathan",
+    "Uday Kotak",
+    "Sanjay Agarwal"
+   ],
+   "a": 0
+  },
+  {
+   "q": "IDFC Bank merged with which company in 2018?",
+   "o": [
+    "Capital First",
+    "Bandhan",
+    "Fincare"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Q2 FY27 net interest margin was about…",
+   "o": [
+    "2.6%",
+    "3.4%",
+    "5.6%"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Which global investor put money into the bank in 2025?",
+   "o": [
+    "Warburg Pincus",
+    "SoftBank",
+    "Berkshire Hathaway"
+   ],
+   "a": 0
+  },
+  {
+   "q": "IDFC FIRST's CASA ratio is about…",
+   "o": [
+    "20%",
+    "48%",
+    "80%"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "15 Nov 2026"
+}
