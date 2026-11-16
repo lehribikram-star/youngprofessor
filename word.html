@@ -166,7 +166,7 @@ a{color:inherit}
           <div class="c-f" id="cF"></div>
           <div class="c-m" id="cM"></div>
           <div class="c-tag">Learnt it? Pass it on. Tag your prof @bikrampaul.s</div>
-          <div class="c-br"><img src="logo-badge.png" alt=""><div><b>Dr. Bikram Paul Singh Lehri</b><span>youngprofessor.in</span></div>
+          <div class="c-br"><img src="logo-badge.webp" alt=""><div><b>Dr. Bikram Paul Singh Lehri</b><span>youngprofessor.in</span></div>
             <div class="c-fb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg>TAP TO FLIP</div></div>
         </div>
         <div class="face bk">
@@ -177,7 +177,7 @@ a{color:inherit}
             <div class="blk"><h4>📍 INDIAN EXAMPLE</h4><p id="bE"></p></div>
             <div class="blk"><h4>⚠️ DON'T CONFUSE WITH</h4><div class="twin"><div><b id="tA"></b><span id="tAm"></span></div><div><b id="tB"></b><span id="tBm"></span></div></div></div>
           </div>
-          <div class="b-br"><img src="logo-badge.png" alt="">Dr. Bikram Paul Singh Lehri · youngprofessor.in</div>
+          <div class="b-br"><img src="logo-badge.webp" alt="">Dr. Bikram Paul Singh Lehri · youngprofessor.in</div>
         </div>
       </div></div>
       <div class="hint" id="hint">Tap the card. There's more on the back ↻</div>
@@ -265,7 +265,7 @@ function teach(){var f=$('flip');if(!ls('yp_words_flipped')){ls('yp_words_flippe
 
 /* ---------- share image (1080x1920, story size) ---------- */
 function wrap(x,t,X,Y,maxW,lh,align){var words=t.split(' '),line='',lines=[];words.forEach(function(w){var test=line?line+' '+w:w;if(x.measureText(test).width>maxW&&line){lines.push(line);line=w;}else line=test;});if(line)lines.push(line);lines.forEach(function(l,j){x.fillText(l,X,Y+j*lh)});return lines.length;}
-var badge=new Image();badge.src='logo-badge.png';
+var badge=new Image();badge.src='logo-badge.webp';
 function rr(x,X,Y,W,H,r){x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+W,Y,X+W,Y+H,r);x.arcTo(X+W,Y+H,X,Y+H,r);x.arcTo(X,Y+H,X,Y,r);x.arcTo(X,Y,X+W,Y,r);x.closePath();}
 function makeImage(){
   if(!cur)return;var w=cur;
@@ -483,5 +483,6 @@ fetch('words.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(f
 }).catch(function(){$('ttl').textContent='Could not load the card. Please refresh.';});
 })();
 </script>
+<script src="zone.js" defer></script>
 </body>
 </html>

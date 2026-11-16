@@ -2406,5 +2406,6 @@ function reqForm(){var name=company(),L='Send request →';
   wire(m,'Verified briefing request: '+name,function(E){return 'Please add a verified briefing for: '+name+'\nRole: '+role()+'\nInterview date: '+E.w.value.trim()+'\nPage: '+location.href},'✅ Request sent. Thank you!',L,function(){try{localStorage.setItem(reqKey(name),'1')}catch(e){}var b=$('kReq');if(b){b.disabled=true;b.textContent='✓ Verified briefing requested'}})}
 })();</script>
 
+<script src="zone.js" defer></script>
 </body>
 </html>
