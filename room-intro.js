@@ -1,7 +1,7 @@
 /* Room entry animations (16 Nov 2026).
    One themed opening per Student Zone room. Add to a room page, right after <body>:
    <script src="room-intro.js" data-room="fit"></script>
-   Rooms: fit, cu, word, prep, lounge, circle.
+   Rooms: fit, cu, word, prep, lounge, circle, case.
    Plays when a student arrives from the Student Zone, or the first time in a visit. Tap to skip. */
 (function(){
 var s=document.currentScript,k=s&&s.getAttribute('data-room');
@@ -11,6 +11,7 @@ var R={
  word:{c:'245,150,66',l:'#FFD0A1',n:'Concept Corner',t:"I'll bring the meaning.",a:'<span class="rbk">📖</span>'},
  prep:{c:'227,22,30',l:'#FFB4B7',n:'Placement Prep Room',t:"I'll bring the preparation.",a:'<i class="rr1"></i><i class="rr2"></i><i class="rr3"></i><u class="rht"></u><b class="rdt"></b>'},
  lounge:{c:'70,180,160',l:'#B5E8DC',n:'The Lounge',t:"I'll bring a listening ear.",a:'<i class="rgl"></i><u></u><u></u><u></u><span class="rcup">☕</span>'},
+ case:{c:'56,176,140',l:'#A9EBD6',n:'Crack the Case',t:"I'll bring the cases.",a:'<b class="rpp"><u></u><i></i><i></i><i></i></b>'},
  circle:{c:'180,110,255',l:'#E2C2FF',n:'Push Circle',t:'Where the push took them.',a:'<i class="rrg"></i>'+[0,1,2,3,4,5,6,7].map(function(i){return '<b style="--a:'+i*45+'deg;--i:'+i+'"></b>'}).join('')+'<span class="rsp">🌱</span>'}
 };
 var r=R[k];if(!r||!document.body)return;
@@ -75,6 +76,13 @@ if(k==='circle')css+='.ri-circle b{left:50%;top:50%;width:18px;height:18px;margi
 +'.ri-circle .rrg{inset:9px;border-radius:50%;border:2px dashed rgba(var(--c),.8);opacity:0;animation:riRing .6s .85s ease forwards}@keyframes riRing{from{opacity:0;transform:rotate(-40deg)}to{opacity:1;transform:none}}'
 +'.ri-circle .rsp{left:0;right:0;top:44px;font-size:70px;line-height:1.2;transform-origin:50% 90%;animation:riPop .6s .8s '+S+' both}'
 +'#ri.out{animation:riThrough .6s cubic-bezier(.6,0,.4,1) forwards}@keyframes riThrough{to{transform:scale(5);opacity:0}}';
+/* 7. Crack the Case: a newspaper unfolds and a stamp lands */
+if(k==='case')css+='.ri-case .rpp{left:20px;right:20px;top:0;bottom:6px;background:#F2ECDC;border-radius:5px;box-shadow:0 12px 40px rgba(0,0,0,.5),0 0 40px rgba(var(--c),.35);transform-origin:50% 0;animation:riUnfold .9s cubic-bezier(.2,.8,.2,1) both}'
++'.ri-case .rpp u{left:14px;right:14px;top:14px;height:20px;border-top:3px solid #23201A;border-bottom:1px solid #23201A}'
++'.ri-case .rpp i{left:14px;height:9px;border-radius:5px;background:#CFC6B0;width:0;animation:riLn .5s .7s ease both}.ri-case .rpp i:nth-of-type(1){top:52px;--w:84%}.ri-case .rpp i:nth-of-type(2){top:74px;--w:62%;animation-delay:.85s}.ri-case .rpp i:nth-of-type(3){top:96px;--w:76%;animation-delay:1s}'
++'.ri-case .rpp::after{content:"";position:absolute;right:16px;bottom:16px;width:44px;height:30px;border:3px solid #A8480A;border-radius:3px;opacity:0;transform:rotate(-10deg) scale(2.4);animation:riStp .3s 1.15s cubic-bezier(.2,.9,.3,1.2) both}'
++'@keyframes riUnfold{from{opacity:0;transform:perspective(500px) rotateX(-88deg) scaleY(.2)}to{opacity:1;transform:none}}@keyframes riLn{to{width:var(--w)}}@keyframes riStp{to{opacity:1;transform:rotate(-10deg) scale(1)}}'
++'#ri.out{animation:riLift .55s cubic-bezier(.7,0,.2,1) forwards}@keyframes riLift{to{transform:translateY(-100%)}}';
 var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
 var name=k==='word'?r.n.split('').map(function(ch,i){return '<span style="--i:'+i+'">'+(ch===' '?'&nbsp;':ch)+'</span>'}).join(''):r.n;
 var o=document.createElement('div');o.id='ri';o.setAttribute('aria-hidden','true');

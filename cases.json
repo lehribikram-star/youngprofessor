@@ -1,0 +1,541 @@
+{
+ "v": 1,
+ "cases": [
+  {
+   "id": "maggi-2015",
+   "date": "2026-11-17",
+   "company": "Nestlé India",
+   "title": "Maggi pulled off the shelves",
+   "deck": "A brand with about 75% of its market is ordered off sale overnight",
+   "chart": {
+    "title": "Maggi's share of India's instant noodles market (%)",
+    "unit": "%",
+    "points": [
+     [
+      "Before ban",
+      75
+     ],
+     [
+      "Nov 2015",
+      10.9
+     ],
+     [
+      "Dec 2015",
+      35.2
+     ],
+     [
+      "Mar 2016",
+      51
+     ],
+     [
+      "Jun 2016",
+      57.1
+     ]
+    ],
+    "mark": 1,
+    "markText": "Relaunch month"
+   },
+   "story": [
+    "In June 2015, India's food regulator FSSAI ordered Nestlé's Maggi noodles off sale, saying lead levels were above the permitted limit. Maggi then held about 75% of India's instant noodles market.",
+    "Nestlé disputed the findings and withdrew the product. It later destroyed about 37,000 tonnes of stock. In August 2015 the Bombay High Court set aside the ban.",
+    "Nestlé could relaunch in November 2015. But shoppers had spent five months without Maggi, and rivals such as ITC's Yippee had filled the shelf. You are Nestlé India's adviser on the day of the relaunch."
+   ],
+   "questions": [
+    {
+     "q": "Maggi returns to the shelves. What matters most in the first weeks?",
+     "options": [
+      {
+       "t": "Cut the price sharply to win shoppers back",
+       "why": "A deep price cut costs margin and can signal that something is wrong. Trust, not price, was what Maggi had lost.",
+       "ok": false
+      },
+      {
+       "t": "Be back everywhere fast and remind people why they loved it",
+       "why": "Right. Shoppers had loved the brand for decades, and being back quickly let that goodwill work. Share rose from 10.9% in November to 35.2% in December 2015.",
+       "ok": true
+      },
+      {
+       "t": "Launch the noodles under a new brand name",
+       "why": "A new name throws away decades of goodwill, which was Maggi's biggest asset.",
+       "ok": false
+      },
+      {
+       "t": "Wait until every legal case is over",
+       "why": "Each month off the shelf let rivals grow. The court had cleared the product, so waiting only helped competitors.",
+       "ok": false
+      }
+     ]
+    },
+    {
+     "q": "Rivals gained while Maggi was away. How should Nestlé respond?",
+     "options": [
+      {
+       "t": "Ignore rivals and rely on the brand name",
+       "why": "Brand love helps, but rivals now had customers. Nielsen data put Maggi at 42% in January 2016, down from 77% a year earlier.",
+       "ok": false
+      },
+      {
+       "t": "Add new variants and formats so rivals have less room",
+       "why": "Right. Nestlé added new Maggi variants, including a no-onion no-garlic version, and launched up to 25 products in a day across its range.",
+       "ok": true
+      },
+      {
+       "t": "Take legal action against rivals that gained share",
+       "why": "Rivals did nothing wrong by selling while Maggi was off the shelf.",
+       "ok": false
+      },
+      {
+       "t": "Stop advertising to save money",
+       "why": "Fewer reminders would hand even more of the shelf to rivals.",
+       "ok": false
+      }
+     ]
+    }
+   ],
+   "open": {
+    "q": "A worried parent asks if Maggi is safe now. What would you say, and do?",
+    "model": "A strong answer is open about the tests and what they found, shows that the product passed independent checks, speaks to families directly instead of hiding behind statements, and keeps quality and labelling consistent so the promise holds every time."
+   },
+   "after": "By June 2016 Maggi was back to 57.1% of the market, and Nestlé said it had regained the lead. Reports said the ban cost Nestlé more than ₹500 crore.",
+   "sources": [
+    [
+     "Business Today, 20 Oct 2016",
+     "https://www.businesstoday.in/amp/latest/corporate/story/maggi-makes-a-comeback-wins-market-share-on-sustained-recovery-68477-2016-10-20"
+    ],
+    [
+     "India Retailing (PTI): share after relaunch",
+     "https://www.indiaretailing.com/?p=67769"
+    ],
+    [
+     "Business Standard, Feb 2016 (Nielsen)",
+     "https://business-standard.com/article/companies/post-ban-maggi-noodles-still-no-1-despite-ceding-large-market-share-116022200412_1.html"
+    ],
+    [
+     "The Quint: how Nestlé overcame the crisis",
+     "https://www.thequint.com/lifestyle/books/excerpts-how-nestle-overcame-the-2015-maggie-crisis"
+    ]
+   ],
+   "terms": [
+    [
+     "Market share",
+     "The part of a market's total sales that one brand holds. If 100 packs of instant noodles are sold and Maggi sells 75, its share is 75%."
+    ],
+    [
+     "Product ban",
+     "An order from a regulator that stops a product from being sold. The company must pull it from shops until the order is lifted or the product is cleared."
+    ],
+    [
+     "Brand trust",
+     "Shoppers' belief that a brand is safe and reliable. It takes years to build and can be shaken in days, which is why it is a company's most valuable asset."
+    ],
+    [
+     "Relaunch",
+     "Bringing a product back to market after a break, usually with fresh promotion, so that shoppers notice it again."
+    ]
+   ],
+   "field": "Marketing"
+  },
+  {
+   "id": "nano-2009",
+   "date": "2026-12-08",
+   "company": "Tata Motors",
+   "title": "The world's cheapest car",
+   "deck": "Two lakh bookings, then sales that never matched the dream",
+   "chart": {
+    "title": "Tata Nano sales (cars)",
+    "unit": "",
+    "points": [
+     [
+      "FY2011-12",
+      74527
+     ],
+     [
+      "FY2014-15",
+      16901
+     ],
+     [
+      "FY2015-16",
+      21012
+     ],
+     [
+      "2018",
+      518
+     ]
+    ],
+    "mark": 0,
+    "markText": "Peak"
+   },
+   "story": [
+    "In 2009 Tata Motors launched the Nano, billed as the world's cheapest car, with an introductory price of ₹1 lakh. Bookings crossed two lakh within 17 days. Tata expected to sell about 2.5 lakh a year.",
+    "Sales peaked at 74,527 cars in 2011-12 and then slid. Some analysts argued that \"cheapest\" made the car feel like a poor man's car, and that buyers who could afford more did not want to be seen in it.",
+    "By 2018 only a few hundred Nanos were selling. You advise Tata Motors in 2012, when sales have begun to fall."
+   ],
+   "questions": [
+    {
+     "q": "What would you check first?",
+     "options": [
+      {
+       "t": "Whether the factory can make more cars",
+       "why": "Tata had expected about 2.5 lakh sales a year and sold far fewer. Factory capacity was not the issue.",
+       "ok": false
+      },
+      {
+       "t": "How buyers feel about owning the cheapest car",
+       "why": "Right. A product can be cheap and still fail if buyers feel that owning it says something about them. Some analysts called this the Nano's biggest problem.",
+       "ok": true
+      },
+      {
+       "t": "Cutting the price further",
+       "why": "It would strengthen the \"cheapest car\" label, and the car already struggled to be made at that price.",
+       "ok": false
+      },
+      {
+       "t": "Spending more on ads with the same message",
+       "why": "Repeating a message that puts buyers off only spends more money on the problem.",
+       "ok": false
+      }
+     ]
+    },
+    {
+     "q": "Tata decides to reposition the Nano. Which message fits best?",
+     "options": [
+      {
+       "t": "The cheapest car in the world",
+       "why": "That label was the problem.",
+       "ok": false
+      },
+      {
+       "t": "A smart, trendy city car for young buyers",
+       "why": "Right. Tata did try this later, with versions such as the Nano Twist and GenX. It sells what the car gives you, not how little it costs.",
+       "ok": true
+      },
+      {
+       "t": "A taxi for large fleets",
+       "why": "Fleet buyers care about running cost and durability. It would not change how private buyers saw the car.",
+       "ok": false
+      },
+      {
+       "t": "A premium luxury car",
+       "why": "It is too far from what the car could deliver, and no buyer would believe it.",
+       "ok": false
+      }
+     ]
+    }
+   ],
+   "open": {
+    "q": "A friend says: \"I would buy it if it did not say cheap on it.\" What does that tell you about how people buy?",
+    "model": "People buy an image as well as a product. The price tells a buyer what it costs; the label tells them what owning it says about them. A strong answer links price, status and the story the brand tells."
+   },
+   "after": "Tata began repositioning the car, for example with the Nano Twist in 2014, but analysts said it came too late. Only one Nano was produced in June 2018, and Tata said the car could not continue beyond 2019.",
+   "sources": [
+    [
+     "ZigWheels: the Nano's journey",
+     "https://zigwheels.com/news-features/news/tata-nano-a-journey-spanning-a-decade/35520"
+    ],
+    [
+     "The Tribune: a dream that turned sour",
+     "https://www.tribuneindia.com/news/archive/kaleidoscope/meanwhile-nano-a-dream-that-turned-sour-319310"
+    ],
+    [
+     "Rushlane: Nano 2018 sales",
+     "https://www.rushlane.com/tata-nano-taxi-olacabs-12136501.html"
+    ],
+    [
+     "Zerodha Varsity: Nano, visionary or failed?",
+     "https://zerodhavarsity.substack.com/p/tata-nano-visionary-product-or-failed"
+    ],
+    [
+     "The Quint: production ends",
+     "https://www.thequint.com/amp/story/news/business/tata-nano-production-to-end"
+    ]
+   ],
+   "terms": [
+    [
+     "Positioning",
+     "The image a brand creates in buyers' minds compared with its rivals. Two cars can cost the same and still be positioned very differently."
+    ],
+    [
+     "Perceived value",
+     "What a product seems worth to the buyer, which depends on feelings and status as well as price."
+    ],
+    [
+     "Target segment",
+     "The group of buyers a product is made for. A product built for everyone often ends up wanted by no one in particular."
+    ],
+    [
+     "Price versus image",
+     "A low price attracts buyers who want to save, but it can put off buyers who want the product to say something good about them."
+    ]
+   ],
+   "field": "Marketing"
+  },
+  {
+   "id": "jio-2016",
+   "date": "2026-12-01",
+   "company": "Bharti Airtel",
+   "title": "When a rival gives it away",
+   "deck": "A newcomer offers free data. What does the market leader do?",
+   "chart": {
+    "title": "Reliance Jio customers after launch (millions)",
+    "unit": "m",
+    "points": [
+     [
+      "Launch",
+      0
+     ],
+     [
+      "Day 83",
+      50
+     ],
+     [
+      "Day 170",
+      100
+     ]
+    ],
+    "mark": 2,
+    "markText": "100 million"
+   },
+   "story": [
+    "On 5 September 2016 Reliance Jio launched with free voice, data and messages. It aimed to win 100 million customers in the shortest time possible.",
+    "Before Jio arrived, Airtel had about 254 million connections, Vodafone 198 million and Idea 175 million. Airtel had already cut its 3G and 4G prices by up to 80%, and Vodafone had added more data to its prepaid plans.",
+    "Jio passed 50 million customers in 83 days and 100 million in 170 days. You advise Airtel two months after Jio's launch."
+   ],
+   "questions": [
+    {
+     "q": "What should Airtel do first?",
+     "options": [
+      {
+       "t": "Offer everything free too",
+       "why": "Analysts said rivals would struggle to match the deep pockets behind Jio. Matching free offers would burn cash for a long time.",
+       "ok": false
+      },
+      {
+       "t": "Find which customers are most at risk and protect them first",
+       "why": "Right. Not every customer will leave for free data. Protecting the most valuable ones keeps the most revenue for the money spent.",
+       "ok": true
+      },
+      {
+       "t": "Do nothing, since the free offer will end",
+       "why": "Jio kept adding customers into 2017, so waiting meant losing them.",
+       "ok": false
+      },
+      {
+       "t": "Only complain to the regulator",
+       "why": "Airtel did complain, but a complaint alone does not keep a customer. It also needs an offer.",
+       "ok": false
+      }
+     ]
+    },
+    {
+     "q": "Airtel wants to keep its biggest users. Which offer fits best?",
+     "options": [
+      {
+       "t": "Much more data in the same price plans",
+       "why": "Right. Vodafone and Idea, for example, offered 10 GB for the price of 1 GB. More value for the same money answers Jio's offer.",
+       "ok": true
+      },
+      {
+       "t": "A small discount on the old plans",
+       "why": "Jio offered far more, so a small discount would not stop customers comparing.",
+       "ok": false
+      },
+      {
+       "t": "Ask customers to pay more for a better network",
+       "why": "Jio's network was new and free to try. Few customers would pay extra.",
+       "ok": false
+      },
+      {
+       "t": "Wait for Jio's network to get crowded",
+       "why": "It may happen, but customers decide on today's price and experience.",
+       "ok": false
+      }
+     ]
+    }
+   ],
+   "open": {
+    "q": "Jio could afford to give data away. What can a smaller rival do against a competitor with deeper pockets?",
+    "model": "Compete where you are strong rather than copying the price war: service quality, loyal high-value customers, bundles, partnerships and focus on segments you can serve better. Avoid a fight you cannot afford to win."
+   },
+   "after": "Rivals cut prices and added data, and Airtel complained to the regulator. Jio crossed 100 million customers in 170 days and introduced a paid plan, Jio Prime, in February 2017.",
+   "sources": [
+    [
+     "Mobile World Live: Jio reaches 100m",
+     "https://www.mobileworldlive.com/asia/asia-news/reliance-jio-reaches-100m-subscriber-target/"
+    ],
+    [
+     "Mobile World Live: rivals' connection numbers",
+     "https://www.mobileworldlive.com/airtel/reliance-jio-reaches-100m-subscriber-target/"
+    ],
+    [
+     "TeleGeography: Jio's first 83 days",
+     "https://blog.telegeography.com/jio-whizz-indias-newest-cellco-hits-the-ground-running"
+    ],
+    [
+     "Canalys: Jio launch, rivals' responses",
+     "https://canalys.com/resources/Jio-launch-a-turning-point-in-the-Indian-market"
+    ],
+    [
+     "AFP via Phys.org: price war",
+     "https://phys.org/news/2016-09-mobile-price-wars-indian-tycoon.pdf"
+    ],
+    [
+     "The Quint: Jio's first year",
+     "https://www.thequint.com/amp/story/tech-and-auto/tech-news/reliance-jio-completes-one-year-in-india-we-look-at-the-big-announcements-made"
+    ]
+   ],
+   "terms": [
+    [
+     "Penetration pricing",
+     "Setting a very low or free price at the start to win many customers fast. The company hopes to earn later, once people are using the service."
+    ],
+    [
+     "Price war",
+     "A fight in which rivals keep cutting prices to hold their customers. Everyone's profit shrinks, and the one with deeper pockets lasts longer."
+    ],
+    [
+     "Churn",
+     "The share of customers who leave for a rival in a given period. Telecom companies watch it closely."
+    ],
+    [
+     "ARPU",
+     "Average revenue per user: the money a company earns per customer in a month. Free offers push it down."
+    ]
+   ],
+   "field": "Strategy"
+  },
+  {
+   "id": "paytm-2024",
+   "date": "2026-11-24",
+   "company": "Paytm",
+   "title": "A regulator's order",
+   "deck": "In two days a company's share price falls by more than a third",
+   "chart": {
+    "title": "One97 Communications (Paytm) share price (₹)",
+    "unit": "",
+    "points": [
+     [
+      "31 Jan",
+      761
+     ],
+     [
+      "1 Feb",
+      608.8
+     ],
+     [
+      "2 Feb",
+      487.05
+     ]
+    ],
+    "mark": 1,
+    "markText": "RBI order"
+   },
+   "story": [
+    "On 31 January 2024 the Reserve Bank of India barred Paytm Payments Bank from taking new deposits or top-ups after 29 February, citing persistent non-compliance.",
+    "The bank handled money for the Paytm app: wallets, accounts and FASTag. Paytm's parent, One97 Communications, owns 49% of the bank. Its shares fell 20% the next day and another 20% the day after, from ₹761 to about ₹487.",
+    "Users could still use their money, and the Paytm app itself was not banned. You advise Paytm's CEO on day one."
+   ],
+   "questions": [
+    {
+     "q": "What comes first?",
+     "options": [
+      {
+       "t": "Argue in public that the regulator is wrong",
+       "why": "Fighting a regulator in public rarely helps. Customers wanted to know their money and payments were safe.",
+       "ok": false
+      },
+      {
+       "t": "Tell customers their money is safe and keep payments working",
+       "why": "Right. Paytm told customers \"Your money is safe\" within days and began moving to other banks. Trust and continuity come before everything else.",
+       "ok": true
+      },
+      {
+       "t": "Launch a big advertising campaign",
+       "why": "Ads do not answer the fear. Customers and shops needed practical steps.",
+       "ok": false
+      },
+      {
+       "t": "Wait for the regulator to relent",
+       "why": "Waiting leaves customers unsure. The order was firm, so Paytm needed a plan that did not depend on a reversal.",
+       "ok": false
+      }
+     ]
+    },
+    {
+     "q": "Paytm's UPI payments ran through the bank. What is the best fix?",
+     "options": [
+      {
+       "t": "Move payments to other banks so the app keeps working",
+       "why": "Right. One97 said it would separate from the bank and work with other banks, and asked the payments authority NPCI to approve it as a UPI app provider.",
+       "ok": true
+      },
+      {
+       "t": "Ask users to switch to rival apps",
+       "why": "That hands customers to competitors.",
+       "ok": false
+      },
+      {
+       "t": "Switch off UPI inside the app",
+       "why": "It would cut off the daily payments users and shops depend on.",
+       "ok": false
+      },
+      {
+       "t": "Open a new payments bank",
+       "why": "A new licence takes years, not weeks.",
+       "ok": false
+      }
+     ]
+    }
+   ],
+   "open": {
+    "q": "What can a company do to reduce the risk of depending on one partner or one licence?",
+    "model": "Use more than one partner, keep regulated activities separate from the main brand, follow rules early rather than late, and keep a ready plan to move customers if one link breaks."
+   },
+   "after": "One97 said it would end its dealings with the payments bank and partner with other banks. The deadline for the bank's restrictions was later moved to 15 March 2024, and Paytm sought NPCI approval to continue UPI.",
+   "sources": [
+    [
+     "The Week: shares fall again",
+     "https://www.theweek.in/news/biz-tech/2024/02/02/paytm-shares-decline-further-will-it-be-business-as-usual-for-the-fintech-giant-after-rbi-curbs.amp.html"
+    ],
+    [
+     "Inc42: shares hit lower circuit",
+     "https://inc42.com/buzz/paytm-shares-plunge-20-to-hit-lower-circuit-after-rbi-ban"
+    ],
+    [
+     "Business Standard: RBI order",
+     "https://business-standard.com/companies/news/rbi-bars-paytm-payments-bank-from-accepting-deposits-from-february-29-124013100875_1.html"
+    ],
+    [
+     "Business Insider India: UPI and the 15 March date",
+     "https://www.businessinsider.in/stock-market/news/paytm-shares-hit-upper-circuit-again-at-428/articleshow/108004349.cms"
+    ],
+    [
+     "ChannelIAM: Paytm to delink",
+     "https://en.channeliam.com/2024/02/02/paytm-to-delink-from-paytm-payments-bank/"
+    ]
+   ],
+   "terms": [
+    [
+     "Regulatory risk",
+     "The risk that a rule or order from a regulator hurts a business. Some businesses, such as banking, depend on keeping the regulator satisfied."
+    ],
+    [
+     "Payments bank",
+     "A special kind of bank that can hold small deposits and handle payments, but cannot give loans."
+    ],
+    [
+     "UPI",
+     "The Unified Payments Interface, India's instant bank-to-bank payment system used through apps."
+    ],
+    [
+     "Lower circuit",
+     "A daily limit on how far a share price can fall. When it is hit, trading in that share stops for the day."
+    ],
+    [
+     "Dependency risk",
+     "The danger of relying on one partner, licence or supplier. If that one link breaks, the business is hit hard."
+    ]
+   ],
+   "field": "Finance"
+  }
+ ]
+}
