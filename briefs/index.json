@@ -1,5 +1,5 @@
 {
- "updated": "15 Nov 2026",
+ "updated": "17 Nov 2026",
  "companies": [
   {
    "id": "hdfc-bank",
@@ -172,6 +172,81 @@
     "au small finance",
     "aubank",
     "au financiers"
+   ]
+  },
+  {
+   "id": "yes-bank",
+   "name": "Yes Bank",
+   "sector": "Banking · Mumbai",
+   "color": "#0A3D91",
+   "short": "YES",
+   "aliases": [
+    "yes bank",
+    "yesbank",
+    "yes bank ltd",
+    "yes bank limited",
+    "yes"
+   ]
+  },
+  {
+   "id": "canara-bank",
+   "name": "Canara Bank",
+   "sector": "Public sector bank · Bengaluru",
+   "color": "#0072BC",
+   "short": "CB",
+   "aliases": [
+    "canara bank",
+    "canara",
+    "canbk",
+    "canara bank ltd",
+    "syndicate bank",
+    "canarabank"
+   ]
+  },
+  {
+   "id": "union-bank-of-india",
+   "name": "Union Bank of India",
+   "sector": "Public sector bank · Mumbai",
+   "color": "#D71920",
+   "short": "UBI",
+   "aliases": [
+    "union bank of india",
+    "union bank",
+    "ubi",
+    "unionbank",
+    "union bank of india ltd",
+    "andhra bank",
+    "corporation bank"
+   ]
+  },
+  {
+   "id": "federal-bank",
+   "name": "Federal Bank",
+   "sector": "Banking · Aluva",
+   "color": "#1B3F8B",
+   "short": "FB",
+   "aliases": [
+    "federal bank",
+    "federal",
+    "federal bank ltd",
+    "the federal bank",
+    "the federal bank limited",
+    "federalbnk",
+    "fedbank"
+   ]
+  },
+  {
+   "id": "bandhan-bank",
+   "name": "Bandhan Bank",
+   "sector": "Banking · Kolkata",
+   "color": "#E31E24",
+   "short": "BB",
+   "aliases": [
+    "bandhan bank",
+    "bandhan",
+    "bandhanbnk",
+    "bandhan bank ltd",
+    "bandhan bank limited"
    ]
   }
  ]

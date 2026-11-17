@@ -1,0 +1,1084 @@
+{
+ "id": "union-bank-of-india",
+ "name": "Union Bank of India",
+ "short": "UBI",
+ "color": "#D71920",
+ "line": "A Mumbai-based public sector bank, founded in 1919, that absorbed Andhra Bank and Corporation Bank in 2020",
+ "sector": "Public sector banking",
+ "hq": "Mumbai, Maharashtra (Union Bank Bhavan, Nariman Point)",
+ "listed": "NSE: UNIONBANK · BSE: 532477",
+ "website": "https://www.unionbankofindia.bank.in",
+ "news_query": "Union Bank of India",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Indian Masterminds)",
+   "url": "https://indianmasterminds.com/news/union-bank-q2-fy27-results-net-profit-rises-30-3-percent-gross-npa-2-42-243767/"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (PSU Watch)",
+   "url": "https://psuwatch.com/newsupdates/union-banks-q2-net-profit-rises-31-to-rs-5781-crore"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1737731"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/union-bank-q2fy27-profit-nim-cmvhs960y00082lphrq4bdrga"
+  },
+  "tr": {
+   "label": "Q2 FY27 earnings call transcript, 19 Oct 2026 (official)",
+   "url": "https://www.unionbankofindia.bank.in/pdf/UnionBank-Earnings-Oct19-2026-Transcript.pdf"
+  },
+  "fy26": {
+   "label": "Union Bank Q4 FY26 press release (official)",
+   "url": "https://www.unionbankofindia.bank.in/pdf/Final-Press-Release-Q4FY2026-English.pdf"
+  },
+  "fy26b": {
+   "label": "FY26 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1687237"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 results (Arihant / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25113010167"
+  },
+  "fy26d": {
+   "label": "Q4 FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/union-bank-q4-profit-rises-66-to-5316-crore-shares-fall-7-despite-growth-on-weak-core-income-higher-provisions"
+  },
+  "fy26e": {
+   "label": "FY26 results (Indian PSU)",
+   "url": "https://indianpsu.com/?p=37690"
+  },
+  "dr": {
+   "label": "Union Bank FY26 Directors' Report (via IIFL)",
+   "url": "https://www.indiainfoline.com/company/union-bank-of-india/reports/directors-report"
+  },
+  "brsr": {
+   "label": "Union Bank BRSR 2025-26 (official)",
+   "url": "https://www.unionbankofindia.bank.in/pdf/FINAL-BRSR-2025-26.pdf"
+  },
+  "prof": {
+   "label": "Union Bank of India: profile (official)",
+   "url": "https://www.unionbankofindia.bank.in/en/common/profile"
+  },
+  "hist": {
+   "label": "Union Bank: About the Bank (official annual report page)",
+   "url": "https://unionbankofindia.co.in/annual-report/about-the-bank.html"
+  },
+  "iifl": {
+   "label": "Union Bank company history (IIFL)",
+   "url": "https://www.indiainfoline.com/company/union-bank-of-india/summary/5493"
+  },
+  "nat": {
+   "label": "Bank nationalisation, 1969 (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/this-day-that-year-why-14-top-banks-were-nationalised-on-july-16-1969"
+  },
+  "merge": {
+   "label": "RBI press release on 2020 bank mergers",
+   "url": "https://www.rbi.org.in/SCRIPTS/BS_PressReleaseDisplay.aspx?prid=49590"
+  },
+  "ceo": {
+   "label": "MD & CEO appointment (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/UNIONBANK_30092025184330_UBI_Appointment_MD_CEO.pdf"
+  },
+  "ceo2": {
+   "label": "Asheesh Pandey appointed MD & CEO (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/asheesh-pandey-appointed-as-managing-director-chief-executive-officer-of-union-bank-of-india-kalyan-kumar-new-head-of-central-bank"
+  },
+  "agm": {
+   "label": "AGM approves CEO and EDs (Board Stewardship)",
+   "url": "https://boardstewardship.com/?p=51866"
+  },
+  "gov": {
+   "label": "Union Bank shareholding (Upstox)",
+   "url": "https://upstox.com/stocks/union-bank-of-india-shareholding/"
+  },
+  "rbi": {
+   "label": "RBI penalty on Union Bank, Mar 2026 (RBI press release)",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62454"
+  },
+  "rbi2": {
+   "label": "RBI penalty on Union Bank (StudyCafe)",
+   "url": "https://studycafe.in/rbi-imposes-rs-95-40-lakh-penalty-on-union-bank-of-india-for-regulatory-violations-415173.html"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Union_Bank_of_India"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 18697,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (+4%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 8695,
+   "fmt": "num",
+   "label": "Domestic branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 73885,
+   "fmt": "num",
+   "label": "Permanent employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹5,537 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +30.3%"
+  },
+  {
+   "v": "2.42%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "2.86%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27 (global)"
+  },
+  {
+   "v": "17.94%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Founded in Mumbai in 1919 by Seth Sitaram Poddar; Mahatma Gandhi inaugurated its head office building in 1921.",
+   "s": [
+    "hist",
+    "iifl"
+   ]
+  },
+  {
+   "t": "A public sector bank: the Government of India owns about 74.8% of its shares. Andhra Bank and Corporation Bank merged into it on 1 April 2020.",
+   "s": [
+    "prof",
+    "gov",
+    "merge"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO Asheesh Pandey since 30 September 2025; he earlier was Executive Director of Bank of Maharashtra.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 standalone net profit rose about 4% to ₹18,697 crore; Gross NPA fell to 2.82%.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "dr"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit jumped 30.3% to ₹5,537 crore, loans grew 18.5% and Gross NPA improved to 2.42%.",
+   "s": [
+    "q2",
+    "q2c"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1919",
+   "t": "Registered in Mumbai on 11 November, promoted by Seth Sitaram Poddar.",
+   "s": [
+    "hist",
+    "iifl"
+   ]
+  },
+  {
+   "y": "1921",
+   "t": "Mahatma Gandhi inaugurated the bank's head office building in Mumbai.",
+   "s": [
+    "hist",
+    "iifl"
+   ]
+  },
+  {
+   "y": "1969",
+   "t": "Nationalised along with 13 other banks.",
+   "s": [
+    "iifl",
+    "nat"
+   ]
+  },
+  {
+   "y": "Apr 2020",
+   "t": "Andhra Bank and Corporation Bank merged into Union Bank of India.",
+   "s": [
+    "prof",
+    "merge",
+    "iifl"
+   ]
+  },
+  {
+   "y": "Sep 2025",
+   "t": "Asheesh Pandey took charge as MD & CEO for three years.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Q2 FY27 profit rose 30.3% to ₹5,537 crore.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Union Bank earns mainly from the gap between interest on loans and interest paid on deposits, plus fees and treasury income. Most of its lending goes to retail, farm and MSME borrowers (the 'RAM' segments), along with corporate loans.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to people, farmers, MSMEs and companies",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹10,583 cr (+20.1%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2c"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q4 FY26",
+    "v": "₹9,406 cr (−1.1%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26c",
+     "fy26d"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) and Government of India (as main owner)",
+  "points": [
+   "The Government appoints the MD & CEO and Executive Directors of public sector banks.",
+   "Public sector banks merged into fewer, bigger banks in 2019–2020; Union Bank absorbed two banks.",
+   "Big theme for interviews: public sector banks have cut bad loans sharply and now earn strong profits."
+  ],
+  "s": [
+   "ceo",
+   "merge",
+   "fy26"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AP",
+   "name": "Asheesh Pandey",
+   "role": "MD & CEO",
+   "since": "since 30 Sep 2025",
+   "note": "Earlier Executive Director of Bank of Maharashtra and Chief General Manager at Union Bank; began his career at Corporation Bank. Three-year term.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "ED",
+   "name": "Nitesh Ranjan, Ramasubramanian S., Amresh Prasad",
+   "role": "Executive Directors",
+   "since": "2026",
+   "note": "Shareholders approved their appointment or re-appointment at the AGM on 10 July 2026.",
+   "s": [
+    "agm",
+    "tr"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹18,697 cr (+3.9%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net Interest Income",
+    "v": "₹36,659 cr (−1.5%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "2.82%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.48%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "18.10%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "35.2%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Deposits",
+    "v": "₹13.07 lakh cr (+2.7%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Gross advances",
+    "v": "₹10.79 lakh cr (+9.7%)",
+    "term": "Advances",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹5 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "dr"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹5,537 cr, up 30.3% (consolidated ₹5,781 cr).",
+     "s": [
+      "q2",
+      "q2b",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Deposits ₹13.19 lakh cr (+6.9%); gross advances ₹11.56 lakh cr (+18.5%); CASA about 35%.",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2c",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Gross NPA 2.42%, Net NPA 0.42%; capital adequacy 17.94%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2c"
+     ]
+    }
+   ]
+  },
+  "say": "Union Bank grew its profit 30% to ₹5,537 crore last quarter, with loans up 18.5% and bad loans down to 2.42%."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Bank of Baroda",
+    "v": 20021,
+    "s": [
+     "r_bob"
+    ]
+   },
+   {
+    "name": "Union Bank of India",
+    "v": 18697,
+    "s": [
+     "fy26"
+    ],
+    "me": true
+   },
+   {
+    "name": "Punjab National Bank",
+    "v": 16904,
+    "s": [
+     "r_pnb"
+    ]
+   }
+  ],
+  "note": "Among the public sector banks shown here, Union Bank's FY26 profit is behind SBI and Bank of Baroda and ahead of PNB. Canara Bank is not shown."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Domestic branches",
+    "v": "8,695"
+   },
+   {
+    "k": "Overseas branches",
+    "v": "2 (Sydney, Dubai DIFC)"
+   }
+  ],
+  "local": "Union Bank has a wide branch network, with deep roots in the West (Mumbai) and, through Andhra Bank and Corporation Bank, in the South. New officers are often posted to rural and semi-urban branches.",
+  "s": [
+   "brsr",
+   "dr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Permanent employees (Mar 2026)",
+    "v": "73,885"
+   },
+   {
+    "k": "Officer hiring",
+    "v": "Mainly IBPS PO + specialist notices"
+   }
+  ],
+  "note": "From the FY 2025-26 BRSR. Union Bank is one of India's large public sector employers."
+ },
+ "csr": {
+  "t": "Union Bank's CSR runs mainly through the Union Bank Social Foundation, covering education and skills, healthcare and sanitation, livelihoods, the environment and disaster relief.",
+  "s": [
+   "dr",
+   "brsr"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Profit up 30.3% in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Strong capital: adequacy 17.94%",
+    "s": [
+     "q2c"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "FY26 net interest income fell 1.5%",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "t": "Margin of 2.86% is lower than private banks",
+    "s": [
+     "q2c"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Loans growing fast: +18.5% in Q2 FY27",
+    "s": [
+     "q2",
+     "q2c"
+    ]
+   },
+   {
+    "t": "Bad loans keep falling: Gross NPA 2.42%",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Deposits grew only 6.9%, much slower than loans",
+    "s": [
+     "q2",
+     "q2c"
+    ]
+   },
+   {
+    "t": "RBI fined it ₹95.40 lakh in Mar 2026 for compliance lapses",
+    "s": [
+     "rbi",
+     "rbi2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and key ratios.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Amalgamation": "Two or more companies combining into one. Andhra Bank and Corporation Bank merged into Union Bank in 2020.",
+  "IBPS": "Institute of Banking Personnel Selection, which runs common recruitment exams for public sector banks.",
+  "RAM": "Retail, Agriculture and MSME loans: the segments public sector banks are pushing for growth."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "2.42%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.42%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "17.94%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "2.86%",
+     "term": "Net interest margin"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "8,695"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "about 35%",
+     "term": "CASA ratio"
+    },
+    {
+     "k": "Loan growth",
+     "v": "18.5%"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "6.9%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "73,885"
+    },
+    {
+     "k": "Branches",
+     "v": "8,695"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹18,697 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 74.8%"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "73,885"
+    },
+    {
+     "k": "Branches",
+     "v": "8,695"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹18,697 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 74.8%"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "73,885"
+    },
+    {
+     "k": "Branches",
+     "v": "8,695"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹18,697 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 74.8%"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "73,885"
+    },
+    {
+     "k": "Branches",
+     "v": "8,695"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹18,697 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Govt stake",
+     "v": "about 74.8%"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Public sector banks hire most officers through the common IBPS PO exam, and specialist officers through their own notices. Campus hiring varies, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "IBPS PO preliminary exam",
+    "d": "English, quantitative aptitude, reasoning"
+   },
+   {
+    "t": "IBPS PO main exam",
+    "d": "Reasoning, data analysis, banking and economy awareness, English"
+   },
+   {
+    "t": "Interview",
+    "d": "Personality, banking knowledge and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Union Bank's FY26 interest income fell but profit rose. How?",
+     "a": "Net interest income fell about 1.5%, but lower bad-loan costs and other income lifted profit to ₹18,697 cr."
+    },
+    {
+     "q": "Gross NPA fell from 3.29% to 2.42% in a year. What drives that?",
+     "a": "Recoveries, write-offs of old bad loans, fewer new defaults and faster loan growth."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you attract young customers to Union Bank?",
+     "a": "Mobile-first account opening, student and first-salary accounts, and campaigns that mix a 100-year-old trusted name with modern features."
+    },
+    {
+     "q": "Deposits are growing slower than loans. How would you raise deposits?",
+     "a": "Salary-account tie-ups, government and institutional accounts, and simple digital savings products with good service."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you unite staff from three merged banks into one culture?",
+     "a": "Common training, mixed teams, fair postings and clear career paths. Union Bank had to do this after the 2020 merger."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a Union Bank MSME loan to a small manufacturer.",
+     "a": "Ask about working-capital needs, explain quick sanction and government-backed schemes simply, and close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can a public bank use automation to work faster?",
+     "a": "Automate routine back-office tasks, central reconciliation and digital loan tracking. Union Bank is scaling up robotic process automation."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Union Bank of India?",
+     "a": "A public sector bank founded in Mumbai in 1919, led by MD & CEO Asheesh Pandey, with ₹18,697 cr FY26 profit and ₹5,537 cr in Q2 FY27."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Union Bank of India?",
+     "a": "Asheesh Pandey is MD & CEO (since Sep 2025)."
+    },
+    {
+     "q": "Which banks merged into Union Bank?",
+     "a": "Andhra Bank and Corporation Bank, from 1 April 2020."
+    },
+    {
+     "q": "Why Union Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Union Bank of India has over a hundred years of trust, from Mahatma Gandhi opening its head office in 1921 to a 30% profit jump last quarter. After merging Andhra Bank and Corporation Bank, it serves customers across India through about 8,700 branches. I want to grow with Union Bank and contribute to [your role].",
+  "ask": [
+   "Which loan segments is the bank growing fastest?",
+   "How is the bank using automation in branch and back-office work?",
+   "What does the first posting for a new officer usually look like?"
+  ],
+  "gd": [
+   {
+    "t": "Were public sector bank mergers a good idea?",
+    "for": "Bigger banks like Union Bank now earn strong profits and have stronger capital.",
+    "against": "Integrating staff and systems from three banks took years."
+   },
+   {
+    "t": "Should the government reduce its stake in public sector banks?",
+    "for": "More private investors can bring efficiency.",
+    "against": "Government ownership supports rural and social banking goals."
+   }
+  ],
+  "avoid": [
+   "Don't call Union Bank a private bank; the government owns about 74.8%.",
+   "Don't say Andhra Bank or Corporation Bank still exist; they merged into Union Bank in 2020.",
+   "Don't confuse Union Bank of India with United Bank of India, which merged into PNB in 2020.",
+   "Don't mix standalone (₹5,537 cr) and consolidated (₹5,781 cr) Q2 profit."
+  ],
+  "night": [
+   "MD & CEO: Asheesh Pandey",
+   "Founded 1919 · HQ Mumbai",
+   "FY26 profit: ₹18,697 cr",
+   "Q2 FY27 profit: ₹5,537 cr (+30.3%)",
+   "Gross NPA 2.42% (Sep 2026)",
+   "Rivals: SBI, Bank of Baroda, PNB, Canara Bank",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Union Bank of India's MD & CEO?",
+   "o": [
+    "Asheesh Pandey",
+    "Ashok Chandra",
+    "Debadatta Chand"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which banks merged into Union Bank in 2020?",
+   "o": [
+    "Vijaya & Dena",
+    "Andhra & Corporation",
+    "OBC & United"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who inaugurated Union Bank's head office in 1921?",
+   "o": [
+    "Jawaharlal Nehru",
+    "Mahatma Gandhi",
+    "Lala Lajpat Rai"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Union Bank's FY26 net profit was about…",
+   "o": [
+    "₹1,870 cr",
+    "₹18,700 cr",
+    "₹80,000 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Union Bank of India was founded in…",
+   "o": [
+    "1894",
+    "1908",
+    "1919"
+   ],
+   "a": 2
+  }
+ ],
+ "checked": "17 Nov 2026"
+}

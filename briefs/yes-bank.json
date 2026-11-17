@@ -1,0 +1,1145 @@
+{
+ "id": "yes-bank",
+ "name": "Yes Bank",
+ "short": "YES",
+ "color": "#0A3D91",
+ "line": "A Mumbai private bank rebuilt after its 2020 rescue, now with Japan's SMBC as largest shareholder",
+ "sector": "Banking",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: YESBANK · BSE: 532648",
+ "website": "https://www.yes.bank.in",
+ "news_query": "Yes Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1737717"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (TaxGuru)",
+   "url": "https://taxguru.in/?p=1091840"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Investywise / BSE filing)",
+   "url": "https://www.investywise.com/?p=120993"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results and AT-1 impact (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/yes-bank-q2-profit-up-65-to-rs-1080-cr-proforma-impact-of-restatement-of-at-i-bonds-revealed-562267-2026-10-17"
+  },
+  "fy26": {
+   "label": "YES BANK Investor Presentation Q4 FY26 (official, via Tijori)",
+   "url": "https://files.tijorifinance.com/india/company/4547/3021/IP-Mar26.pdf"
+  },
+  "dr": {
+   "label": "YES BANK FY26 Directors' Report (via IIFL)",
+   "url": "https://indiainfoline.com/company/yes-bank-ltd-share-price/directors-report/25267"
+  },
+  "fy26b": {
+   "label": "FY26 results (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-banks/yes-banks-q4fy26-profit-grows-45-to-rs1068-crs"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/amp/markets/stocks/story/yes-bank-q4-results-2026-profit-jumps-45-to-rs-1068-crore-nii-up-16-key-highlights-526320-2026-04-18"
+  },
+  "fy26d": {
+   "label": "Q4 FY26 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/yes-bank-q4-fy26-earnings-net-profit-jumps-45-percent-asset-quality-improves"
+  },
+  "fy26e": {
+   "label": "FY26 results (Investywise)",
+   "url": "https://www.investywise.com/?p=75224"
+  },
+  "fy26f": {
+   "label": "Q4 FY26 deposits and CASA (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/bankingfinance/Yes-Bank-Profit-Jumps-447percent-in-Q4-Deposits-Top-indian-rupee318-Lakh-Cr/69e3709a71f6be70c53c1d18"
+  },
+  "crisis": {
+   "label": "What is the YES Bank crisis (Business Standard)",
+   "url": "https://www.business-standard.com/amp/about/what-is-yes-bank-crisis"
+  },
+  "crisis2": {
+   "label": "The rebirth of YES Bank (ThePrint)",
+   "url": "https://theprint.in/economy/the-rebirth-of-yes-bank-a-financial-thriller-how-captains-of-industry-brought-it-back-from-the-brink/2908678/"
+  },
+  "smbc": {
+   "label": "SMBC becomes largest shareholder (Business Standard)",
+   "url": "https://www.business-standard.com/amp/industry/banking/smbc-becomes-largest-shareholder-of-yes-bank-125091800972_1.html"
+  },
+  "smbc2": {
+   "label": "SBI completes stake sale to SMBC (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/yes-bank-stake-sale-sbi-gets-rs-8889-crore-as-smbc-deal-completes-shares-up-2-494369-2025-09-17"
+  },
+  "smbc3": {
+   "label": "SMBC buys extra 4.22% from Carlyle affiliate (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/sumitomo-mitsui-banking-corporation-of-japan-acquires-additional-422-stake-in-mumbai-based-yes-bank"
+  },
+  "smbc4": {
+   "label": "SMBC stake crosses 24% (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/yes-bank-shares-rise-15-in-september-so-far-as-smbc-acquire-over-24-stake-495666-2025-09-25"
+  },
+  "ceo": {
+   "label": "Vinay Tonse succeeds Prashant Kumar (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/yes-bank-appoints-vinay-tonse-as-ceo-after-prashant-kumar-tenure-ends-april-2026"
+  },
+  "ceo2": {
+   "label": "RBI approves Vinay Tonse as MD & CEO (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/rbi-approves-appointment-of-former-sbi-md-vinay-tonse-as-yes-bank-md-ceo"
+  },
+  "ceo3": {
+   "label": "YES Bank announces change in MD & CEO (Business Standard / Capital Market)",
+   "url": "https://www.business-standard.com/markets/capital-market-news/yes-bank-announces-change-in-md-ceo-126030601090_1.html"
+  },
+  "chair": {
+   "label": "RBI clears R. Gandhi as Chairman till 2027 (Business Standard)",
+   "url": "https://www.business-standard.com/industry/banking/rbi-clears-reappointment-of-r-gandhi-as-yes-bank-chairman-till-2027-125090200671_1.html"
+  },
+  "chair2": {
+   "label": "R. Gandhi re-appointed Chairman (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/reserve-bank-approves-reappointment-of-former-rbi-deputy-governor-r-gandhi-as-non-executive-chairman-of-bank"
+  },
+  "at1": {
+   "label": "Supreme Court upholds quashing of AT-1 write-down (PSU Connect)",
+   "url": "https://www.psuconnect.in/legal-updates/supreme-court-upholds-bombay-hc-order-setting-aside-yes-banks-at1-bonds-writedown"
+  },
+  "at1b": {
+   "label": "AT-1 bondholders win in Supreme Court (Moneylife)",
+   "url": "https://www.moneylife.in/article/yes-bank-at1-bondholders-win-in-supreme-court-as-8415-crore-writeoff-is-struck-down/81958.html"
+  },
+  "nifty": {
+   "label": "YES Bank joins Nifty Bank (Angel One)",
+   "url": "https://www.angelone.in/news/market-updates/yes-bank-and-union-bank-to-be-added-in-bank-nifty-by-the-end-of-december-2025"
+  },
+  "nifty2": {
+   "label": "Nifty Bank inclusion (Business Today)",
+   "url": "https://businesstoday.in/markets/stocks/story/yes-bank-union-bank-shares-may-see-250-mn-inflows-on-nifty-bank-inclusion-heres-how-504709-2025-12-03"
+  },
+  "moody": {
+   "label": "Moody's rating upgrade (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/YESBANK_11052026184749_YBL_SE_Intimation_Moodys_Rating_11052026_Signed.pdf"
+  },
+  "moody2": {
+   "label": "Moody's lifts rating to Ba1 (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/bankingfinance/Moodys-Lifts-Yes-Bank-Credit-Rating-to-Ba1/6a01e3f4707d23e844536b9c"
+  },
+  "net": {
+   "label": "YES BANK company profile (Hyring)",
+   "url": "https://hyring.com/company/yes-bank"
+  },
+  "esg": {
+   "label": "How YES Bank is banking on net zero (Business Today)",
+   "url": "https://www.businesstoday.in/magazine/deep-dive/story/how-yes-bank-is-banking-on-net-zero-goals-536100-2026-06-10"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Yes_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 3476,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · +44.5%",
+   "term": "Net profit"
+  },
+  {
+   "v": 1334,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 29577,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹1,080 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +65%"
+  },
+  {
+   "v": "1.2%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "13.7%",
+   "k": "CET1 ratio",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "14.5%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "A private bank started in 2004 by Rana Kapoor and Ashok Kapur; headquartered in Mumbai.",
+   "s": [
+    "crisis",
+    "crisis2"
+   ]
+  },
+  {
+   "t": "In March 2020 the RBI put it under a moratorium; an SBI-led group of banks rescued it, and Prashant Kumar led the turnaround as CEO until April 2026.",
+   "s": [
+    "crisis",
+    "crisis2",
+    "ceo"
+   ]
+  },
+  {
+   "t": "In September 2025 Japan's Sumitomo Mitsui Banking Corporation (SMBC) bought over 24% and became the largest shareholder; SBI still holds about 10.8%.",
+   "s": [
+    "smbc",
+    "smbc2",
+    "smbc3",
+    "smbc4"
+   ]
+  },
+  {
+   "t": "Former SBI MD Vinay M. Tonse has been MD & CEO since 6 April 2026. FY 2025-26 profit rose 44.5% to ₹3,476 crore.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "dr",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit rose 65% to ₹1,080 crore, but in October 2026 the Supreme Court struck down the 2020 write-off of ₹8,415 crore of AT-1 bonds, a big capital question.",
+   "s": [
+    "q2",
+    "q2c",
+    "at1",
+    "at1b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2004",
+   "t": "YES Bank started, founded by Rana Kapoor and Ashok Kapur.",
+   "s": [
+    "crisis",
+    "crisis2"
+   ]
+  },
+  {
+   "y": "Mar 2020",
+   "t": "RBI moratorium; SBI-led rescue; Prashant Kumar became administrator, then MD & CEO.",
+   "s": [
+    "crisis",
+    "crisis2"
+   ]
+  },
+  {
+   "y": "Sep 2025",
+   "t": "SMBC became the largest shareholder, buying stakes from SBI, other banks and a Carlyle affiliate.",
+   "s": [
+    "smbc",
+    "smbc3"
+   ]
+  },
+  {
+   "y": "Dec 2025",
+   "t": "Added to the Nifty Bank index.",
+   "s": [
+    "nifty",
+    "nifty2",
+    "dr"
+   ]
+  },
+  {
+   "y": "Apr 2026",
+   "t": "Vinay M. Tonse took charge as MD & CEO.",
+   "s": [
+    "ceo",
+    "ceo3"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Supreme Court upheld the order quashing the ₹8,415 crore AT-1 bond write-off.",
+   "s": [
+    "at1",
+    "at1b"
+   ]
+  }
+ ],
+ "model": {
+  "how": "YES Bank earns mainly from the gap between interest on loans and interest paid on deposits, plus fees. It lends to companies, small businesses and retail customers, and is now growing its low-cost savings and current account deposits.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to companies, MSMEs and individuals",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹2,822 cr (+22.7%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "k": "Net Interest Income Q4 FY26",
+    "v": "₹2,638 cr (+16%)",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26c",
+     "fy26d"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO and Chairman; YES Bank changed its CEO in April 2026.",
+   "RBI approval is also needed for any investor to buy 5% or more of a bank; SMBC got approval to go up to 24.99%.",
+   "Big theme for interviews: how a failed bank was rescued, and how court rulings on bonds affect bank capital."
+  ],
+  "s": [
+   "ceo2",
+   "smbc",
+   "at1"
+  ]
+ },
+ "people": [
+  {
+   "ini": "VT",
+   "name": "Vinay M. Tonse",
+   "role": "MD & CEO",
+   "since": "since 6 Apr 2026",
+   "note": "Joined SBI in 1988; was SBI Managing Director (Retail Business & Operations). Term runs to 5 Apr 2029.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "RG",
+   "name": "R. Gandhi",
+   "role": "Part-time Chairman",
+   "since": "re-appointed to May 2027",
+   "note": "Former RBI Deputy Governor (2014–2017).",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "ini": "PK",
+   "name": "Prashant Kumar",
+   "role": "Former MD & CEO",
+   "since": "Mar 2020 – Apr 2026",
+   "note": "Led the rescue and turnaround after 2020.",
+   "s": [
+    "ceo",
+    "crisis2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹3,476 cr (+44.5%)",
+    "term": "Net profit",
+    "s": [
+     "dr",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.3%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26c",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.2%",
+    "term": "Net NPA",
+    "s": [
+     "fy26c",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "15.3%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "dr",
+     "fy26"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "35.1%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26b",
+     "fy26"
+    ]
+   },
+   {
+    "k": "Deposits",
+    "v": "₹3.19 lakh cr (+12.1%)",
+    "term": "Deposits",
+    "s": [
+     "fy26d",
+     "fy26f"
+    ]
+   },
+   {
+    "k": "Advances",
+    "v": "₹2.73 lakh cr (+11.1%)",
+    "term": "Advances",
+    "s": [
+     "fy26d",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Net interest margin (Q4)",
+    "v": "2.7%",
+    "term": "Net interest margin",
+    "s": [
+     "fy26d",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "None declared",
+    "term": "Dividend",
+    "s": [
+     "dr",
+     "fy26d"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹1,080 cr, up 65% from ₹654 cr.",
+     "s": [
+      "q2",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Deposits ₹3.54 lakh cr (+19.5%); advances ₹3.10 lakh cr (+23.7%).",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.2%, Net NPA 0.2%; CET1 13.7%. Booking the AT-1 ruling could cut CET1 by about 2.5 percentage points.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "q2d",
+      "at1"
+     ]
+    }
+   ]
+  },
+  "say": "YES Bank earned ₹1,080 crore last quarter, up 65%, with bad loans at just 1.2%, but the Supreme Court's AT-1 bond ruling is now a key capital issue."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   },
+   {
+    "name": "Yes Bank",
+    "v": 3476,
+    "s": [
+     "dr"
+    ],
+    "me": true
+   },
+   {
+    "name": "AU Small Finance Bank",
+    "v": 2641,
+    "s": [
+     "r_au"
+    ]
+   },
+   {
+    "name": "IDFC FIRST Bank",
+    "v": 1636,
+    "s": [
+     "r_idfc"
+    ]
+   },
+   {
+    "name": "IndusInd Bank",
+    "v": 933,
+    "s": [
+     "r_iib"
+    ]
+   }
+  ],
+  "note": "YES Bank is mid-sized among private banks; its profit is rising fast from a low base after the 2020 rescue."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches",
+    "v": "1,334"
+   },
+   {
+    "k": "ATMs",
+    "v": "1,364"
+   },
+   {
+    "k": "Branches added in FY26",
+    "v": "82"
+   }
+  ],
+  "local": "YES Bank is adding branches every year, so many entry roles are in branch banking, retail sales and relationship management.",
+  "s": [
+   "fy26",
+   "net",
+   "esg"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees (Mar 2026)",
+    "v": "29,577"
+   }
+  ],
+  "note": "From the bank's Q4 FY26 investor presentation; other profiles round it to 29,000+. The new CEO and SMBC partnership are shaping the next phase."
+ },
+ "csr": {
+  "t": "YES Bank focuses on sustainability: it aims for net-zero operational emissions by 2030, has planted about 6 lakh trees and was an early issuer of green bonds in India.",
+  "s": [
+   "esg",
+   "wiki"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Profit up 65% in Q2 FY27",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Low bad loans: Gross NPA 1.2%",
+    "s": [
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Margin of about 2.6–2.7%, low for a private bank",
+    "s": [
+     "q2",
+     "fy26d"
+    ]
+   },
+   {
+    "t": "No dividend for FY26",
+    "s": [
+     "dr"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "SMBC as largest shareholder can bring business and global links",
+    "s": [
+     "smbc",
+     "smbc4"
+    ]
+   },
+   {
+    "t": "Moody's upgraded its rating to Ba1 in May 2026",
+    "s": [
+     "moody",
+     "moody2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Supreme Court AT-1 ruling could cut capital by about 2.5 percentage points",
+    "s": [
+     "at1",
+     "q2d"
+    ]
+   },
+   {
+    "t": "Bigger private banks compete for the same customers",
+    "s": [
+     "hdfc",
+     "icici",
+     "axis"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "AT-1 bond": "Additional Tier-1 bond: a special bond that counts as bank capital and can be written off if the bank fails. YES Bank's ₹8,415 crore AT-1 write-off in 2020 was struck down by the courts.",
+  "Moratorium": "A temporary freeze set by the RBI on a troubled bank's payments and withdrawals while it is rescued.",
+  "CET1 ratio": "Common Equity Tier 1: the bank's core capital (mainly shareholders' money) as a share of its risk-weighted loans."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.2%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.2%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "CET1 ratio",
+     "v": "13.7%"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "14.5%",
+     "term": "Capital adequacy ratio"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "1,334"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "19.5%"
+    },
+    {
+     "k": "Loan growth",
+     "v": "23.7%"
+    },
+    {
+     "k": "CEO",
+     "v": "Vinay M. Tonse"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "29,577"
+    },
+    {
+     "k": "Branches",
+     "v": "1,334"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,080 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Largest shareholder",
+     "v": "SMBC (Japan)"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "29,577"
+    },
+    {
+     "k": "Branches",
+     "v": "1,334"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,080 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Largest shareholder",
+     "v": "SMBC (Japan)"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "29,577"
+    },
+    {
+     "k": "Branches",
+     "v": "1,334"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,080 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Largest shareholder",
+     "v": "SMBC (Japan)"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "29,577"
+    },
+    {
+     "k": "Branches",
+     "v": "1,334"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,080 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Largest shareholder",
+     "v": "SMBC (Japan)"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What is an AT-1 bond, and why does the Supreme Court ruling matter for YES Bank?",
+     "a": "AT-1 bonds count as bank capital. The 2020 write-off of ₹8,415 cr was struck down, so the bank may have to restore them, which could cut its CET1 ratio by about 2.5 percentage points."
+    },
+    {
+     "q": "YES Bank's profit rose 44.5% in FY26. What drove it?",
+     "a": "Higher net interest income, better margins, lower bad loans (Gross NPA 1.3%) and lower costs as a share of income."
+    },
+    {
+     "q": "Why is YES Bank's margin lower than many private banks?",
+     "a": "It carries more low-yield corporate loans and mandated RIDF deposits from its past; it is shifting to retail and low-cost CASA deposits."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you rebuild the YES Bank brand after the 2020 crisis?",
+     "a": "Highlight the turnaround, strong backers like SMBC and SBI, low bad loans and good service, through simple, honest campaigns."
+    },
+    {
+     "q": "How can YES Bank use its SMBC link in marketing?",
+     "a": "Target Japanese and global companies in India and position the bank as having global strength with local reach."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you keep staff motivated through a leadership change?",
+     "a": "Clear communication from the new CEO, stable goals, recognition and steady training."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "A customer remembers the 2020 moratorium. How do you reassure them?",
+     "a": "Acknowledge it honestly; explain the rescue, RBI regulation, deposit insurance basics, strong shareholders and today's profits."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you help a bank grow its branch network quickly?",
+     "a": "Choose locations with data, standardise set-up, train staff early and track each new branch's results."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about YES Bank?",
+     "a": "A Mumbai private bank started in 2004, rescued in 2020, now led by MD & CEO Vinay M. Tonse with SMBC as largest shareholder, earning ₹3,476 cr in FY26."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads YES Bank?",
+     "a": "Vinay M. Tonse is MD & CEO (since Apr 2026); R. Gandhi is Part-time Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the Supreme Court's AT-1 bond ruling (Oct 2026) or the 65% profit jump in Q2 FY27."
+    },
+    {
+     "q": "Why YES Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "YES Bank is one of India's most interesting turnaround stories: rescued in 2020, it grew profit 44.5% in FY26 and 65% last quarter, now has Japan's SMBC as its largest shareholder and a new CEO. Joining now means learning how a bank rebuilds and grows. I want to contribute to [your role] in this next phase.",
+  "ask": [
+   "How will the partnership with SMBC shape the bank's growth?",
+   "How is the bank planning its capital after the AT-1 ruling?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Was it right to write off YES Bank's AT-1 bonds in 2020?",
+    "for": "It saved the bank and protected depositors.",
+    "against": "The Supreme Court found the write-off was not valid; investors' rights matter too."
+   },
+   {
+    "t": "Should foreign banks own large stakes in Indian banks?",
+    "for": "They bring capital, skills and global links, like SMBC at YES Bank.",
+    "against": "Key banks may be influenced by foreign priorities."
+   }
+  ],
+  "avoid": [
+   "Don't name Rana Kapoor or Prashant Kumar as the current CEO; Vinay M. Tonse leads since Apr 2026.",
+   "Don't say SBI is the largest shareholder; SMBC is, since Sep 2025.",
+   "Don't call YES Bank a public sector bank; it is a private bank."
+  ],
+  "night": [
+   "MD & CEO: Vinay M. Tonse · Chairman: R. Gandhi",
+   "Founded 2004 · HQ Mumbai",
+   "FY26 profit: ₹3,476 cr (+44.5%)",
+   "Q2 FY27 profit: ₹1,080 cr (+65%)",
+   "Gross NPA 1.2% (Sep 2026)",
+   "Largest shareholder: SMBC (Japan)",
+   "Know the Oct 2026 AT-1 bond ruling",
+   "Rivals: HDFC Bank, ICICI Bank, Axis, Kotak",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is YES Bank's MD & CEO?",
+   "o": [
+    "Prashant Kumar",
+    "Vinay M. Tonse",
+    "Rana Kapoor"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who became YES Bank's largest shareholder in 2025?",
+   "o": [
+    "SBI",
+    "SMBC (Japan)",
+    "LIC"
+   ],
+   "a": 1
+  },
+  {
+   "q": "In which year did the RBI put YES Bank under a moratorium?",
+   "o": [
+    "2016",
+    "2020",
+    "2024"
+   ],
+   "a": 1
+  },
+  {
+   "q": "YES Bank's FY26 net profit was about…",
+   "o": [
+    "₹347 cr",
+    "₹3,476 cr",
+    "₹34,760 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "The Oct 2026 Supreme Court ruling was about…",
+   "o": [
+    "AT-1 bonds",
+    "Credit cards",
+    "Branch closures"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "17 Nov 2026"
+}

@@ -1,0 +1,1168 @@
+{
+ "id": "canara-bank",
+ "name": "Canara Bank",
+ "short": "CB",
+ "color": "#0072BC",
+ "line": "A 120-year-old public sector bank from Karnataka, now with over 10,000 branches",
+ "sector": "Public sector banking",
+ "hq": "Bengaluru, Karnataka",
+ "listed": "NSE: CANBK · BSE: 532483",
+ "website": "https://www.canarabank.bank.in",
+ "news_query": "Canara Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/canara-bank-net-profit-rises-840-to-5175-crore-in-q2-fy27"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1736714"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (HelloBanker)",
+   "url": "https://hellobanker.in/canara-bank-q2-results-fy27-net-profit-rises-8-4-to-₹5175-crore-global-business-crosses-₹30-72-lakh-crore/"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/canara-bank-share-price-gains-over-3-after-q2-fy27-earnings-results-net-profit-up-6-5-yoy"
+  },
+  "q2e": {
+   "label": "Q2 FY27 NII and NIM (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1736841"
+  },
+  "q2f": {
+   "label": "Q2 FY27 results (Ventura Securities)",
+   "url": "https://www.venturasecurities.com/?p=65423"
+  },
+  "fy26": {
+   "label": "FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/canara-bank-q4-profit-declines-10-to-4506-crore-despite-lower-npas-fy26-profit-crosses-19186-crore"
+  },
+  "fy26b": {
+   "label": "FY26 results (DSIJ)",
+   "url": "https://insights.dsij.in/dsijarticledetail/canara-bank-reports-q4fy26-results-pat-declines-10-recommends-rs-420-dividend-id021-57013"
+  },
+  "fy26c": {
+   "label": "FY26 results (Indian Masterminds)",
+   "url": "https://indianmasterminds.com/news/canara-bank-q4-fy26-results-profit-dividend-npa-203239/"
+  },
+  "fy26d": {
+   "label": "Q4 FY26 results (Upstox)",
+   "url": "https://upstox.com/news/market-news/earnings/canara-bank-q4-net-profit-declines-10-yo-y-to-4-506-crore-asset-quality-improves-4-2-share-dividend-recommended/article-193466/"
+  },
+  "fy26e": {
+   "label": "Q4 FY26 results (Arihant / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25131010209"
+  },
+  "iifl": {
+   "label": "Canara Bank company summary (IIFL)",
+   "url": "https://www.indiainfoline.com/company/canara-bank/summary/5471"
+  },
+  "brsr": {
+   "label": "Canara Bank BRSR 2025-26 (official)",
+   "url": "https://www.canarabank.bank.in/documents/d/guest/business-20responsibility-20-20sustainability-20report-202025-26"
+  },
+  "emp": {
+   "label": "PSU bank headcount FY26 (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/amp/story/economy-and-policy/eight-public-sector-banks-add-13223-employees-in-fy26-sbi-largest-recruiter"
+  },
+  "emp2": {
+   "label": "PSU bank headcount FY26 (HR Katha)",
+   "url": "https://www.hrkatha.com/news/public-sector-banks-add-over-13000-employees-in-fy26-report/"
+  },
+  "about": {
+   "label": "Canara Bank: About us (official)",
+   "url": "https://canarabank.com/About-Us.aspx"
+  },
+  "f120": {
+   "label": "Canara Bank turns 120 (Indian Masterminds)",
+   "url": "https://indianmasterminds.com/news/canara-bank-turns-120-celebrates-legacy-with-zero-balance-revolution-and-digital-innovation-126322/"
+  },
+  "b10k": {
+   "label": "120th Founders' Day and 10,000th branch (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/canara-bank-marks-120th-founders-day"
+  },
+  "merge": {
+   "label": "RBI: Syndicate Bank branches become Canara Bank branches",
+   "url": "https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=49591"
+  },
+  "merge2": {
+   "label": "PSU bank mergers effective 1 Apr 2020 (The News Minute)",
+   "url": "https://www.thenewsminute.com/money/all-psu-bank-mergers-come-effect-april-1-rbi-121388"
+  },
+  "ceo": {
+   "label": "Brajesh Kumar Singh takes charge (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/canara-bank-gets-new-chief-brajesh-kumar-singh-takes-charge-as-md-ceo-till-april-2029"
+  },
+  "ceo2": {
+   "label": "Govt appoints Brajesh Kumar Singh (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/news/govt-appoints-brajesh-kumar-singh-as-md-ceo-of-canara-bank"
+  },
+  "ceo3": {
+   "label": "Brajesh Kumar Singh named MD & CEO (People Matters)",
+   "url": "https://www.peoplematters.in/news/appointments/brajesh-kumar-singh-named-md-and-ceo-of-canara-bank-until-2029-50044"
+  },
+  "int": {
+   "label": "Interim MD & CEO from Jan 2026 (People Matters)",
+   "url": "https://www.peoplematters.in/news/appointments/canara-bank-names-hardeep-singh-ahluwalia-interim-md-and-ceo-from-jan-2026-47864"
+  },
+  "int2": {
+   "label": "Interim MD & CEO from Jan 2026 (PSU Connect)",
+   "url": "https://psuconnect.in/bank-news/hardeep-singh-ahluwalia-assumes-additional-charge-as-md-ceo-of-canara-bank"
+  },
+  "board": {
+   "label": "Canara Bank: Board of Directors (official)",
+   "url": "https://www.canarabank.bank.in/board-of-directors"
+  },
+  "chair": {
+   "label": "Chairman's tenure ends (Board Stewardship)",
+   "url": "https://boardstewardship.com/vijay-srirangan-concludes-his-tenure-as-part-time-non-official-director-non-executive-chairman-of-canara-bank/"
+  },
+  "chair2": {
+   "label": "Chairman's tenure ends (ScanX)",
+   "url": "https://scanx.trade/stock-market-news/stocks/canara-bank-s-non-executive-chairman-vijay-srirangan-concludes-tenure/24009524"
+  },
+  "gov": {
+   "label": "Canara Bank shareholding, 30 Sep 2026 (official BSE filing)",
+   "url": "https://www.canarabank.bank.in/documents/d/guest/shareholding-pattern-30-09-2026-bse"
+  },
+  "gov2": {
+   "label": "Canara Bank shareholding (Upstox)",
+   "url": "https://upstox.com/stocks/canara-bank-shareholding/"
+  },
+  "amc": {
+   "label": "Canara Robeco AMC IPO (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/ipo/canara-robeco-amc-sets-ipo-price-band-at-253-266-canara-bank-orix-to-divest-125100600176_1.html"
+  },
+  "amc2": {
+   "label": "Canara Bank's Canara Robeco stake sale (Business Today)",
+   "url": "https://www.businesstoday.in/markets/ipo-corner/story/canara-bank-set-for-over-13100-return-from-canara-robeco-amc-ipo-stake-sale-497470-2025-10-09"
+  },
+  "amc3": {
+   "label": "Canara Robeco AMC lists at 5% premium (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/canara-robeco-amc-shares-makes-a-muted-d-st-debut-stock-list-at-5-premium-498375-2025-10-16"
+  },
+  "life": {
+   "label": "Canara HSBC Life IPO (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/ipo/canara-hsbc-life-insurance-2-517-crore-ipo-price-band-set-at-100-106-key-details-125100700146_1.html"
+  },
+  "life2": {
+   "label": "Canara HSBC Life lists at issue price (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/canara-hsbc-life-insurance-shares-make-muted-stock-market-debut-stock-list-at-issue-price-498702-2025-10-17"
+  },
+  "life3": {
+   "label": "Canara HSBC Life flat debut (Business Standard)",
+   "url": "https://www.business-standard.com/markets/news/canara-hsbc-life-insurance-makes-flat-debut-at-106-gains-2-post-listing-125101700248_1.html"
+  },
+  "minbal": {
+   "label": "Minimum balance charges waived (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/canara-bank-waives-all-charges-for-non-maintenance-of-minimum-balance-125053100671_1.html"
+  },
+  "minbal2": {
+   "label": "Minimum balance charges waived (Canara Bank press release)",
+   "url": "https://canarabank.com/UploadedFiles/Pdf/31.05.2025%209only%20in%20English)%20Canara%20Bank%20Waives%20Charges%20for%20Non-Maintenance%20of%20Minimum%20Balance%20for%20all%20SB%20Accounts.pdf"
+  },
+  "rbi": {
+   "label": "RBI penalty on Canara Bank, 5 Jun 2026 (RBI press release)",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62876"
+  },
+  "rbi2": {
+   "label": "RBI penalty over KYC lapses (Telangana Today)",
+   "url": "https://telanganatoday.com/rbi-imposes-rs-41-8-lakh-penalty-on-canara-bank-over-kyc-lapses"
+  },
+  "csr": {
+   "label": "Canara Bank Centenary Rural Development Trust (official)",
+   "url": "https://www.canarabank.bank.in/canara-bank-centenary-rural-development-trust-cbcrdt-"
+  },
+  "csr2": {
+   "label": "Canara Bank CSR report (The CSR Journal)",
+   "url": "https://thecsrjournal.in/complete-csr-report-canara-bank-india-2/"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Canara_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 19187,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · +12.7%",
+   "term": "Net profit"
+  },
+  {
+   "v": 10097,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 81827,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹5,175 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +8.4%"
+  },
+  {
+   "v": "1.33%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "0.30%",
+   "k": "Net NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "17.19%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Founded in Mangalore in July 1906 by Ammembal Subba Rao Pai; head office now in Bengaluru.",
+   "s": [
+    "about",
+    "f120",
+    "b10k",
+    "brsr"
+   ]
+  },
+  {
+   "t": "A public sector bank: the Government of India owns 62.93% of its shares (Sep 2026). Syndicate Bank merged into it on 1 April 2020.",
+   "s": [
+    "gov",
+    "gov2",
+    "merge",
+    "merge2"
+   ]
+  },
+  {
+   "t": "Brajesh Kumar Singh, earlier Executive Director of Indian Bank, became MD & CEO on 1 June 2026, after K. Satyanarayana Raju retired in Dec 2025.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceo3",
+    "int2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 standalone net profit rose 12.7% to ₹19,187 crore; Gross NPA fell to 1.84% from 2.94%.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy26d"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit rose 8.4% to ₹5,175 crore; Gross NPA improved further to 1.33%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1906",
+   "t": "Founded in Mangalore by Ammembal Subba Rao Pai.",
+   "s": [
+    "about",
+    "f120"
+   ]
+  },
+  {
+   "y": "1969",
+   "t": "Nationalised along with 13 other banks.",
+   "s": [
+    "about",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Apr 2020",
+   "t": "Syndicate Bank merged into Canara Bank.",
+   "s": [
+    "merge",
+    "merge2"
+   ]
+  },
+  {
+   "y": "Oct 2025",
+   "t": "Subsidiaries Canara Robeco AMC and Canara HSBC Life listed on the stock exchanges through IPOs.",
+   "s": [
+    "amc",
+    "amc3",
+    "life",
+    "life2"
+   ]
+  },
+  {
+   "y": "Nov 2025",
+   "t": "Opened its 10,000th branch, at Budigere Cross, Bengaluru, on its 120th Founders' Day.",
+   "s": [
+    "b10k",
+    "f120"
+   ]
+  },
+  {
+   "y": "Jun 2026",
+   "t": "Brajesh Kumar Singh took charge as MD & CEO.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Canara Bank earns mainly from the gap between interest on loans and interest paid on deposits, plus fees. It lends heavily to retail, farm and MSME borrowers (its 'RAM' book), and earns from subsidiaries in insurance, mutual funds and housing finance.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends to people, farmers, MSMEs and companies",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹11,005 cr (+20%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2e",
+     "q2f"
+    ]
+   },
+   {
+    "k": "Global business Sep 2026",
+    "v": "₹30.72 lakh cr (+15.9%)",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) and Government of India (as main owner)",
+  "points": [
+   "The Government appoints the MD & CEO of public sector banks; Canara Bank had an interim chief for about five months in 2026.",
+   "Public sector banks merged into fewer, bigger banks in 2019–2020; Canara Bank absorbed Syndicate Bank.",
+   "Big theme for interviews: banks listing their insurance and mutual fund arms to unlock value, as Canara did in 2025."
+  ],
+  "s": [
+   "ceo",
+   "int",
+   "merge",
+   "amc2"
+  ]
+ },
+ "people": [
+  {
+   "ini": "BS",
+   "name": "Brajesh Kumar Singh",
+   "role": "MD & CEO",
+   "since": "since 1 Jun 2026",
+   "note": "30+ years in banking; earlier Executive Director of Indian Bank (from Mar 2024). Term runs to 30 Apr 2029.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceo3"
+   ]
+  },
+  {
+   "ini": "HA",
+   "name": "Hardeep Singh Ahluwalia",
+   "role": "Executive Director",
+   "since": "interim MD & CEO from 1 Jan 2026",
+   "note": "Held additional charge as MD & CEO after K. Satyanarayana Raju retired on 31 Dec 2025.",
+   "s": [
+    "int",
+    "int2",
+    "board"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹19,187 cr (+12.7%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.84%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.43%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "17.04%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26c",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Global deposits",
+    "v": "₹15.69 lakh cr (+9.7%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26d",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Global advances",
+    "v": "₹12.20 lakh cr (+16.3%)",
+    "term": "Advances",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹4.20 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹5,175 cr, up 8.4% (standalone).",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Global deposits ₹16.97 lakh cr (+13.1%); global advances ₹13.75 lakh cr (+19.5%).",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.33%, Net NPA 0.30%; capital adequacy 17.19%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "q2d"
+     ]
+    }
+   ]
+  },
+  "say": "Canara Bank earned ₹19,187 crore in FY26 and has cut its Gross NPA to 1.33%, while its global business crossed ₹30 lakh crore."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "State Bank of India",
+    "v": 80032,
+    "s": [
+     "sbi"
+    ]
+   },
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Bank of Baroda",
+    "v": 20021,
+    "s": [
+     "r_bob"
+    ]
+   },
+   {
+    "name": "Canara Bank",
+    "v": 19187,
+    "s": [
+     "fy26"
+    ],
+    "me": true
+   },
+   {
+    "name": "Punjab National Bank",
+    "v": 16904,
+    "s": [
+     "r_pnb"
+    ]
+   }
+  ],
+  "note": "Among the public sector banks shown, Canara Bank's FY26 profit is behind SBI and Bank of Baroda and ahead of PNB."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches (Mar 2026)",
+    "v": "10,097"
+   },
+   {
+    "k": "ATMs (Mar 2026)",
+    "v": "11,306"
+   },
+   {
+    "k": "Overseas",
+    "v": "London, New York, Dubai (DIFC), IBU GIFT City"
+   }
+  ],
+  "local": "Canara Bank's roots are in coastal Karnataka, but after the Syndicate Bank merger it has branches across all states, and new officers often start in rural and semi-urban branches.",
+  "s": [
+   "fy26e",
+   "iifl",
+   "brsr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees (Mar 2026)",
+    "v": "81,827"
+   },
+   {
+    "k": "Added in FY26",
+    "v": "567"
+   },
+   {
+    "k": "Officer hiring",
+    "v": "Mainly IBPS PO + specialist notices"
+   }
+  ],
+  "note": "From the FY 2025-26 BRSR and reports on public sector bank headcount (31 Mar 2026).",
+  "s": [
+   "brsr",
+   "emp",
+   "emp2"
+  ]
+ },
+ "csr": {
+  "t": "Canara Bank's CSR centres on rural self-employment and skills: its Centenary Rural Development Trust runs Rural Self Employment Training Institutes, IT training institutes and artisan centres, and a separate trust runs financial literacy centres.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Profit up 12.7% in FY26 to ₹19,187 cr",
+    "s": [
+     "fy26"
+    ]
+   },
+   {
+    "t": "Bad loans falling: Gross NPA 1.33% (Sep 2026)",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Q4 FY26 profit fell about 10% year on year",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "t": "Leadership gap: interim MD & CEO for five months; no non-executive Chairman since Nov 2025",
+    "s": [
+     "int",
+     "ceo",
+     "chair",
+     "board"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Loans growing 19.5%, retail loans 31.6% (Q2 FY27)",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "t": "Listed stakes in Canara Robeco AMC and Canara HSBC Life",
+    "s": [
+     "amc2",
+     "life2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Private banks compete for urban customers",
+    "s": [
+     "hdfc",
+     "icici"
+    ]
+   },
+   {
+    "t": "Compliance risk: RBI fined it ₹41.8 lakh for KYC lapses (Jun 2026)",
+    "s": [
+     "rbi",
+     "rbi2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and key ratios.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Amalgamation": "Two or more companies combining into one. Syndicate Bank merged into Canara Bank in 2020.",
+  "IBPS": "Institute of Banking Personnel Selection, which runs common recruitment exams for public sector banks.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public. Canara Bank sold part of its stake in two subsidiaries through IPOs in 2025.",
+  "RAM credit": "Retail, Agriculture and MSME loans: the small-borrower part of a bank's loan book."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.33%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.30%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "17.19%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "NII growth",
+     "v": "20%",
+     "term": "Net Interest Income"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "10,097"
+    },
+    {
+     "k": "ATMs",
+     "v": "11,306"
+    },
+    {
+     "k": "Loan growth",
+     "v": "19.5%"
+    },
+    {
+     "k": "Govt stake",
+     "v": "62.93%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "81,827"
+    },
+    {
+     "k": "Branches",
+     "v": "10,097"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹19,187 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Brajesh Kumar Singh"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "81,827"
+    },
+    {
+     "k": "Branches",
+     "v": "10,097"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹19,187 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Brajesh Kumar Singh"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "81,827"
+    },
+    {
+     "k": "Branches",
+     "v": "10,097"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹19,187 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Brajesh Kumar Singh"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "81,827"
+    },
+    {
+     "k": "Branches",
+     "v": "10,097"
+    },
+    {
+     "k": "Net profit FY26",
+     "v": "₹19,187 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Brajesh Kumar Singh"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Public sector banks hire most officers through the common IBPS PO exam, and specialist officers through their own notices. Campus hiring varies, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "IBPS PO preliminary exam",
+    "d": "English, quantitative aptitude, reasoning"
+   },
+   {
+    "t": "IBPS PO main exam",
+    "d": "Reasoning, data analysis, banking and economy awareness, English"
+   },
+   {
+    "t": "Interview",
+    "d": "Personality, banking knowledge and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "How did Canara Bank cut Gross NPA from 2.94% to 1.33% in about 18 months?",
+     "a": "Better recoveries, write-offs of old bad loans, fewer new defaults and fast loan growth, which also spreads bad loans over a bigger book."
+    },
+    {
+     "q": "Why did Canara Bank sell stakes in its AMC and life insurance arms?",
+     "a": "To unlock value and raise money without issuing new bank shares, while still keeping control as promoter."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "Canara Bank removed minimum-balance charges on all savings accounts in 2025. How would you promote that?",
+     "a": "Simple 'no minimum balance' messaging for students, first-time earners and rural customers, through branches, the app and local-language campaigns."
+    },
+    {
+     "q": "How would you sell Canara HSBC Life policies through bank branches?",
+     "a": "Train staff to match plans to customer needs, target home-loan and salary customers, and explain benefits honestly."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you manage 81,000+ employees through a change in MD & CEO?",
+     "a": "Clear communication from the new leader, stable priorities, recognition and regular town halls across zones."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a Canara Bank savings account to a college student.",
+     "a": "Ask about needs, then link zero minimum balance, UPI and the app, and a trusted 120-year-old bank. Close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "RBI fined Canara Bank for KYC lapses. How would you fix KYC operations?",
+     "a": "Automated uploads to the central KYC registry, daily exception reports, clear owner per branch and regular audits."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Canara Bank?",
+     "a": "A public sector bank founded in 1906 in Mangalore, HQ Bengaluru, led by MD & CEO Brajesh Kumar Singh, with ₹19,187 cr FY26 profit and over 10,000 branches."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Canara Bank?",
+     "a": "Brajesh Kumar Singh is MD & CEO (since 1 June 2026)."
+    },
+    {
+     "q": "Which bank merged into Canara Bank?",
+     "a": "Syndicate Bank, from 1 April 2020."
+    },
+    {
+     "q": "Why Canara Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Canara Bank has 120 years of trust, more than 10,000 branches, and strong momentum: profit of ₹19,187 crore in FY26 and bad loans down to 1.33%. Its reach in small towns and villages means my work would directly help families and small businesses. I want to grow with Canara Bank and contribute to [your role].",
+  "ask": [
+   "What are the new MD & CEO's top priorities for the bank?",
+   "Which loan segments is the bank growing fastest?",
+   "What does the first posting for a new officer usually look like?"
+  ],
+  "gd": [
+   {
+    "t": "Should public sector banks list their subsidiaries?",
+    "for": "Listing unlocks value and brings market discipline, as with Canara Robeco and Canara HSBC Life.",
+    "against": "Selling stakes reduces the bank's share of future profits."
+   },
+   {
+    "t": "Should banks drop minimum-balance charges?",
+    "for": "It helps poorer customers and builds trust, as Canara Bank did in 2025.",
+    "against": "Banks lose fee income and may cut other services."
+   }
+  ],
+  "avoid": [
+   "Don't name K. Satyanarayana Raju as CEO; he retired in Dec 2025. Brajesh Kumar Singh is MD & CEO.",
+   "Don't say Syndicate Bank still exists separately; it merged into Canara Bank in 2020.",
+   "Don't confuse Canara Bank's standalone Q2 profit (₹5,175 cr) with the consolidated figure (₹5,182 cr)."
+  ],
+  "night": [
+   "MD & CEO: Brajesh Kumar Singh (since Jun 2026)",
+   "Founded 1906, Mangalore · HQ Bengaluru",
+   "FY26 profit: ₹19,187 cr (+12.7%)",
+   "Q2 FY27 profit: ₹5,175 cr (+8.4%)",
+   "Gross NPA 1.33% (Sep 2026)",
+   "Rivals: SBI, Bank of Baroda, PNB",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Canara Bank's MD & CEO?",
+   "o": [
+    "K. Satyanarayana Raju",
+    "Brajesh Kumar Singh",
+    "Ashok Chandra"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which bank merged into Canara Bank in 2020?",
+   "o": [
+    "Vijaya Bank",
+    "Syndicate Bank",
+    "Andhra Bank"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where was Canara Bank founded in 1906?",
+   "o": [
+    "Chennai",
+    "Mumbai",
+    "Mangalore"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Canara Bank's FY26 net profit was about…",
+   "o": [
+    "₹19,200 cr",
+    "₹9,200 cr",
+    "₹49,200 cr"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which Canara Bank subsidiaries listed in Oct 2025?",
+   "o": [
+    "Canara Robeco AMC and Canara HSBC Life",
+    "Can Fin Homes and Canbank Factors",
+    "None"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "17 Nov 2026"
+}

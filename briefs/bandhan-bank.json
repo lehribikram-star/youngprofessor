@@ -1,0 +1,1131 @@
+{
+ "id": "bandhan-bank",
+ "name": "Bandhan Bank",
+ "short": "BB",
+ "color": "#E31E24",
+ "line": "A Kolkata bank born from microfinance, now shifting to secured loans",
+ "sector": "Banking",
+ "hq": "Kolkata, West Bengal",
+ "listed": "NSE: BANDHANBNK · BSE: 541153",
+ "website": "https://bandhan.bank.in",
+ "news_query": "Bandhan Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/bandhan-bank-reports-substantial-456-profit-increase-in-q2-fy27-advances-and-deposits-grow"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/bandhan-bank-q2-pat-jumps-5x-to-622-crore"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-banks/bandhan-banks-q2-pat-grows-5-fold-at-rs622-cr"
+  },
+  "q2d": {
+   "label": "Q2 FY27 business update (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/bandhan-bank-q2-fy27-loans-rise-13-percent-deposits-up-9-percent/"
+  },
+  "q2e": {
+   "label": "Q2 FY27 investor presentation summary (Investywise)",
+   "url": "https://www.investywise.com/?p=124636"
+  },
+  "fy26": {
+   "label": "Bandhan Bank Q4 FY26 press release (official)",
+   "url": "https://bandhan.bank.in/sites/default/files/2026-04/Press-Release-Q4-FY-25-26.pdf"
+  },
+  "fy26b": {
+   "label": "FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bandhan-bank-q4-results-fy26-pat-534-crore-28-april/"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1688172"
+  },
+  "fy26d": {
+   "label": "FY26 results (Investywise)",
+   "url": "https://www.investywise.com/?p=98825"
+  },
+  "fy25": {
+   "label": "Bandhan Bank Q4 FY25 press release (official)",
+   "url": "https://bandhanbank.com/sites/default/files/2025-04/Press-Release-Q4-FY-24-25.pdf"
+  },
+  "fy25b": {
+   "label": "FY25 results (Bajaj Broking)",
+   "url": "https://www.bajajbroking.in/share-market-news/bandhan-bank-q4-results-fy-24-25"
+  },
+  "q1": {
+   "label": "Q1 FY26 results (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/quarterly-results/bandhan-bank-q1-fy26-results-net-profit-down-65-on-rising-bad-loans-125071800917_1.html"
+  },
+  "mfi": {
+   "label": "Microfinance stress hits Q1 FY26 (Outlook Business / PTI)",
+   "url": "https://www.outlookbusiness.com/corporate/stress-on-microfinance-business-pulls-down-q1-net-of-bandhan-bank-mdceo"
+  },
+  "story": {
+   "label": "Bandhan Bank: Our Story (official)",
+   "url": "https://www.bandhan.bank.in/Our-Story"
+  },
+  "story2": {
+   "label": "The Bandhan story (Value Research)",
+   "url": "https://valueresearchonline.com/stories/32260/the-bandhan-story"
+  },
+  "gruh": {
+   "label": "Gruh Finance merges into Bandhan Bank (Business Standard)",
+   "url": "https://www.business-standard.com/amp/article/finance/hdfc-ltd-promoted-gruh-finance-merges-with-kolkata-based-bandhan-bank-119102400822_1.html"
+  },
+  "ghosh": {
+   "label": "Founder C.S. Ghosh to step down in July 2024 (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/bandhan-bank-shares-fall-65percent-as-md-and-ceo-resigns/article-78845/"
+  },
+  "ceo": {
+   "label": "New MD & CEO takes charge (Business Standard)",
+   "url": "https://www.business-standard.com/companies/news/bandhan-bank-new-md-ceo-takes-charge-124110100445_1.html"
+  },
+  "ceo2": {
+   "label": "Partha Pratim Sengupta assumes charge (Millennium Post)",
+   "url": "https://www.millenniumpost.in/business/partha-pratim-sengupta-assumes-charge-as-bandhan-bank-md-ceo-585254"
+  },
+  "chair": {
+   "label": "RBI approval for Part-time Chairman (Bandhan Bank filing)",
+   "url": "https://www.bandhan.bank.in/sites/default/files/2026-04/RBI-prior-approval-for-appointment-of-Part-time-Chairman.pdf"
+  },
+  "chair2": {
+   "label": "RBI approves Debasish Panda as Chairman (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/bandhan-bank-share-price-in-focus-after-rbi-approves-appointment-of-debasish-panda-as-part-time-chairman"
+  },
+  "bod": {
+   "label": "Board of Directors: Debasish Panda (official)",
+   "url": "https://bandhan.bank.in/bod-debasish-panda"
+  },
+  "cfo": {
+   "label": "CFO Rajeev Mantri resigns (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/amp/business/bandhan-bank-cfo-rajeev-mantri-resigns-to-step-down-on-september-25-after-nearly-19-months-in-role"
+  },
+  "exec": {
+   "label": "Board re-appoints key executives, Sep 2026 (Investywise)",
+   "url": "https://www.investywise.com/?p=116156"
+  },
+  "card": {
+   "label": "Bandhan Bank launches 4 credit cards (Business Today)",
+   "url": "https://www.businesstoday.in/personal-finance/story/bandhan-bank-launches-4-credit-cards-check-rewards-lounge-access-and-benefits-across-variants-554063-2026-09-09"
+  },
+  "card2": {
+   "label": "Credit card launch (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-banks/cards-to-cater-to-lifestyles-spending-needs"
+  },
+  "csr": {
+   "label": "CSR initiatives on 10th Foundation Day (Bandhan Bank press release)",
+   "url": "https://bandhan.bank.in/sites/default/files/2025-10/Press-release-Bandhan-Bank-announces-CSR-Initiatives-on-10th-Foundation-Day-28-Aug-2025.pdf"
+  },
+  "csr2": {
+   "label": "Bandhan Bank CSR Policy (official)",
+   "url": "https://bandhanbank.com/sites/default/files/2025-02/CSR-Policy-03022025.pdf"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Bandhan_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 1224,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (about −55%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 6400,
+   "fmt": "num",
+   "label": "Banking outlets",
+   "sub": "Sep 2026 · 6,400+"
+  },
+  {
+   "v": 75000,
+   "fmt": "num",
+   "label": "Employees",
+   "sub": "75,000+"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹622 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +456%"
+  },
+  {
+   "v": "3.1%",
+   "k": "Gross NPA",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "6.2%",
+   "k": "Net interest margin",
+   "s": "H1 FY27"
+  },
+  {
+   "v": "18.3%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in 2001 by Chandra Shekhar Ghosh as a microfinance organisation for poor women in rural Bengal; became a universal bank on 23 August 2015.",
+   "s": [
+    "story",
+    "story2"
+   ]
+  },
+  {
+   "t": "Founder Ghosh stepped down as MD & CEO in July 2024; ex-SBI and ex-IOB banker Partha Pratim Sengupta has led the bank since 1 November 2024.",
+   "s": [
+    "ghosh",
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "t": "Stress in its microfinance (EEB) loans cut profit: FY 2025-26 profit fell to ₹1,224 crore from ₹2,745 crore a year earlier.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy25",
+    "mfi"
+   ]
+  },
+  {
+   "t": "Recovery under way: Q2 FY27 (Jul–Sep 2026) profit was ₹622 crore, about 5.5 times a year ago, and Gross NPA fell to 3.1% from 5.0%.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Former IRDAI Chairman Debasish Panda is the new Part-time Chairman (RBI approval, April 2026), and the bank launched its first credit cards in Sep 2026.",
+   "s": [
+    "chair",
+    "chair2",
+    "card",
+    "card2"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2001",
+   "t": "Bandhan started as a not-for-profit microfinance organisation in Bengal.",
+   "s": [
+    "story",
+    "story2"
+   ]
+  },
+  {
+   "y": "Aug 2015",
+   "t": "Began operations as a universal bank, the first microfinance lender in India to do so.",
+   "s": [
+    "story",
+    "story2"
+   ]
+  },
+  {
+   "y": "Oct 2019",
+   "t": "HDFC-promoted Gruh Finance merged into the bank, adding home loans.",
+   "s": [
+    "gruh",
+    "story"
+   ]
+  },
+  {
+   "y": "Jul 2024",
+   "t": "Founder Chandra Shekhar Ghosh stepped down as MD & CEO.",
+   "s": [
+    "ghosh",
+    "ceo"
+   ]
+  },
+  {
+   "y": "Nov 2024",
+   "t": "Partha Pratim Sengupta took charge as MD & CEO.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Sep 2026",
+   "t": "Launched its first credit cards (four variants, on Mastercard).",
+   "s": [
+    "card",
+    "card2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Bandhan earns mainly from the interest gap between its loans and deposits. It began with small loans to women in villages (microfinance, now called EEB) and is now growing secured loans such as home loans, vehicle and business loans to reduce risk.",
+  "flow": [
+   "Customers deposit money (savings, current, FDs)",
+   "Bank lends: microfinance, home, vehicle, business and retail loans",
+   "Earns a wide interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹2,960 cr (+14%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "k": "Net Interest Income FY26",
+    "v": "₹10,830 cr",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "Microfinance loans are unsecured and can turn bad quickly when borrowers take too many loans; this hit Bandhan in 2025.",
+   "RBI must approve a private bank's MD & CEO and Chairman; both changed at Bandhan in 2024–26.",
+   "Big theme for interviews: how a microfinance-born bank diversifies into secured lending."
+  ],
+  "s": [
+   "mfi",
+   "q1",
+   "ceo",
+   "chair"
+  ]
+ },
+ "people": [
+  {
+   "ini": "PS",
+   "name": "Partha Pratim Sengupta",
+   "role": "MD & CEO",
+   "since": "since 1 Nov 2024",
+   "note": "Over three decades at SBI (rose to Deputy MD); MD & CEO of Indian Overseas Bank 2020–22. Three-year term approved by RBI.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "ini": "DP",
+   "name": "Debasish Panda",
+   "role": "Part-time Chairman",
+   "since": "RBI approval Apr 2026",
+   "note": "1987-batch IAS officer; former Chairman of IRDAI and Secretary, Department of Financial Services.",
+   "s": [
+    "chair",
+    "chair2",
+    "bod"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹1,224 cr (FY25: ₹2,745 cr)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy25",
+     "fy25b"
+    ]
+   },
+   {
+    "k": "Net Interest Income",
+    "v": "₹10,830 cr",
+    "term": "Net Interest Income",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Net interest margin",
+    "v": "6.1%",
+    "term": "Net interest margin",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "3.3%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "1.0%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "18.0%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "29%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Deposits",
+    "v": "₹1.66 lakh cr (+10%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹1.50 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹622 cr, up from ₹112 cr a year earlier (+456%).",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Deposits ₹1.73 lakh cr (+9%); loans ₹1.58 lakh cr (+13%); CASA ratio 26.7%.",
+     "term": "Advances",
+     "s": [
+      "q2",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Gross NPA 3.1%, Net NPA 0.9%; capital adequacy 18.3%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c"
+     ]
+    }
+   ]
+  },
+  "say": "Bandhan Bank is recovering from its microfinance stress: profit rose to ₹622 crore last quarter and bad loans fell to 3.1%."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   },
+   {
+    "name": "AU Small Finance Bank",
+    "v": 2641,
+    "s": [
+     "r_au"
+    ]
+   },
+   {
+    "name": "IDFC FIRST Bank",
+    "v": 1636,
+    "s": [
+     "r_idfc"
+    ]
+   },
+   {
+    "name": "Bandhan Bank",
+    "v": 1224,
+    "s": [
+     "fy26"
+    ],
+    "me": true
+   },
+   {
+    "name": "IndusInd Bank",
+    "v": 933,
+    "s": [
+     "r_iib"
+    ]
+   }
+  ],
+  "note": "FY26 profit was low because of microfinance stress; compare recent quarters and growth too."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Banking outlets (Sep 2026)",
+    "v": "6,400+"
+   },
+   {
+    "k": "States & UTs",
+    "v": "35 of 36"
+   },
+   {
+    "k": "Customers",
+    "v": "3.2 crore+"
+   }
+  ],
+  "local": "Bandhan's roots are in East India: about a third of its loans are in the Eastern region, and many roles are in branch banking and village-level lending.",
+  "s": [
+   "card",
+   "fy26",
+   "q2c",
+   "q2e"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees",
+    "v": "75,000+"
+   }
+  ],
+  "note": "From the bank's FY26 results release and Q2 FY27 coverage. The CFO resigned in 2026 and the board re-appointed key executives in Sep 2026."
+ },
+ "csr": {
+  "t": "Bandhan's CSR focuses on healthcare, environment and education, especially for women and rural families; for its 10th anniversary it planted 1 lakh trees and donated 10 ambulances.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "High margin: NIM about 6%",
+    "s": [
+     "fy26",
+     "q2b"
+    ]
+   },
+   {
+    "t": "Strong capital: adequacy 18.3%",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "FY26 profit fell to ₹1,224 cr from ₹2,745 cr",
+    "s": [
+     "fy26",
+     "fy25"
+    ]
+   },
+   {
+    "t": "Gross NPA 3.1%, higher than large private peers",
+    "s": [
+     "q2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Profit recovery: ₹622 cr in Q2 FY27",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "t": "New credit cards (Sep 2026) and secured loans diversify income",
+    "s": [
+     "card",
+     "card2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Microfinance loans can turn bad quickly, as in 2025",
+    "s": [
+     "mfi",
+     "q1"
+    ]
+   },
+   {
+    "t": "Bigger private banks compete for deposits; CASA fell to 26.7%",
+    "s": [
+     "q2d",
+     "hdfc",
+     "icici"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Microfinance": "Small loans, often to women's groups in villages, without collateral. Bandhan calls this business EEB (Emerging Entrepreneurs Business).",
+  "Secured loan": "A loan backed by an asset, such as a house or vehicle, that the bank can recover if the borrower does not pay.",
+  "Universal bank": "A full-service bank that can offer all banking products to all customers."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "3.1%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.9%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "18.3%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "6.2%",
+     "term": "Net interest margin"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Customers",
+     "v": "3.2 crore+"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "6,400+"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "26.7%",
+     "term": "CASA ratio"
+    },
+    {
+     "k": "Loan growth",
+     "v": "13%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "6,400+"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹622 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "6,400+"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹622 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "6,400+"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹622 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "6,400+"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹622 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "HQ",
+     "v": "Kolkata"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did Bandhan's FY26 profit fall so much?",
+     "a": "Stress in its microfinance (EEB) book raised bad loans and provisions, especially early in the year; profit fell to ₹1,224 cr from ₹2,745 cr."
+    },
+    {
+     "q": "Why is Bandhan moving towards secured loans?",
+     "a": "Unsecured microfinance loans are risky in downturns; home, vehicle and business loans backed by assets make earnings steadier."
+    },
+    {
+     "q": "Q2 FY27 profit rose 456%. How do you read that?",
+     "a": "The year-ago quarter was very weak; lower provisions and 14% NII growth drove the jump. Asset quality must keep improving."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you sell Bandhan's new credit cards?",
+     "a": "Target its existing salaried and small-business customers first, with simple rewards messaging and regional-language campaigns."
+    },
+    {
+     "q": "How can Bandhan raise its CASA ratio?",
+     "a": "Salary-account tie-ups, current accounts for small traders, a strong app and cross-selling to loan customers."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you keep 75,000 employees aligned during leadership changes?",
+     "a": "Clear communication from the new CEO and Chairman, stable goals, recognition and training on new products."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a Bandhan home loan to a small-town shop owner.",
+     "a": "Understand income and documents, explain EMI simply, highlight local branch support and quick processing, then close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you improve collections in a microfinance branch?",
+     "a": "Track early overdue accounts daily, visit borrowers early, use digital payment options and avoid over-lending."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Bandhan Bank?",
+     "a": "A Kolkata-based private bank born from microfinance in 2001, a bank since 2015, led by MD & CEO Partha Pratim Sengupta, now recovering with ₹622 cr profit in Q2 FY27."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Bandhan Bank?",
+     "a": "Partha Pratim Sengupta is MD & CEO (since Nov 2024); Debasish Panda is Part-time Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the launch of its first credit cards in Sep 2026, or the Q2 FY27 profit recovery."
+    },
+    {
+     "q": "Why Bandhan Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Bandhan Bank grew from a small microfinance effort for village women into a bank serving over 3.2 crore customers. After a tough 2025, it is recovering under a new CEO and Chairman, launching credit cards and growing secured loans. Joining during this change means learning fast and seeing real impact. I want to contribute to [your role] as the bank grows stronger.",
+  "ask": [
+   "How is the bank balancing microfinance with secured lending in the next two years?",
+   "What has changed in risk and collections since 2025?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Is microfinance good for the poor?",
+    "for": "It gives small loans to women without collateral and builds livelihoods.",
+    "against": "Easy credit can lead to over-borrowing and stress, as seen in 2025."
+   },
+   {
+    "t": "Should a founder step back once a company grows big?",
+    "for": "Fresh leadership can bring new skills; Bandhan now has an ex-SBI banker as CEO.",
+    "against": "Founders understand the mission and customers best."
+   }
+  ],
+  "avoid": [
+   "Don't name Chandra Shekhar Ghosh as current CEO; he stepped down in July 2024. Partha Pratim Sengupta leads now.",
+   "Don't call Bandhan a microfinance company or NBFC; it has been a universal bank since 2015.",
+   "Don't quote the 456% growth without context: the year-ago quarter was very weak."
+  ],
+  "night": [
+   "MD & CEO: Partha Pratim Sengupta · Chairman: Debasish Panda",
+   "Founded 2001 · bank since Aug 2015 · HQ Kolkata",
+   "FY26 profit: ₹1,224 cr (FY25: ₹2,745 cr)",
+   "Q2 FY27 profit: ₹622 cr (+456%)",
+   "Gross NPA 3.1% (Sep 2026)",
+   "Rivals: HDFC Bank, ICICI Bank, IDFC FIRST, AU SFB",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Bandhan Bank's MD & CEO?",
+   "o": [
+    "Partha Pratim Sengupta",
+    "Chandra Shekhar Ghosh",
+    "Rajiv Anand"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Where is Bandhan Bank headquartered?",
+   "o": [
+    "Mumbai",
+    "Kolkata",
+    "Chennai"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Bandhan started in 2001 as a…",
+   "o": [
+    "Microfinance organisation",
+    "Housing finance company",
+    "Public sector bank"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which company merged into Bandhan Bank in 2019?",
+   "o": [
+    "Capital First",
+    "Gruh Finance",
+    "Fincare"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Bandhan's Q2 FY27 profit was about…",
+   "o": [
+    "₹62 cr",
+    "₹622 cr",
+    "₹6,220 cr"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "17 Nov 2026"
+}

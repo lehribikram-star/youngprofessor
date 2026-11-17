@@ -1,0 +1,1165 @@
+{
+ "id": "federal-bank",
+ "name": "Federal Bank",
+ "short": "FB",
+ "color": "#1B3F8B",
+ "line": "A Kerala-born private bank, strong in NRI deposits, now backed by Blackstone",
+ "sector": "Banking",
+ "hq": "Aluva (Kochi), Kerala",
+ "listed": "NSE: FEDERALBNK · BSE: 500469",
+ "website": "https://www.federal.bank.in",
+ "news_query": "Federal Bank",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/federal-bank-q2-profit-surges-4510-to-138609-crore-npa-at-decadal-lows"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Upstox)",
+   "url": "https://upstox.com/news/market-news/earnings/federal-bank-q2-results-net-profit-soars-45-yo-y-to-1-386-crore-asset-quality-improves/article-201993/"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/federal-bank-q2-fy-27-results/"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/federal-bank-q2-results-net-profit-rises-to-1-386-crore"
+  },
+  "q2e": {
+   "label": "Q2 FY27 results (Motilal Oswal / Investment Guru India)",
+   "url": "https://investmentguruindia.com/newsdetail/federal-bank-q2-profit-rises-45-10-to-record-rs-1-386-cr-gross-and-net-npa-at-decadal-lowstotal-business-crosses-rs6-lakh-crore-gross-advances-cross-rs3-lakh-crore-nii-up-26-casa-up-23-fee-income-at-all-time-high-up-32-roa-at-1-32-104677"
+  },
+  "fy26": {
+   "label": "FY26 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1688437"
+  },
+  "fy26b": {
+   "label": "FY26 results (Arihant / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25119010209"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 earnings review (Informist)",
+   "url": "https://informistmedia.com/EquityWire/49426/Earnings-Review-High-net-interest-income-lifts-Federal-Bank-PAT-despite-surge-in-provisions"
+  },
+  "fy26d": {
+   "label": "Q4 FY26 results (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/federal-bank-q4-pat-up-22-yoy"
+  },
+  "fy26e": {
+   "label": "Q4 FY26 results (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-banks/federal-banks-landmark-q4-net-profit-at-rs1259-bn"
+  },
+  "fy26f": {
+   "label": "Q4 FY26 results release (Investywise)",
+   "url": "https://www.investywise.com/?p=77381"
+  },
+  "dr": {
+   "label": "Federal Bank FY26 Directors' Report (via IIFL)",
+   "url": "https://www.indiainfoline.com/company/federal-bank-ltd/directors-report/3709"
+  },
+  "agm": {
+   "label": "95th AGM and ₹1.20 dividend (Investywise)",
+   "url": "https://www.investywise.com/?p=98783"
+  },
+  "brsr": {
+   "label": "Federal Bank BRSR 2025-26 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/FEDERALBNK_30072026221215_FBL_BSRR_Covering_letter_Signed.pdf"
+  },
+  "hist": {
+   "label": "Federal Bank: Milestones (official)",
+   "url": "https://www.federal.bank.in/milestones"
+  },
+  "hist2": {
+   "label": "Federal Bank company profile (PSU Connect)",
+   "url": "https://www.psuconnect.in/company/federal-bank-196"
+  },
+  "ceo": {
+   "label": "RBI approves KVS Manian as MD & CEO (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/news/federal-bank-rallies-5-as-rbi-approves-kvs-manian-as-md-ceo-124072300187_1.html"
+  },
+  "ceo2": {
+   "label": "Shareholders approve KVS Manian (Board Stewardship)",
+   "url": "https://boardstewardship.com/federal-bank-shareholders-approve-kvs-manian-as-md-ceo/"
+  },
+  "ceo3": {
+   "label": "RBI clears ex-Kotak executive as CEO (Reuters via XM)",
+   "url": "https://xm.com/research/markets/stocks/reuters/indias-federal-bank-hits-record-high-as-cenbank-clears-kvs-manian-as-new-ceo-53886294"
+  },
+  "chair": {
+   "label": "Elias George appointed Part-time Chairman (MediaNews4U)",
+   "url": "https://www.medianews4u.com/elias-george-appointed-as-the-part-time-chairman-of-federal-bank/"
+  },
+  "chair2": {
+   "label": "Elias George appointed Chairperson (Board Stewardship)",
+   "url": "https://boardstewardship.com/former-ias-officer-elias-george-appointed-chairperson-of-federal-bank-board/"
+  },
+  "chair3": {
+   "label": "RBI approves Elias George as Chairman (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/federal-bank-share-price-in-focus-as-rbi-approves-appointment-of-elias-george-as-part-time-chairman-for-3-years-effective-may-23-2026"
+  },
+  "hota": {
+   "label": "A P Hota retires as Chairman (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/federal-bank-chairman-a-p-hota-retires-after-8-years-on-board"
+  },
+  "bx": {
+   "label": "Board approves Blackstone warrant issue (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/federal-bank-approves-6196-cr-preferential-warrants-issue-to-blackstone-group-entity"
+  },
+  "bx2": {
+   "label": "Blackstone to invest ₹6,196 cr for 9.99% (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/blackstone-to-invest-rs-6196-cr-in-federal-bank-for-9-99-stake-125102400261_1.html"
+  },
+  "bxr": {
+   "label": "RBI nod for Blackstone stake (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/federal-bank-shares-in-focus-after-rbi-nods-to-blackstones-999-stake-acquisition-514888-2026-02-06"
+  },
+  "bxr2": {
+   "label": "RBI nod for Blackstone stake (Retail Banker International)",
+   "url": "https://www.retailbankerinternational.com/news/blackstone-nod-stake-federal-bank/"
+  },
+  "bxa": {
+   "label": "Warrants allotted to Blackstone entity (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/federal-bank-raises-6196-crore-via-preferential-warrants-to-asia-ii-topco-xiii"
+  },
+  "bxa2": {
+   "label": "Warrants allotted to Blackstone entity (Arihant / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25047010101"
+  },
+  "jana": {
+   "label": "Jana SFB deal reports (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/federal-bank-shares-fall-4-on-jana-small-finance-bank-acquisition-reports"
+  },
+  "jana2": {
+   "label": "Jana SFB report and bank's clarification (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/federal-bank-shares-fall-4-after-jana-sfb-deal-report-what-lender-says-551189-2026-08-25"
+  },
+  "jana3": {
+   "label": "Federal Bank clarifies Jana SFB reports (PSU Connect)",
+   "url": "https://www.psuconnect.in/bank-news/federal-bank-clarifies-media-reports-on-possible-deal-with-jana-sfb"
+  },
+  "fedfina": {
+   "label": "Fedbank Financial Services listing (Angel One)",
+   "url": "https://www.angelone.in/blog/fedbank-financial-services-lists-at-a-discount"
+  },
+  "bse": {
+   "label": "Federal Bank on BSE (500469)",
+   "url": "https://bseindia.com/stock-share-price/federal-bank-ltd/FEDERALBNK/500469"
+  },
+  "csr2": {
+   "label": "Hormis Memorial Scholarships (Careers360)",
+   "url": "https://news.careers360.com/100-students-awarded-federal-bank-hormis-memorial-scholarship/amp"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Federal_Bank"
+  },
+  "sbi": {
+   "label": "SBI FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/state-bank-of-india-q4-profit-rises-6-to-19684-crore-as-net-profit-crosses-80000-crore"
+  },
+  "hdfc": {
+   "label": "HDFC Bank FY26 results (JM Financial)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1686242"
+  },
+  "icici": {
+   "label": "ICICI Bank FY26 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-bank-reports-50146-crore-net-profit-recommends-12-dividend-for-fy26"
+  },
+  "axis": {
+   "label": "Axis Bank FY26 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/axis-bank-q4-results-net-profit-flat-at-rs-7071-crore-dividend-announced-check-amount-527435-2026-04-25"
+  },
+  "kotak": {
+   "label": "Kotak FY26 results (Choice / Capital Market)",
+   "url": "https://www.cholasecurities.com/news/hot-pursuit/kotak-mahindra-bank-q4-pat-climbs-13-yoy-to-rs-4026-cr/1689114"
+  },
+  "r_bob": {
+   "label": "Bank of Baroda FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/bank-of-baroda-q4-fy26-results-net-profit-5616-crore-11-may/"
+  },
+  "r_pnb": {
+   "label": "PNB FY26 results (Tribune / ANI)",
+   "url": "https://www.tribuneindia.com/news/business/pnb-ends-fy26-with-a-record-net-profit-of-rs-16904-crore-as-asset-quality-and-capital-strengthen/"
+  },
+  "r_au": {
+   "label": "AU SFB FY26 press release",
+   "url": "https://www.au.bank.in/pdfs/quaterly-reports/year-25/press-release/Q4Fy26-PR.pdf"
+  },
+  "r_idfc": {
+   "label": "IDFC FIRST Bank Investor Presentation Q2 FY27",
+   "url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/financial-results/Investor-Presentation-Q2FY27-Final.pdf"
+  },
+  "r_iib": {
+   "label": "IndusInd Bank FY26 results (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/INDUSINDBK4_24042026164623_1resultsnpr_signed.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 4117,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (+1.6%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 1640,
+   "fmt": "num",
+   "label": "Banking outlets",
+   "sub": "Mar 2026"
+  },
+  {
+   "v": 16941,
+   "fmt": "num",
+   "label": "Permanent employees",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹1,386 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +45.1% · record"
+  },
+  {
+   "v": "1.32%",
+   "k": "Gross NPA",
+   "s": "Sep 2026 · decade low"
+  },
+  {
+   "v": "3.32%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27"
+  },
+  {
+   "v": "16.84%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "A private bank started in 1931 as Travancore Federal Bank; K.P. Hormis took charge in 1945 and moved its office to Aluva, Kerala, where it is still headquartered.",
+   "s": [
+    "hist",
+    "hist2"
+   ]
+  },
+  {
+   "t": "Led by MD & CEO KVS Manian (ex-Joint MD of Kotak Mahindra Bank) since 23 Sep 2024; former IAS officer Elias George became Part-time Chairman on 23 May 2026.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "t": "In 2025–26 Blackstone agreed to invest about ₹6,196 crore for up to 9.99% of the bank through warrants; RBI approved it and the warrants were allotted in Feb 2026.",
+   "s": [
+    "bx",
+    "bx2",
+    "bxr",
+    "bxa"
+   ]
+  },
+  {
+   "t": "FY 2025-26 standalone net profit rose 1.6% to ₹4,117 crore; Gross NPA fell to 1.62%.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit jumped 45.1% to a record ₹1,386 crore, and Gross NPA fell to 1.32%, a ten-year low.",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1931",
+   "t": "Started as Travancore Federal Bank at Nedumpuram, near Thiruvalla.",
+   "s": [
+    "hist",
+    "hist2"
+   ]
+  },
+  {
+   "y": "1945",
+   "t": "Under K.P. Hormis, the bank moved its registered office to Aluva.",
+   "s": [
+    "hist",
+    "hist2"
+   ]
+  },
+  {
+   "y": "Sep 2024",
+   "t": "KVS Manian took over as MD & CEO for three years.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Oct 2025",
+   "t": "Board approved a ₹6,196 crore warrant issue to a Blackstone affiliate.",
+   "s": [
+    "bx",
+    "bx2"
+   ]
+  },
+  {
+   "y": "Feb 2026",
+   "t": "RBI cleared Blackstone's stake of up to 9.99%; warrants allotted with ₹1,549 crore paid upfront.",
+   "s": [
+    "bxr",
+    "bxr2",
+    "bxa",
+    "bxa2"
+   ]
+  },
+  {
+   "y": "May 2026",
+   "t": "Elias George became Part-time Chairman.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Federal Bank earns mainly from the interest gap between loans and deposits, plus fees. It is known for deposits from Non-Resident Indians (NRIs), especially from Kerala's Gulf diaspora, and owns the lending company Fedbank Financial Services (Fedfina).",
+  "flow": [
+   "Customers and NRIs deposit money (savings, current, NRI deposits)",
+   "Bank lends to people, businesses and farmers",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹3,153 cr (+26.4%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "k": "Fee income Q2 FY27",
+    "v": "₹1,168 cr (+31.9%, record)",
+    "s": [
+     "q2",
+     "q2e"
+    ]
+   },
+   {
+    "k": "NRI deposits (Mar 2026)",
+    "v": "crossed ₹1 lakh cr",
+    "term": "Deposits",
+    "s": [
+     "fy26d",
+     "fy26f"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI must approve a private bank's CEO and Chairman, and any investor buying 5% or more; it cleared Blackstone's stake in Feb 2026.",
+   "Global investors are buying into Indian banks; Blackstone in Federal Bank is one example.",
+   "Banks are tidying up bad loans; Federal Bank's Gross NPA is at a ten-year low."
+  ],
+  "s": [
+   "bxr",
+   "bxr2",
+   "q2"
+  ]
+ },
+ "people": [
+  {
+   "ini": "KM",
+   "name": "KVS Manian",
+   "role": "MD & CEO",
+   "since": "since 23 Sep 2024",
+   "note": "Earlier Joint MD of Kotak Mahindra Bank; engineer from IIT (BHU) and JBIMS postgraduate. Three-year term.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceo3"
+   ]
+  },
+  {
+   "ini": "EG",
+   "name": "Elias George",
+   "role": "Part-time Chairman",
+   "since": "since 23 May 2026",
+   "note": "Former IAS officer and MD of Kochi Metro Rail; later with KPMG. Succeeded A P Hota, who retired in Jan 2026.",
+   "s": [
+    "chair",
+    "chair2",
+    "hota"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹4,117 cr (+1.6%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.62%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.20%",
+    "term": "Net NPA",
+    "s": [
+     "fy26",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "17.25%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26c",
+     "fy26f"
+    ]
+   },
+   {
+    "k": "CASA ratio",
+    "v": "32.94%",
+    "term": "CASA ratio",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Deposits",
+    "v": "₹3.14 lakh cr (+11%)",
+    "term": "Deposits",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross advances",
+    "v": "₹2.68 lakh cr",
+    "term": "Advances",
+    "s": [
+     "fy26d",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹1.20 per share",
+    "term": "Dividend",
+    "s": [
+     "agm",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹1,386 cr, up 45.1%, the highest ever.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    },
+    {
+     "t": "Deposits ₹3.43 lakh cr (+18.6%); gross advances ₹3.02 lakh cr (+21.7%); CASA 32.0%.",
+     "term": "Advances",
+     "s": [
+      "q2b",
+      "q2c"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.32%, Net NPA 0.17%; capital adequacy 16.84%.",
+     "term": "Gross NPA",
+     "s": [
+      "q2c",
+      "q2d"
+     ]
+    }
+   ]
+  },
+  "say": "Federal Bank posted a record ₹1,386 crore profit last quarter, up 45%, with bad loans at a ten-year low, and Blackstone has invested in it."
+ },
+ "rivals": {
+  "metric": "Net profit, FY 2025-26 (standalone)",
+  "list": [
+   {
+    "name": "HDFC Bank",
+    "v": 74671,
+    "s": [
+     "hdfc"
+    ]
+   },
+   {
+    "name": "ICICI Bank",
+    "v": 50147,
+    "s": [
+     "icici"
+    ]
+   },
+   {
+    "name": "Axis Bank",
+    "v": 24457,
+    "s": [
+     "axis"
+    ]
+   },
+   {
+    "name": "Kotak Mahindra Bank",
+    "v": 14008,
+    "s": [
+     "kotak"
+    ]
+   },
+   {
+    "name": "Federal Bank",
+    "v": 4117,
+    "s": [
+     "fy26"
+    ],
+    "me": true
+   },
+   {
+    "name": "AU Small Finance Bank",
+    "v": 2641,
+    "s": [
+     "r_au"
+    ]
+   },
+   {
+    "name": "IDFC FIRST Bank",
+    "v": 1636,
+    "s": [
+     "r_idfc"
+    ]
+   },
+   {
+    "name": "IndusInd Bank",
+    "v": 933,
+    "s": [
+     "r_iib"
+    ]
+   }
+  ],
+  "note": "Federal Bank is a mid-sized private bank: smaller than the big four, but larger by profit than AU, IDFC FIRST and IndusInd in FY26."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Banking outlets (Mar 2026)",
+    "v": "1,640"
+   },
+   {
+    "k": "ATMs / recyclers",
+    "v": "2,112"
+   },
+   {
+    "k": "Banking outlets (Sep 2026)",
+    "v": "1,662"
+   },
+   {
+    "k": "Overseas",
+    "v": "GIFT City IFSC unit; rep. offices in Dubai and Abu Dhabi"
+   }
+  ],
+  "local": "Federal Bank's roots are in Kerala, but it now has branches across India, and its Gulf offices serve the large NRI customer base.",
+  "s": [
+   "fy26b",
+   "dr",
+   "q2",
+   "q2b",
+   "brsr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Permanent employees",
+    "v": "16,941"
+   },
+   {
+    "k": "Total employees",
+    "v": "17,681"
+   }
+  ],
+  "note": "From the FY 2025-26 BRSR (31 Mar 2026). The bank is growing its branch network and business fast, so retail, sales and credit roles are in demand."
+ },
+ "csr": {
+  "t": "Federal Bank's CSR covers education (Federal Bank Hormis Memorial Foundation scholarships), skill academies, healthcare and cancer screening, cyber-safety awareness and tree planting.",
+  "s": [
+   "brsr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Record profit: ₹1,386 cr in Q2 FY27 (+45.1%)",
+    "s": [
+     "q2"
+    ]
+   },
+   {
+    "t": "Bad loans at a ten-year low: Gross NPA 1.32%",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "FY26 profit grew only 1.6% after heavy provisions",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "t": "CASA ratio about 32%, lower than the big private banks",
+    "s": [
+     "q2b",
+     "fy26"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Blackstone investment of about ₹6,196 cr adds capital for growth",
+    "s": [
+     "bx",
+     "bxa"
+    ]
+   },
+   {
+    "t": "Loans growing 21.7% in Q2 FY27",
+    "s": [
+     "q2b",
+     "q2c"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Bigger private banks compete for the same customers",
+    "s": [
+     "hdfc",
+     "icici",
+     "axis"
+    ]
+   },
+   {
+    "t": "Any acquisition (e.g. reported Jana SFB talks) brings integration risk",
+    "s": [
+     "jana",
+     "jana2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a bank, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Private and public sector banks chase the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. A banking licence is hard to get, but fintechs enter payments easily."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. UPI apps, NBFCs and mutual funds replace some bank products."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium to high. Customers can switch banks easily for better rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Depositors are the 'suppliers' of money; better rates elsewhere pull them away."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for financial inclusion and digital payments."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change lending margins."
+   },
+   {
+    "k": "Social",
+    "v": "Young customers prefer mobile-first banking."
+   },
+   {
+    "k": "Technological",
+    "v": "AI, UPI and digital lending reshape branches."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI sets capital rules and approves top appointments."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Accounts, cards, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set against rivals."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, ATMs, business correspondents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand campaigns, cross-selling and digital offers."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more products to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in semi-urban and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New digital and MSME lending products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in insurance, asset management and broking."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs, provisions and taxes. The bank's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on deposits. A bank's main earning.",
+  "Net interest margin": "Net Interest Income as a % of the bank's interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Non-Performing Asset: a loan not repaid for 90+ days. Gross NPA is the % of all loans that have gone bad.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "CASA ratio": "Share of deposits in Current and Savings accounts. These pay little interest, so a higher CASA means cheaper funds.",
+  "Capital adequacy ratio": "The bank's own capital compared with the risk in its loans. RBI requires a minimum; higher means safer.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Deposits": "Money customers keep with the bank in savings, current and fixed deposit accounts.",
+  "Advances": "Loans given by the bank to customers and businesses.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Treasury gains": "Profit from buying and selling bonds and other investments. It can swing a lot each quarter.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates all banks in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that banks lend to.",
+  "Cross-sell": "Selling an extra product (like a credit card) to an existing customer.",
+  "Public sector bank": "A bank where the Government of India owns the majority of shares.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "NRI deposits": "Money kept in Indian banks by Non-Resident Indians, such as people from Kerala working in the Gulf.",
+  "Warrants": "A right to buy a company's shares later at a fixed price. Blackstone paid 25% upfront for Federal Bank warrants.",
+  "Provision coverage ratio": "The share of bad loans a bank has already set money aside for. Federal Bank's was about 87% in Sep 2026."
+ },
+ "roles": {
+  "Finance": {
+   "kv": [
+    {
+     "k": "Gross NPA",
+     "v": "1.32%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "3.32%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "16.84%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.17%",
+     "term": "Net NPA"
+    }
+   ],
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Cost control"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a bank balance sheet",
+    "Basics of RBI rules and Basel III"
+   ],
+   "tip": "Know Gross vs Net NPA, why CASA lowers a bank's cost of funds, and the bank's latest profit."
+  },
+  "Marketing": {
+   "kv": [
+    {
+     "k": "Banking outlets",
+     "v": "1,662"
+    },
+    {
+     "k": "Deposit growth",
+     "v": "18.6%"
+    },
+    {
+     "k": "CASA ratio",
+     "v": "32.0%",
+     "term": "CASA ratio"
+    },
+    {
+     "k": "Fee income growth",
+     "v": "31.9%"
+    }
+   ],
+   "measured": [
+    "New customers acquired",
+    "Products sold per customer (cross-sell)",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Clear selling and presentation"
+   ],
+   "tip": "Think about reaching young and semi-urban customers through mobile and branch campaigns."
+  },
+  "HR": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "16,941"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "1,662"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,386 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "KVS Manian"
+    }
+   ],
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Banks hire thousands every year. Ideas to reduce early attrition and train people for digital work will impress."
+  },
+  "Sales": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "16,941"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "1,662"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,386 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "KVS Manian"
+    }
+   ],
+   "measured": [
+    "Accounts opened and deposits raised",
+    "Loans and cards sold",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a savings account' or 'Convince a shopkeeper to open a current account.'"
+  },
+  "Operations": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "16,941"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "1,662"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,386 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "KVS Manian"
+    }
+   ],
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Audit and compliance scores"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, turnaround time and how automation reduces errors."
+  },
+  "Other": {
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "16,941"
+    },
+    {
+     "k": "Banking outlets",
+     "v": "1,662"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,386 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "CEO",
+     "v": "KVS Manian"
+    }
+   ],
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Banking basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation."
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the bank and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did Federal Bank's FY26 profit grow only 1.6% while Q2 FY27 profit jumped 45%?",
+     "a": "FY26 carried high provisions, including floating provisions in Q4; in Q2 FY27 interest income grew 26%, fees grew 32% and slippages fell."
+    },
+    {
+     "q": "How does Blackstone's warrant deal work?",
+     "a": "Blackstone's arm got warrants at ₹227 each, paid 25% upfront (about ₹1,549 cr) and pays the rest on conversion into shares, for up to 9.99%."
+    },
+    {
+     "q": "What does a Gross NPA of 1.32% tell you?",
+     "a": "Only about 1.3% of loans are bad, a ten-year low for the bank, which shows careful lending and good recovery."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you grow Federal Bank's NRI business further?",
+     "a": "Target Gulf and new diaspora markets with easy digital account opening, low-cost remittances and regional-language campaigns."
+    },
+    {
+     "q": "How would you build the brand outside Kerala?",
+     "a": "Digital-first products, campus and salary-account tie-ups, and city campaigns that show a modern bank with a long history."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you keep a 17,000-strong workforce motivated during fast growth?",
+     "a": "Clear career paths, regular training, recognising good work and listening to branch staff."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a Federal Bank NRI account to a nurse moving to Dubai.",
+     "a": "Ask about her goals, then explain easy remittance, NRE/NRO accounts, safety and app access, and close with a next step."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you handle a big jump in loan applications without delays?",
+     "a": "Digital document checks, automated credit scoring, clear turnaround targets and daily tracking."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Federal Bank?",
+     "a": "A Kerala-based private bank started in 1931, led by MD & CEO KVS Manian, with a record ₹1,386 cr profit in Q2 FY27 and Blackstone as a new investor."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Federal Bank?",
+     "a": "KVS Manian is MD & CEO (since Sep 2024); Elias George is Part-time Chairman (since May 2026)."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the record Q2 FY27 profit, the Blackstone investment, or reports of talks to buy Jana Small Finance Bank."
+    },
+    {
+     "q": "Why Federal Bank?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Federal Bank has grown from a small Kerala bank started in 1931 into a strong national private bank, with a record ₹1,386 crore profit last quarter and bad loans at a ten-year low. A global investor like Blackstone backing it shows confidence in its future. I want to grow with Federal Bank and contribute to [your role].",
+  "ask": [
+   "How will the Blackstone investment shape the bank's growth plans?",
+   "Which regions outside Kerala is the bank focusing on?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should foreign investors own large stakes in Indian banks?",
+    "for": "They bring capital and global practices, as Blackstone has done with Federal Bank.",
+    "against": "Too much foreign control may not suit national banking goals."
+   },
+   {
+    "t": "Are NRI deposits a strength or a risk for a bank?",
+    "for": "They are large and stable, and crossed ₹1 lakh cr at Federal Bank.",
+    "against": "They depend on Gulf jobs and global conditions."
+   }
+  ],
+  "avoid": [
+   "Don't quote an old CEO name; KVS Manian has led the bank since Sep 2024.",
+   "Don't say Blackstone owns or controls the bank; it can hold up to 9.99% after converting warrants.",
+   "Don't call the Jana SFB deal confirmed; in Aug 2026 the bank said there was nothing material to disclose."
+  ],
+  "night": [
+   "MD & CEO: KVS Manian · Chairman: Elias George",
+   "Founded 1931 · HQ Aluva, Kerala",
+   "FY26 profit: ₹4,117 cr (+1.6%)",
+   "Q2 FY27 profit: ₹1,386 cr (+45.1%, record)",
+   "Gross NPA 1.32% (Sep 2026)",
+   "Rivals: HDFC Bank, ICICI Bank, Axis, Kotak, IDFC FIRST",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Federal Bank's MD & CEO?",
+   "o": [
+    "Rajiv Anand",
+    "KVS Manian",
+    "Debadatta Chand"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where is Federal Bank headquartered?",
+   "o": [
+    "Aluva, Kerala",
+    "Chennai",
+    "Mumbai"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which global investor agreed to take up to 9.99% in Federal Bank?",
+   "o": [
+    "SoftBank",
+    "Warburg Pincus",
+    "Blackstone"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Federal Bank's Q2 FY27 profit was about…",
+   "o": [
+    "₹1,386 cr",
+    "₹138 cr",
+    "₹13,860 cr"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Federal Bank started in…",
+   "o": [
+    "1969",
+    "1931",
+    "1994"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "17 Nov 2026"
+}
