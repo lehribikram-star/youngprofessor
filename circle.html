@@ -347,19 +347,19 @@ footer a{color:var(--ink2)}
           <div class="full"><label class="ok"><input type="checkbox" id="fOk" required><span>I agree that my name, designation, organisation, location, picture and message can be shown publicly on youngprofessor.in. I can ask for them to be removed at any time.</span></label></div>
           <div class="hp" aria-hidden="true"><label for="fWeb">Website</label><input type="text" id="fWeb" tabindex="-1" autocomplete="off"></div>
           <div class="full"><div class="err" id="err" role="alert"></div></div>
-          <div class="full"><button type="submit" class="send" id="send">Join The Push Circle 🌱</button></div>
+          <div class="full"><button type="submit" class="send" id="send">Post now &amp; join the Push Circle 🌱</button></div>
         </div>
       </div>
       <aside class="pv">
         <div class="pl">Live preview</div>
         <div id="pvCard"></div>
-        <p class="note">Your card appears on the wall once Dr. Lehri approves it.</p>
+        <p class="note">Tap “Post now” and your card goes live on the wall straight away.</p>
       </aside>
     </form>
     <div class="ty" id="ty" hidden>
       <div class="big">🌱</div>
       <h3>Welcome to The Push Circle</h3>
-      <p>Thank you! Your card will appear on the wall as soon as I approve it. Tell your friends you’re part of the Circle.</p>
+      <p>Thank you! Your card is now live on the wall. Tell your friends you’re part of the Circle.</p>
       <div class="acts">
         <a class="li" id="shLi" target="_blank" rel="noopener">Share on LinkedIn</a>
         <a class="wa" id="shWa" target="_blank" rel="noopener">Share on WhatsApp</a>
@@ -558,7 +558,7 @@ footer a{color:var(--ink2)}
       $('shWa').href='https://wa.me/?text='+encodeURIComponent(txt+url);
       form.hidden=true;ty.hidden=false;form.reset();$('fFieldOW').hidden=true;$('fTaughtOW').hidden=true;pic='';av='';$('dp').textContent='📷';$('dropS').textContent='JPG, PNG or WebP · up to 2 MB';$('cnt').textContent='0 / 300';
     }).catch(function(x){err((x&&x.message)||'Something went wrong. Please check your internet and try again.');})
-    .then(function(){b.disabled=false;b.textContent='Join The Push Circle 🌱';});
+    .then(function(){b.disabled=false;b.textContent='Post now & join the Push Circle 🌱';});
   });
   preview();
 
@@ -600,7 +600,7 @@ footer a{color:var(--ink2)}
   function setTg(on){$('mTg').classList.toggle('on',on);$('mTg').setAttribute('aria-checked',on?'true':'false');}
   var mh=location.hash.match(/^#manage=([^.]+)\.(.+)$/);
   if(mh){mk={id:decodeURIComponent(mh[1]),s:decodeURIComponent(mh[2])};$('mform').hidden=true;$('mDone').hidden=true;$('mPanel').hidden=false;$('mName').textContent='…';sOpen('mmod');
-    post({task:'manageGet',id:mk.id,s:mk.s}).then(function(R){if(!R||!R.ok)throw new Error(R&&R.error||'');$('mName').textContent=String(R.name).split(' ')[0];setTg(R.guide);$('mNote').textContent=R.live?'Changes show on the wall within a few minutes.':'Your card is waiting for approval. This setting will apply once it is live.';})
+    post({task:'manageGet',id:mk.id,s:mk.s}).then(function(R){if(!R||!R.ok)throw new Error(R&&R.error||'');$('mName').textContent=String(R.name).split(' ')[0];setTg(R.guide);$('mNote').textContent=R.live?'Changes show on the wall within a few minutes.':'This setting will apply to your live card.';})
     .catch(function(x){$('mPanel').hidden=true;$('mform').hidden=false;serr('mErr',(x&&x.message)||'This link is not valid. Please ask for a new one.');});}
   $('mTg').addEventListener('click',function(){if(!mk)return;var on=!this.classList.contains('on');setTg(on);$('mNote').textContent='Saving…';
     post({task:'manageSet',id:mk.id,s:mk.s,guide:on}).then(function(R){if(!R||!R.ok)throw 0;$('mNote').textContent=on?'Done. You are open to guide. Thank you for giving back!':'Done. You will not get new requests.';}).catch(function(){setTg(!on);$('mNote').textContent='Could not save. Please try again.';});});
