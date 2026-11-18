@@ -1843,7 +1843,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   }
   d.getElementById('fpYes').addEventListener('click',function(){pre.hidden=true;goFollow();});
   d.getElementById('fpNo').addEventListener('click',function(){pre.hidden=true;lsSet('yp_follow_card_later',String(Date.now()));});
-  pre.addEventListener('click',function(e){if(e.target===pre)pre.hidden=true;});
+  pre.addEventListener('click',function(e){if(e.target===pre){pre.hidden=true;lsSet('yp_follow_card_later',String(Date.now()));}});
   function goFollow(){
     if(inApp&&!standalone){wv.hidden=false;return;}
     if(isiOS&&!standalone){modal.hidden=false;return;}
@@ -1877,7 +1877,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   function closeTy(){ty.classList.remove('show');setTimeout(function(){ty.hidden=true;},450);
     var dip=window.__dip;if(dip&&!standalone&&lsGet('yp_installed')!=='1'){window.__dip=null;try{dip.prompt();dip.userChoice.then(function(c){if(c&&c.outcome==='accepted')lsSet('yp_installed','1');}).catch(function(){});}catch(e){}}}
   ty.querySelectorAll('[data-tyclose]').forEach(function(el){el.addEventListener('click',closeTy);});
-  addEventListener('keydown',function(e){if(e.key==='Escape'){if(!ty.hidden)closeTy();pre.hidden=true;}});
+  addEventListener('keydown',function(e){if(e.key==='Escape'){if(!ty.hidden)closeTy();if(!pre.hidden){pre.hidden=true;lsSet('yp_follow_card_later',String(Date.now()));}}});
   d.getElementById('tyShare').addEventListener('click',function(){
     var no=d.getElementById('tyNo').textContent,txt='I just joined Dr. Lehri’s circle on youngprofessor.in 🌱'+(no!=='★'?' Roll no. '+no+'.':'')+' Free lessons, placement prep and more:';
     if(navigator.share){navigator.share({title:'youngprofessor.in',text:txt,url:'https://youngprofessor.in/'}).catch(function(){});}
