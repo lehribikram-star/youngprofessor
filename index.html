@@ -1689,11 +1689,11 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       if(ig.length){var g=d.getElementById('igGrid');g.innerHTML=ig.slice(0,6).map(function(c){return '<div class="ig-card"><iframe src="https://www.instagram.com/p/'+c+'/embed/" loading="lazy" scrolling="no" title="Instagram post by @bikrampaul.s"></iframe></div>';}).join('');
         g.hidden=false;d.getElementById('igEmpty').hidden=true;}}
     if(window.fetch)fetch(SURL).then(function(r){return r.json();}).then(apply).catch(function(){});
-    function liveFol(){if(d.hidden||!window.fetch)return;fetch(SURL+'&t='+Date.now()).then(function(r){return r.json();}).then(function(S){
+    function liveFol(fresh){if(d.hidden||!window.fetch)return;fetch(SURL+(fresh===true?'&fresh=1':'')+'&t='+Date.now()).then(function(r){return r.json();}).then(function(S){
       if(!S||!S.ok||!S.site)return;var n=Math.max(+S.site.followers||0,window.__ypFloor||0);if(!(n>0))return;
       ['siteFol','cWeb'].forEach(function(id){var el=d.getElementById(id);if(!el)return;if(+el.dataset.n!==n){el.dataset.n=n;el.textContent=fmt(n);}});
       d.getElementById('growN').hidden=false;}).catch(function(){});}
-    setInterval(liveFol,60000);d.addEventListener('visibilitychange',function(){if(!d.hidden)liveFol();});
+    window.__ypLiveFol=liveFol;setInterval(liveFol,30000);d.addEventListener('visibilitychange',function(){if(!d.hidden)liveFol();});
   })();
 
 
@@ -1794,7 +1794,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       OS=OneSignal;
       if(window.__ypPending){window.__ypPending=false;try{if(OneSignal.Notifications.permission){OneSignal.User.PushSubscription.optIn();setOn(true);celebrate();}}catch(e){}}
       try{setOn(!!OneSignal.User.PushSubscription.optedIn);if(!OneSignal.User.PushSubscription.optedIn)lsSet(FKEY,'');}catch(e){}
-      OneSignal.User.PushSubscription.addEventListener('change',function(ev){var now=!!(ev.current&&ev.current.optedIn),was=!!(ev.previous&&ev.previous.optedIn);setOn(now);if(now!==was){['siteFol','cWeb'].forEach(function(id){var sf=d.getElementById(id);if(sf&&sf.dataset.n){var n=Math.max(0,+sf.dataset.n+(now?1:-1));sf.dataset.n=n;if(id==='siteFol')window.__ypFloor=now?n:0;sf.textContent=n.toLocaleString('en-US');}});if(now)celebrate();}});
+      OneSignal.User.PushSubscription.addEventListener('change',function(ev){var now=!!(ev.current&&ev.current.optedIn),was=!!(ev.previous&&ev.previous.optedIn);setOn(now);if(now!==was){['siteFol','cWeb'].forEach(function(id){var sf=d.getElementById(id);if(sf&&sf.dataset.n){var n=Math.max(0,+sf.dataset.n+(now?1:-1));sf.dataset.n=n;if(id==='siteFol')window.__ypFloor=now?n:0;sf.textContent=n.toLocaleString('en-US');}});if(now){celebrate();setTimeout(function(){if(window.__ypLiveFol)window.__ypLiveFol(true);},5000);}}});
     });
   }
   var inApp=/Instagram|FBAN|FBAV|FB_IAB|Line\/|LinkedInApp|Snapchat|Twitter|MicroMessenger/i.test(navigator.userAgent);
