@@ -1023,7 +1023,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       <p class="motto" aria-label="You bring the dreams, I’ll bring the push."><span>You bring the dreams,</span> <em>I’ll bring the push.</em><svg class="motto-line" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 60 2, 120 13, 180 6 S 270 4, 298 8"/></svg></p>
       <div class="hbtns">
       <div class="gwrap">
-        <span class="gring"><button type="button" class="btn follow gbtn" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Let’s Grow Together</span><span class="garr" aria-hidden="true">→</span></button></span>
+        <span class="gring"><button type="button" class="btn follow gbtn" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Follow &amp; Grow Together</span><span class="garr" aria-hidden="true">→</span></button></span>
         <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> followers growing together</span>
       </div>
       <a class="pcb" href="circle.html" aria-label="The Push Circle: where my students are now"><svg class="pcb-rt" viewBox="0 0 104 104" aria-hidden="true"><defs><path id="pcbp" d="M52,52 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#pcbp" textLength="274" lengthAdjust="spacing">WHERE MY STUDENTS ARE NOW · WHERE MY STUDENTS ARE NOW · </textPath></text></svg><span class="pcb-in"><span class="e" aria-hidden="true">🌱</span><b>The Push<br>Circle</b></span></a>
@@ -1727,7 +1727,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
 <div class="fcard" id="fcard" role="dialog" aria-label="Follow Dr. Lehri" hidden>
   <img src="logo-mark.webp" alt="" width="36" height="36">
   <div class="ft"><b>Let’s grow together 🌱</b><span>Free lessons &amp; opportunities, first</span></div>
-  <button type="button" class="go" data-follow>Join free</button>
+  <button type="button" class="go" data-follow>Follow</button>
   <button type="button" class="fx" id="fcardX" aria-label="Close">✕</button>
 </div>
 </div>
@@ -1740,7 +1740,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
 </div><div class="farrow" aria-hidden="true">⬇︎<span>Tap Share</span></div></div>
 <div class="fmodal" id="fwebview" hidden><div class="fbox" role="dialog" aria-modal="true" aria-labelledby="fwTitle">
   <h3 id="fwTitle">Open in your browser</h3>
-  <p id="fwTxt">Following works in your phone's browser. Tap below, then tap <b>Let’s Grow Together</b> again.</p>
+  <p id="fwTxt">Following works in your phone's browser. Tap below, then tap <b>Follow</b> again.</p>
   <a id="fwOpen" class="yes" href="intent://youngprofessor.in/?follow=1#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fyoungprofessor.in%2F%3Ffollow%3D1;end" style="display:block;text-align:center;text-decoration:none;margin:14px 0 8px;padding:13px 18px;border-radius:999px;background:#E3161E;color:#fff;font-weight:700">Open in Chrome</a>
   <button type="button" id="fwCopy">Copy link</button>
 </div></div>
@@ -1749,8 +1749,15 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   <h3 id="fpTitle"><em>You bring the dreams,</em><br>I’ll bring the push.</h3>
   <p>Be the first to get my new lessons, opportunities and updates, right on your phone.</p>
   <p><b>On the next box, tap “Allow”</b> so my push can reach you. 🌱</p>
-  <button type="button" class="yes" id="fpYes">Yes, I’m in!</button>
+  <button type="button" class="yes" id="fpYes">🌱 Yes, follow &amp; grow together</button>
   <button type="button" class="no" id="fpNo">Maybe later</button>
+</div></div>
+<div class="fmodal fpre" id="fblock" hidden><div class="fbox" role="dialog" aria-modal="true" aria-labelledby="fbTitle">
+  <h3 id="fbTitle">Almost there 🌱</h3>
+  <p>Your browser has <b>blocked</b> updates from this site. It takes 10 seconds to fix:</p>
+  <p style="text-align:left;line-height:1.7;margin:10px 0 14px">1. Tap the <b>🔒 lock</b> (or <b>ⓘ</b>) next to the web address.<br>2. Tap <b>Permissions</b> or <b>Notifications</b>.<br>3. Choose <b>Allow</b>, then tap the button below.</p>
+  <button type="button" class="yes" id="fbReload">Done, follow now</button>
+  <button type="button" class="no" id="fbClose">Maybe later</button>
 </div></div>
 <div class="ftoast" id="ftoast" role="status"></div>
 <div class="tyo" id="ty" hidden>
@@ -1779,7 +1786,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
   function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
   function toast(t){var el=d.getElementById('ftoast');el.textContent=t;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove('show');},4500);}
-  function setOn(on){btns.forEach(function(b){b.classList.toggle('on',on);var t=b.querySelector('.ftxt');if(t)t.textContent=on?'Growing Together ✓':'Let’s Grow Together';else b.textContent=on?'✓ Growing':'🌱 Let’s Grow';});if(on)lsSet(FKEY,'on');}
+  function setOn(on){btns.forEach(function(b){b.classList.toggle('on',on);var t=b.querySelector('.ftxt');if(t)t.textContent=on?'Following ✓ Growing Together':'Follow & Grow Together';else b.textContent=on?'✓ Following':'Follow';});if(on)lsSet(FKEY,'on');}
   var isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
   var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
   if(lsGet(FKEY)==='on')setOn(true);
@@ -1797,9 +1804,9 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       OneSignal.User.PushSubscription.addEventListener('change',function(ev){var now=!!(ev.current&&ev.current.optedIn),was=!!(ev.previous&&ev.previous.optedIn);setOn(now);if(now!==was){['siteFol','cWeb'].forEach(function(id){var sf=d.getElementById(id);if(sf&&sf.dataset.n){var n=Math.max(0,+sf.dataset.n+(now?1:-1));sf.dataset.n=n;if(id==='siteFol')window.__ypFloor=now?n:0;sf.textContent=n.toLocaleString('en-US');}});if(now){celebrate();setTimeout(function(){if(window.__ypLiveFol)window.__ypLiveFol(true);},5000);}}});
     });
   }
-  var inApp=/Instagram|FBAN|FBAV|FB_IAB|Line\/|LinkedInApp|Snapchat|Twitter|MicroMessenger/i.test(navigator.userAgent);
+  var inApp=/Instagram|FBAN|FBAV|FB_IAB|Line\/|LinkedInApp|Snapchat|Twitter|MicroMessenger|WhatsApp/i.test(navigator.userAgent)||(!isiOS&&(!('Notification' in window)||!('serviceWorker' in navigator)||/; wv\)/.test(navigator.userAgent)));
   var wv=d.getElementById('fwebview');
-  if(!/Android/i.test(navigator.userAgent)){var fo=d.getElementById('fwOpen');if(fo)fo.remove();var ft=d.getElementById('fwTxt');if(ft)ft.innerHTML='Following works in Safari. Tap <b>⋯</b> and choose <b>Open in Safari</b> (or copy the link below), then tap <b>Let’s Grow Together</b> again.';}
+  if(!/Android/i.test(navigator.userAgent)){var fo=d.getElementById('fwOpen');if(fo)fo.remove();var ft=d.getElementById('fwTxt');if(ft)ft.innerHTML='Following works in Safari. Tap <b>⋯</b> and choose <b>Open in Safari</b> (or copy the link below), then tap <b>Follow</b> again.';}
   /* arriving from "Open in Chrome": highlight the button */
   d.getElementById('fwCopy').addEventListener('click',function(){try{navigator.clipboard.writeText('https://youngprofessor.in');toast('Link copied. Paste it in Chrome or Safari.');}catch(e){}wv.hidden=true;});
   wv.addEventListener('click',function(e){if(e.target===wv)wv.hidden=true;});
@@ -1808,23 +1815,27 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     if(APP_ID&&!OS){ /* SDK still loading: ask the browser now (keeps the tap), finish when ready */
       window.__ypPending=true;loadOS();
       if('Notification' in window&&Notification.requestPermission){toast('Tap “Allow” to join 🌱');
-        try{Notification.requestPermission().then(function(p){if(p==='denied'){window.__ypPending=false;toast('Notifications are blocked. Allow them in your browser settings to grow with me.');}});}catch(e){}}
+        try{Notification.requestPermission().then(function(p){if(p==='denied'){window.__ypPending=false;showBlocked();}});}catch(e){}}
       return;}
     if(!APP_ID){return;}
     if(!OS.Notifications.isPushSupported()){toast('Your browser does not support notifications. Try Chrome or add the site to your Home Screen.');return;}
     if(!OS.Notifications.permission)toast('Tap “Allow” to join 🌱');
     OS.Notifications.requestPermission().then(function(){
       if(OS.Notifications.permission){try{OS.User.PushSubscription.optIn();}catch(e){}setOn(true);celebrate();}
-      else toast('Notifications are blocked. Allow them in your browser settings to follow.');
+      else if(('Notification' in window)&&Notification.permission==='denied')showBlocked();
     });
   }
-  var pre=d.getElementById('fpre');
+  var pre=d.getElementById('fpre'),fbl=d.getElementById('fblock');
+  function showBlocked(){hideCard(true);fbl.hidden=false;}
+  d.getElementById('fbClose').addEventListener('click',function(){fbl.hidden=true;});
+  d.getElementById('fbReload').addEventListener('click',function(){location.href='/?follow=1';});
+  fbl.addEventListener('click',function(e){if(e.target===fbl)fbl.hidden=true;});
   function follow(){
     hideCard(true);
     if(inApp&&!standalone){wv.hidden=false;return;}
     if(isiOS&&!standalone){modal.hidden=false;return;}
     var perm=('Notification' in window)?Notification.permission:'default';
-    if(perm==='denied'){toast('Notifications are blocked. Allow them in your browser settings to grow with me.');return;}
+    if(perm==='denied'){showBlocked();return;}
     goFollow();
   }
   d.getElementById('fpYes').addEventListener('click',function(){pre.hidden=true;goFollow();});
@@ -1889,10 +1900,9 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       if(lsGet(FKEY)==='on'||permNow==='granted'&&lsGet(FKEY)==='on'){toast('You’re already growing with me 🌱');return;}
       if(inApp&&!standalone){wv.hidden=false;return;}
       if(isiOS&&!standalone){modal.hidden=false;return;}
-      if(permNow==='denied'){toast('Notifications are blocked. Allow them in your browser settings to grow with me.');return;}
+      if(permNow==='denied'){showBlocked();return;}
       /* Chrome / Edge / Samsung: show the Allow box straight away (1 tap). Firefox & Safari need a tap first: show the card. */
-      if(/Chrome\//.test(navigator.userAgent)&&!/Firefox|FxiOS/.test(navigator.userAgent))goFollow();
-      else{card.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){card.classList.add('show');});});}
+      pre.hidden=false;
     },700);
   }
   else if(lsGet(FKEY)!=='on'&&permNow!=='denied'&&Date.now()-later>7*864e5){
