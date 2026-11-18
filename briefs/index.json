@@ -1,5 +1,5 @@
 {
- "updated": "17 Nov 2026",
+ "updated": "18 Nov 2026",
  "companies": [
   {
    "id": "hdfc-bank",
@@ -247,6 +247,112 @@
     "bandhanbnk",
     "bandhan bank ltd",
     "bandhan bank limited"
+   ]
+  },
+  {
+   "id": "bajaj-finance",
+   "name": "Bajaj Finance",
+   "sector": "NBFC · Pune",
+   "color": "#0072BC",
+   "short": "BAF",
+   "aliases": [
+    "bajaj finance",
+    "bajaj finance ltd",
+    "bajaj finance limited",
+    "bajfinance",
+    "bajaj auto finance",
+    "bfl",
+    "bajaj finserv lending"
+   ]
+  },
+  {
+   "id": "shriram-finance",
+   "name": "Shriram Finance",
+   "sector": "NBFC · Chennai",
+   "color": "#0B4EA2",
+   "short": "SFL",
+   "aliases": [
+    "shriram finance",
+    "shriram finance ltd",
+    "shriram finance limited",
+    "shriramfin",
+    "sfl",
+    "shriram transport finance",
+    "shriram transport",
+    "stfc",
+    "shriram city union finance",
+    "shriram city",
+    "shriram"
+   ]
+  },
+  {
+   "id": "muthoot-finance",
+   "name": "Muthoot Finance",
+   "sector": "NBFC · Kochi",
+   "color": "#D71920",
+   "short": "MF",
+   "aliases": [
+    "muthoot finance",
+    "muthoot finance ltd",
+    "muthoot finance limited",
+    "muthoot",
+    "muthootfin",
+    "533398",
+    "the muthoot finance private limited",
+    "muthoot gold loan"
+   ]
+  },
+  {
+   "id": "tata-capital",
+   "name": "Tata Capital",
+   "sector": "NBFC · Mumbai",
+   "color": "#004C8F",
+   "short": "TC",
+   "aliases": [
+    "tata capital",
+    "tata capital ltd",
+    "tata capital limited",
+    "tatacap",
+    "544574",
+    "tata capital financial services",
+    "tata motors finance",
+    "tmfl"
+   ]
+  },
+  {
+   "id": "cholamandalam",
+   "name": "Cholamandalam Investment and Finance",
+   "sector": "NBFC · Chennai",
+   "color": "#ED1C24",
+   "short": "CIFC",
+   "aliases": [
+    "cholamandalam",
+    "cholamandalam investment and finance",
+    "cholamandalam investment and finance company",
+    "cholamandalam investment & finance",
+    "chola",
+    "chola finance",
+    "cholafin",
+    "cifcl",
+    "cholamandalam dbs finance",
+    "511243"
+   ]
+  },
+  {
+   "id": "mahindra-finance",
+   "name": "Mahindra Finance",
+   "sector": "NBFC · Mumbai",
+   "color": "#E31837",
+   "short": "MF",
+   "aliases": [
+    "mahindra finance",
+    "mahindra & mahindra financial services",
+    "mahindra and mahindra financial services",
+    "m&m financial services",
+    "m&m finance",
+    "mmfsl",
+    "m&mfin",
+    "maxi motors financial services"
    ]
   }
  ]

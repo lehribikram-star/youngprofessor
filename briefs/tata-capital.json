@@ -1,0 +1,1090 @@
+{
+ "id": "tata-capital",
+ "name": "Tata Capital",
+ "short": "TC",
+ "color": "#004C8F",
+ "line": "The Tata group's lending arm: loans for people, small businesses and companies, listed in 2025",
+ "sector": "NBFC",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: TATACAP · BSE: 544574",
+ "website": "https://www.tatacapital.com",
+ "news_query": "Tata Capital",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/tata-capital-q2-pat-jumps-51-yoy-to-rs-1660-crore-loan-book-crosses-rs-3-lakh-crore-564051-2026-10-27"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/tata-capital-q2-fy-27-results-share-price-in-focus/"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/tata-capital-q2-results-net-profit-jumps-51-to-1660-crore-as-revenue-rises-21"
+  },
+  "q2d": {
+   "label": "Q2 FY27 investor presentation summary (Investywise)",
+   "url": "https://www.investywise.com/?p=128377"
+  },
+  "q2e": {
+   "label": "Q2 FY27 results summary (Investywise)",
+   "url": "https://www.investywise.com/?p=123805"
+  },
+  "q2f": {
+   "label": "Q2 FY27 results (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/tata-capital-q2-profit-aum-cmvzhxjba00122vpee51u9c7c"
+  },
+  "fy26": {
+   "label": "Tata Capital Q4 FY26 press release (official)",
+   "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/stock-exchange/Press-Release-Q4-FY-26.pdf"
+  },
+  "fy26b": {
+   "label": "FY26 results and dividend (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/tata-capital-how-to-trade-this-tata-group-share-post-q4-earnings-stock-reaction-final-dividend-527289-2026-04-24"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/tata-capital-q4-results-fy26-23-april/"
+  },
+  "fy26d": {
+   "label": "Q4 FY26 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/tata-capital-q4fy26-results-net-profit-jumps-43-percent-to-rs-1502-crore-aum-crosses-rs-2-77-lakh-crore"
+  },
+  "brsr": {
+   "label": "Tata Capital BRSR FY 2025-26 (official)",
+   "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/annual-reports/25-26/tata-capital-limited-brsr-fy-2025-26.pdf"
+  },
+  "ipo": {
+   "label": "IPO: ₹15,512 cr, valued at ₹1.38 trn (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/ipo/tata-capital-ipo-rs-15512-cr-valued-at-rs-1-38-trn-125092901089_1.html"
+  },
+  "list": {
+   "label": "Tata Capital ends flat on market debut (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/news/tata-capital-share-debut-ipo-trading-nse-performance-market-valuation-125101300872_1.html"
+  },
+  "list2": {
+   "label": "Tata Capital listing ceremony (Tata group newsroom)",
+   "url": "https://www.tata.com/newsroom/business/tata-capital-ipo"
+  },
+  "list3": {
+   "label": "Tata Capital aims to double loan book (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/tata-capital-aims-to-double-loan-book-in-next-three-years-cut-credit-costs-to-1-going-forward"
+  },
+  "ipod": {
+   "label": "Tata Capital IPO details (Chittorgarh)",
+   "url": "https://www.chittorgarh.com/ipo/tata-capital-ipo/2317/"
+  },
+  "tick": {
+   "label": "Tata Capital, NSE: TATACAP (StockAnalysis)",
+   "url": "https://stockanalysis.com/quote/nse/TATACAP/financials/income-statement/"
+  },
+  "tmfl": {
+   "label": "TMFL merger effective: exchange filing (official)",
+   "url": "https://www.tatacapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/stock-exchange/intimation-under-reg-51-and-60-effectiveness-of-scheme-of-arrangement-tmfl.pdf"
+  },
+  "tmfl2": {
+   "label": "Tata Motors Finance merger with Tata Capital (Outlook Business / PTI)",
+   "url": "https://www.outlookbusiness.com/markets/tata-capital-to-file-draft-ipo-papers-after-nclt-nod-on-merger-with-tata-motors-fin"
+  },
+  "tmfl3": {
+   "label": "Tata Motors Finance merges with Tata Capital (IIFL / India Infoline)",
+   "url": "https://www.indiainfoline.com/news/business/tata-motors-finance-merges-with-tata-capital-boosting-financial-services"
+  },
+  "hist": {
+   "label": "Tata Capital's growth since 2007 (Angel One)",
+   "url": "https://www.angelone.in/news/market-updates/historical-context-tata-capital-s-growth-since-its-founding-in-2007"
+  },
+  "bod": {
+   "label": "Board of Directors (Tata Capital, official)",
+   "url": "https://www.tatacapital.com/about-us/key-people/board-of-directors.html"
+  },
+  "agm": {
+   "label": "AGM proceedings, 19 Aug 2026 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/TCL_19082026185726_TCLSEIntimationSummaryoftheProceedingsofAGMandVotingResults190826.pdf"
+  },
+  "chair": {
+   "label": "Saurabh Agrawal profile (Tata group)",
+   "url": "https://www.tata.com/leadership/board-of-directors/saurabh-agrawal"
+  },
+  "ceo": {
+   "label": "Tata Capital names Rajiv Sabharwal as new CEO-MD (Business Standard)",
+   "url": "https://www.business-standard.com/amp/article/companies/tata-capital-names-rajiv-sabharwal-as-new-ceo-md-117092800898_1.html"
+  },
+  "ceo2": {
+   "label": "Rajiv Sabharwal to be Tata Capital CEO (Business Standard)",
+   "url": "https://www.business-standard.com/article/companies/rajiv-sabharwal-to-be-tata-capital-ceo-117092500034_1.html"
+  },
+  "ceo3": {
+   "label": "Tata Capital names Rajiv Sabharwal as new CEO-MD (Zee Business)",
+   "url": "https://www.zeebiz.com/agencies/tata-capital-names-rajiv-sabharwal-as-new-ceo-md-26135"
+  },
+  "ceore": {
+   "label": "Re-appointment of Rajiv Sabharwal, EGM outcome (official)",
+   "url": "https://www.TATAcapital.com/content/dam/tata-capital/pdf/investors-and-financial-reports/stock-exchange/TCLReappointmentofRajivSabharwalEGMOutcome.pdf"
+  },
+  "cro": {
+   "label": "Kamal Bhatia named CRO (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/tata-capital-share-price-in-focus-nitin-dharma-resigns-as-chief-risk-officer-of-the-company"
+  },
+  "cro2": {
+   "label": "Tata Capital appoints Kamal Bhatia as CRO (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1704892"
+  },
+  "coo": {
+   "label": "COO Manish Chourasia resigns (People Matters)",
+   "url": "https://www.peoplematters.in/news/leadership/tata-capital-coo-manish-chourasia-resigns-to-pursue-external-opportunity-49602"
+  },
+  "coo2": {
+   "label": "COO Corporate & Cleantech Finance resigns (ScanX)",
+   "url": "https://scanx.trade/stock-market-news/companies/tata-capital-s-chief-operating-officer-corporate-and-cleantech-finance-resigns-effective-may-11-2026/39613860"
+  },
+  "csr": {
+   "label": "Tata Capital Pankh Scholarship (Tata group newsroom)",
+   "url": "https://www.tata.com/newsroom/community/tata-capital-pankh-scholarship"
+  },
+  "csr2": {
+   "label": "Tata Capital's social initiatives reach 1 million+ lives (The CSR Universe)",
+   "url": "https://thecsruniverse.com/articles/tata-capital-s-social-initiatives-bring-positive-change-to-over-1-million-lives-across-india"
+  }
+ },
+ "tiles": [
+  {
+   "v": 4846,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · owners' share (about +32%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 308030,
+   "fmt": "cr",
+   "label": "AUM",
+   "sub": "Sep 2026 · ₹3.08 lakh cr (+26%)",
+   "term": "AUM"
+  },
+  {
+   "v": 1477,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026 · 27 states & UTs"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹1,660 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +51%"
+  },
+  {
+   "v": "₹4,676 cr",
+   "k": "Net total income",
+   "s": "Q2 FY27 · +24%"
+  },
+  {
+   "v": "1.9%",
+   "k": "Gross Stage 3",
+   "s": "Sep 2026"
+  },
+  {
+   "v": "35.3%",
+   "k": "Cost-to-income",
+   "s": "Q2 FY27 · from 39.7%"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Tata Capital is the main lending company of the Tata group (a subsidiary of Tata Sons). It gives loans to individuals, small businesses (SMEs) and large companies, and owns Tata Capital Housing Finance.",
+   "s": [
+    "list2",
+    "hist",
+    "fy26"
+   ]
+  },
+  {
+   "t": "Tata Motors Finance (vehicle loans for Tata trucks and cars) merged into Tata Capital; the merger became effective on 8 May 2025, and Tata Motors got shares in Tata Capital.",
+   "s": [
+    "tmfl",
+    "tmfl2",
+    "tmfl3"
+   ]
+  },
+  {
+   "t": "Listed on NSE and BSE on 13 October 2025 after a ₹15,512 crore IPO at ₹326 a share, the biggest ever IPO by an Indian NBFC. RBI rules made it list because it is an 'upper layer' NBFC.",
+   "s": [
+    "ipo",
+    "list",
+    "list2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 profit (owners' share, consolidated) rose about 32% to ₹4,846 crore; AUM reached ₹2.77 lakh crore.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy26d"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026): profit ₹1,660 crore, up 51%; AUM crossed ₹3 lakh crore at ₹3,08,030 crore.",
+   "s": [
+    "q2",
+    "q2b",
+    "q2c"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2007",
+   "t": "Tata Capital started as the Tata group's financial services company.",
+   "s": [
+    "ipo",
+    "hist"
+   ]
+  },
+  {
+   "y": "Apr 2018",
+   "t": "Rajiv Sabharwal (ex-ICICI Bank) took over as MD & CEO from Praveen Kadle.",
+   "s": [
+    "ceo",
+    "ceo3"
+   ]
+  },
+  {
+   "y": "May 2025",
+   "t": "Tata Motors Finance merged into Tata Capital, adding vehicle loans.",
+   "s": [
+    "tmfl",
+    "tmfl2"
+   ]
+  },
+  {
+   "y": "Oct 2025",
+   "t": "₹15,512 crore IPO; shares listed on NSE and BSE on 13 October.",
+   "s": [
+    "list",
+    "list2",
+    "ipod"
+   ]
+  },
+  {
+   "y": "Jul 2026",
+   "t": "Kamal Bhatia became Chief Risk Officer, succeeding Nitin Dharma.",
+   "s": [
+    "cro",
+    "cro2"
+   ]
+  },
+  {
+   "y": "Sep 2026",
+   "t": "AUM crossed ₹3 lakh crore (₹3,08,030 crore).",
+   "s": [
+    "q2",
+    "q2b"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Tata Capital borrows money from banks and bond investors, and lends it out as personal, home, vehicle, business and corporate loans. It earns the gap between the interest it charges and what it pays, plus fees.",
+  "flow": [
+   "Borrows from banks and bond markets",
+   "Lends to people, SMEs and companies",
+   "Earns interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net total income Q2 FY27",
+    "v": "₹4,676 cr (+24%)",
+    "term": "Net total income",
+    "s": [
+     "q2",
+     "q2b",
+     "q2e"
+    ]
+   },
+   {
+    "k": "Loan mix (at IPO, Jun 2025)",
+    "v": "Retail 61% · SME 26% · Corporate 13%",
+    "s": [
+     "ipo",
+     "list3"
+    ]
+   },
+   {
+    "k": "Cost-to-income Q2 FY27",
+    "v": "35.3% (from 39.7%)",
+    "term": "Cost-to-income ratio",
+    "s": [
+     "q2",
+     "q2e"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI puts the biggest NBFCs in an 'upper layer' with bank-like rules; they must list on the stock market, which is why Tata Capital did its IPO in 2025.",
+   "NBFCs borrow from banks and bond markets, so their cost of funds and credit rating matter a lot.",
+   "Big theme for interviews: using AI and digital journeys to give loans faster and keep bad loans low."
+  ],
+  "s": [
+   "ipo",
+   "list",
+   "q2"
+  ]
+ },
+ "people": [
+  {
+   "ini": "RS",
+   "name": "Rajiv Sabharwal",
+   "role": "Managing Director & CEO",
+   "since": "since Apr 2018",
+   "note": "IIT Delhi and IIM Lucknow; earlier Executive Director at ICICI Bank, where he headed retail banking. Re-appointed for five years from 1 April 2023.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceore",
+    "bod"
+   ]
+  },
+  {
+   "ini": "SA",
+   "name": "Saurabh Agrawal",
+   "role": "Chairman (Non-Executive)",
+   "since": "Chairman of the board",
+   "note": "Group CFO of Tata Sons since 2017; earlier at Bank of America Merrill Lynch, Standard Chartered and the Aditya Birla Group.",
+   "s": [
+    "bod",
+    "chair",
+    "list3",
+    "agm"
+   ]
+  },
+  {
+   "ini": "KB",
+   "name": "Kamal Bhatia",
+   "role": "Chief Risk Officer",
+   "since": "since 1 Jul 2026",
+   "note": "Chartered Accountant with 24+ years in credit and risk; earlier at ICICI Bank and Magma Leasing.",
+   "s": [
+    "cro",
+    "cro2"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Chief Risk Officer Nitin Dharma stepped down on 30 June 2026 after about 19 years; Kamal Bhatia took over on 1 July 2026.",
+   "s": [
+    "cro",
+    "cro2"
+   ]
+  },
+  {
+   "t": "Manish Chourasia, COO for Corporate and Cleantech Finance, resigned in May 2026.",
+   "s": [
+    "coo",
+    "coo2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, consolidated)",
+  "rows": [
+   {
+    "k": "Net profit (owners' share)",
+    "v": "₹4,846 cr (FY25: ₹3,665 cr)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "AUM",
+    "v": "₹2,77,275 cr (+20%)",
+    "term": "AUM",
+    "s": [
+     "fy26",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Gross Stage 3",
+    "v": "2.0% (1.5% without motor finance)",
+    "term": "Stage 3 assets",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "19.0%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26c",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Branches",
+    "v": "1,477 in 27 states & UTs",
+    "s": [
+     "fy26",
+     "fy26d",
+     "brsr"
+    ]
+   },
+   {
+    "k": "Final dividend",
+    "v": "₹0.57 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26b",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit (owners' share) ₹1,660 cr, up 51% from ₹1,097 cr. Total consolidated profit, before the minority share, was ₹1,832 cr.",
+     "term": "Net profit",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c",
+      "q2f"
+     ]
+    },
+    {
+     "t": "AUM ₹3,08,030 cr, up 26%; up 32% without motor finance.",
+     "term": "AUM",
+     "s": [
+      "q2",
+      "q2b",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Gross Stage 3 1.9%; credit cost about 0.9%.",
+     "term": "Stage 3 assets",
+     "s": [
+      "q2b",
+      "q2d",
+      "q2e"
+     ]
+    },
+    {
+     "t": "AI-assisted checks now cover 95%+ of personal and business loan cases.",
+     "s": [
+      "q2",
+      "q2b"
+     ]
+    }
+   ]
+  },
+  "say": "Tata Capital crossed ₹3 lakh crore of AUM in September 2026, and its Q2 FY27 profit rose 51% to ₹1,660 crore."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Bajaj Finance",
+   "Shriram Finance",
+   "Cholamandalam Investment and Finance",
+   "L&T Finance",
+   "Aditya Birla Capital",
+   "Mahindra Finance",
+   "HDB Financial Services"
+  ],
+  "note": "Large diversified NBFCs that compete in personal, vehicle, home and SME loans. Compare AUM growth, Stage 3 and return ratios."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches (Mar 2026)",
+    "v": "1,477"
+   },
+   {
+    "k": "States & UTs",
+    "v": "27"
+   },
+   {
+    "k": "HQ",
+    "v": "Lower Parel, Mumbai"
+   }
+  ],
+  "local": "Tata Capital works through a branch network across India plus digital apps; most retail loans are now decided with digital tools.",
+  "s": [
+   "fy26",
+   "brsr",
+   "fy26d"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "Tata Capital's CSR covers education (Pankh Scholarships for students), healthcare (Aarogyatara, including curable blindness) and climate action (water and clean-energy projects); its programmes reach over 10 lakh people a year.",
+  "s": [
+   "brsr",
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Backed by the Tata group: Tata Sons is the promoter and main owner",
+    "s": [
+     "list2",
+     "ipo",
+     "list"
+    ]
+   },
+   {
+    "t": "Fast growth: AUM up 26% to ₹3.08 lakh cr",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Motor finance book (from TMFL) has weaker asset quality: Stage 3 2.0% overall vs 1.5% without it",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "t": "Motor finance lowers returns: RoA 2.3% overall vs 2.5% without it (Q2 FY27)",
+    "s": [
+     "q2d",
+     "q2f"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "IPO money supports growth; aim to double the loan book in about three years",
+    "s": [
+     "list",
+     "list3"
+    ]
+   },
+   {
+    "t": "AI-led lending cuts costs: cost-to-income down to 35.3%",
+    "s": [
+     "q2",
+     "q2e"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Banks and big NBFCs compete for the same good borrowers",
+    "s": [
+     "ipo",
+     "q2"
+    ]
+   },
+   {
+    "t": "Vehicle loans can turn bad in a slowdown; they already carry more bad loans",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a lender, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Banks and other NBFCs chase the same borrowers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. An RBI licence and cheap funding are hard to get, but fintechs enter digital lending."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Bank loans, BNPL and fintech apps can replace NBFC loans."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Good borrowers can switch to banks for lower rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "High. Banks and bond investors supply the money; their rates set the NBFC's cost of funds."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for credit to small businesses, farmers and first-time borrowers."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change borrowing costs and margins."
+   },
+   {
+    "k": "Social",
+    "v": "Rising aspirations: more people borrow for vehicles, homes, gold and consumer goods."
+   },
+   {
+    "k": "Technological",
+    "v": "Digital lending, app-based loans and data-driven credit scoring."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI's scale-based rules for NBFCs, fair-practice and digital-lending guidelines."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance (e.g. EV loans) and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Loans for vehicles, homes, gold, businesses and consumer goods, plus insurance cross-sell."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set by risk and against banks' rates."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, dealer and shop partners, field agents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Dealer tie-ups, local campaigns, digital offers and cross-selling."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more loans to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New loan products and digital journeys."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in housing finance, insurance or asset management."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "NBFC": "Non-Banking Financial Company: a lender regulated by the RBI that gives loans but cannot take savings or current account deposits like a bank.",
+  "AUM": "Assets Under Management: the total loans an NBFC has given out and not yet been repaid. The main size measure for a lender.",
+  "Disbursements": "New loans paid out to customers in a period.",
+  "Net profit": "What is left after all costs, provisions and taxes. The company's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on borrowings. A lender's main earning.",
+  "Net interest margin": "Net Interest Income as a % of loans or interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Loans not repaid for 90+ days (called 'Stage 3' loans by NBFCs), as a % of all loans.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "Stage 3 assets": "Loans that have stopped paying for 90+ days. NBFCs report Gross and Net Stage 3, similar to banks' NPA.",
+  "Credit cost": "Money set aside for bad loans, as a % of average loans. Lower means fewer losses.",
+  "Capital adequacy ratio": "The lender's own capital compared with the risk in its loans. RBI requires NBFCs to keep at least 15%.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Borrowings": "Money an NBFC raises from banks, bonds (NCDs), commercial paper and, for some, public deposits, to lend onward.",
+  "Cost of funds": "The average interest an NBFC pays on its borrowings. NBFCs usually pay more than banks, so a strong credit rating matters.",
+  "Credit rating": "An agency's grade (e.g. AAA) of how safely a company can repay debt. Higher ratings mean cheaper borrowing.",
+  "Upper Layer NBFC": "The largest and most important NBFCs, named by the RBI under its scale-based rules. They face bank-like rules and must list on the stock market within 3 years.",
+  "Return on assets": "Net profit as a % of average total assets. Shows how well a lender earns on what it owns.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates banks and NBFCs in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before giving a loan.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that lenders serve.",
+  "Cross-sell": "Selling an extra product (like insurance or a second loan) to an existing customer.",
+  "Co-lending": "A bank and an NBFC lending together: the NBFC finds and services the borrower, the bank funds most of the loan.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Net total income": "Net Interest Income plus fees and other income. Tata Capital reports this as its main 'top line'.",
+  "Cost-to-income ratio": "Operating costs as a % of net income. Lower means the lender runs more efficiently.",
+  "Motor finance": "Loans for buying trucks, buses and cars. Tata Capital got this business by merging Tata Motors Finance in 2025.",
+  "Offer for sale": "In an IPO, existing shareholders sell some of their shares; the money goes to them, not the company.",
+  "Owners' share of profit": "The part of group profit that belongs to the company's own shareholders, after removing the share of minority owners in subsidiaries."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Managing borrowing costs"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an NBFC balance sheet",
+    "Basics of RBI rules for NBFCs"
+   ],
+   "tip": "Know AUM, Gross vs Net Stage 3, cost of funds and credit cost, and the company's latest profit.",
+   "kv": [
+    {
+     "k": "Know the numbers",
+     "v": "FY26 profit ₹4,846 cr; Q2 FY27 ₹1,660 cr; AUM ₹3.08 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "Asset quality",
+     "v": "Gross Stage 3 1.9% (Sep 2026)",
+     "term": "Stage 3 assets"
+    },
+    {
+     "k": "Capital",
+     "v": "Capital adequacy 19% (Mar 2026)",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Funding",
+     "v": "Borrows from banks and bonds; watch cost of funds",
+     "term": "Cost of funds"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New customers acquired",
+    "Loans per dealer or partner",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Dealer and partner management"
+   ],
+   "tip": "Think about reaching first-time and small-town borrowers through dealers, branches and mobile.",
+   "kv": [
+    {
+     "k": "Products",
+     "v": "Personal, home, vehicle, business and corporate loans"
+    },
+    {
+     "k": "Brand",
+     "v": "The Tata name builds trust with first-time borrowers"
+    },
+    {
+     "k": "Channels",
+     "v": "1,477 branches plus digital apps and partners"
+    },
+    {
+     "k": "Cross-sell",
+     "v": "Offer a second product to existing customers",
+     "term": "Cross-sell"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "NBFCs hire many field and branch staff. Ideas to cut early attrition and train people fast will impress.",
+   "kv": [
+    {
+     "k": "Who leads",
+     "v": "MD & CEO Rajiv Sabharwal; Chairman Saurabh Agrawal"
+    },
+    {
+     "k": "Big events",
+     "v": "TMFL merger (May 2025), IPO (Oct 2025)",
+     "term": "IPO"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI; Upper Layer NBFC",
+     "term": "Upper Layer NBFC"
+    },
+    {
+     "k": "Theme",
+     "v": "AI-led, faster lending with low bad loans"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Loans disbursed",
+    "Collections and repayment rates",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a two-wheeler loan' or 'Convince a shopkeeper to take a business loan.'",
+   "kv": [
+    {
+     "k": "Who leads",
+     "v": "MD & CEO Rajiv Sabharwal; Chairman Saurabh Agrawal"
+    },
+    {
+     "k": "Big events",
+     "v": "TMFL merger (May 2025), IPO (Oct 2025)",
+     "term": "IPO"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI; Upper Layer NBFC",
+     "term": "Upper Layer NBFC"
+    },
+    {
+     "k": "Theme",
+     "v": "AI-led, faster lending with low bad loans"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Collection efficiency"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, loan turnaround time, collections and how automation reduces errors.",
+   "kv": [
+    {
+     "k": "Who leads",
+     "v": "MD & CEO Rajiv Sabharwal; Chairman Saurabh Agrawal"
+    },
+    {
+     "k": "Big events",
+     "v": "TMFL merger (May 2025), IPO (Oct 2025)",
+     "term": "IPO"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI; Upper Layer NBFC",
+     "term": "Upper Layer NBFC"
+    },
+    {
+     "k": "Theme",
+     "v": "AI-led, faster lending with low bad loans"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Lending basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "Who leads",
+     "v": "MD & CEO Rajiv Sabharwal; Chairman Saurabh Agrawal"
+    },
+    {
+     "k": "Big events",
+     "v": "TMFL merger (May 2025), IPO (Oct 2025)",
+     "term": "IPO"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI; Upper Layer NBFC",
+     "term": "Upper Layer NBFC"
+    },
+    {
+     "k": "Theme",
+     "v": "AI-led, faster lending with low bad loans"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did Tata Capital have to list on the stock market?",
+     "a": "RBI places the largest NBFCs in an 'upper layer' and requires them to list. Tata Capital did a ₹15,512 crore IPO and listed on 13 October 2025."
+    },
+    {
+     "q": "Why is Q2 FY27 profit shown as ₹1,660 cr in some places and ₹1,832 cr in others?",
+     "a": "₹1,660 cr is the profit belonging to Tata Capital's own shareholders. ₹1,832 cr is total consolidated profit, which also includes the share of minority owners in subsidiaries. Always say which figure you mean."
+    },
+    {
+     "q": "What does Gross Stage 3 of 1.9% mean?",
+     "a": "About 1.9% of loans had stopped paying for 90+ days at September 2026. Lower is better."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you sell a Tata Capital personal loan to a young professional?",
+     "a": "Lead with the Tata trust factor, quick digital approval and clear EMIs; target salaried users through apps and employer tie-ups."
+    },
+    {
+     "q": "How can Tata Capital use the Tata Motors Finance customer base?",
+     "a": "Cross-sell insurance, personal and business loans to truck and car owners who already repay vehicle loans."
+    }
+   ],
+   "HR": [
+    {
+     "q": "Tata Capital is growing loans 20%+ a year. What is the HR challenge?",
+     "a": "Hiring and training branch, sales and credit staff fast while keeping turnover low and keeping the Tata culture of trust."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a business loan for a small shop owner.",
+     "a": "Ask about his needs (stock, expansion), show the EMI against his monthly sales, explain fast approval and the Tata name, and close with simple documents."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How does AI help Tata Capital's operations?",
+     "a": "AI-assisted checks cover 95%+ of personal and business loan cases, which speeds up approvals and lowers errors and costs."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What does Tata Capital do?",
+     "a": "It is the Tata group's NBFC: it lends to individuals, small businesses and companies, and owns Tata Capital Housing Finance."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Tata Capital?",
+     "a": "Rajiv Sabharwal is MD & CEO (since 2018). Saurabh Agrawal, Group CFO of Tata Sons, is Chairman."
+    },
+    {
+     "q": "Any recent news?",
+     "a": "Q2 FY27 profit rose 51% to ₹1,660 crore and AUM crossed ₹3 lakh crore. Kamal Bhatia became Chief Risk Officer in July 2026."
+    },
+    {
+     "q": "Why Tata Capital?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "I want to start my career at Tata Capital because it combines the trust of the Tata name with fast growth: it crossed ₹3 lakh crore of loans in 2026 and is using AI to lend faster. I would learn retail, SME and corporate lending in one place.",
+  "ask": [
+   "How has the Tata Motors Finance merger changed the work in my role?",
+   "How is AI changing the work of new joiners in credit and sales?",
+   "What does success look like in the first year in this role?"
+  ],
+  "gd": [
+   {
+    "t": "Should every large NBFC be forced to list on the stock market?",
+    "for": "More transparency, public scrutiny and easier access to capital.",
+    "against": "Listing adds cost and short-term share-price pressure; RBI rules can already control risk."
+   },
+   {
+    "t": "Will AI replace loan officers?",
+    "for": "AI already handles most retail credit checks faster and cheaper.",
+    "against": "Complex SME and corporate loans still need human judgement and relationships."
+   }
+  ],
+  "avoid": [
+   "Calling Tata Capital a bank: it is an NBFC and cannot take savings deposits.",
+   "Mixing up profit figures: say ₹1,660 cr (owners' share) for Q2 FY27, not ₹1,832 cr, unless you explain the difference.",
+   "Confusing Tata Capital with Tata Sons or Tata Motors."
+  ],
+  "night": [
+   "MD & CEO: Rajiv Sabharwal",
+   "Chairman: Saurabh Agrawal",
+   "HQ: Mumbai",
+   "Listed 13 Oct 2025 · NSE: TATACAP",
+   "IPO ₹15,512 cr at ₹326/share",
+   "Tata Motors Finance merged: May 2025",
+   "FY26 profit ₹4,846 cr",
+   "Q2 FY27 profit ₹1,660 cr (+51%)",
+   "AUM ₹3.08 lakh cr (Sep 2026)",
+   "Gross Stage 3 1.9%"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Tata Capital's MD & CEO?",
+   "o": [
+    "Rajiv Sabharwal",
+    "N Chandrasekaran",
+    "Saurabh Agrawal"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which company merged into Tata Capital in 2025?",
+   "o": [
+    "Tata Motors Finance",
+    "Tata AIG",
+    "Tata Steel"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Tata Capital's IPO size was about…",
+   "o": [
+    "₹1,551 cr",
+    "₹15,512 cr",
+    "₹55,120 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "In Sep 2026, Tata Capital's AUM crossed…",
+   "o": [
+    "₹30,000 cr",
+    "₹3 lakh cr",
+    "₹30 lakh cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who regulates Tata Capital?",
+   "o": [
+    "SEBI",
+    "IRDAI",
+    "RBI"
+   ],
+   "a": 2
+  }
+ ],
+ "checked": "18 Nov 2026"
+}

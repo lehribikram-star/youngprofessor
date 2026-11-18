@@ -1,0 +1,1067 @@
+{
+ "id": "mahindra-finance",
+ "name": "Mahindra Finance",
+ "short": "MF",
+ "color": "#E31837",
+ "line": "Mahindra group's Mumbai NBFC that funds cars, tractors and trucks across rural and semi-urban India",
+ "sector": "NBFC",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: M&MFIN · BSE: 532720",
+ "website": "https://www.mahindrafinance.com",
+ "news_query": "Mahindra Finance",
+ "src": {
+  "fy26": {
+   "label": "Q4 & FY26 results press release (Mahindra, official)",
+   "url": "https://www.mahindra.com/news-room/press-release/en/financial-results-quarter-4-and-full-year-fy26-standalone-and-consolidated-results"
+  },
+  "fy26b": {
+   "label": "FY26 profit jumps 55% in Q4 (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/bankingfinance/Mahindra-Finance-Profit-Jumps-55percent-to-indian-rupee873-Cr-on-Strong-Growth-Higher-Margins/69eb5b27bca97ee106af758e"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 PAT climbs 55% to ₹873 cr (Capital Market via Arihant Capital)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25115010088"
+  },
+  "fy26d": {
+   "label": "Q4 FY26 PAT rises 55%, FY26 ₹2,782 cr (NewsBytes)",
+   "url": "https://www.newsbytesapp.com/news/business/mahindra-finance-q4-fiscal-2026-pat-rises-55-to-rs873cr/tldr"
+  },
+  "fy26e": {
+   "label": "Q4 profit jumps 55%, FY26 up 19% (Hindu BusinessLine via Pulse)",
+   "url": "https://www.pulse.bot/stock-investing/news/mahindra-finance-q4-profit-jumps-55-fy26-earnings-up-19-5de98792-917b-49cb-8b1a-7f2c14146971/"
+  },
+  "div": {
+   "label": "₹7.50 dividend and record date (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/mahindra-and-mahindra-financial-dividend-nbfc-announces-7-5-share-dividend-check-record-date/article-192711/"
+  },
+  "q2call": {
+   "label": "Q2 FY27 earnings call transcript (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/M_MFIN_27102026163329_EaningstRanscriptQ22027SIGNED.pdf"
+  },
+  "mm": {
+   "label": "M&M Q2 F27 results release, group companies (Mahindra, official)",
+   "url": "https://www.mahindra.com/print/pdf/node/7998"
+  },
+  "q2": {
+   "label": "Q2 FY27 results (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/mahindra-mahindra-financial-services-share-price-plunges-over-5-after-q2-fy27-results"
+  },
+  "q2b": {
+   "label": "Q2 FY27: profit up 55%, shares fall (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/mahindra-and-mahindra-financial-services-shares-fall-despite-reporting-55-jump-in-profit-in-q2/article-202214/"
+  },
+  "q2c": {
+   "label": "Q2 profit jumps 55% as PV disbursements rise 28% (Autocar Professional)",
+   "url": "https://www.autocarpro.in/news/mahindra-finances-q2-profits-jump-55-percent-as-pv-disbursements-rise-28-percent-135398"
+  },
+  "q2d": {
+   "label": "Q2 FY27 results (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/mahindra-finance-share-price-and-q2-fy-27-results/"
+  },
+  "q2e": {
+   "label": "Q2 FY27 business update (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/mahindra-mahindra-financial-services-share-price-in-focus-as-it-reports-q2-fy27-business-update"
+  },
+  "mgmt": {
+   "label": "Board and management (Mahindra Finance, official)",
+   "url": "https://mahindrafinance.com/about-us/management"
+  },
+  "chair": {
+   "label": "Anish Shah appointed Chairman of Mahindra Finance (Deccan Herald / PTI)",
+   "url": "https://www.deccanherald.com/amp/story/business%2Fanish-shah-appointed-as-chairman-of-mahindra-finance-944721.html"
+  },
+  "ceo": {
+   "label": "Board approves change in MD & CEO (Business Standard)",
+   "url": "https://business-standard.com/article/news-cm/board-of-mahindra-mahindra-financial-services-approves-change-in-md-ceo-123020301537_1.html"
+  },
+  "ceo2": {
+   "label": "Raul Rebello steps up as MD & CEO (TractorGyan)",
+   "url": "https://tractorgyan.com/tractor-industry-news-blogs/1432/mr-raul-rebello-steps-up-as-mahindra-finance-new-md-and-ceo"
+  },
+  "coo": {
+   "label": "Raul Rebello appointed COO, ex-Axis Bank (Business Standard)",
+   "url": "https://www.business-standard.com/article/news-cm/m-m-financial-services-appoints-raul-rebello-as-coo-121090100703_1.html"
+  },
+  "faq": {
+   "label": "When did the company list? (Mahindra Finance, official)",
+   "url": "https://www.mahindrafinance.com/od/faq/when-did-the-company-go-public-which-year-did-it-list-its-stock-2"
+  },
+  "hist": {
+   "label": "Company background and milestones (Aditya Birla Capital)",
+   "url": "https://stocksandsecurities.adityabirlacapital.com/markets/company-background/16795"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Mahindra_%26_Mahindra_Financial_Services_Limited"
+  },
+  "story": {
+   "label": "From a question to a quest for rural prosperity (Mahindra, official)",
+   "url": "https://www.mahindra.com/blogs/en/mahindra-finance-from-a-question-to-a-quest-for-rural-prosperity"
+  },
+  "merge": {
+   "label": "Board approves Rural Housing merger, 1.8 shares for 10 (Free Press Journal)",
+   "url": "https://freepressjournal.in/business/mahindra-finance-approves-rural-housing-merger-shareholders-to-get-18-shares-for-every-10-held"
+  },
+  "merge2": {
+   "label": "Board approves merger of Mahindra Rural Housing Finance (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/mahindra-mahindra-financial-services-shares-in-focus-board-approves-merger-of-mahindra-rural-housing-finance"
+  },
+  "bs": {
+   "label": "Loan growth, lower cost targets positive for M&M Financial (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/news/loan-growth-lower-cost-targets-positive-for-m-m-financial-services-125121600911_1.html"
+  },
+  "rights": {
+   "label": "M&M Finance to raise ₹3,000 cr via rights issue (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/m-m-finance-to-raise-rs-3k-cr-via-simplified-rights-issue-process-125050200954_1.html"
+  },
+  "rights2": {
+   "label": "₹3,000 crore rights issue approved (Autocar Professional)",
+   "url": "https://www.autocarpro.in/news/mahindra-finance-approves-rs-3000-crore-rights-issue-under-simplified-regulations-126228"
+  },
+  "csr": {
+   "label": "CSR projects 2026-27 (Mahindra Finance, official)",
+   "url": "https://media.mahindrafinance.com/2026/05/CSR-Projects-2026-27-.pdf"
+  },
+  "csr2": {
+   "label": "Dhan Samvaad builds financial and digital resilience (The Tribune)",
+   "url": "https://www.tribuneindia.com/news/business/mahindra-finances-dhan-samvaad-builds-financial-and-digital-resilience-across-communities/"
+  }
+ },
+ "tiles": [
+  {
+   "v": 2782,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 standalone (+19%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 146512,
+   "fmt": "cr",
+   "label": "Business assets (AUM)",
+   "sub": "Sep 2026 · +15%",
+   "term": "AUM"
+  },
+  {
+   "v": 12000000,
+   "fmt": "num",
+   "label": "Customers",
+   "sub": "1.2 crore+"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹882 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · standalone · +55%"
+  },
+  {
+   "v": "₹16,499 cr",
+   "k": "Disbursements",
+   "s": "Q2 FY27 · +22%"
+  },
+  {
+   "v": "3.4%",
+   "k": "Gross Stage 3",
+   "s": "Sep 2026 (3.9% a year ago)"
+  },
+  {
+   "v": "18%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in 1991 (as Maxi Motors Financial Services) to give loans for Mahindra vehicles to rural buyers; it is part of the Mahindra group and listed in 2006.",
+   "s": [
+    "faq",
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "t": "Mainly a vehicle lender: about 80% of loans are 'wheels' (cars and utility vehicles, tractors, trucks, used vehicles); the rest is SME loans, personal loans, leasing and home loans.",
+   "s": [
+    "q2call",
+    "q2c",
+    "q2d"
+   ]
+  },
+  {
+   "t": "Raul Rebello, an ex-Axis Bank rural banker, has been MD & CEO since Ramesh Iyer retired in April 2024; Dr Anish Shah (Group CEO of M&M) is Chairman.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "mgmt",
+    "chair"
+   ]
+  },
+  {
+   "t": "Profit is climbing: FY 2025-26 standalone profit was ₹2,782 crore (+19%), and Q2 FY27 (Jul–Sep 2026) profit was ₹882 crore (+55%).",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy26d",
+    "q2",
+    "q2b",
+    "q2call"
+   ]
+  },
+  {
+   "t": "In Aug 2026 the board approved merging its home-loan subsidiary, Mahindra Rural Housing Finance, into the company (proposed from 1 April 2027, approvals pending).",
+   "s": [
+    "merge",
+    "merge2",
+    "q2call"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1991",
+   "t": "Incorporated as Maxi Motors Financial Services; renamed Mahindra & Mahindra Financial Services in 1992.",
+   "s": [
+    "faq",
+    "hist",
+    "wiki"
+   ]
+  },
+  {
+   "y": "1993",
+   "t": "Began financing Mahindra utility vehicles, its first loans.",
+   "s": [
+    "hist",
+    "wiki",
+    "story"
+   ]
+  },
+  {
+   "y": "2006",
+   "t": "IPO: shares listed on the stock exchanges.",
+   "s": [
+    "faq",
+    "hist"
+   ]
+  },
+  {
+   "y": "Apr 2021",
+   "t": "Dr Anish Shah became Chairman.",
+   "s": [
+    "chair",
+    "mgmt"
+   ]
+  },
+  {
+   "y": "Apr 2024",
+   "t": "Raul Rebello took over as MD & CEO after Ramesh Iyer retired.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Aug 2026",
+   "t": "Board approved merging Mahindra Rural Housing Finance into the company.",
+   "s": [
+    "merge",
+    "merge2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Mahindra Finance borrows money from banks and bond investors and lends it, mostly to buy vehicles and tractors, to customers in villages and small towns, many of whom have little credit history. It earns the gap between its loan rates and its borrowing cost, plus fees such as insurance commissions.",
+  "flow": [
+   "Borrows from banks, bonds (NCDs) and deposits",
+   "Lends for cars, tractors, trucks, used vehicles and SMEs",
+   "Field staff collect repayments, often in villages",
+   "Earns interest gap + fees, minus costs and bad loans"
+  ],
+  "facts": [
+   {
+    "k": "Net interest margin Q2 FY27",
+    "v": "About 7%",
+    "term": "Net interest margin",
+    "s": [
+     "q2call",
+     "q2",
+     "q2d"
+    ]
+   },
+   {
+    "k": "Credit cost Q2 FY27",
+    "v": "1.6%",
+    "term": "Credit cost",
+    "s": [
+     "q2call",
+     "q2d",
+     "q2c"
+    ]
+   },
+   {
+    "k": "Loan mix",
+    "v": "~80% vehicles, ~20% others",
+    "s": [
+     "q2call",
+     "q2c",
+     "q2d"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "Vehicle and tractor loans depend on rural incomes, harvests and vehicle sales, so collections can swing with the season.",
+   "NBFCs borrow from banks and bond markets, so their cost of funds rises when interest rates go up.",
+   "Big theme for interviews: how a vehicle lender grows 'non-wheel' loans such as SME, personal and home loans."
+  ],
+  "s": [
+   "q2call",
+   "bs",
+   "q2c"
+  ]
+ },
+ "people": [
+  {
+   "ini": "RR",
+   "name": "Raul Rebello",
+   "role": "Managing Director & CEO",
+   "since": "since Apr 2024",
+   "note": "Nearly two decades at Axis Bank, last as EVP & Head of Rural Lending and Financial Inclusion; joined Mahindra Finance as COO in Sep 2021.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "coo",
+    "mgmt"
+   ]
+  },
+  {
+   "ini": "AS",
+   "name": "Dr Anish Shah",
+   "role": "Non-Executive Chairman",
+   "since": "since Apr 2021",
+   "note": "Group CEO & Managing Director of Mahindra & Mahindra.",
+   "s": [
+    "chair",
+    "mgmt",
+    "mm"
+   ]
+  },
+  {
+   "ini": "PA",
+   "name": "Pradeep Kumar Agrawal",
+   "role": "Chief Financial Officer",
+   "since": "",
+   "note": "CFO of the Mahindra group's financial services sector.",
+   "s": [
+    "mgmt",
+    "q2c",
+    "q2call"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹2,782 cr (+19%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Net profit (consolidated)",
+    "v": "₹2,861 cr (+27%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Business assets (AUM)",
+    "v": "₹1,34,096 cr (+12%)",
+    "term": "AUM",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Net interest margin, Q4 FY26",
+    "v": "7.5% (6.5% a year ago)",
+    "term": "Net interest margin",
+    "s": [
+     "fy26",
+     "fy26c",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "Gross Stage 3",
+    "v": "3.4%",
+    "term": "Stage 3 assets",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "18.8%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹7.50 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "div",
+     "fy26d"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Standalone profit ₹882 cr, up 55% from ₹569 cr; consolidated profit ₹911 cr (+61%).",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c",
+      "q2call",
+      "mm"
+     ],
+     "term": "Net profit"
+    },
+    {
+     "t": "Disbursements ₹16,499 cr (+22%); business assets ₹1,46,512 cr (+15%).",
+     "s": [
+      "q2",
+      "q2b",
+      "q2e",
+      "q2call"
+     ],
+     "term": "Disbursements"
+    },
+    {
+     "t": "Gross Stage 3 fell to 3.4% from 3.9% a year ago; capital adequacy 18%.",
+     "s": [
+      "q2",
+      "q2b",
+      "mm",
+      "q2call"
+     ],
+     "term": "Stage 3 assets"
+    }
+   ]
+  },
+  "say": "Mahindra Finance's standalone profit rose 55% to ₹882 crore in Q2 FY27, with loans growing 15% and bad loans falling to 3.4%."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Shriram Finance",
+   "Bajaj Finance",
+   "Cholamandalam Investment and Finance",
+   "Sundaram Finance",
+   "Tata Capital",
+   "HDB Financial Services"
+  ],
+  "note": "Rivals in vehicle and rural lending; banks also compete for car and tractor loans."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Customers",
+    "v": "1.2 crore+"
+   },
+   {
+    "k": "Head office",
+    "v": "Mumbai"
+   },
+   {
+    "k": "Home loans arm",
+    "v": "Mahindra Rural Housing Finance (merging)"
+   }
+  ],
+  "local": "Much of the work is in rural and semi-urban India: branch, sales and collection roles close to farmers, transporters and small businesses.",
+  "s": [
+   "fy26",
+   "bs",
+   "merge",
+   "q2call"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "CSR focuses on education and livelihoods: Dhan Samvaad teaches money and digital skills to gig workers and small traders, alongside Nanhi Kali girls' education and Saksham scholarships.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Mahindra group parent and deep rural reach (1.2 crore+ customers)",
+    "s": [
+     "fy26",
+     "bs"
+    ]
+   },
+   {
+    "t": "Profit up 55% in Q2 FY27; Stage 3 down to 3.4%",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "About 80% of loans tied to vehicles, so growth follows vehicle sales",
+    "s": [
+     "q2call",
+     "q2c"
+    ]
+   },
+   {
+    "t": "Capital adequacy slipped to 18% (Sep 2026) from 18.8% (Mar 2026)",
+    "s": [
+     "fy26",
+     "q2",
+     "q2call"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Housing merger and new 'non-wheel' loans (non-wheel business up about 52%)",
+    "s": [
+     "merge",
+     "q2c",
+     "q2call"
+    ]
+   },
+   {
+    "t": "Fee income from insurance and cross-selling to existing customers",
+    "s": [
+     "q2c",
+     "q2call"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Rising cost of funds; management expects borrowing costs to go up",
+    "s": [
+     "q2call",
+     "q2"
+    ]
+   },
+   {
+    "t": "Banks and big NBFCs compete hard for vehicle loans",
+    "s": [
+     "bs",
+     "q2d"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a lender, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Banks and other NBFCs chase the same borrowers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. An RBI licence and cheap funding are hard to get, but fintechs enter digital lending."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Bank loans, BNPL and fintech apps can replace NBFC loans."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Good borrowers can switch to banks for lower rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "High. Banks and bond investors supply the money; their rates set the NBFC's cost of funds."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for credit to small businesses, farmers and first-time borrowers."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change borrowing costs and margins."
+   },
+   {
+    "k": "Social",
+    "v": "Rising aspirations: more people borrow for vehicles, homes, gold and consumer goods."
+   },
+   {
+    "k": "Technological",
+    "v": "Digital lending, app-based loans and data-driven credit scoring."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI's scale-based rules for NBFCs, fair-practice and digital-lending guidelines."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance (e.g. EV loans) and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Loans for vehicles, homes, gold, businesses and consumer goods, plus insurance cross-sell."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set by risk and against banks' rates."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, dealer and shop partners, field agents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Dealer tie-ups, local campaigns, digital offers and cross-selling."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more loans to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New loan products and digital journeys."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in housing finance, insurance or asset management."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "NBFC": "Non-Banking Financial Company: a lender regulated by the RBI that gives loans but cannot take savings or current account deposits like a bank.",
+  "AUM": "Assets Under Management: the total loans an NBFC has given out and not yet been repaid. The main size measure for a lender.",
+  "Disbursements": "New loans paid out to customers in a period.",
+  "Net profit": "What is left after all costs, provisions and taxes. The company's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on borrowings. A lender's main earning.",
+  "Net interest margin": "Net Interest Income as a % of loans or interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Loans not repaid for 90+ days (called 'Stage 3' loans by NBFCs), as a % of all loans.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "Stage 3 assets": "Loans that have stopped paying for 90+ days. NBFCs report Gross and Net Stage 3, similar to banks' NPA.",
+  "Credit cost": "Money set aside for bad loans, as a % of average loans. Lower means fewer losses.",
+  "Capital adequacy ratio": "The lender's own capital compared with the risk in its loans. RBI requires NBFCs to keep at least 15%.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Borrowings": "Money an NBFC raises from banks, bonds (NCDs), commercial paper and, for some, public deposits, to lend onward.",
+  "Cost of funds": "The average interest an NBFC pays on its borrowings. NBFCs usually pay more than banks, so a strong credit rating matters.",
+  "Credit rating": "An agency's grade (e.g. AAA) of how safely a company can repay debt. Higher ratings mean cheaper borrowing.",
+  "Upper Layer NBFC": "The largest and most important NBFCs, named by the RBI under its scale-based rules. They face bank-like rules and must list on the stock market within 3 years.",
+  "Return on assets": "Net profit as a % of average total assets. Shows how well a lender earns on what it owns.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates banks and NBFCs in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before giving a loan.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that lenders serve.",
+  "Cross-sell": "Selling an extra product (like insurance or a second loan) to an existing customer.",
+  "Co-lending": "A bank and an NBFC lending together: the NBFC finds and services the borrower, the bank funds most of the loan.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Business assets": "Mahindra Finance's name for its total loan book (AUM), including leasing.",
+  "Collection efficiency": "The share of the money due from borrowers in a period that was actually collected. Close to 100% is good.",
+  "Stage 2 assets": "Loans 30 to 90 days late: not yet bad, but a warning sign.",
+  "Merger": "Two companies joining into one; here a subsidiary is being folded into its parent.",
+  "Swap ratio": "How many shares of the merged company a shareholder of the merging company gets, e.g. 1.8 for every 10."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Managing borrowing costs"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an NBFC balance sheet",
+    "Basics of RBI rules for NBFCs"
+   ],
+   "tip": "Know AUM, Gross vs Net Stage 3, cost of funds and credit cost, and the company's latest profit.",
+   "kv": [
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹882 cr (standalone)",
+     "term": "Net profit"
+    },
+    {
+     "k": "Gross Stage 3",
+     "v": "3.4%",
+     "term": "Stage 3 assets"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "18%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Net interest margin",
+     "v": "About 7%",
+     "term": "Net interest margin"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New customers acquired",
+    "Loans per dealer or partner",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Dealer and partner management"
+   ],
+   "tip": "Think about reaching first-time and small-town borrowers through dealers, branches and mobile.",
+   "kv": [
+    {
+     "k": "Disbursements Q2 FY27",
+     "v": "₹16,499 cr (+22%)",
+     "term": "Disbursements"
+    },
+    {
+     "k": "Customers",
+     "v": "1.2 crore+"
+    },
+    {
+     "k": "Loan mix",
+     "v": "~80% vehicles"
+    },
+    {
+     "k": "Growth push",
+     "v": "SME, personal and home loans",
+     "term": "Cross-sell"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "NBFCs hire many field and branch staff. Ideas to cut early attrition and train people fast will impress.",
+   "kv": [
+    {
+     "k": "Business assets",
+     "v": "₹1,46,512 cr (Sep 2026)",
+     "term": "Business assets"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Raul Rebello"
+    },
+    {
+     "k": "Chairman",
+     "v": "Dr Anish Shah"
+    },
+    {
+     "k": "Parent",
+     "v": "Mahindra & Mahindra"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Loans disbursed",
+    "Collections and repayment rates",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a two-wheeler loan' or 'Convince a shopkeeper to take a business loan.'",
+   "kv": [
+    {
+     "k": "Business assets",
+     "v": "₹1,46,512 cr (Sep 2026)",
+     "term": "Business assets"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Raul Rebello"
+    },
+    {
+     "k": "Chairman",
+     "v": "Dr Anish Shah"
+    },
+    {
+     "k": "Parent",
+     "v": "Mahindra & Mahindra"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Collection efficiency"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, loan turnaround time, collections and how automation reduces errors.",
+   "kv": [
+    {
+     "k": "Business assets",
+     "v": "₹1,46,512 cr (Sep 2026)",
+     "term": "Business assets"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Raul Rebello"
+    },
+    {
+     "k": "Chairman",
+     "v": "Dr Anish Shah"
+    },
+    {
+     "k": "Parent",
+     "v": "Mahindra & Mahindra"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Lending basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "Business assets",
+     "v": "₹1,46,512 cr (Sep 2026)",
+     "term": "Business assets"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Raul Rebello"
+    },
+    {
+     "k": "Chairman",
+     "v": "Dr Anish Shah"
+    },
+    {
+     "k": "Parent",
+     "v": "Mahindra & Mahindra"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What drove Mahindra Finance's profit growth in Q2 FY27?",
+     "a": "Loans grew 15%, the margin held at about 7%, and credit cost was 1.6%, within its 1.3–1.7% target, so profit rose 55% to ₹882 crore (standalone)."
+    },
+    {
+     "q": "What is the difference between Stage 2 and Stage 3 assets?",
+     "a": "Stage 2 loans are 30–90 days late (early stress); Stage 3 are over 90 days late (bad loans). Mahindra Finance's Gross Stage 3 was 3.4% in Sep 2026."
+    },
+    {
+     "q": "Why does a rise in interest rates hurt an NBFC?",
+     "a": "NBFCs borrow from banks and bond markets; when rates rise their cost of funds goes up, and if loan rates are fixed the margin shrinks."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you sell a tractor loan to a first-time borrower in a village?",
+     "a": "Explain the EMI in simple terms linked to harvest cash flows, use the local dealer and branch officer, and stress quick approval and the Mahindra name."
+    },
+    {
+     "q": "How can Mahindra Finance grow beyond vehicle loans?",
+     "a": "Cross-sell SME, personal, home and insurance products to its 1.2 crore+ existing customers, using data and digital journeys."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you keep field and collection staff motivated in rural areas?",
+     "a": "Clear incentives, local hiring, training in soft collection skills, digital tools to cut paperwork, and recognition for good performers."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a used-car loan.",
+     "a": "Ask about the buyer's need and budget, show an affordable EMI, explain quick paperwork through the dealer, and offer insurance cover."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can technology improve collections for a rural lender?",
+     "a": "Digital payment links, reminders in local languages and data to spot early stress; Mahindra Finance says it uses AI tools and regional language bots for collections."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What does the housing-finance merger mean for the company?",
+     "a": "Vehicle, rural and home loans would sit in one listed company, cutting duplicate costs and letting it offer home loans to existing customers."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Mahindra Finance?",
+     "a": "Raul Rebello is MD & CEO (since April 2024); Dr Anish Shah, Group CEO of M&M, is Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the Q2 FY27 profit jump of 55%, or the Aug 2026 board approval to merge Mahindra Rural Housing Finance."
+    },
+    {
+     "q": "Why Mahindra Finance?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Mahindra Finance started by helping rural buyers get loans for Mahindra vehicles, and today serves over 1.2 crore customers, many of them in villages and small towns. It is growing fast, with profit up 55% in Q2 FY27, and is adding home, SME and personal loans. Working here means learning lending at the grassroots and seeing how credit changes lives. I want to contribute to [your role] as it grows.",
+  "ask": [
+   "How is the company balancing vehicle loans with newer products like SME and home loans?",
+   "What will change for customers and teams after the housing-finance merger?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should NBFCs lend to rural borrowers with no credit history?",
+    "for": "It brings credit to people banks ignore and helps them buy tractors and vehicles that earn income.",
+    "against": "Risk of bad loans is higher and depends on harvests and incomes."
+   },
+   {
+    "t": "Should a group-owned lender mainly finance its parent's products?",
+    "for": "It boosts the parent's sales and the lender knows the products and dealers well.",
+    "against": "Too much dependence on one brand limits growth; lenders need wider portfolios."
+   }
+  ],
+  "avoid": [
+   "Don't name Ramesh Iyer as CEO; he retired in April 2024. Raul Rebello leads now.",
+   "Don't call it a bank; it is an NBFC and cannot take savings account deposits.",
+   "Don't mix standalone (₹882 cr) and consolidated (₹911 cr) Q2 FY27 profit; say which one you quote."
+  ],
+  "night": [
+   "MD & CEO: Raul Rebello · Chairman: Dr Anish Shah",
+   "Founded 1991 · listed 2006 · HQ Mumbai",
+   "FY26 profit: ₹2,782 cr standalone (+19%)",
+   "Q2 FY27 profit: ₹882 cr standalone (+55%)",
+   "Gross Stage 3: 3.4% (Sep 2026)",
+   "Rivals: Shriram Finance, Bajaj Finance, Chola, Sundaram",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Mahindra Finance's MD & CEO?",
+   "o": [
+    "Ramesh Iyer",
+    "Raul Rebello",
+    "Anish Shah"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where is Mahindra Finance headquartered?",
+   "o": [
+    "Pune",
+    "Chennai",
+    "Mumbai"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Roughly what share of its loans are for vehicles ('wheels')?",
+   "o": [
+    "About 80%",
+    "About 40%",
+    "About 20%"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Standalone net profit in Q2 FY27 (Jul–Sep 2026) was about:",
+   "o": [
+    "₹569 crore",
+    "₹882 crore",
+    "₹2,782 crore"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which subsidiary's merger did the board approve in Aug 2026?",
+   "o": [
+    "Mahindra Rural Housing Finance",
+    "Mahindra Insurance Brokers",
+    "Mahindra Manulife AMC"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "18 Nov 2026"
+}

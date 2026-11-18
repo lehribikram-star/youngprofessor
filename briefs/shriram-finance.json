@@ -1,0 +1,1089 @@
+{
+ "id": "shriram-finance",
+ "name": "Shriram Finance",
+ "short": "SFL",
+ "color": "#0B4EA2",
+ "line": "A Chennai-born lender best known for used truck loans, now also lending to small businesses, gold and two-wheeler buyers",
+ "sector": "NBFC",
+ "hq": "Chennai (registered office) · Mumbai (corporate office)",
+ "listed": "NSE: SHRIRAMFIN · BSE: 511218",
+ "website": "https://www.shriramfinance.in",
+ "news_query": "Shriram Finance",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Business News Week)",
+   "url": "https://businessnewsweek.in/business/shriram-finance-announces-q2-fy27-financial-results-for-the-quarter-ended-september-2026/"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/shriram-finance-q2-results-pat-surges-59-to-3-677-cr"
+  },
+  "q2c": {
+   "label": "Shares fall after Q2 results; analysts' view (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/shriram-finance-shares-fall-over-6-following-q2-results-here-is-what-analysts-said/article-202378/"
+  },
+  "call": {
+   "label": "Q2 FY27 earnings call transcript, 23 Oct 2026 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/Mathew_27102026125931_BSENSE_Transcript_Earnings_Call_23102026.pdf"
+  },
+  "call2": {
+   "label": "Q2 FY27 earnings call highlights (Investywise)",
+   "url": "https://www.investywise.com/?p=123561"
+  },
+  "q2d": {
+   "label": "Q2 FY27: PAT up 60%, AUM guidance cut (Sahi)",
+   "url": "https://www.sahi.com/news/shriram-finance-q2-pat-rises-60-yoy-to-3-680-crore-cuts-fy27-aum-guidance"
+  },
+  "gold": {
+   "label": "Rise in bad gold loans in Q2 FY27 (Deccan Chronicle)",
+   "url": "https://www.deccanchronicle.com/nation/shriram-finance-reports-rise-in-bad-gold-loans-in-q2fy27-1998243"
+  },
+  "fy26": {
+   "label": "Q4 & FY26 results and board decisions (Investywise, from BSE filing)",
+   "url": "https://www.investywise.com/?p=75119"
+  },
+  "fy26b": {
+   "label": "Q4 FY26 earnings review (Informist)",
+   "url": "https://informistmedia.com/EquityWire/49097/earnings-review-healthy-growth-in-aum-nii-lifts-shriram-finance-s-q4-pat"
+  },
+  "fy26c": {
+   "label": "FY26 profit and dividend (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/bankingfinance/Shriram-Finance-FY26-Profit-Rises-21percent-to-indian-rupee9998-Cr-Dividend-Falls/69eb484cbca97ee106aefa15"
+  },
+  "brsr": {
+   "label": "Business Responsibility & Sustainability Report FY26 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/Mathew_17062026181422_BRSRNSEBSEFY202526.pdf"
+  },
+  "kmp": {
+   "label": "Changes in Directors and KMP, 31 Oct 2025 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/Mathew_31102025144247_BSENSEchangesinDirectorKMPSMP.pdf"
+  },
+  "ceo2": {
+   "label": "Y.S. Chakravarti completes tenure as MD & CEO (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/shriram-finance-announces-completion-of-tenure-of-y-s-chakravarti-as-md-ceo"
+  },
+  "board": {
+   "label": "Board of Directors (Arihant Capital)",
+   "url": "https://www.arihantcapital.com/company-information/board-of-directors/1745"
+  },
+  "merge": {
+   "label": "Shriram Finance merges with Shriram City (Business Standard)",
+   "url": "https://www.business-standard.com/amp/article/companies/shriram-finance-merges-with-shriram-city-to-focus-on-msmes-and-others-122120500616_1.html"
+  },
+  "merge2": {
+   "label": "Merger press release, 5 Dec 2022 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/corporate/SRTRANSFIN_05122022113900_BSENSE.pdf"
+  },
+  "merge3": {
+   "label": "Shriram Group operationalises Shriram Finance (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/news/shriram-group-operationalises-largest-retail-nbfc-shriram-finance-to-focus-on-non-vehicle-financing-news-242649"
+  },
+  "mufg": {
+   "label": "MUFG to invest ₹39,618 cr for 20% stake (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/shriram-finance-mufg-invest-39618-crore-20-percent-stake-preferential-issue-125121900473_1.html"
+  },
+  "mufg2": {
+   "label": "MUFG Bank completes investment in Shriram Finance (MUFG press release)",
+   "url": "https://www.bk.mufg.jp/global/newsroom/news2026/pdf/newse0408.pdf"
+  },
+  "mufg3": {
+   "label": "Board allots 47.11 cr shares to MUFG Bank (Arihant Capital / Capital Market)",
+   "url": "https://www.arihantcapital.com/company-information/companynewsdetails/25098010086"
+  },
+  "nom": {
+   "label": "Appointment of MUFG nominee directors, 24 Apr 2026 (NSE filing)",
+   "url": "https://nsearchives.nseindia.com/content/debt/WDM/Mathew_24042026152103_NSEBSEapptofnomineedirectors.pdf"
+  },
+  "nom2": {
+   "label": "Board approves MUFG nominees for director posts (Whalesbook)",
+   "url": "https://www.whalesbook.com/news/English/bankingfinance/Shriram-Finance-Board-Approves-MUFG-Nominees-for-Director-Posts/698ea2b7119a61fe896ef5f9"
+  },
+  "pay": {
+   "label": "Q4 FY25 results; board clears payments business (Business Standard)",
+   "url": "https://www.business-standard.com/companies/quarterly-results/shriram-finance-q4-net-profit-up-6-board-clears-foray-into-payments-biz-125042501215_1.html"
+  },
+  "hr": {
+   "label": "Great Place To Work certification, 3rd year, Feb 2026 (PR Newswire)",
+   "url": "https://www.prnewswire.com/in/news-releases/shriram-finance-earns-great-place-to-work-certification-for-the-third-consecutive-year-302691220.html"
+  },
+  "hr2": {
+   "label": "India's Best Workplaces in Health & Wellness 2026 (The Tribune)",
+   "url": "https://www.tribuneindia.com/news/business/shriram-finance-recognised-among-indias-best-workplaces-in-health-wellness-2026-for-the-third-consecutive-year/"
+  },
+  "csr": {
+   "label": "Corporate Social Responsibility (Shriram Finance, official)",
+   "url": "https://shriramfinance.in/corporate-social-responsibility"
+  }
+ },
+ "tiles": [
+  {
+   "v": 9998,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · standalone",
+   "term": "Net profit"
+  },
+  {
+   "v": 329022,
+   "fmt": "cr",
+   "label": "AUM",
+   "sub": "30 Sep 2026 · +17%",
+   "term": "AUM"
+  },
+  {
+   "v": 3225,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Offices across 31 states & UTs"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹3,677 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +59% · standalone"
+  },
+  {
+   "v": "₹54,079 cr",
+   "k": "Disbursements Q2 FY27",
+   "s": "+26% year on year"
+  },
+  {
+   "v": "9.52%",
+   "k": "Net interest margin",
+   "s": "Q2 FY27 (8.19% a year ago)"
+  },
+  {
+   "v": "4.65%",
+   "k": "Gross Stage 3",
+   "s": "Sep 2026 · Net 2.31%"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in Chennai in 1979 as Shriram Transport Finance, lending to truck owners (often for used trucks) that banks did not serve. The Shriram Group was founded by R. Thyagarajan.",
+   "s": [
+    "brsr",
+    "merge3",
+    "merge"
+   ]
+  },
+  {
+   "t": "In December 2022 Shriram Transport Finance and Shriram City Union Finance merged to form Shriram Finance, adding two-wheeler and small-business (MSME) loans to vehicle loans.",
+   "s": [
+    "merge",
+    "merge2",
+    "merge3"
+   ]
+  },
+  {
+   "t": "Japan's MUFG Bank bought a 20% stake for about ₹39,618 crore (deal announced Dec 2025, completed 8 Apr 2026), one of the biggest foreign investments in Indian financial services.",
+   "s": [
+    "mufg",
+    "mufg2",
+    "mufg3"
+   ]
+  },
+  {
+   "t": "Parag Sharma became MD & CEO on 5 Dec 2025 (he was earlier the CFO); the board has re-appointed him for five years from 13 Dec 2026. Umesh Revankar is Executive Vice Chairman.",
+   "s": [
+    "kmp",
+    "fy26",
+    "fy26b",
+    "call"
+   ]
+  },
+  {
+   "t": "Q2 FY27 profit rose 59% to ₹3,677 crore and AUM reached ₹3.29 lakh crore, but management trimmed FY27 AUM growth guidance to 15–17% and bad loans in some areas rose a little.",
+   "s": [
+    "q2",
+    "q2b",
+    "call",
+    "q2c"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1979",
+   "t": "Shriram Transport Finance incorporated in Chennai to finance commercial vehicles.",
+   "s": [
+    "brsr",
+    "merge3"
+   ]
+  },
+  {
+   "y": "Dec 2022",
+   "t": "Merger with Shriram City Union Finance (and Shriram Capital) creates Shriram Finance.",
+   "s": [
+    "merge",
+    "merge2"
+   ]
+  },
+  {
+   "y": "Dec 2025",
+   "t": "Parag Sharma takes over as MD & CEO from Y.S. Chakravarti; MUFG Bank signs deal for a 20% stake.",
+   "s": [
+    "kmp",
+    "ceo2",
+    "mufg"
+   ]
+  },
+  {
+   "y": "Apr 2026",
+   "t": "MUFG deal completed (₹39,618 cr); two MUFG nominees join the board. AUM crossed ₹3 lakh crore by March 2026.",
+   "s": [
+    "mufg2",
+    "mufg3",
+    "nom",
+    "fy26"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Q2 FY27: profit ₹3,677 cr (+59%), AUM ₹3.29 lakh cr; FY27 growth guidance cut to 15–17%.",
+   "s": [
+    "q2",
+    "call",
+    "q2c"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Shriram Finance borrows money (public deposits, bonds/NCDs, bank loans, overseas borrowing, securitisation) and lends it to small truck owners, farmers, small businesses and two-wheeler or gold-loan customers, many in rural and semi-urban India. It earns the gap between its lending rate and borrowing cost.",
+  "flow": [
+   "Raises money: deposits, NCDs, bank loans, ECBs",
+   "Lends: vehicles, MSME, gold, two-wheeler, personal loans",
+   "Earns a high interest margin (about 9.5%)",
+   "Profit after costs and bad-loan provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹8,661 cr (+38%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b",
+     "call"
+    ]
+   },
+   {
+    "k": "Cost of borrowing Q2 FY27",
+    "v": "8.41%",
+    "term": "Cost of funds",
+    "s": [
+     "call",
+     "call2"
+    ]
+   },
+   {
+    "k": "Public deposits share of borrowings",
+    "v": "About 31%",
+    "term": "Borrowings",
+    "s": [
+     "call",
+     "call2"
+    ]
+   },
+   {
+    "k": "Customers",
+    "v": "Over 95 lakh",
+    "s": [
+     "brsr",
+     "mufg"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "NBFCs like Shriram lend to people and small firms that banks often find too risky or too small, especially in rural and semi-urban India.",
+   "Foreign banks are buying into Indian lenders: MUFG's ₹39,618 cr deal for 20% of Shriram is among the largest such investments in Indian financial services.",
+   "Vehicle sales grew strongly in 2026, helping vehicle lenders, but credit costs (bad-loan provisions) are being watched closely."
+  ],
+  "s": [
+   "mufg",
+   "mufg2",
+   "call",
+   "q2c"
+  ]
+ },
+ "people": [
+  {
+   "ini": "PS",
+   "name": "Parag Sharma",
+   "role": "Managing Director & CEO",
+   "since": "since 5 Dec 2025",
+   "note": "Was MD & CFO before taking over from Y.S. Chakravarti. Board approved re-appointment for five years from 13 Dec 2026.",
+   "s": [
+    "kmp",
+    "ceo2",
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "ini": "JM",
+   "name": "Jugal Kishore Mohapatra",
+   "role": "Chairman (Independent Director)",
+   "since": "Chairman since Dec 2022",
+   "note": "Named Chairman when the merger took effect; re-appointed as Independent Director for a second term in Dec 2025.",
+   "s": [
+    "merge",
+    "kmp",
+    "board"
+   ]
+  },
+  {
+   "ini": "UR",
+   "name": "Umesh Revankar",
+   "role": "Executive Vice Chairman",
+   "since": "",
+   "note": "Long-time Shriram leader; leads strategy and speaks on earnings calls.",
+   "s": [
+    "call",
+    "board",
+    "merge3"
+   ]
+  },
+  {
+   "ini": "SS",
+   "name": "S. Sunder (Sunder Subramanian)",
+   "role": "Joint Managing Director & CFO",
+   "since": "since Dec 2025",
+   "note": "Appointed Whole Time Director in Oct 2025 and became Joint MD & CFO.",
+   "s": [
+    "kmp",
+    "board",
+    "call"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Parag Sharma's current term ends 12 Dec 2026; the board has re-appointed him as MD & CEO for five years from 13 Dec 2026.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "t": "MUFG Bank nominees Morihiko Fuji and Shinichi Fujinami joined the board as Non-Executive Directors on 24 Apr 2026.",
+   "s": [
+    "nom",
+    "nom2",
+    "fy26"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹9,998 cr",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Q4 FY26 net profit",
+    "v": "₹3,014 cr (+41%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "AUM (31 Mar 2026)",
+    "v": "₹3.02 lakh cr (+15%)",
+    "term": "AUM",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend (FY26 total)",
+    "v": "₹10.80 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹3,677 cr, up 59% from ₹2,307 cr a year earlier (standalone).",
+     "term": "Net profit",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c"
+     ]
+    },
+    {
+     "t": "AUM ₹3,29,022 cr (+17%); disbursements ₹54,079 cr (+26%).",
+     "term": "AUM",
+     "s": [
+      "q2",
+      "call",
+      "call2"
+     ]
+    },
+    {
+     "t": "Gross Stage 3 4.65%, Net Stage 3 2.31%; net interest margin 9.52%.",
+     "term": "Stage 3 assets",
+     "s": [
+      "call",
+      "call2",
+      "q2c"
+     ]
+    },
+    {
+     "t": "FY27 AUM growth guidance cut to 15–17% (from 18%); credit cost guidance about 2%.",
+     "term": "Credit cost",
+     "s": [
+      "call",
+      "q2c",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Interim dividend of ₹6.50 per share declared.",
+     "term": "Dividend",
+     "s": [
+      "q2",
+      "q2b",
+      "call"
+     ]
+    }
+   ]
+  },
+  "say": "Shriram Finance earned ₹3,677 crore in Q2 FY27, up 59%, with AUM of ₹3.29 lakh crore, and its new 20% shareholder MUFG gives it stronger capital and cheaper funding potential."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Bajaj Finance",
+   "Cholamandalam Investment and Finance",
+   "Mahindra & Mahindra Financial Services",
+   "Tata Capital",
+   "L&T Finance",
+   "Muthoot Finance"
+  ],
+  "note": "Rivals differ by product: vehicle loans (Chola, Mahindra Finance), consumer and MSME loans (Bajaj, Tata Capital, L&T Finance), and gold loans (Muthoot)."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches/offices",
+    "v": "3,225"
+   },
+   {
+    "k": "States & UTs",
+    "v": "31"
+   },
+   {
+    "k": "Customers",
+    "v": "Over 95 lakh"
+   },
+   {
+    "k": "Employees",
+    "v": "75,000+"
+   }
+  ],
+  "local": "Shriram has deep roots in Tamil Nadu and South India, and more than half its customers are in rural and semi-urban areas, so many roles are in branches and field teams across small towns.",
+  "s": [
+   "brsr",
+   "mufg",
+   "hr"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Employees",
+    "v": "77,724 (Dec 2025)"
+   },
+   {
+    "k": "Great Place To Work",
+    "v": "Certified, 3rd year (2026)"
+   },
+   {
+    "k": "Health & Wellness list",
+    "v": "India's Best Workplaces 2026"
+   }
+  ],
+  "note": "From Great Place To Work announcements (Feb and Apr 2026). The FY26 BRSR reports 76,241 permanent employees at 31 Mar 2026."
+ },
+ "csr": {
+  "t": "Shriram's CSR focuses on the transport community: scholarships for children of truck-driver families (Class 8–12), mobile medical units giving free check-ups to truckers, and two-wheeler repair skill training with job support.",
+  "s": [
+   "csr",
+   "brsr"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Deep reach in used vehicle finance and rural India",
+    "s": [
+     "brsr",
+     "merge"
+    ]
+   },
+   {
+    "t": "Strong capital after MUFG's ₹39,618 cr investment",
+    "s": [
+     "mufg",
+     "mufg2"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Gross Stage 3 around 4.6% is higher than many large lenders",
+    "s": [
+     "call",
+     "q2c"
+    ]
+   },
+   {
+    "t": "Customers are often small borrowers hit hard in a slowdown",
+    "s": [
+     "brsr",
+     "call"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Grow gold, MSME and personal loans; gold book target ~5% of AUM",
+    "s": [
+     "call",
+     "call2"
+    ]
+   },
+   {
+    "t": "Cheaper funding and better ratings with a global bank as shareholder",
+    "s": [
+     "mufg",
+     "mufg2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Rising credit costs in some regions; guidance trimmed",
+    "s": [
+     "call",
+     "q2c"
+    ]
+   },
+   {
+    "t": "Competition from banks and other NBFCs in vehicle and MSME loans",
+    "s": [
+     "mufg",
+     "q2c"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a lender, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Banks and other NBFCs chase the same borrowers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. An RBI licence and cheap funding are hard to get, but fintechs enter digital lending."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Bank loans, BNPL and fintech apps can replace NBFC loans."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Good borrowers can switch to banks for lower rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "High. Banks and bond investors supply the money; their rates set the NBFC's cost of funds."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for credit to small businesses, farmers and first-time borrowers."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change borrowing costs and margins."
+   },
+   {
+    "k": "Social",
+    "v": "Rising aspirations: more people borrow for vehicles, homes, gold and consumer goods."
+   },
+   {
+    "k": "Technological",
+    "v": "Digital lending, app-based loans and data-driven credit scoring."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI's scale-based rules for NBFCs, fair-practice and digital-lending guidelines."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance (e.g. EV loans) and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Loans for vehicles, homes, gold, businesses and consumer goods, plus insurance cross-sell."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set by risk and against banks' rates."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, dealer and shop partners, field agents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Dealer tie-ups, local campaigns, digital offers and cross-selling."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more loans to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New loan products and digital journeys."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in housing finance, insurance or asset management."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "NBFC": "Non-Banking Financial Company: a lender regulated by the RBI that gives loans but cannot take savings or current account deposits like a bank.",
+  "AUM": "Assets Under Management: the total loans an NBFC has given out and not yet been repaid. The main size measure for a lender.",
+  "Disbursements": "New loans paid out to customers in a period.",
+  "Net profit": "What is left after all costs, provisions and taxes. The company's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on borrowings. A lender's main earning.",
+  "Net interest margin": "Net Interest Income as a % of loans or interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Loans not repaid for 90+ days (called 'Stage 3' loans by NBFCs), as a % of all loans.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "Stage 3 assets": "Loans that have stopped paying for 90+ days. NBFCs report Gross and Net Stage 3, similar to banks' NPA.",
+  "Credit cost": "Money set aside for bad loans, as a % of average loans. Lower means fewer losses.",
+  "Capital adequacy ratio": "The lender's own capital compared with the risk in its loans. RBI requires NBFCs to keep at least 15%.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Borrowings": "Money an NBFC raises from banks, bonds (NCDs), commercial paper and, for some, public deposits, to lend onward.",
+  "Cost of funds": "The average interest an NBFC pays on its borrowings. NBFCs usually pay more than banks, so a strong credit rating matters.",
+  "Credit rating": "An agency's grade (e.g. AAA) of how safely a company can repay debt. Higher ratings mean cheaper borrowing.",
+  "Upper Layer NBFC": "The largest and most important NBFCs, named by the RBI under its scale-based rules. They face bank-like rules and must list on the stock market within 3 years.",
+  "Return on assets": "Net profit as a % of average total assets. Shows how well a lender earns on what it owns.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates banks and NBFCs in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before giving a loan.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that lenders serve.",
+  "Cross-sell": "Selling an extra product (like insurance or a second loan) to an existing customer.",
+  "Co-lending": "A bank and an NBFC lending together: the NBFC finds and services the borrower, the bank funds most of the loan.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Securitisation": "Selling a pool of loans to investors to raise money; the lender gets cash now and investors get the loan repayments.",
+  "Preferential issue": "New shares sold directly to a chosen investor (like MUFG) at a set price, instead of to the public.",
+  "Used vehicle finance": "Loans to buy second-hand trucks, cars or tractors. Higher rates than new-vehicle loans, and Shriram's traditional strength.",
+  "Gold loan": "A loan given against gold jewellery kept as security."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Managing borrowing costs"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an NBFC balance sheet",
+    "Basics of RBI rules for NBFCs"
+   ],
+   "tip": "Know AUM, Gross vs Net Stage 3, cost of funds and credit cost, and the company's latest profit.",
+   "kv": [
+    {
+     "k": "Net interest margin",
+     "v": "9.52%",
+     "term": "Net interest margin"
+    },
+    {
+     "k": "Gross Stage 3",
+     "v": "4.65%",
+     "term": "Stage 3 assets"
+    },
+    {
+     "k": "Cost of borrowing",
+     "v": "8.41%",
+     "term": "Cost of funds"
+    },
+    {
+     "k": "Credit cost guidance",
+     "v": "About 2%",
+     "term": "Credit cost"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New customers acquired",
+    "Loans per dealer or partner",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Dealer and partner management"
+   ],
+   "tip": "Think about reaching first-time and small-town borrowers through dealers, branches and mobile.",
+   "kv": [
+    {
+     "k": "Customers",
+     "v": "Over 95 lakh"
+    },
+    {
+     "k": "Branches",
+     "v": "3,225"
+    },
+    {
+     "k": "Disbursements Q2 FY27",
+     "v": "₹54,079 cr",
+     "term": "Disbursements"
+    },
+    {
+     "k": "AUM growth",
+     "v": "17%",
+     "term": "AUM"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "NBFCs hire many field and branch staff. Ideas to cut early attrition and train people fast will impress.",
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Branches",
+     "v": "3,225"
+    },
+    {
+     "k": "AUM",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹3,677 cr",
+     "term": "Net profit"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Loans disbursed",
+    "Collections and repayment rates",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a two-wheeler loan' or 'Convince a shopkeeper to take a business loan.'",
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Branches",
+     "v": "3,225"
+    },
+    {
+     "k": "AUM",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹3,677 cr",
+     "term": "Net profit"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Collection efficiency"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, loan turnaround time, collections and how automation reduces errors.",
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Branches",
+     "v": "3,225"
+    },
+    {
+     "k": "AUM",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹3,677 cr",
+     "term": "Net profit"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Lending basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "Employees",
+     "v": "75,000+"
+    },
+    {
+     "k": "Branches",
+     "v": "3,225"
+    },
+    {
+     "k": "AUM",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹3,677 cr",
+     "term": "Net profit"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why is Shriram's net interest margin (about 9.5%) so much higher than a bank's?",
+     "a": "It lends to riskier small borrowers (used vehicles, MSMEs) at higher rates; the margin pays for higher credit costs and operating costs."
+    },
+    {
+     "q": "What does MUFG's 20% stake do for Shriram's finances?",
+     "a": "It added about ₹39,618 cr of equity, strengthening its capital and potentially improving ratings and borrowing costs."
+    },
+    {
+     "q": "Q2 FY27 profit rose 59% but the stock fell. Why?",
+     "a": "Investors focused on the cut in AUM growth guidance to 15–17% and a rise in credit costs; profit growth also benefited from the new equity."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you market gold loans to Shriram's existing truck-owner customers?",
+     "a": "Use branches and field staff they already trust, stress quick cash and low paperwork, and offer it as a short-term working-capital option."
+    },
+    {
+     "q": "How can Shriram attract younger, digital customers?",
+     "a": "Through its app, simple two-wheeler and personal loan journeys, and regional-language digital campaigns in small towns."
+    }
+   ],
+   "HR": [
+    {
+     "q": "Shriram has 75,000+ employees, many in small towns. How would you reduce early attrition?",
+     "a": "Hire locally, give clear career paths, quick training on products and collections, and recognise field staff often."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a used-truck loan to a first-time truck owner.",
+     "a": "Understand his routes and income, show an EMI that fits his earnings, and explain fast approval and branch support nearby."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you speed up loan approvals across 3,225 branches?",
+     "a": "Standard digital KYC and document checks, clear turnaround-time targets, and central checks for risky cases only."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What is Shriram Finance known for?",
+     "a": "Commercial and used vehicle loans to small operators, now also MSME, gold, two-wheeler and personal loans."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Shriram Finance?",
+     "a": "Parag Sharma is MD & CEO (since Dec 2025), Jugal Kishore Mohapatra is Chairman, and Umesh Revankar is Executive Vice Chairman."
+    },
+    {
+     "q": "Any recent news?",
+     "a": "MUFG Bank completed its ₹39,618 cr deal for a 20% stake in April 2026, and Q2 FY27 profit rose 59% to ₹3,677 cr."
+    },
+    {
+     "q": "Why Shriram Finance?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Shriram Finance serves truck owners, farmers and small businesses that many banks overlook, and has grown into a ₹3.29 lakh crore lender. With MUFG now a 20% shareholder, it is entering a new growth phase in gold, MSME and digital lending. I want to learn credit and customer work close to real India.",
+  "ask": [
+   "How will the MUFG partnership change products or funding for customers?",
+   "What does a first-year management trainee do in branch or regional roles?",
+   "Which new segments, like gold or MSME, will grow fastest over the next two years?"
+  ],
+  "gd": [
+   {
+    "t": "Should foreign banks own big stakes in Indian NBFCs?",
+    "for": "Brings stable capital, cheaper funding and global practices (e.g. MUFG–Shriram).",
+    "against": "Risk of foreign influence on lending priorities; profits flow abroad."
+   },
+   {
+    "t": "Are NBFCs better than banks at serving rural India?",
+    "for": "Local knowledge, faster decisions, used-vehicle and informal-income lending.",
+    "against": "Higher interest rates and higher bad loans; banks have cheaper deposits."
+   }
+  ],
+  "avoid": [
+   "Calling Shriram a bank: it is an NBFC and cannot offer savings accounts.",
+   "Saying MUFG owns or controls Shriram: it holds about 20% and is classed as a public shareholder.",
+   "Mixing standalone and consolidated profit figures."
+  ],
+  "night": [
+   "MD & CEO: Parag Sharma (since 5 Dec 2025)",
+   "Chairman: Jugal Kishore Mohapatra",
+   "Exec Vice Chairman: Umesh Revankar",
+   "Founded 1979, Chennai; merged with Shriram City Dec 2022",
+   "FY26 profit: ₹9,998 cr (standalone)",
+   "Q2 FY27 profit: ₹3,677 cr (+59%)",
+   "AUM: ₹3.29 lakh cr (Sep 2026)",
+   "MUFG: 20% stake, ₹39,618 cr, completed Apr 2026",
+   "Gross Stage 3 4.65%; NIM 9.52%",
+   "3,225 branches, 75,000+ employees"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Which Japanese bank bought about 20% of Shriram Finance?",
+   "o": [
+    "SMBC",
+    "MUFG Bank",
+    "Mizuho"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who became MD & CEO of Shriram Finance in December 2025?",
+   "o": [
+    "Umesh Revankar",
+    "Y.S. Chakravarti",
+    "Parag Sharma"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Which company merged with Shriram Transport Finance in 2022?",
+   "o": [
+    "Shriram City Union Finance",
+    "Shriram Housing Finance",
+    "Shriram Life Insurance"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Shriram Finance's AUM at 30 Sep 2026 was about:",
+   "o": [
+    "₹1.7 lakh cr",
+    "₹3.29 lakh cr",
+    "₹5 lakh cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Shriram Finance's traditional strength is loans for:",
+   "o": [
+    "Home purchases",
+    "Used commercial vehicles",
+    "Credit cards"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "18 Nov 2026"
+}

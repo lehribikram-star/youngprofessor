@@ -1,0 +1,1079 @@
+{
+ "id": "muthoot-finance",
+ "name": "Muthoot Finance",
+ "short": "MF",
+ "color": "#D71920",
+ "line": "A Kochi-based NBFC that lends against gold jewellery through thousands of branches",
+ "sector": "NBFC",
+ "hq": "Kochi, Kerala",
+ "listed": "NSE: MUTHOOTFIN · BSE: 533398",
+ "website": "https://www.muthootfinance.com",
+ "news_query": "Muthoot Finance",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/muthoot-finance-q2-fy27-consolidated-profit-rises-36-to-3278-crore-standalone-income-jumps-37"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results (JM Financial / Capital Market)",
+   "url": "https://www.jmfinancialservices.in/market-news-and-insights/1743076"
+  },
+  "q2c": {
+   "label": "Q2 FY27 profit and NII beat estimates (IndiaIPO / CNBC-TV18 poll)",
+   "url": "https://www.indiaipo.in/news/detail/muthoot-finance-q2-net-profit-rises-27-to-2978-crore-nii-up-34-beats-estimates"
+  },
+  "q2d": {
+   "label": "Q2 FY27 loan AUM up 42% (FinTechBizNews)",
+   "url": "https://www.fintechbiznews.com/lenders-nbfcs/muthoot-finance-loan-aum-up-42-at-rs-616-bn"
+  },
+  "q2e": {
+   "label": "Results for quarter ended 30 Sep 2026 (InvestyWise, from BSE filing)",
+   "url": "https://www.investywise.com/?p=127684"
+  },
+  "q2f": {
+   "label": "Q2 FY27 investor presentation: gold, collateral, Stage 3 (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/muthoot-finance-collateral-margin-narrows-ppt-cmvyvfk39000d2cpc83i7l1cb"
+  },
+  "q2g": {
+   "label": "Q2 FY27 results analysis: provisions, Stage 3 (CompoundingAI)",
+   "url": "https://compoundingai.in/market-news/muthootfin-q2-fy27-results-analysis"
+  },
+  "q2h": {
+   "label": "₹1.79 lakh crore against 204 tonnes of gold (Digital Trust analysis)",
+   "url": "https://digitaltrust.substack.com/p/179-lakh-crore-against-204-tonnes"
+  },
+  "isec": {
+   "label": "Q2 FY27 results update, ICICI Securities (DSIJ)",
+   "url": "https://insights.dsij.in/markets/reports/report-details/muthoot-finance-ltd/46021"
+  },
+  "bs": {
+   "label": "Gold financiers under pressure as gold falls, 18 Nov 2026 (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/news/gold-financiers-under-pressure-muthoot-manappuram-fall-5-here-s-why-126111800267_1.html"
+  },
+  "q1": {
+   "label": "Q1 FY27: gold price vs tonnage, Stage 3 (INDmoney)",
+   "url": "https://www.indmoney.com/blog/stocks/why-muthoot-finance-share-price-is-falling"
+  },
+  "fy26": {
+   "label": "FY26 PAT up 98% at ₹10,607 cr (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-nbfcs/muthoot-finances-pat-up-by-98-at-rs10607-cr"
+  },
+  "fy26b": {
+   "label": "FY26 results and dividend (InvestyWise, from BSE filing)",
+   "url": "https://www.investywise.com/muthoot-finance-strong-q4-results-and-dividend-declaration/"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 results: AUM crosses ₹1.81 lakh cr (DSIJ)",
+   "url": "https://insights.dsij.in/dsijarticledetail/muthoot-finance-q4fy26-results-pat-jumps-135-yoy-aum-crosses-rs-181-lakh-crore-57121"
+  },
+  "fy26d": {
+   "label": "Q4 FY26: GNPA at 2.35% (Sahi)",
+   "url": "https://sahi.com/news/muthoot-finance-posts-104-profit-surge-to-30-8b-but-gnpa-spikes-to-2-35-3447-PE1_COR"
+  },
+  "md": {
+   "label": "Alexander George is now Muthoot Finance MD (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-nbfcs/alexander-george-appointed-as-muthoot-finance-md"
+  },
+  "md2": {
+   "label": "Leadership succession and MD appointment (InvestyWise, from BSE filing)",
+   "url": "https://www.investywise.com/muthoot-finance-leadership-succession-and-md-appointment/"
+  },
+  "md3": {
+   "label": "Shareholders approve new MD and Vice Chairman (Board Stewardship)",
+   "url": "https://boardstewardship.com/?p=53463"
+  },
+  "md4": {
+   "label": "Alexander George to become MD (NewsBytes)",
+   "url": "https://www.newsbytesapp.com/news/business/muthoot-finance-to-make-alexander-george-md-pending-shareholder-approval/tldr"
+  },
+  "md5": {
+   "label": "Board outcome, 1 Aug 2026: MD, Executive Vice Chairman, CEO (exchange announcement, Arthneeti)",
+   "url": "https://www.arthneeti.com/announcements/muthoot-finance-ltd-financial-result-for-the-quarter-ended-june-30-2026-01-aug-2026"
+  },
+  "dir": {
+   "label": "Our Directors (Muthoot Finance, official)",
+   "url": "https://muthootfinance.com/our-directors"
+  },
+  "grp": {
+   "label": "Group Chairman (The Muthoot Group, official)",
+   "url": "https://www.muthootgroup.com/corporate/new-chairman"
+  },
+  "brsr": {
+   "label": "BRSR FY 2025-26 (Muthoot Finance filing on NSE)",
+   "url": "https://nsearchives.nseindia.com/corporate/MUTHOOTFIN_07082026200058_BRSR-comfinal-sd.pdf"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Muthoot_Finance"
+  },
+  "hist": {
+   "label": "Muthoot Group history (5paisa)",
+   "url": "https://www.5paisa.com/blog/muthoot-group-history"
+  },
+  "ipo": {
+   "label": "Muthoot Finance debuts at 12% premium, May 2011 (Business Standard)",
+   "url": "https://business-standard.com/article/companies/muthoot-finance-debuts-with-12-premium-on-nse-111050600123_1.html"
+  },
+  "csr": {
+   "label": "Muthoot Finance CSR outlay for FY27 (India CSR)",
+   "url": "https://indiacsr.in/muthoot-finance-announces-rs-174-03-crore-csr-outlay-for-fy27/"
+  }
+ },
+ "tiles": [
+  {
+   "v": 10607,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26, consolidated (+98%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 209317,
+   "fmt": "cr",
+   "label": "Loan AUM",
+   "sub": "Sep 2026, consolidated (+42%)",
+   "term": "AUM"
+  },
+  {
+   "v": 7904,
+   "fmt": "num",
+   "label": "Branches (group)",
+   "sub": "Sep 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹3,278 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · consolidated · +36%"
+  },
+  {
+   "v": "₹1.79 lakh cr",
+   "k": "Gold loan AUM",
+   "s": "Sep 2026 · standalone · +43%"
+  },
+  {
+   "v": "3.87%",
+   "k": "Gross Stage 3",
+   "s": "Sep 2026 · up from 2.28% in Jun"
+  },
+  {
+   "v": "204 tonnes",
+   "k": "Gold held as security",
+   "s": "Sep 2026 · 209 a year ago"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Muthoot Finance gives loans against gold jewellery. It is the listed flagship of the Kerala-based Muthoot Group, whose gold loan business goes back to 1939.",
+   "s": [
+    "wiki",
+    "hist",
+    "brsr"
+   ]
+  },
+  {
+   "t": "Leadership changed on 1 October 2026: Alexander George became Managing Director, long-time MD George Alexander Muthoot became Executive Vice Chairman, and COO K.R. Bijimon was elevated to CEO. George Jacob Muthoot is Chairman.",
+   "s": [
+    "md",
+    "md2",
+    "md3",
+    "md5"
+   ]
+  },
+  {
+   "t": "FY 2025-26 was a record year: consolidated profit nearly doubled to ₹10,607 crore and loan AUM rose 49% to ₹1.82 lakh crore, helped by high gold prices.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy26c"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026): consolidated profit ₹3,278 crore (+36%); loan AUM ₹2.09 lakh crore (+42%).",
+   "s": [
+    "q2",
+    "q2b",
+    "q2d"
+   ]
+  },
+  {
+   "t": "Watch point: Gross Stage 3 jumped to 3.87% in Sep 2026 as borrowers adjusted to RBI's new gold loan rules (monthly interest payments from April 2026), and a fall in gold prices in Nov 2026 hit gold lender shares.",
+   "s": [
+    "q2f",
+    "q2g",
+    "isec",
+    "bs"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1939",
+   "t": "The Muthoot family's gold loan business began in Kerala.",
+   "s": [
+    "wiki",
+    "hist"
+   ]
+  },
+  {
+   "y": "Mar 1997",
+   "t": "Incorporated as The Muthoot Finance Private Limited.",
+   "s": [
+    "brsr",
+    "wiki"
+   ]
+  },
+  {
+   "y": "May 2011",
+   "t": "Listed on NSE and BSE after a ₹901 crore IPO.",
+   "s": [
+    "ipo",
+    "wiki"
+   ]
+  },
+  {
+   "y": "FY 2025-26",
+   "t": "Record year: consolidated profit ₹10,607 crore, loan AUM ₹1.82 lakh crore.",
+   "s": [
+    "fy26",
+    "fy26b"
+   ]
+  },
+  {
+   "y": "Apr 2026",
+   "t": "RBI's revised gold loan rules took effect (tighter LTV slabs, monthly interest servicing).",
+   "s": [
+    "bs",
+    "isec",
+    "q2h"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Alexander George took over as MD; George Alexander Muthoot became Executive Vice Chairman; K.R. Bijimon became CEO.",
+   "s": [
+    "md",
+    "md2",
+    "md3"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Customers pledge gold jewellery and get a loan within minutes at a branch. Muthoot earns interest on these short loans. If a borrower does not repay, the company can auction the gold. Because loans are backed by gold, a rise in gold prices lets each gram support a bigger loan, and a fall shrinks the safety cushion.",
+  "flow": [
+   "Customer pledges gold jewellery",
+   "Gold valued; loan given as a % of value (LTV)",
+   "Interest earned; gold returned on repayment",
+   "Unpaid loans: gold can be auctioned"
+  ],
+  "facts": [
+   {
+    "k": "Gold held as security",
+    "v": "204 tonnes (Sep 2026)",
+    "s": [
+     "q2f",
+     "isec",
+     "q2h"
+    ]
+   },
+   {
+    "k": "Gold value used per gram",
+    "v": "₹13,547 (₹10,566 a year ago)",
+    "s": [
+     "q2f",
+     "q2h"
+    ]
+   },
+   {
+    "k": "Standalone gold loan AUM",
+    "v": "₹1,78,956 cr (+43%)",
+    "term": "AUM",
+    "s": [
+     "q2",
+     "q2c",
+     "q2f"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI's revised gold loan rules (from April 2026) set loan-to-value limits by loan size and require regular interest servicing; this pushed up Muthoot's Stage 2 and Stage 3 loans in Q2 FY27.",
+   "Gold prices drive gold lenders: higher prices lift loan sizes and AUM, while a fall reduces the safety cushion on loans.",
+   "Gold loan NBFCs have asked RBI to ease capital rules (Tier-I capital and 100% risk weight on gold loans) to match banks."
+  ],
+  "s": [
+   "bs",
+   "isec",
+   "q2h"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AG",
+   "name": "Alexander George",
+   "role": "Managing Director",
+   "since": "since 1 Oct 2026",
+   "note": "Youngest son of the late Chairman M.G. George Muthoot; with the company since 2006 and earlier Joint MD, leading operations, branch expansion and digital work. Term to March 2031. Also written Alexander George Muthoot.",
+   "s": [
+    "md",
+    "md2",
+    "md3",
+    "dir"
+   ]
+  },
+  {
+   "ini": "GJ",
+   "name": "George Jacob Muthoot",
+   "role": "Chairman",
+   "since": "Group Chairman",
+   "note": "Chairman of Muthoot Finance and of The Muthoot Group; civil engineer by training.",
+   "s": [
+    "dir",
+    "grp",
+    "fy26",
+    "md"
+   ]
+  },
+  {
+   "ini": "GA",
+   "name": "George Alexander Muthoot",
+   "role": "Executive Vice Chairman",
+   "since": "since 1 Oct 2026",
+   "note": "Was Managing Director for over three decades; now guides strategy and mentors the new team.",
+   "s": [
+    "md",
+    "md2",
+    "md3",
+    "md4"
+   ]
+  },
+  {
+   "ini": "KB",
+   "name": "K.R. Bijimon",
+   "role": "Chief Executive Officer",
+   "since": "announced Aug 2026",
+   "note": "Earlier Executive Director & Chief Operating Officer; elevated to CEO in the 2026 succession plan.",
+   "s": [
+    "md",
+    "md2",
+    "md5",
+    "md4"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Aug 2026: board announced the succession; shareholders approved it and the new roles started on 1 October 2026.",
+   "s": [
+    "md2",
+    "md3",
+    "md5"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, consolidated unless marked)",
+  "rows": [
+   {
+    "k": "Net profit (consolidated)",
+    "v": "₹10,607 cr (FY25: ₹5,352 cr)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "md2"
+    ]
+   },
+   {
+    "k": "Net profit (standalone)",
+    "v": "₹10,134 cr (+95%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Loan AUM",
+    "v": "₹1,81,916 cr (+49%)",
+    "term": "AUM",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Gold loan AUM",
+    "v": "₹1,65,030 cr (+54%)",
+    "term": "AUM",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Gross Stage 3 (standalone, Mar 2026)",
+    "v": "2.35%",
+    "term": "Stage 3 assets",
+    "s": [
+     "fy26d",
+     "q1"
+    ]
+   },
+   {
+    "k": "Group branches",
+    "v": "7,568",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹30 per share (highest ever)",
+    "term": "Dividend",
+    "s": [
+     "fy26b",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹3,278 cr consolidated (+36%) and ₹2,977 cr standalone (+27%).",
+     "term": "Net profit",
+     "s": [
+      "q2",
+      "q2b",
+      "q2e"
+     ]
+    },
+    {
+     "t": "Loan AUM ₹2,09,317 cr consolidated (+42%); standalone gold loan AUM ₹1,78,956 cr (+43%).",
+     "term": "AUM",
+     "s": [
+      "q2",
+      "q2c",
+      "q2d"
+     ]
+    },
+    {
+     "t": "Gold price effect: gold held fell to 204 tonnes from 209 a year ago, but the value per gram rose about 28%, so much of the AUM growth came from higher gold prices.",
+     "s": [
+      "q2f",
+      "q2h",
+      "isec"
+     ]
+    },
+    {
+     "t": "Gross Stage 3 rose to 3.87% (2.28% in June) and impairment charges jumped; management called it a transition to monthly interest payments under the new RBI rules.",
+     "term": "Stage 3 assets",
+     "s": [
+      "q2f",
+      "q2g",
+      "isec",
+      "q2h"
+     ]
+    }
+   ]
+  },
+  "say": "Muthoot Finance earned ₹3,278 crore last quarter on 42% loan growth, but its bad loans rose to 3.87% as borrowers adjusted to RBI's new gold loan rules."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Manappuram Finance",
+   "Muthoot FinCorp",
+   "IIFL Finance",
+   "State Bank of India",
+   "HDFC Bank",
+   "Federal Bank"
+  ],
+  "note": "Gold loan NBFCs and banks both compete for gold loans; compare growth, Stage 3 and gold tonnage."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches (group, Sep 2026)",
+    "v": "7,904"
+   },
+   {
+    "k": "Branches added H1 FY27",
+    "v": "336"
+   },
+   {
+    "k": "Gold held (Sep 2026)",
+    "v": "204 tonnes"
+   }
+  ],
+  "local": "Muthoot is rooted in Kerala and South India but has opened branches across the country; many roles are branch-based in sales, gold appraisal and operations.",
+  "s": [
+   "q2",
+   "q2b",
+   "isec",
+   "q2f"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "Muthoot Finance's CSR covers education (scholarships, school programmes), healthcare, housing for vulnerable families and livelihood support for coastal and tribal communities.",
+  "s": [
+   "csr",
+   "brsr"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Record profit: ₹10,607 cr in FY26 (consolidated)",
+    "s": [
+     "fy26",
+     "fy26b"
+    ]
+   },
+   {
+    "t": "Large branch network: 7,904 group branches",
+    "s": [
+     "q2b",
+     "isec"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Gross Stage 3 rose to 3.87% in Sep 2026",
+    "s": [
+     "q2f",
+     "q2g"
+    ]
+   },
+   {
+    "t": "Growth depends heavily on gold prices: tonnage fell year on year",
+    "s": [
+     "q2f",
+     "q2h"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Gold loan growth guidance for FY27 raised by another 10%",
+    "s": [
+     "q2b",
+     "q2c"
+    ]
+   },
+   {
+    "t": "Merger of subsidiary Muthoot Money into the company proposed (appointed date 1 Apr 2027)",
+    "s": [
+     "q2",
+     "q2g"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "A fall in gold prices cuts the safety cushion; shares fell in Nov 2026",
+    "s": [
+     "bs",
+     "isec"
+    ]
+   },
+   {
+    "t": "Tighter RBI gold loan rules and competition from banks",
+    "s": [
+     "bs",
+     "isec"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a lender, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Banks and other NBFCs chase the same borrowers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. An RBI licence and cheap funding are hard to get, but fintechs enter digital lending."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Bank loans, BNPL and fintech apps can replace NBFC loans."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Good borrowers can switch to banks for lower rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "High. Banks and bond investors supply the money; their rates set the NBFC's cost of funds."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for credit to small businesses, farmers and first-time borrowers."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change borrowing costs and margins."
+   },
+   {
+    "k": "Social",
+    "v": "Rising aspirations: more people borrow for vehicles, homes, gold and consumer goods."
+   },
+   {
+    "k": "Technological",
+    "v": "Digital lending, app-based loans and data-driven credit scoring."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI's scale-based rules for NBFCs, fair-practice and digital-lending guidelines."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance (e.g. EV loans) and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Loans for vehicles, homes, gold, businesses and consumer goods, plus insurance cross-sell."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set by risk and against banks' rates."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, dealer and shop partners, field agents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Dealer tie-ups, local campaigns, digital offers and cross-selling."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more loans to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New loan products and digital journeys."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in housing finance, insurance or asset management."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "NBFC": "Non-Banking Financial Company: a lender regulated by the RBI that gives loans but cannot take savings or current account deposits like a bank.",
+  "AUM": "Assets Under Management: the total loans an NBFC has given out and not yet been repaid. The main size measure for a lender.",
+  "Disbursements": "New loans paid out to customers in a period.",
+  "Net profit": "What is left after all costs, provisions and taxes. The company's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on borrowings. A lender's main earning.",
+  "Net interest margin": "Net Interest Income as a % of loans or interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Loans not repaid for 90+ days (called 'Stage 3' loans by NBFCs), as a % of all loans.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "Stage 3 assets": "Loans that have stopped paying for 90+ days. NBFCs report Gross and Net Stage 3, similar to banks' NPA.",
+  "Credit cost": "Money set aside for bad loans, as a % of average loans. Lower means fewer losses.",
+  "Capital adequacy ratio": "The lender's own capital compared with the risk in its loans. RBI requires NBFCs to keep at least 15%.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Borrowings": "Money an NBFC raises from banks, bonds (NCDs), commercial paper and, for some, public deposits, to lend onward.",
+  "Cost of funds": "The average interest an NBFC pays on its borrowings. NBFCs usually pay more than banks, so a strong credit rating matters.",
+  "Credit rating": "An agency's grade (e.g. AAA) of how safely a company can repay debt. Higher ratings mean cheaper borrowing.",
+  "Upper Layer NBFC": "The largest and most important NBFCs, named by the RBI under its scale-based rules. They face bank-like rules and must list on the stock market within 3 years.",
+  "Return on assets": "Net profit as a % of average total assets. Shows how well a lender earns on what it owns.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates banks and NBFCs in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before giving a loan.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that lenders serve.",
+  "Cross-sell": "Selling an extra product (like insurance or a second loan) to an existing customer.",
+  "Co-lending": "A bank and an NBFC lending together: the NBFC finds and services the borrower, the bank funds most of the loan.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Gold loan": "A loan given against gold jewellery kept as security. Quick to get; the gold is returned when the loan is repaid.",
+  "LTV": "Loan-to-Value: the loan as a % of the value of the gold pledged. RBI caps it (up to 85% for small loans under the 2026 rules).",
+  "Stage 2 assets": "Loans 31–90 days overdue: early warning signs before a loan turns bad (Stage 3).",
+  "Gold tonnage": "The total weight of gold jewellery a lender holds as security. Shows real growth, separate from gold price moves.",
+  "Gold auction": "When a borrower does not repay, the lender sells the pledged gold to recover the loan, after giving notice."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Managing borrowing costs"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an NBFC balance sheet",
+    "Basics of RBI rules for NBFCs"
+   ],
+   "tip": "Know AUM, Gross vs Net Stage 3, cost of funds and credit cost, and the company's latest profit.",
+   "kv": [
+    {
+     "k": "Gross Stage 3",
+     "v": "3.87%",
+     "term": "Stage 3 assets"
+    },
+    {
+     "k": "Loan AUM",
+     "v": "₹2.09 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "Gold held",
+     "v": "204 tonnes",
+     "term": "Gold tonnage"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹3,278 cr",
+     "term": "Net profit"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New customers acquired",
+    "Loans per dealer or partner",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Dealer and partner management"
+   ],
+   "tip": "Think about reaching first-time and small-town borrowers through dealers, branches and mobile.",
+   "kv": [
+    {
+     "k": "Branches",
+     "v": "7,904"
+    },
+    {
+     "k": "Gold loan AUM",
+     "v": "₹1.79 lakh cr",
+     "term": "Gold loan"
+    },
+    {
+     "k": "Loan growth",
+     "v": "+42%",
+     "term": "AUM"
+    },
+    {
+     "k": "Key rule",
+     "v": "RBI LTV limits",
+     "term": "LTV"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "NBFCs hire many field and branch staff. Ideas to cut early attrition and train people fast will impress.",
+   "kv": [
+    {
+     "k": "MD",
+     "v": "Alexander George"
+    },
+    {
+     "k": "Chairman",
+     "v": "George Jacob Muthoot"
+    },
+    {
+     "k": "HQ",
+     "v": "Kochi"
+    },
+    {
+     "k": "Main product",
+     "v": "Gold loans",
+     "term": "Gold loan"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Loans disbursed",
+    "Collections and repayment rates",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a two-wheeler loan' or 'Convince a shopkeeper to take a business loan.'",
+   "kv": [
+    {
+     "k": "MD",
+     "v": "Alexander George"
+    },
+    {
+     "k": "Chairman",
+     "v": "George Jacob Muthoot"
+    },
+    {
+     "k": "HQ",
+     "v": "Kochi"
+    },
+    {
+     "k": "Main product",
+     "v": "Gold loans",
+     "term": "Gold loan"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Collection efficiency"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, loan turnaround time, collections and how automation reduces errors.",
+   "kv": [
+    {
+     "k": "MD",
+     "v": "Alexander George"
+    },
+    {
+     "k": "Chairman",
+     "v": "George Jacob Muthoot"
+    },
+    {
+     "k": "HQ",
+     "v": "Kochi"
+    },
+    {
+     "k": "Main product",
+     "v": "Gold loans",
+     "term": "Gold loan"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Lending basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "MD",
+     "v": "Alexander George"
+    },
+    {
+     "k": "Chairman",
+     "v": "George Jacob Muthoot"
+    },
+    {
+     "k": "HQ",
+     "v": "Kochi"
+    },
+    {
+     "k": "Main product",
+     "v": "Gold loans",
+     "term": "Gold loan"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "How do gold prices affect Muthoot's results?",
+     "a": "Higher gold prices let each gram support a bigger loan, so AUM grows even when tonnage falls (204 vs 209 tonnes a year ago). A fall in prices cuts the LTV cushion and can hurt growth and asset quality."
+    },
+    {
+     "q": "Why did Gross Stage 3 jump to 3.87% in Q2 FY27?",
+     "a": "Management linked it to borrowers adjusting to monthly interest payments under RBI's new rules from April 2026; Stage 2 also rose. Watch whether it comes back down."
+    },
+    {
+     "q": "Profit rose 36% but Stage 3 rose too. How do you read that?",
+     "a": "Growth and margins are strong, but provisions jumped; the quality of the gold loan book now matters as much as growth."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you attract first-time gold loan customers?",
+     "a": "Simple messaging on speed and safety of gold, regional-language campaigns, and doorstep or digital options linked to nearby branches."
+    },
+    {
+     "q": "Banks also give gold loans. How does Muthoot stand out?",
+     "a": "Quick service, a large branch network, gold specialists at branches and a trusted brand built over decades."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you help staff through a leadership change?",
+     "a": "Clear communication from the new MD and CEO, stable goals, training on the new RBI rules and recognition for branch teams."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a gold loan to a small shop owner who needs stock money for Diwali.",
+     "a": "Understand the need, explain the loan amount on their gold, the interest and monthly payment, stress safe custody and quick release, then close with a branch visit."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you reduce risk in gold loan branches?",
+     "a": "Careful gold purity checks, strict LTV limits, secure vaults, tracking overdue accounts early and following RBI auction rules."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Muthoot Finance?",
+     "a": "A Kochi-based gold loan NBFC listed since 2011, led by MD Alexander George and Chairman George Jacob Muthoot; Q2 FY27 profit was ₹3,278 crore on loan AUM of ₹2.09 lakh crore."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Muthoot Finance?",
+     "a": "Alexander George is MD (since 1 Oct 2026), George Jacob Muthoot is Chairman, George Alexander Muthoot is Executive Vice Chairman and K.R. Bijimon is CEO."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the October 2026 leadership change, the Q2 FY27 profit of ₹3,278 crore, or the rise in Stage 3 after RBI's new gold loan rules."
+    },
+    {
+     "q": "Why Muthoot Finance?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Muthoot Finance has built a trusted gold loan business over decades and now serves customers through about 7,900 branches. With a new leadership team from October 2026 and fast loan growth, it is a place to learn lending, risk and customer service at scale. I want to contribute to [your role] as it grows under the new RBI rules.",
+  "ask": [
+   "How is the company helping customers adjust to monthly interest payments under the new RBI rules?",
+   "How does the new leadership team plan to balance growth with asset quality?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Are gold loans good for India's households?",
+    "for": "They give quick, low-paperwork credit using gold families already own.",
+    "against": "Borrowers can lose family jewellery if they cannot repay, and rising prices can encourage over-borrowing."
+   },
+   {
+    "t": "Should RBI treat gold loan NBFCs the same as banks?",
+    "for": "Gold loans are secured and recover well, so rules should be equal.",
+    "against": "NBFCs lack deposit insurance and bank-level supervision, so stricter rules protect customers."
+   }
+  ],
+  "avoid": [
+   "Don't name George Alexander Muthoot as MD; since 1 Oct 2026 he is Executive Vice Chairman and Alexander George is MD.",
+   "Don't confuse Muthoot Finance with Muthoot FinCorp or Muthoot Microfin; they are separate companies.",
+   "Don't mix consolidated and standalone numbers: Q2 FY27 profit was ₹3,278 cr consolidated, ₹2,977 cr standalone."
+  ],
+  "night": [
+   "MD: Alexander George · Chairman: George Jacob Muthoot",
+   "Exec VC: George Alexander Muthoot · CEO: K.R. Bijimon",
+   "HQ Kochi · listed 2011 · gold loans since 1939",
+   "FY26 profit: ₹10,607 cr (consolidated)",
+   "Q2 FY27 profit: ₹3,278 cr (+36%)",
+   "Gross Stage 3: 3.87% (Sep 2026)",
+   "Rivals: Manappuram, Muthoot FinCorp, IIFL, banks",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Know LTV, Stage 3 and gold tonnage"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who became Muthoot Finance's MD on 1 October 2026?",
+   "o": [
+    "George Alexander Muthoot",
+    "Alexander George",
+    "K.R. Bijimon"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where is Muthoot Finance headquartered?",
+   "o": [
+    "Thrissur",
+    "Kochi",
+    "Chennai"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Muthoot Finance's main product is…",
+   "o": [
+    "Gold loans",
+    "Home loans",
+    "Credit cards"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Muthoot's consolidated profit in FY 2025-26 was about…",
+   "o": [
+    "₹1,060 cr",
+    "₹10,607 cr",
+    "₹50,000 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "In Sep 2026, the gold Muthoot held as security was about…",
+   "o": [
+    "20 tonnes",
+    "204 tonnes",
+    "2,040 tonnes"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "18 Nov 2026"
+}

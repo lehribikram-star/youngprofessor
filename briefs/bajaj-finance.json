@@ -1,0 +1,1108 @@
+{
+ "id": "bajaj-finance",
+ "name": "Bajaj Finance",
+ "short": "BAF",
+ "color": "#0072BC",
+ "line": "Pune's consumer-lending giant: EMI loans, personal, business, gold and home loans for 12.9 crore customers",
+ "sector": "NBFC",
+ "hq": "Pune, Maharashtra",
+ "listed": "NSE: BAJFINANCE · BSE: 500034",
+ "website": "https://www.bajajfinserv.in",
+ "news_query": "Bajaj Finance",
+ "src": {
+  "q2": {
+   "label": "Q2 FY27 results: consolidated profit up 29% (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/bajaj-finance-share-price-and-q2-fy-27-results/"
+  },
+  "q2b": {
+   "label": "Q2 FY27 results from company filing (Investywise)",
+   "url": "https://www.investywise.com/bajaj-finance-financial-results-for-q2-fy27-announced/"
+  },
+  "q2c": {
+   "label": "Q2 FY27 results and earnings call (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/bajaj-finance-q2fy27-profit-guidance-cmvkyh0al002f2ls0snyacaw4"
+  },
+  "h1": {
+   "label": "H1 FY27 results, BSE filing (Investywise)",
+   "url": "https://www.investywise.com/bajaj-finance-half-yearly-report-fy2026-27-submission/"
+  },
+  "q1": {
+   "label": "Q1 FY27 results (Business Today)",
+   "url": "https://www.businesstoday.in/amp/markets/stocks/story/bajaj-finance-q1-earnings-net-profit-rises-27-nii-at-rs-12571-crore-546300-2026-07-30"
+  },
+  "fy26ar": {
+   "label": "Annual Report 2025-26: Management Discussion & Analysis (official)",
+   "url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy26/bajaj-finance-ltd-ar-2025-26-assets/pdf/management-discussion-and-analysis.pdf"
+  },
+  "fy26cl": {
+   "label": "Annual Report 2025-26: Chairman's letter (official)",
+   "url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy26/chairmens-letter.html"
+  },
+  "fy26hl": {
+   "label": "Annual Report 2025-26: FY2026 highlights (official)",
+   "url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy26/fy2026-highlights.html"
+  },
+  "fy26b": {
+   "label": "Q4 FY26 and FY26 consolidated results (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/bajaj-finance-q4-consolidated-pat-up-22-to-5553-cr"
+  },
+  "fy26c": {
+   "label": "Q4 FY26 results (Prabhudas Lilladher)",
+   "url": "https://www.plindia.com/news/bajaj-finance-q4fy26-net-profit-rises-22/"
+  },
+  "fy26d": {
+   "label": "FY26 results from BSE filing (Investywise)",
+   "url": "https://www.investywise.com/?p=77585"
+  },
+  "fy26e": {
+   "label": "FY26 standalone results and dividend (DSIJ)",
+   "url": "https://insights.dsij.in/dsijarticledetail/bajaj-finance-announces-q4fy26-results-pat-rises-228-as-aum-crosses-rs-442-lakh-crore-id021"
+  },
+  "cg": {
+   "label": "Annual Report 2025-26: Report on Corporate Governance (official)",
+   "url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy26/bajaj-finance-ltd-ar-2025-26-assets/pdf/report-on-corporate-governance.pdf"
+  },
+  "md25": {
+   "label": "Anup Saha named MD, Rajeev Jain becomes Vice Chairman, Mar 2025 (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/bajaj-finance-names-anup-kumar-saha-as-md-rajeev-jain-becomes-vc-125032001361_1.html"
+  },
+  "md25b": {
+   "label": "Anup Saha resigns; Rajeev Jain reappointed MD till 2028 (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/bajaj-finance-md-anup-kumar-saha-resigns-rajeev-jain-reappointed-as-md-till-2028-485601-2025-07-21"
+  },
+  "chair": {
+   "label": "Sanjiv Bajaj becomes Chairman from Aug 2020 (Business Standard)",
+   "url": "https://www.business-standard.com/article/markets/rahul-bajaj-steps-down-as-bajaj-finance-s-chairman-stock-ends-4-lower-120072100858_1.html"
+  },
+  "sb": {
+   "label": "Sanjiv Bajaj, Chairman: profile (official)",
+   "url": "https://www.bajajfinserv.in/finance-sanjiv-bajaj"
+  },
+  "rj": {
+   "label": "Rajeev Jain appointed CEO of Bajaj Auto Finance, 2007 (Business Standard)",
+   "url": "https://business-standard.com/article/press-releases/rajeev-jain-appointed-ceo-of-bajaj-auto-finance-107091301020_1.html"
+  },
+  "bt26": {
+   "label": "With FinAI at the helm, Bajaj Finance triumphs ahead, Mar 2026 (Business Today)",
+   "url": "https://www.businesstoday.in/amp/magazine/deep-dive/story/with-fin-ai-at-the-helm-bajaj-finance-triumphs-ahead-518663-2026-03-10"
+  },
+  "guid": {
+   "label": "Lower growth guidance and MSME loan stress, Nov 2025 (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/stock-market-news/lower-growth-guidance-and-msme-loan-stress-weigh-on-bajaj-finance-125111101848_1.html"
+  },
+  "raise": {
+   "label": "Board approves ₹17,500 crore fundraise via QIP and warrants (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/bajaj-finance-board-approves-17500-crore-fundraise-through-qip-warrants"
+  },
+  "warr": {
+   "label": "₹5,800 crore warrants allotted to Bajaj Finserv (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/bajaj-finance-allots-5800-crore-warrants-to-bajaj-finserv/"
+  },
+  "warr2": {
+   "label": "Warrants to Bajaj Finserv: board committee outcome, 10 Nov 2026 (exchange filing via Arthneeti)",
+   "url": "https://www.arthneeti.com/announcements/bajaj-finance-ltd-board-meeting-outcome-for-outcome-of-the-meeting-of-pi-2026-special-committee-of-board-held-on-10-november-2026-10-nov-2026"
+  },
+  "qip": {
+   "label": "₹11,700 crore QIP opens (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/bajaj-finance-shares-close-3-higher-amid-rs-11700-crore-qip-issue-567158-2026-11-12"
+  },
+  "qip2": {
+   "label": "QIP closed and shares allotted, 16 Nov 2026 (exchange filing via Arthneeti)",
+   "url": "https://www.arthneeti.com/announcements/bajaj-finance-ltd-outcome-of-qip-2026-special-committee-meeting-16-nov-2026"
+  },
+  "rbi": {
+   "label": "What the Insta EMI Card curbs were about (Business Standard)",
+   "url": "https://www.business-standard.com/amp/finance/personal-finance/rbi-lifts-curbs-what-the-bajaj-fin-insta-emi-card-controversy-is-about-124050300201_1.html"
+  },
+  "rbi2": {
+   "label": "RBI lifts curbs on eCOM and Insta EMI Card (Business Today)",
+   "url": "https://www.businesstoday.in/amp/latest/corporate/story/rbi-lifts-restrictions-on-bajaj-finances-ecom-insta-emi-card-with-immediate-effect-428050-2024-05-02"
+  },
+  "bhfl": {
+   "label": "Bajaj Housing Finance's stock market debut, Sep 2024 (Deccan Herald)",
+   "url": "https://www.deccanherald.com/business/companies/blockbuster-debut-for-bajaj-housing-finance-shares-jump-over-114-3192343"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/Bajaj_Finance"
+  },
+  "csr": {
+   "label": "Bajaj Group commits ₹5,000 crore to CSR over 5 years (Deccan Herald)",
+   "url": "https://www.deccanherald.com/business/companies/bajaj-group-commits-rs-5000-crore-towards-csr-initiatives-in-5-years-2949526"
+  },
+  "csr2": {
+   "label": "Bajaj Group ₹5,000 crore CSR commitment (Bajaj Auto press release)",
+   "url": "https://www.bajajauto.com/news-media/press-releases/the-bajaj-group-commits-rs-5000-crore-over-the-next-five-years-towards-various-csr-initiatives"
+  },
+  "bhq2": {
+   "label": "Bajaj Housing Finance Q2 FY27 business update (Sahi)",
+   "url": "https://www.sahi.com/news/bajaj-housing-finance-q2-disbursements-rise-to-19-930-crore-as-aum-grows-25"
+  },
+  "hr": {
+   "label": "Annual Report 2025-26: FY2026 highlights, workforce (official)",
+   "url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy26/fy2026-highlights.html"
+  },
+  "hr2": {
+   "label": "Q1 FY27 results with headcount (Business Today)",
+   "url": "https://www.businesstoday.in/amp/markets/stocks/story/bajaj-finance-q1-earnings-net-profit-rises-27-nii-at-rs-12571-crore-546300-2026-07-30"
+  }
+ },
+ "tiles": [
+  {
+   "v": 19332,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · consolidated · +15%",
+   "term": "Net profit"
+  },
+  {
+   "v": 584624,
+   "fmt": "cr",
+   "label": "AUM",
+   "sub": "30 Sep 2026 · consolidated · +26%",
+   "term": "AUM"
+  },
+  {
+   "v": 4098,
+   "fmt": "num",
+   "label": "Locations",
+   "sub": "Mar 2026 · 2.4 lakh+ points of sale"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹6,367 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +29% · consolidated"
+  },
+  {
+   "v": "₹5.85 lakh cr",
+   "k": "AUM",
+   "s": "30 Sep 2026 · +26%"
+  },
+  {
+   "v": "12.9 cr",
+   "k": "Customer franchise",
+   "s": "128.85 million · +16%"
+  },
+  {
+   "v": "1.06%",
+   "k": "Gross NPA",
+   "s": "Sep 2026 · Net NPA 0.42%"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in Pune in 1987 as Bajaj Auto Finance, lending for Bajaj two- and three-wheelers; now a large consumer and business lender of the Bajaj group, run under the Bajaj Finserv brand.",
+   "s": [
+    "wiki",
+    "fy26ar",
+    "rj"
+   ]
+  },
+  {
+   "t": "Rajeev Jain has led it since 2007. He became Vice Chairman in April 2025 when Anup Saha was made MD, but Saha resigned in July 2025 and Jain is again Vice Chairman & MD (term to March 2028). Sanjiv Bajaj is Chairman.",
+   "s": [
+    "md25",
+    "md25b",
+    "cg",
+    "chair"
+   ]
+  },
+  {
+   "t": "FY 2025-26 (consolidated): profit ₹19,332 crore (+15%) after one-time charges; AUM crossed ₹5 lakh crore (₹5,09,975 crore, +22%).",
+   "s": [
+    "fy26ar",
+    "fy26b",
+    "fy26c"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026): consolidated profit ₹6,367 crore (+29%), AUM ₹5.85 lakh crore (+26%), 12.9 crore customers.",
+   "s": [
+    "q2",
+    "q2b",
+    "h1"
+   ]
+  },
+  {
+   "t": "In Nov 2026 it raised about ₹17,500 crore of fresh capital: an ₹11,700 crore QIP and ₹5,800 crore of warrants to promoter Bajaj Finserv.",
+   "s": [
+    "raise",
+    "warr",
+    "qip",
+    "qip2"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1987",
+   "t": "Incorporated in Pune as Bajaj Auto Finance, financing Bajaj vehicles.",
+   "s": [
+    "wiki",
+    "fy26ar"
+   ]
+  },
+  {
+   "y": "Sep 2007",
+   "t": "Rajeev Jain (ex-GE, American Express, AIG) joined as CEO.",
+   "s": [
+    "rj",
+    "bt26"
+   ]
+  },
+  {
+   "y": "Nov 2023",
+   "t": "RBI stopped loans via its eCOM and Insta EMI Card for gaps in loan fact sheets; curbs lifted in May 2024.",
+   "s": [
+    "rbi",
+    "rbi2"
+   ]
+  },
+  {
+   "y": "Sep 2024",
+   "t": "Subsidiary Bajaj Housing Finance listed on the stock market after a ₹6,560 crore IPO.",
+   "s": [
+    "bhfl",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Jul 2025",
+   "t": "MD Anup Saha resigned; Rajeev Jain became Vice Chairman & MD again.",
+   "s": [
+    "md25b",
+    "cg"
+   ]
+  },
+  {
+   "y": "Nov 2026",
+   "t": "Raised about ₹17,500 crore through a QIP and warrants to Bajaj Finserv.",
+   "s": [
+    "warr",
+    "qip2",
+    "qip"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Bajaj Finance borrows money from banks, bond investors and public fixed deposits, and lends it to millions of people and small businesses at higher rates. It is known for EMI loans at shops, personal loans, business loans, and now gold loans and microfinance; its subsidiary Bajaj Housing Finance gives home loans. Huge customer data helps it cross-sell more products to the same customers.",
+  "flow": [
+   "Raises money: bank loans, bonds, fixed deposits",
+   "Lends: EMI, personal, business, gold, home loans",
+   "Earns the interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Net Interest Income Q2 FY27",
+    "v": "₹13,335 cr (+24%)",
+    "term": "Net Interest Income",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "k": "Bajaj Housing Finance AUM (Sep 2026)",
+    "v": "₹1.58 lakh cr (+25%)",
+    "s": [
+     "q2b",
+     "bhq2"
+    ]
+   },
+   {
+    "k": "Locations (Mar 2026)",
+    "v": "4,098, with 2.4 lakh+ points of sale",
+    "s": [
+     "fy26hl",
+     "fy26d"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "RBI lists Bajaj Finance as an 'Upper Layer' NBFC, so it faces stricter, bank-like rules.",
+   "RBI acts on weak customer disclosure: in Nov 2023 it paused two Bajaj Finance digital products until fixes were made.",
+   "Unsecured small-business (MSME) loans came under stress in 2025, making the company cut growth guidance and slow that book."
+  ],
+  "s": [
+   "wiki",
+   "rbi",
+   "rbi2",
+   "guid"
+  ]
+ },
+ "people": [
+  {
+   "ini": "RJ",
+   "name": "Rajeev Jain",
+   "role": "Vice Chairman & Managing Director",
+   "since": "VC & MD since 22 Jul 2025 · with BFL since 2007",
+   "note": "Joined as CEO in 2007 after GE, American Express and AIG. Became Vice Chairman in Apr 2025, then also MD again after Anup Saha's exit. Term runs to 31 Mar 2028.",
+   "s": [
+    "cg",
+    "md25b",
+    "rj"
+   ]
+  },
+  {
+   "ini": "SB",
+   "name": "Sanjiv Bajaj",
+   "role": "Non-Executive Chairman",
+   "since": "since 1 Aug 2020",
+   "note": "Also Chairman & MD of parent Bajaj Finserv. Took over from his father, the late Rahul Bajaj.",
+   "s": [
+    "cg",
+    "chair",
+    "sb"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Apr 2025: Anup Kumar Saha became MD and Rajeev Jain moved to Vice Chairman. Saha resigned in Jul 2025 (personal reasons); Jain re-designated Vice Chairman & MD from 22 Jul 2025.",
+   "s": [
+    "md25",
+    "md25b",
+    "cg"
+   ]
+  },
+  {
+   "t": "Senior managers including Harjeet Toor, Sidhant Dadwal and Manish Jain were made Deputy CEOs in 2025.",
+   "s": [
+    "cg",
+    "bt26"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, consolidated)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹19,332 cr (+15%); ₹20,689 cr (+24%) before one-time charges",
+    "term": "Net profit",
+    "s": [
+     "fy26ar",
+     "fy26b",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Standalone net profit",
+    "v": "₹17,804 cr (+7%)",
+    "term": "Consolidated",
+    "s": [
+     "fy26ar",
+     "fy26e"
+    ]
+   },
+   {
+    "k": "AUM",
+    "v": "₹5,09,975 cr (+22%)",
+    "term": "AUM",
+    "s": [
+     "fy26ar",
+     "fy26b",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Customer franchise",
+    "v": "11.93 crore (119.33 million, +17%)",
+    "term": "Customer franchise",
+    "s": [
+     "fy26ar",
+     "fy26b",
+     "fy26d"
+    ]
+   },
+   {
+    "k": "Gross NPA",
+    "v": "1.01%",
+    "term": "Gross NPA",
+    "s": [
+     "fy26ar",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Net NPA",
+    "v": "0.41%",
+    "term": "Net NPA",
+    "s": [
+     "fy26ar",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "21.55% (standalone)",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "fy26ar",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹6 per share (incl. ₹0.60 special)",
+    "term": "Dividend",
+    "s": [
+     "fy26b",
+     "fy26c",
+     "fy26e"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Consolidated net profit ₹6,367 cr, up 29% from ₹4,948 cr a year earlier.",
+     "term": "Net profit",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c"
+     ]
+    },
+    {
+     "t": "AUM ₹5,84,624 cr (+26%); customer franchise 128.85 million (+16%); 13.45 million new loans.",
+     "term": "AUM",
+     "s": [
+      "q2",
+      "q2b",
+      "h1"
+     ]
+    },
+    {
+     "t": "Gross NPA 1.06%, Net NPA 0.42%; capital adequacy 20.33%. Included a ₹337 cr extra provision for economic risks.",
+     "term": "Management overlay",
+     "s": [
+      "q2",
+      "q2b",
+      "q2c"
+     ]
+    }
+   ]
+  },
+  "say": "Bajaj Finance grew profit 29% to ₹6,367 crore last quarter, with loans under management up 26% to ₹5.85 lakh crore and Gross NPA near 1%."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Shriram Finance",
+   "Cholamandalam Investment and Finance",
+   "Tata Capital",
+   "Muthoot Finance",
+   "Mahindra Finance",
+   "HDFC Bank",
+   "ICICI Bank"
+  ],
+  "note": "Competes with big NBFCs in consumer, vehicle and gold loans, and with private banks in personal and business loans."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Locations (Mar 2026)",
+    "v": "4,098"
+   },
+   {
+    "k": "Points of sale",
+    "v": "2.4 lakh+"
+   },
+   {
+    "k": "Customers (Sep 2026)",
+    "v": "12.9 crore"
+   }
+  ],
+  "local": "Headquartered in Pune. Its EMI loans are sold at shops and dealers across India, so many roles are in sales, partner management and collections in cities and small towns.",
+  "s": [
+   "fy26hl",
+   "fy26d",
+   "q2",
+   "q2b"
+  ]
+ },
+ "employer": {
+  "rows": [
+   {
+    "k": "Full-time employees",
+    "v": "70,000+ (2026)"
+   }
+  ],
+  "note": "71,613 full-time staff in March 2026 (annual report) and 73,261 in June 2026 (Q1 FY27 coverage). The group also uses many fixed-term contract staff."
+ },
+ "csr": {
+  "t": "Bajaj Finance contributes to 'Bajaj Beyond', the Bajaj Group's ₹5,000 crore, five-year CSR commitment focused on youth (skills) and children.",
+  "s": [
+   "fy26cl",
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Very large customer base: 12.9 crore, with strong cross-selling",
+    "s": [
+     "q2",
+     "q2b"
+    ]
+   },
+   {
+    "t": "Low bad loans: Gross NPA about 1%",
+    "s": [
+     "q2",
+     "fy26ar"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Leadership plan wobbled: new MD left within 4 months in 2025",
+    "s": [
+     "md25b",
+     "cg"
+    ]
+   },
+   {
+    "t": "Unsecured MSME loans came under stress in 2025",
+    "s": [
+     "guid",
+     "fy26ar"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Fresh ₹17,500 cr capital to fund fast loan growth",
+    "s": [
+     "qip2",
+     "warr",
+     "q2c"
+    ]
+   },
+   {
+    "t": "AI-led lending and service (FinAI) can cut costs",
+    "s": [
+     "fy26cl",
+     "bt26"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Tough competition in gold and personal loans from banks and NBFCs",
+    "s": [
+     "q2c",
+     "bt26"
+    ]
+   },
+   {
+    "t": "RBI scrutiny of digital lending, as in the 2023 curbs",
+    "s": [
+     "rbi",
+     "rbi2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a lender, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Banks and other NBFCs chase the same borrowers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. An RBI licence and cheap funding are hard to get, but fintechs enter digital lending."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Bank loans, BNPL and fintech apps can replace NBFC loans."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Good borrowers can switch to banks for lower rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "High. Banks and bond investors supply the money; their rates set the NBFC's cost of funds."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for credit to small businesses, farmers and first-time borrowers."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change borrowing costs and margins."
+   },
+   {
+    "k": "Social",
+    "v": "Rising aspirations: more people borrow for vehicles, homes, gold and consumer goods."
+   },
+   {
+    "k": "Technological",
+    "v": "Digital lending, app-based loans and data-driven credit scoring."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI's scale-based rules for NBFCs, fair-practice and digital-lending guidelines."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance (e.g. EV loans) and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Loans for vehicles, homes, gold, businesses and consumer goods, plus insurance cross-sell."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set by risk and against banks' rates."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, dealer and shop partners, field agents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Dealer tie-ups, local campaigns, digital offers and cross-selling."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more loans to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New loan products and digital journeys."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in housing finance, insurance or asset management."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "NBFC": "Non-Banking Financial Company: a lender regulated by the RBI that gives loans but cannot take savings or current account deposits like a bank.",
+  "AUM": "Assets Under Management: the total loans an NBFC has given out and not yet been repaid. The main size measure for a lender.",
+  "Disbursements": "New loans paid out to customers in a period.",
+  "Net profit": "What is left after all costs, provisions and taxes. The company's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on borrowings. A lender's main earning.",
+  "Net interest margin": "Net Interest Income as a % of loans or interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Loans not repaid for 90+ days (called 'Stage 3' loans by NBFCs), as a % of all loans.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "Stage 3 assets": "Loans that have stopped paying for 90+ days. NBFCs report Gross and Net Stage 3, similar to banks' NPA.",
+  "Credit cost": "Money set aside for bad loans, as a % of average loans. Lower means fewer losses.",
+  "Capital adequacy ratio": "The lender's own capital compared with the risk in its loans. RBI requires NBFCs to keep at least 15%.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Borrowings": "Money an NBFC raises from banks, bonds (NCDs), commercial paper and, for some, public deposits, to lend onward.",
+  "Cost of funds": "The average interest an NBFC pays on its borrowings. NBFCs usually pay more than banks, so a strong credit rating matters.",
+  "Credit rating": "An agency's grade (e.g. AAA) of how safely a company can repay debt. Higher ratings mean cheaper borrowing.",
+  "Upper Layer NBFC": "The largest and most important NBFCs, named by the RBI under its scale-based rules. They face bank-like rules and must list on the stock market within 3 years.",
+  "Return on assets": "Net profit as a % of average total assets. Shows how well a lender earns on what it owns.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates banks and NBFCs in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before giving a loan.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that lenders serve.",
+  "Cross-sell": "Selling an extra product (like insurance or a second loan) to an existing customer.",
+  "Co-lending": "A bank and an NBFC lending together: the NBFC finds and services the borrower, the bank funds most of the loan.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Customer franchise": "All customers who have ever taken a product from the company. Bajaj Finance uses it as its main customer count.",
+  "Consolidated": "Figures for the company together with its subsidiaries (for Bajaj Finance: Bajaj Housing Finance and Bajaj Broking). 'Standalone' means the parent company alone.",
+  "QIP": "Qualified Institutions Placement: a listed company sells new shares quickly to large investors such as mutual funds and insurers to raise capital.",
+  "Warrants": "A right to buy new shares later at a fixed price. Part of the money is paid now and the rest when converted into shares.",
+  "Management overlay": "An extra provision a lender sets aside for possible future risks (for example, a slowing economy), on top of normal bad-loan provisions.",
+  "Consumer durable loan": "A small EMI loan to buy items like phones, TVs or fridges, usually given at the shop counter."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Managing borrowing costs"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an NBFC balance sheet",
+    "Basics of RBI rules for NBFCs"
+   ],
+   "tip": "Know AUM, Gross vs Net Stage 3, cost of funds and credit cost, and the company's latest profit.",
+   "kv": [
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹6,367 cr (+29%)",
+     "term": "Net profit"
+    },
+    {
+     "k": "Gross NPA",
+     "v": "1.06%",
+     "term": "Gross NPA"
+    },
+    {
+     "k": "Net NPA",
+     "v": "0.42%",
+     "term": "Net NPA"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "20.33%",
+     "term": "Capital adequacy ratio"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New customers acquired",
+    "Loans per dealer or partner",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Dealer and partner management"
+   ],
+   "tip": "Think about reaching first-time and small-town borrowers through dealers, branches and mobile.",
+   "kv": [
+    {
+     "k": "Customer franchise",
+     "v": "128.85 million",
+     "term": "Customer franchise"
+    },
+    {
+     "k": "New loans Q2 FY27",
+     "v": "13.45 million"
+    },
+    {
+     "k": "Locations",
+     "v": "4,098 (Mar 2026)"
+    },
+    {
+     "k": "Model",
+     "v": "EMI loans at shops + cross-sell",
+     "term": "Cross-sell"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "NBFCs hire many field and branch staff. Ideas to cut early attrition and train people fast will impress.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5.85 lakh cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "Customers",
+     "v": "12.9 crore",
+     "term": "Customer franchise"
+    },
+    {
+     "k": "Leader",
+     "v": "Rajeev Jain, VC & MD"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI (Upper Layer NBFC)",
+     "term": "Upper Layer NBFC"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Loans disbursed",
+    "Collections and repayment rates",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a two-wheeler loan' or 'Convince a shopkeeper to take a business loan.'",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5.85 lakh cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "Customers",
+     "v": "12.9 crore",
+     "term": "Customer franchise"
+    },
+    {
+     "k": "Leader",
+     "v": "Rajeev Jain, VC & MD"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI (Upper Layer NBFC)",
+     "term": "Upper Layer NBFC"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Collection efficiency"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, loan turnaround time, collections and how automation reduces errors.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5.85 lakh cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "Customers",
+     "v": "12.9 crore",
+     "term": "Customer franchise"
+    },
+    {
+     "k": "Leader",
+     "v": "Rajeev Jain, VC & MD"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI (Upper Layer NBFC)",
+     "term": "Upper Layer NBFC"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Lending basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5.85 lakh cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "Customers",
+     "v": "12.9 crore",
+     "term": "Customer franchise"
+    },
+    {
+     "k": "Leader",
+     "v": "Rajeev Jain, VC & MD"
+    },
+    {
+     "k": "Regulator",
+     "v": "RBI (Upper Layer NBFC)",
+     "term": "Upper Layer NBFC"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "FY26 profit was ₹19,332 cr but also ₹20,689 cr is quoted. Why two numbers?",
+     "a": "₹20,689 cr is before one-time items such as extra loan-loss provisions and the new Labour Codes charge; ₹19,332 cr (+15%) is the reported consolidated profit after them."
+    },
+    {
+     "q": "What is the difference between consolidated and standalone profit here?",
+     "a": "Consolidated includes Bajaj Housing Finance and Bajaj Broking; standalone is Bajaj Finance alone (₹17,804 cr in FY26)."
+    },
+    {
+     "q": "Why raise ₹17,500 cr when profits are strong?",
+     "a": "Fast loan growth needs more capital to keep capital adequacy comfortable; management said the money is mainly for growth."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How does Bajaj Finance reach so many new customers?",
+     "a": "Through EMI financing at 2.4 lakh+ shops and dealers, apps and web, then cross-selling more loans, cards and insurance."
+    },
+    {
+     "q": "How would you market gold loans for Bajaj Finance?",
+     "a": "Target existing customers in small towns, stress quick approval, safe storage and clear monthly interest options."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you keep 70,000+ staff motivated during leadership changes?",
+     "a": "Clear communication from the VC & MD and Deputy CEOs, stable targets, fast promotions for performers and training on AI tools."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a Bajaj Finance EMI loan to a customer buying a phone.",
+     "a": "Find the budget, show the monthly EMI, explain the tenure and charges clearly, and close at the counter."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can AI improve loan operations?",
+     "a": "Faster KYC and document checks, chatbots for service and better collection calls; the company already uses AI bots in service and lending."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Bajaj Finance?",
+     "a": "A Pune-based NBFC started in 1987, led by Vice Chairman & MD Rajeev Jain and Chairman Sanjiv Bajaj, with ₹5.85 lakh cr AUM and ₹6,367 cr profit in Q2 FY27."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Bajaj Finance?",
+     "a": "Rajeev Jain is Vice Chairman & Managing Director; Sanjiv Bajaj is Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the ₹17,500 cr capital raise in Nov 2026 or the 29% profit growth in Q2 FY27."
+    },
+    {
+     "q": "Why Bajaj Finance?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Bajaj Finance began as a small vehicle-finance company in Pune and now serves about 12.9 crore customers with over ₹5.8 lakh crore of loans. It keeps bad loans near 1% while growing fast, and it is using AI across sales, service and collections. I want to learn how a data-driven lender works at this scale and contribute to [your role].",
+  "ask": [
+   "How is AI changing the work of a new joiner in my role?",
+   "Which businesses (gold, MSME, rural) are the main growth focus after the capital raise?",
+   "What does success look like in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Is easy EMI credit good for young Indians?",
+    "for": "It lets people buy needed goods and build a credit history.",
+    "against": "It can lead to over-borrowing and debt stress."
+   },
+   {
+    "t": "Should NBFCs face the same rules as banks?",
+    "for": "Large NBFCs like Bajaj Finance are as big as banks and affect the whole system.",
+    "against": "Lighter rules let NBFCs reach borrowers banks ignore."
+   }
+  ],
+  "avoid": [
+   "Don't say Anup Saha is MD; he resigned in July 2025. Rajeev Jain is Vice Chairman & MD.",
+   "Don't mix up Bajaj Finance (the lender) with Bajaj Finserv (its parent holding company) or Bajaj Auto.",
+   "Don't mix consolidated (₹19,332 cr) and standalone (₹17,804 cr) FY26 profit; say which one."
+  ],
+  "night": [
+   "VC & MD: Rajeev Jain · Chairman: Sanjiv Bajaj",
+   "Founded 1987 as Bajaj Auto Finance · HQ Pune",
+   "FY26 profit: ₹19,332 cr consolidated (+15%)",
+   "Q2 FY27 profit: ₹6,367 cr (+29%)",
+   "AUM ₹5.85 lakh cr · 12.9 crore customers",
+   "Gross NPA 1.06% (Sep 2026)",
+   "Rivals: Shriram, Chola, Tata Capital, Muthoot",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is Bajaj Finance's Vice Chairman & MD?",
+   "o": [
+    "Anup Kumar Saha",
+    "Rajeev Jain",
+    "Sanjiv Bajaj"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where is Bajaj Finance headquartered?",
+   "o": [
+    "Mumbai",
+    "Pune",
+    "Gurugram"
+   ],
+   "a": 1
+  },
+  {
+   "q": "What was Bajaj Finance's original name?",
+   "o": [
+    "Bajaj Auto Finance",
+    "Bajaj Capital",
+    "Bajaj Holdings"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Bajaj Finance's AUM in Sep 2026 was about…",
+   "o": [
+    "₹58,000 cr",
+    "₹5.85 lakh cr",
+    "₹58 lakh cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which subsidiary of Bajaj Finance gives home loans?",
+   "o": [
+    "Bajaj Housing Finance",
+    "Bajaj Allianz",
+    "Bajaj Auto"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "18 Nov 2026"
+}

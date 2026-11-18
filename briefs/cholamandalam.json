@@ -1,0 +1,1075 @@
+{
+ "id": "cholamandalam",
+ "name": "Cholamandalam Investment and Finance",
+ "short": "CIFC",
+ "color": "#ED1C24",
+ "line": "Murugappa Group's Chennai lender, best known for vehicle loans, now also in home, property, SME and gold loans",
+ "sector": "NBFC",
+ "hq": "Chennai, Tamil Nadu",
+ "listed": "NSE: CHOLAFIN · BSE: 511243",
+ "website": "https://www.cholamandalam.com",
+ "news_query": "Cholamandalam Investment and Finance",
+ "src": {
+  "res": {
+   "label": "Q2 FY27 audited results and press release, 28 Oct 2026 (BSE filing)",
+   "url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/1d651fc4-f14d-4463-8df4-e3870306d21f.pdf"
+  },
+  "ppt": {
+   "label": "Investor presentation, Sep 2026 (BSE filing)",
+   "url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/bd632002-59d8-4789-81e6-e78080fa3211.pdf"
+  },
+  "tr": {
+   "label": "Q2 FY27 earnings call transcript, 28 Oct 2026 (BSE filing)",
+   "url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/fac6e26a-3d87-457c-9832-84a2228e0a01.pdf"
+  },
+  "bsq2": {
+   "label": "Chola targets 20-23% AUM growth, plans ₹5,000 cr QIP (Business Standard)",
+   "url": "https://www.business-standard.com/companies/quarterly-results/chola-targets-20-23-aum-growth-in-fy27-plans-5-000-crore-qip-fundraise-126102901590_1.html"
+  },
+  "incred": {
+   "label": "Q2 FY27 results: revenue, profit, AUM (InCred Money)",
+   "url": "https://www.incredmoney.com/blog/?p=15305"
+  },
+  "univ": {
+   "label": "Q2 FY27 PAT ₹1,630 crore (Univest)",
+   "url": "https://univest.in/blogs/cholamandalam-investment-and-finance-company-q2-results-fy27-pat-1630-crore"
+  },
+  "mbh1": {
+   "label": "H1 FY27 profit up 43%; segment mix (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/chola-h1-profit-loan-loss-ppt-cmw4r2p6n003lu02r11cjpxf0"
+  },
+  "cai": {
+   "label": "Q2 FY27 results analysis (CompoundingAI)",
+   "url": "https://compoundingai.in/market-news/cholafin-q2-fy27-results-analysis"
+  },
+  "yq2": {
+   "label": "Q2 FY27 earnings call highlights (Yahoo Finance)",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cholamandalam-investment-finance-co-ltd-230410614.html"
+  },
+  "pr25": {
+   "label": "Q2 FY26 press release, Nov 2025 (official)",
+   "url": "https://files.cholamandalam.com/Press_Release_Chola_Q2_443cefd8a5.pdf"
+  },
+  "bsfy": {
+   "label": "Q4 FY26: consolidated profit up 30.62% (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/capital-market-news/cholamandalam-investment-finance-company-consolidated-net-profit-rises-30-62-in-the-march-2026-quarter-126043000659_1.html"
+  },
+  "devd": {
+   "label": "FY26 results: profit up 31% in Q4 (Devdiscourse)",
+   "url": "https://www.devdiscourse.com/article/headlines/3891963-cholamandalam-investments-stellar-growth-a-31-surge-in-profit"
+  },
+  "tbr": {
+   "label": "Q4 FY26 profit and final dividend (Trade Brains)",
+   "url": "https://tradebrains.in/cholamandalam-investment-shares-climb-as-q4-net-profit-jumps-24-final-dividend-declared/"
+  },
+  "fbn": {
+   "label": "Q4 & FY26 results: AUM, disbursements, CAR (FinTechBizNews)",
+   "url": "https://fintechbiznews.com/lenders-nbfcs/cifcls-q4-pat-up-by-30-at-rs1641-cr-"
+  },
+  "mbfy": {
+   "label": "FY26: AUM, branches, profit (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/chola-q4fy26-93557"
+  },
+  "agm": {
+   "label": "48th AGM transcript, 28 Jul 2026 (official)",
+   "url": "https://files.cholamandalam.com/CIFCL_48th_AGM_transcript_22779d03f7.pdf"
+  },
+  "print": {
+   "label": "Ravindra Kumar Kundu appointed MD (ThePrint / PTI)",
+   "url": "https://theprint.in/economy/cholamandalam-investment-and-finance-appoints-ravindra-kumar-kundu-as-managing-director/2194187"
+  },
+  "bstew": {
+   "label": "Executive Director Ravindra Kundu elevated to MD (Board Stewardship)",
+   "url": "https://boardstewardship.com/cholamandalam-investment-elevates-executive-director-ravindra-kundu-to-md/"
+  },
+  "fr": {
+   "label": "Vellayan Subbiah appointed Executive Chairman (FilingReader, from exchange filing)",
+   "url": "https://filingreader.com/news-wire/mumbai/2025-03-27/cholamandalam-appoints-vellayan-subbiah-as-executive-chairman"
+  },
+  "outlook": {
+   "label": "Chola refutes report on Executive Chairman's exit, Feb 2026 (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/news/cholamandalam-refutes-report-on-vellayan-subbiahs-exit-shares-pare-losses"
+  },
+  "rbi": {
+   "label": "RBI list of Upper Layer NBFCs 2024-25 (RBI press release)",
+   "url": "https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=59537"
+  },
+  "bsul": {
+   "label": "RBI releases Upper Layer NBFC list (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/capital-market-news/rbi-releases-list-of-nbfcs-in-the-upper-layer-nbfc-ul-for-2024-25-125011601286_1.html"
+  },
+  "about": {
+   "label": "About Chola (official)",
+   "url": "https://www.cholamandalam.com/about-us"
+  },
+  "iifl": {
+   "label": "Company history (IIFL / India Infoline)",
+   "url": "https://www.indiainfoline.com/company/cholamandalam-investment-finance-company-ltd/summary"
+  },
+  "inf": {
+   "label": "Chola to foray into gold loans with 100 branches: CFO (Informist)",
+   "url": "https://informistmedia.com/MoneyWire/28859/cholamandalam-invest-to-foray-into-gold-loans-with-100-new-branches-cfo"
+  },
+  "csr": {
+   "label": "Corporate Social Responsibility (official)",
+   "url": "https://www.cholamandalam.com/community-relations"
+  },
+  "csr2": {
+   "label": "Sightsavers and Chola launch eye-care van for truckers (The CSR Journal)",
+   "url": "https://thecsrjournal.in/sightsavers-with-the-support-from-cholamandalam-launches-mobile-van-to-provide-eye-care-services-to-truckers-in-the-national-capital-region/"
+  }
+ },
+ "tiles": [
+  {
+   "v": 5233,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 · consolidated · +23%",
+   "term": "Net profit"
+  },
+  {
+   "v": 268009,
+   "fmt": "cr",
+   "label": "AUM",
+   "sub": "Sep 2026 · +25%",
+   "term": "AUM"
+  },
+  {
+   "v": 1761,
+   "fmt": "num",
+   "label": "Branches",
+   "sub": "Mar 2026"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹1,630 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +41%"
+  },
+  {
+   "v": "₹35,872 cr",
+   "k": "Disbursements Q2 FY27",
+   "s": "+47% year on year"
+  },
+  {
+   "v": "3.25%",
+   "k": "Gross Stage 3",
+   "s": "Sep 2026 (3.35% a year ago)"
+  },
+  {
+   "v": "20.62%",
+   "k": "Capital adequacy",
+   "s": "Sep 2026 · RBI minimum 15%"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in 1978 in Chennai as the Murugappa Group's finance company, first financing equipment; vehicle loans are now its biggest business.",
+   "s": [
+    "about",
+    "iifl"
+   ]
+  },
+  {
+   "t": "Vehicle finance is about half the loan book (₹1,29,787 cr in Sep 2026); the rest is loans against property, home loans, SME, consumer and gold loans.",
+   "s": [
+    "res",
+    "incred",
+    "mbh1"
+   ]
+  },
+  {
+   "t": "FY 2025-26: consolidated profit ₹5,233 crore (+23%) and AUM ₹2,42,630 crore (+21%).",
+   "s": [
+    "bsfy",
+    "devd",
+    "agm",
+    "fbn"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026): profit ₹1,630 crore (+41%), AUM ₹2.68 lakh crore (+25%); the board approved raising up to ₹5,000 crore through a QIP.",
+   "s": [
+    "res",
+    "bsq2",
+    "incred"
+   ]
+  },
+  {
+   "t": "Leaders: Vellayan Subbiah, Executive Chairman since 1 Apr 2025; Ravindra Kumar Kundu, Managing Director since 7 Oct 2024.",
+   "s": [
+    "fr",
+    "outlook",
+    "print",
+    "bstew",
+    "tr"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1978",
+   "t": "Incorporated in Chennai as the Murugappa Group's financial services company, starting with equipment financing.",
+   "s": [
+    "about",
+    "iifl"
+   ]
+  },
+  {
+   "y": "Oct 2024",
+   "t": "Long-time executive Ravindra Kumar Kundu became Managing Director (five-year term).",
+   "s": [
+    "print",
+    "bstew"
+   ]
+  },
+  {
+   "y": "Jan 2025",
+   "t": "Named by the RBI in its list of Upper Layer NBFCs for 2024-25.",
+   "s": [
+    "rbi",
+    "bsul"
+   ]
+  },
+  {
+   "y": "Apr 2025",
+   "t": "Vellayan Subbiah became Executive Chairman for five years (to 31 Mar 2030).",
+   "s": [
+    "fr",
+    "outlook"
+   ]
+  },
+  {
+   "y": "2025-26",
+   "t": "Entered gold loans; 308 dedicated gold loan branches by Sep 2026.",
+   "s": [
+    "inf",
+    "res",
+    "cai"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "AUM crossed ₹2.68 lakh crore; board approved a QIP of up to ₹5,000 crore.",
+   "s": [
+    "res",
+    "bsq2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Chola borrows money from banks, bond markets and other lenders, and lends it on to customers, mostly in smaller towns. Its biggest business is loans for new and used commercial vehicles, cars, tractors and two-wheelers. It also gives loans against property, home loans, SME and consumer loans, and now gold loans. It earns the gap between the interest it charges and its cost of funds.",
+  "flow": [
+   "Borrow from banks, bonds and NCDs",
+   "Lend: vehicle, property, home, SME, gold loans",
+   "Earn interest gap + fees",
+   "Profit after costs and provisions"
+  ],
+  "facts": [
+   {
+    "k": "Vehicle finance AUM",
+    "v": "₹1,29,787 cr (Sep 2026, +21%)",
+    "term": "AUM",
+    "s": [
+     "res",
+     "incred",
+     "yq2"
+    ]
+   },
+   {
+    "k": "Loan against property AUM",
+    "v": "₹57,447 cr (+24%)",
+    "term": "AUM",
+    "s": [
+     "res",
+     "incred"
+    ]
+   },
+   {
+    "k": "Home loan AUM",
+    "v": "₹25,240 cr (+24%)",
+    "term": "AUM",
+    "s": [
+     "res",
+     "incred"
+    ]
+   },
+   {
+    "k": "Net income Q2 FY27",
+    "v": "₹5,037 cr (+24%)",
+    "term": "Net Interest Income",
+    "s": [
+     "res",
+     "bsq2"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI)",
+  "points": [
+   "Chola is an Upper Layer NBFC, so the RBI applies stricter, bank-like rules to it.",
+   "Vehicle loans depend on truck, car and tractor sales; management expects demand to support growth across vehicle types.",
+   "NBFCs must keep capital adequacy of at least 15%; Chola was at 20.62% in Sep 2026."
+  ],
+  "s": [
+   "rbi",
+   "bsul",
+   "bsq2",
+   "res"
+  ]
+ },
+ "people": [
+  {
+   "ini": "VS",
+   "name": "Vellayan Subbiah",
+   "role": "Executive Chairman",
+   "since": "since 1 Apr 2025",
+   "note": "From the Murugappa family. Five-year term to 31 Mar 2030. In Feb 2026 the company called a media report of his exit 'factually incorrect and baseless'.",
+   "s": [
+    "fr",
+    "outlook",
+    "agm"
+   ]
+  },
+  {
+   "ini": "RK",
+   "name": "Ravindra Kumar Kundu",
+   "role": "Managing Director",
+   "since": "since 7 Oct 2024",
+   "note": "Joined Chola in 2000 as a senior marketing executive; later led credit, collections and business operations; Executive Director from Jan 2020.",
+   "s": [
+    "print",
+    "bstew",
+    "tr"
+   ]
+  },
+  {
+   "ini": "AS",
+   "name": "D. Arul Selvan",
+   "role": "Chief Financial Officer",
+   "since": "",
+   "note": "Speaks for the company on results and fund-raising.",
+   "s": [
+    "bsq2",
+    "agm"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026; profit consolidated, business figures standalone)",
+  "rows": [
+   {
+    "k": "Net profit (consolidated)",
+    "v": "₹5,233 cr (FY25: ₹4,263 cr)",
+    "term": "Net profit",
+    "s": [
+     "bsfy",
+     "tbr",
+     "devd"
+    ]
+   },
+   {
+    "k": "Total income (consolidated)",
+    "v": "₹31,539 cr",
+    "s": [
+     "res",
+     "devd"
+    ]
+   },
+   {
+    "k": "AUM",
+    "v": "₹2,42,630 cr (+21%)",
+    "term": "AUM",
+    "s": [
+     "agm",
+     "fbn",
+     "mbfy"
+    ]
+   },
+   {
+    "k": "Disbursements",
+    "v": "₹1,11,642 cr (+11%)",
+    "term": "Disbursements",
+    "s": [
+     "agm",
+     "fbn"
+    ]
+   },
+   {
+    "k": "Vehicle finance AUM",
+    "v": "₹1,19,558 cr (+18%)",
+    "term": "AUM",
+    "s": [
+     "res",
+     "fbn"
+    ]
+   },
+   {
+    "k": "Gross Stage 3",
+    "v": "3.05%",
+    "term": "Stage 3 assets",
+    "s": [
+     "res",
+     "agm",
+     "fbn"
+    ]
+   },
+   {
+    "k": "Capital adequacy ratio",
+    "v": "19.21%",
+    "term": "Capital adequacy ratio",
+    "s": [
+     "res",
+     "fbn"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹2.00 per share (₹1.30 interim + ₹0.70 final)",
+    "term": "Dividend",
+    "s": [
+     "agm",
+     "fbn",
+     "tbr"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Net profit ₹1,630 cr (consolidated), up 41% from ₹1,160 cr a year earlier.",
+     "term": "Net profit",
+     "s": [
+      "res",
+      "univ",
+      "bsq2"
+     ]
+    },
+    {
+     "t": "Disbursements ₹35,872 cr (+47%); AUM ₹2,68,009 cr (+25%).",
+     "term": "Disbursements",
+     "s": [
+      "res",
+      "bsq2",
+      "incred"
+     ]
+    },
+    {
+     "t": "Gross Stage 3 3.25% (3.35% a year ago); capital adequacy 20.62%.",
+     "term": "Stage 3 assets",
+     "s": [
+      "res",
+      "bsq2",
+      "cai"
+     ]
+    },
+    {
+     "t": "Board approved raising up to ₹5,000 cr by QIP; FY27 AUM growth guidance kept at 20–23%.",
+     "s": [
+      "res",
+      "bsq2",
+      "tr"
+     ]
+    }
+   ]
+  },
+  "say": "Chola grew profit 41% to ₹1,630 crore last quarter, with vehicle loans still about half its ₹2.68 lakh crore book."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Shriram Finance",
+   "Bajaj Finance",
+   "Mahindra & Mahindra Financial Services",
+   "Sundaram Finance",
+   "Tata Capital",
+   "L&T Finance",
+   "HDFC Bank"
+  ],
+  "note": "Vehicle-finance rivals are Shriram Finance, Mahindra Finance and Sundaram Finance; banks also compete for car and property loans."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Branches (Mar 2026)",
+    "v": "1,761"
+   },
+   {
+    "k": "Gold loan branches (Sep 2026)",
+    "v": "308"
+   },
+   {
+    "k": "HQ",
+    "v": "Guindy, Chennai"
+   }
+  ],
+  "local": "Chola is a Chennai company with a strong South India base, and most of its branches are in smaller towns, so many roles are in branch sales, credit and collections.",
+  "s": [
+   "agm",
+   "mbfy",
+   "res",
+   "cai",
+   "about"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "Chola's CSR covers health, education, water and sanitation and road safety. Its flagship Raahi programme, with Sightsavers, gives free eye check-ups and spectacles to truck drivers.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Strong growth: AUM up 25% to ₹2.68 lakh cr",
+    "s": [
+     "res",
+     "bsq2"
+    ]
+   },
+   {
+    "t": "Strong capital: adequacy 20.62%",
+    "s": [
+     "res",
+     "cai"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "About half the book depends on vehicle loans",
+    "s": [
+     "res",
+     "incred"
+    ]
+   },
+   {
+    "t": "Gross Stage 3 3.25%, with RBI-norm GNPA higher at 4.44%",
+    "s": [
+     "res",
+     "bsq2"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Gold loans scaling fast: 308 branches, ₹3,446 cr AUM",
+    "s": [
+     "res",
+     "cai"
+    ]
+   },
+   {
+    "t": "Fresh capital: QIP of up to ₹5,000 cr planned",
+    "s": [
+     "res",
+     "bsq2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Rainfall gaps may hurt farm incomes and tractor-loan repayments",
+    "s": [
+     "bsq2",
+     "tr"
+    ]
+   },
+   {
+    "t": "Big NBFCs and banks compete for vehicle and property loans",
+    "s": [
+     "rbi",
+     "bsul"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a lender, interviewers prefer competitor analysis and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. Banks and other NBFCs chase the same borrowers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. An RBI licence and cheap funding are hard to get, but fintechs enter digital lending."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Bank loans, BNPL and fintech apps can replace NBFC loans."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Good borrowers can switch to banks for lower rates."
+   },
+   {
+    "k": "Supplier power",
+    "v": "High. Banks and bond investors supply the money; their rates set the NBFC's cost of funds."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for credit to small businesses, farmers and first-time borrowers."
+   },
+   {
+    "k": "Economic",
+    "v": "RBI interest-rate moves change borrowing costs and margins."
+   },
+   {
+    "k": "Social",
+    "v": "Rising aspirations: more people borrow for vehicles, homes, gold and consumer goods."
+   },
+   {
+    "k": "Technological",
+    "v": "Digital lending, app-based loans and data-driven credit scoring."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI's scale-based rules for NBFCs, fair-practice and digital-lending guidelines."
+   },
+   {
+    "k": "Environmental",
+    "v": "Green finance (e.g. EV loans) and ESG reporting (BRSR) are growing."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Loans for vehicles, homes, gold, businesses and consumer goods, plus insurance cross-sell."
+   },
+   {
+    "k": "Price",
+    "v": "Interest rates and fees, set by risk and against banks' rates."
+   },
+   {
+    "k": "Place",
+    "v": "Branches, dealer and shop partners, field agents and mobile apps."
+   },
+   {
+    "k": "Promotion",
+    "v": "Dealer tie-ups, local campaigns, digital offers and cross-selling."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more loans to existing customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New loan products and digital journeys."
+   },
+   {
+    "k": "Diversification",
+    "v": "Group companies in housing finance, insurance or asset management."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "NBFC": "Non-Banking Financial Company: a lender regulated by the RBI that gives loans but cannot take savings or current account deposits like a bank.",
+  "AUM": "Assets Under Management: the total loans an NBFC has given out and not yet been repaid. The main size measure for a lender.",
+  "Disbursements": "New loans paid out to customers in a period.",
+  "Net profit": "What is left after all costs, provisions and taxes. The company's final earnings.",
+  "Net Interest Income": "Interest earned on loans minus interest paid on borrowings. A lender's main earning.",
+  "Net interest margin": "Net Interest Income as a % of loans or interest-earning assets. Shows how profitable lending is.",
+  "Gross NPA": "Loans not repaid for 90+ days (called 'Stage 3' loans by NBFCs), as a % of all loans.",
+  "Net NPA": "Bad loans after subtracting the money already set aside (provisions) for them. Lower is better.",
+  "Stage 3 assets": "Loans that have stopped paying for 90+ days. NBFCs report Gross and Net Stage 3, similar to banks' NPA.",
+  "Credit cost": "Money set aside for bad loans, as a % of average loans. Lower means fewer losses.",
+  "Capital adequacy ratio": "The lender's own capital compared with the risk in its loans. RBI requires NBFCs to keep at least 15%.",
+  "Provisions": "Money set aside from profit to cover loans that may not be repaid.",
+  "Borrowings": "Money an NBFC raises from banks, bonds (NCDs), commercial paper and, for some, public deposits, to lend onward.",
+  "Cost of funds": "The average interest an NBFC pays on its borrowings. NBFCs usually pay more than banks, so a strong credit rating matters.",
+  "Credit rating": "An agency's grade (e.g. AAA) of how safely a company can repay debt. Higher ratings mean cheaper borrowing.",
+  "Upper Layer NBFC": "The largest and most important NBFCs, named by the RBI under its scale-based rules. They face bank-like rules and must list on the stock market within 3 years.",
+  "Return on assets": "Net profit as a % of average total assets. Shows how well a lender earns on what it owns.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "RBI": "Reserve Bank of India, which regulates banks and NBFCs in India.",
+  "KYC": "Know Your Customer: checking a customer's identity before giving a loan.",
+  "MSME": "Micro, Small and Medium Enterprises: small businesses that lenders serve.",
+  "Cross-sell": "Selling an extra product (like insurance or a second loan) to an existing customer.",
+  "Co-lending": "A bank and an NBFC lending together: the NBFC finds and services the borrower, the bank funds most of the loan.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "Vehicle finance": "Loans to buy trucks, buses, cars, tractors, two-wheelers and construction equipment. The vehicle is the security for the loan.",
+  "Loan against property": "A loan given against a house or shop the borrower owns, often used by small business owners.",
+  "Gold loan": "A short-term loan given against gold jewellery kept with the lender.",
+  "QIP": "Qualified Institutions Placement: a quick way for a listed company to raise money by selling shares to large institutional investors.",
+  "Return on equity": "Net profit as a % of shareholders' money. Shows how well the company uses its owners' capital."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and reconciliations",
+    "Meeting RBI reporting deadlines",
+    "Managing borrowing costs"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an NBFC balance sheet",
+    "Basics of RBI rules for NBFCs"
+   ],
+   "tip": "Know AUM, Gross vs Net Stage 3, cost of funds and credit cost, and the company's latest profit.",
+   "kv": [
+    {
+     "k": "Gross Stage 3",
+     "v": "3.25%",
+     "term": "Stage 3 assets"
+    },
+    {
+     "k": "Capital adequacy",
+     "v": "20.62%",
+     "term": "Capital adequacy ratio"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,630 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "AUM",
+     "v": "₹2.68 lakh cr",
+     "term": "AUM"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New customers acquired",
+    "Loans per dealer or partner",
+    "Campaign response rates"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing basics",
+    "Dealer and partner management"
+   ],
+   "tip": "Think about reaching first-time and small-town borrowers through dealers, branches and mobile.",
+   "kv": [
+    {
+     "k": "Vehicle finance AUM",
+     "v": "₹1,29,787 cr",
+     "term": "Vehicle finance"
+    },
+    {
+     "k": "Q2 disbursements",
+     "v": "₹35,872 cr",
+     "term": "Disbursements"
+    },
+    {
+     "k": "Gold loan branches",
+     "v": "308",
+     "term": "Gold loan"
+    },
+    {
+     "k": "Branches (Mar 2026)",
+     "v": "1,761"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition in the first year",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "NBFCs hire many field and branch staff. Ideas to cut early attrition and train people fast will impress.",
+   "kv": [
+    {
+     "k": "HQ",
+     "v": "Chennai"
+    },
+    {
+     "k": "Group",
+     "v": "Murugappa"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,630 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Branches (Mar 2026)",
+     "v": "1,761"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Loans disbursed",
+    "Collections and repayment rates",
+    "Customer retention"
+   ],
+   "skills": [
+    "Product knowledge",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a two-wheeler loan' or 'Convince a shopkeeper to take a business loan.'",
+   "kv": [
+    {
+     "k": "HQ",
+     "v": "Chennai"
+    },
+    {
+     "k": "Group",
+     "v": "Murugappa"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,630 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Branches (Mar 2026)",
+     "v": "1,761"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Turnaround time (TAT)",
+    "Error-free processing",
+    "Collection efficiency"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, loan turnaround time, collections and how automation reduces errors.",
+   "kv": [
+    {
+     "k": "HQ",
+     "v": "Chennai"
+    },
+    {
+     "k": "Group",
+     "v": "Murugappa"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,630 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Branches (Mar 2026)",
+     "v": "1,761"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Lending basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "HQ",
+     "v": "Chennai"
+    },
+    {
+     "k": "Group",
+     "v": "Murugappa"
+    },
+    {
+     "k": "Q2 FY27 profit",
+     "v": "₹1,630 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "Branches (Mar 2026)",
+     "v": "1,761"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Chola's profit grew 41% but AUM grew 25%. Why the gap?",
+     "a": "Net income rose 24% while loan losses fell 3% year on year, so more of the income reached profit."
+    },
+    {
+     "q": "What is the difference between Gross Stage 3 (3.25%) and GNPA under RBI norms (4.44%)?",
+     "a": "Stage 3 is based on 90+ days overdue under Ind AS. RBI norms classify more loans as NPA (for example, a loan stays NPA until all dues are cleared), so the RBI figure is higher."
+    },
+    {
+     "q": "Why would Chola raise ₹5,000 crore through a QIP?",
+     "a": "Fast loan growth uses up capital; fresh equity keeps capital adequacy well above the 15% minimum and supports future growth."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you grow Chola's gold loan business?",
+     "a": "Use existing vehicle-loan customers and branch towns, offer quick disbursal and safe storage, and promote through local campaigns in the South and East."
+    },
+    {
+     "q": "How can Chola win more used-vehicle loan customers?",
+     "a": "Tie up with used-vehicle dealers and brokers, offer fast approvals through the app, and cross-sell insurance."
+    }
+   ],
+   "HR": [
+    {
+     "q": "Chola hires many field staff in small towns. How would you reduce early attrition?",
+     "a": "Hire locally, give clear training and career paths, recognise collection and sales wins, and support managers to coach new joiners."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell a used-truck loan to a small transport operator.",
+     "a": "Ask about routes and income, show the EMI against monthly earnings, explain quick approval and local branch support, then agree on documents and next steps."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you improve collections in a rural vehicle-loan branch?",
+     "a": "Track early overdue accounts daily, understand seasonal farm and freight incomes, offer digital payment options and visit borrowers early."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do you know about Chola?",
+     "a": "A Chennai-based Murugappa Group NBFC from 1978, led by Executive Chairman Vellayan Subbiah and MD Ravindra Kumar Kundu; vehicle loans are about half of its ₹2.68 lakh crore AUM."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Chola?",
+     "a": "Vellayan Subbiah is Executive Chairman (since Apr 2025); Ravindra Kumar Kundu is Managing Director (since Oct 2024)."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, Q2 FY27 profit up 41% to ₹1,630 crore, or the board's approval of a ₹5,000 crore QIP in Oct 2026."
+    },
+    {
+     "q": "Why Chola?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Chola has grown from an equipment finance company in Chennai into a lender with ₹2.68 lakh crore of loans, most of them in small-town India. It is backed by the Murugappa Group, is growing in new areas like gold loans, and gives young people early responsibility in sales, credit and collections. I want to contribute to [your role] and learn how lending works on the ground.",
+  "ask": [
+   "How will the gold loan business fit with the vehicle finance branches?",
+   "What will the QIP money be used for over the next two years?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should NBFCs face the same rules as banks?",
+    "for": "Large NBFCs like Chola lend as much as mid-sized banks, so similar rules protect the system.",
+    "against": "NBFCs serve small-town borrowers that banks miss; heavy rules can slow that lending."
+   },
+   {
+    "t": "Are gold loans good for India?",
+    "for": "Quick, secured credit for families and small businesses without much paperwork.",
+    "against": "Borrowers can lose family jewellery if they cannot repay, and gold prices can swing."
+   }
+  ],
+  "avoid": [
+   "Don't call Chola a bank; it is an NBFC regulated by the RBI and cannot take savings deposits.",
+   "Don't confuse Cholamandalam Investment and Finance (the lender) with Cholamandalam Financial Holdings (its holding company) or Chola MS General Insurance.",
+   "Don't quote the Feb 2026 media report on the Chairman's exit as fact; the company denied it."
+  ],
+  "night": [
+   "Executive Chairman: Vellayan Subbiah · MD: Ravindra Kumar Kundu",
+   "Founded 1978 · HQ Chennai · Murugappa Group",
+   "FY26 profit: ₹5,233 cr consolidated (+23%)",
+   "Q2 FY27 profit: ₹1,630 cr (+41%)",
+   "AUM ₹2.68 lakh cr; vehicle loans about half",
+   "Gross Stage 3 3.25% · capital adequacy 20.62%",
+   "Rivals: Shriram Finance, Bajaj Finance, Mahindra Finance",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Which business group does Chola belong to?",
+   "o": [
+    "Tata Group",
+    "Murugappa Group",
+    "TVS Group"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Who is Chola's Managing Director?",
+   "o": [
+    "Vellayan Subbiah",
+    "Ravindra Kumar Kundu",
+    "Arul Selvan"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Chola's largest business is…",
+   "o": [
+    "Vehicle finance",
+    "Credit cards",
+    "Microfinance"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Chola's Q2 FY27 net profit was about…",
+   "o": [
+    "₹163 cr",
+    "₹1,630 cr",
+    "₹16,300 cr"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where is Chola headquartered?",
+   "o": [
+    "Mumbai",
+    "Chennai",
+    "Bengaluru"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "18 Nov 2026"
+}
