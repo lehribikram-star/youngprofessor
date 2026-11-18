@@ -1681,7 +1681,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     function recount(){[].forEach.call(pf.querySelectorAll('button'),function(btn){var c=btn.dataset.c,n=all.filter(function(x){return c==='all'||x.dataset.cat===c;}).length,sp=btn.querySelector('span');if(sp)sp.textContent=n;});
       setNum('liFeat',all.length);moveInd();}
     function apply(S){if(!S||!S.ok)return;
-      if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol');sf.dataset.n=S.site.followers;sf.textContent=fmt(S.site.followers);d.getElementById('growN').hidden=false;}
+      if(S.site&&S.site.followers>0){var sf=d.getElementById('siteFol'),fv=Math.max(S.site.followers,window.__ypFloor||0);sf.dataset.n=fv;sf.textContent=fmt(fv);d.getElementById('growN').hidden=false;}
       
       var posts=S.posts||[],li=posts.filter(function(p){return p.p==='li';}).slice(0,8).reverse();
       li.forEach(addLi);if(li.length)recount();
@@ -1689,6 +1689,11 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       if(ig.length){var g=d.getElementById('igGrid');g.innerHTML=ig.slice(0,6).map(function(c){return '<div class="ig-card"><iframe src="https://www.instagram.com/p/'+c+'/embed/" loading="lazy" scrolling="no" title="Instagram post by @bikrampaul.s"></iframe></div>';}).join('');
         g.hidden=false;d.getElementById('igEmpty').hidden=true;}}
     if(window.fetch)fetch(SURL).then(function(r){return r.json();}).then(apply).catch(function(){});
+    function liveFol(){if(d.hidden||!window.fetch)return;fetch(SURL+'&t='+Date.now()).then(function(r){return r.json();}).then(function(S){
+      if(!S||!S.ok||!S.site)return;var n=Math.max(+S.site.followers||0,window.__ypFloor||0);if(!(n>0))return;
+      ['siteFol','cWeb'].forEach(function(id){var el=d.getElementById(id);if(!el)return;if(+el.dataset.n!==n){el.dataset.n=n;el.textContent=fmt(n);}});
+      d.getElementById('growN').hidden=false;}).catch(function(){});}
+    setInterval(liveFol,60000);d.addEventListener('visibilitychange',function(){if(!d.hidden)liveFol();});
   })();
 
 
@@ -1735,7 +1740,8 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
 </div><div class="farrow" aria-hidden="true">⬇︎<span>Tap Share</span></div></div>
 <div class="fmodal" id="fwebview" hidden><div class="fbox" role="dialog" aria-modal="true" aria-labelledby="fwTitle">
   <h3 id="fwTitle">Open in your browser</h3>
-  <p>This app's built-in browser can't add Dr. Lehri to your home screen. Tap <b>⋮</b> or <b>⋯</b> and choose <b>Open in Chrome</b> / <b>Open in Safari</b>, then tap Follow again.</p>
+  <p id="fwTxt">Following works in your phone's browser. Tap below, then tap <b>Let’s Grow Together</b> again.</p>
+  <a id="fwOpen" class="yes" href="intent://youngprofessor.in/?follow=1#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fyoungprofessor.in%2F%3Ffollow%3D1;end" style="display:block;text-align:center;text-decoration:none;margin:14px 0 8px;padding:13px 18px;border-radius:999px;background:#E3161E;color:#fff;font-weight:700">Open in Chrome</a>
   <button type="button" id="fwCopy">Copy link</button>
 </div></div>
 <div class="fmodal fpre" id="fpre" hidden><div class="fbox" role="dialog" aria-modal="true" aria-labelledby="fpTitle">
@@ -1781,23 +1787,33 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   if(APP_ID){
     window.OneSignalDeferred=window.OneSignalDeferred||[];
     var osLoaded=false;function loadOS(){if(osLoaded)return;osLoaded=true;var sc=d.createElement('script');sc.src='https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';sc.defer=true;d.head.appendChild(sc);}
-    if(d.readyState==='complete')setTimeout(loadOS,1200);else addEventListener('load',function(){setTimeout(loadOS,1200);});
+    if(d.readyState==='complete')setTimeout(loadOS,200);else addEventListener('load',function(){setTimeout(loadOS,200);});
     btns.forEach(function(b){b.addEventListener('pointerenter',loadOS);b.addEventListener('touchstart',loadOS,{passive:true});});
     OneSignalDeferred.push(async function(OneSignal){
       await OneSignal.init({appId:APP_ID,serviceWorkerPath:'OneSignalSDKWorker.js',notifyButton:{enable:false},promptOptions:{slidedown:{prompts:[]}}});
       OS=OneSignal;
+      if(window.__ypPending){window.__ypPending=false;try{if(OneSignal.Notifications.permission){OneSignal.User.PushSubscription.optIn();setOn(true);celebrate();}}catch(e){}}
       try{setOn(!!OneSignal.User.PushSubscription.optedIn);if(!OneSignal.User.PushSubscription.optedIn)lsSet(FKEY,'');}catch(e){}
-      OneSignal.User.PushSubscription.addEventListener('change',function(ev){var now=!!(ev.current&&ev.current.optedIn),was=!!(ev.previous&&ev.previous.optedIn);setOn(now);if(now!==was){['siteFol','cWeb'].forEach(function(id){var sf=d.getElementById(id);if(sf&&sf.dataset.n){var n=Math.max(0,+sf.dataset.n+(now?1:-1));sf.dataset.n=n;sf.textContent=n.toLocaleString('en-US');}});if(now)celebrate();}});
+      OneSignal.User.PushSubscription.addEventListener('change',function(ev){var now=!!(ev.current&&ev.current.optedIn),was=!!(ev.previous&&ev.previous.optedIn);setOn(now);if(now!==was){['siteFol','cWeb'].forEach(function(id){var sf=d.getElementById(id);if(sf&&sf.dataset.n){var n=Math.max(0,+sf.dataset.n+(now?1:-1));sf.dataset.n=n;if(id==='siteFol')window.__ypFloor=now?n:0;sf.textContent=n.toLocaleString('en-US');}});if(now)celebrate();}});
     });
   }
   var inApp=/Instagram|FBAN|FBAV|FB_IAB|Line\/|LinkedInApp|Snapchat|Twitter|MicroMessenger/i.test(navigator.userAgent);
   var wv=d.getElementById('fwebview');
+  if(!/Android/i.test(navigator.userAgent)){var fo=d.getElementById('fwOpen');if(fo)fo.remove();var ft=d.getElementById('fwTxt');if(ft)ft.innerHTML='Following works in Safari. Tap <b>⋯</b> and choose <b>Open in Safari</b> (or copy the link below), then tap <b>Let’s Grow Together</b> again.';}
+  /* arriving from "Open in Chrome": highlight the button */
+  if(/[?&]follow=1/.test(location.search)&&!inApp){setTimeout(function(){var b=btns[0];if(b){b.scrollIntoView({block:'center'});toast('Tap “Let’s Grow Together” to follow 🌱');}},900);}
   d.getElementById('fwCopy').addEventListener('click',function(){try{navigator.clipboard.writeText('https://youngprofessor.in');toast('Link copied. Paste it in Chrome or Safari.');}catch(e){}wv.hidden=true;});
   wv.addEventListener('click',function(e){if(e.target===wv)wv.hidden=true;});
   addEventListener('appinstalled',function(){lsSet('yp_installed','1');toast('Dr. Lehri is on your home screen 🎉');});
   function subscribe(){
-    if(!APP_ID||!OS){toast('Almost ready… tap Follow once more.');return;}
+    if(APP_ID&&!OS){ /* SDK still loading: ask the browser now (keeps the tap), finish when ready */
+      window.__ypPending=true;loadOS();
+      if('Notification' in window&&Notification.requestPermission){toast('Tap “Allow” to join 🌱');
+        try{Notification.requestPermission().then(function(p){if(p==='denied'){window.__ypPending=false;toast('Notifications are blocked. Allow them in your browser settings to grow with me.');}});}catch(e){}}
+      return;}
+    if(!APP_ID){return;}
     if(!OS.Notifications.isPushSupported()){toast('Your browser does not support notifications. Try Chrome or add the site to your Home Screen.');return;}
+    if(!OS.Notifications.permission)toast('Tap “Allow” to join 🌱');
     OS.Notifications.requestPermission().then(function(){
       if(OS.Notifications.permission){try{OS.User.PushSubscription.optIn();}catch(e){}setOn(true);celebrate();}
       else toast('Notifications are blocked. Allow them in your browser settings to follow.');
@@ -1810,7 +1826,6 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     if(isiOS&&!standalone){modal.hidden=false;return;}
     var perm=('Notification' in window)?Notification.permission:'default';
     if(perm==='denied'){toast('Notifications are blocked. Allow them in your browser settings to grow with me.');return;}
-    if(perm==='default'){pre.hidden=false;return;}
     goFollow();
   }
   d.getElementById('fpYes').addEventListener('click',function(){pre.hidden=true;goFollow();});
@@ -1820,13 +1835,6 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     if(inApp&&!standalone){wv.hidden=false;return;}
     if(isiOS&&!standalone){modal.hidden=false;return;}
     /* Android / Chrome: show the phone's own "Install app" dialog first, then turn on notifications */
-    var dip=window.__dip;
-    if(dip&&!standalone&&lsGet('yp_installed')!=='1'){
-      window.__dip=null;
-      dip.prompt();
-      dip.userChoice.then(function(c){if(c&&c.outcome==='accepted')lsSet('yp_installed','1');subscribe();}).catch(subscribe);
-      return;
-    }
     subscribe();
   }
   function followOld(){
@@ -1853,7 +1861,8 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     ty.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){ty.classList.add('show');});});
     if(!matchMedia('(prefers-reduced-motion: reduce)').matches)confetti();
   }
-  function closeTy(){ty.classList.remove('show');setTimeout(function(){ty.hidden=true;},450);}
+  function closeTy(){ty.classList.remove('show');setTimeout(function(){ty.hidden=true;},450);
+    var dip=window.__dip;if(dip&&!standalone&&lsGet('yp_installed')!=='1'){window.__dip=null;try{dip.prompt();dip.userChoice.then(function(c){if(c&&c.outcome==='accepted')lsSet('yp_installed','1');}).catch(function(){});}catch(e){}}}
   ty.querySelectorAll('[data-tyclose]').forEach(function(el){el.addEventListener('click',closeTy);});
   addEventListener('keydown',function(e){if(e.key==='Escape'){if(!ty.hidden)closeTy();pre.hidden=true;}});
   d.getElementById('tyShare').addEventListener('click',function(){
