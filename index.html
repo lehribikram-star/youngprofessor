@@ -154,7 +154,10 @@ img{max-width:100%;display:block}
 .pushwrap{display:inline-flex;flex-direction:column;align-items:center;gap:34px;margin:-14px 0 10px;max-width:100%}
 .pushwrap .motto{margin:0!important}
 .gwrap{display:flex;flex-direction:column;align-items:center;gap:10px}
-.gring{position:relative;display:inline-flex;padding:2px;border-radius:999px;background:conic-gradient(from var(--ga),rgba(227,22,30,.35) 0 60%,#fff 73%,#FF3B42 84%,rgba(227,22,30,.35) 100%);animation:gspin 3.2s linear infinite,gglow 2.4s ease-out 2s infinite}
+.gring{position:relative;display:inline-flex;padding:2px;border-radius:999px;background:conic-gradient(from var(--ga),rgba(227,22,30,.35) 0 60%,#fff 73%,#FF3B42 84%,rgba(227,22,30,.35) 100%);animation:gspin 3.2s linear infinite,gglow 2.4s ease-out 2s infinite,ypnudge 4s ease-in-out 3s infinite}
+@keyframes ypnudge{0%,84%,100%{translate:0 0}88%{translate:0 -9px}92%{translate:0 0}96%{translate:0 -4px}}
+.gring:has(.on){animation:gspin 3.2s linear infinite}
+@media (prefers-reduced-motion:reduce){.gring{animation:none}}
 @keyframes gspin{to{--ga:360deg}}
 @keyframes gglow{0%{box-shadow:0 0 0 0 rgba(227,22,30,.55)}100%{box-shadow:0 0 0 22px rgba(227,22,30,0)}}
 .btn.follow.gbtn{border:0;padding:16px 26px 16px 22px;font-size:17px;font-weight:800;color:#fff;background:linear-gradient(110deg,#E3161E 42%,#ff6a70 50%,#E3161E 58%) 100% 0/300% 100%;animation:gshine 4.5s ease-in-out 1.5s infinite;box-shadow:0 14px 34px -12px rgba(227,22,30,.9)}
@@ -1839,7 +1842,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     goFollow();
   }
   d.getElementById('fpYes').addEventListener('click',function(){pre.hidden=true;goFollow();});
-  d.getElementById('fpNo').addEventListener('click',function(){pre.hidden=true;});
+  d.getElementById('fpNo').addEventListener('click',function(){pre.hidden=true;lsSet('yp_follow_card_later',String(Date.now()));});
   pre.addEventListener('click',function(e){if(e.target===pre)pre.hidden=true;});
   function goFollow(){
     if(inApp&&!standalone){wv.hidden=false;return;}
@@ -1906,9 +1909,10 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
     },700);
   }
   else if(lsGet(FKEY)!=='on'&&Date.now()-later>7*864e5){
-    var shown=false;function showCard(){if(shown||lsGet(FKEY)==='on')return;shown=true;removeEventListener('scroll',onS);card.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){card.classList.add('show');});});}
-    function onS(){var h=d.documentElement.scrollHeight-innerHeight;if(h>0&&scrollY/h>.35)showCard();}
-    addEventListener('scroll',onS,{passive:true});setTimeout(showCard,12000);
+    var shown=false;function showCard(){if(shown||lsGet(FKEY)==='on')return;shown=true;
+      if(!ty.hidden||!wv.hidden||!modal.hidden||!fbl.hidden)return;
+      pre.hidden=false;}
+    setTimeout(showCard,6000);
   }
 })();
 </script>
