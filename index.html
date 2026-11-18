@@ -1905,7 +1905,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       pre.hidden=false;
     },700);
   }
-  else if(lsGet(FKEY)!=='on'&&permNow!=='denied'&&Date.now()-later>7*864e5){
+  else if(lsGet(FKEY)!=='on'&&Date.now()-later>7*864e5){
     var shown=false;function showCard(){if(shown||lsGet(FKEY)==='on')return;shown=true;removeEventListener('scroll',onS);card.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){card.classList.add('show');});});}
     function onS(){var h=d.documentElement.scrollHeight-innerHeight;if(h>0&&scrollY/h>.35)showCard();}
     addEventListener('scroll',onS,{passive:true});setTimeout(showCard,12000);
