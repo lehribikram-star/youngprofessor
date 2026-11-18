@@ -383,8 +383,8 @@
   "fy": "FY 2025-26 (year to 31 Mar 2026, consolidated)",
   "rows": [
    {
-    "k": "Net profit",
-    "v": "₹19,332 cr (+15%); ₹20,689 cr (+24%) before one-time charges",
+    "k": "Net profit (₹20,689 cr, +24%, before one-time charges)",
+    "v": "₹19,332 cr (+15%)",
     "term": "Net profit",
     "s": [
      "fy26ar",
@@ -413,7 +413,7 @@
    },
    {
     "k": "Customer franchise",
-    "v": "11.93 crore (119.33 million, +17%)",
+    "v": "11.93 crore (+17%)",
     "term": "Customer franchise",
     "s": [
      "fy26ar",
@@ -451,7 +451,7 @@
    },
    {
     "k": "Dividend",
-    "v": "₹6 per share (incl. ₹0.60 special)",
+    "v": "₹6 per share",
     "term": "Dividend",
     "s": [
      "fy26b",

@@ -362,7 +362,7 @@
   "rows": [
    {
     "k": "Net profit (consolidated)",
-    "v": "₹5,233 cr (FY25: ₹4,263 cr)",
+    "v": "₹5,233 cr",
     "term": "Net profit",
     "s": [
      "bsfy",
@@ -427,7 +427,7 @@
    },
    {
     "k": "Dividend",
-    "v": "₹2.00 per share (₹1.30 interim + ₹0.70 final)",
+    "v": "₹2 per share",
     "term": "Dividend",
     "s": [
      "agm",

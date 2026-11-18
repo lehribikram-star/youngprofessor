@@ -379,7 +379,7 @@
   "rows": [
    {
     "k": "Net profit (consolidated)",
-    "v": "₹10,607 cr (FY25: ₹5,352 cr)",
+    "v": "₹10,607 cr",
     "term": "Net profit",
     "s": [
      "fy26",
@@ -433,7 +433,7 @@
    },
    {
     "k": "Dividend",
-    "v": "₹30 per share (highest ever)",
+    "v": "₹30 per share",
     "term": "Dividend",
     "s": [
      "fy26b",

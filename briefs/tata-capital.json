@@ -395,7 +395,7 @@
   "rows": [
    {
     "k": "Net profit (owners' share)",
-    "v": "₹4,846 cr (FY25: ₹3,665 cr)",
+    "v": "₹4,846 cr",
     "term": "Net profit",
     "s": [
      "fy26",
@@ -413,7 +413,7 @@
    },
    {
     "k": "Gross Stage 3",
-    "v": "2.0% (1.5% without motor finance)",
+    "v": "2.0%",
     "term": "Stage 3 assets",
     "s": [
      "fy26",
@@ -432,7 +432,7 @@
    },
    {
     "k": "Branches",
-    "v": "1,477 in 27 states & UTs",
+    "v": "1,477",
     "s": [
      "fy26",
      "fy26d",

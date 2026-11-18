@@ -143,10 +143,11 @@
    "term": "AUM"
   },
   {
-   "v": 12000000,
-   "fmt": "num",
-   "label": "Customers",
-   "sub": "1.2 crore+"
+   "v": 882,
+   "fmt": "cr",
+   "label": "Net profit Q2 FY27",
+   "sub": "Jul–Sep 2026 · standalone · +55%",
+   "term": "Net profit"
   }
  ],
  "kpis": [
@@ -395,7 +396,7 @@
    },
    {
     "k": "Net interest margin, Q4 FY26",
-    "v": "7.5% (6.5% a year ago)",
+    "v": "7.5%",
     "term": "Net interest margin",
     "s": [
      "fy26",
@@ -495,7 +496,7 @@
    },
    {
     "k": "Home loans arm",
-    "v": "Mahindra Rural Housing Finance (merging)"
+    "v": "MRHFL (merging)"
    }
   ],
   "local": "Much of the work is in rural and semi-urban India: branch, sales and collection roles close to farmers, transporters and small businesses.",
