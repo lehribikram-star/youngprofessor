@@ -154,6 +154,9 @@ img{max-width:100%;display:block}
 .pushwrap{display:inline-flex;flex-direction:column;align-items:center;gap:34px;margin:-14px 0 10px;max-width:100%}
 .pushwrap .motto{margin:0!important}
 .gwrap{display:flex;flex-direction:column;align-items:center;gap:10px}
+.lic{display:inline-flex;align-items:center;gap:8px;font:600 14px var(--sans);color:#cfe2f7;text-decoration:none;margin-top:2px;transition:color .2s}
+.lic span{width:24px;height:24px;border-radius:6px;background:#0A66C2;display:grid;place-items:center;transition:transform .2s}
+.lic:hover{color:#fff}.lic:hover span{transform:scale(1.1)}
 .gring{position:relative;display:inline-flex;padding:2px;border-radius:999px;background:conic-gradient(from var(--ga),rgba(227,22,30,.35) 0 60%,#fff 73%,#FF3B42 84%,rgba(227,22,30,.35) 100%);animation:gspin 3.2s linear infinite,gglow 2.4s ease-out 2s infinite,ypnudge 4s ease-in-out 3s infinite}
 @keyframes ypnudge{0%,84%,100%{translate:0 0}88%{translate:0 -9px}92%{translate:0 0}96%{translate:0 -4px}}
 .gring:has(.on){animation:gspin 3.2s linear infinite}
@@ -1028,6 +1031,7 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
       <div class="gwrap">
         <span class="gring"><button type="button" class="btn follow gbtn" data-follow><span class="bell" aria-hidden="true">🌱</span><span class="ftxt">Follow &amp; Grow Together</span><span class="garr" aria-hidden="true">→</span></button></span>
         <span class="grow-n" id="growN" hidden><b id="siteFol">0</b> followers growing together</span>
+        <a class="lic" href="https://www.linkedin.com/in/drbikrampaulsingh" target="_blank" rel="noopener"><span aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="#fff"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></span>Connect with me on LinkedIn</a>
       </div>
       <a class="pcb" href="circle.html" aria-label="The Push Circle: where my students are now"><svg class="pcb-rt" viewBox="0 0 104 104" aria-hidden="true"><defs><path id="pcbp" d="M52,52 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#pcbp" textLength="274" lengthAdjust="spacing">WHERE MY STUDENTS ARE NOW · WHERE MY STUDENTS ARE NOW · </textPath></text></svg><span class="pcb-in"><span class="e" aria-hidden="true">🌱</span><b>The Push<br>Circle</b></span></a>
       </div>
