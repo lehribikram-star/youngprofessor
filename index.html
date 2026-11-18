@@ -724,8 +724,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
 .fcard.show{transform:translate(-50%,0)}
 .fcard img{width:36px;height:36px;flex:none}
 .fcard .ft{flex:1;min-width:0;line-height:1.25}
-.fcard .ft b{font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fcard .ft span{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fcard .ft b{font-size:14.5px;line-height:1.2}
+.fcard .ft span{display:block;font-size:12px;color:var(--muted);line-height:1.25;margin-top:1px}
 .fcard .go{flex:none;border:0;background:var(--red);color:#fff;font:800 14px var(--sans);padding:10px 16px;border-radius:999px;cursor:pointer}
 .fcard .fx{position:static;flex:none;width:30px;height:30px;font-size:15px}
 
@@ -1726,8 +1726,8 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
 </script>
 <div class="fcard" id="fcard" role="dialog" aria-label="Follow Dr. Lehri" hidden>
   <img src="logo-mark.webp" alt="" width="36" height="36">
-  <div class="ft"><b>You bring the dreams, I’ll bring the push.</b></div>
-  <button type="button" class="go" data-follow>🌱 Let’s Grow</button>
+  <div class="ft"><b>Let’s grow together 🌱</b><span>Free lessons &amp; opportunities, first</span></div>
+  <button type="button" class="go" data-follow>Join free</button>
   <button type="button" class="fx" id="fcardX" aria-label="Close">✕</button>
 </div>
 </div>
@@ -1801,7 +1801,6 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   var wv=d.getElementById('fwebview');
   if(!/Android/i.test(navigator.userAgent)){var fo=d.getElementById('fwOpen');if(fo)fo.remove();var ft=d.getElementById('fwTxt');if(ft)ft.innerHTML='Following works in Safari. Tap <b>⋯</b> and choose <b>Open in Safari</b> (or copy the link below), then tap <b>Let’s Grow Together</b> again.';}
   /* arriving from "Open in Chrome": highlight the button */
-  if(/[?&]follow=1/.test(location.search)&&!inApp){setTimeout(function(){var b=btns[0];if(b){b.scrollIntoView({block:'center'});toast('Tap “Let’s Grow Together” to follow 🌱');}},900);}
   d.getElementById('fwCopy').addEventListener('click',function(){try{navigator.clipboard.writeText('https://youngprofessor.in');toast('Link copied. Paste it in Chrome or Safari.');}catch(e){}wv.hidden=true;});
   wv.addEventListener('click',function(e){if(e.target===wv)wv.hidden=true;});
   addEventListener('appinstalled',function(){lsSet('yp_installed','1');toast('Dr. Lehri is on your home screen 🎉');});
@@ -1880,13 +1879,26 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   if(/[?&]celebrate=1/.test(location.search))setTimeout(function(){celebrate(true);},900);
   /* gentle follow invitation shortly after someone enters */
   function hideCard(forever){card.classList.remove('show');setTimeout(function(){card.hidden=true;},700);if(forever)lsSet('yp_follow_card','x');}
-  d.getElementById('fcardX').addEventListener('click',function(){hideCard(true);});
+  d.getElementById('fcardX').addEventListener('click',function(){hideCard(false);lsSet('yp_follow_card_later',String(Date.now()));});
   var fno=d.getElementById('fcardNo');if(fno)fno.addEventListener('click',function(){hideCard(false);lsSet('yp_follow_card_later',String(Date.now()));});
   var later=+lsGet('yp_follow_card_later')||0;
-  if(lsGet(FKEY)!=='on'&&lsGet('yp_follow_card')!=='x'&&Date.now()-later>3*864e5){
+  var permNow=('Notification' in window)?Notification.permission:'default';
+  var viaLink=/[?&]follow=1/.test(location.search);
+  if(viaLink){
+    setTimeout(function(){
+      if(lsGet(FKEY)==='on'||permNow==='granted'&&lsGet(FKEY)==='on'){toast('You’re already growing with me 🌱');return;}
+      if(inApp&&!standalone){wv.hidden=false;return;}
+      if(isiOS&&!standalone){modal.hidden=false;return;}
+      if(permNow==='denied'){toast('Notifications are blocked. Allow them in your browser settings to grow with me.');return;}
+      /* Chrome / Edge / Samsung: show the Allow box straight away (1 tap). Firefox & Safari need a tap first: show the card. */
+      if(/Chrome\//.test(navigator.userAgent)&&!/Firefox|FxiOS/.test(navigator.userAgent))goFollow();
+      else{card.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){card.classList.add('show');});});}
+    },700);
+  }
+  else if(lsGet(FKEY)!=='on'&&permNow!=='denied'&&Date.now()-later>7*864e5){
     var shown=false;function showCard(){if(shown||lsGet(FKEY)==='on')return;shown=true;removeEventListener('scroll',onS);card.hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){card.classList.add('show');});});}
     function onS(){var h=d.documentElement.scrollHeight-innerHeight;if(h>0&&scrollY/h>.35)showCard();}
-    addEventListener('scroll',onS,{passive:true});setTimeout(showCard,30000);
+    addEventListener('scroll',onS,{passive:true});setTimeout(showCard,12000);
   }
 })();
 </script>
