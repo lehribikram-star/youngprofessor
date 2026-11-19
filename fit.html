@@ -81,6 +81,7 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 .pair button{background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:18px;color:var(--ink);font-size:16px;font-weight:700;text-align:left;transition:.15s}
 .pair button.sel{border-color:var(--red);background:var(--redsoft)}.pair button.sel:after{content:' ✓';color:var(--red2)}.pair .or{align-self:center;justify-self:center;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--dim);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 10px}
 .res-hero{text-align:center;padding:10px 0 6px}
+.ready{margin:16px 0 4px;padding:18px 16px;border-radius:20px;border:1px solid rgba(226,184,92,.55);background:linear-gradient(135deg,rgba(226,184,92,.16),rgba(23,20,20,.7) 60%);text-align:center}.ready b{font-size:18px}.ready .btns{justify-content:center;margin-top:12px}.ready .btn{padding:14px 18px;font-size:15px}.ready a{display:inline-block;margin-top:10px;color:var(--gold);font-weight:700;font-size:14px;text-decoration:none}
 .appr{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3vw,26px);color:var(--gold);max-width:760px;margin:0 auto 18px}
 .topfit{position:relative;overflow:hidden;border-radius:24px;padding:34px 26px;border:1px solid rgba(226,184,92,.35);background:radial-gradient(600px 300px at 50% 0%,rgba(227,22,30,.25),transparent 70%),var(--panel);text-align:center;margin:18px 0}
 .topfit .em{font-size:54px}.topfit h2{font-size:clamp(36px,6vw,58px);margin:8px 0 4px}.pct{font-family:var(--mono);font-size:15px;color:var(--gold);letter-spacing:.14em}
@@ -205,6 +206,9 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.6vw,42px);lin
 <section class="screen" id="s-res"><div class="wrap">
   <div class="res-hero"><span class="eyebrow">Your result · 88 answers, 3 levels</span>
     <p class="appr" id="appr" style="margin-top:14px"></p></div>
+  <div class="ready" id="ready"><b>🎉 Your certificate &amp; share card are ready</b>
+    <div class="btns"><button class="btn gold" id="rbCert">⬇ Download certificate</button><button class="btn" id="rbCard">⬇ Download share card</button></div>
+    <a href="#" id="rbSee">See them first ↓</a></div>
   <div class="topfit"><div class="em" id="tEm"></div><span class="pct" id="tPct"></span><h2 id="tName"></h2><p id="tWhy"></p></div>
   <div class="card conf" id="conf"></div>
   <div class="sec"><h2>Your top 3</h2><p class="lead" style="margin:0">Most students fit more than one field. These three suit you best.</p><div class="top3" id="top3"></div></div>
@@ -705,6 +709,7 @@ document.querySelectorAll('[data-sh]').forEach(btn=>btn.onclick=async()=>{const 
  else if(k==='li'){window.open('https://www.linkedin.com/feed/?shareActive=true&text='+encodeURIComponent(cap),'_blank');toast('Card saved ✓ Attach it to your LinkedIn post and Post')}
  else if(k==='wa'){window.open('https://wa.me/?text='+encodeURIComponent(cap),'_blank');toast('Card saved ✓ For Status, open WhatsApp on your phone')}
  else toast('Card saved & caption copied ✓ Open Instagram on your phone → Story')});
+$('rbCert').onclick=()=>$('dlPdf').click();$('rbCard').onclick=()=>$('shDl').click();$('rbSee').onclick=e=>{e.preventDefault();document.querySelector('.certwrap').scrollIntoView({behavior:'smooth',block:'start'})};
 $('dlPng').onclick=async()=>{const b=await blob($('cert'));dl(URL.createObjectURL(b),'Certificate-of-Clarity-'+fname()+'.png')};
 $('dlPdf').onclick=async()=>{const bt=$('dlPdf');bt.textContent='Preparing…';
  try{if(!window.jspdf)await new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)});
