@@ -87,3 +87,6 @@ function init(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
+
+/* Follow & Grow Together on every page */
+(function(){if(window.__ypFollow||document.querySelector('script[src*="follow.js"]'))return;var s=document.createElement('script');s.src='/follow.js';s.defer=true;document.head.appendChild(s);})();
