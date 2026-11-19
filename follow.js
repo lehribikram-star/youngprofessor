@@ -37,8 +37,34 @@
   '.ypf-q{position:fixed;left:10px;right:10px;top:10px;z-index:10001;background:#fff;color:#111;border-radius:16px;padding:14px 40px 14px 16px;font:500 15px/1.4 system-ui,sans-serif;box-shadow:0 12px 40px rgba(0,0,0,.45);border:2px solid #E3161E;animation:ypfIn .35s ease-out}.ypf-q[hidden]{display:none}'+
   '.ypf-q span{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#f1f3f4;margin:0 2px}.ypf-q button{position:absolute;right:8px;top:8px;border:0;background:none;font-size:16px;color:#666}'+
   '.ypf-t{position:fixed;left:50%;bottom:84px;transform:translateX(-50%) translateY(20px);z-index:10002;max-width:92vw;background:#151313;color:#fff;border:1px solid rgba(227,22,30,.6);border-radius:14px;padding:12px 18px;font:600 14px system-ui,sans-serif;opacity:0;pointer-events:none;transition:.3s;text-align:center}.ypf-t.on{opacity:1;transform:translateX(-50%) translateY(0)}';
+  css+='.yg-why{font-size:14px;color:#cfc6bf;margin:4px 0 10px}.yg-st{display:flex;gap:10px;text-align:left;margin:10px 0;font-size:15px;line-height:1.45;color:#e6ded8}.yg-st>b{flex:none;width:26px;height:26px;border-radius:50%;background:#E3161E;color:#fff;display:grid;place-items:center;font-size:14px}.yg-st b{color:#fff}.yg-bar{display:flex;align-items:center;justify-content:space-around;gap:6px;margin-top:8px;padding:8px 10px;border-radius:16px;background:#2c2c2e;color:#0a84ff;font:600 18px system-ui,sans-serif}.yg-url{flex:1;background:#3a3a3c;color:#ddd;border-radius:10px;padding:6px 10px;font:500 13px system-ui,sans-serif;text-align:center}.yg-i{min-width:28px;text-align:center}.yg-hl{color:#fff;background:#E3161E;border-radius:10px;padding:2px 8px;animation:ygP 1.2s ease-out infinite}@keyframes ygP{0%{box-shadow:0 0 0 0 rgba(227,22,30,.85)}100%{box-shadow:0 0 0 14px rgba(227,22,30,0)}}.yg-hint{font-size:13px;color:#ffd27a;margin:8px 0 0}.yg-ptr{position:fixed;z-index:10003;display:flex;flex-direction:column;align-items:center;pointer-events:none;color:#fff;font:800 13px system-ui,sans-serif;text-shadow:0 2px 8px #000}.yg-ptr.br{right:2px;bottom:2px}.yg-ptr.bc{left:50%;bottom:2px;transform:translateX(-50%)}.yg-ptr.tr{right:2px;top:2px;flex-direction:column-reverse}.yg-lb{background:#E3161E;border-radius:999px;padding:6px 12px;white-space:nowrap;box-shadow:0 6px 20px rgba(227,22,30,.6);text-shadow:none}.yg-ar{font-size:34px;line-height:1;animation:ygB 1s ease-in-out infinite}.yg-ptr.tr .yg-ar{animation-name:ygT}@keyframes ygB{50%{transform:translateY(8px)}}@keyframes ygT{50%{transform:translateY(-8px)}}.yg-ring{width:46px;height:46px;border:3px solid #E3161E;border-radius:50%;margin-top:-6px;animation:ygR 1.2s ease-out infinite}.yg-ptr.tr .yg-ring{margin:0 0 -6px}@keyframes ygR{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.4);opacity:0}}'+'body:has(.ygopen:not([hidden])){overflow:hidden}';
   var st=d.createElement('style');st.textContent=css;d.head.appendChild(st);
 
+  function ypIosGuide(){
+   var ua=navigator.userAgent,v=+((ua.match(/Version\/(\d+)/)||[])[1]||0);
+   var k=/CriOS/.test(ua)?'chrome':(/FxiOS/.test(ua)?'firefox':(v>=26?'s26':'s'));
+   var B={s26:'<span class="yg-i">‹</span><span class="yg-url">youngprofessor.in</span><span class="yg-i yg-hl">⋯</span>',
+    s:'<span class="yg-i">‹</span><span class="yg-i">›</span><span class="yg-i yg-hl">⬆︎</span><span class="yg-i">📖</span><span class="yg-i">⧉</span>',
+    chrome:'<span class="yg-url">youngprofessor.in</span><span class="yg-i yg-hl">⬆︎</span>',
+    firefox:'<span class="yg-i">‹</span><span class="yg-i">›</span><span class="yg-i">＋</span><span class="yg-i">⧉</span><span class="yg-i yg-hl">☰</span>'}[k];
+   var top=k==='chrome';
+   var S1={s26:'Tap <b>⋯</b> in Safari’s bar at the <b>very bottom of your screen</b> (not the end of the page):',
+    s:'Tap <b>Share ⬆︎</b> in Safari’s bar at the <b>very bottom of your screen</b> (not the end of the page):',
+    chrome:'Tap <b>Share ⬆︎</b> in the address bar at the <b>top right of your screen</b>:',
+    firefox:'Tap <b>☰</b> at the <b>bottom right of your screen</b>, then <b>Share</b>:'}[k];
+   var S2=(k==='s26'?'Tap <b>Share</b>, then scroll down and tap <b>Add to Home Screen</b> → <b>Add</b>':'Scroll down, tap <b>Add to Home Screen</b> → <b>Add</b>');
+   var hint=top?'':'<p class="yg-hint">Can’t see Safari’s bar? <b>Tap the bottom edge of your screen once</b> and it appears.</p>';
+   var pos={s26:'br',s:'bc',chrome:'tr',firefox:'br'}[k];
+   var lbl={s26:'Tap ⋯ here',s:'Tap Share here',chrome:'Tap Share here',firefox:'Tap ☰ here'}[k];
+   var body='<h3>Follow on iPhone 🌱</h3><p class="yg-why">Apple allows updates only from your <b>Home Screen</b>. 3 quick steps:</p>'+
+    '<div class="yg-st"><b>1</b><div>'+S1+'<div class="yg-bar">'+B+'</div></div></div>'+
+    '<div class="yg-st"><b>2</b><div>'+S2+'</div></div>'+
+    '<div class="yg-st"><b>3</b><div>Open <b>Dr. Lehri</b> from your Home Screen, tap <b>Follow</b>, then <b>Allow</b></div></div>'+hint;
+   var ptr='<div class="yg-ptr '+pos+'" aria-hidden="true"><span class="yg-lb">'+lbl+'</span><span class="yg-ar">'+(top?'⬆︎':'⬇︎')+'</span><span class="yg-ring"></span></div>';
+   return {body:body,ptr:ptr};
+  }
+  
+  var G_=ypIosGuide();
   var shareTxt=(isiOS&&safariV>=26)?'Tap <span class="ypf-k3">⋯</span> at the <b>bottom right</b> of Safari, then <b>Share</b> <span class="ypf-shr">⬆︎</span>':'Tap <b>Share</b> <span class="ypf-shr">⬆︎</span> at the bottom of Safari';
   var here=location.origin+location.pathname;
   var intent='intent://'+location.host+location.pathname+'?follow=1#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(here+'?follow=1')+';end';
@@ -48,11 +74,8 @@
     '<h3><i>You bring the dreams,</i><br>I’ll bring the push.</h3><p>Be the first to get my new lessons, opportunities and updates, right on your phone.</p>'+
     '<p><b>On the next box, tap “Allow”</b> so my push can reach you. 🌱</p>'+
     '<button type="button" class="ypf-yes" id="ypfYes">🌱 Yes, follow &amp; grow together</button><button type="button" class="ypf-no" id="ypfNo">Maybe later</button></div></div>'+
-  '<div class="ypf-m" id="ypfIos" hidden><div class="ypf-b" role="dialog" aria-modal="true"><img src="/logo-mark.webp" alt="" width="72" height="72">'+
-    '<h3>Follow on iPhone in 3 steps 🌱</h3><p style="font-size:14px">Apple sends website updates only from your <b>Home Screen</b>. Keep this open and follow along:</p>'+
-    '<ol><li>'+shareTxt+'</li><li>Scroll down, tap <b>Add to Home Screen</b>, then <b>Add</b></li><li>Open <b>Dr. Lehri</b> from your Home Screen and tap <b>Follow</b></li></ol>'+
-    '<button type="button" class="ypf-yes" id="ypfIosOk">Done, I’ve added it</button><a class="ypf-li" href="'+LI+'" target="_blank" rel="noopener">Prefer LinkedIn? Follow me there →</a></div>'+
-    '<div class="ypf-arrow'+((isiOS&&safariV>=26)?' r':'')+'"><span>'+((isiOS&&safariV>=26)?'Tap ⋯':'Tap Share')+'</span>⬇︎</div></div>'+
+  '<div class="ypf-m ygopen" id="ypfIos" hidden><div class="ypf-b" role="dialog" aria-modal="true" style="max-height:calc(100vh - 120px);overflow:auto"><img src="/logo-mark.webp" alt="" width="72" height="72">'+G_.body+
+    '<button type="button" class="ypf-yes" id="ypfIosOk">Done, I’ve added it</button><a class="ypf-li" href="'+LI+'" target="_blank" rel="noopener">Prefer LinkedIn? Follow me there →</a></div>'+G_.ptr+'</div>'+
   '<div class="ypf-m" id="ypfWv" hidden><div class="ypf-b" role="dialog" aria-modal="true"><h3>Open in your browser</h3>'+
     (/Android/i.test(ua)?'<p>Following works in your phone’s browser. Tap below, then tap <b>Follow</b> again.</p><a class="ypf-yes" href="'+intent+'">Open in Chrome</a>':'<p>Following works in Safari. Tap <b>⋯</b> and choose <b>Open in Safari</b> (or copy the link below), then tap <b>Follow</b> again.</p>')+
     '<button type="button" class="ypf-no" id="ypfCopy">Copy link</button></div></div>'+
@@ -98,7 +121,7 @@
     }
     function follow(){pre.hidden=true;
       if(inApp&&!standalone){wv.hidden=false;return;}
-      if(isiOS&&!standalone){ios.hidden=false;return;}
+      if(isiOS&&!standalone){try{scrollTo(0,0);}catch(e){}ios.hidden=false;return;}
       if(('Notification' in window)&&Notification.permission==='denied'){blocked();return;}
       subscribe();}
     pill.addEventListener('click',follow);
@@ -128,11 +151,11 @@
     var via=/[?&]follow=1/.test(location.search);
     if(via){setTimeout(function(){if(lsGet(FKEY)==='on'){toast('You’re already growing with me 🌱');return;}
         if(inApp&&!standalone){wv.hidden=false;return;}
-        if(isiOS&&!standalone){ios.hidden=false;return;}
+        if(isiOS&&!standalone){try{scrollTo(0,0);}catch(e){}ios.hidden=false;return;}
         if(('Notification' in window)&&Notification.permission==='denied'){blocked();return;}
         pre.hidden=false;},700);}
     else if(!isOn&&Date.now()-(+lsGet(LATER)||0)>7*864e5){
-      setTimeout(function(){if(shown||lsGet(FKEY)==='on'||anyOpen())return;shown=true;pre.hidden=false;},3000);}
+      setTimeout(function(){if(shown||lsGet(FKEY)==='on'||anyOpen())return;shown=true;pre.hidden=false;},standalone?300:3000);}
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else start();
 })();
