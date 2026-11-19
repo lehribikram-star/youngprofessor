@@ -1819,18 +1819,17 @@ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',start);else st
   wv.addEventListener('click',function(e){if(e.target===wv)wv.hidden=true;});
   addEventListener('appinstalled',function(){lsSet('yp_installed','1');toast('Dr. Lehri is on your home screen 🎉');});
   function subscribe(){
-    if(APP_ID&&!OS){ /* SDK still loading: ask the browser now (keeps the tap), finish when ready */
-      window.__ypPending=true;loadOS();
-      if('Notification' in window&&Notification.requestPermission){toast('Tap “Allow” to join 🌱');
-        try{Notification.requestPermission().then(function(p){if(p==='denied'){window.__ypPending=false;showBlocked();}});}catch(e){}}
-      return;}
-    if(!APP_ID){return;}
-    if(!OS.Notifications.isPushSupported()){toast('Your browser does not support notifications. Try Chrome or add the site to your Home Screen.');return;}
-    if(!OS.Notifications.permission)toast('Tap “Allow” to join 🌱');
-    OS.Notifications.requestPermission().then(function(){
-      if(OS.Notifications.permission){try{OS.User.PushSubscription.optIn();}catch(e){}setOn(true);celebrate();}
-      else if(('Notification' in window)&&Notification.permission==='denied')showBlocked();
-    });
+    if(!APP_ID)return;
+    if(!('Notification' in window)||!Notification.requestPermission||(OS&&!OS.Notifications.isPushSupported())){toast('Your browser does not support notifications. Try Chrome or add the site to your Home Screen.');return;}
+    if(Notification.permission!=='granted')toast('Tap “Allow” to join 🌱');
+    var fin=false;
+    function done(p){if(fin)return;fin=true;
+      if(p==='granted'){setOn(true);celebrate();
+        if(OS){try{OS.User.PushSubscription.optIn();}catch(e){}}else{window.__ypPending=true;loadOS();}}
+      else if(p==='denied')showBlocked();
+      else toast('Look for “Allow” at the top or bottom of your screen 🌱');}
+    /* ask the browser directly: the Allow box appears instantly, OneSignal finishes in the background */
+    try{var r=Notification.requestPermission(done);if(r&&r.then)r.then(done);}catch(e){}
   }
   var pre=d.getElementById('fpre'),fbl=d.getElementById('fblock');
   function showBlocked(){hideCard(true);fbl.hidden=false;}
