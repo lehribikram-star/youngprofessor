@@ -1,0 +1,1146 @@
+{
+ "id": "icici-pru-life",
+ "name": "ICICI Life Insurance",
+ "short": "IL",
+ "color": "#AE282E",
+ "line": "ICICI Bank's Mumbai life insurer (formerly ICICI Prudential Life) selling term, savings, ULIP and pension plans through banks, agents and online",
+ "sector": "Life insurance",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: ICICILIFE (earlier ICICIPRULI) · BSE: 540133",
+ "website": "https://www.icicilife.com",
+ "news_query": "ICICI Life Insurance",
+ "src": {
+  "nse_ceo": {
+   "label": "Change in MD & CEO, 2 Oct 2026 (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/ICICIPRULI_02102026165908_SE_Intimation_signed.pdf"
+  },
+  "bt_ceo": {
+   "label": "ICICI Life appoints Sidharatha Mishra as MD & CEO as Anup Bagchi steps down (Business Today)",
+   "url": "https://www.businesstoday.in/jobs/story/icici-life-appoints-sidharatha-mishra-as-md-ceo-as-anup-bagchi-steps-down-559248-2026-10-02"
+  },
+  "ob_ceo": {
+   "label": "ICICI Life hands Mishra CEO role as Bagchi leaves for HDFC Bank (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/icici-life-hands-mishra-ceo-role-for-five-years-as-bagchi-leaves-for-hdfc-bank"
+  },
+  "ibm_ceo": {
+   "label": "Career banker takes ICICI Life helm (Insurance Business Asia)",
+   "url": "https://www.insurancebusinessmag.com/asia/news/life-insurance/bancassurance-advantage-deepens-as-career-banker-takes-icici-life-helm-592503.aspx"
+  },
+  "hdfc": {
+   "label": "HDFC Bank appoints Anup Bagchi as MD & CEO (People Matters)",
+   "url": "https://www.peoplematters.in/news/appointments/hdfc-bank-appoints-anup-bagchi-as-md-ceo-for-three-years-52493"
+  },
+  "nse_name": {
+   "label": "Name changed to ICICI Life Insurance Ltd, 22 Sep 2026 (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/ICICIPRULI_22092026223248_SE_Intimation_Sep_22_2026_signed.pdf"
+  },
+  "nse_jul": {
+   "label": "Prudential reclassification and name change approved by board, 6 Jul 2026 (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/ICICIPRULI_06072026145908_SE_Intimation.pdf"
+  },
+  "name_ab": {
+   "label": "Shareholders clear name change to ICICI Life Insurance (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/shareholders-clear-name-change-icici-prudential-life-to-become-icici-life-insurance"
+  },
+  "name_iw": {
+   "label": "Company name officially changed (Investywise)",
+   "url": "https://www.investywise.com/icici-life-insurance-name-change-effective/"
+  },
+  "ob_q1": {
+   "label": "Q1 FY27 profit up 28%; board clears name change (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/icici-prudential-life-q1-profit-soars-28-yoy-on-higher-income-board-clears-name-change-proposal"
+  },
+  "brand": {
+   "label": "ICICI Life Insurance launches new brand identity, 16 Oct 2026 (company release via PRNewswire/UNI)",
+   "url": "https://www.uniindia.com/prnewswire/icici-life-insurance-launches-new-brand-identity-302911056/215729"
+  },
+  "pru": {
+   "label": "Prudential plc repositions India operations via Bharti Life stake (Prudential plc, official)",
+   "url": "https://www.prudentialplc.com/en/newsroom/company-news/2026/Prudential-plc-repositions-its-India-operations-through--a-controlling-stake-in-Bharti-Life-Insurance/"
+  },
+  "pru_ab": {
+   "label": "Shares fall; ICICI Bank to retain majority, Prudential holds 21.91% (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/icici-prudential-life-share-price-falls-over-4-icici-bank-intends-to-retain-majority-shareholding-in-company"
+  },
+  "ob_bharti": {
+   "label": "Prudential to acquire 75% of Bharti Life, cuts ICICI Prudential stake (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/prudential-to-acquire-control-of-bharti-life-in-3500-crore-deal-cuts-icici-prudential-stake"
+  },
+  "stake_up": {
+   "label": "ICICI Bank completes 2% stake purchase for ₹1,470 cr (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/icici-bank-shares-in-focus-on-completing-acquisition-of-2-stake-in-icici-prudential-life-for-1-470-crore-all-you-need-to-know/article-199699/"
+  },
+  "stake_kn": {
+   "label": "ICICI Bank takes 2% more in life insurance arm (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/icici-bank-icici-prudential-life-stake-1470-crore/"
+  },
+  "stake_hs": {
+   "label": "ICICI Bank buys 2% from JV partner (HDFC Sky)",
+   "url": "https://hdfcsky.com/news/icici-bank-acquires-2percent-stake-from-joint-venture-partner-of-its-life-insurance-arm-for-rs-1470-cr"
+  },
+  "batra_icici": {
+   "label": "Sandeep Batra, Executive Director (ICICI Bank, official)",
+   "url": "https://www.icici.bank.in/about-us/board-of-directors/sandeep-batra"
+  },
+  "batra_iifl": {
+   "label": "IRDAI okays Sandeep Batra as Chairman (IIFL)",
+   "url": "https://www.indiainfoline.com/news/companies/green-light-for-batra-irdai-okays-icici-prudential-chairman-post"
+  },
+  "fy26_ibm": {
+   "label": "FY26 profit jumps 35% (Insurance Business Asia)",
+   "url": "https://www.insurancebusinessmag.com/asia/news/life-insurance/icici-prudential-life-fy26-profit-jumps-35-572320.aspx"
+  },
+  "fy26_bt": {
+   "label": "Q4 earnings: net profit rises, dividend (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/icici-prudential-life-q4-earnings-net-profit-rises-dividend-and-more-details-525594-2026-04-14"
+  },
+  "fy26_kn": {
+   "label": "Q4 FY26: profit jumps 58% to ₹609 cr (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/market-news/icici-pru-life-q4-results-pat-609cr-fy26-profit-15-april/"
+  },
+  "fy26_mp": {
+   "label": "FY26 PAT grows 34.6% to ₹1,600 cr (Millennium Post / PTI)",
+   "url": "https://www.millenniumpost.in/business/icici-pru-life-fy26-pat-grows-346-to-1600-cr-656001"
+  },
+  "q2_fpj": {
+   "label": "Q2 FY27 profit rises 25% to ₹374.22 cr (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/icici-life-insurance-q2-fy27-profit-rises-25-to-37422-crore-net-premium-income-up-17"
+  },
+  "q2_up": {
+   "label": "Q2 FY27 VNB up 21%; what analysts said (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/icici-life-insurance-shares-gain-3-as-q2-fy-27-vnb-soars-21-yo-y-here-s-what-analysts-said/article-201822/"
+  },
+  "q2_kn": {
+   "label": "H1 FY27 results: profit up 26.5% to ₹760 cr (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/icici-life-insurance-share-price-in-focus-as-company-announces-q2-fy27-results/"
+  },
+  "q2_iw": {
+   "label": "H1 FY27 VNB grows 22.3%, earnings call summary (Investywise)",
+   "url": "https://www.investywise.com/icici-life-insurance-limited-announces-earnings-call-transcript-for-h1-fy2027/"
+  },
+  "q2_psu": {
+   "label": "Q2 profit rises 25% to ₹374 cr; H1 PAT ₹760 cr (PSU Connect)",
+   "url": "https://www.psuconnect.in/financial/icici-life-q2-profit-rises-25-to-374-cr-h1-pat-at-760-cr"
+  },
+  "ipo_bs": {
+   "label": "ICICI Prudential Life set for stock market debut (Business Standard)",
+   "url": "https://www.business-standard.com/amp/article/markets/icici-prudential-life-set-for-stock-market-debut-today-116092800386_1.html"
+  },
+  "bagchi23": {
+   "label": "ICICI Prudential jumps on appointing Anup Bagchi as MD & CEO (Business Standard)",
+   "url": "https://business-standard.com/article/news-cm/icici-prudential-jumps-on-appointing-anup-bagchi-as-md-ceo-123031600410_1.html"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/ICICI_Prudential_Life_Insurance"
+  },
+  "sk": {
+   "label": "Company background: incorporated Jul 2000 (Sharekhan)",
+   "url": "https://www.sharekhan.com/stock/icici-life-insurance-ltd"
+  },
+  "zer": {
+   "label": "ICICI Life Insurance stock page, NSE: ICICILIFE (Zerodha)",
+   "url": "https://zerodha.com/markets/stocks/NSE/ICICILIFE/"
+  },
+  "amc_bs": {
+   "label": "ICICI Pru AMC lists at 20% premium (Business Standard)",
+   "url": "https://www.business-standard.com/amp/markets/news/icici-prudential-amc-makes-solid-d-st-debut-lists-at-20-premium-on-nse-bse-125121900211_1.html"
+  },
+  "csr1": {
+   "label": "CSR initiatives make 'Giving' a way of life (The CSR Journal)",
+   "url": "https://thecsrjournal.in/corporate-social-responsibility-csr-news-icici-prudential-life-insurance-csr-initiatives/"
+  },
+  "csr2": {
+   "label": "ICICI Prudential Life promotes giving through CSR initiatives (India CSR)",
+   "url": "https://indiacsr.in/icici-prudential-life-promotes-giving-through-csr-initiatives/"
+  }
+ },
+ "tiles": [
+  {
+   "v": 1600,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (+35%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 329000,
+   "fmt": "cr",
+   "label": "Assets under management",
+   "sub": "Sep 2026",
+   "term": "AUM"
+  },
+  {
+   "v": 1283,
+   "fmt": "cr",
+   "label": "Value of new business",
+   "sub": "H1 FY27 (Apr–Sep 2026) · +22%",
+   "term": "VNB"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹374 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +25%"
+  },
+  {
+   "v": "₹4,935 cr",
+   "k": "APE",
+   "s": "H1 FY27 · +15%"
+  },
+  {
+   "v": "26.0%",
+   "k": "VNB margin",
+   "s": "H1 FY27 (24.7% in FY26)"
+  },
+  {
+   "v": "2.30",
+   "k": "Solvency ratio",
+   "s": "Sep 2026 (minimum 1.5)"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in 2000 as a joint venture of ICICI Bank and the UK's Prudential plc; in Sep 2016 it became the first insurance company listed on India's stock exchanges.",
+   "s": [
+    "sk",
+    "wiki",
+    "ipo_bs",
+    "brand"
+   ]
+  },
+  {
+   "t": "Renamed ICICI Life Insurance Ltd on 22 Sep 2026, after Prudential decided to cut its stake from about 22% to below 10% (to buy control of Bharti Life). ICICI Bank owns about 52.8% and is the promoter.",
+   "s": [
+    "nse_name",
+    "nse_jul",
+    "pru",
+    "pru_ab",
+    "stake_up",
+    "name_ab"
+   ]
+  },
+  {
+   "t": "New leader: Anup Bagchi resigned on 13 Oct 2026 to become HDFC Bank's MD & CEO; Sidharatha Mishra, a 26-year ICICI Bank veteran, was appointed MD & CEO from 14 Oct 2026. Sandeep Batra (ICICI Bank ED) is Chairman.",
+   "s": [
+    "nse_ceo",
+    "bt_ceo",
+    "ob_ceo",
+    "hdfc",
+    "batra_icici"
+   ]
+  },
+  {
+   "t": "FY 2025-26 profit was ₹1,600 crore (+35%); VNB rose 11% to ₹2,629 crore at a 24.7% margin.",
+   "s": [
+    "fy26_ibm",
+    "fy26_bt",
+    "fy26_mp",
+    "fy26_kn"
+   ]
+  },
+  {
+   "t": "Q2 FY27 (Jul–Sep 2026) profit rose 25% to ₹374 crore; H1 FY27 VNB grew 22% to ₹1,283 crore with margin up to 26%, helped by protection (term) sales up about 40%.",
+   "s": [
+    "q2_fpj",
+    "q2_up",
+    "q2_kn",
+    "q2_iw"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2000",
+   "t": "Incorporated in Mumbai (Jul 2000) as ICICI Prudential Life, a JV of ICICI Bank and Prudential; IRDAI registration in Nov 2000.",
+   "s": [
+    "sk",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Sep 2016",
+   "t": "₹6,057 crore IPO; first insurer to list on NSE and BSE.",
+   "s": [
+    "ipo_bs",
+    "wiki",
+    "brand"
+   ]
+  },
+  {
+   "y": "Jun 2024",
+   "t": "Sandeep Batra, ICICI Bank Executive Director, became Chairman.",
+   "s": [
+    "batra_iifl",
+    "batra_icici"
+   ]
+  },
+  {
+   "y": "May 2026",
+   "t": "Prudential agreed to buy 75% of Bharti Life and said it would cut its stake here to below 10%.",
+   "s": [
+    "pru",
+    "pru_ab",
+    "ob_bharti"
+   ]
+  },
+  {
+   "y": "Sep 2026",
+   "t": "Renamed ICICI Life Insurance Ltd (22 Sep); ICICI Bank raised its stake to about 52.8%.",
+   "s": [
+    "nse_name",
+    "name_iw",
+    "stake_up",
+    "stake_kn"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Sidharatha Mishra named MD & CEO from 14 Oct after Anup Bagchi left for HDFC Bank; new brand line 'Har Kal Aasaan' launched.",
+   "s": [
+    "nse_ceo",
+    "bt_ceo",
+    "hdfc",
+    "brand"
+   ]
+  }
+ ],
+ "model": {
+  "how": "ICICI Life collects premiums from customers, through ICICI Bank and other bank partners, its own agents, brokers and online, and invests the money (₹3.29 lakh crore AUM) in bonds and shares. It pays death claims, maturity and survival benefits, and earns a profit over the life of each policy. Term (protection) and annuity plans earn higher margins, so it has been pushing them.",
+  "flow": [
+   "Sells policies via banks, agents, partners and online",
+   "Collects first-year and renewal premiums",
+   "Invests in bonds and shares (AUM ₹3.29 lakh cr)",
+   "Pays claims and maturities; keeps the margin over many years"
+  ],
+  "facts": [
+   {
+    "k": "Protection share of APE (H1 FY27)",
+    "v": "About 23%",
+    "term": "Protection",
+    "s": [
+     "q2_iw",
+     "q2_kn"
+    ]
+   },
+   {
+    "k": "13th month persistency",
+    "v": "84.5%",
+    "term": "Persistency",
+    "s": [
+     "q2_kn",
+     "q2_iw",
+     "fy26_ibm"
+    ]
+   },
+   {
+    "k": "Claim settlement ratio (H1 FY27)",
+    "v": "99.3%",
+    "term": "Claim settlement ratio",
+    "s": [
+     "q2_kn",
+     "q2_iw",
+     "brand"
+    ]
+   },
+   {
+    "k": "Embedded value (Mar 2026)",
+    "v": "₹52,989 cr",
+    "term": "Embedded value",
+    "s": [
+     "fy26_ibm",
+     "fy26_mp"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Insurance Regulatory and Development Authority of India (IRDAI)",
+  "points": [
+   "Bank-backed insurers depend on their parent bank's branches; IRDAI is consulting on distribution costs and commissions, which could change how much banks earn for selling policies.",
+   "Foreign partners are reshuffling: Prudential is moving to Bharti Life and cutting its stake here, so ICICI Bank now leads the company alone.",
+   "Big theme for interviews: growing high-margin term and annuity plans while customers often prefer market-linked ULIPs."
+  ],
+  "s": [
+   "q2_iw",
+   "pru",
+   "nse_jul",
+   "q2_up"
+  ]
+ },
+ "people": [
+  {
+   "ini": "SM",
+   "name": "Sidharatha Mishra",
+   "role": "Managing Director & CEO",
+   "since": "from 14 Oct 2026 (5-year term, subject to IRDAI approval)",
+   "note": "26+ years at ICICI Bank, where he headed digital channels and partnerships, customer service and the NRI group. Studied at Utkal University, Bhubaneswar.",
+   "s": [
+    "nse_ceo",
+    "bt_ceo",
+    "ob_ceo",
+    "ibm_ceo"
+   ]
+  },
+  {
+   "ini": "SB",
+   "name": "Sandeep Batra",
+   "role": "Chairman",
+   "since": "since Jun 2024",
+   "note": "Executive Director of ICICI Bank (Corporate Centre); also chairs ICICI Prudential AMC.",
+   "s": [
+    "batra_iifl",
+    "batra_icici"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Oct 2026: Anup Bagchi (MD & CEO since Jun 2023) resigned effective 13 Oct 2026 and became MD & CEO of HDFC Bank from 27 Oct 2026. Sidharatha Mishra joined as COO on 6 Oct and became MD & CEO from 14 Oct.",
+   "s": [
+    "nse_ceo",
+    "bt_ceo",
+    "hdfc",
+    "ob_ceo",
+    "bagchi23",
+    "sk"
+   ]
+  },
+  {
+   "t": "Jul 2026: Prudential's nominee director Naveen Tahilyani resigned as Prudential moved from 'promoter' to 'investor'.",
+   "s": [
+    "nse_jul",
+    "name_ab"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹1,600 cr (+35%)",
+    "term": "Net profit",
+    "s": [
+     "fy26_ibm",
+     "fy26_bt",
+     "fy26_mp"
+    ]
+   },
+   {
+    "k": "Total premium",
+    "v": "₹53,125 cr (+8.5%)",
+    "term": "Gross written premium",
+    "s": [
+     "fy26_ibm",
+     "fy26_kn"
+    ]
+   },
+   {
+    "k": "APE (new sales)",
+    "v": "₹10,641 cr",
+    "term": "APE",
+    "s": [
+     "fy26_ibm",
+     "fy26_bt",
+     "fy26_kn"
+    ]
+   },
+   {
+    "k": "Value of new business",
+    "v": "₹2,629 cr (+11%)",
+    "term": "VNB",
+    "s": [
+     "fy26_ibm",
+     "fy26_bt",
+     "fy26_mp"
+    ]
+   },
+   {
+    "k": "VNB margin",
+    "v": "24.7%",
+    "term": "VNB margin",
+    "s": [
+     "fy26_ibm",
+     "fy26_bt",
+     "fy26_kn"
+    ]
+   },
+   {
+    "k": "Assets under management",
+    "v": "₹3.14 lakh cr",
+    "term": "AUM",
+    "s": [
+     "fy26_ibm",
+     "fy26_bt",
+     "fy26_kn"
+    ]
+   },
+   {
+    "k": "Solvency ratio",
+    "v": "227.3%",
+    "term": "Solvency ratio",
+    "s": [
+     "fy26_ibm",
+     "fy26_bt"
+    ]
+   },
+   {
+    "k": "Dividend",
+    "v": "₹1.65 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26_bt",
+     "fy26_mp",
+     "fy26_kn"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Profit ₹374 cr, up 25% from ₹299 cr; H1 FY27 profit ₹760 cr (+26%).",
+     "s": [
+      "q2_fpj",
+      "q2_up",
+      "q2_psu",
+      "q2_kn"
+     ],
+     "term": "Net profit"
+    },
+    {
+     "t": "APE ₹2,799 cr (up about 16%); VNB ₹712 cr (+21%) at a 25.4% margin. H1 VNB ₹1,283 cr at 26.0%.",
+     "s": [
+      "q2_up",
+      "q2_kn",
+      "q2_iw"
+     ],
+     "term": "VNB"
+    },
+    {
+     "t": "Solvency 229.9% (213.2% a year ago); AUM ₹3.29 lakh cr; protection APE up 51.5% in the quarter.",
+     "s": [
+      "q2_fpj",
+      "q2_kn",
+      "q2_iw"
+     ],
+     "term": "Solvency ratio"
+    }
+   ]
+  },
+  "say": "ICICI Life's profit rose 25% to ₹374 crore in Q2 FY27, and its VNB margin reached 26% in the first half as term-insurance sales grew fast."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "LIC",
+   "SBI Life",
+   "HDFC Life",
+   "Axis Max Life",
+   "Tata AIA Life",
+   "Bajaj Life"
+  ],
+  "note": "Other large life insurers, most of them backed by a bank or a big group."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Lives protected (in-force, Mar 2026)",
+    "v": "7.37 crore"
+   },
+   {
+    "k": "Claim settlement ratio, H1 FY27",
+    "v": "99.3%"
+   },
+   {
+    "k": "Main bank partner",
+    "v": "ICICI Bank"
+   },
+   {
+    "k": "Head office",
+    "v": "Mumbai (Prabhadevi)"
+   }
+  ],
+  "local": "Roles span bancassurance (working with ICICI Bank and other partner branches), agency (recruiting and training advisors), group business, digital sales and operations in Mumbai.",
+  "s": [
+   "brand",
+   "q2_kn",
+   "q2_iw",
+   "nse_name"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "CSR focuses on protecting life, health and livelihoods: health care support (including help for cancer patients), skilling through the ICICI Academy of Skills, care for underprivileged children, and employee payroll giving.",
+  "s": [
+   "csr1",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "ICICI Bank parent (~52.8%) with a strong branch and digital network",
+    "s": [
+     "stake_up",
+     "stake_hs",
+     "ibm_ceo"
+    ]
+   },
+   {
+    "t": "Margin rising: VNB margin 26% in H1 FY27 vs 24.7% in FY26",
+    "s": [
+     "q2_kn",
+     "q2_iw",
+     "fy26_ibm"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Q2 FY27 VNB margin (25.4%) slipped from Q1 (26.7%) and missed some analyst estimates",
+    "s": [
+     "q2_up",
+     "ob_q1"
+    ]
+   },
+   {
+    "t": "Leans on bank partners: bancassurance is roughly 27-30% of new sales (APE)",
+    "s": [
+     "q2_iw",
+     "ibm_ceo"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Term-insurance (protection) demand: protection APE up about 40% in H1 FY27",
+    "s": [
+     "q2_kn",
+     "q2_iw"
+    ]
+   },
+   {
+    "t": "New ICICI-only brand and a fresh CEO from ICICI Bank's digital side",
+    "s": [
+     "brand",
+     "nse_ceo",
+     "ibm_ceo"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Prudential must sell down from ~20% to below 10%, which can weigh on the share",
+    "s": [
+     "pru",
+     "pru_ab",
+     "stake_hs"
+    ]
+   },
+   {
+    "t": "IRDAI review of commissions and distribution costs",
+    "s": [
+     "q2_iw",
+     "q2_up"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For an insurer, interviewers prefer product mix (protection, savings, ULIP, annuity), channel mix and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. LIC and 25+ private life insurers compete for the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. IRDAI allows new players, but capital and trust take years to build."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Mutual funds, fixed deposits and pension schemes compete for savings money."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Customers can compare products online, but policies are complex."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium-high. Banks and big distributors can demand high commissions."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government goal of 'Insurance for All by 2047' and 100% FDI now allowed in insurance."
+   },
+   {
+    "k": "Economic",
+    "v": "Rising incomes and savings; interest rates affect guaranteed products."
+   },
+   {
+    "k": "Social",
+    "v": "Low insurance cover in India; more awareness after COVID."
+   },
+   {
+    "k": "Technological",
+    "v": "Online sales, e-KYC, AI underwriting and faster claims."
+   },
+   {
+    "k": "Legal",
+    "v": "IRDAI rules on commissions, surrender values and product design; GST removed on individual policies in 2025."
+   },
+   {
+    "k": "Environmental",
+    "v": "Climate risk and ESG investing are growing themes."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Term (protection), savings, ULIP, pension and annuity plans."
+   },
+   {
+    "k": "Price",
+    "v": "Premiums based on age, health and cover; set within IRDAI rules."
+   },
+   {
+    "k": "Place",
+    "v": "Agents, bank partners, brokers and online."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand trust, advisors' personal selling, digital campaigns."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more to existing bank and agency customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New term, health-linked and retirement products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Health insurance or other group businesses."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs and taxes. The company's final earnings.",
+  "Revenue": "Total money earned from the business in a period, before costs.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "Market share": "A company's sales as a % of the total sales of its industry.",
+  "Consolidated": "Figures for the company together with its subsidiaries. 'Standalone' means the parent company alone.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account or selling a product.",
+  "IRDAI": "Insurance Regulatory and Development Authority of India: the regulator of all insurance companies.",
+  "Premium": "The money a customer pays to buy an insurance policy.",
+  "Gross written premium": "Total premium collected in a period, from new and renewing policies.",
+  "New business premium": "Premium from policies sold for the first time in the period.",
+  "Renewal premium": "Premium paid by existing customers to keep their policies going.",
+  "APE": "Annualised Premium Equivalent: a standard measure of new sales. Regular premiums count fully, single premiums count 10%.",
+  "VNB": "Value of New Business: the expected future profit (today's value) from policies sold in the period. A key measure for life insurers.",
+  "VNB margin": "VNB as a % of APE. Shows how profitable new sales are.",
+  "Embedded value": "The value of a life insurer today: its net worth plus the present value of future profits from existing policies.",
+  "Persistency": "The % of customers who keep paying premiums after a set time (e.g. 13th month, 61st month). Higher is better.",
+  "Solvency ratio": "Available capital compared with the capital the regulator requires. IRDAI's minimum is 150% (1.5 times).",
+  "AUM": "Assets Under Management: the money the insurer invests on behalf of policyholders and shareholders.",
+  "Protection": "Pure risk cover such as term insurance: pays only if something happens, cheap premium, high profit margin.",
+  "ULIP": "Unit Linked Insurance Plan: part insurance, part market investment. Returns depend on markets.",
+  "Par / Non-par": "Participating (par) policies share profits through bonuses; non-participating (non-par) policies give fixed, guaranteed benefits.",
+  "Annuity": "A product that pays a regular income, usually after retirement, in return for a lump sum.",
+  "Bancassurance": "Selling insurance through a bank's branches and customers. A main channel for bank-backed insurers.",
+  "Agency": "Selling insurance through individual commission-based agents.",
+  "Surrender": "When a customer exits a policy early and gets back part of the money.",
+  "Claim settlement ratio": "The % of claims an insurer pays out of those it receives. Higher means more claims paid.",
+  "GST on insurance": "Tax charged on premiums. From 22 Sep 2025 the government removed GST on individual life and health policies.",
+  "Bima Sugam": "An IRDAI online marketplace planned to let customers buy, compare and service insurance in one place.",
+  "Promoter": "The main owner group that controls a listed company. ICICI Bank is the promoter here; Prudential is now treated as an ordinary investor.",
+  "Joint venture": "A company set up and owned by two partners, like ICICI Bank and Prudential plc in 2000.",
+  "Rebranding": "Changing a company's name, logo or tagline. ICICI Prudential Life became ICICI Life Insurance in Sep 2026, with the line 'Har Kal Aasaan'.",
+  "Offer for sale": "When existing shareholders sell their shares to the public; the company itself gets no money.",
+  "Sum assured": "The amount the insurer promises to pay if the insured person dies during the policy.",
+  "Cost to premium ratio": "Operating costs and commissions as a % of premium. Lower means more efficient."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports",
+    "Meeting IRDAI reporting deadlines",
+    "Investment and cost tracking"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an insurer's results (APE, VNB, solvency)",
+    "Basics of IRDAI rules"
+   ],
+   "tip": "Know APE, VNB margin, solvency ratio and persistency, and the company's latest numbers.",
+   "kv": [
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹374 cr (+25%)",
+     "term": "Net profit"
+    },
+    {
+     "k": "VNB margin H1 FY27",
+     "v": "26.0%",
+     "term": "VNB margin"
+    },
+    {
+     "k": "Solvency ratio",
+     "v": "229.9%",
+     "term": "Solvency ratio"
+    },
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "Leads and conversion",
+    "Brand awareness",
+    "Campaign return"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing",
+    "Explaining products simply"
+   ],
+   "tip": "Insurance is 'sold, not bought'. Show ideas to build trust and explain term cover simply.",
+   "kv": [
+    {
+     "k": "APE H1 FY27",
+     "v": "₹4,935 cr (+15%)",
+     "term": "APE"
+    },
+    {
+     "k": "Protection APE H1",
+     "v": "₹1,155 cr (+40%)",
+     "term": "Protection"
+    },
+    {
+     "k": "New tagline (Oct 2026)",
+     "v": "Har Kal Aasaan",
+     "term": "Rebranding"
+    },
+    {
+     "k": "Claim settlement",
+     "v": "99.3%",
+     "term": "Claim settlement ratio"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Agent and staff attrition",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Agent onboarding",
+    "HR analytics in Excel"
+   ],
+   "tip": "Insurers hire and train huge sales forces. Ideas to cut early attrition of advisors will impress.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Sidharatha Mishra"
+    },
+    {
+     "k": "Chairman",
+     "v": "Sandeep Batra"
+    },
+    {
+     "k": "Parent",
+     "v": "ICICI Bank (~52.8%)",
+     "term": "Promoter"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "New premium sold",
+    "Persistency of policies sold",
+    "Number of active advisors or partners"
+   ],
+   "skills": [
+    "Need-based selling",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a term plan' or 'Convince a 25-year-old to start a pension plan'.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Sidharatha Mishra"
+    },
+    {
+     "k": "Chairman",
+     "v": "Sandeep Batra"
+    },
+    {
+     "k": "Parent",
+     "v": "ICICI Bank (~52.8%)",
+     "term": "Promoter"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Policy issuance time",
+    "Claim settlement time",
+    "Error-free processing"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and underwriting basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand underwriting, claims and how digital tools speed up policy issuance.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Sidharatha Mishra"
+    },
+    {
+     "k": "Chairman",
+     "v": "Sandeep Batra"
+    },
+    {
+     "k": "Parent",
+     "v": "ICICI Bank (~52.8%)",
+     "term": "Promoter"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Insurance basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹3.29 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Sidharatha Mishra"
+    },
+    {
+     "k": "Chairman",
+     "v": "Sandeep Batra"
+    },
+    {
+     "k": "Parent",
+     "v": "ICICI Bank (~52.8%)",
+     "term": "Promoter"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What is VNB margin, and what was ICICI Life's recently?",
+     "a": "VNB margin is the value of new business as a % of APE: how profitable new sales are. It was 24.7% in FY26 and 26.0% in H1 FY27, helped by more term (protection) sales."
+    },
+    {
+     "q": "Why did the company's VNB margin rise?",
+     "a": "Product mix: protection and annuity plans, which earn higher margins, grew faster than savings plans. Protection APE rose about 40% in H1 FY27."
+    },
+    {
+     "q": "What does a solvency ratio of 229.9% mean?",
+     "a": "The insurer holds about 2.3 times the capital IRDAI requires; the minimum is 150%. It shows the company can pay claims even in bad times."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "Why did ICICI Prudential Life change its name, and how would you communicate it?",
+     "a": "Prudential is cutting its stake below 10%, so ICICI Bank leads alone. Tell customers that policies, benefits and claims are unchanged, and use the trusted ICICI name with the new 'Har Kal Aasaan' line."
+    },
+    {
+     "q": "How would you sell term insurance to a 25-year-old?",
+     "a": "Make it simple: low premium at a young age, big cover for the family, and fast claims (99.3% settled). Use digital journeys and ICICI Bank's app."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you reduce early attrition among insurance advisors?",
+     "a": "Better onboarding and training, mentors, digital selling tools, quick first commissions and recognition for good performers."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a pension plan.",
+     "a": "Ask about retirement goals, show how a small monthly amount grows over time, explain guaranteed income from an annuity, and offer to review the plan every year."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can technology improve claims and policy issue?",
+     "a": "Online KYC, auto underwriting and digital documents. ICICI Life says it issues about 54% of savings policies the same day and settles claims in about a day on average."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What does Prudential's stake cut mean for the company?",
+     "a": "Prudential will sell down from about 22% to below 10% after buying Bharti Life. ICICI Bank has raised its stake to about 52.8% and remains the promoter, so control stays with ICICI."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads ICICI Life?",
+     "a": "Sidharatha Mishra is MD & CEO from 14 Oct 2026, after Anup Bagchi left for HDFC Bank. Sandeep Batra of ICICI Bank is Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the Sep 2026 renaming to ICICI Life Insurance, the CEO change in Oct 2026, or the 25% profit rise in Q2 FY27."
+    },
+    {
+     "q": "Why ICICI Life?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "ICICI Life was India's first listed insurer and protects over 7 crore lives. It is in an exciting phase: a new name and brand, a new CEO from ICICI Bank's digital side, and fast growth in term insurance, with VNB margin up to 26%. Working here means learning insurance with the strength of the ICICI group behind me. I want to contribute to [your role] as it grows.",
+  "ask": [
+   "How will the move to an ICICI-only brand change the way the company sells and serves customers?",
+   "Which channel, bank, agency or digital, do you see growing fastest in the next two years?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should bank-owned insurers be allowed to sell mainly their parent's products in bank branches?",
+    "for": "Customers trust their bank, and it brings insurance to many people cheaply.",
+    "against": "Risk of mis-selling and less choice for customers; IRDAI is reviewing commissions."
+   },
+   {
+    "t": "Is term insurance better than savings-linked insurance for young Indians?",
+    "for": "Term gives large cover cheaply; savings can go into mutual funds or PPF.",
+    "against": "Many people want guaranteed returns and forced savings that endowment plans give."
+   }
+  ],
+  "avoid": [
+   "Don't call it 'ICICI Prudential Life' as if nothing changed; it was renamed ICICI Life Insurance Ltd on 22 Sep 2026.",
+   "Don't name Anup Bagchi as CEO; he left in Oct 2026 to head HDFC Bank. Sidharatha Mishra leads now.",
+   "Don't mix up the life insurer with ICICI Prudential AMC (mutual funds, listed Dec 2025) or ICICI Lombard (general insurance)."
+  ],
+  "night": [
+   "MD & CEO: Sidharatha Mishra (from 14 Oct 2026) · Chairman: Sandeep Batra",
+   "Founded 2000 (ICICI Bank + Prudential JV) · listed 2016 · HQ Mumbai",
+   "Renamed ICICI Life Insurance on 22 Sep 2026; ICICI Bank ~52.8%",
+   "FY26 profit: ₹1,600 cr (+35%); VNB margin 24.7%",
+   "Q2 FY27 profit: ₹374 cr (+25%); H1 VNB margin 26%",
+   "Rivals: LIC, SBI Life, HDFC Life, Axis Max Life",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "What is ICICI Prudential Life's new name from Sep 2026?",
+   "o": [
+    "ICICI Life Insurance",
+    "ICICI Lombard Life",
+    "ICICI Bharti Life"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Who became MD & CEO in Oct 2026?",
+   "o": [
+    "Anup Bagchi",
+    "Sandeep Batra",
+    "Sidharatha Mishra"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Net profit in FY 2025-26 was about:",
+   "o": [
+    "₹374 crore",
+    "₹1,600 crore",
+    "₹2,629 crore"
+   ],
+   "a": 1
+  },
+  {
+   "q": "VNB margin in H1 FY27 (Apr–Sep 2026) was:",
+   "o": [
+    "26.0%",
+    "15.1%",
+    "229.9%"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Why is Prudential plc cutting its stake to below 10%?",
+   "o": [
+    "It is merging with LIC",
+    "It is buying control of Bharti Life",
+    "IRDAI cancelled its licence"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "19 Nov 2026"
+}

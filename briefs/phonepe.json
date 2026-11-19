@@ -1,0 +1,1142 @@
+{
+ "id": "phonepe",
+ "name": "PhonePe",
+ "short": "PP",
+ "color": "#5F259F",
+ "line": "Bengaluru fintech, majority-owned by Walmart, that runs India's most-used UPI payments app and also sells loans, insurance and investments",
+ "sector": "Fintech",
+ "hq": "Bengaluru, Karnataka",
+ "listed": "Not listed (private company). IPO approved by SEBI in Jan 2026 but paused in Mar 2026",
+ "website": "https://www.phonepe.com",
+ "news_query": "PhonePe",
+ "src": {
+  "about": {
+   "label": "About us: founders, board and businesses (PhonePe, official)",
+   "url": "https://www.phonepe.com/about-us/"
+  },
+  "ir": {
+   "label": "Board of directors (PhonePe investor relations, official)",
+   "url": "https://ir.phonepe.com/governance/"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/PhonePe"
+  },
+  "bsfy26": {
+   "label": "FY26 net loss widens to ₹2,792 cr despite 11.5% revenue growth (Business Standard)",
+   "url": "https://www.business-standard.com/companies/quarterly-results/phonepe-fy26-net-loss-widens-to-rs-2-792-cr-despite-11-5-pc-revenue-growth-126072501086_1.html"
+  },
+  "inc42fy26": {
+   "label": "PhonePe posts ₹2,792 cr loss in FY26, revenue up 11.5% (Inc42)",
+   "url": "https://inc42.com/buzz/ipo-bound-phonepe-posts-%E2%82%B92792-cr-loss-in-fy26-revenue-up-11-5-yoy/"
+  },
+  "entrackr": {
+   "label": "Decoding PhonePe FY26: ESOP costs behind the loss (Entrackr)",
+   "url": "https://entrackr.com/fintrackr/decoding-phonepe-fy26-the-rs-364-cr-loss-behind-the-rs-2792-cr-headline-12199210"
+  },
+  "bsconf": {
+   "label": "PhonePe files confidential draft papers for IPO, Sep 2025 (Business Standard)",
+   "url": "https://www.business-standard.com/markets/ipo/phonepe-files-confidential-draft-papers-ahead-of-ipo-125092400256_1.html"
+  },
+  "pymnts": {
+   "label": "PhonePe gets regulatory OK for IPO, Jan 2026 (PYMNTS / Reuters)",
+   "url": "https://www.pymnts.com/news/investment-tracker/ipo/2026/walmarts-phonepe-gets-regulatory-ok-for-indian-ipo"
+  },
+  "tcjan": {
+   "label": "Tiger Global and Microsoft to fully exit PhonePe via IPO (TechCrunch)",
+   "url": "https://techcrunch.com/2026/01/22/tiger-global-and-microsoft-to-fully-exit-walmart-backed-phonepe-via-its-ipo/"
+  },
+  "mnudrhp": {
+   "label": "PhonePe files updated DRHP, OFS-only issue (MediaNama)",
+   "url": "https://www.medianama.com/2026/01/223-phonepe-updated-drhp-sebi-payment-processing-charges-risk-factor/"
+  },
+  "inc42drhp": {
+   "label": "PhonePe DRHP: shareholding and key executives (Inc42)",
+   "url": "https://inc42.com/buzz/phonepe-drhp-a-look-at-shareholding-pattern-key-executives/"
+  },
+  "bsdefer": {
+   "label": "PhonePe defers IPO amid West Asia crisis, Mar 2026 (Business Standard)",
+   "url": "https://www.business-standard.com/markets/ipo/phonepe-defers-ipo-plans-amid-west-asia-crisis-market-volatility-126031600596_1.html"
+  },
+  "tcpause": {
+   "label": "Walmart-backed PhonePe shelves IPO as global tensions rattle markets (TechCrunch)",
+   "url": "https://techcrunch.com/2026/03/16/walmart-backed-phonepe-shelves-ipo-as-global-tensions-rattle-markets/"
+  },
+  "inc42ipo": {
+   "label": "With UPI MDR clarity, PhonePe eyes IPO by March 2027 (Inc42)",
+   "url": "https://inc42.com/buzz/with-upi-mdr-clarity-phonepe-eyes-ipo-by-march-2027/"
+  },
+  "hans": {
+   "label": "Sameer Nigam says UPI MDR move brings IPO filing closer (The Hans India)",
+   "url": "https://www.thehansindia.com/tech/phonepes-sameer-nigam-says-upi-mdr-move-brings-ipo-filing-closer-1122480"
+  },
+  "mnsep": {
+   "label": "PhonePe, Google Pay UPI share in Sep 2026, NPCI data (MediaNama)",
+   "url": "https://www.medianama.com/2026/10/223-phonepe-google-pay-upi-share-sept-2026/"
+  },
+  "staug": {
+   "label": "UPI transactions Sep 2026 and app shares for Aug 2026, NPCI data (StartupTalky)",
+   "url": "https://startuptalky.com/upi-transactions-september-2026/"
+  },
+  "cap": {
+   "label": "NPCI extends 30% UPI market share cap deadline to Dec 2026 (Business Today)",
+   "url": "https://www.businesstoday.in/tech-today/news/story/npci-extends-30-upi-market-share-cap-deadline-on-3rd-party-apps-to-december-2026-459171-2024-12-31"
+  },
+  "cap2": {
+   "label": "NPCI extends UPI market cap deadline by two years (YourStory)",
+   "url": "https://yourstory.com/2024/12/npci-extends-the-market-cap-deadline-by-another-two-years"
+  },
+  "mdr": {
+   "label": "0.4% MDR only on merchant payments above ₹2,000 (Business Today)",
+   "url": "https://www.businesstoday.in/personal-finance/story/upi-payments-to-remain-free-for-p2p-transactions-0-4-mdr-applicable-only-on-merchant-payments-above-rs2000-555715-2026-09-15"
+  },
+  "mdrfaq": {
+   "label": "FAQs on MDR on select UPI (P2M) transactions (Dept of Financial Services, official)",
+   "url": "https://financialservices.gov.in/sites/default/files/2026-09/FAQs---Merchant-Discount-Rate--MDR--on-Select-UPI--P2M--Transactions_0.pdf"
+  },
+  "mdrdefer": {
+   "label": "UPI MDR charges delayed until after Diwali (Outlook Money)",
+   "url": "https://www.outlookmoney.com/banking/upi-mdr-charges-delayed-until-after-diwali-new-date-yet-to-be-announced"
+  },
+  "mdrdefer2": {
+   "label": "NPCI postpones UPI MDR rollout to post-Diwali (WION)",
+   "url": "https://www.wionews.com/india-news/npci-postpones-upi-mdr-charges-rollout-to-post-diwali-second-week-of-november-1791882766290/amp"
+  },
+  "cto": {
+   "label": "PhonePe elevates Srijon Biswas to CTO, Rahul Chari becomes CPTO (Inc42)",
+   "url": "https://inc42.com/buzz/phonepe-elevates-srijon-biswas-to-cto-cofounder-rahul-chari-takes-on-cpto-role/"
+  },
+  "cto2": {
+   "label": "PhonePe appoints Srijon Biswas as new CTO (YourStory)",
+   "url": "https://yourstory.com/2026/07/phonepe-appoints-srijon-biswas-as-new-cto"
+  },
+  "ins": {
+   "label": "PhonePe insurance arm's CEO Vishal Gupta steps down (Inc42)",
+   "url": "https://inc42.com/buzz/phonepe-insurance-arms-ceo-vishal-gupta-steps-down/"
+  },
+  "sm": {
+   "label": "Ujjwal Jain moves on from PhonePe's Share.Market (exchange4media)",
+   "url": "https://www.exchange4media.com/people-movement-news/ujjwal-jain-moves-on-from-phonepes-sharemarket-154321.html"
+  },
+  "dongre": {
+   "label": "Indus Appstore cofounder Akash Dongre steps down (Inc42)",
+   "url": "https://inc42.com/buzz/phonepe-owned-indus-appstore-cofounder-akash-dongre-steps-down/"
+  },
+  "invest": {
+   "label": "Share.Market evolves into PhonePe Invest, 19 Oct 2026 (PhonePe press release, official)",
+   "url": "https://www.phonepe.com/press/phonepe-evolves-its-stock-broking-platform-to-phonepe-invest-empowering-investors-with-smart-tools"
+  },
+  "invest2": {
+   "label": "PhonePe rebrands Share.Market as PhonePe Invest (NewsBytes)",
+   "url": "https://www.newsbytesapp.com/news/business/phonepe-rebrands-share-market-as-phonepe-invest/story"
+  },
+  "app": {
+   "label": "Indus Appstore becomes PhonePe Appstore, 28 Oct 2026 (PhonePe press release, official)",
+   "url": "https://www.phonepe.com/press/indus-appstore-transforms-to-phonepe-appstore-introducing-a-unified-marketplace-for-indias-digital-goods"
+  },
+  "app2": {
+   "label": "PhonePe rebrands Indus Appstore (NewsBytes)",
+   "url": "https://www.newsbytesapp.com/news/science/phonepe-rebrands-indus-appstore-to-expand-digital-product-offerings/story"
+  },
+  "pin": {
+   "label": "PhonePe winds down its Pincode app (TechCrunch)",
+   "url": "https://techcrunch.com/2025/12/05/walmart-backed-phonepe-winds-down-its-pincode-app-in-yet-another-e-commerce-step-back/?sidebar=a"
+  },
+  "pin2": {
+   "label": "PhonePe's Pincode winds down B2C quick commerce (YourStory)",
+   "url": "https://yourstory.com/2025/12/phonepes-pincode-winds-down-b2c-quick-commerce-operations"
+  },
+  "rev25": {
+   "label": "PhonePe in 2025: lending as a distributor, insurance, 46% UPI share (Inc42)",
+   "url": "https://inc42.com/features/phonepe-2025-review-upi-paradox-ipo-profits-diversification/"
+  },
+  "csr": {
+   "label": "PhonePe partners with GiveIndia to launch donations (India CSR)",
+   "url": "https://indiacsr.in/phonepe-partners-with-giveindia-to-launch-donations/"
+  },
+  "csr2": {
+   "label": "PhonePe-Wadhwani tie-up to scale SMEs (Voice&Data)",
+   "url": "https://www.voicendata.com/enterprise/phonepe-wadhwani-tie-up-aims-to-scale-smes-in-india-10452578"
+  },
+  "csr3": {
+   "label": "PhonePe and Wadhwani Foundation partnership (CXO Digital Pulse)",
+   "url": "https://www.cxodigitalpulse.com/?p=37885"
+  }
+ },
+ "tiles": [
+  {
+   "v": 7920,
+   "fmt": "cr",
+   "label": "Revenue from operations",
+   "sub": "FY 2025-26 · +11.5%",
+   "term": "Revenue"
+  },
+  {
+   "v": 2792,
+   "fmt": "cr",
+   "label": "Net loss",
+   "sub": "FY 2025-26 (₹1,727 cr in FY25)",
+   "term": "Net loss"
+  },
+  {
+   "v": 1091,
+   "fmt": "num",
+   "label": "UPI transactions (crore)",
+   "sub": "Sep 2026 · 45.6% of app volume",
+   "term": "UPI"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹7,920 cr",
+   "k": "Revenue FY26",
+   "s": "from operations · +11.5%"
+  },
+  {
+   "v": "₹2,792 cr",
+   "k": "Net loss FY26",
+   "s": "mostly ESOP costs; ₹1,727 cr in FY25"
+  },
+  {
+   "v": "~46%",
+   "k": "UPI share by volume",
+   "s": "Jun–Sep 2026, NPCI data"
+  },
+  {
+   "v": "60 crore+",
+   "k": "Registered users",
+   "s": "as reported, Jan 2026"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Founded in December 2015 in Bengaluru by Sameer Nigam, Rahul Chari and Burzin Engineer; Flipkart bought it in 2016, and it separated from Flipkart in 2022 with Walmart as majority owner (about 72%).",
+   "s": [
+    "wiki",
+    "tcpause",
+    "bsconf",
+    "inc42drhp"
+   ]
+  },
+  {
+   "t": "It runs India's most-used UPI app: about 46% of UPI transactions by volume in mid-2026, ahead of Google Pay (about 32%), per NPCI data.",
+   "s": [
+    "mnsep",
+    "staug",
+    "entrackr"
+   ]
+  },
+  {
+   "t": "Payments are free for users, so it also earns from merchants (payment gateway, smart speakers), and by distributing loans, insurance and investments for partners.",
+   "s": [
+    "about",
+    "rev25",
+    "entrackr"
+   ]
+  },
+  {
+   "t": "FY 2025-26: revenue from operations ₹7,920 crore (+11.5%) and a net loss of ₹2,792 crore (up from ₹1,727 crore), driven mainly by ESOP (share-based pay) costs.",
+   "s": [
+    "bsfy26",
+    "inc42fy26",
+    "entrackr"
+   ]
+  },
+  {
+   "t": "Not listed yet: SEBI cleared its IPO (an offer for sale by Walmart, Microsoft and Tiger Global) in Jan 2026, but it paused the IPO in Mar 2026 because of market volatility. Reports in Sep 2026 said it now aims to list around Feb–Mar 2027.",
+   "s": [
+    "pymnts",
+    "mnudrhp",
+    "bsdefer",
+    "tcpause",
+    "inc42ipo",
+    "hans"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "Dec 2015",
+   "t": "Founded in Bengaluru by Sameer Nigam, Rahul Chari and Burzin Engineer.",
+   "s": [
+    "wiki",
+    "tcpause",
+    "about"
+   ]
+  },
+  {
+   "y": "2016",
+   "t": "Acquired by Flipkart; Sameer Nigam became CEO.",
+   "s": [
+    "wiki",
+    "tcjan",
+    "about"
+   ]
+  },
+  {
+   "y": "2022",
+   "t": "Separation from Flipkart completed and domicile moved from Singapore to India; Walmart stays majority owner.",
+   "s": [
+    "bsconf",
+    "wiki",
+    "tcpause"
+   ]
+  },
+  {
+   "y": "Jan 2026",
+   "t": "SEBI approval (after a confidential filing in Sep 2025); updated draft prospectus filed for an offer-for-sale-only IPO.",
+   "s": [
+    "pymnts",
+    "hans",
+    "mnudrhp",
+    "tcjan",
+    "bsconf"
+   ]
+  },
+  {
+   "y": "Mar 2026",
+   "t": "IPO paused, citing West Asia tensions and market volatility.",
+   "s": [
+    "bsdefer",
+    "tcpause"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Share.Market renamed PhonePe Invest; Indus Appstore renamed PhonePe Appstore.",
+   "s": [
+    "invest",
+    "invest2",
+    "app",
+    "app2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Sending money by UPI is free for users, and most small payments to shops are free too. PhonePe uses its huge user base to earn in other ways: fees from merchants and billers, rentals for smart speakers, advertising, and commissions for distributing loans (for banks and NBFCs), insurance and investments.",
+  "flow": [
+   "Users pay and send money on UPI for free",
+   "Merchants pay for gateway services and devices",
+   "Data and trust help sell loans, insurance and investments",
+   "Earns fees and commissions, minus tech, staff and marketing costs"
+  ],
+  "facts": [
+   {
+    "k": "UPI share by volume",
+    "v": "About 46%",
+    "term": "UPI",
+    "s": [
+     "mnsep",
+     "staug",
+     "entrackr"
+    ]
+   },
+   {
+    "k": "Loans",
+    "v": "Distributor, not lender",
+    "term": "Loan distribution",
+    "s": [
+     "rev25",
+     "about"
+    ]
+   },
+   {
+    "k": "Main cause of FY26 loss",
+    "v": "ESOP costs",
+    "term": "ESOP",
+    "s": [
+     "entrackr",
+     "inc42fy26"
+    ]
+   },
+   {
+    "k": "Owner",
+    "v": "Walmart (~72%)",
+    "s": [
+     "inc42drhp",
+     "bsdefer"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) and NPCI (for UPI); SEBI for broking and IRDAI for insurance broking",
+  "points": [
+   "UPI was zero-fee for merchants since 2020. In Sep 2026 the government announced a 0.4% fee (MDR) on some merchant payments above ₹2,000, with small merchants and person-to-person payments still free; the start was pushed to after Diwali.",
+   "NPCI plans to cap any app at 30% of UPI volume; the deadline for existing apps is 31 Dec 2026. PhonePe and Google Pay are each well above 30% today.",
+   "Big interview theme: how a payments app with free UPI turns its users into a profitable business."
+  ],
+  "s": [
+   "mdr",
+   "mdrfaq",
+   "mdrdefer",
+   "mdrdefer2",
+   "cap",
+   "cap2",
+   "mnsep"
+  ]
+ },
+ "people": [
+  {
+   "ini": "SN",
+   "name": "Sameer Nigam",
+   "role": "Founder, Whole-time Director & CEO",
+   "since": "co-founder, 2015",
+   "note": "Co-founded PhonePe in 2015; leads the company and its IPO plans.",
+   "s": [
+    "ir",
+    "about",
+    "wiki"
+   ]
+  },
+  {
+   "ini": "RC",
+   "name": "Rahul Chari",
+   "role": "Founder, Whole-time Director & Chief Product and Technology Officer",
+   "since": "CPTO since Jul 2026",
+   "note": "Was CTO; in July 2026 took charge of product and technology together.",
+   "s": [
+    "cto",
+    "cto2",
+    "invest",
+    "ir"
+   ]
+  },
+  {
+   "ini": "RB",
+   "name": "Rohit Bhagat",
+   "role": "Chairperson, Independent Director",
+   "since": "",
+   "note": "Non-executive independent director who chairs the board.",
+   "s": [
+    "ir",
+    "about",
+    "inc42drhp"
+   ]
+  },
+  {
+   "ini": "SB",
+   "name": "Srijon Biswas",
+   "role": "Chief Technology Officer",
+   "since": "since Jul 2026",
+   "note": "With PhonePe since 2016; earlier Head of Engineering for financial services.",
+   "s": [
+    "cto",
+    "cto2"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "July 2026: Srijon Biswas became CTO; co-founder Rahul Chari moved up to Chief Product and Technology Officer.",
+   "s": [
+    "cto",
+    "cto2"
+   ]
+  },
+  {
+   "t": "May–July 2026: Ujjwal Jain (CEO, Share.Market), Akash Dongre (co-founder, Indus Appstore) and Vishal Gupta (CEO, insurance broking arm) stepped down.",
+   "s": [
+    "ins",
+    "sm",
+    "dongre",
+    "bsfy26"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, as reported from company filings)",
+  "rows": [
+   {
+    "k": "Revenue from operations",
+    "v": "₹7,920 cr (+11.5%)",
+    "term": "Revenue",
+    "s": [
+     "bsfy26",
+     "inc42fy26",
+     "entrackr"
+    ]
+   },
+   {
+    "k": "Total income (incl. other income)",
+    "v": "₹8,388 cr",
+    "term": "Revenue",
+    "s": [
+     "inc42ipo",
+     "entrackr"
+    ]
+   },
+   {
+    "k": "Total expenses",
+    "v": "₹10,589 cr (+16%)",
+    "s": [
+     "bsfy26",
+     "entrackr"
+    ]
+   },
+   {
+    "k": "Net loss",
+    "v": "₹2,792 cr",
+    "term": "Net loss",
+    "s": [
+     "bsfy26",
+     "inc42fy26",
+     "entrackr"
+    ]
+   },
+   {
+    "k": "FY25 revenue from operations",
+    "v": "₹7,105 cr",
+    "term": "Revenue",
+    "s": [
+     "bsfy26",
+     "inc42ipo"
+    ]
+   },
+   {
+    "k": "FY25 net loss (consolidated)",
+    "v": "₹1,727 cr",
+    "term": "Net loss",
+    "s": [
+     "bsfy26",
+     "bsdefer",
+     "mnudrhp"
+    ]
+   },
+   {
+    "k": "H1 FY26 revenue (Apr–Sep 2025)",
+    "v": "₹3,918 cr (+22%)",
+    "term": "Revenue",
+    "s": [
+     "bsdefer",
+     "tcjan",
+     "tcpause"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest updates (2026). As an unlisted company, PhonePe does not publish quarterly results.",
+   "points": [
+    {
+     "t": "IPO: cleared by SEBI in Jan 2026, paused in Mar 2026. In Sep 2026 Sameer Nigam said the new UPI MDR brings a filing closer; reports say it targets a Feb–Mar 2027 listing.",
+     "s": [
+      "pymnts",
+      "bsdefer",
+      "hans",
+      "inc42ipo"
+     ],
+     "term": "IPO"
+    },
+    {
+     "t": "UPI: 1,091 crore transactions in Sep 2026, 45.6% of app volume (Google Pay 32.2%, Paytm 8.1%).",
+     "s": [
+      "mnsep",
+      "staug"
+     ],
+     "term": "UPI"
+    },
+    {
+     "t": "Oct 2026: Share.Market became PhonePe Invest; Indus Appstore became PhonePe Appstore (on 20 crore+ devices). Pincode's consumer app was wound down in Dec 2025.",
+     "s": [
+      "invest",
+      "invest2",
+      "app",
+      "app2",
+      "pin",
+      "pin2"
+     ]
+    }
+   ]
+  },
+  "say": "PhonePe's revenue grew 11.5% to ₹7,920 crore in FY26, but it posted a ₹2,792 crore loss, mostly from ESOP costs; its IPO, paused in March 2026, could come back in 2027."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "Google Pay",
+   "Paytm",
+   "Navi",
+   "Amazon Pay",
+   "CRED",
+   "Groww (investing)",
+   "Policybazaar (insurance)"
+  ],
+  "note": "Google Pay and Paytm are the main UPI rivals; in loans, insurance and investing it also competes with specialist apps."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Registered users (reported, 2026)",
+    "v": "60 crore+"
+   },
+   {
+    "k": "PhonePe Appstore installs",
+    "v": "20 crore+ devices"
+   },
+   {
+    "k": "Head office",
+    "v": "Bengaluru"
+   },
+   {
+    "k": "Majority owner",
+    "v": "Walmart (~72%)"
+   }
+  ],
+  "local": "Head office and most tech roles are in Bengaluru; merchant sales and smart-speaker teams work with shops across India.",
+  "s": [
+   "pymnts",
+   "rev25",
+   "app",
+   "inc42drhp",
+   "bsconf"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "PhonePe lets users donate to verified NGOs in the app through a partnership with GiveIndia, and works with the Wadhwani Foundation to help startups and small businesses grow.",
+  "s": [
+   "csr",
+   "csr2",
+   "csr3"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Largest UPI app: about 46% of transactions",
+    "s": [
+     "mnsep",
+     "staug"
+    ]
+   },
+   {
+    "t": "60 crore+ users to cross-sell loans, insurance and investing",
+    "s": [
+     "pymnts",
+     "rev25"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Still loss-making: ₹2,792 cr net loss in FY26",
+    "s": [
+     "bsfy26",
+     "inc42fy26"
+    ]
+   },
+   {
+    "t": "Revenue growth slowed to 11.5% in FY26",
+    "s": [
+     "bsfy26",
+     "inc42fy26"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "New 0.4% MDR on larger merchant UPI payments could add income",
+    "s": [
+     "mdr",
+     "hans",
+     "inc42ipo"
+    ]
+   },
+   {
+    "t": "Growing financial services: PhonePe Invest, insurance and loan distribution",
+    "s": [
+     "invest",
+     "rev25"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "NPCI's 30% UPI market share cap (deadline 31 Dec 2026)",
+    "s": [
+     "cap",
+     "cap2",
+     "mnsep"
+    ]
+   },
+   {
+    "t": "Senior exits and an IPO pause in 2026",
+    "s": [
+     "cto",
+     "ins",
+     "bsdefer"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a payments company, interviewers prefer the revenue mix (payments, loans distribution, other services) and competitor analysis.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "Very high. PhonePe, Google Pay, Paytm and bank apps fight for the same users."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. UPI is open to all, but licences and scale are hard to get."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Cash, cards and bank apps."
+   },
+   {
+    "k": "Buyer power",
+    "v": "High. Users switch apps easily and UPI is free to them."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium. Banks, NPCI and RBI set the rules and fees."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for Digital India and cashless payments."
+   },
+   {
+    "k": "Economic",
+    "v": "Zero fees on UPI make payments hard to earn from; money comes from loans, devices and services."
+   },
+   {
+    "k": "Social",
+    "v": "Smartphones and UPI are now used even by small shops and villages."
+   },
+   {
+    "k": "Technological",
+    "v": "QR codes, soundboxes, AI fraud checks and credit on UPI."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI licences, data rules and NPCI's market-share limits."
+   },
+   {
+    "k": "Environmental",
+    "v": "Less paper and cash handling; low direct impact."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Payments app, merchant QR and devices, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Free UPI for users; device rentals, fees and commissions for merchants and partners."
+   },
+   {
+    "k": "Place",
+    "v": "Smartphone app, plus field teams onboarding shops across India."
+   },
+   {
+    "k": "Promotion",
+    "v": "Cashback, brand campaigns, cricket sponsorships and word of mouth."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "More payments from existing users and shops."
+   },
+   {
+    "k": "Market development",
+    "v": "Smaller towns and rural merchants."
+   },
+   {
+    "k": "Product development",
+    "v": "Loans, insurance, investing and new devices."
+   },
+   {
+    "k": "Diversification",
+    "v": "New businesses such as stock broking or commerce."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs and taxes. The company's final earnings.",
+  "Revenue": "Total money earned from the business in a period, before costs.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "Market share": "A company's sales as a % of the total sales of its industry.",
+  "Consolidated": "Figures for the company together with its subsidiaries. 'Standalone' means the parent company alone.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account or selling a product.",
+  "UPI": "Unified Payments Interface: India's instant bank-to-bank payment system run by NPCI. Apps like PhonePe, Google Pay and Paytm sit on top of it.",
+  "NPCI": "National Payments Corporation of India: the body that runs UPI, RuPay and other retail payment systems.",
+  "MDR": "Merchant Discount Rate: the fee a shop pays on each digital payment. UPI and RuPay debit card payments have zero MDR by government rule.",
+  "GMV": "Gross Merchandise Value: the total value of payments that pass through a platform in a period.",
+  "Payment aggregator": "A company licensed by RBI to collect online payments for merchants and pass the money to them.",
+  "Soundbox": "A small speaker device at a shop that announces each payment received, for a monthly fee.",
+  "Contribution margin": "Revenue minus direct costs (like payment processing). Shows if the core business makes money before fixed costs.",
+  "EBITDA": "Earnings before interest, tax, depreciation and amortisation: a measure of operating profit.",
+  "Loan distribution": "Helping a bank or NBFC give loans to customers and merchants for a fee, without lending its own money.",
+  "Market share cap": "An NPCI limit (proposed at 30%) on how much of UPI transactions any one app can handle.",
+  "RBI": "Reserve Bank of India, which regulates payments, banks and NBFCs in India.",
+  "Fintech": "Financial technology: companies that use apps and software to offer payments, loans, investing or insurance.",
+  "Net loss": "When total costs are more than total income for the period. The opposite of net profit.",
+  "ESOP": "Employee Stock Option Plan: shares or options given to staff as pay. Their cost is shown as an expense, even though no cash leaves the company.",
+  "DRHP": "Draft Red Herring Prospectus: the first IPO document a company files with SEBI, with its business, risks and financials.",
+  "Offer for sale": "An IPO where existing shareholders sell their shares. The company itself gets no new money.",
+  "Lending service provider": "A company that finds borrowers for banks and NBFCs and helps service loans, without lending its own money.",
+  "SEBI": "Securities and Exchange Board of India: the regulator of stock markets, IPOs and brokers.",
+  "P2M": "Person-to-merchant: a UPI payment from a customer to a shop or business. P2P means person-to-person."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and forecasts",
+    "Cost control",
+    "Tracking unit economics"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a profit and loss statement",
+    "Basics of payments revenue (MDR, fees)"
+   ],
+   "tip": "Know revenue, contribution margin, EBITDA and whether the company is profitable.",
+   "kv": [
+    {
+     "k": "Revenue FY26",
+     "v": "₹7,920 cr (+11.5%)",
+     "term": "Revenue"
+    },
+    {
+     "k": "Net loss FY26",
+     "v": "₹2,792 cr",
+     "term": "Net loss"
+    },
+    {
+     "k": "ESOP-driven loss",
+     "v": "Yes, mostly",
+     "term": "ESOP"
+    },
+    {
+     "k": "IPO",
+     "v": "Paused (OFS)",
+     "term": "Offer for sale"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New users and merchants",
+    "Active users",
+    "Campaign return"
+   ],
+   "skills": [
+    "Digital marketing",
+    "Customer segmentation",
+    "Growth analytics"
+   ],
+   "tip": "Think about how to earn trust and get users to try loans, insurance or investing after payments.",
+   "kv": [
+    {
+     "k": "UPI share",
+     "v": "~46% by volume",
+     "term": "UPI"
+    },
+    {
+     "k": "Users",
+     "v": "60 crore+"
+    },
+    {
+     "k": "New brands",
+     "v": "Invest, Appstore"
+    },
+    {
+     "k": "Main rival",
+     "v": "Google Pay"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition",
+    "Training completion"
+   ],
+   "skills": [
+    "Tech and sales hiring",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Fintechs hire both tech staff and big field sales teams. Ideas for both will impress.",
+   "kv": [
+    {
+     "k": "CEO",
+     "v": "Sameer Nigam"
+    },
+    {
+     "k": "CPTO",
+     "v": "Rahul Chari"
+    },
+    {
+     "k": "Chairperson",
+     "v": "Rohit Bhagat"
+    },
+    {
+     "k": "Owner",
+     "v": "Walmart (~72%)"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Merchants onboarded",
+    "Device subscriptions",
+    "Loans and products sold"
+   ],
+   "skills": [
+    "Field sales",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Convince a kirana shop owner to take a soundbox' or 'sell a merchant loan'.",
+   "kv": [
+    {
+     "k": "CEO",
+     "v": "Sameer Nigam"
+    },
+    {
+     "k": "CPTO",
+     "v": "Rahul Chari"
+    },
+    {
+     "k": "Chairperson",
+     "v": "Rohit Bhagat"
+    },
+    {
+     "k": "Owner",
+     "v": "Walmart (~72%)"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Transaction success rate",
+    "Complaint resolution time",
+    "Fraud losses"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, fraud checks and how to keep payments working at huge scale.",
+   "kv": [
+    {
+     "k": "CEO",
+     "v": "Sameer Nigam"
+    },
+    {
+     "k": "CPTO",
+     "v": "Rahul Chari"
+    },
+    {
+     "k": "Chairperson",
+     "v": "Rohit Bhagat"
+    },
+    {
+     "k": "Owner",
+     "v": "Walmart (~72%)"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Payments basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "CEO",
+     "v": "Sameer Nigam"
+    },
+    {
+     "k": "CPTO",
+     "v": "Rahul Chari"
+    },
+    {
+     "k": "Chairperson",
+     "v": "Rohit Bhagat"
+    },
+    {
+     "k": "Owner",
+     "v": "Walmart (~72%)"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "PhonePe's revenue grew in FY26 but its loss widened. Why?",
+     "a": "Revenue from operations rose 11.5% to ₹7,920 crore, but expenses rose 16% to ₹10,589 crore. Most of the loss came from ESOP (share-based pay) costs, a non-cash expense, plus a one-time write-off."
+    },
+    {
+     "q": "What is an offer-for-sale IPO and who was selling in PhonePe's?",
+     "a": "Existing shareholders sell shares and the company gets no new money. In PhonePe's draft, Walmart planned to sell part of its stake, and Microsoft and Tiger Global planned to exit fully."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you get a PhonePe UPI user to try PhonePe Invest?",
+     "a": "Target users who already buy gold or mutual funds in the app, show simple goals (e.g. 'start a ₹500 SIP'), build trust with clear fees, and use in-app nudges at the right moment."
+    },
+    {
+     "q": "Why did PhonePe rename Share.Market and Indus Appstore in Oct 2026?",
+     "a": "To bring them under the trusted PhonePe brand so its large user base recognises them, and to make cross-selling easier."
+    }
+   ],
+   "HR": [
+    {
+     "q": "PhonePe saw several senior exits in 2026. How would you retain key leaders?",
+     "a": "Clear growth paths, long-term rewards such as ESOPs, ownership of big projects, and strong internal promotions, like Srijon Biswas becoming CTO in July 2026."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Convince a kirana shop owner to take a PhonePe smart speaker.",
+     "a": "It announces every payment aloud, so no need to check the phone or fear fake screenshots; fewer disputes and faster checkout during rush hours, for a small monthly fee."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you keep UPI payments working at over 1,000 crore transactions a month?",
+     "a": "Strong tech uptime with backups, fast fraud checks, quick complaint resolution and close work with banks and NPCI on failed payments."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What does the new UPI MDR mean for PhonePe?",
+     "a": "A 0.4% fee on merchant payments above ₹2,000 (small merchants and P2P stay free) could give UPI apps a direct income from payments for the first time. The rollout was moved to after Diwali 2026."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads PhonePe?",
+     "a": "Co-founder Sameer Nigam is CEO; co-founder Rahul Chari is Chief Product and Technology Officer; Rohit Bhagat chairs the board. Walmart is the majority owner."
+    },
+    {
+     "q": "Is PhonePe listed on the stock market?",
+     "a": "No. SEBI approved its IPO in Jan 2026, but it paused the IPO in Mar 2026 due to market volatility. Reports say it may list in early 2027."
+    },
+    {
+     "q": "Why PhonePe?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "PhonePe handles almost half of India's UPI payments and is used by over 60 crore people, from big cities to small villages. It is now building loans, insurance and investing on top of payments, and preparing to go public. Working here means learning how a fintech serves India at huge scale and turns free payments into a business. I want to contribute to [your role] in this next stage.",
+  "ask": [
+   "How will the new UPI MDR change PhonePe's merchant business?",
+   "Which financial services, such as PhonePe Invest or lending, are the biggest growth focus for the next two years?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should UPI payments to merchants carry a fee (MDR)?",
+    "for": "Apps and banks need income to keep UPI safe, reliable and growing; big merchants can afford a small fee.",
+    "against": "Fees may push small shops back to cash and slow down digital payments."
+   },
+   {
+    "t": "Should any one UPI app be capped at 30% market share?",
+    "for": "Too much dependence on two apps is a risk to the system; caps encourage competition.",
+    "against": "Users choose apps freely; forcing limits punishes popular products and hurts user experience."
+   }
+  ],
+  "avoid": [
+   "Don't say PhonePe is listed or quote a share price; its IPO is still pending.",
+   "Don't call PhonePe a bank or an NBFC lender; it distributes loans for banks and NBFCs.",
+   "Don't use old names without the update: Share.Market is now PhonePe Invest and Indus Appstore is now PhonePe Appstore (Oct 2026)."
+  ],
+  "night": [
+   "CEO: Sameer Nigam · Chairperson: Rohit Bhagat",
+   "Founded 2015 · HQ Bengaluru · majority owner Walmart",
+   "FY26 revenue: ₹7,920 cr (+11.5%)",
+   "FY26 net loss: ₹2,792 cr (FY25: ₹1,727 cr)",
+   "UPI share: about 46% by volume (2026)",
+   "IPO: SEBI nod Jan 2026, paused Mar 2026",
+   "Rivals: Google Pay, Paytm",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is PhonePe's CEO?",
+   "o": [
+    "Rahul Chari",
+    "Sameer Nigam",
+    "Rohit Bhagat"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which company is PhonePe's majority owner?",
+   "o": [
+    "Walmart",
+    "Google",
+    "Tata Group"
+   ],
+   "a": 0
+  },
+  {
+   "q": "About what share of UPI transactions (by volume) did PhonePe handle in 2026?",
+   "o": [
+    "About 15%",
+    "About 30%",
+    "About 46%"
+   ],
+   "a": 2
+  },
+  {
+   "q": "PhonePe's revenue from operations in FY 2025-26 was about:",
+   "o": [
+    "₹7,920 crore",
+    "₹2,792 crore",
+    "₹79,200 crore"
+   ],
+   "a": 0
+  },
+  {
+   "q": "In Oct 2026, Share.Market was renamed:",
+   "o": [
+    "PhonePe Invest",
+    "PhonePe Wealth",
+    "Indus Invest"
+   ],
+   "a": 0
+  }
+ ],
+ "checked": "19 Nov 2026"
+}

@@ -1,0 +1,1157 @@
+{
+ "id": "hdfc-life",
+ "name": "HDFC Life",
+ "short": "HL",
+ "color": "#004C8F",
+ "line": "HDFC Bank's Mumbai life insurer selling term, savings, ULIP, pension and annuity plans across India",
+ "sector": "Life insurance",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: HDFCLIFE · BSE: 540777",
+ "website": "https://www.hdfclife.com",
+ "news_query": "HDFC Life",
+ "src": {
+  "pr27": {
+   "label": "H1 FY2027 press release (HDFC Life, official)",
+   "url": "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/about-us/pdf/investor-relations/financial-information/Quarterly-financial-results/HDFC-Life-H1-FY2027-Press-Release.pdf"
+  },
+  "call27": {
+   "label": "H1 FY2027 earnings call transcript (HDFC Life, official)",
+   "url": "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/about-us/pdf/investor-relations/financial-information/investor-presentation/HDFC-Life-H1-FY2027-Call-Transcript.pdf"
+  },
+  "kotak27": {
+   "label": "H1 FY27: profit up 13% to ₹1,119 cr, VNB up 12% (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/hdfc-life-insurance-share-price-in-focus-as-company-announces-q2-fy27-results/"
+  },
+  "cafe27": {
+   "label": "Jul–Sep results, persistency and AUM (Cafemutual)",
+   "url": "https://cafemutual.com/news/insurance/39102-hdfc-life-jul-sep-profit-rises-15-to-rs-540-crore"
+  },
+  "nb27": {
+   "label": "Q2 profit rises 14% to ₹508 cr (NewsBytes)",
+   "url": "https://www.newsbytesapp.com/news/business/hdfc-life-profit-rises-14-to-rs508cr-premiums-16-higher/tldr"
+  },
+  "uni27": {
+   "label": "Q2 FY27 PAT ₹508 crore (Univest)",
+   "url": "https://univest.in/blogs/hdfc-life-insurance-company-q2-results-fy27-pat-508-crore"
+  },
+  "pl27": {
+   "label": "Q2 FY27 result update: margin expansion (PL Capital)",
+   "url": "https://www.plindia.com/pl-research/hdfc-life-insurance-company-hdfclife-in-q2fy27-result-update-margin-expansion-amid-a-measured-growth-outlook-buy/"
+  },
+  "q1": {
+   "label": "Q1 FY27 standalone profit ₹611 cr (Sahi)",
+   "url": "https://www.sahi.com/news/hdfc-life-standalone-net-profit-rises-12-to-611-crore-in-q1-as-premium-income-hits-16-548-crore-3284-PE1_COR"
+  },
+  "pr26": {
+   "label": "12M FY2026 press release (HDFC Life, official)",
+   "url": "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/about-us/pdf/investor-relations/financial-information/Quarterly-financial-results/HDFC-Life-12M-FY2026-Press-Release.pdf"
+  },
+  "ang26": {
+   "label": "FY26 PAT up 6%, final dividend (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hdfc-life-share-price-dips-posts-pat-growth-in-fy26-results-announces-final-dividend"
+  },
+  "ob26": {
+   "label": "FY26 premium up 12%, protection up 43% (Outlook Business / PTI)",
+   "url": "https://www.outlookbusiness.com/corporate/hdfc-life-reports-12-premium-growth-in-fy26-retail-protection-business-rises-43"
+  },
+  "up26": {
+   "label": "Q4 FY26 profit, ₹2.1 dividend recommended (Upstox)",
+   "url": "https://upstox.com/news/market-news/stocks/hdfc-life-q4-earnings-net-profit-jumps-4-yo-y-to-496-crore-2-1-per-share-dividend-recommended/article-192259/"
+  },
+  "ceo": {
+   "label": "Vibha Padalkar re-appointed MD & CEO for 5 years (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hdfc-life-reappoints-vibha-padalkar-as-md-ceo-for-5-years"
+  },
+  "ceo2": {
+   "label": "HDFC Life reappoints Vibha Padalkar (People Matters)",
+   "url": "https://www.peoplematters.in/news/leadership/hdfc-life-reappoints-vibha-padalkar-as-md-and-ceo-for-five-years-49342"
+  },
+  "ceo3": {
+   "label": "IRDAI approves Padalkar's re-appointment (Sahi)",
+   "url": "https://www.sahi.com/news/hdfc-life-gets-irdai-approval-for-vibha-padalkar-s-re-appointment-as-md-ceo-3284-PE1_COR"
+  },
+  "ceo18": {
+   "label": "HDFC Life elevates Vibha Padalkar as MD & CEO, 2018 (Business Standard / PTI)",
+   "url": "https://www.business-standard.com/article/pti-stories/hdfc-life-elevates-vibha-padalkar-as-md-ceo-118091200644_1.html"
+  },
+  "ceo18b": {
+   "label": "Padalkar to succeed Amitabh Chaudhry (BloombergQuint)",
+   "url": "https://www.bloombergquint.com/business/vibha-padalkar-to-succeed-amitabh-chaudhry-as-hdfc-standard-lifes-md-and-ceo"
+  },
+  "gov": {
+   "label": "Governance filing FY26: board of directors (NSE, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_156874_12052026154849_iXBRL_WEB.html"
+  },
+  "chair": {
+   "label": "Deepak Parekh steps down, Keki Mistry takes over (Board Stewardship)",
+   "url": "https://boardstewardship.com/hdfc-life-insurance-companys-chairman-deepak-parekh-steps-down-keki-mistry-takes-over/"
+  },
+  "chair2": {
+   "label": "Plan to expand thoughtfully: chairman Keki Mistry (Business Standard)",
+   "url": "https://www.business-standard.com/amp/companies/news/hdfc-life-focuses-on-expansion-tech-fy26-mistry-125071701300_1.html"
+  },
+  "ipo": {
+   "label": "HDFC Life IPO: incorporated 2000, listed 17 Nov 2017 (Chittorgarh)",
+   "url": "https://chittorgarh.com/ipo/hdfc-life-ipo/756"
+  },
+  "ipo2": {
+   "label": "HDFC Life shares soar on debut after $1.3 bn IPO (Business Standard / Reuters)",
+   "url": "https://www.business-standard.com/amp/article/finance/hdfc-life-shares-buck-trend-soar-on-debut-after-1-3-bn-ipo-117111700505_1.html"
+  },
+  "ibef": {
+   "label": "HDFC Life company showcase (IBEF, Govt of India trust)",
+   "url": "https://ibef.org/industry/insurance-sector-india/showcase/hdfc-life"
+  },
+  "exide": {
+   "label": "Final IRDAI approval for Exide Life merger (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/hdfc-life-gets-final-approval-from-irdai-for-merger-of-exide-life-349794-2022-10-13"
+  },
+  "exide2": {
+   "label": "HDFC Life completes merger of Exide Life (Business Standard)",
+   "url": "https://business-standard.com/article/finance/hdfc-life-completes-merger-of-exide-life-a-day-after-irdai-s-approval-122101401413_1.html"
+  },
+  "abrdn": {
+   "label": "abrdn divests entire 1.6% stake, exits HDFC Life (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/abrdn-divests-entire-16-stake-exits-hdfc-life-insurance"
+  },
+  "abrdn2": {
+   "label": "abrdn exits HDFC Life, sells entire stake (IIFL)",
+   "url": "https://www.indiainfoline.com/news/markets/abrdn-exits-hdfc-life-sells-entire-stake-for-rs-2069-crore"
+  },
+  "hdfcb": {
+   "label": "IRDAI approves transfer of HDFC Life shares to HDFC Bank (Business Standard)",
+   "url": "https://www.business-standard.com/amp/finance/insurance/regulator-irdai-approves-transfer-of-hdfc-life-shares-to-hdfc-bank-123062301015_1.html"
+  },
+  "hdfcb2": {
+   "label": "HDFC Ltd to merge into HDFC Bank effective 1 July 2023 (HDFC Bank, official)",
+   "url": "https://www.hdfc.bank.in/press-release/2023/q2/hdfc-ltd-to-merge-into-hdfc-bank-effective-july-1-2023"
+  },
+  "pref": {
+   "label": "Allotment of shares to HDFC Bank (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/HDFCLIFE1_16062026124709_Allotment.pdf"
+  },
+  "pref2": {
+   "label": "HDFC Life allots shares to HDFC Bank for ₹1,000 cr (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/hdfc-life-insurance-allots-1-45-23-906-shares-to-hdfc-bank-for-1-000-crore-on-preferential-basis"
+  },
+  "irdai": {
+   "label": "Insurance shares tumble on IRDAI commission proposals (Business Today)",
+   "url": "https://www.businesstoday.in/markets/stocks/story/icici-prudential-life-hdfc-life-sbi-life-shares-tumble-up-to-10-heres-why-557442-2026-09-24"
+  },
+  "irdai2": {
+   "label": "HDFC Life, ICICI Pru Life shares plunge 7% on IRDAI proposals (5paisa)",
+   "url": "https://www.5paisa.com/blog/hdfc-life-icici-prudential-life-shares-plunge-7-as-irdai-commission-proposals-rattle-insurers"
+  },
+  "gst": {
+   "label": "All GST benefits will go to customers: HDFC Life MD & CEO (Business Standard)",
+   "url": "https://www.business-standard.com/companies/people/all-gst-benefits-will-go-to-customers-hdfc-life-insurance-md-ceo-125101601113_1.html"
+  },
+  "gst2": {
+   "label": "Life insurers likely to face VNB margin squeeze from ITC loss (Business Standard)",
+   "url": "https://www.business-standard.com/finance/insurance/gst-itc-loss-life-insurers-profitability-q3fy26-126011100338_1.html"
+  },
+  "csr": {
+   "label": "HDFC Life CSR spending report 2026 (India CSR)",
+   "url": "https://indiacsr.in/hdfc-life-csr-spending-report-2026/"
+  },
+  "csr2": {
+   "label": "CSR projects FY2025-26 (HDFC Life, official)",
+   "url": "https://www.hdfclife.com/content/dam/hdfclifeinsurancecompany/about-us/csr/HLI-2026-01-108-CSR-Project-Document-for-Website-2025-26.pdf"
+  }
+ },
+ "tiles": [
+  {
+   "v": 1910,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (+6%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 409673,
+   "fmt": "cr",
+   "label": "Assets under management",
+   "sub": "Sep 2026 · +14%",
+   "term": "AUM"
+  },
+  {
+   "v": 508,
+   "fmt": "cr",
+   "label": "Net profit Q2 FY27",
+   "sub": "Jul–Sep 2026 · standalone · +13%",
+   "term": "Net profit"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹508 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · standalone · +13%"
+  },
+  {
+   "v": "₹8,245 cr",
+   "k": "APE (new sales)",
+   "s": "H1 FY27 · +11%"
+  },
+  {
+   "v": "24.7%",
+   "k": "VNB margin",
+   "s": "H1 FY27 (24.5% a year ago)"
+  },
+  {
+   "v": "180%",
+   "k": "Solvency ratio",
+   "s": "Sep 2026 (minimum 150%)"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Set up in 2000 as a joint venture of HDFC Ltd and UK's Standard Life; listed on NSE and BSE in November 2017. Standard Life (now abrdn) sold its last shares in 2023.",
+   "s": [
+    "ipo",
+    "ipo2",
+    "ibef",
+    "abrdn",
+    "abrdn2"
+   ]
+  },
+  {
+   "t": "Since HDFC Ltd merged into HDFC Bank on 1 July 2023, HDFC Bank is the parent (promoter). In June 2026 HDFC Bank put in another ₹1,000 crore of fresh capital.",
+   "s": [
+    "hdfcb",
+    "hdfcb2",
+    "pref",
+    "pref2",
+    "pr26"
+   ]
+  },
+  {
+   "t": "Vibha Padalkar has been MD & CEO since 2018; in 2026 she was re-appointed for five more years from 12 Sep 2026 (IRDAI approved). Keki Mistry is Chairman.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceo3",
+    "ceo18",
+    "gov",
+    "chair2"
+   ]
+  },
+  {
+   "t": "FY 2025-26 profit was ₹1,910 crore (+6%), held back by the loss of GST input tax credit and new labour codes. In H1 FY27 (Apr–Sep 2026) profit was ₹1,119 crore (+13%).",
+   "s": [
+    "pr26",
+    "ang26",
+    "ob26",
+    "pr27",
+    "kotak27"
+   ]
+  },
+  {
+   "t": "Sells mostly through banks (about 58% of individual sales, led by HDFC Bank), plus agents, other partners and online. ULIPs are the biggest product (45% of individual APE in H1 FY27).",
+   "s": [
+    "pr27",
+    "call27",
+    "kotak27"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2000",
+   "t": "Incorporated as HDFC Standard Life, a joint venture of HDFC Ltd and Standard Life.",
+   "s": [
+    "ipo",
+    "ibef"
+   ]
+  },
+  {
+   "y": "Nov 2017",
+   "t": "IPO at ₹290 a share; listed on NSE and BSE on 17 Nov 2017.",
+   "s": [
+    "ipo",
+    "ipo2"
+   ]
+  },
+  {
+   "y": "Sep 2018",
+   "t": "Vibha Padalkar became MD & CEO, succeeding Amitabh Chaudhry.",
+   "s": [
+    "ceo18",
+    "ceo18b"
+   ]
+  },
+  {
+   "y": "Oct 2022",
+   "t": "Exide Life Insurance (bought for ₹6,687 crore) merged into HDFC Life after IRDAI's final approval.",
+   "s": [
+    "exide",
+    "exide2"
+   ]
+  },
+  {
+   "y": "2023",
+   "t": "abrdn (ex-Standard Life) sold its last stake in May; HDFC Bank became the parent after the HDFC merger on 1 July.",
+   "s": [
+    "abrdn",
+    "abrdn2",
+    "hdfcb",
+    "hdfcb2"
+   ]
+  },
+  {
+   "y": "2026",
+   "t": "₹1,000 crore capital from HDFC Bank (June); Padalkar's new five-year term began on 12 September.",
+   "s": [
+    "pref",
+    "pref2",
+    "ceo",
+    "ceo3"
+   ]
+  }
+ ],
+ "model": {
+  "how": "HDFC Life collects premiums from people who buy life cover, savings, pension or annuity plans. It invests this money (₹4.1 lakh crore AUM) in bonds and shares, pays claims and maturity benefits, and keeps a profit from the gap between what it earns, what it promises customers and its costs. Most policies are sold through HDFC Bank and other bank partners.",
+  "flow": [
+   "Customer buys a policy via a bank, agent, partner or online",
+   "Premiums are invested for policyholders",
+   "Pays claims, maturities, annuities and surrenders",
+   "Profit = investment and risk margins minus commissions and costs"
+  ],
+  "facts": [
+   {
+    "k": "Product mix H1 FY27",
+    "v": "ULIP 45%, non-par 22%",
+    "term": "ULIP",
+    "s": [
+     "pr27",
+     "kotak27",
+     "call27"
+    ]
+   },
+   {
+    "k": "Bank channel share",
+    "v": "About 58%",
+    "term": "Bancassurance",
+    "s": [
+     "pr27",
+     "call27"
+    ]
+   },
+   {
+    "k": "Retail protection growth",
+    "v": "+33% (H1 FY27)",
+    "term": "Protection",
+    "s": [
+     "pr27",
+     "kotak27",
+     "call27"
+    ]
+   },
+   {
+    "k": "Embedded value",
+    "v": "₹66,461 cr (Sep 2026)",
+    "term": "Embedded value",
+    "s": [
+     "pr27",
+     "kotak27",
+     "cafe27"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Insurance Regulatory and Development Authority of India (IRDAI)",
+  "points": [
+   "From 22 Sep 2025 GST was removed on individual life policies. Customers pay less, but insurers lost input tax credit, which squeezed margins in FY26.",
+   "In Sep 2026 IRDAI proposed lower commissions and lower expense limits for insurers. Insurance shares fell sharply; the rules are still at the consultation stage.",
+   "Big theme for interviews: growing protection (term) sales and holding margins while commission and cost rules get tighter."
+  ],
+  "s": [
+   "gst",
+   "gst2",
+   "irdai",
+   "irdai2",
+   "call27"
+  ]
+ },
+ "people": [
+  {
+   "ini": "VP",
+   "name": "Vibha Padalkar",
+   "role": "Managing Director & CEO",
+   "since": "since Sep 2018",
+   "note": "Chartered accountant; joined HDFC Life in 2008 and helped lead its 2017 listing. Re-appointed for five years from 12 Sep 2026.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceo3",
+    "ceo18"
+   ]
+  },
+  {
+   "ini": "KM",
+   "name": "Keki Mistry",
+   "role": "Non-Executive Chairman",
+   "since": "since Apr 2024",
+   "note": "Former Vice Chairman & CEO of HDFC Ltd; took over as Chairman when Deepak Parekh stepped down.",
+   "s": [
+    "chair",
+    "chair2",
+    "gov",
+    "ob26"
+   ]
+  },
+  {
+   "ini": "NS",
+   "name": "Niraj Shah",
+   "role": "Executive Director & CFO",
+   "since": "",
+   "note": "Re-appointed Executive Director for five years from Apr 2026.",
+   "s": [
+    "ceo3",
+    "gov",
+    "call27"
+   ]
+  },
+  {
+   "ini": "VA",
+   "name": "Vineet Arora",
+   "role": "Executive Director & Chief Business Officer",
+   "since": "",
+   "note": "Leads distribution and business.",
+   "s": [
+    "gov",
+    "call27"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Apr 2024: Deepak Parekh stepped down as Chairman; Keki Mistry took over.",
+   "s": [
+    "chair",
+    "chair2"
+   ]
+  },
+  {
+   "t": "Apr–Aug 2026: Board re-appointed Vibha Padalkar as MD & CEO for five years from 12 Sep 2026; IRDAI approved it in Aug 2026.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "ceo3"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit (PAT)",
+    "v": "₹1,910 cr (+6%)",
+    "term": "Net profit",
+    "s": [
+     "pr26",
+     "ang26",
+     "ob26"
+    ]
+   },
+   {
+    "k": "Total premium",
+    "v": "₹79,387 cr (+12%)",
+    "term": "Gross written premium",
+    "s": [
+     "pr26",
+     "ang26"
+    ]
+   },
+   {
+    "k": "New sales (APE)",
+    "v": "₹16,641 cr (+8%)",
+    "term": "APE",
+    "s": [
+     "pr26",
+     "ang26"
+    ]
+   },
+   {
+    "k": "Value of new business",
+    "v": "₹4,034 cr (+2%)",
+    "term": "VNB",
+    "s": [
+     "pr26",
+     "ang26"
+    ]
+   },
+   {
+    "k": "VNB margin (25.6% in FY25)",
+    "v": "24.2%",
+    "term": "VNB margin",
+    "s": [
+     "pr26",
+     "ang26"
+    ]
+   },
+   {
+    "k": "Embedded value",
+    "v": "₹62,139 cr (+12%)",
+    "term": "Embedded value",
+    "s": [
+     "pr26",
+     "ang26",
+     "ob26"
+    ]
+   },
+   {
+    "k": "Solvency ratio (194% in FY25)",
+    "v": "177%",
+    "term": "Solvency ratio",
+    "s": [
+     "pr26",
+     "ang26"
+    ]
+   },
+   {
+    "k": "Final dividend",
+    "v": "₹2.10 per share",
+    "term": "Dividend",
+    "s": [
+     "ang26",
+     "up26"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest: Q2 and H1 FY27 (results on 15 Oct 2026)",
+   "points": [
+    {
+     "t": "Q2 (Jul–Sep 2026) standalone profit ₹508 cr, up about 13% from ₹448 cr; H1 profit ₹1,119 cr (+13%).",
+     "s": [
+      "nb27",
+      "uni27",
+      "pr27",
+      "kotak27"
+     ],
+     "term": "Net profit"
+    },
+    {
+     "t": "H1 APE ₹8,245 cr (+11%; Q2 +13%); VNB ₹2,037 cr (+12%) at a 24.7% margin.",
+     "s": [
+      "pr27",
+      "kotak27",
+      "call27",
+      "pl27"
+     ],
+     "term": "VNB margin"
+    },
+    {
+     "t": "AUM ₹4,09,673 cr (+14%); solvency 180%; 13th-month persistency slipped to 83% from 86%.",
+     "s": [
+      "pr27",
+      "call27",
+      "cafe27",
+      "kotak27"
+     ],
+     "term": "Persistency"
+    }
+   ]
+  },
+  "say": "HDFC Life's H1 FY27 profit rose 13% to ₹1,119 crore, and VNB grew 12% with the margin up to 24.7%, even after GST and cost pressures."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "LIC",
+   "SBI Life",
+   "ICICI Prudential Life",
+   "Max Life (Axis Max Life)",
+   "Bajaj Allianz Life",
+   "Tata AIA Life"
+  ],
+  "note": "Main life insurers it competes with for bank partners, agents and customers."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Distribution partners (banks, NBFCs, MFIs, brokers)",
+    "v": "500+"
+   },
+   {
+    "k": "Share of individual sales via banks (H1 FY27)",
+    "v": "About 58%"
+   },
+   {
+    "k": "Head office",
+    "v": "Mumbai"
+   }
+  ],
+  "local": "Roles span bank branches (bancassurance sales and relationship managers), HDFC Life's own agency branches, and head-office teams in Mumbai.",
+  "s": [
+   "pr26",
+   "pr27",
+   "call27"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "Spent ₹11.67 crore on CSR in FY 2025-26, mainly on healthcare (e.g. heart surgeries for children), education and livelihoods, city forests and solar projects, and support for armed forces families and athletes.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "HDFC Bank parent and its huge branch network for selling policies",
+    "s": [
+     "hdfcb",
+     "call27"
+    ]
+   },
+   {
+    "t": "Solid VNB margin (24.7%) and solvency (180%) in H1 FY27",
+    "s": [
+     "pr27",
+     "kotak27"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Heavy reliance on bank channels (about 58% of individual sales)",
+    "s": [
+     "pr27",
+     "call27"
+    ]
+   },
+   {
+    "t": "13th-month persistency fell to 83% from 86%",
+    "s": [
+     "pr27",
+     "cafe27"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Fast-growing term (protection) sales: retail protection +33% in H1 FY27",
+    "s": [
+     "pr27",
+     "kotak27"
+    ]
+   },
+   {
+    "t": "No GST on individual policies makes insurance cheaper for buyers",
+    "s": [
+     "gst",
+     "gst2"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "IRDAI's proposed commission and expense caps could change bank and broker sales",
+    "s": [
+     "irdai",
+     "irdai2",
+     "call27"
+    ]
+   },
+   {
+    "t": "Strong rivals: LIC, SBI Life, ICICI Prudential Life",
+    "s": [
+     "irdai",
+     "irdai2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For an insurer, interviewers prefer product mix (protection, savings, ULIP, annuity), channel mix and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. LIC and 25+ private life insurers compete for the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. IRDAI allows new players, but capital and trust take years to build."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Mutual funds, fixed deposits and pension schemes compete for savings money."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Customers can compare products online, but policies are complex."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium-high. Banks and big distributors can demand high commissions."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government goal of 'Insurance for All by 2047' and 100% FDI now allowed in insurance."
+   },
+   {
+    "k": "Economic",
+    "v": "Rising incomes and savings; interest rates affect guaranteed products."
+   },
+   {
+    "k": "Social",
+    "v": "Low insurance cover in India; more awareness after COVID."
+   },
+   {
+    "k": "Technological",
+    "v": "Online sales, e-KYC, AI underwriting and faster claims."
+   },
+   {
+    "k": "Legal",
+    "v": "IRDAI rules on commissions, surrender values and product design; GST removed on individual policies in 2025."
+   },
+   {
+    "k": "Environmental",
+    "v": "Climate risk and ESG investing are growing themes."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Term (protection), savings, ULIP, pension and annuity plans."
+   },
+   {
+    "k": "Price",
+    "v": "Premiums based on age, health and cover; set within IRDAI rules."
+   },
+   {
+    "k": "Place",
+    "v": "Agents, bank partners, brokers and online."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand trust, advisors' personal selling, digital campaigns."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more to existing bank and agency customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New term, health-linked and retirement products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Health insurance or other group businesses."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs and taxes. The company's final earnings.",
+  "Revenue": "Total money earned from the business in a period, before costs.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "Market share": "A company's sales as a % of the total sales of its industry.",
+  "Consolidated": "Figures for the company together with its subsidiaries. 'Standalone' means the parent company alone.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account or selling a product.",
+  "IRDAI": "Insurance Regulatory and Development Authority of India: the regulator of all insurance companies.",
+  "Premium": "The money a customer pays to buy an insurance policy.",
+  "Gross written premium": "Total premium collected in a period, from new and renewing policies.",
+  "New business premium": "Premium from policies sold for the first time in the period.",
+  "Renewal premium": "Premium paid by existing customers to keep their policies going.",
+  "APE": "Annualised Premium Equivalent: a standard measure of new sales. Regular premiums count fully, single premiums count 10%.",
+  "VNB": "Value of New Business: the expected future profit (today's value) from policies sold in the period. A key measure for life insurers.",
+  "VNB margin": "VNB as a % of APE. Shows how profitable new sales are.",
+  "Embedded value": "The value of a life insurer today: its net worth plus the present value of future profits from existing policies.",
+  "Persistency": "The % of customers who keep paying premiums after a set time (e.g. 13th month, 61st month). Higher is better.",
+  "Solvency ratio": "Available capital compared with the capital the regulator requires. IRDAI's minimum is 150% (1.5 times).",
+  "AUM": "Assets Under Management: the money the insurer invests on behalf of policyholders and shareholders.",
+  "Protection": "Pure risk cover such as term insurance: pays only if something happens, cheap premium, high profit margin.",
+  "ULIP": "Unit Linked Insurance Plan: part insurance, part market investment. Returns depend on markets.",
+  "Par / Non-par": "Participating (par) policies share profits through bonuses; non-participating (non-par) policies give fixed, guaranteed benefits.",
+  "Annuity": "A product that pays a regular income, usually after retirement, in return for a lump sum.",
+  "Bancassurance": "Selling insurance through a bank's branches and customers. A main channel for bank-backed insurers.",
+  "Agency": "Selling insurance through individual commission-based agents.",
+  "Surrender": "When a customer exits a policy early and gets back part of the money.",
+  "Claim settlement ratio": "The % of claims an insurer pays out of those it receives. Higher means more claims paid.",
+  "GST on insurance": "Tax charged on premiums. From 22 Sep 2025 the government removed GST on individual life and health policies.",
+  "Bima Sugam": "An IRDAI online marketplace planned to let customers buy, compare and service insurance in one place.",
+  "Input tax credit": "GST paid on a company's own costs (like commissions and rent) that it can normally deduct from GST it collects. With GST removed on life policies, insurers lost this credit.",
+  "Expense of management": "An insurer's total costs (commissions plus operating expenses) as a % of premium. IRDAI sets a limit.",
+  "Preferential issue": "Selling new shares directly to a chosen investor (here, the parent HDFC Bank) to raise capital.",
+  "Operating RoEV": "Operating return on embedded value: how fast the insurer's embedded value grows from its core business in a year."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports",
+    "Meeting IRDAI reporting deadlines",
+    "Investment and cost tracking"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an insurer's results (APE, VNB, solvency)",
+    "Basics of IRDAI rules"
+   ],
+   "tip": "Know APE, VNB margin, solvency ratio and persistency, and the company's latest numbers.",
+   "kv": [
+    {
+     "k": "Net profit H1 FY27",
+     "v": "₹1,119 cr (+13%)",
+     "term": "Net profit"
+    },
+    {
+     "k": "VNB margin",
+     "v": "24.7%",
+     "term": "VNB margin"
+    },
+    {
+     "k": "Solvency ratio",
+     "v": "180%",
+     "term": "Solvency ratio"
+    },
+    {
+     "k": "Embedded value",
+     "v": "₹66,461 cr",
+     "term": "Embedded value"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "Leads and conversion",
+    "Brand awareness",
+    "Campaign return"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing",
+    "Explaining products simply"
+   ],
+   "tip": "Insurance is 'sold, not bought'. Show ideas to build trust and explain term cover simply.",
+   "kv": [
+    {
+     "k": "APE H1 FY27",
+     "v": "₹8,245 cr (+11%)",
+     "term": "APE"
+    },
+    {
+     "k": "Retail protection",
+     "v": "+33%",
+     "term": "Protection"
+    },
+    {
+     "k": "Top product",
+     "v": "ULIP (45%)",
+     "term": "ULIP"
+    },
+    {
+     "k": "Bank channel",
+     "v": "About 58%",
+     "term": "Bancassurance"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Agent and staff attrition",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Agent onboarding",
+    "HR analytics in Excel"
+   ],
+   "tip": "Insurers hire and train huge sales forces. Ideas to cut early attrition of advisors will impress.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹4,09,673 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Vibha Padalkar"
+    },
+    {
+     "k": "Chairman",
+     "v": "Keki Mistry"
+    },
+    {
+     "k": "Parent",
+     "v": "HDFC Bank"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "New premium sold",
+    "Persistency of policies sold",
+    "Number of active advisors or partners"
+   ],
+   "skills": [
+    "Need-based selling",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a term plan' or 'Convince a 25-year-old to start a pension plan'.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹4,09,673 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Vibha Padalkar"
+    },
+    {
+     "k": "Chairman",
+     "v": "Keki Mistry"
+    },
+    {
+     "k": "Parent",
+     "v": "HDFC Bank"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Policy issuance time",
+    "Claim settlement time",
+    "Error-free processing"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and underwriting basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand underwriting, claims and how digital tools speed up policy issuance.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹4,09,673 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Vibha Padalkar"
+    },
+    {
+     "k": "Chairman",
+     "v": "Keki Mistry"
+    },
+    {
+     "k": "Parent",
+     "v": "HDFC Bank"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Insurance basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹4,09,673 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Vibha Padalkar"
+    },
+    {
+     "k": "Chairman",
+     "v": "Keki Mistry"
+    },
+    {
+     "k": "Parent",
+     "v": "HDFC Bank"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "What is VNB margin and what was HDFC Life's latest figure?",
+     "a": "VNB is the value of future profits from policies sold in the period; VNB margin is VNB divided by APE. HDFC Life's was 24.7% in H1 FY27, up from 24.5%."
+    },
+    {
+     "q": "Why did HDFC Life's FY26 profit grow only 6%?",
+     "a": "GST was removed on individual policies from Sep 2025, so it lost input tax credit, and new labour codes added costs. Excluding these, the company says profit grew 16%."
+    },
+    {
+     "q": "What is a solvency ratio and why did HDFC Bank invest ₹1,000 crore?",
+     "a": "It compares available capital with what IRDAI requires (minimum 150%). It fell to 177% in Mar 2026, so the parent added capital; it was 180% in Sep 2026."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you get more young people to buy term insurance?",
+     "a": "Explain it simply as cheap family protection, use digital journeys and bank apps, show the GST saving, and use stories, not jargon."
+    },
+    {
+     "q": "HDFC Life sells most policies through banks. How can it grow other channels?",
+     "a": "Build its agency network in smaller towns, add new bank and NBFC partners (like the new J&K Bank tie-up) and grow online sales."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you reduce early attrition among new insurance advisors?",
+     "a": "Better selection, strong first-90-day training and mentoring, quick first earnings, digital sales tools and recognition."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a term plan.",
+     "a": "Ask about family and loans, show how a small yearly premium protects them, mention no GST on individual policies, and the company's claims track record."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can technology improve persistency?",
+     "a": "Auto-debit mandates, renewal reminders in local languages, easy online payment, and early calls to customers likely to stop paying."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What do IRDAI's 2026 commission proposals mean for HDFC Life?",
+     "a": "Lower commissions and expense caps could cut costs for customers but change bank and broker incentives; management expects agency to be least affected. The rules are still a consultation."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads HDFC Life?",
+     "a": "Vibha Padalkar is MD & CEO (since 2018, re-appointed from Sep 2026); Keki Mistry is Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, H1 FY27 profit up 13% with VNB margin at 24.7%, or IRDAI's Sep 2026 commission proposals that hit insurer shares."
+    },
+    {
+     "q": "Why HDFC Life?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "HDFC Life has protected Indian families for over 25 years and, with HDFC Bank as its parent, reaches customers across the country. It is growing term protection fast, kept margins steady through the GST change, and is investing in technology and new partners. I want to learn insurance at a company that combines a trusted brand with strong financial discipline, and contribute to [your role].",
+  "ask": [
+   "How is the company preparing for IRDAI's proposed commission and expense rules?",
+   "How will HDFC Life grow agency and other channels beyond HDFC Bank?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should insurance commissions be capped?",
+    "for": "Lower costs for customers and less mis-selling of high-commission products.",
+    "against": "Insurance is 'sold, not bought'; lower pay may reduce advisors and slow the spread of cover."
+   },
+   {
+    "t": "Should banks sell insurance to their customers?",
+    "for": "Banks have trust and reach, so more people get insured quickly.",
+    "against": "Risk of mis-selling and pushing products along with loans."
+   }
+  ],
+  "avoid": [
+   "Don't call it 'HDFC Standard Life' today; the name changed and Standard Life (abrdn) exited in 2023.",
+   "Don't mix H1 FY27 profit (₹1,119 cr) with Q2 FY27 profit (₹508 cr).",
+   "Don't say IRDAI's 2026 commission caps are final; they are still proposals."
+  ],
+  "night": [
+   "MD & CEO: Vibha Padalkar · Chairman: Keki Mistry",
+   "Founded 2000 · listed Nov 2017 · HQ Mumbai · parent HDFC Bank",
+   "FY26 profit: ₹1,910 cr (+6%)",
+   "Q2 FY27 profit: ₹508 cr · H1: ₹1,119 cr (+13%)",
+   "VNB margin 24.7% · solvency 180% (Sep 2026)",
+   "Rivals: LIC, SBI Life, ICICI Pru Life, Axis Max Life",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is HDFC Life's MD & CEO?",
+   "o": [
+    "Keki Mistry",
+    "Amitabh Chaudhry",
+    "Vibha Padalkar"
+   ],
+   "a": 2
+  },
+  {
+   "q": "Who is HDFC Life's parent (promoter) today?",
+   "o": [
+    "HDFC Bank",
+    "abrdn",
+    "LIC"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which insurer merged into HDFC Life in 2022?",
+   "o": [
+    "Max Life",
+    "Exide Life",
+    "Aegon Life"
+   ],
+   "a": 1
+  },
+  {
+   "q": "HDFC Life's VNB margin in H1 FY27 was about:",
+   "o": [
+    "15%",
+    "24.7%",
+    "35%"
+   ],
+   "a": 1
+  },
+  {
+   "q": "IRDAI's minimum solvency ratio is:",
+   "o": [
+    "100%",
+    "150%",
+    "200%"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "19 Nov 2026"
+}

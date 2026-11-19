@@ -1,5 +1,5 @@
 {
- "updated": "18 Nov 2026",
+ "updated": "19 Nov 2026",
  "companies": [
   {
    "id": "hdfc-bank",
@@ -353,6 +353,103 @@
     "mmfsl",
     "m&mfin",
     "maxi motors financial services"
+   ]
+  },
+  {
+   "id": "paytm",
+   "name": "Paytm",
+   "sector": "Fintech · Noida",
+   "color": "#00BAF2",
+   "short": "PT",
+   "aliases": [
+    "paytm",
+    "one 97",
+    "one97",
+    "one 97 communications",
+    "one97 communications",
+    "vijay shekhar sharma",
+    "ppsl",
+    "paytm payments services"
+   ]
+  },
+  {
+   "id": "phonepe",
+   "name": "PhonePe",
+   "sector": "Fintech · Bengaluru",
+   "color": "#5F259F",
+   "short": "PP",
+   "aliases": [
+    "phonepe",
+    "phone pe",
+    "phonepe ltd",
+    "phonepe limited",
+    "phonepe invest",
+    "share.market",
+    "indus appstore",
+    "phonepe appstore",
+    "pincode"
+   ]
+  },
+  {
+   "id": "lic",
+   "name": "Life Insurance Corporation of India (LIC)",
+   "sector": "Life insurance · Mumbai",
+   "color": "#1C4F9C",
+   "short": "LIC",
+   "aliases": [
+    "lic",
+    "life insurance corporation",
+    "life insurance corporation of india",
+    "lici",
+    "lic india",
+    "lic of india"
+   ]
+  },
+  {
+   "id": "sbi-life",
+   "name": "SBI Life Insurance",
+   "sector": "Life insurance · Mumbai",
+   "color": "#2B3990",
+   "short": "SL",
+   "aliases": [
+    "sbi life",
+    "sbi life insurance",
+    "sbilife",
+    "sbi life insurance company",
+    "state bank life insurance"
+   ]
+  },
+  {
+   "id": "hdfc-life",
+   "name": "HDFC Life",
+   "sector": "Life insurance · Mumbai",
+   "color": "#004C8F",
+   "short": "HL",
+   "aliases": [
+    "hdfc life",
+    "hdfc life insurance",
+    "hdfclife",
+    "hdfc standard life",
+    "hdfc standard life insurance",
+    "exide life"
+   ]
+  },
+  {
+   "id": "icici-pru-life",
+   "name": "ICICI Life Insurance",
+   "sector": "Life insurance · Mumbai",
+   "color": "#AE282E",
+   "short": "IL",
+   "aliases": [
+    "icici life",
+    "icici life insurance",
+    "icici prudential life",
+    "icici pru life",
+    "icici prudential",
+    "iciciprulife",
+    "icicipruli",
+    "icicilife",
+    "icici pru"
    ]
   }
  ]

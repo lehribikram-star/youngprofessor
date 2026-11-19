@@ -1,0 +1,1121 @@
+{
+ "id": "sbi-life",
+ "name": "SBI Life Insurance",
+ "short": "SL",
+ "color": "#2B3990",
+ "line": "State Bank of India's Mumbai life insurer that sells term, savings, ULIP and pension plans, mostly through SBI branches",
+ "sector": "Life insurance",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: SBILIFE · BSE: 540719",
+ "website": "https://www.sbilife.co.in",
+ "news_query": "SBI Life Insurance",
+ "src": {
+  "h1pr": {
+   "label": "H1 FY27 business press release, period ended 30 Sep 2026 (SBI Life via PR Newswire / UNI)",
+   "url": "https://www.uniindia.com/prnewswire/sbi-life-insurance-registers-new-business-premium-of-20259-crores-for-the-period-ended-on-30th-septe/228108"
+  },
+  "h1nse": {
+   "label": "Board meeting outcome and Q2/H1 FY27 results, 27 Oct 2026 (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/SBILIFE_27102026185210_SEBM27102026_signed.pdf"
+  },
+  "h1kotak": {
+   "label": "H1 FY27: profit up 17% to ₹1,270 cr, premium up 13% (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/sbi-life-insurance-h1-fy27-results-share-price-in-focus/"
+  },
+  "q2nb": {
+   "label": "Q2 FY27 net profit up 11.05% (NewsBytes)",
+   "url": "https://www.newsbytesapp.com/news/business/sbi-life-q2-fy27-net-profit-up-1105-premiums-2687770cr/tldr"
+  },
+  "q2ca": {
+   "label": "Q2 FY27 results analysis (CompoundingAI)",
+   "url": "https://compoundingai.in/market-news/sbilife-q2-fy27-results-analysis"
+  },
+  "q2call": {
+   "label": "Q2 FY27 earnings call: channel and product mix (CompoundingAI)",
+   "url": "https://compoundingai.in/market-news/sbilife-q2-fy27-earnings-call"
+  },
+  "q2iw": {
+   "label": "Q2 FY27: gross written premium up 13% (Investywise)",
+   "url": "https://www.investywise.com/sbi-life-q2-fy27-earnings-conference-call-transcript/"
+  },
+  "fy26pr": {
+   "label": "FY26 business press release: NBP ₹42,551 cr (SBI Life via PR Newswire)",
+   "url": "https://www.prnewswire.com/in/news-releases/sbi-life-insurance-registers-new-business-premium-of-42-551-crores-for-the-year-ended-on-31st-march-2026--302751447.html"
+  },
+  "fy26pti": {
+   "label": "Q4 profit ₹805 cr; FY26 profit ₹2,470 cr (PTI via The Week)",
+   "url": "https://www.theweek.in/wire-updates/business/2026/04/22/sbi-life-insurance-q4-profit-declines-marginally-to-rs-805-cr.html"
+  },
+  "fy26ao": {
+   "label": "FY26 results: APE ₹242.7 bn, AUM ₹4.9 tn, PAT ₹24.7 bn (Angel One)",
+   "url": "https://www.angelone.in/news/stocks/sbi-life-insurance-company-fy26-results-ape-at-rs-242-7-bn-aum-near-rs-4-9-tn-pat-at-rs-24-7-bn"
+  },
+  "fy26wb": {
+   "label": "SBI Life crosses ₹1 trillion GWP in FY26 (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/insurance/SBI-Life-Surpasses-indian-rupee1-Trillion-in-GWP-for-FY26-Profit-Up-2percent/69f0e4c135c37de4af37dcd3"
+  },
+  "board": {
+   "label": "Corporate governance filing, board list, Mar 2026 (NSE, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_151298_17042026220202_iXBRL_WEB.html"
+  },
+  "chair": {
+   "label": "SBI Life appoints Challa Sreenivasulu Setty as Chairman (Stockopedia / Reuters brief)",
+   "url": "https://www.stockopedia.com/share-prices/sbi-life-insurance-BOM:540719/news/brief-sbi-life-insurance-company-appoints-challa-sreenivasulu-setty-as-chairman-and-nominee-director-019e6db9-9d3c-702c-a7d7-386dc34af25a/"
+  },
+  "sbich": {
+   "label": "Government appoints CS Setty as SBI Chairman (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/news/government-appoints-cs-setty-as-sbi-chairman-replacing-dinesh-khara"
+  },
+  "ceo": {
+   "label": "SBI Life hits 52-week high as IRDAI approves Amit Jhingran as MD & CEO (IIFL)",
+   "url": "https://www.indiainfoline.com/news/markets/sbi-life-hits-52-week-high-as-irdai-approves-appointment-of-amit-jhingran-as-md-ceo"
+  },
+  "ceo2": {
+   "label": "IRDAI approves Amit Jhingran as MD & CEO (Adda247)",
+   "url": "https://currentaffairs.adda247.com/sbi-lifes-appointment-of-amit-jhingran-as-md-ceo-receives-irdai-approval/amp/"
+  },
+  "reapp": {
+   "label": "Q1 FY26 results; board re-appoints Amit Jhingran as MD & CEO (Business Standard)",
+   "url": "https://www.business-standard.com/companies/quarterly-results/sbi-life-insurance-q1-results-profit-up-14-to-590-cr-on-premium-growth-125072401353_1.html"
+  },
+  "reapp2": {
+   "label": "SBI Life re-appoints CEO, term to 31 Jan 2027 (ScanX)",
+   "url": "https://scanx.trade/stock-market-news/earnings/sbi-life-reports-robust-q1-performance-with-14-pat-growth-reappoints-ceo/14900341"
+  },
+  "dep": {
+   "label": "Deputy CEO Dorababu Daparti moves to SBI group role (Whalesbook)",
+   "url": "https://www.whalesbook.com/corporate-news/English/insurance/SBI-Life-Deputy-CEO-Daparti-Moves-to-SBI-Group-Leadership-Role/6a0b40cfcfe07c0307eaff82"
+  },
+  "dep2": {
+   "label": "Deputy CEO Dorababu Daparti relinquishes charge (Investywise)",
+   "url": "https://www.investywise.com/sbi-life-insurance-leadership-change-announcement/"
+  },
+  "wiki": {
+   "label": "Wikipedia (with citations)",
+   "url": "https://en.wikipedia.org/wiki/SBI_Life_Insurance_Company"
+  },
+  "ipo": {
+   "label": "Success of the SBI Life IPO, Oct 2017 (BNP Paribas, official)",
+   "url": "https://group.bnpparibas/en/press-release/success-sbi-life-ipo"
+  },
+  "ipo2": {
+   "label": "SBI Life makes a tepid debut (Business Standard)",
+   "url": "https://www.business-standard.com/article/news-cm/sbi-life-makes-a-tepid-debut-117100300659_1.html"
+  },
+  "bnp": {
+   "label": "BNP Paribas Cardif offloads 5% in SBI Life, holding falls to 0.2% (Business Standard)",
+   "url": "https://www.business-standard.com/amp/article/companies/bnp-paribas-cardif-offloads-5-in-sbi-life-via-open-market-sale-121031201461_1.html"
+  },
+  "bnp2": {
+   "label": "BNP Paribas Cardif offloads 5% stake in SBI Life (DT Next / PTI)",
+   "url": "https://www.dtnext.in/news/business/bnp-paribas-cardif-offloads-5-pc-stake-in-sbi-life-via-open-market-sale"
+  },
+  "sh": {
+   "label": "Shareholding pattern, Sep 2026 (Upstox)",
+   "url": "https://upstox.com/stocks/sbi-life-insurance-co-ltd-shareholding/"
+  },
+  "sh2": {
+   "label": "Shareholding pattern (Choice India)",
+   "url": "https://choiceindia.com/stocks/sbi-life-insurance-company-ltd-shareholding-pattern"
+  },
+  "jk": {
+   "label": "SBI Life and J&K Bank partner, Aug 2026 (The Tribune)",
+   "url": "https://www.tribuneindia.com/news/business/sbi-life-and-jk-bank-partner-to-bring-comprehensive-life-insurance-solutions-closer-to-families-across-india/"
+  },
+  "csr": {
+   "label": "SBI Life: enhancing lives through CSR (India CSR)",
+   "url": "https://indiacsr.in/sbi-life-insurance-enhancing-lives-through-corporate-social-responsibility-csr"
+  },
+  "dr": {
+   "label": "Directors' report FY25, CSR and employees (IIFL)",
+   "url": "https://www.indiainfoline.com/company/sbi-life-insurance-company-ltd/reports/directors-report"
+  }
+ },
+ "tiles": [
+  {
+   "v": 2470,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 (+2%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 527120,
+   "fmt": "cr",
+   "label": "Assets under management",
+   "sub": "Sep 2026 · +9%",
+   "term": "AUM"
+  },
+  {
+   "v": 3274,
+   "fmt": "cr",
+   "label": "Value of new business",
+   "sub": "H1 FY27 (Apr–Sep 2026) · +19%",
+   "term": "VNB"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹549 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · +11%"
+  },
+  {
+   "v": "₹11,746 cr",
+   "k": "APE",
+   "s": "H1 FY27 · +18%"
+  },
+  {
+   "v": "27.9%",
+   "k": "VNB margin",
+   "s": "H1 FY27"
+  },
+  {
+   "v": "1.97",
+   "k": "Solvency ratio",
+   "s": "Sep 2026 (minimum 1.5)"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Started in 2001 as a joint venture of State Bank of India and France's BNP Paribas Cardif; listed on NSE and BSE in October 2017. SBI is the promoter with about 55% of the shares; BNP Paribas Cardif cut its stake to 0.2% in 2021.",
+   "s": [
+    "ipo",
+    "ipo2",
+    "wiki",
+    "bnp",
+    "bnp2",
+    "sh",
+    "sh2"
+   ]
+  },
+  {
+   "t": "Sells term (protection), savings, ULIP, pension and annuity plans. SBI's branches (bancassurance) bring in about 53% of new business (APE); agents and other partners bring the rest.",
+   "s": [
+    "q2call",
+    "q2iw",
+    "fy26pr"
+   ]
+  },
+  {
+   "t": "Amit Jhingran, a career SBI banker, has been MD & CEO since 2023; the board re-appointed him for a term up to 31 Jan 2027. SBI Chairman Challa Sreenivasulu Setty is the Chairman.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "reapp",
+    "reapp2",
+    "board",
+    "chair"
+   ]
+  },
+  {
+   "t": "FY 2025-26: gross written premium crossed ₹1 lakh crore (₹1,01,290 cr, +19%), but net profit grew only 2% to ₹2,470 crore. VNB margin was 27.5%.",
+   "s": [
+    "fy26pr",
+    "fy26pti",
+    "fy26ao",
+    "fy26wb"
+   ]
+  },
+  {
+   "t": "H1 FY27 (Apr–Sep 2026): profit ₹1,274 crore (+17%), APE ₹11,746 crore (+18%), VNB margin 27.9%. The removal of GST on policies cut H1 profit by about ₹530 crore.",
+   "s": [
+    "h1pr",
+    "h1nse",
+    "h1kotak",
+    "q2call",
+    "q2iw"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2001",
+   "t": "Began as a joint venture of State Bank of India and BNP Paribas Cardif.",
+   "s": [
+    "ipo",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Oct 2017",
+   "t": "IPO: shares listed on NSE and BSE.",
+   "s": [
+    "ipo",
+    "ipo2"
+   ]
+  },
+  {
+   "y": "Mar 2021",
+   "t": "BNP Paribas Cardif sold most of its remaining stake, keeping 0.2%.",
+   "s": [
+    "bnp",
+    "bnp2"
+   ]
+  },
+  {
+   "y": "Aug 2023",
+   "t": "IRDAI approved Amit Jhingran as MD & CEO.",
+   "s": [
+    "ceo",
+    "ceo2"
+   ]
+  },
+  {
+   "y": "Mar 2026",
+   "t": "Gross written premium crossed ₹1 lakh crore for FY 2025-26.",
+   "s": [
+    "fy26ao",
+    "fy26wb"
+   ]
+  },
+  {
+   "y": "Aug 2026",
+   "t": "Tie-up with J&K Bank to sell SBI Life plans through its branches.",
+   "s": [
+    "jk",
+    "q2call"
+   ]
+  }
+ ],
+ "model": {
+  "how": "SBI Life collects premiums from customers, mostly through SBI branches and its own agents, and invests the money (₹5.27 lakh crore AUM) in government bonds, corporate debt and shares. It pays claims, maturity and surrender amounts, and earns a profit over the life of each policy. Term (protection) and guaranteed (non-par) plans earn the highest margins; ULIPs are the biggest product.",
+  "flow": [
+   "Sells policies via SBI branches, agents, brokers and online",
+   "Collects first-year and renewal premiums",
+   "Invests in bonds and shares (AUM ₹5.27 lakh cr)",
+   "Pays claims and maturities; keeps the margin over many years"
+  ],
+  "facts": [
+   {
+    "k": "Bancassurance share of APE (H1 FY27)",
+    "v": "About 53%",
+    "term": "Bancassurance",
+    "s": [
+     "q2call",
+     "q2iw"
+    ]
+   },
+   {
+    "k": "ULIP share of product mix (H1 FY27)",
+    "v": "About 62%",
+    "term": "ULIP",
+    "s": [
+     "q2call",
+     "q2iw"
+    ]
+   },
+   {
+    "k": "13th / 61st month persistency (Q2 FY27, premium basis)",
+    "v": "85.8% / 58.0%",
+    "term": "Persistency",
+    "s": [
+     "h1nse",
+     "q2ca"
+    ]
+   },
+   {
+    "k": "Offices (Sep 2026)",
+    "v": "1,244",
+    "s": [
+     "h1pr",
+     "q2iw"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Insurance Regulatory and Development Authority of India (IRDAI)",
+  "points": [
+   "GST on individual life policies was removed from 22 Sep 2025. Customers pay less, but insurers lost tax credits, which cut SBI Life's H1 FY27 profit by about ₹530 crore.",
+   "Bank-backed insurers (SBI Life, HDFC Life, ICICI Prudential Life) depend heavily on their parent bank's branches; IRDAI is now reviewing distribution costs and commissions.",
+   "Big theme for interviews: growing high-margin protection and non-par plans when customers prefer market-linked ULIPs."
+  ],
+  "s": [
+   "q2call",
+   "q2iw",
+   "h1kotak"
+  ]
+ },
+ "people": [
+  {
+   "ini": "AJ",
+   "name": "Amit Jhingran",
+   "role": "Managing Director & CEO",
+   "since": "since 2023",
+   "note": "Career State Bank of India officer who joined SBI in 1991. Board re-appointed him for a term up to 31 Jan 2027.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "reapp",
+    "reapp2",
+    "board"
+   ]
+  },
+  {
+   "ini": "CS",
+   "name": "Challa Sreenivasulu Setty",
+   "role": "Chairman (Nominee Director of SBI)",
+   "since": "",
+   "note": "Chairman of State Bank of India since Aug 2024.",
+   "s": [
+    "board",
+    "chair",
+    "sbich"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Deputy CEO Dorababu Daparti relinquished charge on 18 May 2026 to become MD & CEO (Designate) of SBI-SG Global Securities Services, an SBI group company.",
+   "s": [
+    "dep",
+    "dep2"
+   ]
+  },
+  {
+   "t": "Amit Jhingran's current term as MD & CEO runs to 31 Jan 2027, so watch for news on his successor or extension.",
+   "s": [
+    "reapp",
+    "reapp2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026)",
+  "rows": [
+   {
+    "k": "Net profit",
+    "v": "₹2,470 cr (+2%)",
+    "term": "Net profit",
+    "s": [
+     "fy26pr",
+     "fy26pti",
+     "fy26ao"
+    ]
+   },
+   {
+    "k": "Gross written premium",
+    "v": "₹1,01,290 cr (+19%)",
+    "term": "Gross written premium",
+    "s": [
+     "fy26ao",
+     "fy26wb"
+    ]
+   },
+   {
+    "k": "New business premium",
+    "v": "₹42,551 cr",
+    "term": "New business premium",
+    "s": [
+     "fy26pr",
+     "fy26ao"
+    ]
+   },
+   {
+    "k": "Annualised premium equivalent",
+    "v": "₹24,266 cr (+13%)",
+    "term": "APE",
+    "s": [
+     "fy26pr",
+     "fy26ao"
+    ]
+   },
+   {
+    "k": "Value of new business",
+    "v": "₹6,667 cr (+12%)",
+    "term": "VNB",
+    "s": [
+     "fy26pr",
+     "fy26pti",
+     "fy26ao"
+    ]
+   },
+   {
+    "k": "VNB margin",
+    "v": "27.5%",
+    "term": "VNB margin",
+    "s": [
+     "fy26pr",
+     "fy26ao",
+     "fy26wb"
+    ]
+   },
+   {
+    "k": "Assets under management",
+    "v": "₹4,87,163 cr (+9%)",
+    "term": "AUM",
+    "s": [
+     "fy26pr",
+     "fy26pti",
+     "fy26ao"
+    ]
+   },
+   {
+    "k": "Solvency ratio (minimum 1.5)",
+    "v": "1.90",
+    "term": "Solvency ratio",
+    "s": [
+     "fy26pr",
+     "fy26pti",
+     "fy26wb"
+    ]
+   },
+   {
+    "k": "Indian embedded value",
+    "v": "₹80,791 cr (+15%)",
+    "term": "Embedded value",
+    "s": [
+     "fy26pr",
+     "fy26ao"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest results: Q2 / H1 FY27 (to 30 Sep 2026)",
+   "points": [
+    {
+     "t": "Q2 (Jul–Sep 2026) net profit ₹549 cr, up 11%; H1 profit ₹1,274 cr, up 17%. Without the GST impact, H1 profit would have been far higher.",
+     "s": [
+      "h1nse",
+      "q2nb",
+      "q2ca",
+      "h1pr",
+      "q2call"
+     ],
+     "term": "Net profit"
+    },
+    {
+     "t": "H1 APE ₹11,746 cr (+18%); VNB ₹3,274 cr (+19%) at a 27.9% margin; protection new business premium ₹3,235 cr (+46%).",
+     "s": [
+      "h1pr",
+      "h1kotak",
+      "q2call"
+     ],
+     "term": "VNB margin"
+    },
+    {
+     "t": "H1 gross written premium about ₹48,400 cr (+13%); AUM ₹5,27,120 cr (+9%); solvency 1.97.",
+     "s": [
+      "h1pr",
+      "h1nse",
+      "h1kotak",
+      "q2iw"
+     ],
+     "term": "Gross written premium"
+    }
+   ]
+  },
+  "say": "SBI Life grew APE 18% and VNB 19% in H1 FY27 at a 27.9% margin, and profit rose 17% to ₹1,274 crore despite the GST change."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "LIC",
+   "HDFC Life",
+   "ICICI Prudential Life",
+   "Axis Max Life",
+   "Bajaj Life",
+   "Tata AIA Life"
+  ],
+  "note": "LIC is the state-owned giant; HDFC Life and ICICI Prudential Life are the closest bank-backed private rivals."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Offices across India (Sep 2026)",
+    "v": "1,244"
+   },
+   {
+    "k": "Trained insurance professionals (agents, bank staff, partners)",
+    "v": "3,94,574"
+   },
+   {
+    "k": "Main bank partner",
+    "v": "State Bank of India"
+   },
+   {
+    "k": "New bank partner, Aug 2026",
+    "v": "J&K Bank"
+   },
+   {
+    "k": "Head office",
+    "v": "Mumbai"
+   }
+  ],
+  "local": "Many roles sit close to SBI branches across India: bancassurance relationship managers support bank staff, while agency managers recruit and train agents in towns and cities.",
+  "s": [
+   "h1pr",
+   "q2call",
+   "jk",
+   "board"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "CSR focuses on education for under-privileged children, preventive healthcare and rural development; one flagship project, for children and young adults from leprosy-affected families, won an India CSR Leadership Award in 2024.",
+  "s": [
+   "csr",
+   "dr"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Access to SBI's huge branch network; bancassurance gives about 53% of APE",
+    "s": [
+     "q2call",
+     "q2iw"
+    ]
+   },
+   {
+    "t": "Strong growth with steady margins: H1 FY27 VNB +19% at 27.9% margin",
+    "s": [
+     "h1pr",
+     "h1kotak"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Heavy dependence on one bank partner (SBI)",
+    "s": [
+     "q2call",
+     "q2iw"
+    ]
+   },
+   {
+    "t": "Profit growth was slow in FY26 (+2%); GST change hit H1 FY27 profit",
+    "s": [
+     "fy26pti",
+     "fy26pr",
+     "q2call"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Protection is growing fast (protection NBP +46% in H1 FY27)",
+    "s": [
+     "h1pr",
+     "q2call"
+    ]
+   },
+   {
+    "t": "New bank partners (J&K Bank) and fast-growing 'other' channels",
+    "s": [
+     "jk",
+     "q2call"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "IRDAI review of distribution costs and commissions",
+    "s": [
+     "q2call",
+     "q2iw"
+    ]
+   },
+   {
+    "t": "ULIP-heavy mix (about 62%) depends on stock market mood",
+    "s": [
+     "q2call",
+     "q2iw"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For an insurer, interviewers prefer product mix (protection, savings, ULIP, annuity), channel mix and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. LIC and 25+ private life insurers compete for the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. IRDAI allows new players, but capital and trust take years to build."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Mutual funds, fixed deposits and pension schemes compete for savings money."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Customers can compare products online, but policies are complex."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium-high. Banks and big distributors can demand high commissions."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government goal of 'Insurance for All by 2047' and 100% FDI now allowed in insurance."
+   },
+   {
+    "k": "Economic",
+    "v": "Rising incomes and savings; interest rates affect guaranteed products."
+   },
+   {
+    "k": "Social",
+    "v": "Low insurance cover in India; more awareness after COVID."
+   },
+   {
+    "k": "Technological",
+    "v": "Online sales, e-KYC, AI underwriting and faster claims."
+   },
+   {
+    "k": "Legal",
+    "v": "IRDAI rules on commissions, surrender values and product design; GST removed on individual policies in 2025."
+   },
+   {
+    "k": "Environmental",
+    "v": "Climate risk and ESG investing are growing themes."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Term (protection), savings, ULIP, pension and annuity plans."
+   },
+   {
+    "k": "Price",
+    "v": "Premiums based on age, health and cover; set within IRDAI rules."
+   },
+   {
+    "k": "Place",
+    "v": "Agents, bank partners, brokers and online."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand trust, advisors' personal selling, digital campaigns."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more to existing bank and agency customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New term, health-linked and retirement products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Health insurance or other group businesses."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs and taxes. The company's final earnings.",
+  "Revenue": "Total money earned from the business in a period, before costs.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "Market share": "A company's sales as a % of the total sales of its industry.",
+  "Consolidated": "Figures for the company together with its subsidiaries. 'Standalone' means the parent company alone.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account or selling a product.",
+  "IRDAI": "Insurance Regulatory and Development Authority of India: the regulator of all insurance companies.",
+  "Premium": "The money a customer pays to buy an insurance policy.",
+  "Gross written premium": "Total premium collected in a period, from new and renewing policies.",
+  "New business premium": "Premium from policies sold for the first time in the period.",
+  "Renewal premium": "Premium paid by existing customers to keep their policies going.",
+  "APE": "Annualised Premium Equivalent: a standard measure of new sales. Regular premiums count fully, single premiums count 10%.",
+  "VNB": "Value of New Business: the expected future profit (today's value) from policies sold in the period. A key measure for life insurers.",
+  "VNB margin": "VNB as a % of APE. Shows how profitable new sales are.",
+  "Embedded value": "The value of a life insurer today: its net worth plus the present value of future profits from existing policies.",
+  "Persistency": "The % of customers who keep paying premiums after a set time (e.g. 13th month, 61st month). Higher is better.",
+  "Solvency ratio": "Available capital compared with the capital the regulator requires. IRDAI's minimum is 150% (1.5 times).",
+  "AUM": "Assets Under Management: the money the insurer invests on behalf of policyholders and shareholders.",
+  "Protection": "Pure risk cover such as term insurance: pays only if something happens, cheap premium, high profit margin.",
+  "ULIP": "Unit Linked Insurance Plan: part insurance, part market investment. Returns depend on markets.",
+  "Par / Non-par": "Participating (par) policies share profits through bonuses; non-participating (non-par) policies give fixed, guaranteed benefits.",
+  "Annuity": "A product that pays a regular income, usually after retirement, in return for a lump sum.",
+  "Bancassurance": "Selling insurance through a bank's branches and customers. A main channel for bank-backed insurers.",
+  "Agency": "Selling insurance through individual commission-based agents.",
+  "Surrender": "When a customer exits a policy early and gets back part of the money.",
+  "Claim settlement ratio": "The % of claims an insurer pays out of those it receives. Higher means more claims paid.",
+  "GST on insurance": "Tax charged on premiums. From 22 Sep 2025 the government removed GST on individual life and health policies.",
+  "Bima Sugam": "An IRDAI online marketplace planned to let customers buy, compare and service insurance in one place.",
+  "Indian embedded value": "SBI Life's reported embedded value, calculated under Indian Embedded Value principles and checked by an outside actuary.",
+  "Individual rated premium": "New individual premium where single premiums count only 10%. Used to compare market share among life insurers.",
+  "Promoter": "The main owner that controls a listed company. SBI is SBI Life's promoter with about 55% of shares.",
+  "Ind AS": "Indian accounting standards based on global IFRS. IRDAI let insurers delay adopting them by one year.",
+  "Joint venture": "A company set up and owned together by two partners, here SBI and BNP Paribas Cardif."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports",
+    "Meeting IRDAI reporting deadlines",
+    "Investment and cost tracking"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an insurer's results (APE, VNB, solvency)",
+    "Basics of IRDAI rules"
+   ],
+   "tip": "Know APE, VNB margin, solvency ratio and persistency, and the company's latest numbers.",
+   "kv": [
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹549 cr (+11%)",
+     "term": "Net profit"
+    },
+    {
+     "k": "VNB margin H1 FY27",
+     "v": "27.9%",
+     "term": "VNB margin"
+    },
+    {
+     "k": "Solvency ratio",
+     "v": "1.97",
+     "term": "Solvency ratio"
+    },
+    {
+     "k": "AUM",
+     "v": "₹5,27,120 cr",
+     "term": "AUM"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "Leads and conversion",
+    "Brand awareness",
+    "Campaign return"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing",
+    "Explaining products simply"
+   ],
+   "tip": "Insurance is 'sold, not bought'. Show ideas to build trust and explain term cover simply.",
+   "kv": [
+    {
+     "k": "APE H1 FY27",
+     "v": "₹11,746 cr (+18%)",
+     "term": "APE"
+    },
+    {
+     "k": "Bancassurance share",
+     "v": "About 53%",
+     "term": "Bancassurance"
+    },
+    {
+     "k": "Protection NBP H1",
+     "v": "₹3,235 cr (+46%)",
+     "term": "Protection"
+    },
+    {
+     "k": "New bank partner",
+     "v": "J&K Bank (Aug 2026)"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Agent and staff attrition",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Agent onboarding",
+    "HR analytics in Excel"
+   ],
+   "tip": "Insurers hire and train huge sales forces. Ideas to cut early attrition of advisors will impress.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5,27,120 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Amit Jhingran"
+    },
+    {
+     "k": "Chairman",
+     "v": "C S Setty"
+    },
+    {
+     "k": "Promoter",
+     "v": "State Bank of India",
+     "term": "Promoter"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "New premium sold",
+    "Persistency of policies sold",
+    "Number of active advisors or partners"
+   ],
+   "skills": [
+    "Need-based selling",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a term plan' or 'Convince a 25-year-old to start a pension plan'.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5,27,120 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Amit Jhingran"
+    },
+    {
+     "k": "Chairman",
+     "v": "C S Setty"
+    },
+    {
+     "k": "Promoter",
+     "v": "State Bank of India",
+     "term": "Promoter"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Policy issuance time",
+    "Claim settlement time",
+    "Error-free processing"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and underwriting basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand underwriting, claims and how digital tools speed up policy issuance.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5,27,120 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Amit Jhingran"
+    },
+    {
+     "k": "Chairman",
+     "v": "C S Setty"
+    },
+    {
+     "k": "Promoter",
+     "v": "State Bank of India",
+     "term": "Promoter"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Insurance basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "AUM",
+     "v": "₹5,27,120 cr (Sep 2026)",
+     "term": "AUM"
+    },
+    {
+     "k": "MD & CEO",
+     "v": "Amit Jhingran"
+    },
+    {
+     "k": "Chairman",
+     "v": "C S Setty"
+    },
+    {
+     "k": "Promoter",
+     "v": "State Bank of India",
+     "term": "Promoter"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "SBI Life's APE grew 18% in H1 FY27 but profit grew 17%. Why does profit lag new sales in life insurance?",
+     "a": "A life insurer books most of the cost of a new policy (commission, setting up) in year one, while profit comes over many years. VNB, ₹3,274 crore (+19%), is the better measure of the value of new sales."
+    },
+    {
+     "q": "What is a solvency ratio and what is SBI Life's?",
+     "a": "Capital available compared with what IRDAI requires; the minimum is 1.5. SBI Life's was 1.97 in Sep 2026."
+    },
+    {
+     "q": "How did the GST change affect SBI Life?",
+     "a": "GST on individual policies was removed from Sep 2025. Customers pay less, but the insurer lost input tax credits on its costs, which cut H1 FY27 profit by about ₹530 crore."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you get more young people to buy term insurance from SBI Life?",
+     "a": "Use SBI's app and branch data to target first-time earners, explain cover in simple language and rupee terms, and use digital campaigns and quick online buying."
+    },
+    {
+     "q": "Why does SBI Life push protection and non-par plans when ULIPs sell more?",
+     "a": "Protection and guaranteed plans have higher margins and do not depend on stock markets; protection NBP grew 46% in H1 FY27."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you reduce early attrition of new insurance agents?",
+     "a": "Better selection, a mentor for the first 6 months, small early wins with warm leads, regular training and quick commission payouts."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a term plan.",
+     "a": "Ask about my family and loans, show how much cover I need, compare the yearly premium to a small monthly cost, and stress that claims are paid (SBI Life's death claim settlement ratio was 99.1% in H1 FY27)."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "Why does persistency matter, and how can operations improve it?",
+     "a": "Insurers earn over many years, so lapsed policies lose future profit. Auto-debit, reminders, easy online payment and good service raise persistency. SBI Life's 13th month persistency was 85.8% in Q2 FY27 (premium basis)."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What is bancassurance and why is it important for SBI Life?",
+     "a": "Selling insurance through bank branches. SBI's branches give SBI Life about 53% of its new business (APE)."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads SBI Life?",
+     "a": "Amit Jhingran is MD & CEO; SBI Chairman Challa Sreenivasulu Setty is Chairman."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, H1 FY27 VNB growth of 19% at a 27.9% margin, the GST impact on profit, or the new J&K Bank partnership."
+    },
+    {
+     "q": "Why SBI Life?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "SBI Life brings life insurance to families across India through State Bank of India's branches, its agents and new partners like J&K Bank. It has crossed ₹1 lakh crore in yearly premium and manages over ₹5 lakh crore of policyholders' money. It is growing new business fast while keeping margins strong, and is pushing protection so more families are properly covered. I want to contribute to [your role] in that mission.",
+  "ask": [
+   "How is SBI Life growing agency and other channels alongside SBI branches?",
+   "How will the IRDAI review of distribution costs change the way products are sold?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should banks be allowed to push their own group's insurance products to customers?",
+    "for": "It brings insurance to millions through trusted branches at low cost.",
+    "against": "Risk of mis-selling and less choice for customers."
+   },
+   {
+    "t": "Was removing GST on life insurance a good move?",
+    "for": "Lower premiums make cover more affordable and support 'Insurance for All by 2047'.",
+    "against": "Insurers lose tax credits, which can hurt profits or keep prices from falling fully."
+   }
+  ],
+  "avoid": [
+   "Don't say BNP Paribas Cardif is still a joint-venture partner; it cut its stake to 0.2% in 2021. SBI is the promoter.",
+   "Don't confuse Q2 profit (₹549 cr) with H1 profit (₹1,274 cr).",
+   "Don't judge a life insurer only on net profit; talk about APE, VNB margin, persistency and solvency."
+  ],
+  "night": [
+   "MD & CEO: Amit Jhingran · Chairman: C S Setty (SBI Chairman)",
+   "Started 2001 (SBI + BNP Paribas Cardif) · listed Oct 2017 · HQ Mumbai",
+   "FY26: GWP ₹1,01,290 cr · profit ₹2,470 cr · VNB margin 27.5%",
+   "H1 FY27: APE ₹11,746 cr (+18%) · VNB margin 27.9%",
+   "Q2 FY27 profit ₹549 cr (+11%) · solvency 1.97",
+   "Rivals: LIC, HDFC Life, ICICI Prudential Life, Axis Max Life",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who is SBI Life's MD & CEO?",
+   "o": [
+    "Amit Jhingran",
+    "C S Setty",
+    "Dinesh Khara"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Which foreign partner started SBI Life with SBI in 2001?",
+   "o": [
+    "Prudential",
+    "BNP Paribas Cardif",
+    "Allianz"
+   ],
+   "a": 1
+  },
+  {
+   "q": "About what share of SBI Life's new business (APE) comes through bancassurance?",
+   "o": [
+    "About 20%",
+    "About 53%",
+    "About 90%"
+   ],
+   "a": 1
+  },
+  {
+   "q": "SBI Life's VNB margin in H1 FY27 was:",
+   "o": [
+    "27.9%",
+    "12.5%",
+    "45%"
+   ],
+   "a": 0
+  },
+  {
+   "q": "SBI Life's gross written premium in FY 2025-26 was about:",
+   "o": [
+    "₹42,551 crore",
+    "₹2,470 crore",
+    "₹1,01,290 crore"
+   ],
+   "a": 2
+  }
+ ],
+ "checked": "19 Nov 2026"
+}

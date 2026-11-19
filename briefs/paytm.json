@@ -1,0 +1,1067 @@
+{
+ "id": "paytm",
+ "name": "Paytm",
+ "short": "PT",
+ "color": "#00BAF2",
+ "line": "Noida fintech behind the Paytm app, QR codes and Soundbox: payments for shops and users, plus loans and insurance from partners",
+ "sector": "Fintech",
+ "hq": "Noida, Uttar Pradesh",
+ "listed": "NSE: PAYTM · BSE: 543396",
+ "website": "https://paytm.com",
+ "news_query": "Paytm One 97 Communications",
+ "src": {
+  "q2fpj": {
+   "label": "Q2 FY27: net profit ₹225 cr, revenue up 28.5% (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/paytm-q2-fy27-results-net-profit-jumps-to-225-crore-as-revenue-rises-285"
+  },
+  "q2inc": {
+   "label": "Q2 profit up over 10x to ₹225 cr, revenue up 28% (Inc42)",
+   "url": "https://inc42.com/buzz/paytm-q2-profit-skyrockets-over-10x-yoy-to-₹225-cr-revenue-up-28/"
+  },
+  "q2pti": {
+   "label": "Q2 FY27 profit rises over 10-fold; revenue ₹2,648 cr (Devdiscourse / PTI)",
+   "url": "https://www.devdiscourse.com/article/business/3997726-paytm-q2-fy27-profit-rises-over-10-fold-to-225-crore-revenue-grows-28-to-2648-crore"
+  },
+  "q1ir": {
+   "label": "Q1 FY27 earnings release (Paytm, official)",
+   "url": "https://paytm.com/document/ir/financial-results/Paytm_Earning-Release_Q1-FY-2027.pdf"
+  },
+  "q1dp": {
+   "label": "Q1 FY27 earnings datapack (Paytm, official)",
+   "url": "https://paytm.com/document/ir/financial-results/fy2026-27/Paytm_Q1_FY27_Agent_Datapack.md"
+  },
+  "fy26ir": {
+   "label": "Key takeaways from Q4 FY26 earnings call (Paytm, official)",
+   "url": "https://paytm.com/blog/investor-relations/key-takeaways-from-our-q4fy26-earnings-call/"
+  },
+  "fy26ob": {
+   "label": "FY26 profit ₹552 cr, revenue ₹8,437 cr (Outlook Business / PTI)",
+   "url": "https://www.outlookbusiness.com/corporate/paytm-posts-profit-of-183-crore-in-q4-revenue-grows-18-pc-to-2264-crore"
+  },
+  "fy26up": {
+   "label": "Q4 results; FY26 EBITDA ₹502 cr (Upstox)",
+   "url": "https://upstox.com/news/market-news/earnings/paytm-q4-results-consolidated-pat-comes-in-at-184-crore-fy-26-ebitda-stands-at-502-crore/article-193271/"
+  },
+  "ppbl": {
+   "label": "RBI cancels licence of Paytm Payments Bank (bank's notice of RBI order, official)",
+   "url": "https://www.paytm.bank.in/Information/RBI-cancels-Licence-of-Paytm-Payments-Bank-Limited-Bank.pdf"
+  },
+  "ppblbt": {
+   "label": "RBI cancels Paytm Payments Bank licence (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/rbi-cancels-paytm-payments-bank-licence-cites-regulatory-violations-depositor-risks-527391-2026-04-24"
+  },
+  "pa1": {
+   "label": "PPSL gets RBI payment aggregator licence (Inc42)",
+   "url": "https://inc42.com/buzz/paytm-payments-services-gets-rbis-payment-aggregator-licence"
+  },
+  "pa2": {
+   "label": "Paytm gets final RBI nod as online payment aggregator (Outlook Money)",
+   "url": "https://www.outlookmoney.com/banking/paytm-gets-final-rbi-nod-to-operate-as-payment-aggregator-what-this-means-for-users"
+  },
+  "pa3": {
+   "label": "PA licences for offline and cross-border payments (Inc42)",
+   "url": "https://inc42.com/buzz/paytm-gets-pa-licences-for-offline-cross-border-transactions/"
+  },
+  "pa4": {
+   "label": "RBI authorises Paytm for offline and cross-border PA services (Storyboard18)",
+   "url": "https://www.storyboard18.com/how-it-works/rbi-authorizes-paytm-for-offline-and-cross-border-payment-aggregator-services-86088.htm"
+  },
+  "wal1": {
+   "label": "Paytm gets preliminary nod to operate wallets (The Week / PTI)",
+   "url": "https://www.theweek.in/wire-updates/business/2026/11/13/paytm-gets-preliminary-nod-to-operate-wallets.amp.html"
+  },
+  "wal2": {
+   "label": "RBI in-principle approval for wallets via PPSL (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/paytm-gets-rbis-in-principle-approval-to-operate-wallets-through-payments-services-subsidiary"
+  },
+  "board": {
+   "label": "One 97 Communications board of directors (Choice India)",
+   "url": "https://choiceindia.com/stocks/one97-communications-ltd-board-of-directors"
+  },
+  "vssppsl": {
+   "label": "Board approves Q3 results; VSS made MD of PPSL, Jan 2026 (Investywise, filing summary)",
+   "url": "https://www.investywise.com/?p=44464"
+  },
+  "vssmd": {
+   "label": "Vijay Shekhar Sharma reappointed MD & CEO till Dec 2027 (ThePrint)",
+   "url": "https://theprint.in/economy/vijay-shekhar-sharma-reappointed-as-md-ceo-of-paytm-till-dec-2027/966458/"
+  },
+  "wartime": {
+   "label": "The wartime CEO: how VSS drove Paytm to record profits (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/focused-view/the-wartime-ceo-how-vijay-shekhar-sharma-drove-paytm-to-record-profits"
+  },
+  "agm": {
+   "label": "VSS at the 26th AGM: payments into the AI era (The Week)",
+   "url": "https://www.theweek.in/konnect/economy/2026/10/09/from-fintech-to-ai-vijay-shekhar-sharma-says-paytm-wants-to-take-indias-payments-revolution-into-its-ai-era.html"
+  },
+  "ppblvss": {
+   "label": "VSS steps down as Paytm Payments Bank chairman, board reconstituted (ThePrint)",
+   "url": "https://theprint.in/economy/vijay-shekhar-sharma-steps-down-as-ppbl-chairman-banks-board-reconstituted/1979593"
+  },
+  "deora": {
+   "label": "Madhur Deora to leave board, continue as President & Group CFO (Storyboard18)",
+   "url": "https://www.storyboard18.com/brand-makers/paytms-madhur-deora-to-leave-board-continue-as-president-group-cfo-76085.htm"
+  },
+  "deora2": {
+   "label": "Madhur Deora retains role as President & Group CFO (exchange4media)",
+   "url": "https://www.exchange4media.com/people-movement-news/madhur-deora-to-step-down-from-paytm-board-retains-role-as-president-group-cfo-145641.html"
+  },
+  "bt2021": {
+   "label": "Paytm's journey from payments app to Dalal Street (Business Today)",
+   "url": "https://www.businesstoday.in/latest/in-focus/story/paytms-journey-from-payments-app-to-a-fintech-and-now-dalal-street-312600-2021-11-18"
+  },
+  "wiki": {
+   "label": "One97 Communications (Wikipedia, with citations)",
+   "url": "https://en.wikipedia.org/wiki/One97_Communications"
+  },
+  "csr": {
+   "label": "CSR projects for FY 2025-26 (Paytm, official)",
+   "url": "https://paytm.com/document/ir/csr/CSR-projects-for-FY-26.pdf"
+  },
+  "csr2": {
+   "label": "Paytm Foundation distributes laptops to girls' schools in Jammu (The CSR Journal)",
+   "url": "https://thecsrjournal.in/corporate-social-responsibility-csr-news-paytm-foundation-distributes-laptops-in-govt-schools-for-girls-in-jammu/"
+  }
+ },
+ "tiles": [
+  {
+   "v": 8437,
+   "fmt": "cr",
+   "label": "Revenue FY26",
+   "sub": "FY 2025-26 · consolidated · +22%",
+   "term": "Revenue"
+  },
+  {
+   "v": 552,
+   "fmt": "cr",
+   "label": "Net profit FY26",
+   "sub": "First full-year profit (loss ₹663 cr in FY25)",
+   "term": "Net profit"
+  },
+  {
+   "v": 225,
+   "fmt": "cr",
+   "label": "Net profit Q2 FY27",
+   "sub": "Jul–Sep 2026 · consolidated (₹21 cr a year ago)",
+   "term": "Net profit"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹2,648 cr",
+   "k": "Revenue Q2 FY27",
+   "s": "Jul–Sep 2026 · +28%"
+  },
+  {
+   "v": "₹270 cr",
+   "k": "EBITDA Q2 FY27",
+   "s": "+90% · 10% margin"
+  },
+  {
+   "v": "8.5 cr",
+   "k": "Monthly transacting users",
+   "s": "Q2 FY27 · +1 cr in a year"
+  },
+  {
+   "v": "1.64 cr",
+   "k": "Subscription merchants",
+   "s": "Sep 2026 · Soundbox and card machines"
+  }
+ ],
+ "brief": [
+  {
+   "t": "One 97 Communications was started in 2000 by Vijay Shekhar Sharma; its Paytm app grew from mobile recharges into payments, and use jumped after demonetisation in 2016. It listed in Nov 2021 with an ₹18,300 crore IPO.",
+   "s": [
+    "bt2021",
+    "wiki"
+   ]
+  },
+  {
+   "t": "It earns from merchant payments (QR, Soundbox, card machines, online gateway) and from distributing loans, insurance and investments for partner banks and NBFCs. It does not lend from its own books.",
+   "s": [
+    "q2inc",
+    "q2pti",
+    "q1ir"
+   ]
+  },
+  {
+   "t": "Founder Vijay Shekhar Sharma is Chairman, MD & CEO; Madhur Deora is President & Group CFO (he left the board in 2025 but kept that role).",
+   "s": [
+    "board",
+    "vssppsl",
+    "fy26ir",
+    "deora",
+    "deora2"
+   ]
+  },
+  {
+   "t": "Back to profit: FY 2025-26 was its first full year of profit (₹552 crore on revenue of ₹8,437 crore, consolidated), and Q2 FY27 profit was ₹225 crore.",
+   "s": [
+    "fy26ir",
+    "fy26ob",
+    "fy26up",
+    "q2fpj",
+    "q2inc"
+   ]
+  },
+  {
+   "t": "The RBI cancelled the licence of the separate Paytm Payments Bank in April 2026, after curbs in 2022 and 2024. Paytm's own payments arm, PPSL, now holds payment aggregator licences and got an in-principle nod for wallets in Nov 2026.",
+   "s": [
+    "ppbl",
+    "ppblbt",
+    "pa1",
+    "pa3",
+    "wal1",
+    "wal2"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "2000",
+   "t": "Vijay Shekhar Sharma founds One 97 Communications.",
+   "s": [
+    "bt2021",
+    "wiki"
+   ]
+  },
+  {
+   "y": "2016",
+   "t": "Demonetisation: Paytm usage jumps as people move away from cash.",
+   "s": [
+    "bt2021",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Nov 2021",
+   "t": "Listed on NSE and BSE after an ₹18,300 crore IPO.",
+   "s": [
+    "bt2021",
+    "wiki"
+   ]
+  },
+  {
+   "y": "Jan–Feb 2024",
+   "t": "RBI bars Paytm Payments Bank from taking new deposits, credits or wallet top-ups.",
+   "s": [
+    "ppbl",
+    "ppblbt"
+   ]
+  },
+  {
+   "y": "Nov–Dec 2025",
+   "t": "Subsidiary PPSL gets RBI payment aggregator licences: online, then offline and cross-border.",
+   "s": [
+    "pa1",
+    "pa2",
+    "pa3",
+    "pa4"
+   ]
+  },
+  {
+   "y": "Apr 2026",
+   "t": "RBI cancels Paytm Payments Bank's licence; FY26 ends as Paytm's first full year of profit.",
+   "s": [
+    "ppbl",
+    "ppblbt",
+    "fy26ir",
+    "fy26ob"
+   ]
+  }
+ ],
+ "model": {
+  "how": "Paytm gives users a free payments app and gives shops QR codes, Soundbox speakers and card machines for a monthly fee. It earns payment fees from merchants and online businesses, and earns commission by helping partner banks and NBFCs give loans and sell insurance and investments to its users and merchants.",
+  "flow": [
+   "Users pay by UPI, cards or wallet in the Paytm app",
+   "Shops take payments via QR, Soundbox and card machines",
+   "Paytm earns device fees and payment fees",
+   "Partners' loans and insurance sold for a commission"
+  ],
+  "facts": [
+   {
+    "k": "Payment services revenue Q2 FY27",
+    "v": "₹1,434 cr (+25%)",
+    "term": "Revenue",
+    "s": [
+     "q2pti",
+     "q2inc"
+    ]
+   },
+   {
+    "k": "Financial services distribution Q2 FY27",
+    "v": "₹912 cr (+49%)",
+    "term": "Loan distribution",
+    "s": [
+     "q2pti",
+     "q2inc"
+    ]
+   },
+   {
+    "k": "Merchant GMV Q2 FY27",
+    "v": "₹7.1 lakh cr (+26%)",
+    "term": "GMV",
+    "s": [
+     "q2inc",
+     "q2pti"
+    ]
+   },
+   {
+    "k": "Payment processing cost Q2 FY27",
+    "v": "₹805 cr",
+    "term": "Contribution margin",
+    "s": [
+     "q2fpj",
+     "q2inc"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Reserve Bank of India (RBI) for payments licences; NPCI runs UPI; SEBI for the listed company",
+  "points": [
+   "UPI is free for users and most merchants (zero MDR), so payment apps earn from devices, online payments and selling financial products.",
+   "Licences matter: RBI's action on Paytm Payments Bank shows how compliance can shut down a business line.",
+   "Big theme for interviews: how a payments app turns users into customers for loans, insurance and investing."
+  ],
+  "s": [
+   "q2inc",
+   "ppbl",
+   "ppblbt",
+   "pa2"
+  ]
+ },
+ "people": [
+  {
+   "ini": "VS",
+   "name": "Vijay Shekhar Sharma",
+   "role": "Founder, Chairman, MD & CEO",
+   "since": "founded 2000",
+   "note": "Started One 97 Communications in 2000; reappointed MD & CEO until Dec 2027. Also MD of payments arm PPSL from Jan 2026. Left the Paytm Payments Bank board in 2024.",
+   "s": [
+    "board",
+    "vssppsl",
+    "vssmd",
+    "bt2021",
+    "agm",
+    "ppblvss"
+   ]
+  },
+  {
+   "ini": "MD",
+   "name": "Madhur Deora",
+   "role": "President & Group CFO",
+   "since": "joined 2016",
+   "note": "Ex-Citi investment banker; stepped off the board in 2025 but continues as President & Group CFO.",
+   "s": [
+    "deora",
+    "deora2",
+    "fy26ir"
+   ]
+  },
+  {
+   "ini": "US",
+   "name": "Urvashi Sahai",
+   "role": "Executive Director & General Counsel",
+   "since": "board since 2025",
+   "note": "Joined the board as an additional director in July 2025.",
+   "s": [
+    "board",
+    "deora"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Jan 2026: Vijay Shekhar Sharma also appointed MD & CEO of subsidiary Paytm Payments Services (PPSL) for five years.",
+   "s": [
+    "vssppsl",
+    "board"
+   ]
+  },
+  {
+   "t": "Jul 2025: Madhur Deora stepped off the board (continues as President & Group CFO); Urvashi Sahai joined the board.",
+   "s": [
+    "deora",
+    "deora2"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, consolidated)",
+  "rows": [
+   {
+    "k": "Revenue from operations",
+    "v": "₹8,437 cr (+22%)",
+    "term": "Revenue",
+    "s": [
+     "fy26ir",
+     "fy26ob",
+     "fy26up"
+    ]
+   },
+   {
+    "k": "Net profit (loss of ₹663 cr in FY25)",
+    "v": "₹552 cr",
+    "term": "Net profit",
+    "s": [
+     "fy26ob",
+     "fy26up"
+    ]
+   },
+   {
+    "k": "EBITDA (loss of ₹1,506 cr in FY25)",
+    "v": "₹502 cr",
+    "term": "EBITDA",
+    "s": [
+     "fy26ir",
+     "fy26up"
+    ]
+   },
+   {
+    "k": "Subscription merchants, Mar 2026",
+    "v": "1.51 cr",
+    "term": "Soundbox",
+    "s": [
+     "fy26ir",
+     "q1ir"
+    ]
+   },
+   {
+    "k": "Monthly transacting users, Q4 FY26",
+    "v": "7.7 cr",
+    "term": "MTU",
+    "s": [
+     "fy26ir",
+     "q1dp"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026, consolidated)",
+   "points": [
+    {
+     "t": "Net profit ₹225 cr, up from ₹21 cr a year ago; revenue ₹2,648 cr (+28%).",
+     "s": [
+      "q2fpj",
+      "q2inc",
+      "q2pti"
+     ],
+     "term": "Net profit"
+    },
+    {
+     "t": "EBITDA ₹270 cr (+90%), a 10% margin, the first time in double digits.",
+     "s": [
+      "q2inc",
+      "q2pti"
+     ],
+     "term": "EBITDA"
+    },
+    {
+     "t": "Merchant GMV ₹7.1 lakh cr (+26%); 8.5 cr monthly users; 1.64 cr subscription merchants; financial services revenue ₹912 cr (+49%).",
+     "s": [
+      "q2inc",
+      "q2pti"
+     ],
+     "term": "GMV"
+    }
+   ]
+  },
+  "say": "Paytm made a consolidated profit of ₹225 crore in Q2 FY27, with revenue up 28% to ₹2,648 crore and EBITDA margin reaching 10%."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "PhonePe",
+   "Google Pay",
+   "Razorpay",
+   "Pine Labs",
+   "BharatPe",
+   "CRED"
+  ],
+  "note": "Rivals in UPI apps, merchant devices and online payment gateways; bank apps also compete."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Monthly transacting users (Q2 FY27)",
+    "v": "8.5 cr"
+   },
+   {
+    "k": "Subscription merchants (Sep 2026)",
+    "v": "1.64 cr"
+   },
+   {
+    "k": "Merchant GMV per quarter (Q2 FY27)",
+    "v": "₹7.1 lakh cr"
+   },
+   {
+    "k": "Head office",
+    "v": "Noida"
+   }
+  ],
+  "local": "Paytm has big field sales teams that sign up shops for QR codes and Soundbox devices, plus tech and product teams in Noida and other cities.",
+  "s": [
+   "q2inc",
+   "q2pti",
+   "wiki"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "CSR runs mainly through Paytm Foundation, with education projects such as school supplies, engineering scholarships and laptops for girls' schools. In FY 2025-26 CSR was voluntary (₹45 lakh), as past losses meant no legal minimum.",
+  "s": [
+   "csr",
+   "csr2"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Large base: 8.5 cr monthly users and 1.64 cr paying merchants",
+    "s": [
+     "q2inc",
+     "q2pti"
+    ]
+   },
+   {
+    "t": "Now profitable: FY26 profit ₹552 cr; Q2 FY27 EBITDA margin 10%",
+    "s": [
+     "fy26ob",
+     "q2pti"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Paytm Payments Bank licence cancelled; trust and wallet business were hit",
+    "s": [
+     "ppbl",
+     "ppblbt"
+    ]
+   },
+   {
+    "t": "UPI earns almost nothing for users' payments, so revenue depends on devices and loans",
+    "s": [
+     "q2inc",
+     "q1ir"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Wallet licence (in-principle, Nov 2026) and Paytm Postpaid credit on UPI",
+    "s": [
+     "wal1",
+     "wal2",
+     "q1ir"
+    ]
+   },
+   {
+    "t": "Payment aggregator licences for online, offline and cross-border payments",
+    "s": [
+     "pa1",
+     "pa3",
+     "pa4"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Strict RBI and NPCI rules; any lapse can stop a business line",
+    "s": [
+     "ppbl",
+     "ppblbt"
+    ]
+   },
+   {
+    "t": "Heavy competition from PhonePe and Google Pay in UPI",
+    "s": [
+     "q2inc",
+     "pa2"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For a payments company, interviewers prefer the revenue mix (payments, loans distribution, other services) and competitor analysis.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "Very high. PhonePe, Google Pay, Paytm and bank apps fight for the same users."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. UPI is open to all, but licences and scale are hard to get."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Cash, cards and bank apps."
+   },
+   {
+    "k": "Buyer power",
+    "v": "High. Users switch apps easily and UPI is free to them."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium. Banks, NPCI and RBI set the rules and fees."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government push for Digital India and cashless payments."
+   },
+   {
+    "k": "Economic",
+    "v": "Zero fees on UPI make payments hard to earn from; money comes from loans, devices and services."
+   },
+   {
+    "k": "Social",
+    "v": "Smartphones and UPI are now used even by small shops and villages."
+   },
+   {
+    "k": "Technological",
+    "v": "QR codes, soundboxes, AI fraud checks and credit on UPI."
+   },
+   {
+    "k": "Legal",
+    "v": "RBI licences, data rules and NPCI's market-share limits."
+   },
+   {
+    "k": "Environmental",
+    "v": "Less paper and cash handling; low direct impact."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Payments app, merchant QR and devices, loans, insurance and investments."
+   },
+   {
+    "k": "Price",
+    "v": "Free UPI for users; device rentals, fees and commissions for merchants and partners."
+   },
+   {
+    "k": "Place",
+    "v": "Smartphone app, plus field teams onboarding shops across India."
+   },
+   {
+    "k": "Promotion",
+    "v": "Cashback, brand campaigns, cricket sponsorships and word of mouth."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "More payments from existing users and shops."
+   },
+   {
+    "k": "Market development",
+    "v": "Smaller towns and rural merchants."
+   },
+   {
+    "k": "Product development",
+    "v": "Loans, insurance, investing and new devices."
+   },
+   {
+    "k": "Diversification",
+    "v": "New businesses such as stock broking or commerce."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs and taxes. The company's final earnings.",
+  "Revenue": "Total money earned from the business in a period, before costs.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "Market share": "A company's sales as a % of the total sales of its industry.",
+  "Consolidated": "Figures for the company together with its subsidiaries. 'Standalone' means the parent company alone.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account or selling a product.",
+  "UPI": "Unified Payments Interface: India's instant bank-to-bank payment system run by NPCI. Apps like PhonePe, Google Pay and Paytm sit on top of it.",
+  "NPCI": "National Payments Corporation of India: the body that runs UPI, RuPay and other retail payment systems.",
+  "MDR": "Merchant Discount Rate: the fee a shop pays on each digital payment. UPI and RuPay debit card payments have zero MDR by government rule.",
+  "GMV": "Gross Merchandise Value: the total value of payments that pass through a platform in a period.",
+  "Payment aggregator": "A company licensed by RBI to collect online payments for merchants and pass the money to them.",
+  "Soundbox": "A small speaker device at a shop that announces each payment received, for a monthly fee.",
+  "Contribution margin": "Revenue minus direct costs (like payment processing). Shows if the core business makes money before fixed costs.",
+  "EBITDA": "Earnings before interest, tax, depreciation and amortisation: a measure of operating profit.",
+  "Loan distribution": "Helping a bank or NBFC give loans to customers and merchants for a fee, without lending its own money.",
+  "Market share cap": "An NPCI limit (proposed at 30%) on how much of UPI transactions any one app can handle.",
+  "RBI": "Reserve Bank of India, which regulates payments, banks and NBFCs in India.",
+  "Fintech": "Financial technology: companies that use apps and software to offer payments, loans, investing or insurance.",
+  "MTU": "Monthly Transacting Users: people who made at least one payment on the app in a month.",
+  "PIDF": "Payments Infrastructure Development Fund: an RBI scheme that paid incentives for placing payment devices in smaller towns. Paytm's incentives under it ended in Dec 2025.",
+  "PPI": "Prepaid Payment Instrument: a wallet or prepaid card you load money into. Needs an RBI licence.",
+  "Payments bank": "A small bank licensed by RBI that can take deposits (up to a limit) and offer payments, but cannot give loans.",
+  "PPSL": "Paytm Payments Services Ltd: Paytm's wholly-owned payments subsidiary that holds its payment aggregator licences.",
+  "Postpaid": "Buy now, pay later: a small credit line, here offered on UPI with partner lenders.",
+  "Default loss guarantee": "A promise by a fintech to cover part of the losses if loans it sources for a lender go bad."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports and forecasts",
+    "Cost control",
+    "Tracking unit economics"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading a profit and loss statement",
+    "Basics of payments revenue (MDR, fees)"
+   ],
+   "tip": "Know revenue, contribution margin, EBITDA and whether the company is profitable.",
+   "kv": [
+    {
+     "k": "Revenue FY26",
+     "v": "₹8,437 cr (+22%)",
+     "term": "Revenue"
+    },
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹225 cr",
+     "term": "Net profit"
+    },
+    {
+     "k": "EBITDA margin Q2 FY27",
+     "v": "10%",
+     "term": "EBITDA"
+    },
+    {
+     "k": "FS distribution revenue",
+     "v": "₹912 cr (+49%)",
+     "term": "Loan distribution"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "New users and merchants",
+    "Active users",
+    "Campaign return"
+   ],
+   "skills": [
+    "Digital marketing",
+    "Customer segmentation",
+    "Growth analytics"
+   ],
+   "tip": "Think about how to earn trust and get users to try loans, insurance or investing after payments.",
+   "kv": [
+    {
+     "k": "Monthly users",
+     "v": "8.5 cr",
+     "term": "MTU"
+    },
+    {
+     "k": "Subscription merchants",
+     "v": "1.64 cr",
+     "term": "Soundbox"
+    },
+    {
+     "k": "Merchant GMV Q2",
+     "v": "₹7.1 lakh cr",
+     "term": "GMV"
+    },
+    {
+     "k": "Next product",
+     "v": "Wallet, Postpaid",
+     "term": "PPI"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Attrition",
+    "Training completion"
+   ],
+   "skills": [
+    "Tech and sales hiring",
+    "Onboarding design",
+    "HR analytics in Excel"
+   ],
+   "tip": "Fintechs hire both tech staff and big field sales teams. Ideas for both will impress.",
+   "kv": [
+    {
+     "k": "Revenue Q2 FY27",
+     "v": "₹2,648 cr (+28%)",
+     "term": "Revenue"
+    },
+    {
+     "k": "Chairman, MD & CEO",
+     "v": "Vijay Shekhar Sharma"
+    },
+    {
+     "k": "President & CFO",
+     "v": "Madhur Deora"
+    },
+    {
+     "k": "HQ",
+     "v": "Noida"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "Merchants onboarded",
+    "Device subscriptions",
+    "Loans and products sold"
+   ],
+   "skills": [
+    "Field sales",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Convince a kirana shop owner to take a soundbox' or 'sell a merchant loan'.",
+   "kv": [
+    {
+     "k": "Revenue Q2 FY27",
+     "v": "₹2,648 cr (+28%)",
+     "term": "Revenue"
+    },
+    {
+     "k": "Chairman, MD & CEO",
+     "v": "Vijay Shekhar Sharma"
+    },
+    {
+     "k": "President & CFO",
+     "v": "Madhur Deora"
+    },
+    {
+     "k": "HQ",
+     "v": "Noida"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Transaction success rate",
+    "Complaint resolution time",
+    "Fraud losses"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and compliance basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand KYC, fraud checks and how to keep payments working at huge scale.",
+   "kv": [
+    {
+     "k": "Revenue Q2 FY27",
+     "v": "₹2,648 cr (+28%)",
+     "term": "Revenue"
+    },
+    {
+     "k": "Chairman, MD & CEO",
+     "v": "Vijay Shekhar Sharma"
+    },
+    {
+     "k": "President & CFO",
+     "v": "Madhur Deora"
+    },
+    {
+     "k": "HQ",
+     "v": "Noida"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Payments basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "Revenue Q2 FY27",
+     "v": "₹2,648 cr (+28%)",
+     "term": "Revenue"
+    },
+    {
+     "k": "Chairman, MD & CEO",
+     "v": "Vijay Shekhar Sharma"
+    },
+    {
+     "k": "President & CFO",
+     "v": "Madhur Deora"
+    },
+    {
+     "k": "HQ",
+     "v": "Noida"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "How did Paytm turn profitable?",
+     "a": "Revenue grew faster than costs (FY26 revenue +22% to ₹8,437 crore; in Q2 FY27 indirect costs fell to 46% of revenue from 52%). FY26 EBITDA was ₹502 crore against a ₹1,506 crore loss in FY25, and profit was ₹552 crore."
+    },
+    {
+     "q": "What is EBITDA margin and what was Paytm's in Q2 FY27?",
+     "a": "EBITDA as a % of revenue. Paytm's was about 10% (₹270 crore on ₹2,648 crore revenue), its first double-digit margin."
+    },
+    {
+     "q": "Why does Paytm not lend from its own books?",
+     "a": "It works as a distributor for banks and NBFCs, earning commission without risking its own capital or needing an NBFC licence."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How would you win back users' trust after the Payments Bank issue?",
+     "a": "Explain clearly that the bank licence issue was separate from the Paytm app, show safety features, use cashback carefully and lean on 8.5 crore active users' word of mouth."
+    },
+    {
+     "q": "How can Paytm sell loans to small merchants?",
+     "a": "Use their payment history on Soundbox and QR to offer pre-approved loans from partners, with simple EMIs; more than half of merchant loans go to repeat borrowers."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you reduce attrition in a large field sales team?",
+     "a": "Clear incentives, quick payouts, good training, digital tools for onboarding shops and a visible growth path to team lead roles."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Convince a kirana owner to take a Soundbox.",
+     "a": "It announces every payment so he never misses or argues over a payment, works during rush hours, and his payment history can help him get a business loan later."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How would you reduce payment frauds on a merchant QR network?",
+     "a": "Strong KYC at onboarding, AI checks for unusual patterns, quick blocking of suspicious accounts and fast complaint handling."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What is the difference between Paytm and Paytm Payments Bank?",
+     "a": "Paytm (One 97 Communications) is the listed fintech; Paytm Payments Bank was a separate bank whose licence RBI cancelled in April 2026. Paytm's merchant payments business now sits in its subsidiary PPSL, which holds RBI payment aggregator licences."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads Paytm?",
+     "a": "Founder Vijay Shekhar Sharma is Chairman, MD & CEO; Madhur Deora is President & Group CFO."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, Q2 FY27 profit of ₹225 crore with a 10% EBITDA margin, or RBI's in-principle nod in Nov 2026 for PPSL to run wallets."
+    },
+    {
+     "q": "Why Paytm?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "Paytm helped make QR payments normal at Indian shops, and today 8.5 crore people use it every month while 1.64 crore merchants pay for its devices. After a tough regulatory period it has turned profitable and is growing loans, insurance and new licences. Working here means learning payments, technology and field sales at huge scale. I want to contribute to [your role] as it grows.",
+  "ask": [
+   "How will the wallet licence and Paytm Postpaid change the product in the next year?",
+   "How is AI changing the way teams work at Paytm?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should UPI payments carry a small fee (MDR) for large merchants?",
+    "for": "Payment companies need income to invest in safety and reach; big merchants can afford a small fee.",
+    "against": "Free UPI drove India's cashless growth; fees could push merchants back to cash."
+   },
+   {
+    "t": "Should fintechs be regulated as strictly as banks?",
+    "for": "They handle people's money and data; the Paytm Payments Bank case shows the risks.",
+    "against": "Too many rules can slow innovation and keep new players out."
+   }
+  ],
+  "avoid": [
+   "Don't mix up Paytm (One 97 Communications) with Paytm Payments Bank; the bank's licence was cancelled, not Paytm's.",
+   "Don't say Paytm gives loans itself; it distributes loans for partner banks and NBFCs.",
+   "Don't say Paytm is loss-making; FY26 was its first full year of profit (₹552 crore)."
+  ],
+  "night": [
+   "Chairman, MD & CEO: Vijay Shekhar Sharma · President & Group CFO: Madhur Deora",
+   "Founded 2000 · listed Nov 2021 · HQ Noida",
+   "FY26: revenue ₹8,437 cr, profit ₹552 cr (consolidated)",
+   "Q2 FY27: profit ₹225 cr, revenue ₹2,648 cr (+28%)",
+   "8.5 cr monthly users · 1.64 cr subscription merchants",
+   "Rivals: PhonePe, Google Pay, Razorpay, Pine Labs",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who founded Paytm's parent, One 97 Communications?",
+   "o": [
+    "Madhur Deora",
+    "Vijay Shekhar Sharma",
+    "Sameer Nigam"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Where is Paytm headquartered?",
+   "o": [
+    "Bengaluru",
+    "Mumbai",
+    "Noida"
+   ],
+   "a": 2
+  },
+  {
+   "q": "What did the RBI do to Paytm Payments Bank in April 2026?",
+   "o": [
+    "Cancelled its banking licence",
+    "Gave it a full bank licence",
+    "Merged it with SBI"
+   ],
+   "a": 0
+  },
+  {
+   "q": "Paytm's consolidated net profit in Q2 FY27 (Jul–Sep 2026) was about:",
+   "o": [
+    "₹21 crore",
+    "₹225 crore",
+    "₹552 crore"
+   ],
+   "a": 1
+  },
+  {
+   "q": "Which Paytm subsidiary holds its payment aggregator licences?",
+   "o": [
+    "Paytm Money",
+    "Paytm Payments Services (PPSL)",
+    "Paytm Insurance Broking"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "19 Nov 2026"
+}

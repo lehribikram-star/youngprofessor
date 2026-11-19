@@ -1,0 +1,1119 @@
+{
+ "id": "lic",
+ "name": "Life Insurance Corporation of India (LIC)",
+ "short": "LIC",
+ "color": "#1C4F9C",
+ "line": "India's state-owned life insurer, set up in 1956, that sells life, pension and group policies through about 14.5 lakh agents",
+ "sector": "Life insurance",
+ "hq": "Mumbai, Maharashtra",
+ "listed": "NSE: LICI · BSE: 543526",
+ "website": "https://licindia.in",
+ "news_query": "LIC Life Insurance Corporation",
+ "src": {
+  "fy26": {
+   "label": "FY26 results press release, 21 May 2026 (LIC, official)",
+   "url": "https://licindia.in/documents/d/guest/final-press-release-q4-performance_21052026"
+  },
+  "fy26b": {
+   "label": "Q4 FY26: profit up 23%, 1:1 bonus, ₹10 dividend (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/lic-q4fy26-results-net-profit-jumps-23-percent-to-rs-23467-crore/"
+  },
+  "fy26c": {
+   "label": "FY26 profit jumps 19.25% to ₹57,419 cr (Asianet Newsable)",
+   "url": "https://newsable.asianetnews.com/amp/business/lics-fy26-profit-jumps-1925-to-rs-57419-cr-declares-dividend-articleshow-eahs0lk"
+  },
+  "q2nse": {
+   "label": "Q2 FY27 results and press release, board outcome 5 Nov 2026 (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/LIC_BOARD_05112026175045_outcomesep26sd.pdf"
+  },
+  "q2call": {
+   "label": "H1 FY27 analyst call transcript (NSE filing, official)",
+   "url": "https://nsearchives.nseindia.com/corporate/LIC_BOARD_13112026165546_Final_Disc_Transcript_Inv_Meet.pdf"
+  },
+  "q2": {
+   "label": "Q2 profit jumps 20% to ₹12,076 cr (Free Press Journal)",
+   "url": "https://www.freepressjournal.in/business/lic-q2-profit-jumps-20-to-12076-crore-premium-income-rises-16-to-147-lakh-crore"
+  },
+  "q2b": {
+   "label": "Q2 net profit rises 20% on higher premium income (PSU Watch)",
+   "url": "https://psuwatch.com/newsupdates/lic-q2-net-profit-rises-20-to-rs-12076-crore-on-higher-premium-income"
+  },
+  "kmp": {
+   "label": "Key managerial persons (LIC, official)",
+   "url": "https://licindia.in/key-managerial-persons"
+  },
+  "ceo": {
+   "label": "R Doraiswamy appointed LIC MD & CEO for 3 years (Business Standard)",
+   "url": "https://www.business-standard.com/companies/people/r-doraiswamy-appointed-lic-md-ceo-3-year-term-125071401242_1.html"
+  },
+  "ceo2": {
+   "label": "Who is R Doraiswamy, LIC MD and CEO till 2028? (Business Today)",
+   "url": "https://www.businesstoday.in/amp/latest/corporate/story/who-is-r-doraiswamy-the-new-lic-md-and-ceo-appointed-till-2028-484582-2025-07-14"
+  },
+  "bhanoo": {
+   "label": "Sat Pal Bhanoo interim CEO after Mohanty's term ends (Business Standard)",
+   "url": "https://www.business-standard.com/companies/news/sat-pal-bhanoo-interim-lic-ceo-after-siddhartha-mohanty-term-ends-125060800301_1.html"
+  },
+  "chair21": {
+   "label": "LIC to have CEO & MD as govt cancels post of chairman (Business Standard)",
+   "url": "https://business-standard.com/article/economy-policy/lic-to-have-ceo-managing-director-as-govt-cancels-post-of-chairman-121070801279_1.html"
+  },
+  "chair21b": {
+   "label": "LIC does away with chairman's post to have CEO & MD (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/lic-does-away-with-chairmans-post-to-have-ceo-md-300836-2021-07-08"
+  },
+  "chander": {
+   "label": "Ramakrishnan Chander named LIC MD (Storyboard18)",
+   "url": "https://www.storyboard18.com/brand-makers/lic-names-ramakrishnan-chander-managing-director-at-pay-scale-of-rs-2-05-2-24-lakh-85147.htm"
+  },
+  "chander2": {
+   "label": "Centre names LIC investment chief Ramakrishnan Chander as MD (People Matters)",
+   "url": "https://www.peoplematters.in/amp/news/appointments/centre-names-lic-investment-chief-ramakrishnan-chander-as-md-47510"
+  },
+  "patnaik": {
+   "label": "Ratnakar Patnaik takes charge as MD of LIC (Millennium Post)",
+   "url": "https://www.millenniumpost.in/business/ratnakar-patnaik-takes-charge-as-managing-director-of-lic-613365"
+  },
+  "day70": {
+   "label": "70 years of LIC, Insurance Day press release (LIC, official)",
+   "url": "https://licindia.in/documents/d/guest/press-release-insurance-day-01-09-2026_final"
+  },
+  "plat": {
+   "label": "LIC targets stronger market leadership near platinum jubilee (Outlook Business / PTI)",
+   "url": "https://www.outlookbusiness.com/corporate/lic-targets-stronger-market-leadership-as-it-approaches-its-platinum-jubilee"
+  },
+  "turn70": {
+   "label": "LIC turns 70 (PSU Connect)",
+   "url": "https://www.psuconnect.in/psu-news/lic-turns-70-holds-65-market-share-57-lakh-crore-aum"
+  },
+  "ofs": {
+   "label": "Govt raises ₹31,552 cr via LIC OFS, public holding reaches 10% (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/regulations/government-raises-rs-31552-crore-through-lic-ofs-public-shareholding-reaches-10/"
+  },
+  "ofs2": {
+   "label": "LIC OFS opens at ₹382 floor price (Business Today)",
+   "url": "https://www.businesstoday.in/amp/latest/corporate/story/lic-ofs-non-retail-bidding-opens-tomorrow-at-rs382share-retail-bidding-opens-on-aug-5-546981-2026-08-03"
+  },
+  "idbi": {
+   "label": "Centre approves Fairfax's ₹52,878 cr bid for 60.72% of IDBI Bank (Business Today)",
+   "url": "https://www.businesstoday.in/latest/corporate/story/centre-approves-fairfax-financials-rs52878-crore-bid-for-60-72-stake-in-idbi-bank-561590-2026-10-14"
+  },
+  "idbi2": {
+   "label": "IDBI Bank gets new owner as Fairfax wins stake sale (Outlook Business)",
+   "url": "https://www.outlookbusiness.com/corporate/idbi-bank-gets-new-owner-as-fairfax-wins-6072-stake-sale"
+  },
+  "health": {
+   "label": "LIC puts health insurance foray on back burner (Deccan Chronicle)",
+   "url": "https://www.deccanchronicle.com/nation/current-affairs/lic-puts-health-insurance-foray-on-back-burner-1935284"
+  },
+  "health2": {
+   "label": "LIC shelves health insurance plans (Whalesbook)",
+   "url": "https://www.whalesbook.com/news/English/insurance/LIC-Taps-Real-Estate-Value-Shelves-Health-Insurance-Plans/69850195e769d12df1d45959"
+  },
+  "fintech": {
+   "label": "LIC eyes entry into fintech, says CEO (Kotak Neo)",
+   "url": "https://www.kotakneo.com/news/stocks/lic-plans-fintech-entry-strategic-investment-under-consideration-ceo-doraiswamy/"
+  },
+  "agents": {
+   "label": "LIC agent count and non-agency share, investor presentation (Multibagg)",
+   "url": "https://www.multibagg.ai/market-pulse/articles/lic-non-agency-share-agency-force-ppt-cmwj61veh003z2rp5uh0nnd8q"
+  }
+ },
+ "tiles": [
+  {
+   "v": 57419,
+   "fmt": "cr",
+   "label": "Net profit",
+   "sub": "FY 2025-26 standalone (+19%)",
+   "term": "Net profit"
+  },
+  {
+   "v": 5960941,
+   "fmt": "cr",
+   "label": "Assets under management",
+   "sub": "Sep 2026 · +4%",
+   "term": "AUM"
+  },
+  {
+   "v": 12076,
+   "fmt": "cr",
+   "label": "Net profit Q2 FY27",
+   "sub": "Jul–Sep 2026 · standalone · +20%",
+   "term": "Net profit"
+  }
+ ],
+ "kpis": [
+  {
+   "v": "₹12,076 cr",
+   "k": "Net profit Q2 FY27",
+   "s": "Jul–Sep 2026 · standalone · +20%"
+  },
+  {
+   "v": "22.3%",
+   "k": "VNB margin",
+   "s": "H1 FY27 (17.6% a year ago)"
+  },
+  {
+   "v": "58.77%",
+   "k": "Market share (first-year premium)",
+   "s": "H1 FY27"
+  },
+  {
+   "v": "2.35",
+   "k": "Solvency ratio",
+   "s": "Sep 2026 (minimum 1.5)"
+  }
+ ],
+ "brief": [
+  {
+   "t": "Set up on 1 September 1956 under the LIC Act by nationalising 245 Indian and foreign insurers; it completed 70 years in September 2026.",
+   "s": [
+    "day70",
+    "plat",
+    "turn70"
+   ]
+  },
+  {
+   "t": "Still the leader in life insurance: in FY 2025-26 it had 56.66% of the industry's first-year premium and 65.16% of policies sold; almost all individual policies are sold by its agents.",
+   "s": [
+    "fy26",
+    "day70",
+    "q2call"
+   ]
+  },
+  {
+   "t": "There is no chairman any more: the post was replaced by a CEO & MD in 2021. R Doraiswamy, an LIC officer with 39+ years in the company, has been CEO & MD since 14 July 2025.",
+   "s": [
+    "chair21",
+    "chair21b",
+    "ceo",
+    "ceo2",
+    "kmp"
+   ]
+  },
+  {
+   "t": "Profit is rising: FY 2025-26 profit was ₹57,419 crore (+19%) and Q2 FY27 (Jul–Sep 2026) profit was ₹12,076 crore (+20%), with VNB margin up to 22.3% in H1 FY27.",
+   "s": [
+    "fy26",
+    "fy26b",
+    "fy26c",
+    "q2nse",
+    "q2",
+    "q2b"
+   ]
+  },
+  {
+   "t": "Big 2026 events: first 1:1 bonus share issue (June), the government sold 6.5% through an OFS cutting its stake to 90% (August), and LIC agreed to sell 30.24% of IDBI Bank to Fairfax (approved in October).",
+   "s": [
+    "fy26b",
+    "ofs",
+    "ofs2",
+    "idbi",
+    "idbi2"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1956",
+   "t": "LIC formed on 1 September under the LIC Act, 1956, by nationalising 245 insurers.",
+   "s": [
+    "plat",
+    "day70",
+    "turn70"
+   ]
+  },
+  {
+   "y": "Jul 2021",
+   "t": "Government replaced the chairman post with a CEO & MD at the top.",
+   "s": [
+    "chair21",
+    "chair21b"
+   ]
+  },
+  {
+   "y": "May 2022",
+   "t": "IPO: government sold 3.5%; shares listed on NSE and BSE.",
+   "s": [
+    "day70",
+    "ofs2"
+   ]
+  },
+  {
+   "y": "Jul 2025",
+   "t": "R Doraiswamy took charge as CEO & MD for three years.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "bhanoo"
+   ]
+  },
+  {
+   "y": "Aug 2026",
+   "t": "Government sold 6.5% through an OFS at ₹382 floor price, raising ₹31,552 crore; its stake fell to 90%.",
+   "s": [
+    "ofs",
+    "ofs2"
+   ]
+  },
+  {
+   "y": "Oct 2026",
+   "t": "Cabinet approved Fairfax's ₹52,878 crore bid for 60.72% of IDBI Bank, including 30.24% from LIC.",
+   "s": [
+    "idbi",
+    "idbi2"
+   ]
+  }
+ ],
+ "model": {
+  "how": "LIC collects premiums from crores of policyholders and from companies (group schemes), invests the money mainly in government bonds and shares, and pays claims, maturity amounts and bonuses. It earns from the gap between investment income and what it owes policyholders, plus a share of profit on par policies and margins on non-par products.",
+  "flow": [
+   "Agents, banks and digital channels sell policies",
+   "Customers and employers pay first-year, renewal and single premiums",
+   "Money is invested (AUM about ₹59.6 lakh crore)",
+   "Pays claims and bonuses; profit goes to shareholders, mainly the government"
+  ],
+  "facts": [
+   {
+    "k": "VNB margin H1 FY27",
+    "v": "22.3%",
+    "term": "VNB margin",
+    "s": [
+     "q2nse",
+     "q2call",
+     "q2b"
+    ]
+   },
+   {
+    "k": "Market share, first-year premium",
+    "v": "58.77% (H1 FY27)",
+    "term": "Market share",
+    "s": [
+     "q2nse",
+     "q2call",
+     "q2"
+    ]
+   },
+   {
+    "k": "Agency share of individual new premium",
+    "v": "91.81%",
+    "term": "Agency",
+    "s": [
+     "q2call",
+     "agents"
+    ]
+   },
+   {
+    "k": "Solvency ratio",
+    "v": "2.35 (Sep 2026)",
+    "term": "Solvency ratio",
+    "s": [
+     "q2nse",
+     "q2",
+     "q2b"
+    ]
+   }
+  ]
+ },
+ "industry": {
+  "regulator": "Insurance Regulatory and Development Authority of India (IRDAI)",
+  "points": [
+   "LIC is the only state-owned life insurer and competes with 25+ private insurers; private players are slowly gaining share in individual business.",
+   "Insurers are moving to higher-margin non-par and protection products; LIC's protection APE rose about 59% in H1 FY27.",
+   "IRDAI is reviewing distribution and commission rules (consultation paper, Sep 2026); LIC says its expenses are comfortable under the proposed caps."
+  ],
+  "s": [
+   "q2call",
+   "fy26",
+   "q2nse"
+  ]
+ },
+ "people": [
+  {
+   "ini": "RD",
+   "name": "R Doraiswamy",
+   "role": "Chief Executive Officer & Managing Director",
+   "since": "since Jul 2025",
+   "note": "LIC officer (17th direct-recruit batch) with 39+ years in the company; earlier an MD, ED (IT) and head of bancassurance and group business.",
+   "s": [
+    "ceo",
+    "ceo2",
+    "kmp",
+    "q2call"
+   ]
+  },
+  {
+   "ini": "RP",
+   "name": "Ratnakar Patnaik",
+   "role": "Managing Director",
+   "since": "",
+   "note": "One of LIC's two Managing Directors under the CEO & MD.",
+   "s": [
+    "kmp",
+    "patnaik",
+    "q2call"
+   ]
+  },
+  {
+   "ini": "RC",
+   "name": "Ramakrishnan Chander",
+   "role": "Managing Director",
+   "since": "since Dec 2025",
+   "note": "Earlier LIC's Chief Investment Officer; term till his superannuation in Sep 2027.",
+   "s": [
+    "kmp",
+    "chander",
+    "chander2",
+    "q2nse"
+   ]
+  }
+ ],
+ "people_changes": [
+  {
+   "t": "Jun 2025: Siddhartha Mohanty's term as CEO & MD ended; MD Sat Pal Bhanoo held charge until R Doraiswamy took over on 14 Jul 2025.",
+   "s": [
+    "bhanoo",
+    "ceo"
+   ]
+  },
+  {
+   "t": "Dec 2025: Ramakrishnan Chander, LIC's investment chief, became a Managing Director.",
+   "s": [
+    "chander",
+    "chander2",
+    "kmp"
+   ]
+  },
+  {
+   "t": "Nov 2026: Naga Nalini Kalluri appointed Chief Compliance Officer from 6 Nov 2026.",
+   "s": [
+    "q2",
+    "kmp"
+   ]
+  }
+ ],
+ "numbers": {
+  "fy": "FY 2025-26 (year to 31 Mar 2026, standalone)",
+  "rows": [
+   {
+    "k": "Net profit (PAT)",
+    "v": "₹57,419 cr (+19%)",
+    "term": "Net profit",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Total premium income",
+    "v": "₹5,35,984 cr (+10%)",
+    "term": "Premium",
+    "s": [
+     "fy26",
+     "fy26c",
+     "fy26b"
+    ]
+   },
+   {
+    "k": "Individual new business premium",
+    "v": "₹67,676 cr (+8%)",
+    "term": "New business premium",
+    "s": [
+     "fy26",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Value of New Business",
+    "v": "₹14,179 cr (+42%)",
+    "term": "VNB",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "VNB margin",
+    "v": "21.2% (17.6%)",
+    "term": "VNB margin",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   },
+   {
+    "k": "Assets under management",
+    "v": "₹57.29 lakh cr",
+    "term": "AUM",
+    "s": [
+     "fy26",
+     "fy26c",
+     "day70"
+    ]
+   },
+   {
+    "k": "Market share in first-year premium",
+    "v": "56.66%",
+    "term": "FYPI",
+    "s": [
+     "fy26",
+     "fy26c",
+     "day70"
+    ]
+   },
+   {
+    "k": "Dividend (plus 1:1 bonus shares)",
+    "v": "₹10 per share",
+    "term": "Dividend",
+    "s": [
+     "fy26",
+     "fy26b",
+     "fy26c"
+    ]
+   }
+  ],
+  "latest": {
+   "label": "Latest quarter: Q2 FY27 (Jul–Sep 2026)",
+   "points": [
+    {
+     "t": "Standalone profit ₹12,076 cr, up 20% from ₹10,053 cr; H1 FY27 profit ₹25,568 cr (+21.5%).",
+     "s": [
+      "q2nse",
+      "q2",
+      "q2b"
+     ],
+     "term": "Net profit"
+    },
+    {
+     "t": "Net premium income ₹1,47,018 cr (+16%); first-year premium dipped to ₹10,432 cr from ₹10,836 cr, while renewals rose to ₹68,375 cr.",
+     "s": [
+      "q2nse",
+      "q2",
+      "q2b"
+     ],
+     "term": "Premium"
+    },
+    {
+     "t": "H1 FY27 VNB ₹6,846 cr (+34%), VNB margin 22.3% (17.6%); AUM ₹59,60,941 cr (+4%); solvency 2.35.",
+     "s": [
+      "q2nse",
+      "q2call",
+      "q2b"
+     ],
+     "term": "VNB margin"
+    }
+   ]
+  },
+  "say": "LIC's standalone profit rose 20% to ₹12,076 crore in Q2 FY27, and its VNB margin improved to 22.3% in the first half as it sold more non-par and protection policies."
+ },
+ "rivals": {
+  "metric": "Main competitors",
+  "names": [
+   "SBI Life Insurance",
+   "HDFC Life",
+   "ICICI Prudential Life",
+   "Axis Max Life",
+   "Bajaj Allianz Life",
+   "Tata AIA Life"
+  ],
+  "note": "Private life insurers compete for the same savings and protection customers; LIC's share of group business fell to 70.45% in H1 FY27 from 72.74%."
+ },
+ "network": {
+  "rows": [
+   {
+    "k": "Agents (Sep 2026)",
+    "v": "14.5 lakh"
+   },
+   {
+    "k": "Bima Sakhis (women agents)",
+    "v": "3.04 lakh"
+   },
+   {
+    "k": "Head office",
+    "v": "Mumbai"
+   }
+  ],
+  "local": "LIC has offices in almost every district and its agents and Bima Sakhis reach villages too (about two-thirds of gram panchayats), so roles are spread across cities, towns and rural India.",
+  "s": [
+   "q2call",
+   "agents",
+   "plat"
+  ]
+ },
+ "employer": null,
+ "csr": {
+  "t": "CSR runs mainly through the LIC Golden Jubilee Foundation (set up 2006), which has funded ₹303 crore across 1,045 projects and given 41,776 scholarships worth ₹105 crore.",
+  "s": [
+   "day70",
+   "turn70"
+  ]
+ },
+ "swot": {
+  "s": [
+   {
+    "t": "Market leader: 56.66% of first-year premium and 65.16% of policies in FY26",
+    "s": [
+     "fy26",
+     "day70"
+    ]
+   },
+   {
+    "t": "Huge agent force of about 14.5 lakh and strong brand trust built over 70 years",
+    "s": [
+     "q2call",
+     "agents",
+     "plat"
+    ]
+   }
+  ],
+  "w": [
+   {
+    "t": "Heavy dependence on agents: 91.81% of individual new premium comes through agency",
+    "s": [
+     "q2call",
+     "agents"
+    ]
+   },
+   {
+    "t": "First-year premium fell slightly in Q2 FY27 (₹10,432 cr vs ₹10,836 cr)",
+    "s": [
+     "q2nse",
+     "q2b"
+    ]
+   }
+  ],
+  "o": [
+   {
+    "t": "Higher-margin non-par and protection products (protection APE up about 59% in H1 FY27)",
+    "s": [
+     "q2call",
+     "q2nse"
+    ]
+   },
+   {
+    "t": "New bank partners and a planned fintech arm to grow digital and non-agency sales",
+    "s": [
+     "q2call",
+     "fintech"
+    ]
+   }
+  ],
+  "t": [
+   {
+    "t": "Private insurers gaining share; LIC's group share fell to 70.45% from 72.74%",
+    "s": [
+     "q2call",
+     "q2nse"
+    ]
+   },
+   {
+    "t": "IDBI Bank sale to Fairfax may reduce a key bancassurance partner over time",
+    "s": [
+     "q2b",
+     "q2call",
+     "idbi"
+    ]
+   }
+  ]
+ },
+ "bcg": null,
+ "bcg_note": "A BCG matrix needs separate product businesses with market-share data. For an insurer, interviewers prefer product mix (protection, savings, ULIP, annuity), channel mix and the key ratios above.",
+ "frameworks": {
+  "porter": [
+   {
+    "k": "Rivalry",
+    "v": "High. LIC and 25+ private life insurers compete for the same customers."
+   },
+   {
+    "k": "New entrants",
+    "v": "Medium. IRDAI allows new players, but capital and trust take years to build."
+   },
+   {
+    "k": "Substitutes",
+    "v": "Medium. Mutual funds, fixed deposits and pension schemes compete for savings money."
+   },
+   {
+    "k": "Buyer power",
+    "v": "Medium. Customers can compare products online, but policies are complex."
+   },
+   {
+    "k": "Supplier power",
+    "v": "Medium-high. Banks and big distributors can demand high commissions."
+   }
+  ],
+  "pestle": [
+   {
+    "k": "Political",
+    "v": "Government goal of 'Insurance for All by 2047' and 100% FDI now allowed in insurance."
+   },
+   {
+    "k": "Economic",
+    "v": "Rising incomes and savings; interest rates affect guaranteed products."
+   },
+   {
+    "k": "Social",
+    "v": "Low insurance cover in India; more awareness after COVID."
+   },
+   {
+    "k": "Technological",
+    "v": "Online sales, e-KYC, AI underwriting and faster claims."
+   },
+   {
+    "k": "Legal",
+    "v": "IRDAI rules on commissions, surrender values and product design; GST removed on individual policies in 2025."
+   },
+   {
+    "k": "Environmental",
+    "v": "Climate risk and ESG investing are growing themes."
+   }
+  ],
+  "fourp": [
+   {
+    "k": "Product",
+    "v": "Term (protection), savings, ULIP, pension and annuity plans."
+   },
+   {
+    "k": "Price",
+    "v": "Premiums based on age, health and cover; set within IRDAI rules."
+   },
+   {
+    "k": "Place",
+    "v": "Agents, bank partners, brokers and online."
+   },
+   {
+    "k": "Promotion",
+    "v": "Brand trust, advisors' personal selling, digital campaigns."
+   }
+  ],
+  "ansoff": [
+   {
+    "k": "Market penetration",
+    "v": "Sell more to existing bank and agency customers."
+   },
+   {
+    "k": "Market development",
+    "v": "Grow in smaller towns and rural India."
+   },
+   {
+    "k": "Product development",
+    "v": "New term, health-linked and retirement products."
+   },
+   {
+    "k": "Diversification",
+    "v": "Health insurance or other group businesses."
+   }
+  ],
+  "note": "Framework views are analysis built from the verified facts on this page, not company statements."
+ },
+ "glossary": {
+  "Net profit": "What is left after all costs and taxes. The company's final earnings.",
+  "Revenue": "Total money earned from the business in a period, before costs.",
+  "Dividend": "Part of the profit paid to shareholders, per share.",
+  "Attrition": "The % of employees who leave in a year. Also called employee turnover.",
+  "IPO": "Initial Public Offering: when a company first sells its shares to the public.",
+  "Market share": "A company's sales as a % of the total sales of its industry.",
+  "Consolidated": "Figures for the company together with its subsidiaries. 'Standalone' means the parent company alone.",
+  "BRSR": "Business Responsibility and Sustainability Report: an official yearly report on people, environment and governance that big listed companies must publish.",
+  "KYC": "Know Your Customer: checking a customer's identity before opening an account or selling a product.",
+  "IRDAI": "Insurance Regulatory and Development Authority of India: the regulator of all insurance companies.",
+  "Premium": "The money a customer pays to buy an insurance policy.",
+  "Gross written premium": "Total premium collected in a period, from new and renewing policies.",
+  "New business premium": "Premium from policies sold for the first time in the period.",
+  "Renewal premium": "Premium paid by existing customers to keep their policies going.",
+  "APE": "Annualised Premium Equivalent: a standard measure of new sales. Regular premiums count fully, single premiums count 10%.",
+  "VNB": "Value of New Business: the expected future profit (today's value) from policies sold in the period. A key measure for life insurers.",
+  "VNB margin": "VNB as a % of APE. Shows how profitable new sales are.",
+  "Embedded value": "The value of a life insurer today: its net worth plus the present value of future profits from existing policies.",
+  "Persistency": "The % of customers who keep paying premiums after a set time (e.g. 13th month, 61st month). Higher is better.",
+  "Solvency ratio": "Available capital compared with the capital the regulator requires. IRDAI's minimum is 150% (1.5 times).",
+  "AUM": "Assets Under Management: the money the insurer invests on behalf of policyholders and shareholders.",
+  "Protection": "Pure risk cover such as term insurance: pays only if something happens, cheap premium, high profit margin.",
+  "ULIP": "Unit Linked Insurance Plan: part insurance, part market investment. Returns depend on markets.",
+  "Par / Non-par": "Participating (par) policies share profits through bonuses; non-participating (non-par) policies give fixed, guaranteed benefits.",
+  "Annuity": "A product that pays a regular income, usually after retirement, in return for a lump sum.",
+  "Bancassurance": "Selling insurance through a bank's branches and customers. A main channel for bank-backed insurers.",
+  "Agency": "Selling insurance through individual commission-based agents.",
+  "Surrender": "When a customer exits a policy early and gets back part of the money.",
+  "Claim settlement ratio": "The % of claims an insurer pays out of those it receives. Higher means more claims paid.",
+  "GST on insurance": "Tax charged on premiums. From 22 Sep 2025 the government removed GST on individual life and health policies.",
+  "Bima Sugam": "An IRDAI online marketplace planned to let customers buy, compare and service insurance in one place.",
+  "FYPI": "First Year Premium Income: premium from new policies in their first year, including single premiums. IRDAI uses it to compare insurers' market share.",
+  "Single premium": "A policy paid for with one lump-sum premium instead of yearly payments.",
+  "Group business": "Insurance and pension schemes sold to employers and organisations for their staff or members.",
+  "OFS": "Offer for Sale: when an existing shareholder (here, the government) sells shares to the public through the stock exchange.",
+  "Bonus issue": "Free extra shares given to shareholders. In a 1:1 bonus, you get one new share for every share you hold.",
+  "Minimum public shareholding": "SEBI's rule that the public (non-promoters) must hold at least 25% of a listed company; LIC had a special timeline, with 10% due by May 2027.",
+  "Bima Sakhi": "A scheme that trains rural women as LIC agents to sell insurance in villages.",
+  "Expense ratio": "Operating costs and commissions as a % of premium. Lower means more efficient.",
+  "LIC Act, 1956": "The law passed by Parliament that created LIC by nationalising private life insurers."
+ },
+ "roles": {
+  "Finance": {
+   "measured": [
+    "Accuracy of reports",
+    "Meeting IRDAI reporting deadlines",
+    "Investment and cost tracking"
+   ],
+   "skills": [
+    "Excel (pivot tables, formulas)",
+    "Reading an insurer's results (APE, VNB, solvency)",
+    "Basics of IRDAI rules"
+   ],
+   "tip": "Know APE, VNB margin, solvency ratio and persistency, and the company's latest numbers.",
+   "kv": [
+    {
+     "k": "Net profit Q2 FY27",
+     "v": "₹12,076 cr (+20%)",
+     "term": "Net profit"
+    },
+    {
+     "k": "VNB margin H1 FY27",
+     "v": "22.3%",
+     "term": "VNB margin"
+    },
+    {
+     "k": "Solvency ratio",
+     "v": "2.35",
+     "term": "Solvency ratio"
+    },
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹59.6 lakh cr",
+     "term": "AUM"
+    }
+   ]
+  },
+  "Marketing": {
+   "measured": [
+    "Leads and conversion",
+    "Brand awareness",
+    "Campaign return"
+   ],
+   "skills": [
+    "Customer segmentation",
+    "Digital marketing",
+    "Explaining products simply"
+   ],
+   "tip": "Insurance is 'sold, not bought'. Show ideas to build trust and explain term cover simply.",
+   "kv": [
+    {
+     "k": "Market share (FYPI)",
+     "v": "58.77% (H1 FY27)",
+     "term": "FYPI"
+    },
+    {
+     "k": "Agents",
+     "v": "14.5 lakh",
+     "term": "Agency"
+    },
+    {
+     "k": "Agency share of new premium",
+     "v": "91.81%",
+     "term": "Agency"
+    },
+    {
+     "k": "Protection APE growth",
+     "v": "~59% (H1 FY27)",
+     "term": "Protection"
+    }
+   ]
+  },
+  "HR": {
+   "measured": [
+    "Time to hire",
+    "Agent and staff attrition",
+    "Training completion"
+   ],
+   "skills": [
+    "Recruitment at scale",
+    "Agent onboarding",
+    "HR analytics in Excel"
+   ],
+   "tip": "Insurers hire and train huge sales forces. Ideas to cut early attrition of advisors will impress.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹59.6 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "CEO & MD",
+     "v": "R Doraiswamy"
+    },
+    {
+     "k": "Founded",
+     "v": "1956"
+    },
+    {
+     "k": "Govt stake",
+     "v": "90% (after Aug 2026 OFS)",
+     "term": "OFS"
+    }
+   ]
+  },
+  "Sales": {
+   "measured": [
+    "New premium sold",
+    "Persistency of policies sold",
+    "Number of active advisors or partners"
+   ],
+   "skills": [
+    "Need-based selling",
+    "Handling objections",
+    "Target discipline"
+   ],
+   "tip": "Expect role-play: 'Sell me a term plan' or 'Convince a 25-year-old to start a pension plan'.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹59.6 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "CEO & MD",
+     "v": "R Doraiswamy"
+    },
+    {
+     "k": "Founded",
+     "v": "1956"
+    },
+    {
+     "k": "Govt stake",
+     "v": "90% (after Aug 2026 OFS)",
+     "term": "OFS"
+    }
+   ]
+  },
+  "Operations": {
+   "measured": [
+    "Policy issuance time",
+    "Claim settlement time",
+    "Error-free processing"
+   ],
+   "skills": [
+    "Process mapping",
+    "KYC and underwriting basics",
+    "Attention to detail"
+   ],
+   "tip": "Show you understand underwriting, claims and how digital tools speed up policy issuance.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹59.6 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "CEO & MD",
+     "v": "R Doraiswamy"
+    },
+    {
+     "k": "Founded",
+     "v": "1956"
+    },
+    {
+     "k": "Govt stake",
+     "v": "90% (after Aug 2026 OFS)",
+     "term": "OFS"
+    }
+   ]
+  },
+  "Other": {
+   "measured": [
+    "Depends on the role"
+   ],
+   "skills": [
+    "Insurance basics",
+    "Communication",
+    "Excel"
+   ],
+   "tip": "Pick a role above to see role-specific preparation.",
+   "kv": [
+    {
+     "k": "AUM (Sep 2026)",
+     "v": "₹59.6 lakh cr",
+     "term": "AUM"
+    },
+    {
+     "k": "CEO & MD",
+     "v": "R Doraiswamy"
+    },
+    {
+     "k": "Founded",
+     "v": "1956"
+    },
+    {
+     "k": "Govt stake",
+     "v": "90% (after Aug 2026 OFS)",
+     "term": "OFS"
+    }
+   ]
+  }
+ },
+ "interview": {
+  "steps_label": "Commonly reported by students for campus hiring. Not published officially, so confirm with your placement cell.",
+  "steps": [
+   {
+    "t": "Online test",
+    "d": "Aptitude, reasoning and English"
+   },
+   {
+    "t": "Group discussion",
+    "d": "For some roles, such as management trainee"
+   },
+   {
+    "t": "Personal interview",
+    "d": "Role knowledge, the company and HR questions"
+   }
+  ],
+  "questions": {
+   "Finance": [
+    {
+     "q": "Why did LIC's VNB margin rise even though first-year premium dipped in Q2 FY27?",
+     "a": "It sold more non-par and protection policies, which carry higher margins, and cut its expense ratio to 10.41%; so H1 VNB rose 34% to ₹6,846 crore and margin reached 22.3%."
+    },
+    {
+     "q": "What does a solvency ratio of 2.35 mean?",
+     "a": "LIC holds 2.35 times the capital IRDAI requires; the minimum is 1.5, so it has a comfortable buffer."
+    },
+    {
+     "q": "Why is VNB a better measure than profit for a life insurer?",
+     "a": "Profit includes old policies and investment gains; VNB shows the future profit from new policies sold this period, so it reflects how good current sales are."
+    }
+   ],
+   "Marketing": [
+    {
+     "q": "How can LIC attract young, digital customers who prefer private insurers' apps?",
+     "a": "Simple online term plans, a smooth app (MyLIC, ANANDA), social media in local languages and the LIC trust message for first-time buyers."
+    },
+    {
+     "q": "Why is LIC pushing protection and non-par products?",
+     "a": "They have higher margins than traditional par plans; protection APE rose about 59% in H1 FY27."
+    }
+   ],
+   "HR": [
+    {
+     "q": "How would you reduce attrition among new LIC agents?",
+     "a": "Better training and mentoring, digital sales tools, early-income support and recognition; LIC's agent count fell slightly in FY26, so retention matters."
+    }
+   ],
+   "Sales": [
+    {
+     "q": "Sell me a term plan.",
+     "a": "Ask about family and loans, show how a small yearly premium protects the family's income, compare cost with the cover, and stress LIC's long record of paying claims."
+    }
+   ],
+   "Operations": [
+    {
+     "q": "How can technology improve LIC's policy servicing?",
+     "a": "Digital onboarding through ANANDA, app-based servicing, e-KYC and faster claim processing; ANANDA policies rose about 41% in H1 FY27."
+    }
+   ],
+   "Other": [
+    {
+     "q": "What does the IDBI Bank sale mean for LIC?",
+     "a": "LIC sells 30.24% of IDBI Bank to Fairfax and keeps about 19%; it releases capital, but LIC is adding other bank partners for bancassurance."
+    }
+   ],
+   "common": [
+    {
+     "q": "Who leads LIC?",
+     "a": "R Doraiswamy is CEO & MD (since July 2025). LIC has no chairman; the post was replaced by CEO & MD in 2021."
+    },
+    {
+     "q": "What recent news caught your attention?",
+     "a": "For example, the Aug 2026 OFS that cut the government's stake to 90%, LIC's 70th anniversary in Sep 2026, or the Q2 FY27 profit rise of 20%."
+    },
+    {
+     "q": "Why LIC?",
+     "a": "Use the 'Why us?' draft and add your own reason."
+    }
+   ]
+  },
+  "why_us": "LIC has protected Indian families for 70 years and still writes more than half of the industry's new premium. It is changing fast: moving to higher-margin products, going digital and bringing rural women into insurance through Bima Sakhi. Working here means learning insurance at a scale no other company in India offers. I want to contribute to [your role] as it modernises.",
+  "ask": [
+   "How is LIC balancing its agency strength with growth in bank and digital channels?",
+   "What role will the planned fintech arm play for customers and staff?",
+   "What does success look like for a new joiner in the first six months?"
+  ],
+  "gd": [
+   {
+    "t": "Should the government reduce its stake in LIC further?",
+    "for": "More public shareholders bring market discipline, better disclosure and money for the government.",
+    "against": "LIC is a trusted public institution; too much private pressure may change its social role."
+   },
+   {
+    "t": "Should LIC enter health insurance?",
+    "for": "Its reach and brand could bring health cover to millions of under-insured families.",
+    "against": "Health is a different, claim-heavy business; LIC itself put the plan on hold in 2026 as not immediately needed."
+   }
+  ],
+  "avoid": [
+   "Don't call anyone 'LIC Chairman': the post was abolished in 2021. Say CEO & MD, R Doraiswamy.",
+   "Don't confuse LIC with LIC Housing Finance, a separate listed company.",
+   "Don't say the government owns 96.5%; after the Aug 2026 OFS it holds 90%."
+  ],
+  "night": [
+   "CEO & MD: R Doraiswamy (no chairman post)",
+   "Founded 1 Sep 1956 · listed May 2022 · HQ Mumbai",
+   "FY26 profit: ₹57,419 cr (+19%)",
+   "Q2 FY27 profit: ₹12,076 cr (+20%)",
+   "VNB margin 22.3% (H1 FY27) · solvency 2.35",
+   "Govt stake 90% after Aug 2026 OFS",
+   "Read 2 headlines from the live news",
+   "Practise 'Why us?' in under 60 seconds",
+   "Keep 2 questions ready to ask them",
+   "Know your role's 3 key terms"
+  ]
+ },
+ "quiz": [
+  {
+   "q": "Who heads LIC today?",
+   "o": [
+    "Siddhartha Mohanty",
+    "R Doraiswamy",
+    "Sat Pal Bhanoo"
+   ],
+   "a": 1
+  },
+  {
+   "q": "In which year was LIC set up?",
+   "o": [
+    "1947",
+    "1956",
+    "1969"
+   ],
+   "a": 1
+  },
+  {
+   "q": "LIC's standalone net profit in Q2 FY27 (Jul–Sep 2026) was about:",
+   "o": [
+    "₹12,076 crore",
+    "₹57,419 crore",
+    "₹1,47,018 crore"
+   ],
+   "a": 0
+  },
+  {
+   "q": "After the Aug 2026 OFS, the government's stake in LIC is:",
+   "o": [
+    "96.5%",
+    "75%",
+    "90%"
+   ],
+   "a": 2
+  },
+  {
+   "q": "LIC's VNB margin in H1 FY27 was:",
+   "o": [
+    "17.6%",
+    "22.3%",
+    "35.1%"
+   ],
+   "a": 1
+  }
+ ],
+ "checked": "19 Nov 2026"
+}
