@@ -248,6 +248,7 @@ top:0;right:0;bottom:0;width:min(560px,100%);transform:translateX(105%);border-r
 </aside>
 
 <script src="career-unlock-data.js"></script>
+<script src="cu-cert.js"></script>
 <script>
 (()=>{
 const C=window.CU,$=id=>document.getElementById(id),O=C.order;
@@ -296,16 +297,19 @@ function unlock(scroll){if(!sel.length)return;shown=true;filt='all';
  if(a.length===2){const P=C.pairs[a[0]+'-'+a[1]],A=C.sp[a[0]],B=C.sp[a[1]];
   const used=new Set(P.jobs.map(j=>j[0]));const ja=A.jobs.filter(j=>!used.has(j[0])),jb=B.jobs.filter(j=>!used.has(j[0]));total=P.jobs.length+ja.length+jb.length;
   const fl=['','Niche pair','Good pair','Strong pair'][P.f];
+  var info={sp:[A,B],title:P.id,total:total,roles:P.jobs.map(j=>j[1])};
   h=`<div class="rh"><div class="ch"><span>${A.e} ${esc(A.n)}</span><i>×</i><span>${B.e} ${esc(B.n)}</span></div><h2>${esc(P.id)}</h2><p>${esc(P.why)}</p>
   <div class="meta"><span class="fit"><b>${[1,2,3].map(i=>`<u class="${i<=P.f?'f':''}"></u>`).join('')}</b>${fl}</span><span class="num"><b data-count="${total}">0</b>doors unlocked</span></div></div>`
   +filtBar()+group('⭐ Jobs that use both',P.jobs,'226,184,92',true)+group(A.e+' '+esc(A.n)+' jobs',ja,A.c)+group(B.e+' '+esc(B.n)+' jobs',jb,B.c);
  }else{const k=a[0],A=C.sp[k];total=A.jobs.length;
+  var info={sp:[A],title:A.t,total:total,roles:A.jobs.map(j=>j[1])};
   const ps=O.filter(x=>x!==k).map(x=>({x,p:C.pairs[pkey(k,x)]})).sort((m,n)=>n.p.f-m.p.f).slice(0,3);
   h=`<div class="rh"><div class="ch"><span>${A.e} ${esc(A.n)}</span></div><h2>${esc(A.t)}</h2><p>These are the roles ${esc(A.n)} opens on its own. Add a second specialisation to see the jobs that need both.</p>
   <div class="meta"><span class="num"><b data-count="${total}">0</b>doors unlocked</span></div></div>`
   +filtBar()+group(A.e+' '+esc(A.n)+' jobs',A.jobs,A.c)
   +`<div class="grp"><div class="gh"><h3>🔑 Best partners for ${esc(A.n)}</h3></div><div class="partners">${ps.map(({x,p})=>`<button class="pt" data-add="${x}"><b>+ ${C.sp[x].e} ${esc(C.sp[x].n)}</b><span>${esc(p.id)}</span><small>${p.jobs.length} extra jobs that use both →</small></button>`).join('')}</div></div>`}
  R.innerHTML=h;R.classList.add('on');countUp(R.querySelector('[data-count]'));reveal();
+ try{if(window.ypCU)ypCU(R,info)}catch(e){}
  if(scroll)setTimeout(()=>R.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'}),60)}
 function filtBar(){return `<div class="filt" id="filt"><button class="on" data-f="all">All jobs</button><button data-f="p">Private</button><button data-f="g">🏛 Government &amp; public sector</button></div>`}
 function countUp(el){if(!el)return;const n=+el.dataset.count;if(reduce){el.textContent=n;return}let t0=null;const d=700;
