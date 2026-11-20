@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Choose Your Side, Darling · a short story by Dr. Bikram Paul</title>
-<meta name="description" content="Read “Choose Your Side, Darling”, a short story of the heart or the mind by Dr. Bikram Paul. Free to read online, page by page, and share your thoughts.">
+<meta name="description" content="Read “Choose Your Side, Darling”, a short story about choosing between the heart and the mind by Dr. Bikram Paul. Free to read online, page by page, and share your thoughts.">
 <link rel="canonical" href="https://youngprofessor.in/book.html">
 <meta property="og:title" content="Choose Your Side, Darling · a short story by Dr. Bikram Paul">
-<meta property="og:description" content="A short story of the heart or the mind. Read it free, page by page.">
+<meta property="og:description" content="A short story about choosing between the heart and the mind. Read it free, page by page.">
 <meta property="og:image" content="https://youngprofessor.in/book/darling/cover.jpg">
 <meta property="og:url" content="https://youngprofessor.in/book.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@ $('zPrev').onclick=()=>zGo(zp-1);$('zNext').onclick=()=>zGo(zp+1);
 $('zIn').onclick=()=>{if(zl<LV.length-1){zl++;zDraw(true)}};$('zOut').onclick=()=>{if(zl>0){zl--;zDraw(true)}};
 let lastTap=0;$('zImg').addEventListener('click',e=>{const now=Date.now();if(now-lastTap<350){zl=zl<2?2:0;zDraw(true)}lastTap=now});
 addEventListener('resize',()=>{if(zOn)zDraw(true)});
-$('shareB').onclick=async()=>{const url='https://youngprofessor.in/book',d={title:'Choose Your Side, Darling',text:'A short story of the heart or the mind by Dr. Bikram Paul. Read it free:',url};
+$('shareB').onclick=async()=>{const url='https://youngprofessor.in/book',d={title:'Choose Your Side, Darling',text:'A short story about choosing between the heart and the mind by Dr. Bikram Paul. Read it free:',url};
   try{if(navigator.share){await navigator.share(d);return}}catch(e){if(e&&e.name==='AbortError')return}
   try{await navigator.clipboard.writeText(url)}catch(e){}const t=document.createElement('div');t.className='shtoast';t.textContent='Link copied: youngprofessor.in/book';document.body.appendChild(t);setTimeout(()=>t.remove(),2500)};
 $('toastX').onclick=()=>$('toast').hidden=true;$('toastGo').onclick=()=>{$('toast').hidden=true;openC()};
