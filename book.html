@@ -25,7 +25,7 @@ button,input,textarea{font:inherit;color:inherit}
 a{color:inherit}
 :focus-visible{outline:2px solid #fff;outline-offset:2px}
 /* top bar */
-.top{position:fixed;inset:0 0 auto;z-index:20;display:flex;align-items:center;gap:12px;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:linear-gradient(#0b0a0aee,#0b0a0a00);transition:opacity .4s}
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:12px;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:linear-gradient(#0b0a0aee,#0b0a0a00);transition:opacity .4s}
 .top .t{flex:1;text-align:center;font:italic 600 clamp(17px,2.2vw,22px)/1.1 var(--serif);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .top .t small{display:block;font:500 12px var(--sans);color:var(--muted);font-style:normal;margin-top:2px}
 .ib{min-width:44px;height:44px;border-radius:999px;border:1px solid var(--line2);background:#1a1414cc;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;cursor:pointer;text-decoration:none;font-weight:700;font-size:15px}
@@ -33,26 +33,28 @@ a{color:inherit}
 .cbtn b{background:var(--red);color:#fff;border-radius:999px;font-size:12px;padding:1px 7px;min-width:20px;text-align:center}
 /* stage */
 .stage{min-height:100%;display:flex;align-items:center;justify-content:center;padding:calc(76px + env(safe-area-inset-top)) 10px calc(96px + env(safe-area-inset-bottom))}
-#book{margin:0 auto;box-shadow:0 30px 70px -30px #000}
+#book{margin:0 auto}
+.bookbox{margin:0 auto;width:min(100%,calc((100vh - 176px)*1.41));width:min(100%,calc((100dvh - 176px)*1.41))}
+@media(max-width:640px){.bookbox{width:min(100%,calc((100dvh - 176px)*.705))}}
 .page{background:var(--cream);overflow:hidden}
 .page img{width:100%;height:100%;display:block;object-fit:cover;user-select:none;-webkit-user-select:none;pointer-events:none}
 /* controls */
-.ctl{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:10px;background:#141010e6;border:1px solid var(--line);border-radius:999px;padding:6px;transition:opacity .4s}
+.ctl{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:10px;background:#141010e6;border:1px solid var(--line);border-radius:999px;padding:6px;transition:opacity .4s}
 .ctl .nb{width:44px;height:44px;border-radius:50%;border:0;background:#241c1c;cursor:pointer;font-size:22px;line-height:1}
 .ctl .nb:hover{background:var(--red)}
 #cnt{min-width:112px;text-align:center;font-size:14px;color:var(--muted)}
-.prog{position:fixed;left:0;bottom:0;height:3px;background:var(--red);z-index:21;transition:width .5s}
+.prog{position:fixed;left:0;bottom:0;height:3px;background:var(--red);z-index:51;transition:width .5s}
 .idle .top,.idle .ctl{opacity:0;pointer-events:none}
 .load{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font:italic 500 20px var(--serif);z-index:5}
 /* end toast */
-.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:22;background:var(--panel2);border:1px solid var(--line2);border-radius:16px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px -18px #000;max-width:calc(100% - 24px)}
+.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:52;background:var(--panel2);border:1px solid var(--line2);border-radius:16px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px -18px #000;max-width:calc(100% - 24px)}
 .toast p{margin:0;font-size:14.5px}
 .btn{min-height:44px;padding:10px 18px;border-radius:999px;border:0;background:var(--red);color:#fff;font-weight:800;cursor:pointer;white-space:nowrap}
 .btn:disabled{opacity:.6;cursor:default}
 .btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--ink)}
 /* comments drawer */
-.scrim{position:fixed;inset:0;background:#0008;z-index:30}
-.drawer{position:fixed;z-index:31;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.scrim{position:fixed;inset:0;background:#0008;z-index:60}
+.drawer{position:fixed;z-index:61;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
 .drawer.on{transform:none}
 @media(max-width:640px){.drawer{top:auto;width:100%;height:88%;border-left:0;border-top:1px solid var(--line);border-radius:20px 20px 0 0;transform:translateY(102%)}}
 .dh{display:flex;align-items:center;gap:10px;padding:16px 16px 10px;border-bottom:1px solid var(--line)}
@@ -98,7 +100,7 @@ a{color:inherit}
   <button class="ib cbtn" id="openC" type="button" aria-label="Open comments">💬 <b id="cc">0</b></button>
 </header>
 
-<main class="stage"><div id="book" aria-label="Book: Choose Your Side, Darling"></div></main>
+<main class="stage"><div class="bookbox"><div id="book" aria-label="Book: Choose Your Side, Darling"></div></div></main>
 <div class="load" id="load">Opening the book…</div>
 
 <nav class="ctl" id="ctl" aria-label="Page controls">
