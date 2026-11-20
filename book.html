@@ -10,6 +10,7 @@
 <meta property="og:description" content="A short story of the heart or the mind. Read it free, page by page.">
 <meta property="og:image" content="https://youngprofessor.in/book/darling/cover.jpg">
 <meta property="og:url" content="https://youngprofessor.in/book.html">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0A0A">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +31,8 @@ a{color:inherit}
 .top .t small{display:block;font:500 12px var(--sans);color:var(--muted);font-style:normal;margin-top:2px}
 .ib{min-width:44px;height:44px;border-radius:999px;border:1px solid var(--line2);background:#1a1414cc;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;cursor:pointer;text-decoration:none;font-weight:700;font-size:15px}
 .ib:hover{border-color:var(--red)}
+.shtoast{position:fixed;left:50%;top:calc(70px + env(safe-area-inset-top));transform:translateX(-50%);z-index:80;background:#000d;color:#fff;padding:8px 16px;border-radius:999px;font-size:14px}
+@media(max-width:420px){.shl{display:none}}
 .cbtn b{background:var(--red);color:#fff;border-radius:999px;font-size:12px;padding:1px 7px;min-width:20px;text-align:center}
 /* stage */
 .stage{min-height:100%;display:flex;align-items:center;justify-content:center;padding:calc(76px + env(safe-area-inset-top)) 10px calc(96px + env(safe-area-inset-bottom))}
@@ -90,6 +93,13 @@ a{color:inherit}
 .rbox{margin:8px 0 0}
 .empty{text-align:center;color:var(--muted);padding:28px 8px;font-style:italic;font-family:var(--serif);font-size:19px}
 .authp{background:var(--panel2);border:1px dashed var(--line2);border-radius:14px;padding:12px;margin-top:18px;font-size:14px}
+/* zoom viewer */
+.zm{position:fixed;inset:0;z-index:70;background:#0b0909;display:flex;flex-direction:column}
+.zbar{display:flex;align-items:center;gap:8px;padding:calc(8px + env(safe-area-inset-top)) 10px 8px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.zbar .sp{flex:1;text-align:center;color:var(--muted);font-size:14px;min-width:90px}
+.zscroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y pinch-zoom;overscroll-behavior:contain}
+.zscroll img{display:block;margin:12px auto 40px;padding:0;max-width:none;background:var(--cream);box-shadow:0 20px 50px -20px #000}
+.zhint{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#000c;color:#fff;font-size:13px;padding:7px 14px;border-radius:999px;pointer-events:none;transition:opacity .6s;white-space:nowrap}
 @media(prefers-reduced-motion:reduce){.drawer,.prog,.top,.ctl{transition:none}}
 </style>
 </head>
@@ -97,6 +107,7 @@ a{color:inherit}
 <header class="top" id="top">
   <a class="ib" href="index.html#beyond" aria-label="Close the book and go back to the website">✕</a>
   <div class="t">Choose Your Side, Darling<small>by Dr. Bikram Paul</small></div>
+  <button class="ib" id="shareB" type="button" aria-label="Share this book">↗ <span class="shl">Share</span></button>
   <button class="ib cbtn" id="openC" type="button" aria-label="Open comments">💬 <b id="cc">0</b></button>
 </header>
 
@@ -107,12 +118,25 @@ a{color:inherit}
   <button class="nb" id="prev" type="button" aria-label="Previous page">‹</button>
   <span id="cnt" aria-live="polite">Cover</span>
   <button class="nb" id="next" type="button" aria-label="Next page">›</button>
+  <button class="nb" id="zoomBtn" type="button" aria-label="Zoom in to read this page" title="Zoom in" style="font-size:18px">🔍</button>
   <button class="nb" id="fs" type="button" aria-label="Full screen" style="font-size:17px">⤢</button>
 </nav>
 <div class="prog" id="prog" style="width:0"></div>
 
 <div class="toast" id="toast" hidden><p>Finished the story? Tell me what you felt.</p><button class="btn" id="toastGo" type="button">💬 Share your thoughts</button><button class="ib" id="toastX" type="button" aria-label="Close">✕</button></div>
 
+<div class="zm" id="zm" hidden role="dialog" aria-label="Zoomed page">
+  <div class="zbar">
+    <button class="ib" id="zClose" type="button" aria-label="Close zoom">✕</button>
+    <button class="ib" id="zPrev" type="button" aria-label="Previous page">‹</button>
+    <span class="sp" id="zPg">Page 1</span>
+    <button class="ib" id="zNext" type="button" aria-label="Next page">›</button>
+    <button class="ib" id="zOut" type="button" aria-label="Zoom out">−</button>
+    <button class="ib" id="zIn" type="button" aria-label="Zoom in">+</button>
+  </div>
+  <div class="zscroll" id="zScroll"><img id="zImg" alt=""></div>
+  <div class="zhint" id="zHint">Pinch or use + / − to zoom · double-tap to zoom more</div>
+</div>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" aria-label="Comments" aria-hidden="true">
   <div class="dh"><h2>Thoughts <span class="mut" id="cc2"></span></h2><button class="ib" id="closeC" type="button" aria-label="Close comments">✕</button></div>
@@ -163,10 +187,30 @@ const upd=()=>{const i=pf.getCurrentPageIndex();ls.set('bk_page',String(i));
 pf.on('flip',upd);upd();
 $('prev').onclick=()=>pf.flipPrev();$('next').onclick=()=>pf.flipNext();
 $('fs').onclick=()=>{try{document.fullscreenElement?document.exitFullscreen():(document.documentElement.requestFullscreen||document.documentElement.webkitRequestFullscreen).call(document.documentElement)}catch(e){}};
-document.addEventListener('keydown',e=>{if(drawerOn||/INPUT|TEXTAREA/.test(document.activeElement.tagName))return;if(e.key==='ArrowRight')pf.flipNext();if(e.key==='ArrowLeft')pf.flipPrev()});
+document.addEventListener('keydown',e=>{if(zOn){if(e.key==='Escape')zClose();if(e.key==='ArrowRight')zGo(zp+1);if(e.key==='ArrowLeft')zGo(zp-1);if(e.key==='+'||e.key==='=')$('zIn').click();if(e.key==='-')$('zOut').click();return}if(drawerOn||/INPUT|TEXTAREA/.test(document.activeElement.tagName))return;if(e.key==='ArrowRight')pf.flipNext();if(e.key==='ArrowLeft')pf.flipPrev()});
 /* controls fade when idle */
-let idleT;const wake=()=>{document.body.classList.remove('idle');clearTimeout(idleT);idleT=setTimeout(()=>{if(!drawerOn)document.body.classList.add('idle')},3500)};
+let idleT;const wake=()=>{document.body.classList.remove('idle');clearTimeout(idleT);idleT=setTimeout(()=>{if(!drawerOn&&!zOn)document.body.classList.add('idle')},3500)};
 ['mousemove','touchstart','keydown','click'].forEach(ev=>addEventListener(ev,wake,{passive:true}));wake();
+/* zoom */
+let zp=0,zl=1;const LV=[1,1.5,2,2.6,3.2];
+const zBase=()=>Math.min(innerWidth-24,(innerHeight-90)*.705>innerWidth-24?innerWidth-24:Math.max((innerHeight-90)*.705,Math.min(innerWidth-24,560)));
+function zDraw(keep){const sc=$('zScroll'),im=$('zImg'),cx=keep?(sc.scrollLeft+sc.clientWidth/2)/sc.scrollWidth:.5,cy=keep?(sc.scrollTop+sc.clientHeight/2)/sc.scrollHeight:0;
+  im.style.width=Math.round(zBase()*LV[zl])+'px';$('zPg').textContent=(innerWidth<520?'':'Page ')+(zp+1)+' / '+N+' · '+Math.round(LV[zl]*100)+'%';
+  $('zOut').disabled=zl===0;$('zIn').disabled=zl===LV.length-1;
+  requestAnimationFrame(()=>{sc.scrollLeft=keep?cx*sc.scrollWidth-sc.clientWidth/2:0;if(keep)sc.scrollTop=cy*sc.scrollHeight-sc.clientHeight/2})}
+function zGo(i){zp=Math.max(0,Math.min(N-1,i));const im=$('zImg');im.alt='Page '+(zp+1);im.src='book/darling/z'+String(zp+1).padStart(2,'0')+'.webp';$('zScroll').scrollTop=0;zDraw(false)}
+function zOpen(){let i=pf.getCurrentPageIndex();zl=innerWidth<640?1:0;$('zm').hidden=false;zOn=true;document.body.classList.remove('idle');zGo(i);
+  const h=$('zHint');h.style.opacity=1;setTimeout(()=>h.style.opacity=0,3500)}
+function zClose(){$('zm').hidden=true;zOn=false;if(pf.getCurrentPageIndex()!==zp){pf.turnToPage(zp);setTimeout(upd,50)}wake()}
+let zOn=false;
+$('zoomBtn').onclick=zOpen;$('zClose').onclick=zClose;
+$('zPrev').onclick=()=>zGo(zp-1);$('zNext').onclick=()=>zGo(zp+1);
+$('zIn').onclick=()=>{if(zl<LV.length-1){zl++;zDraw(true)}};$('zOut').onclick=()=>{if(zl>0){zl--;zDraw(true)}};
+let lastTap=0;$('zImg').addEventListener('click',e=>{const now=Date.now();if(now-lastTap<350){zl=zl<2?2:0;zDraw(true)}lastTap=now});
+addEventListener('resize',()=>{if(zOn)zDraw(true)});
+$('shareB').onclick=async()=>{const url='https://youngprofessor.in/book',d={title:'Choose Your Side, Darling',text:'A short story of the heart or the mind by Dr. Bikram Paul. Read it free:',url};
+  try{if(navigator.share){await navigator.share(d);return}}catch(e){if(e&&e.name==='AbortError')return}
+  try{await navigator.clipboard.writeText(url)}catch(e){}const t=document.createElement('div');t.className='shtoast';t.textContent='Link copied: youngprofessor.in/book';document.body.appendChild(t);setTimeout(()=>t.remove(),2500)};
 $('toastX').onclick=()=>$('toast').hidden=true;$('toastGo').onclick=()=>{$('toast').hidden=true;openC()};
 
 /* ---------- comments ---------- */
