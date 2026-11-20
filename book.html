@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Choose Your Side, Darling · a short story by Dr. Bikram Paul</title>
+<meta name="description" content="Read “Choose Your Side, Darling”, a short story of the heart or the mind by Dr. Bikram Paul. Free to read online, page by page, and share your thoughts.">
+<link rel="canonical" href="https://youngprofessor.in/book.html">
+<meta property="og:title" content="Choose Your Side, Darling · a short story by Dr. Bikram Paul">
+<meta property="og:description" content="A short story of the heart or the mind. Read it free, page by page.">
+<meta property="og:image" content="https://youngprofessor.in/book/darling/cover.jpg">
+<meta property="og:url" content="https://youngprofessor.in/book.html">
+<meta name="theme-color" content="#0B0A0A">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="preload" as="image" href="book/darling/p01.webp">
+<style>
+:root{--bg:#0B0A0A;--panel:#151111;--panel2:#1c1616;--line:#2c2424;--line2:#3d3131;--ink:#F4EFEA;--muted:#A79d97;--red:#E3161E;--red2:#FF4950;--cream:#f5f0e8;--serif:"Cormorant Garamond",Georgia,serif;--sans:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;min-width:0}[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(1000px 640px at 50% 38%,#2b2019 0%,#161010 55%,var(--bg) 100%) fixed,var(--bg);color:var(--ink);font:16px/1.55 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid #fff;outline-offset:2px}
+/* top bar */
+.top{position:fixed;inset:0 0 auto;z-index:20;display:flex;align-items:center;gap:12px;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:linear-gradient(#0b0a0aee,#0b0a0a00);transition:opacity .4s}
+.top .t{flex:1;text-align:center;font:italic 600 clamp(17px,2.2vw,22px)/1.1 var(--serif);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .t small{display:block;font:500 12px var(--sans);color:var(--muted);font-style:normal;margin-top:2px}
+.ib{min-width:44px;height:44px;border-radius:999px;border:1px solid var(--line2);background:#1a1414cc;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;cursor:pointer;text-decoration:none;font-weight:700;font-size:15px}
+.ib:hover{border-color:var(--red)}
+.cbtn b{background:var(--red);color:#fff;border-radius:999px;font-size:12px;padding:1px 7px;min-width:20px;text-align:center}
+/* stage */
+.stage{min-height:100%;display:flex;align-items:center;justify-content:center;padding:calc(76px + env(safe-area-inset-top)) 10px calc(96px + env(safe-area-inset-bottom))}
+#book{margin:0 auto;box-shadow:0 30px 70px -30px #000}
+.page{background:var(--cream);overflow:hidden}
+.page img{width:100%;height:100%;display:block;object-fit:cover;user-select:none;-webkit-user-select:none;pointer-events:none}
+/* controls */
+.ctl{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:10px;background:#141010e6;border:1px solid var(--line);border-radius:999px;padding:6px;transition:opacity .4s}
+.ctl .nb{width:44px;height:44px;border-radius:50%;border:0;background:#241c1c;cursor:pointer;font-size:22px;line-height:1}
+.ctl .nb:hover{background:var(--red)}
+#cnt{min-width:112px;text-align:center;font-size:14px;color:var(--muted)}
+.prog{position:fixed;left:0;bottom:0;height:3px;background:var(--red);z-index:21;transition:width .5s}
+.idle .top,.idle .ctl{opacity:0;pointer-events:none}
+.load{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font:italic 500 20px var(--serif);z-index:5}
+/* end toast */
+.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:22;background:var(--panel2);border:1px solid var(--line2);border-radius:16px;padding:12px 14px;display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px -18px #000;max-width:calc(100% - 24px)}
+.toast p{margin:0;font-size:14.5px}
+.btn{min-height:44px;padding:10px 18px;border-radius:999px;border:0;background:var(--red);color:#fff;font-weight:800;cursor:pointer;white-space:nowrap}
+.btn:disabled{opacity:.6;cursor:default}
+.btn.ghost{background:transparent;border:1px solid var(--line2);color:var(--ink)}
+/* comments drawer */
+.scrim{position:fixed;inset:0;background:#0008;z-index:30}
+.drawer{position:fixed;z-index:31;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.drawer.on{transform:none}
+@media(max-width:640px){.drawer{top:auto;width:100%;height:88%;border-left:0;border-top:1px solid var(--line);border-radius:20px 20px 0 0;transform:translateY(102%)}}
+.dh{display:flex;align-items:center;gap:10px;padding:16px 16px 10px;border-bottom:1px solid var(--line)}
+.dh h2{flex:1;margin:0;font:600 24px/1.1 var(--serif)}
+.sort{display:flex;gap:6px;padding:10px 16px 0}
+.sort button{border:1px solid var(--line2);background:none;border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;color:var(--muted)}
+.sort button.on{border-color:var(--red);color:var(--ink)}
+.dbody{flex:1;overflow:auto;padding:12px 16px 24px;overscroll-behavior:contain}
+.comp{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:12px;margin-bottom:16px}
+.comp input,.comp textarea{width:100%;background:#0f0c0c;border:1px solid var(--line2);border-radius:10px;padding:10px 12px;font-size:16px;margin-bottom:8px}
+.comp textarea{min-height:84px;resize:vertical}
+.comp .row{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.comp small,.mut{color:var(--muted);font-size:13px}
+.err{color:#ff8a8f;font-size:13.5px;margin:0 0 8px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.as{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.badge{background:var(--red);color:#fff;font-size:11px;font-weight:800;border-radius:6px;padding:1px 6px;letter-spacing:.02em}
+.cm{display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;margin:14px 0}
+.av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff}
+.av.img{background:center/cover no-repeat url(book/darling/cover.webp)}
+.bub{background:var(--panel2);border:1px solid var(--line);border-radius:4px 14px 14px 14px;padding:9px 12px}
+.bub.au{border-color:#5a2a2c;background:#221616}
+.nm{font-weight:800;font-size:14.5px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.nm time{font-weight:500;color:var(--muted);font-size:12.5px}
+.tx{margin:4px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:15px}
+.acts{display:flex;gap:14px;align-items:center;margin:4px 0 0 6px;font-size:13px}
+.acts button{background:none;border:0;padding:6px 0;color:var(--muted);cursor:pointer;font-weight:700}
+.acts button:hover{color:var(--ink)}
+.acts .lk.on{color:var(--red2)}
+.reps{margin-left:4px;border-left:2px solid var(--line);padding-left:10px}
+.reps .cm{grid-template-columns:30px minmax(0,1fr);margin:10px 0}.reps .av{width:30px;height:30px;font-size:13px}
+.more{background:none;border:0;color:var(--muted);font-weight:700;font-size:13px;cursor:pointer;padding:6px 0}
+.rbox{margin:8px 0 0}
+.empty{text-align:center;color:var(--muted);padding:28px 8px;font-style:italic;font-family:var(--serif);font-size:19px}
+.authp{background:var(--panel2);border:1px dashed var(--line2);border-radius:14px;padding:12px;margin-top:18px;font-size:14px}
+@media(prefers-reduced-motion:reduce){.drawer,.prog,.top,.ctl{transition:none}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <a class="ib" href="index.html#beyond" aria-label="Close the book and go back to the website">✕</a>
+  <div class="t">Choose Your Side, Darling<small>by Dr. Bikram Paul</small></div>
+  <button class="ib cbtn" id="openC" type="button" aria-label="Open comments">💬 <b id="cc">0</b></button>
+</header>
+
+<main class="stage"><div id="book" aria-label="Book: Choose Your Side, Darling"></div></main>
+<div class="load" id="load">Opening the book…</div>
+
+<nav class="ctl" id="ctl" aria-label="Page controls">
+  <button class="nb" id="prev" type="button" aria-label="Previous page">‹</button>
+  <span id="cnt" aria-live="polite">Cover</span>
+  <button class="nb" id="next" type="button" aria-label="Next page">›</button>
+  <button class="nb" id="fs" type="button" aria-label="Full screen" style="font-size:17px">⤢</button>
+</nav>
+<div class="prog" id="prog" style="width:0"></div>
+
+<div class="toast" id="toast" hidden><p>Finished the story? Tell me what you felt.</p><button class="btn" id="toastGo" type="button">💬 Share your thoughts</button><button class="ib" id="toastX" type="button" aria-label="Close">✕</button></div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Comments" aria-hidden="true">
+  <div class="dh"><h2>Thoughts <span class="mut" id="cc2"></span></h2><button class="ib" id="closeC" type="button" aria-label="Close comments">✕</button></div>
+  <div class="sort" role="group" aria-label="Sort comments"><button type="button" class="on" data-s="new">Newest</button><button type="button" data-s="top">Most liked</button></div>
+  <div class="dbody" id="dbody">
+    <form class="comp" id="comp" novalidate>
+      <div class="as" id="asAuthor" hidden>Posting as <b>Dr. Bikram Paul</b> <span class="badge">Author</span></div>
+      <div id="who"><input id="nm" maxlength="40" placeholder="Your name" autocomplete="name" required></div>
+      <textarea id="tx" maxlength="1000" placeholder="What did this story make you feel?" required></textarea>
+      <div id="em"><input id="mail" type="email" maxlength="120" placeholder="Email (optional): only to tell you about replies" autocomplete="email"></div>
+      <input class="hp" id="web" tabindex="-1" autocomplete="off" aria-hidden="true" placeholder="Website">
+      <p class="err" id="err" hidden></p>
+      <div class="row"><small>Visible to everyone · be kind</small><button class="btn" id="send" type="submit">Post</button></div>
+    </form>
+    <div id="list"><p class="empty">Loading thoughts…</p></div>
+    <div class="authp" id="authp" hidden>
+      <b>Author setup</b> <span class="mut">(only for Dr. Bikram Paul)</span>
+      <p class="mut" style="margin:6px 0 10px">Tap below. An email comes to the owner's inbox; open its link once on this device, then refresh this page.</p>
+      <button class="btn ghost" id="authReq" type="button">Send me the setup link</button> <span class="mut" id="authMsg"></span>
+    </div>
+  </div>
+</aside>
+
+<script src="js/page-flip.min.js"></script>
+<script>
+{
+const API='https://script.google.com/macros/s/AKfycbxDcJ_ZGZxdPCD3vSGjDJ3iYYswn6OWwM8aLcvBW52oqXew1nnrY5XEAZMD7RftbC1C/exec';
+const N=24,$=id=>document.getElementById(id);
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const rid=n=>{const a='abcdefghijklmnopqrstuvwxyz0123456789';let s='';const r=new Uint8Array(n);crypto.getRandomValues(r);r.forEach(x=>s+=a[x%36]);return s};
+let dev=ls.get('bk_dev');if(!dev){dev=rid(24);ls.set('bk_dev',dev)}
+const tok=ls.get('bk_tok')||'';let isAuthor=false;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+
+/* ---------- book ---------- */
+const book=$('book');
+for(let i=1;i<=N;i++){const d=document.createElement('div');d.className='page';if(i===1||i===N)d.dataset.density='hard';
+  d.innerHTML='<img src="book/darling/p'+String(i).padStart(2,'0')+'.webp" alt="Page '+i+'" loading="'+(i<5?'eager':'lazy')+'" draggable="false">';book.appendChild(d)}
+const pf=new St.PageFlip(book,{width:450,height:638,size:'stretch',minWidth:250,maxWidth:560,minHeight:354,maxHeight:794,maxShadowOpacity:.55,showCover:true,mobileScrollSupport:true,flippingTime:850,usePortrait:true,drawShadow:true});
+pf.loadFromHTML(book.querySelectorAll('.page'));
+$('load').hidden=true;
+const start=Math.min(N-1,Math.max(0,Number(ls.get('bk_page')||0)));if(start>0)pf.turnToPage(start);
+let toastShown=false;
+const upd=()=>{const i=pf.getCurrentPageIndex();ls.set('bk_page',String(i));
+  $('cnt').textContent=i===0?'Cover':(i>=N-1?'The end':'Page '+(i+1)+' of '+N);
+  $('prog').style.width=((i+1)/N*100)+'%';
+  if(i>=N-2&&!toastShown){toastShown=true;$('toast').hidden=false}};
+pf.on('flip',upd);upd();
+$('prev').onclick=()=>pf.flipPrev();$('next').onclick=()=>pf.flipNext();
+$('fs').onclick=()=>{try{document.fullscreenElement?document.exitFullscreen():(document.documentElement.requestFullscreen||document.documentElement.webkitRequestFullscreen).call(document.documentElement)}catch(e){}};
+document.addEventListener('keydown',e=>{if(drawerOn||/INPUT|TEXTAREA/.test(document.activeElement.tagName))return;if(e.key==='ArrowRight')pf.flipNext();if(e.key==='ArrowLeft')pf.flipPrev()});
+/* controls fade when idle */
+let idleT;const wake=()=>{document.body.classList.remove('idle');clearTimeout(idleT);idleT=setTimeout(()=>{if(!drawerOn)document.body.classList.add('idle')},3500)};
+['mousemove','touchstart','keydown','click'].forEach(ev=>addEventListener(ev,wake,{passive:true}));wake();
+$('toastX').onclick=()=>$('toast').hidden=true;$('toastGo').onclick=()=>{$('toast').hidden=true;openC()};
+
+/* ---------- comments ---------- */
+let drawerOn=false,all=[],sort='new',openReplies={};
+const liked=new Set((ls.get('bk_liked')||'').split(',').filter(Boolean));
+function openC(){drawerOn=true;$('drawer').classList.add('on');$('drawer').setAttribute('aria-hidden','false');$('scrim').hidden=false;document.body.classList.remove('idle');load();setTimeout(()=>$((isAuthor||ls.get('bk_name'))?'tx':'nm').focus({preventScroll:true}),350)}
+function closeC(){drawerOn=false;$('drawer').classList.remove('on');$('drawer').setAttribute('aria-hidden','true');$('scrim').hidden=true;if(location.hash==='#comments')history.replaceState(null,'',location.pathname);wake()}
+$('openC').onclick=openC;$('closeC').onclick=closeC;$('scrim').onclick=closeC;
+addEventListener('keydown',e=>{if(e.key==='Escape'&&drawerOn)closeC()});
+const post=b=>fetch(API,{method:'POST',credentials:'omit',body:JSON.stringify(b)}).then(r=>r.json());
+const ago=t=>{const s=(Date.now()-t)/1000;if(s<60)return 'just now';if(s<3600)return Math.floor(s/60)+'m';if(s<86400)return Math.floor(s/3600)+'h';if(s<604800)return Math.floor(s/86400)+'d';return new Date(t).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})};
+const hue=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))%360;return h};
+function one(c,rep){
+  const av=c.a?'<div class="av img" aria-hidden="true"></div>':'<div class="av" aria-hidden="true" style="background:hsl('+hue(c.n)+' 45% 38%)">'+esc(c.n.trim()[0]||'?').toUpperCase()+'</div>';
+  return '<div class="cm" data-id="'+c.id+'">'+av+'<div><div class="bub'+(c.a?' au':'')+'"><div class="nm">'+esc(c.n)+(c.a?' <span class="badge">Author</span>':'')+' <time datetime="'+new Date(c.t).toISOString()+'">· '+ago(c.t)+'</time></div><p class="tx">'+esc(c.x)+'</p></div>'+
+  '<div class="acts"><button type="button" class="lk'+(liked.has(c.id)?' on':'')+'" data-like="'+c.id+'" aria-pressed="'+liked.has(c.id)+'">❤️ Like'+(c.l?' · '+c.l:'')+'</button>'+
+  '<button type="button" data-reply="'+(rep||c.id)+'" data-to="'+esc(c.n)+'">Reply</button>'+
+  (isAuthor?'<button type="button" data-del="'+c.id+'">Remove</button>':(c.a?'':'<button type="button" data-rep="'+c.id+'">Report</button>'))+'</div><div class="rbox" id="rb_'+c.id+'"></div>'+(rep?'':'<div class="reps" id="rp_'+c.id+'"></div>')+'</div></div>'}
+function render(){
+  const top=all.filter(c=>!c.p),kids={};all.filter(c=>c.p).forEach(c=>(kids[c.p]=kids[c.p]||[]).push(c));
+  top.sort(sort==='top'?(a,b)=>(b.l-a.l)||(b.t-a.t):(a,b)=>b.t-a.t);
+  $('cc').textContent=all.length;$('cc2').textContent=all.length?'· '+all.length:'';
+  if(!top.length){$('list').innerHTML='<p class="empty">No thoughts yet. Be the first to share yours.</p>';return}
+  $('list').innerHTML=top.map(c=>one(c)).join('');
+  top.forEach(c=>{const k=(kids[c.id]||[]).sort((a,b)=>a.t-b.t),box=$('rp_'+c.id);if(!k.length){box.remove();return}
+    const show=openReplies[c.id]?k:k.slice(0,2);box.innerHTML=show.map(r=>one(r,c.id)).join('')+(k.length>show.length?'<button type="button" class="more" data-more="'+c.id+'">View '+(k.length-show.length)+' more '+(k.length-show.length>1?'replies':'reply')+'</button>':'')})}
+let loading=false;
+function load(){if(loading)return;loading=true;fetch(API+'?book=1&v='+Date.now(),{credentials:'omit'}).then(r=>r.json()).then(D=>{if(D&&D.ok){all=D.c||[];render()}}).catch(()=>{if(!all.length)$('list').innerHTML='<p class="empty">Could not load thoughts. Please check your internet.</p>'}).then(()=>loading=false)}
+document.querySelectorAll('.sort button').forEach(b=>b.onclick=()=>{sort=b.dataset.s;document.querySelectorAll('.sort button').forEach(x=>x.classList.toggle('on',x===b));render()});
+function setAuthorUI(){$('asAuthor').hidden=!isAuthor;$('who').hidden=isAuthor;$('em').hidden=isAuthor}
+if(ls.get('bk_name'))$('nm').value=ls.get('bk_name');
+if(tok)post({task:'bookWho',tok}).then(R=>{isAuthor=!!(R&&R.author);setAuthorUI();render()}).catch(()=>{});
+if(location.hash==='#author'){$('authp').hidden=false;setTimeout(openC,300)}
+$('authReq').onclick=()=>{let t=ls.get('bk_tok');if(!t){t=rid(32);ls.set('bk_tok',t)}$('authMsg').textContent='Sending…';
+  post({task:'bookAuthorReq',tok:t}).then(R=>{$('authMsg').textContent=R&&R.ok?'Sent. Check the inbox, open the link on this device, then refresh.':(R&&R.error||'Please try again.')}).catch(()=>$('authMsg').textContent='Please try again.')};
+function submit(form,parent){
+  const g=s=>form.querySelector(s),err=g('.err'),btn=g('button[type=submit]'),name=isAuthor?'':g('[data-f=nm]').value.trim(),text=g('[data-f=tx]').value.trim(),email=isAuthor?'':(g('[data-f=mail]')?g('[data-f=mail]').value.trim():'');
+  const fail=m=>{err.textContent=m;err.hidden=!m};fail('');
+  if(!isAuthor&&name.length<2)return fail('Please add your name.');
+  if(text.length<2)return fail('Please write something first.');
+  if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))return fail('Please check your email, or leave it empty.');
+  btn.disabled=true;btn.textContent='Posting…';
+  post({task:'bookAdd',name,text,email,parent:parent||'',dev,tok,website:(g('.hp')||{}).value||''}).then(R=>{
+    if(!R||!R.ok)throw new Error(R&&R.error||'');
+    if(!isAuthor)ls.set('bk_name',name);
+    all.push({id:R.id||rid(8),t:Date.now(),p:parent||'',n:isAuthor||R.author?'Dr. Bikram Paul':name,x:text,l:0,a:R.author?1:0});
+    if(parent){const top=all.find(c=>c.id===parent);openReplies[top&&top.p?top.p:parent]=true}
+    g('[data-f=tx]').value='';render();if(parent)form.remove()})
+  .catch(x=>fail((x&&x.message)||'Could not post. Please check your internet and try again.'))
+  .then(()=>{btn.disabled=false;btn.textContent=parent?'Reply':'Post'})}
+$('nm').dataset.f='nm';$('tx').dataset.f='tx';$('mail').dataset.f='mail';
+$('comp').onsubmit=e=>{e.preventDefault();submit($('comp'),'')};
+$('list').addEventListener('click',e=>{
+  const t=e.target.closest('button');if(!t)return;
+  if(t.dataset.like){const id=t.dataset.like,c=all.find(x=>x.id===id);if(!c)return;const on=!liked.has(id);on?liked.add(id):liked.delete(id);c.l=Math.max(0,c.l+(on?1:-1));ls.set('bk_liked',[...liked].join(','));render();
+    post({task:'bookLike',id,dev}).then(R=>{if(R&&R.ok){c.l=R.l;if(R.on!==on){R.on?liked.add(id):liked.delete(id);ls.set('bk_liked',[...liked].join(','))}render()}}).catch(()=>{})}
+  if(t.dataset.reply){const pid=t.dataset.reply,host=$('rb_'+t.closest('.cm').dataset.id);if(host.firstChild){host.innerHTML='';return}
+    host.innerHTML='<form class="comp" novalidate style="margin:6px 0 0">'+(isAuthor?'<div class="as">Replying as <b>Dr. Bikram Paul</b> <span class="badge">Author</span></div>':'<input data-f="nm" maxlength="40" placeholder="Your name" value="'+esc(ls.get('bk_name')||'')+'">')+
+      '<textarea data-f="tx" maxlength="1000" style="min-height:64px" placeholder="Reply to '+esc(t.dataset.to)+'…"></textarea>'+(isAuthor?'':'<input data-f="mail" type="email" maxlength="120" placeholder="Email (optional): to hear about replies">')+
+      '<input class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><p class="err" hidden></p><div class="row"><small>Visible to everyone</small><button class="btn" type="submit">Reply</button></div></form>';
+    const f=host.firstChild;f.onsubmit=ev=>{ev.preventDefault();submit(f,pid)};f.querySelector(isAuthor||ls.get('bk_name')?'[data-f=tx]':'[data-f=nm]').focus()}
+  if(t.dataset.more){openReplies[t.dataset.more]=true;render()}
+  if(t.dataset.rep){if(t.dataset.sure){post({task:'bookReport',id:t.dataset.rep,dev}).catch(()=>{});all=all.filter(c=>c.id!==t.dataset.rep&&c.p!==t.dataset.rep);render()}else{t.dataset.sure='1';t.textContent='Tap again to report'}}
+  if(t.dataset.del){if(t.dataset.sure){post({task:'bookDel',id:t.dataset.del,tok}).then(R=>{if(R&&R.ok){all=all.filter(c=>c.id!==t.dataset.del&&c.p!==t.dataset.del);render()}})}else{t.dataset.sure='1';t.textContent='Tap again to remove'}}
+});
+load();setInterval(()=>{if(drawerOn&&!document.hidden)load()},30000);
+if(location.hash==='#comments')setTimeout(openC,400);
+}
+</script>
+</body>
+</html>
